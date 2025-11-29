@@ -58,12 +58,7 @@ HTML = r"""<!DOCTYPE html>
         <button class="header-btn tab-btn" onclick="switchView('chat')">Chat</button>
       </div>
 
-      <div class="interaction-mode-tabs" style="display: flex; gap: 4px; margin-left: 16px;">
-        <button class="header-btn mode-btn active" onclick="switchInteractionMode('direct')" id="mode-direct" title="Show direct protein-protein interactions (default)">Direct</button>
-        <button class="header-btn mode-btn" onclick="switchInteractionMode('net')" id="mode-net" title="Show net effects through mediator chains">Net Effects</button>
-        <button class="header-btn mode-btn" onclick="switchInteractionMode('both')" id="mode-both" title="Show all interactions (may overlap)">Both</button>
-        <span id="view-mode-counter"></span>
-      </div>
+      <!-- Filter removed as requested -->
 
       <details class="config-details-inline">
         <summary class="header-btn config-summary-inline">Research Settings</summary>

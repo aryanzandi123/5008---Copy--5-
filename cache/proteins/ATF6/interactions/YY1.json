@@ -4,98 +4,93 @@
   "upstream_interactor": null,
   "mediator_chain": [],
   "depth": 1,
-  "support_summary": "The active, nuclear form of ATF6 physically interacts with the transcription factor YY1 to synergistically activate the expression of target genes containing the Endoplasmic Reticulum Stress Response Element (ERSE).",
+  "support_summary": "ATF6 has been shown to interact with Yin Yang 1 (YY1), which can enhance ATF6's transcriptional activity on ERSE-containing promoters.",
   "functions": [
     {
-      "function": "Transcriptional Co-activation",
+      "function": "ERSE-mediated Transcription",
       "arrow": "activates",
-      "cellular_process": "The active, nuclear form of ATF6 interacts with the transcription factor Yin Yang 1 (YY1), which is also bound to the ER Stress Response Element (ERSE) in the promoter of target genes.",
-      "effect_description": "This interaction enhances the transcriptional activation of ERSE-containing genes, such as GRP78/BiP, particularly under ER stress conditions.",
+      "cellular_process": "The multifunctional transcription factor Yin Yang 1 (YY1) physically interacts with the activated, nuclear form of ATF6. This interaction occurs on the promoters of ER stress-responsive genes that contain ERSE elements.",
+      "effect_description": "YY1 acts as a co-activator for ATF6, enhancing its ability to stimulate transcription from ERSE-containing promoters. This synergistic interaction potentiates the induction of UPR target genes, such as GRP78, in response to ER stress.",
       "biological_consequence": [
-        "Nuclear ATF6-N and YY1 co-occupy ER Stress Response Element (ERSE) motifs in target gene promoters → ATF6-N and YY1 form a transcriptional complex → Recruitment of transcriptional machinery (e.g., p300, PRMT1) is enhanced → UPR gene expression is synergistically activated → Alleviation of ER stress is accelerated."
+        "ER Stress → ATF6f translocates to nucleus → ATF6f/NF-Y complex forms on ERSE → YY1 is recruited and interacts with ATF6f → Synergistic enhancement of transcriptional machinery assembly → Amplified transcription of UPR target genes"
       ],
       "specific_effects": [
-        "YY1 enhances ATF6-mediated transcriptional activity in cells treated with the ER stressor thapsigargin.",
-        "Both ATF6 and YY1 show increased nuclear localization during ER stress."
+        "YY1 enhances the stimulatory activity of ATF6 in cells treated with ER stressors like thapsigargin.",
+        "YY1 is required for the optimal stress-induced activation of the GRP78 promoter.",
+        "The interaction is stress-dependent; YY1 only occupies the GRP78 promoter upon ER stress, a process partially mediated by the presence of nuclear ATF6."
       ],
       "evidence": [
         {
           "paper_title": "ATF6 as a Transcription Activator of the Endoplasmic Reticulum Stress Element: Thapsigargin Stress-Induced Changes and Synergistic Interactions with NF-Y and YY1",
-          "doi": "10.1128/mcb.20.14.5096-5106.2000",
-          "authors": "Li M, Baumeister P, Roy B, Phan T, Foti D, Luo S, Lee AS",
           "journal": "Molecular and Cellular Biology",
           "year": 2000,
-          "assay": "Co-immunoprecipitation",
-          "species": "human, mouse",
-          "relevant_quote": "we showed that YY1 interacts with ATF6 and in Tg-treated cells can enhance ATF6 activity.",
+          "relevant_quote": "In addition, we showed that YY1 interacts with ATF6 and in Tg-treated cells can enhance ATF6 activity.",
           "pmid": "10866666"
         },
         {
-          "paper_title": "Endoplasmic Reticulum Stress-responsive Transcription Factor ATF6α Directs Recruitment of the Mediator of RNA Polymerase II Transcription and Multiple Histone Acetyltransferase Complexes",
-          "doi": "10.1074/jbc.M112.369504",
-          "authors": "Sela D, Chen L, Martin-Brown S, Washburn MP, Florens L, Conaway JW, Conaway RC",
-          "journal": "The Journal of Biological Chemistry",
-          "year": 2012,
-          "assay": "Mass Spectrometry",
-          "species": "human",
-          "relevant_quote": "ATF6α functions at least in part by recruiting to the ER stress response enhancer elements of ER stress response genes a collection of RNA polymerase II coregulatory complexes...",
-          "pmid": "22577136"
+          "paper_title": "Endoplasmic reticulum stress induction of the Grp78/BiP promoter: activating mechanisms mediated by YY1 and its interactive chromatin modifiers",
+          "journal": "Molecular and Cellular Biology",
+          "year": 2005,
+          "relevant_quote": "Toward understanding the underlying mechanisms of these unique phenomena, we performed chromatin immunoprecipitation analyses, revealing that YY1 only occupies the Grp78 promoter upon ER stress and is mediated in part by the nuclear form of ATF6. We show that YY1 is an essential coactivator of ATF6 and uncover their specific interactive domains.",
+          "pmid": "15899857"
         }
       ],
-      "interaction_effect": "complex",
-      "direction": "main_to_primary",
-      "interaction_direction": "bidirectional",
       "pmids": [
         "10866666",
-        "22577136"
+        "15899857"
       ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
       "function_effect": "activation"
     }
   ],
+  "arrow": "complex",
+  "direction": "main_to_primary",
+  "intent": "regulation",
   "arrows": {
     "main_to_primary": [
       "activates"
     ]
   },
-  "arrow": "complex",
-  "direction": "bidirectional",
-  "intent": "regulation",
-  "mechanism": "The active, nuclear form of ATF6 interacts with the transcription factor Yin Yang 1 (YY1), which is also bound to the ER Stress Response Element (ERSE) in the promoter of target genes.",
-  "effect": "This interaction enhances the transcriptional activation of ERSE-containing genes, such as GRP78/BiP, particularly under ER stress conditions.",
-  "summary": "ATF6 activates YY1 to modulate transcriptional co-activation, ultimately affecting alleviation of er stress is accelerated.",
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "The multifunctional transcription factor Yin Yang 1 (YY1) physically interacts with the activated, nuclear form of ATF6. This interaction occurs on the promoters of ER stress-responsive genes that contain ERSE elements.",
+  "effect": "YY1 acts as a co-activator for ATF6, enhancing its ability to stimulate transcription from ERSE-containing promoters. This synergistic interaction potentiates the induction of UPR target genes, such as GRP78, in response to ER stress.",
+  "summary": "ATF6 activates YY1 to modulate erse-mediated transcription, ultimately affecting amplified transcription of upr target genes.",
   "evidence": [
     {
       "paper_title": "ATF6 as a Transcription Activator of the Endoplasmic Reticulum Stress Element: Thapsigargin Stress-Induced Changes and Synergistic Interactions with NF-Y and YY1",
-      "doi": "10.1128/mcb.20.14.5096-5106.2000",
-      "authors": "Li M, Baumeister P, Roy B, Phan T, Foti D, Luo S, Lee AS",
       "journal": "Molecular and Cellular Biology",
       "year": 2000,
-      "assay": "Co-immunoprecipitation",
-      "species": "human, mouse",
-      "relevant_quote": "we showed that YY1 interacts with ATF6 and in Tg-treated cells can enhance ATF6 activity."
+      "relevant_quote": "In addition, we showed that YY1 interacts with ATF6 and in Tg-treated cells can enhance ATF6 activity."
     },
     {
-      "paper_title": "Endoplasmic Reticulum Stress-responsive Transcription Factor ATF6α Directs Recruitment of the Mediator of RNA Polymerase II Transcription and Multiple Histone Acetyltransferase Complexes",
-      "doi": "10.1074/jbc.M112.369504",
-      "authors": "Sela D, Chen L, Martin-Brown S, Washburn MP, Florens L, Conaway JW, Conaway RC",
-      "journal": "The Journal of Biological Chemistry",
-      "year": 2012,
-      "assay": "Mass Spectrometry",
-      "species": "human",
-      "relevant_quote": "ATF6α functions at least in part by recruiting to the ER stress response enhancer elements of ER stress response genes a collection of RNA polymerase II coregulatory complexes..."
+      "paper_title": "Endoplasmic reticulum stress induction of the Grp78/BiP promoter: activating mechanisms mediated by YY1 and its interactive chromatin modifiers",
+      "journal": "Molecular and Cellular Biology",
+      "year": 2005,
+      "relevant_quote": "Toward understanding the underlying mechanisms of these unique phenomena, we performed chromatin immunoprecipitation analyses, revealing that YY1 only occupies the Grp78 promoter upon ER stress and is mediated in part by the nuclear form of ATF6. We show that YY1 is an essential coactivator of ATF6 and uncover their specific interactive domains."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "UPR Target Gene Transcription",
+      "canonical_name": "Unfolded Protein Response",
+      "ontology_id": "GO:0030968",
+      "ontology_source": "GO",
+      "confidence": 0.95
     }
   ],
   "interaction_effect": "complex formation",
   "_validation_metadata": {
     "validated": true,
     "validator": "arrow_effect_validator",
-    "corrections_applied": 3
+    "corrections_applied": 2
   },
   "_arrow_validated": true,
-  "arrow_notation": "ATF6 <--complex--> YY1:",
+  "arrow_notation": "ATF6 --complex--> YY1:",
   "protein_a": "ATF6",
   "protein_b": "YY1",
   "discovered_in_query": "ATF6",
-  "first_discovered": "2025-11-18T21:01:00.233142Z",
-  "last_updated": "2025-11-18T21:01:00.233142Z"
+  "first_discovered": "2025-11-29T12:52:16.030266Z",
+  "last_updated": "2025-11-29T12:52:16.030266Z"
 }

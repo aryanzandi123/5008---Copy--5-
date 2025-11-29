@@ -1,0 +1,93 @@
+{
+  "primary": "ATF6",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 2,
+  "support_summary": "The ratio of Bax to the anti-apoptotic protein Bcl-2 is increased by high expression of activated ATF6, promoting apoptosis.",
+  "functions": [
+    {
+      "function": "Transcriptional Downregulation",
+      "arrow": "activates",
+      "cellular_process": "During severe ER stress, high expression of the activated nuclear form of ATF6 (p50ATF6) leads to the transcriptional downregulation of the anti-apoptotic gene Bcl-2.",
+      "effect_description": "This repression of Bcl-2 transcription results in decreased Bcl-2 mRNA and protein levels. The reduction of the anti-apoptotic Bcl-2 protein, concurrent with the upregulation of pro-apoptotic proteins like Bax, significantly increases the Bax/Bcl-2 ratio, thereby lowering the threshold for initiating the mitochondrial apoptotic pathway.",
+      "biological_consequence": [
+        "Severe ER Stress → ATF6 activation and nuclear translocation → Transcriptional downregulation of Bcl-2 gene → Decreased Bcl-2 protein levels → Increased Bax/Bcl-2 ratio → Sensitization to mitochondrial apoptosis"
+      ],
+      "specific_effects": [
+        "Overexpression of active ATF6 downregulates both mRNA and protein levels of Bcl-2 in vascular endothelial cells under ER stress."
+      ],
+      "evidence": [
+        {
+          "paper_title": "High expression of active ATF6 aggravates endoplasmic reticulum stress-induced vascular endothelial cell apoptosis through the mitochondrial apoptotic pathway",
+          "journal": "Molecular Medicine Reports",
+          "year": 2018,
+          "relevant_quote": "High expression of active ATF6 down-regulated mRNA expression of Bcl-2 in ER stress... High expression of active ATF6... down regulated that of Bcl-2 in ER stress.",
+          "pmid": "29512699"
+        }
+      ],
+      "pmids": [
+        "29512699"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATF6",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "_chain_inferred": true,
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "During severe ER stress, high expression of the activated nuclear form of ATF6 (p50ATF6) leads to the transcriptional downregulation of the anti-apoptotic gene Bcl-2.",
+  "effect": "This repression of Bcl-2 transcription results in decreased Bcl-2 mRNA and protein levels. The reduction of the anti-apoptotic Bcl-2 protein, concurrent with the upregulation of pro-apoptotic proteins like Bax, significantly increases the Bax/Bcl-2 ratio, thereby lowering the threshold for initiating the mitochondrial apoptotic pathway.",
+  "summary": "ATF6 inhibits Bcl-2 to modulate transcriptional downregulation, ultimately affecting sensitization to mitochondrial apoptosis.",
+  "evidence": [
+    {
+      "paper_title": "High expression of active ATF6 aggravates endoplasmic reticulum stress-induced vascular endothelial cell apoptosis through the mitochondrial apoptotic pathway",
+      "journal": "Molecular Medicine Reports",
+      "year": 2018,
+      "relevant_quote": "High expression of active ATF6 down-regulated mRNA expression of Bcl-2 in ER stress... High expression of active ATF6... down regulated that of Bcl-2 in ER stress."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "ER Stress-Induced Apoptosis",
+      "canonical_name": "Apoptosis",
+      "ontology_id": "GO:0006915",
+      "ontology_source": "GO",
+      "confidence": 0.9
+    }
+  ],
+  "interaction_effect": "inhibition",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATF6 --inhibits--> Bcl-2:",
+  "protein_a": "Bcl-2",
+  "protein_b": "ATF6",
+  "discovered_in_query": "ATF6",
+  "first_discovered": "2025-11-29T12:52:16.065540Z",
+  "last_updated": "2025-11-29T12:52:16.065540Z"
+}

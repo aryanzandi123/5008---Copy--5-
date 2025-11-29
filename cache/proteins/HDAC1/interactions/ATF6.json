@@ -1,0 +1,94 @@
+{
+  "primary": "ATF6",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATF6(N) forms a complex with SREBP2(N) and recruits HDAC1, which leads to the inhibition of SREBP2-mediated transcriptional activation.",
+  "functions": [
+    {
+      "function": "SREBP2-mediated Transcription",
+      "arrow": "inhibits",
+      "cellular_process": "During endoplasmic reticulum (ER) stress, such as that induced by glucose deprivation, the activating transcription factor 6 (ATF6) is cleaved, and its N-terminal fragment (ATF6(N)) translocates to the nucleus. In the nucleus, ATF6(N) physically interacts with the nuclear form of Sterol Regulatory Element-Binding Protein 2 (SREBP2(N)), which is bound to the Sterol Regulatory Element (SRE) on the promoters of lipogenic genes.",
+      "effect_description": "The formation of the ATF6(N)-SREBP2(N) complex on DNA recruits Histone Deacetylase 1 (HDAC1). HDAC1 then deacetylates histones at these promoters, leading to a more condensed chromatin structure. This chromatin state represses the transcriptional activity of SREBP2, thereby downregulating the expression of genes involved in cholesterol and fatty acid biosynthesis.",
+      "biological_consequence": [
+        "ER Stress (e.g., glucose deprivation) → ATF6 cleavage and nuclear translocation (ATF6(N)) → ATF6(N) binds to SRE-bound SREBP2(N) via its leucine-zipper domain → The ATF6(N)-SREBP2(N) complex recruits HDAC1 → Histone deacetylation at lipogenic gene promoters → Attenuation of SREBP2-mediated transcription → Suppression of lipogenesis and cholesterol synthesis."
+      ],
+      "specific_effects": [
+        "ATF6(N) forms a protein-protein complex with SREBP2(N) that is already bound to DNA.",
+        "The recruitment of HDAC1 to the promoter is dependent on the presence of ATF6(N).",
+        "This mechanism serves to antagonize SREBP2's function, reducing the synthesis of lipids and cholesterol under conditions of ER stress."
+      ],
+      "evidence": [
+        {
+          "paper_title": "ATF6 modulates SREBP2-mediated lipogenesis",
+          "journal": "The EMBO Journal",
+          "year": 2004,
+          "relevant_quote": "Chromatin immunoprecipitation assays revealed that ATF6(N) formed a complex with the SRE-bound SREBP2(N). The attenuated transcriptional activity of SREBP2 was due, in part, to the recruitment of HDAC1 to the ATF6-SREBP2 complex. As a functional consequence, the lipogenic effect of SREBP2(N) in liver cells was suppressed by ATF6(N).",
+          "pmid": "14765107"
+        }
+      ],
+      "pmids": [
+        "14765107"
+      ],
+      "interaction_effect": "inhibits",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "inhibition",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "inhibits",
+        "net_from": "ATF6",
+        "net_arrow": "inhibits",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "inhibits",
+      "direct_arrow": "inhibits",
+      "net_effect": "inhibition",
+      "direct_effect": "inhibition"
+    }
+  ],
+  "arrow": "complex",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "During endoplasmic reticulum (ER) stress, such as that induced by glucose deprivation, the activating transcription factor 6 (ATF6) is cleaved, and its N-terminal fragment (ATF6(N)) translocates to the nucleus. In the nucleus, ATF6(N) physically interacts with the nuclear form of Sterol Regulatory Element-Binding Protein 2 (SREBP2(N)), which is bound to the Sterol Regulatory Element (SRE) on the promoters of lipogenic genes.",
+  "effect": "The formation of the ATF6(N)-SREBP2(N) complex on DNA recruits Histone Deacetylase 1 (HDAC1). HDAC1 then deacetylates histones at these promoters, leading to a more condensed chromatin structure. This chromatin state represses the transcriptional activity of SREBP2, thereby downregulating the expression of genes involved in cholesterol and fatty acid biosynthesis.",
+  "summary": "ATF6 inhibits HDAC1 to modulate srebp2-mediated transcription, ultimately affecting suppression of lipogenesis and cholesterol synthesis.",
+  "evidence": [
+    {
+      "paper_title": "ATF6 modulates SREBP2-mediated lipogenesis",
+      "journal": "The EMBO Journal",
+      "year": 2004,
+      "relevant_quote": "Chromatin immunoprecipitation assays revealed that ATF6(N) formed a complex with the SRE-bound SREBP2(N). The attenuated transcriptional activity of SREBP2 was due, in part, to the recruitment of HDAC1 to the ATF6-SREBP2 complex. As a functional consequence, the lipogenic effect of SREBP2(N) in liver cells was suppressed by ATF6(N)."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "Lipid Metabolism and SREBP Signaling",
+      "canonical_name": "Lipid Metabolism And Srebp Signaling",
+      "ontology_id": null,
+      "ontology_source": null,
+      "confidence": 0.8
+    }
+  ],
+  "interaction_effect": "complex formation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATF6 --complex--> HDAC1:",
+  "protein_a": "HDAC1",
+  "protein_b": "ATF6",
+  "discovered_in_query": "ATF6",
+  "first_discovered": "2025-11-29T12:52:16.079128Z",
+  "last_updated": "2025-11-29T12:52:16.079128Z"
+}

@@ -1,0 +1,93 @@
+{
+  "primary": "Bax",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 2,
+  "support_summary": "Activated ATF6 can upregulate the pro-apoptotic protein Bax as part of the mitochondrial apoptotic pathway.",
+  "functions": [
+    {
+      "function": "Transcriptional Upregulation",
+      "arrow": "activates",
+      "cellular_process": "Under conditions of severe ER stress, the activated nuclear form of ATF6 (p50ATF6) functions as a transcription factor to upregulate the expression of pro-apoptotic genes, including Bax.",
+      "effect_description": "This transcriptional activation leads to an increase in both Bax mRNA and protein levels. The elevated Bax protein contributes to an increased Bax/Bcl-2 ratio, which promotes mitochondrial outer membrane permeabilization, cytochrome c release, and activation of the intrinsic (mitochondrial) pathway of apoptosis.",
+      "biological_consequence": [
+        "Severe ER Stress → ATF6 activation and nuclear translocation → Transcriptional upregulation of Bax gene → Increased Bax protein levels → Increased Bax/Bcl-2 ratio → Mitochondrial outer membrane permeabilization → Cytochrome c release → Apoptosis"
+      ],
+      "specific_effects": [
+        "High expression of active ATF6 upregulates both mRNA and protein levels of Bax in vascular endothelial cells subjected to ER stress."
+      ],
+      "evidence": [
+        {
+          "paper_title": "High expression of active ATF6 aggravates endoplasmic reticulum stress-induced vascular endothelial cell apoptosis through the mitochondrial apoptotic pathway",
+          "journal": "Molecular Medicine Reports",
+          "year": 2018,
+          "relevant_quote": "High expression of active ATF6 up-regulated mRNA expression of... Bax in ER stress... High expression of active ATF6 up-regulated protein levels of... Bax... in ER stress.",
+          "pmid": "29512699"
+        }
+      ],
+      "pmids": [
+        "29512699"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATF6",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "_chain_inferred": true,
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Under conditions of severe ER stress, the activated nuclear form of ATF6 (p50ATF6) functions as a transcription factor to upregulate the expression of pro-apoptotic genes, including Bax.",
+  "effect": "This transcriptional activation leads to an increase in both Bax mRNA and protein levels. The elevated Bax protein contributes to an increased Bax/Bcl-2 ratio, which promotes mitochondrial outer membrane permeabilization, cytochrome c release, and activation of the intrinsic (mitochondrial) pathway of apoptosis.",
+  "summary": "ATF6 activates Bax to modulate transcriptional upregulation, ultimately affecting apoptosis.",
+  "evidence": [
+    {
+      "paper_title": "High expression of active ATF6 aggravates endoplasmic reticulum stress-induced vascular endothelial cell apoptosis through the mitochondrial apoptotic pathway",
+      "journal": "Molecular Medicine Reports",
+      "year": 2018,
+      "relevant_quote": "High expression of active ATF6 up-regulated mRNA expression of... Bax in ER stress... High expression of active ATF6 up-regulated protein levels of... Bax... in ER stress."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "ER Stress-Induced Apoptosis",
+      "canonical_name": "Apoptosis",
+      "ontology_id": "GO:0006915",
+      "ontology_source": "GO",
+      "confidence": 0.9
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATF6 --activates--> Bax:",
+  "protein_a": "ATF6",
+  "protein_b": "Bax",
+  "discovered_in_query": "ATF6",
+  "first_discovered": "2025-11-29T12:52:16.063684Z",
+  "last_updated": "2025-11-29T12:52:16.063684Z"
+}

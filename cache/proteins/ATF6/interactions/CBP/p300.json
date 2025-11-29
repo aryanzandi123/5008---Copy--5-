@@ -1,0 +1,81 @@
+{
+  "primary": "CBP/p300",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "The histone acetyltransferases CREB-binding protein (CBP) and p300 are recruited by ATF6α to ERSEs to activate transcription of stress response genes.",
+  "functions": [
+    {
+      "function": "ERSE-mediated Transcription",
+      "arrow": "activates",
+      "cellular_process": "Following ER stress-induced cleavage, the N-terminal fragment of ATF6α translocates to the nucleus and binds to ER stress response elements (ERSEs) in the promoters of UPR target genes. The activated ATF6α then recruits the histone acetyltransferases CREB-binding protein (CBP) and p300.",
+      "effect_description": "The recruitment of CBP/p300 leads to the acetylation of histones at the promoter regions of ATF6 target genes. This epigenetic modification results in chromatin remodeling, making the DNA more accessible for transcription and thereby activating the expression of genes involved in protein folding and ER quality control.",
+      "biological_consequence": [
+        "ER stress → ATF6α cleavage and nuclear translocation → Binding of nuclear ATF6α to ERSEs → Recruitment of CBP/p300 coactivators → Acetylation of histones (e.g., H3K27ac) → Chromatin remodeling → Transcriptional activation of UPR target genes"
+      ],
+      "specific_effects": [
+        "CBP/p300 catalyze the acetylation of histone tails.",
+        "The recruitment of CBP/p300 by ATF6α enhances the assembly of the transcriptional machinery at UPR gene promoters."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Endoplasmic Reticulum Stress-responsive Transcription Factor ATF6α Directs Recruitment of the Mediator of RNA Polymerase II Transcription and Multiple Histone Acetyltransferase Complexes",
+          "journal": "Journal of Biological Chemistry",
+          "year": 2012,
+          "relevant_quote": "GST fusion proteins containing the ATF6α transcription activation domain can interact with Mediator, Pol II, and each of the various HAT complexes recruited by ATF6α to the HSPA5 promoter in the experiments in Figs. 1 and 2, as well as with p300, which has been shown previously to be recruited to the HSPA5 ERSEs in response to ER stress.",
+          "pmid": "22577136"
+        }
+      ],
+      "pmids": [
+        "22577136"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Following ER stress-induced cleavage, the N-terminal fragment of ATF6α translocates to the nucleus and binds to ER stress response elements (ERSEs) in the promoters of UPR target genes. The activated ATF6α then recruits the histone acetyltransferases CREB-binding protein (CBP) and p300.",
+  "effect": "The recruitment of CBP/p300 leads to the acetylation of histones at the promoter regions of ATF6 target genes. This epigenetic modification results in chromatin remodeling, making the DNA more accessible for transcription and thereby activating the expression of genes involved in protein folding and ER quality control.",
+  "summary": "ATF6 activates CBP/p300 to modulate erse-mediated transcription, ultimately affecting transcriptional activation of upr target genes.",
+  "evidence": [
+    {
+      "paper_title": "Endoplasmic Reticulum Stress-responsive Transcription Factor ATF6α Directs Recruitment of the Mediator of RNA Polymerase II Transcription and Multiple Histone Acetyltransferase Complexes",
+      "journal": "Journal of Biological Chemistry",
+      "year": 2012,
+      "relevant_quote": "GST fusion proteins containing the ATF6α transcription activation domain can interact with Mediator, Pol II, and each of the various HAT complexes recruited by ATF6α to the HSPA5 promoter in the experiments in Figs. 1 and 2, as well as with p300, which has been shown previously to be recruited to the HSPA5 ERSEs in response to ER stress."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "UPR Target Gene Transcription",
+      "canonical_name": "Unfolded Protein Response",
+      "ontology_id": "GO:0030968",
+      "ontology_source": "GO",
+      "confidence": 0.95
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATF6 --activates--> CBP/p300:",
+  "protein_a": "ATF6",
+  "protein_b": "CBP/p300",
+  "discovered_in_query": "ATF6",
+  "first_discovered": "2025-11-29T12:52:16.077023Z",
+  "last_updated": "2025-11-29T12:52:16.077023Z"
+}

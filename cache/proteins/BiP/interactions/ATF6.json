@@ -1,43 +1,35 @@
 {
   "primary": "ATF6",
-  "direction": "main_to_primary",
-  "arrow": "inhibits",
-  "intent": "sequestration",
-  "support_summary": "In unstressed cells, the ER chaperone BiP (also known as GRP78/HSPA5) binds to the luminal domain of ATF6, sequestering it in the endoplasmic reticulum and preventing its activation.",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATF6 is activated upon dissociation from BiP (also known as GRP78) in the endoplasmic reticulum under stress conditions. This dissociation is a key step in ATF6 activation.",
   "functions": [
     {
-      "function": "ATF6 Sequestration",
+      "function": "ATF6 Sequestration and Inactivation",
       "arrow": "activates",
-      "cellular_process": "In the absence of ER stress, BiP (HSPA5) binds to the luminal domain of ATF6, masking its Golgi localization signals and preventing its transport to the Golgi apparatus.",
-      "effect_description": "BiP binding sequesters ATF6 in the endoplasmic reticulum, preventing its transport to the Golgi and subsequent proteolytic activation.",
+      "cellular_process": "Under basal, non-stress conditions, the ER-resident chaperone BiP (also known as GRP78 or HSPA5) directly binds to the luminal domain of the ATF6 protein. This interaction masks two Golgi Localization Signals (GLSs) present in the ATF6 luminal domain.",
+      "effect_description": "By masking the GLSs, BiP actively retains the unprocessed, full-length ATF6 protein within the endoplasmic reticulum, preventing its translocation to the Golgi apparatus. This sequestration maintains ATF6 in an inactive state.",
       "biological_consequence": [
-        "BiP (HSPA5) binds to the ATF6 luminal domain in non-stressed cells → Golgi localization signals are masked → ATF6 is retained in the Endoplasmic Reticulum → Prevention of transport to the Golgi apparatus → ATF6 remains inactive and UPR pathway is suppressed"
+        "BiP binds to ATF6 luminal domain in the ER → Golgi Localization Signals (GLSs) on ATF6 are masked → ATF6 is retained in the ER → Transport to the Golgi for proteolytic activation is blocked → The ATF6 branch of the Unfolded Protein Response (UPR) remains inactive."
       ],
       "specific_effects": [
         "Prevents ATF6 trafficking from the ER to the Golgi.",
-        "Maintains ATF6 in an inactive state.",
-        "Masks Golgi localization signals within the ATF6 luminal domain."
+        "Maintains ATF6 as an inert, full-length transmembrane protein under homeostatic conditions."
       ],
       "evidence": [
         {
           "paper_title": "ER stress regulation of ATF6 localization by dissociation of BiP/GRP78 binding and unmasking of Golgi localization signals",
-          "doi": "10.1016/s1534-5807(02)00203-4",
-          "authors": "J Shen, E L Snapp, J Lippincott-Schwartz, R Prywes",
           "journal": "Developmental Cell",
           "year": 2002,
-          "assay": "Co-immunoprecipitation, Microscopy",
-          "species": "hamster",
           "relevant_quote": "These results suggest that BiP retains ATF6 in the ER by inhibiting its GLSs and that dissociation of BiP during ER stress allows ATF6 to be transported to the Golgi.",
           "pmid": "12110171"
         },
         {
-          "paper_title": "Stable binding of ATF6 to BiP in the endoplasmic reticulum stress response",
-          "doi": "10.1091/mbc.e05-04-0313",
-          "authors": "Jingshi Shen, Erik L Snapp, Jennifer Lippincott-Schwartz, Ron Prywes",
-          "journal": "Molecular Biology of the Cell",
+          "paper_title": "Stable Binding of ATF6 to BiP in the Endoplasmic Reticulum Stress Response",
+          "journal": "Molecular and Cellular Biology",
           "year": 2005,
-          "assay": "Co-immunoprecipitation, FRAP",
-          "species": "human",
           "relevant_quote": "In unstressed cells, BiP binds to the lumenal domain (LD) of ATF6 and blocks its intrinsic Golgi apparatus localization signals, thereby sequestering ATF6 in the ER.",
           "pmid": "15657421"
         }
@@ -49,54 +41,104 @@
       "interaction_effect": "activates",
       "interaction_direction": "primary_to_main",
       "function_effect": "activation"
+    },
+    {
+      "function": "ER Chaperone Gene Transcription",
+      "arrow": "activates",
+      "cellular_process": "Following ER stress, BiP dissociates from ATF6, allowing ATF6 to traffic to the Golgi where it is cleaved by S1P and S2P. The liberated N-terminal fragment of ATF6 (ATF6f) translocates to the nucleus and functions as a transcription factor.",
+      "effect_description": "Nuclear ATF6f binds to cis-acting ER Stress Response Elements (ERSEs) located in the promoter region of target genes, including the HSPA5 gene which encodes BiP. This binding recruits the transcriptional machinery to activate gene expression.",
+      "biological_consequence": [
+        "ER stress → BiP dissociates from ATF6 → ATF6 traffics to Golgi and is cleaved → Active ATF6(N) fragment translocates to the nucleus → ATF6(N) binds to ERSEs in the HSPA5 (BiP) gene promoter → Transcriptional activation of HSPA5 → Increased synthesis of BiP protein → Enhanced ER protein folding capacity and negative feedback on UPR sensors."
+      ],
+      "specific_effects": [
+        "Directly increases the transcription of the HSPA5 gene.",
+        "Forms part of a homeostatic feedback loop to restore ER function and attenuate the UPR."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Endoplasmic Reticulum Stress-responsive Transcription Factor ATF6α Directs Recruitment of the Mediator of RNA Polymerase II Transcription and Multiple Histone Acetyltransferase Complexes",
+          "journal": "The Journal of Biological Chemistry",
+          "year": 2012,
+          "relevant_quote": "ATF6α activates transcription of ER stress response genes by binding sequence specifically to its binding sites in the ERSEs of their promoters. The promoter of the HSPA5 gene contains three ERSEs located ∼60 bp upstream of the transcription start site.",
+          "pmid": "22577136"
+        },
+        {
+          "paper_title": "HSPA5 Gene Encoding Hsp70 Chaperone BiP in the Endoplasmic Reticulum",
+          "journal": "Journal of Cellular Physiology",
+          "year": 2017,
+          "relevant_quote": "As a UPR target gene product, BiP is upregulated when UPR transcription factors associate with the UPR element in BiP's DNA promoter region.",
+          "pmid": "28286085"
+        }
+      ],
+      "pmids": [
+        "22577136",
+        "28286085"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
     }
   ],
-  "mechanism": "In the absence of ER stress, BiP (HSPA5) binds to the luminal domain of ATF6, masking its Golgi localization signals and preventing its transport to the Golgi apparatus.",
-  "effect": "BiP binding sequesters ATF6 in the endoplasmic reticulum, preventing its transport to the Golgi and subsequent proteolytic activation.",
-  "summary": "ATF6 inhibits BiP to modulate atf6 sequestration, ultimately affecting atf6 remains inactive and upr pathway is suppressed.",
+  "arrow": "regulates",
+  "direction": "bidirectional",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates",
+      "inhibits"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Under basal, non-stress conditions, the ER-resident chaperone BiP (also known as GRP78 or HSPA5) directly binds to the luminal domain of the ATF6 protein. This interaction masks two Golgi Localization Signals (GLSs) present in the ATF6 luminal domain. Following ER stress, BiP dissociates from ATF6, allowing ATF6 to traffic to the Golgi where it is cleaved by S1P and S2P. The liberated N-terminal fragment of ATF6 (ATF6f) translocates to the nucleus and functions as a transcription factor.",
+  "effect": "By masking the GLSs, BiP actively retains the unprocessed, full-length ATF6 protein within the endoplasmic reticulum, preventing its translocation to the Golgi apparatus. This sequestration maintains ATF6 in an inactive state.; Nuclear ATF6f binds to cis-acting ER Stress Response Elements (ERSEs) located in the promoter region of target genes, including the HSPA5 gene which encodes BiP. This binding recruits the transcriptional machinery to activate gene expression.",
+  "summary": "ATF6 regulates BiP to regulate atf6 sequestration and inactivation and er chaperone gene transcription, ultimately affecting the atf6 branch of the unfolded protein response (upr) remains inactive.",
   "evidence": [
     {
       "paper_title": "ER stress regulation of ATF6 localization by dissociation of BiP/GRP78 binding and unmasking of Golgi localization signals",
-      "doi": "10.1016/s1534-5807(02)00203-4",
-      "authors": "J Shen, E L Snapp, J Lippincott-Schwartz, R Prywes",
       "journal": "Developmental Cell",
       "year": 2002,
-      "assay": "Co-immunoprecipitation, Microscopy",
-      "species": "hamster",
       "relevant_quote": "These results suggest that BiP retains ATF6 in the ER by inhibiting its GLSs and that dissociation of BiP during ER stress allows ATF6 to be transported to the Golgi."
     },
     {
-      "paper_title": "Stable binding of ATF6 to BiP in the endoplasmic reticulum stress response",
-      "doi": "10.1091/mbc.e05-04-0313",
-      "authors": "Jingshi Shen, Erik L Snapp, Jennifer Lippincott-Schwartz, Ron Prywes",
-      "journal": "Molecular Biology of the Cell",
+      "paper_title": "Stable Binding of ATF6 to BiP in the Endoplasmic Reticulum Stress Response",
+      "journal": "Molecular and Cellular Biology",
       "year": 2005,
-      "assay": "Co-immunoprecipitation, FRAP",
-      "species": "human",
       "relevant_quote": "In unstressed cells, BiP binds to the lumenal domain (LD) of ATF6 and blocks its intrinsic Golgi apparatus localization signals, thereby sequestering ATF6 in the ER."
     },
     {
-      "paper_title": "Mechanism, regulation and functions of the unfolded protein response",
-      "doi": "10.1038/s41580-020-0250-z",
-      "authors": "Claudio Hetz, Ke Zhang, Ron J Kaufman",
-      "journal": "Nature Reviews Molecular Cell Biology",
-      "year": 2020,
-      "assay": "Review",
-      "species": "general",
-      "relevant_quote": "Under non-stress conditions, the ER chaperone BiP binds to the luminal domains of IRE1α and PERK, and maintains them in an inactive, monomeric state. BiP also associates with ATF6..."
+      "paper_title": "Endoplasmic Reticulum Stress-responsive Transcription Factor ATF6α Directs Recruitment of the Mediator of RNA Polymerase II Transcription and Multiple Histone Acetyltransferase Complexes",
+      "journal": "The Journal of Biological Chemistry",
+      "year": 2012,
+      "relevant_quote": "ATF6α activates transcription of ER stress response genes by binding sequence specifically to its binding sites in the ERSEs of their promoters. The promoter of the HSPA5 gene contains three ERSEs located ∼60 bp upstream of the transcription start site."
+    },
+    {
+      "paper_title": "HSPA5 Gene Encoding Hsp70 Chaperone BiP in the Endoplasmic Reticulum",
+      "journal": "Journal of Cellular Physiology",
+      "year": 2017,
+      "relevant_quote": "As a UPR target gene product, BiP is upregulated when UPR transcription factors associate with the UPR element in BiP's DNA promoter region."
     }
   ],
-  "interaction_effect": "inhibition",
+  "pathways": [
+    {
+      "name": "Unfolded Protein Response (UPR) Activation",
+      "canonical_name": "Unfolded Protein Response",
+      "ontology_id": "GO:0030968",
+      "ontology_source": "GO",
+      "confidence": 0.95
+    }
+  ],
+  "interaction_effect": "regulation",
   "_validation_metadata": {
     "validated": true,
     "validator": "arrow_effect_validator",
-    "corrections_applied": 1
+    "corrections_applied": 3
   },
   "_arrow_validated": true,
-  "arrow_notation": "ATF6 <--inhibits-- BiP:",
+  "arrow_notation": "ATF6 <--regulates--> BiP:",
   "protein_a": "BiP",
   "protein_b": "ATF6",
   "discovered_in_query": "ATF6",
-  "first_discovered": "2025-11-18T21:01:00.224736Z",
-  "last_updated": "2025-11-18T21:01:00.224736Z"
+  "first_discovered": "2025-11-29T12:52:16.020924Z",
+  "last_updated": "2025-11-29T12:52:16.020924Z"
 }

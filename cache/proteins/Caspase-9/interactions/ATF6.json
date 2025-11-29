@@ -1,0 +1,108 @@
+{
+  "primary": "ATF6",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 2,
+  "support_summary": "ATF6 activation upregulates Caspase-9, a key initiator caspase in the mitochondrial pathway of apoptosis.",
+  "functions": [
+    {
+      "function": "Apoptosis",
+      "arrow": "activates",
+      "cellular_process": "Under conditions of prolonged or severe endoplasmic reticulum (ER) stress, the transcription factor ATF6 is activated. The active N-terminal fragment of ATF6 translocates to the nucleus and upregulates the expression of pro-apoptotic genes. This process enhances the mitochondrial pathway of apoptosis, leading to the release of cytochrome c from the mitochondria into the cytoplasm. Cytochrome c then binds to Apaf-1, forming the apoptosome, which recruits and activates the initiator caspase, pro-caspase-9.",
+      "effect_description": "The activation of Caspase-9 through proteolytic cleavage initiates a downstream caspase cascade, amplifying the apoptotic signal. Activated Caspase-9 directly cleaves and activates executioner caspases, such as Caspase-3, leading to programmed cell death.",
+      "biological_consequence": [
+        "ER Stress → ATF6 cleavage and nuclear translocation → Transcriptional upregulation of pro-apoptotic factors → Mitochondrial outer membrane permeabilization → Cytochrome c release → Apoptosome formation (Apaf-1, Cytochrome c) → Pro-caspase-9 cleavage and activation → Executioner caspase activation"
+      ],
+      "specific_effects": [
+        "High expression of the active form of ATF6 upregulates the expression of Caspase-9 at both the mRNA and protein levels.",
+        "Overexpression of active ATF6 increases the levels of cleaved (active) Caspase-9 in cells undergoing ER stress."
+      ],
+      "evidence": [
+        {
+          "paper_title": "High expression of active ATF6 aggravates endoplasmic reticulum stress-induced vascular endothelial cell apoptosis through the mitochondrial apoptotic pathway",
+          "journal": "Molecular Medicine Reports",
+          "year": 2018,
+          "relevant_quote": "The results demonstrated that high expression of activated ATF6 aggravates ER stress-induced VEC apoptosis through the mitochondrial apoptotic pathway. Furthermore, in response to ER stress, ATF6 upregulates the expression of caspase-3, caspase-9, CHOP, cytochrome c and Bax/Bcl-2.",
+          "pmid": "29512699"
+        },
+        {
+          "paper_title": "Endoplasmic reticulum stress signaling transmitted by ATF6 mediates apoptosis during muscle development",
+          "journal": "The Journal of Cell Biology",
+          "year": 2005,
+          "relevant_quote": "In the ER stress-specific cascade, caspase-12 activates caspase-9, which then catalyzes cleavage of procaspase-3... Consistent with this finding, we detected considerable activation of caspase-9 and -3 as well as cleavage of vimentin by caspase-9 in apoptotic C2C12 cells cultured in DM.",
+          "pmid": "15897261"
+        }
+      ],
+      "pmids": [
+        "29512699",
+        "15897261"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATF6",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "_chain_inferred": true,
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Under conditions of prolonged or severe endoplasmic reticulum (ER) stress, the transcription factor ATF6 is activated. The active N-terminal fragment of ATF6 translocates to the nucleus and upregulates the expression of pro-apoptotic genes. This process enhances the mitochondrial pathway of apoptosis, leading to the release of cytochrome c from the mitochondria into the cytoplasm. Cytochrome c then binds to Apaf-1, forming the apoptosome, which recruits and activates the initiator caspase, pro-caspase-9.",
+  "effect": "The activation of Caspase-9 through proteolytic cleavage initiates a downstream caspase cascade, amplifying the apoptotic signal. Activated Caspase-9 directly cleaves and activates executioner caspases, such as Caspase-3, leading to programmed cell death.",
+  "summary": "ATF6 activates Caspase-9 to modulate apoptosis, ultimately affecting executioner caspase activation.",
+  "evidence": [
+    {
+      "paper_title": "High expression of active ATF6 aggravates endoplasmic reticulum stress-induced vascular endothelial cell apoptosis through the mitochondrial apoptotic pathway",
+      "journal": "Molecular Medicine Reports",
+      "year": 2018,
+      "relevant_quote": "The results demonstrated that high expression of activated ATF6 aggravates ER stress-induced VEC apoptosis through the mitochondrial apoptotic pathway. Furthermore, in response to ER stress, ATF6 upregulates the expression of caspase-3, caspase-9, CHOP, cytochrome c and Bax/Bcl-2."
+    },
+    {
+      "paper_title": "Endoplasmic reticulum stress signaling transmitted by ATF6 mediates apoptosis during muscle development",
+      "journal": "The Journal of Cell Biology",
+      "year": 2005,
+      "relevant_quote": "In the ER stress-specific cascade, caspase-12 activates caspase-9, which then catalyzes cleavage of procaspase-3... Consistent with this finding, we detected considerable activation of caspase-9 and -3 as well as cleavage of vimentin by caspase-9 in apoptotic C2C12 cells cultured in DM."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "ER Stress-Induced Apoptosis",
+      "canonical_name": "Apoptosis",
+      "ontology_id": "GO:0006915",
+      "ontology_source": "GO",
+      "confidence": 0.9
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATF6 --activates--> Caspase-9:",
+  "protein_a": "Caspase-9",
+  "protein_b": "ATF6",
+  "discovered_in_query": "ATF6",
+  "first_discovered": "2025-11-29T12:52:16.067752Z",
+  "last_updated": "2025-11-29T12:52:16.067752Z"
+}

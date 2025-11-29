@@ -1,0 +1,95 @@
+{
+  "primary": "ATF6",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 2,
+  "support_summary": "Activated ATF6 induces the promoter of the gene encoding sarco/endoplasmic reticulum calcium ATPase-2 (SERCA2b) to increase its protein levels, helping to restore ER calcium homeostasis.",
+  "functions": [
+    {
+      "function": "Transcriptional Upregulation of SERCA2b",
+      "arrow": "activates",
+      "cellular_process": "Under conditions of ER stress, such as the depletion of ER calcium stores, the full-length ATF6 protein is processed, and its N-terminal fragment (nATF6) translocates to the nucleus. In the nucleus, nATF6 functions as a transcription factor to upregulate genes that help restore ER homeostasis.",
+      "effect_description": "Activated nATF6 directly binds to an ER stress-response element (ERSE) located in the promoter region of the ATP2A2 gene, which encodes the SERCA2b protein. This binding enhances the transcription of the SERCA2b gene, leading to increased synthesis of the SERCA2b protein, a calcium pump that actively transports Ca2+ from the cytosol back into the ER lumen, thereby helping to restore ER calcium levels.",
+      "biological_consequence": [
+        "ER calcium depletion or other ER stress → ATF6 is cleaved by S1P/S2P proteases in the Golgi → The active N-terminal fragment of ATF6 (nATF6) translocates to the nucleus → nATF6 binds to the ERSE element in the SERCA2b promoter → Transcriptional activation of the SERCA2b gene → Increased synthesis of SERCA2b protein → Enhanced Ca2+ pumping into the ER → Restoration of ER calcium homeostasis."
+      ],
+      "specific_effects": [
+        "Constitutively activated ATF6 leads to the activation of the SERCA2 promoter.",
+        "Depletion of ER calcium with agents like thapsigargin induces the translocation of ATF6 to the nucleus and activates the SERCA2 promoter.",
+        "Mutation of the promoter-proximal ERSE in the SERCA2 gene abolishes the induction by activated ATF6."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Sarco/endoplasmic reticulum calcium ATPase-2 expression is regulated by ATF6 during the endoplasmic reticulum stress response: intracellular signaling of calcium stress in a cardiac myocyte model system",
+          "journal": "The Journal of Biological Chemistry",
+          "year": 2001,
+          "relevant_quote": "Depletion of SR calcium in cultured cardiac myocytes fostered the translocation of ATF6 from the ER to the nucleus, activated the promoter for rat SERCA2, and led to increased levels of SERCA2 protein. SERCA2 promoter induction by calcium depletion was partially blocked by dominant-negative ATF6, whereas constitutively activated ATF6 led to SERCA2 promoter activation. Mutation analyses identified a promoter-proximal ER stress-response element in the rat SERCA2 gene that was required for maximal induction by ATF6 and calcium depletion.",
+          "pmid": "11595740"
+        }
+      ],
+      "pmids": [
+        "11595740"
+      ],
+      "interaction_effect": "activation",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATF6",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "_chain_inferred": true,
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Under conditions of ER stress, such as the depletion of ER calcium stores, the full-length ATF6 protein is processed, and its N-terminal fragment (nATF6) translocates to the nucleus. In the nucleus, nATF6 functions as a transcription factor to upregulate genes that help restore ER homeostasis.",
+  "effect": "Activated nATF6 directly binds to an ER stress-response element (ERSE) located in the promoter region of the ATP2A2 gene, which encodes the SERCA2b protein. This binding enhances the transcription of the SERCA2b gene, leading to increased synthesis of the SERCA2b protein, a calcium pump that actively transports Ca2+ from the cytosol back into the ER lumen, thereby helping to restore ER calcium levels.",
+  "summary": "ATF6 activates SERCA2b to modulate transcriptional upregulation of serca2b, ultimately affecting restoration of er calcium homeostasis.",
+  "evidence": [
+    {
+      "paper_title": "Sarco/endoplasmic reticulum calcium ATPase-2 expression is regulated by ATF6 during the endoplasmic reticulum stress response: intracellular signaling of calcium stress in a cardiac myocyte model system",
+      "journal": "The Journal of Biological Chemistry",
+      "year": 2001,
+      "relevant_quote": "Depletion of SR calcium in cultured cardiac myocytes fostered the translocation of ATF6 from the ER to the nucleus, activated the promoter for rat SERCA2, and led to increased levels of SERCA2 protein. SERCA2 promoter induction by calcium depletion was partially blocked by dominant-negative ATF6, whereas constitutively activated ATF6 led to SERCA2 promoter activation. Mutation analyses identified a promoter-proximal ER stress-response element in the rat SERCA2 gene that was required for maximal induction by ATF6 and calcium depletion."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "UPR Target Gene Transcription",
+      "canonical_name": "Unfolded Protein Response",
+      "ontology_id": "GO:0030968",
+      "ontology_source": "GO",
+      "confidence": 0.95
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATF6 --activates--> SERCA2b:",
+  "protein_a": "SERCA2b",
+  "protein_b": "ATF6",
+  "discovered_in_query": "ATF6",
+  "first_discovered": "2025-11-29T12:52:16.108775Z",
+  "last_updated": "2025-11-29T12:52:16.108775Z"
+}

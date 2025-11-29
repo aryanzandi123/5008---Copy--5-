@@ -1,0 +1,93 @@
+{
+  "primary": "IL-6",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 2,
+  "support_summary": "In the context of inflammatory conditions like rheumatoid arthritis, ATF6 can induce the expression and secretion of inflammatory cytokines, including IL-6.",
+  "functions": [
+    {
+      "function": "IL-6 Transcription",
+      "arrow": "activates",
+      "cellular_process": "In the context of ER stress and inflammation, particularly in macrophages, the activated N-terminal fragment of ATF6 (ATF6f) translocates to the nucleus. There, it functions as a transcription factor that directly binds to the promoter region of the pro-inflammatory cytokine Interleukin-6 (IL-6).",
+      "effect_description": "This direct binding by ATF6f activates the transcription of the IL-6 gene, leading to increased synthesis and secretion of IL-6. This mechanism links the cellular ER stress response directly to the innate immune and inflammatory responses.",
+      "biological_consequence": [
+        "ER Stress in macrophages → ATF6 activation and cleavage in the Golgi → Translocation of ATF6f to the nucleus → ATF6f directly binds to the IL-6 gene promoter → Increased transcription of IL-6 mRNA → Enhanced synthesis and secretion of IL-6 protein → Pro-inflammatory signaling"
+      ],
+      "specific_effects": [
+        "ATF6 directly binds to the IL-6 promoter to promote its expression and secretion from macrophages."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Molecular mechanism of ATF6 in unfolded protein response and its role in disease",
+          "journal": "Heliyon",
+          "year": 2024,
+          "relevant_quote": "ATF6 is involved in macrophage activation and also binds directly to the IL-6 and TNF-α promoters to promote macrophage secretion of IL-6 and TNF-α.",
+          "pmid": "38434326"
+        }
+      ],
+      "pmids": [
+        "38434326"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATF6",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "_chain_inferred": true,
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "In the context of ER stress and inflammation, particularly in macrophages, the activated N-terminal fragment of ATF6 (ATF6f) translocates to the nucleus. There, it functions as a transcription factor that directly binds to the promoter region of the pro-inflammatory cytokine Interleukin-6 (IL-6).",
+  "effect": "This direct binding by ATF6f activates the transcription of the IL-6 gene, leading to increased synthesis and secretion of IL-6. This mechanism links the cellular ER stress response directly to the innate immune and inflammatory responses.",
+  "summary": "ATF6 activates IL-6 to modulate il-6 transcription, ultimately affecting pro-inflammatory signaling.",
+  "evidence": [
+    {
+      "paper_title": "Molecular mechanism of ATF6 in unfolded protein response and its role in disease",
+      "journal": "Heliyon",
+      "year": 2024,
+      "relevant_quote": "ATF6 is involved in macrophage activation and also binds directly to the IL-6 and TNF-α promoters to promote macrophage secretion of IL-6 and TNF-α."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "NF-κB and Inflammatory Signaling",
+      "canonical_name": "Nf-Κb And Inflammatory Signaling",
+      "ontology_id": null,
+      "ontology_source": null,
+      "confidence": 0.8
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATF6 --activates--> IL-6:",
+  "protein_a": "ATF6",
+  "protein_b": "IL-6",
+  "discovered_in_query": "ATF6",
+  "first_discovered": "2025-11-29T12:52:16.116237Z",
+  "last_updated": "2025-11-29T12:52:16.116237Z"
+}

@@ -4,69 +4,77 @@
   "upstream_interactor": null,
   "mediator_chain": [],
   "depth": 1,
-  "support_summary": "ATF6 directly interacts with Serum Response Factor (SRF), a transcription factor that regulates immediate-early genes, suggesting a link between the ER stress response and other cellular signaling pathways.",
+  "support_summary": "Serum Response Factor (SRF) is listed as an interacting protein with ATF6 in protein-protein interaction databases.",
   "functions": [
     {
-      "function": "Transcriptional Co-activation",
+      "function": "Serum-Inducible Gene Transcription",
       "arrow": "activates",
-      "cellular_process": "ATF6 interacts with the transcriptional activation domain of Serum Response Factor (SRF).",
-      "effect_description": "This interaction modulates SRF-mediated transcription of immediate-early genes, such as c-fos, linking the ER stress response to cellular growth and proliferation signals.",
+      "cellular_process": "ATF6 interacts with the transcriptional activation domain of Serum Response Factor (SRF), a key regulator of immediate-early genes.",
+      "effect_description": "This interaction suggests ATF6 is involved in the activation of transcription by SRF, linking the ER stress response to pathways controlling cell growth and proliferation.",
       "biological_consequence": [
-        "Serum stimulation activates signaling pathways → ATF6 interacts with the Serum Response Factor (SRF) activation domain → The ATF6-SRF complex binds to the Serum Response Element (SRE) in promoters → Transcription of immediate-early genes (e.g., c-fos) is co-activated → Cellular growth and proliferation are regulated."
+        "ATF6-SRF interaction → Modulation of SRF target genes (e.g., c-fos) → Crosstalk between UPR and serum response pathways"
       ],
       "specific_effects": [
-        "ATF6 was isolated in a yeast two-hybrid screen as an SRF-interacting protein.",
-        "Antisense ATF6 constructs reduce the serum induction of an SRF-dependent c-fos reporter gene.",
-        "The binding of ATF6 to SRF was detected in vitro."
+        "Antisense ATF6 was shown to reduce the serum induction of a c-fos reporter gene."
       ],
       "evidence": [
         {
           "paper_title": "Interaction of ATF6 and serum response factor",
-          "doi": "10.1128/mcb.17.9.4957",
-          "authors": "Zhu C, Johansen FE, Prywes R",
-          "journal": "Molecular and Cellular Biology",
           "year": 1997,
-          "assay": "Yeast two-hybrid",
-          "species": "human",
-          "relevant_quote": "ATF6, a basic-leucine zipper protein, was isolated by binding to SRF and in particular to its transcriptional activation domain.",
           "pmid": "9271374"
         }
       ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
       "interaction_effect": "activates",
       "direction": "main_to_primary",
       "interaction_direction": "main_to_primary",
       "pmids": [
         "9271374"
-      ]
+      ],
+      "function_effect": "activation"
     }
   ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
   "arrows": {
     "main_to_primary": [
       "activates"
     ]
   },
-  "arrow": "activates",
-  "direction": "main_to_primary",
-  "intent": "regulation",
-  "mechanism": "ATF6 interacts with the transcriptional activation domain of Serum Response Factor (SRF).",
-  "effect": "This interaction modulates SRF-mediated transcription of immediate-early genes, such as c-fos, linking the ER stress response to cellular growth and proliferation signals.",
-  "summary": "ATF6 activates SRF to modulate transcriptional co-activation, ultimately affecting cellular growth and proliferation are regulated.",
+  "mechanism": "ATF6 interacts with the transcriptional activation domain of Serum Response Factor (SRF), a key regulator of immediate-early genes.",
+  "effect": "This interaction suggests ATF6 is involved in the activation of transcription by SRF, linking the ER stress response to pathways controlling cell growth and proliferation.",
+  "summary": "ATF6 activates SRF to modulate serum-inducible gene transcription, ultimately affecting crosstalk between upr and serum response pathways.",
   "evidence": [
     {
       "paper_title": "Interaction of ATF6 and serum response factor",
-      "doi": "10.1128/mcb.17.9.4957",
-      "authors": "Zhu C, Johansen FE, Prywes R",
-      "journal": "Molecular and Cellular Biology",
-      "year": 1997,
-      "assay": "Yeast two-hybrid",
-      "species": "human",
-      "relevant_quote": "ATF6, a basic-leucine zipper protein, was isolated by binding to SRF and in particular to its transcriptional activation domain."
+      "year": 1997
     }
   ],
+  "pathways": [
+    {
+      "name": "Transcriptional Co-regulation and Cross-talk",
+      "canonical_name": "Transcription",
+      "ontology_id": "GO:0006351",
+      "ontology_source": "GO",
+      "confidence": 0.7
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 0
+  },
+  "_arrow_validated": true,
   "arrow_notation": "ATF6 --activates--> SRF:",
   "protein_a": "ATF6",
   "protein_b": "SRF",
   "discovered_in_query": "ATF6",
-  "first_discovered": "2025-11-18T21:01:00.235458Z",
-  "last_updated": "2025-11-18T21:01:00.235458Z"
+  "first_discovered": "2025-11-29T12:52:16.031921Z",
+  "last_updated": "2025-11-29T12:52:16.031921Z"
 }

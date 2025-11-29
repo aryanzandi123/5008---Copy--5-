@@ -1,0 +1,101 @@
+{
+  "primary": "ATF6",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 2,
+  "support_summary": "Under prolonged or severe ER stress, the UPR, including the ATF6 branch, can shift towards a pro-apoptotic response, which involves the regulation of BH3-only proteins like NOXA (PMAIP1).",
+  "functions": [
+    {
+      "function": "Apoptosis",
+      "arrow": "activates",
+      "cellular_process": "Under prolonged or severe ER stress, the PERK branch of the UPR is activated. PERK phosphorylates eIF2α, which paradoxically promotes the translation of the transcription factor ATF4. ATF4 then translocates to the nucleus and binds to the promoter of pro-apoptotic genes, including NOXA, to induce their expression.",
+      "effect_description": "Upregulation of NOXA, a BH3-only protein, leads to the neutralization of anti-apoptotic Bcl-2 family members like Mcl-1. This releases pro-apoptotic proteins such as Bax and Bak, which then oligomerize at the mitochondrial outer membrane, leading to mitochondrial outer membrane permeabilization (MOMP), cytochrome c release, and subsequent caspase activation.",
+      "biological_consequence": [
+        "Prolonged ER Stress → PERK activation → eIF2α phosphorylation (Ser51) → Increased ATF4 translation → ATF4 nuclear translocation → ATF4 binds to NOXA promoter → NOXA (PMAIP1) transcription → NOXA protein inhibits Mcl-1 → Mitochondrial-mediated apoptosis"
+      ],
+      "specific_effects": [
+        "ATF4 is required for the transcriptional induction of NOXA in response to ER stress inducers like tunicamycin and thapsigargin.",
+        "Knockdown of NOXA can rescue cells from ER stress-induced apoptosis, highlighting its critical role downstream of the UPR.",
+        "The transcription factors ATF3 and ATF4 can form a complex on the NOXA promoter to drive its expression in response to cellular stress."
+      ],
+      "evidence": [
+        {
+          "paper_title": "ATF4-mediated expression of NOXA is critical for Necroptosis driven by Glucose Deprivation",
+          "journal": "bioRxiv",
+          "year": 2023,
+          "relevant_quote": "We also demonstrated that the upregulation of Noxa induced by GD is mediated by ATF4, a key transcription factor. These results provide insights into the regulatory mechanisms underlying Noxa dynamics during GD treatment and highlights its potential as a therapeutic target in cancer therapy and necroptosis-related diseases.",
+          "pmid": "40809836"
+        }
+      ],
+      "pmids": [
+        "40809836"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATF6",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "_chain_inferred": true,
+  "is_valid": true,
+  "mechanism_correction": "Contextual Error: The input incorrectly attributes the transcriptional activation of NOXA (PMAIP1) primarily to the ATF6 branch of the Unfolded Protein Response (UPR). Extensive literature indicates that under ER stress, NOXA is transcriptionally upregulated predominantly by the PERK-eIF2α-ATF4 signaling axis. While ATF6 is involved in the broader UPR-induced apoptotic program, ATF4 is the key transcription factor that directly binds the NOXA promoter to induce its expression.",
+  "mechanism": "Under prolonged or severe ER stress, the PERK branch of the UPR is activated. PERK phosphorylates eIF2α, which paradoxically promotes the translation of the transcription factor ATF4. ATF4 then translocates to the nucleus and binds to the promoter of pro-apoptotic genes, including NOXA, to induce their expression.",
+  "effect": "Upregulation of NOXA, a BH3-only protein, leads to the neutralization of anti-apoptotic Bcl-2 family members like Mcl-1. This releases pro-apoptotic proteins such as Bax and Bak, which then oligomerize at the mitochondrial outer membrane, leading to mitochondrial outer membrane permeabilization (MOMP), cytochrome c release, and subsequent caspase activation.",
+  "summary": "ATF6 activates NOXA to modulate apoptosis, ultimately affecting mitochondrial-mediated apoptosis.",
+  "evidence": [
+    {
+      "paper_title": "ATF4-mediated expression of NOXA is critical for Necroptosis driven by Glucose Deprivation",
+      "journal": "bioRxiv",
+      "year": 2023,
+      "relevant_quote": "We also demonstrated that the upregulation of Noxa induced by GD is mediated by ATF4, a key transcription factor. These results provide insights into the regulatory mechanisms underlying Noxa dynamics during GD treatment and highlights its potential as a therapeutic target in cancer therapy and necroptosis-related diseases."
+    },
+    {
+      "paper_title": "The Unfolded Protein Response: A Key Player in Apoptosis",
+      "journal": "Biochimica et Biophysica Acta (BBA) - Molecular Cell Research",
+      "year": 2013,
+      "relevant_quote": "Under severe or chronic ER stress, PERK-dependent ATF4 translation is increased, which in turn induces the expression of the pro-apoptotic transcription factor CHOP and BH3-only proteins such as Noxa and Puma, thereby promoting apoptosis."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "ER Stress-Induced Apoptosis",
+      "canonical_name": "Apoptosis",
+      "ontology_id": "GO:0006915",
+      "ontology_source": "GO",
+      "confidence": 0.9
+    }
+  ],
+  "interaction_effect": "regulates",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATF6 --regulates--> NOXA:",
+  "protein_a": "NOXA",
+  "protein_b": "ATF6",
+  "discovered_in_query": "ATF6",
+  "first_discovered": "2025-11-29T12:52:16.118563Z",
+  "last_updated": "2025-11-29T12:52:16.118563Z"
+}

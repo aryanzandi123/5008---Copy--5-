@@ -1,0 +1,93 @@
+{
+  "primary": "ATF6",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATF6 is involved in the crosstalk between the UPR and NF-kB signaling pathways. The five NF-kB subunits, including p65 (RELA), are considered converging transcription factors with UPR components like ATF6.",
+  "functions": [
+    {
+      "function": "NF-κB Signaling",
+      "arrow": "activates",
+      "cellular_process": "There is significant crosstalk between the Unfolded Protein Response (UPR) and NF-κB-mediated inflammatory signaling. The activation of the ATF6 branch of the UPR, for instance by the cleavage of the chaperone GRP78/BiP, can lead to the phosphorylation of the serine/threonine kinase Akt.",
+      "effect_description": "Phosphorylated Akt acts as an upstream kinase that contributes to the activation of the canonical NF-κB pathway. This signaling cascade culminates in the activation of NF-κB transcription factors, including the p65 (RELA) subunit, which then translocate to the nucleus to promote the expression of pro-inflammatory genes. This links ER stress to an inflammatory response.",
+      "biological_consequence": [
+        "ER Stress → GRP78/BiP cleavage → ATF6 activation → ATF6-dependent phosphorylation of Akt → Downstream activation of the IKK complex → Phosphorylation and degradation of IκB → Nuclear translocation of p65/RELA-containing NF-κB dimers → Pro-inflammatory gene expression."
+      ],
+      "specific_effects": [
+        "ATF6 activation contributes to NF-κB activation indirectly, through the Akt signaling pathway.",
+        "This mechanism provides a link between ER stress and the cellular inflammatory response."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Activation of the Akt-NF-kappaB pathway by subtilase cytotoxin through the ATF6 branch of the unfolded protein response",
+          "journal": "The Journal of Immunology",
+          "year": 2009,
+          "relevant_quote": "In contrast, genetic and pharmacological inhibition of ATF6 significantly suppressed SubAB-triggered Akt phosphorylation and NF-kappaB activation. These results suggested that loss of GRP78 by SubAB leads to transient phosphorylation of Akt and consequent activation of NF-kappaB through the ATF6 branch of the UPR.",
+          "pmid": "19561103"
+        }
+      ],
+      "pmids": [
+        "19561103"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATF6",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The input claim of direct activation is not well-supported. The literature points to an indirect activation mechanism. ATF6 activation, as part of the Unfolded Protein Response (UPR), leads to the phosphorylation of Akt, which in turn contributes to the activation of the NF-κB pathway, involving p65/RELA.",
+  "mechanism": "There is significant crosstalk between the Unfolded Protein Response (UPR) and NF-κB-mediated inflammatory signaling. The activation of the ATF6 branch of the UPR, for instance by the cleavage of the chaperone GRP78/BiP, can lead to the phosphorylation of the serine/threonine kinase Akt.",
+  "effect": "Phosphorylated Akt acts as an upstream kinase that contributes to the activation of the canonical NF-κB pathway. This signaling cascade culminates in the activation of NF-κB transcription factors, including the p65 (RELA) subunit, which then translocate to the nucleus to promote the expression of pro-inflammatory genes. This links ER stress to an inflammatory response.",
+  "summary": "ATF6 activates p65 (RELA) to modulate nf-κb signaling, ultimately affecting pro-inflammatory gene expression.",
+  "evidence": [
+    {
+      "paper_title": "Activation of the Akt-NF-kappaB pathway by subtilase cytotoxin through the ATF6 branch of the unfolded protein response",
+      "journal": "The Journal of Immunology",
+      "year": 2009,
+      "relevant_quote": "In contrast, genetic and pharmacological inhibition of ATF6 significantly suppressed SubAB-triggered Akt phosphorylation and NF-kappaB activation. These results suggested that loss of GRP78 by SubAB leads to transient phosphorylation of Akt and consequent activation of NF-kappaB through the ATF6 branch of the UPR."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "NF-κB and Inflammatory Signaling",
+      "canonical_name": "Nf-Κb And Inflammatory Signaling",
+      "ontology_id": null,
+      "ontology_source": null,
+      "confidence": 0.8
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATF6 --activates--> p65 (RELA):",
+  "protein_a": "p65 (RELA)",
+  "protein_b": "ATF6",
+  "discovered_in_query": "ATF6",
+  "first_discovered": "2025-11-29T12:52:16.080996Z",
+  "last_updated": "2025-11-29T12:52:16.080996Z"
+}

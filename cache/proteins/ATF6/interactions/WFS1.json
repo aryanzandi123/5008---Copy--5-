@@ -1,96 +1,98 @@
 {
   "primary": "WFS1",
   "interaction_type": "indirect",
-  "upstream_interactor": null,
-  "mediator_chain": [],
-  "depth": 2,
-  "support_summary": "The transcription of Wolfram syndrome 1 (WFS1) protein, which is involved in maintaining ER homeostasis and promoting cell survival, is directly upregulated by the active form of the ATF6β isoform. WFS1 can in turn negatively regulate the ATF6α pathway, forming a feedback loop.",
+  "upstream_interactor": "HRD1",
+  "mediator_chain": [
+    "HRD1"
+  ],
+  "depth": 3,
+  "support_summary": "Wolframin (WFS1) provides feedback inhibition on ATF6 signaling by recruiting the HRD1 E3 ligase to target full-length ATF6 for proteasomal degradation.",
   "functions": [
     {
-      "function": "WFS1 Gene Transcription",
+      "function": "ATF6 Degradation",
       "arrow": "activates",
-      "cellular_process": "The active form of ATF6β, but not ATF6α, specifically binds to the promoter of the Wolfram syndrome 1 (WFS1) gene to induce its transcription. This upregulation is crucial for protecting cells like pancreatic β-cells from ER stress-induced apoptosis.",
-      "effect_description": "The transcription of the ER homeostasis and pro-survival protein WFS1 is activated, specifically by the ATF6β isoform.",
+      "cellular_process": "Wolframin (WFS1) acts as a negative regulator of the ATF6α signaling pathway by forming a complex with and stabilizing the E3 ubiquitin ligase HRD1. This WFS1-HRD1 complex then targets the full-length, inactive form of ATF6α for ubiquitination and subsequent degradation by the proteasome.",
+      "effect_description": "This interaction establishes a negative feedback loop that attenuates the Unfolded Protein Response (UPR) by reducing the available pool of ATF6α, thereby preventing its hyperactivation and suppressing the transcription of its target genes.",
       "biological_consequence": [
-        "ER stress → ATF6β cleavage & activation → Nuclear nATF6β binds WFS1 promoter → WFS1 gene transcription → Enhanced ER homeostasis & cell survival",
-        "ATF6β-mediated WFS1 transcription → WFS1 protein expression → WFS1 promotes proteasomal degradation of ATF6α → Attenuation of ATF6α signaling"
+        "WFS1 expression → Stabilization of HRD1 E3 ligase → Recruitment of full-length ATF6α to the WFS1-HRD1 complex → Ubiquitination of ATF6α → Proteasomal degradation of ATF6α → Attenuation of UPR signaling"
       ],
       "specific_effects": [
-        "ATF6β, but not ATF6α, binds the Wfs1 promoter.",
-        "Induction of WFS1 by ATF6β contributes to a pro-survival role during chronic ER stress.",
-        "WFS1 negatively regulates the ATF6α branch of the UPR."
+        "WFS1 stabilizes the HRD1 protein.",
+        "WFS1 facilitates the interaction between HRD1 and full-length ATF6α.",
+        "Loss of WFS1 leads to an accumulation of ATF6α and dysregulated ER stress signaling."
       ],
       "evidence": [
         {
-          "paper_title": "ATF6β Regulates the Wfs1 Gene and Has a Cell Survival Role in the ER Stress Response in Pancreatic β-cells",
-          "doi": "10.1016/j.yexcr.2014.10.007",
-          "authors": "C Nie, S-A Lee, A Volchuk",
-          "journal": "Experimental Cell Research",
-          "year": 2015,
-          "assay": "Microarray, Promoter Assay, ChIP",
-          "species": "rat",
-          "relevant_quote": "ATF6β, but not ATF6α, is able to bind the Wfs1 promoter and induce Wfs1 gene and protein expression.",
-          "pmid": "25447309"
-        },
-        {
-          "paper_title": "Novel WFS1 variants are associated with different diabetes phenotypes",
-          "doi": "10.3389/fgene.2024.1433060",
-          "authors": "Ying-Ying Gong, Yu-Ting Chen, et al.",
-          "journal": "Frontiers in Genetics",
-          "year": 2024,
-          "assay": "Review",
-          "species": "human",
-          "relevant_quote": "WFS1, a component of the UPR, negatively regulates the ER stress signaling network by recruiting ATF6α to HRD1, which leads to the degradation of ATF6α and suppression of the UPR.",
-          "pmid": "39221226"
+          "paper_title": "Wolfram syndrome 1 gene negatively regulates ER stress signaling in rodent and human cells",
+          "journal": "Journal of Clinical Investigation",
+          "year": 2010,
+          "relevant_quote": "Moreover, WFS1 stabilized the E3 ubiquitin ligase HRD1, brought ATF6alpha to the proteasome, and enhanced its ubiquitination and proteasome-mediated degradation, leading to suppression of ER stress signaling.",
+          "pmid": "20160352"
         }
       ],
-      "interaction_effect": "activates",
-      "direction": "main_to_primary",
-      "interaction_direction": "main_to_primary",
       "pmids": [
-        "25447309",
-        "39221226"
-      ]
+        "20160352"
+      ],
+      "direct_arrow": "activates",
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "HRD1",
+        "direct_arrow": "activates",
+        "net_from": "ATF6",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "HRD1"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
     }
   ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
   "arrows": {
     "main_to_primary": [
       "activates"
     ]
   },
-  "arrow": "activates",
-  "direction": "main_to_primary",
-  "_chain_inferred": true,
-  "intent": "regulation",
-  "mechanism": "The active form of ATF6β, but not ATF6α, specifically binds to the promoter of the Wolfram syndrome 1 (WFS1) gene to induce its transcription. This upregulation is crucial for protecting cells like pancreatic β-cells from ER stress-induced apoptosis.",
-  "effect": "The transcription of the ER homeostasis and pro-survival protein WFS1 is activated, specifically by the ATF6β isoform.",
-  "summary": "ATF6 activates WFS1 to modulate wfs1 gene transcription, ultimately affecting enhanced er homeostasis & cell survival.",
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Wolframin (WFS1) acts as a negative regulator of the ATF6α signaling pathway by forming a complex with and stabilizing the E3 ubiquitin ligase HRD1. This WFS1-HRD1 complex then targets the full-length, inactive form of ATF6α for ubiquitination and subsequent degradation by the proteasome.",
+  "effect": "This interaction establishes a negative feedback loop that attenuates the Unfolded Protein Response (UPR) by reducing the available pool of ATF6α, thereby preventing its hyperactivation and suppressing the transcription of its target genes.",
+  "summary": "ATF6 inhibits WFS1 to modulate atf6 degradation, ultimately affecting attenuation of upr signaling.",
   "evidence": [
     {
-      "paper_title": "ATF6β Regulates the Wfs1 Gene and Has a Cell Survival Role in the ER Stress Response in Pancreatic β-cells",
-      "doi": "10.1016/j.yexcr.2014.10.007",
-      "authors": "C Nie, S-A Lee, A Volchuk",
-      "journal": "Experimental Cell Research",
-      "year": 2015,
-      "assay": "Microarray, Promoter Assay, ChIP",
-      "species": "rat",
-      "relevant_quote": "ATF6β, but not ATF6α, is able to bind the Wfs1 promoter and induce Wfs1 gene and protein expression."
-    },
-    {
-      "paper_title": "Novel WFS1 variants are associated with different diabetes phenotypes",
-      "doi": "10.3389/fgene.2024.1433060",
-      "authors": "Ying-Ying Gong, Yu-Ting Chen, et al.",
-      "journal": "Frontiers in Genetics",
-      "year": 2024,
-      "assay": "Review",
-      "species": "human",
-      "relevant_quote": "WFS1, a component of the UPR, negatively regulates the ER stress signaling network by recruiting ATF6α to HRD1, which leads to the degradation of ATF6α and suppression of the UPR."
+      "paper_title": "Wolfram syndrome 1 gene negatively regulates ER stress signaling in rodent and human cells",
+      "journal": "Journal of Clinical Investigation",
+      "year": 2010,
+      "relevant_quote": "Moreover, WFS1 stabilized the E3 ubiquitin ligase HRD1, brought ATF6alpha to the proteasome, and enhanced its ubiquitination and proteasome-mediated degradation, leading to suppression of ER stress signaling."
     }
   ],
-  "arrow_notation": "ATF6 --activates--> WFS1:",
+  "pathways": [
+    {
+      "name": "ER-Associated Degradation (ERAD) and ATF6 Stability",
+      "canonical_name": "ER-Associated Degradation",
+      "ontology_id": "GO:0036503",
+      "ontology_source": "GO",
+      "confidence": 0.85
+    }
+  ],
+  "interaction_effect": "inhibition",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "HRD1 <--inhibits-- WFS1:",
   "protein_a": "ATF6",
   "protein_b": "WFS1",
   "discovered_in_query": "ATF6",
-  "first_discovered": "2025-11-18T21:01:00.290080Z",
-  "last_updated": "2025-11-18T21:01:00.290080Z"
+  "first_discovered": "2025-11-29T12:52:16.073552Z",
+  "last_updated": "2025-11-29T12:52:16.073552Z"
 }

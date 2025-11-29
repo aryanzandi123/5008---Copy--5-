@@ -1,0 +1,111 @@
+{
+  "primary": "Caspase-3",
+  "interaction_type": "indirect",
+  "upstream_interactor": "Caspase-9",
+  "mediator_chain": [
+    "Caspase-9"
+  ],
+  "depth": 3,
+  "support_summary": "As a downstream effector of the mitochondrial pathway, the executioner Caspase-3 is upregulated by activated ATF6.",
+  "functions": [
+    {
+      "function": "Apoptosis",
+      "arrow": "activates",
+      "cellular_process": "The activation of Caspase-3 is a downstream event in ATF6-mediated apoptosis. Activated ATF6 promotes apoptosis through two converging pathways: the ER-specific pathway involving Caspase-12 and the mitochondrial pathway. Both pathways culminate in the activation of the initiator Caspase-9. Activated Caspase-9 then directly cleaves pro-caspase-3, converting it into its active form, the primary executioner caspase.",
+      "effect_description": "Activated Caspase-3 is responsible for the execution phase of apoptosis. It cleaves a multitude of cellular substrates, including structural proteins and DNA repair enzymes (like PARP), leading to the characteristic morphological and biochemical changes of apoptotic cells, such as cell shrinkage, membrane blebbing, and DNA fragmentation.",
+      "biological_consequence": [
+        "ATF6 activation → Caspase-9 activation (via mitochondrial pathway) AND/OR Caspase-12 activation (ER pathway) → Caspase-12-mediated Caspase-9 activation → Cleavage of pro-caspase-3 by active Caspase-9 → Active Caspase-3 formation → Cleavage of cellular substrates → Apoptosis execution"
+      ],
+      "specific_effects": [
+        "High expression of active ATF6 significantly increases the protein levels of cleaved Caspase-3.",
+        "The activation of Caspase-3 is a downstream consequence of the ATF6-initiated caspase cascade that includes Caspase-12 and Caspase-9."
+      ],
+      "evidence": [
+        {
+          "paper_title": "High expression of active ATF6 aggravates endoplasmic reticulum stress-induced vascular endothelial cell apoptosis through the mitochondrial apoptotic pathway",
+          "journal": "Molecular Medicine Reports",
+          "year": 2018,
+          "relevant_quote": "In ATF6 (1-366aa) + TG group where active ATF6 was over-expressed, the protein levels of cleaved caspase-3, caspase-4, caspase-9, caspase-12, and PARP were significantly higher than those in TG only and ATF6 (151-366aa) + TG groups (P<0.01).",
+          "pmid": "29512699"
+        },
+        {
+          "paper_title": "Activating Transcription Factor-6 (ATF6) Mediates Apoptosis with Reduction of Myeloid Cell Leukemia Sequence 1 (Mcl-1) Protein via Induction of WW Domain Binding Protein 1",
+          "journal": "Journal of Biological Chemistry",
+          "year": 2011,
+          "relevant_quote": "Caspases-12, -9, and -3 were specifically activated in the apoptotic cells (Fig. 2B).",
+          "pmid": "21841196"
+        }
+      ],
+      "pmids": [
+        "29512699",
+        "21841196"
+      ],
+      "direct_arrow": "activates",
+      "interaction_effect": "activation",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "Caspase-9",
+        "direct_arrow": "activates",
+        "net_from": "ATF6",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "Caspase-9"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "The activation of Caspase-3 is a downstream event in ATF6-mediated apoptosis. Activated ATF6 promotes apoptosis through two converging pathways: the ER-specific pathway involving Caspase-12 and the mitochondrial pathway. Both pathways culminate in the activation of the initiator Caspase-9. Activated Caspase-9 then directly cleaves pro-caspase-3, converting it into its active form, the primary executioner caspase.",
+  "effect": "Activated Caspase-3 is responsible for the execution phase of apoptosis. It cleaves a multitude of cellular substrates, including structural proteins and DNA repair enzymes (like PARP), leading to the characteristic morphological and biochemical changes of apoptotic cells, such as cell shrinkage, membrane blebbing, and DNA fragmentation.",
+  "summary": "ATF6 activates Caspase-3 to modulate apoptosis, ultimately affecting apoptosis execution.",
+  "evidence": [
+    {
+      "paper_title": "High expression of active ATF6 aggravates endoplasmic reticulum stress-induced vascular endothelial cell apoptosis through the mitochondrial apoptotic pathway",
+      "journal": "Molecular Medicine Reports",
+      "year": 2018,
+      "relevant_quote": "In ATF6 (1-366aa) + TG group where active ATF6 was over-expressed, the protein levels of cleaved caspase-3, caspase-4, caspase-9, caspase-12, and PARP were significantly higher than those in TG only and ATF6 (151-366aa) + TG groups (P<0.01)."
+    },
+    {
+      "paper_title": "Activating Transcription Factor-6 (ATF6) Mediates Apoptosis with Reduction of Myeloid Cell Leukemia Sequence 1 (Mcl-1) Protein via Induction of WW Domain Binding Protein 1",
+      "journal": "Journal of Biological Chemistry",
+      "year": 2011,
+      "relevant_quote": "Caspases-12, -9, and -3 were specifically activated in the apoptotic cells (Fig. 2B)."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "ER Stress-Induced Apoptosis",
+      "canonical_name": "Apoptosis",
+      "ontology_id": "GO:0006915",
+      "ontology_source": "GO",
+      "confidence": 0.9
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "Caspase-9 --activates--> Caspase-3:",
+  "protein_a": "ATF6",
+  "protein_b": "Caspase-3",
+  "discovered_in_query": "ATF6",
+  "first_discovered": "2025-11-29T12:52:16.069777Z",
+  "last_updated": "2025-11-29T12:52:16.069777Z"
+}

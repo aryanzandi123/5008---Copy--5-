@@ -1,112 +1,105 @@
 {
   "primary": "CHOP",
-  "interaction_type": "indirect",
+  "interaction_type": "direct",
+  "upstream_interactor": "ATF4",
+  "mediator_chain": [
+    "ATF4"
+  ],
   "depth": 2,
-  "support_summary": "The active nuclear form of ATF6 (p50) directly binds to the promoter of the pro-apoptotic transcription factor CHOP (DDIT3) to induce its transcription. This provides a direct link between the ATF6 branch of the UPR and the induction of apoptosis under prolonged ER stress.",
+  "support_summary": "ATF6 can induce the transcription of CHOP (GADD153), a key factor in ER stress-induced apoptosis, by binding to an ERSE in its promoter region.",
   "functions": [
     {
-      "function": "CHOP Gene Transcription",
+      "function": "CHOP (DDIT3) Transcription",
       "arrow": "activates",
-      "cellular_process": "The proteolytically cleaved, active nuclear form of ATF6 (p50) directly binds to an ER Stress Response Element (ERSE) within the promoter region of the CHOP (DDIT3) gene.",
-      "effect_description": "Binding of active ATF6 to the CHOP promoter induces the transcription of this key pro-apoptotic factor, linking the ATF6-mediated UPR to apoptosis.",
+      "cellular_process": "Upon ER stress, ATF6 is cleaved in the Golgi, releasing its N-terminal cytoplasmic domain (ATF6(N)). This active fragment translocates to the nucleus. There, it forms a complex with the transcription factor NF-Y (also known as CBF), which is constitutively bound to the CCAAT box of the ER Stress Response Element (ERSE) in the CHOP (DDIT3) gene promoter. The binding of ATF6(N) to the CCACG motif, adjacent to the NF-Y binding site, is stabilized by NF-Y, leading to potent transcriptional activation of CHOP.",
+      "effect_description": "This interaction directly induces the transcription of the DDIT3 gene, leading to increased synthesis of the pro-apoptotic transcription factor CHOP. This is a key event in the switch from an adaptive to a pro-apoptotic unfolded protein response (UPR) under conditions of severe or prolonged ER stress.",
       "biological_consequence": [
-        "ER stress triggers proteolytic cleavage of ATF6 in the Golgi → The active ATF6(p50) fragment translocates to the nucleus → ATF6(p50) binds to the ERSE element in the CHOP promoter → Transcriptional activation of the CHOP (DDIT3) gene is induced",
-        "Increased CHOP protein expression → CHOP forms heterodimers with other bZIP transcription factors → Pro-apoptotic genes are upregulated and anti-apoptotic genes are repressed → ER stress-induced apoptosis is initiated"
+        "ER Stress → ATF6 cleavage in Golgi → Nuclear translocation of active ATF6(N) → ATF6(N) and NF-Y form a complex on the CHOP promoter ERSE → Transcriptional induction of DDIT3 gene → Increased CHOP protein expression → Apoptosis"
       ],
       "specific_effects": [
-        "ATF6 directly binds the ERSE (CCAAT-N9-CCACG) in the CHOP promoter.",
+        "ATF6 directly binds to the ERSE present in the CHOP promoter.",
+        "The binding of ATF6 to the CCACG motif of the ERSE is dependent on the presence of NF-Y bound to the adjacent CCAAT box.",
         "ATF6 is a critical determinant of the early dynamics of CHOP induction during the UPR."
       ],
       "evidence": [
         {
           "paper_title": "ATF6 Activated by Proteolysis Binds in the Presence of NF-Y (CBF) Directly to the cis-Acting Element Responsible for the Mammalian Unfolded Protein Response",
-          "doi": "10.1128/mcb.20.18.6755-6767.2000",
-          "authors": "Hiderou Yoshida, Tetsuya Okada, Kyosuke Haze, Hideki Yanagi, Takashi Yura, Manabu Negishi, Kazutoshi Mori",
           "journal": "Molecular and Cellular Biology",
           "year": 2000,
-          "assay": "EMSA",
-          "species": "mammalian",
           "relevant_quote": "We thus concluded that ATF6 activated by ER stress-induced proteolysis stimulates transcription not only of ER chaperone genes but also of the genes encoding transcription factors XBP-1 and CHOP by direct binding to ERSE present in their promoter regions.",
           "pmid": "10958673"
         },
         {
           "paper_title": "ATF6 Is a Critical Determinant of CHOP Dynamics during the Unfolded Protein Response",
-          "doi": "10.1016/j.isci.2020.100860",
-          "authors": "Huan Yang, Marije Niemeijer, Bob van de Water, Joost B. Beltman",
-          "journal": "iScience",
+          "journal": "Cell Reports",
           "year": 2020,
-          "assay": "Western Blot, RNA-seq, Modeling",
-          "species": "human",
-          "relevant_quote": "Our calibrated model suggested that ATF6 shapes the early dynamics of pro-apoptotic CHOP. We confirmed this hypothesis by measurements beyond 24 h, by perturbing single siRNA knockdowns and by ATF6 measurements.",
+          "relevant_quote": "Our calibrated model suggested that ATF6 shapes the early dynamics of pro-apoptotic CHOP. We confirmed this hypothesis by measurements beyond 24 h, by perturbing single siRNA knockdowns and by ATF6 measurements. Overall, our work indicates that ATF6 is an important regulator of CHOP, which in turn regulates cell fate decisions.",
           "pmid": "32058971"
         }
       ],
-      "interaction_effect": "activates",
-      "direction": "main_to_primary",
-      "interaction_direction": "main_to_primary",
       "pmids": [
         "10958673",
         "32058971"
       ],
-      "function_effect": "activation",
-      "arrow_context": {
-        "direct_from": null,
-        "direct_arrow": "activates",
-        "net_from": "ATF6",
-        "net_arrow": "activates",
-        "mediator_chain": [],
-        "is_indirect": true
-      },
-      "net_arrow": "activates",
-      "direct_arrow": "activates",
-      "net_effect": "activation",
-      "direct_effect": "activation"
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
     }
   ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
   "arrows": {
     "main_to_primary": [
       "activates"
     ]
   },
-  "arrow": "activates",
-  "direction": "main_to_primary",
-  "intent": "regulation",
-  "mechanism": "The proteolytically cleaved, active nuclear form of ATF6 (p50) directly binds to an ER Stress Response Element (ERSE) within the promoter region of the CHOP (DDIT3) gene.",
-  "effect": "Binding of active ATF6 to the CHOP promoter induces the transcription of this key pro-apoptotic factor, linking the ATF6-mediated UPR to apoptosis.",
-  "summary": "ATF6 activates CHOP to modulate chop gene transcription, ultimately affecting transcriptional activation of the chop (ddit3) gene is induced.",
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Upon ER stress, ATF6 is cleaved in the Golgi, releasing its N-terminal cytoplasmic domain (ATF6(N)). This active fragment translocates to the nucleus. There, it forms a complex with the transcription factor NF-Y (also known as CBF), which is constitutively bound to the CCAAT box of the ER Stress Response Element (ERSE) in the CHOP (DDIT3) gene promoter. The binding of ATF6(N) to the CCACG motif, adjacent to the NF-Y binding site, is stabilized by NF-Y, leading to potent transcriptional activation of CHOP.",
+  "effect": "This interaction directly induces the transcription of the DDIT3 gene, leading to increased synthesis of the pro-apoptotic transcription factor CHOP. This is a key event in the switch from an adaptive to a pro-apoptotic unfolded protein response (UPR) under conditions of severe or prolonged ER stress.",
+  "summary": "ATF6 activates CHOP to modulate chop (ddit3) transcription, ultimately affecting apoptosis.",
   "evidence": [
     {
       "paper_title": "ATF6 Activated by Proteolysis Binds in the Presence of NF-Y (CBF) Directly to the cis-Acting Element Responsible for the Mammalian Unfolded Protein Response",
-      "doi": "10.1128/mcb.20.18.6755-6767.2000",
-      "authors": "Hiderou Yoshida, Tetsuya Okada, Kyosuke Haze, Hideki Yanagi, Takashi Yura, Manabu Negishi, Kazutoshi Mori",
       "journal": "Molecular and Cellular Biology",
       "year": 2000,
-      "assay": "EMSA",
-      "species": "mammalian",
       "relevant_quote": "We thus concluded that ATF6 activated by ER stress-induced proteolysis stimulates transcription not only of ER chaperone genes but also of the genes encoding transcription factors XBP-1 and CHOP by direct binding to ERSE present in their promoter regions."
     },
     {
       "paper_title": "ATF6 Is a Critical Determinant of CHOP Dynamics during the Unfolded Protein Response",
-      "doi": "10.1016/j.isci.2020.100860",
-      "authors": "Huan Yang, Marije Niemeijer, Bob van de Water, Joost B. Beltman",
-      "journal": "iScience",
+      "journal": "Cell Reports",
       "year": 2020,
-      "assay": "Western Blot, RNA-seq, Modeling",
-      "species": "human",
-      "relevant_quote": "Our calibrated model suggested that ATF6 shapes the early dynamics of pro-apoptotic CHOP. We confirmed this hypothesis by measurements beyond 24 h, by perturbing single siRNA knockdowns and by ATF6 measurements."
+      "relevant_quote": "Our calibrated model suggested that ATF6 shapes the early dynamics of pro-apoptotic CHOP. We confirmed this hypothesis by measurements beyond 24 h, by perturbing single siRNA knockdowns and by ATF6 measurements. Overall, our work indicates that ATF6 is an important regulator of CHOP, which in turn regulates cell fate decisions."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "UPR Target Gene Transcription",
+      "canonical_name": "Unfolded Protein Response",
+      "ontology_id": "GO:0030968",
+      "ontology_source": "GO",
+      "confidence": 0.95
+    },
+    {
+      "name": "ER Stress-Induced Apoptosis",
+      "canonical_name": "Apoptosis",
+      "ontology_id": "GO:0006915",
+      "ontology_source": "GO",
+      "confidence": 0.9
     }
   ],
   "interaction_effect": "activation",
   "_validation_metadata": {
     "validated": true,
     "validator": "arrow_effect_validator",
-    "corrections_applied": 0
+    "corrections_applied": 2
   },
   "_arrow_validated": true,
   "arrow_notation": "ATF6 --activates--> CHOP:",
   "protein_a": "ATF6",
   "protein_b": "CHOP",
   "discovered_in_query": "ATF6",
-  "first_discovered": "2025-11-18T21:01:00.282129Z",
-  "last_updated": "2025-11-18T21:01:00.282129Z"
+  "first_discovered": "2025-11-29T12:52:16.036957Z",
+  "last_updated": "2025-11-29T12:52:16.036957Z"
 }

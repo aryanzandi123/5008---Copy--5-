@@ -1,0 +1,123 @@
+{
+  "primary": "Caspase-12",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 2,
+  "support_summary": "ATF6 can regulate ER stress-induced apoptosis through the activation of caspase-12.",
+  "functions": [
+    {
+      "function": "Apoptosis",
+      "arrow": "activates",
+      "cellular_process": "During endoplasmic reticulum (ER) stress, the ATF6 protein is cleaved in the Golgi apparatus, releasing its N-terminal cytoplasmic domain (p50ATF6). This active fragment translocates to the nucleus and functions as a transcription factor. While ATF6 primarily upregulates ER chaperones, under severe or prolonged ER stress, the ATF6 pathway contributes to apoptosis by promoting the activation of Caspase-12, an initiator caspase of the ER stress-specific apoptotic cascade.",
+      "effect_description": "The activation of the ATF6 pathway is correlated with the cleavage and activation of Caspase-12. This initiates a downstream caspase cascade, involving Caspase-9 and Caspase-3, which culminates in apoptotic cell death.",
+      "biological_consequence": [
+        "ER Stress → ATF6 cleavage in Golgi → Active p50ATF6 translocates to nucleus → Contributes to Caspase-12 activation → Caspase-9 activation → Caspase-3 activation → Apoptosis"
+      ],
+      "specific_effects": [
+        "In myoblasts undergoing differentiation-associated apoptosis, ATF6 is specifically activated, which correlates with the activation of Caspase-12.",
+        "In response to hypoxia-induced ER stress in neuronal cells, levels of cleaved (active) ATF6 and activated Caspase-12 are significantly increased.",
+        "Overexpression of active ATF6 in myoblast cells leads to the activation of Caspase-12, Caspase-9, and Caspase-3."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Endoplasmic reticulum stress signaling transmitted by ATF6 mediates apoptosis during muscle development",
+          "journal": "The Journal of Cell Biology",
+          "year": 2005,
+          "relevant_quote": "ATF6, but not other ER stress sensors, was specifically activated during apoptosis in myoblasts, suggesting that partial but selective activation of ER stress signaling was sufficient for induction of apoptosis. Activation of caspase-12 was also detected in developing muscle of mouse embryos and gradually disappeared later... These results suggest that specific ER stress signaling transmitted by ATF6 leads to naturally occurring apoptosis during muscle development.",
+          "pmid": "15897261"
+        },
+        {
+          "paper_title": "ER stress related factor ATF6 and caspase-12 trigger apoptosis in neonatal hypoxic-ischemic encephalopathy",
+          "journal": "International Journal of Clinical and Experimental Pathology",
+          "year": 2015,
+          "relevant_quote": "ER stress UPR pathway protein, cleaved ATF6, was increased significantly when treated with 0.1% O2 compared with the cells treated with 20% O2. Furthermore, the caspase 12 activation was triggered when the cells treated with the 0.1% O2. In conclusion, apoptosis is served as an important factor that triggers the HIE brain injury through cleaving the ATF6 and caspase-12 ER stress-related protein.",
+          "pmid": "26261584"
+        },
+        {
+          "paper_title": "Activating Transcription Factor-6 (ATF6) Mediates Apoptosis with Reduction of Myeloid Cell Leukemia Sequence 1 (Mcl-1) Protein via Induction of WW Domain Binding Protein 1",
+          "journal": "The Journal of Biological Chemistry",
+          "year": 2011,
+          "relevant_quote": "Caspases-12, -9, and -3 were specifically activated in the apoptotic cells [overexpressing active ATF6].",
+          "pmid": "21841196"
+        }
+      ],
+      "pmids": [
+        "15897261",
+        "26261584",
+        "21841196"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATF6",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "_chain_inferred": true,
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "During endoplasmic reticulum (ER) stress, the ATF6 protein is cleaved in the Golgi apparatus, releasing its N-terminal cytoplasmic domain (p50ATF6). This active fragment translocates to the nucleus and functions as a transcription factor. While ATF6 primarily upregulates ER chaperones, under severe or prolonged ER stress, the ATF6 pathway contributes to apoptosis by promoting the activation of Caspase-12, an initiator caspase of the ER stress-specific apoptotic cascade.",
+  "effect": "The activation of the ATF6 pathway is correlated with the cleavage and activation of Caspase-12. This initiates a downstream caspase cascade, involving Caspase-9 and Caspase-3, which culminates in apoptotic cell death.",
+  "summary": "ATF6 activates Caspase-12 to modulate apoptosis regulation, ultimately affecting apoptosis.",
+  "evidence": [
+    {
+      "paper_title": "Endoplasmic reticulum stress signaling transmitted by ATF6 mediates apoptosis during muscle development",
+      "journal": "The Journal of Cell Biology",
+      "year": 2005,
+      "relevant_quote": "ATF6, but not other ER stress sensors, was specifically activated during apoptosis in myoblasts, suggesting that partial but selective activation of ER stress signaling was sufficient for induction of apoptosis. Activation of caspase-12 was also detected in developing muscle of mouse embryos and gradually disappeared later... These results suggest that specific ER stress signaling transmitted by ATF6 leads to naturally occurring apoptosis during muscle development."
+    },
+    {
+      "paper_title": "ER stress related factor ATF6 and caspase-12 trigger apoptosis in neonatal hypoxic-ischemic encephalopathy",
+      "journal": "International Journal of Clinical and Experimental Pathology",
+      "year": 2015,
+      "relevant_quote": "ER stress UPR pathway protein, cleaved ATF6, was increased significantly when treated with 0.1% O2 compared with the cells treated with 20% O2. Furthermore, the caspase 12 activation was triggered when the cells treated with the 0.1% O2. In conclusion, apoptosis is served as an important factor that triggers the HIE brain injury through cleaving the ATF6 and caspase-12 ER stress-related protein."
+    },
+    {
+      "paper_title": "Activating Transcription Factor-6 (ATF6) Mediates Apoptosis with Reduction of Myeloid Cell Leukemia Sequence 1 (Mcl-1) Protein via Induction of WW Domain Binding Protein 1",
+      "journal": "The Journal of Biological Chemistry",
+      "year": 2011,
+      "relevant_quote": "Caspases-12, -9, and -3 were specifically activated in the apoptotic cells [overexpressing active ATF6]."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "ER Stress-Induced Apoptosis",
+      "canonical_name": "Apoptosis",
+      "ontology_id": "GO:0006915",
+      "ontology_source": "GO",
+      "confidence": 0.9
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATF6 --activates--> Caspase-12:",
+  "protein_a": "ATF6",
+  "protein_b": "Caspase-12",
+  "discovered_in_query": "ATF6",
+  "first_discovered": "2025-11-29T12:52:16.061391Z",
+  "last_updated": "2025-11-29T12:52:16.061391Z"
+}

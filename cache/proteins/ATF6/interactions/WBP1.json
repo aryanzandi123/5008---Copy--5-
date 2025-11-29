@@ -1,0 +1,94 @@
+{
+  "primary": "WBP1",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 2,
+  "support_summary": "WW domain-binding protein 1 (WBP1) is transcriptionally upregulated by ATF6 and mediates ATF6-induced apoptosis, in part by reducing levels of the anti-apoptotic protein Mcl-1.",
+  "functions": [
+    {
+      "function": "Transcriptional Upregulation leading to Apoptosis",
+      "arrow": "activates",
+      "cellular_process": "Upon activation during the unfolded protein response (UPR), the cleaved N-terminal fragment of ATF6 acts as a transcription factor that upregulates the expression of WW domain binding protein 1 (WBP1).",
+      "effect_description": "The ATF6-induced expression of WBP1 establishes a pro-apoptotic signaling pathway. WBP1, in turn, contributes to apoptosis by mediating the reduction of the anti-apoptotic protein Mcl-1.",
+      "biological_consequence": [
+        "ER Stress → ATF6 activation and cleavage → Activated ATF6 upregulates WBP1 transcription (likely indirectly) → Increased WBP1 protein levels → Downregulation of Mcl-1 protein → Apoptosis"
+      ],
+      "specific_effects": [
+        "ATF6 activation causes an increase in WBP1 mRNA levels.",
+        "Silencing of WBP1 using small hairpin RNAs results in a partial but significant suppression of ATF6-induced apoptosis."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Activating transcription factor-6 (ATF6) mediates apoptosis with reduction of myeloid cell leukemia sequence 1 (Mcl-1) protein via induction of WW domain binding protein 1",
+          "journal": "The Journal of Biological Chemistry",
+          "year": 2011,
+          "relevant_quote": "ATF6 caused up-regulation of the WBP1 (WW domain binding protein 1), probably via an indirect mechanism. Furthermore, WBP1 was also found to be proapoptotic. The silencing of WBP1 with small hairpin RNAs caused partial, but significant suppression of ATF6-induced apoptosis.",
+          "pmid": "21841196"
+        }
+      ],
+      "pmids": [
+        "21841196"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATF6",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "_chain_inferred": true,
+  "is_valid": true,
+  "mechanism_correction": "The input is largely correct. However, the literature specifies that the transcriptional upregulation of WBP1 by ATF6 is likely indirect.",
+  "mechanism": "Upon activation during the unfolded protein response (UPR), the cleaved N-terminal fragment of ATF6 acts as a transcription factor that upregulates the expression of WW domain binding protein 1 (WBP1).",
+  "effect": "The ATF6-induced expression of WBP1 establishes a pro-apoptotic signaling pathway. WBP1, in turn, contributes to apoptosis by mediating the reduction of the anti-apoptotic protein Mcl-1.",
+  "summary": "ATF6 activates WBP1 to modulate transcriptional upregulation leading to apoptosis, ultimately affecting apoptosis.",
+  "evidence": [
+    {
+      "paper_title": "Activating transcription factor-6 (ATF6) mediates apoptosis with reduction of myeloid cell leukemia sequence 1 (Mcl-1) protein via induction of WW domain binding protein 1",
+      "journal": "The Journal of Biological Chemistry",
+      "year": 2011,
+      "relevant_quote": "ATF6 caused up-regulation of the WBP1 (WW domain binding protein 1), probably via an indirect mechanism. Furthermore, WBP1 was also found to be proapoptotic. The silencing of WBP1 with small hairpin RNAs caused partial, but significant suppression of ATF6-induced apoptosis."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "ER Stress-Induced Apoptosis",
+      "canonical_name": "Apoptosis",
+      "ontology_id": "GO:0006915",
+      "ontology_source": "GO",
+      "confidence": 0.9
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATF6 --activates--> WBP1:",
+  "protein_a": "ATF6",
+  "protein_b": "WBP1",
+  "discovered_in_query": "ATF6",
+  "first_discovered": "2025-11-29T12:52:16.050742Z",
+  "last_updated": "2025-11-29T12:52:16.050742Z"
+}

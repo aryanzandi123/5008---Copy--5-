@@ -4,114 +4,126 @@
   "upstream_interactor": null,
   "mediator_chain": [],
   "depth": 2,
-  "support_summary": "The active form of the transcription factor ATF6 directly binds to Endoplasmic Reticulum Stress Response Elements (ERSE) in the promoter of HERPUD1, a key component of the ER-associated degradation (ERAD) pathway, to upregulate its expression and enhance the clearance of misfolded proteins.",
+  "support_summary": "The gene encoding HERPUD1, involved in ER-associated degradation (ERAD), is a transcriptional target of the ATF6 pathway.",
   "functions": [
     {
-      "function": "HERPUD1 Gene Transcription",
+      "function": "ERAD Component Transcription",
       "arrow": "activates",
-      "cellular_process": "Upon ER stress, the cleaved, active nuclear form of ATF6 (nATF6) translocates to the nucleus and binds to ERSE sites within the HERPUD1 promoter, activating its transcription. This is a key part of the UPR's effort to clear misfolded proteins.",
-      "effect_description": "The transcription of the ER-associated degradation (ERAD) component HERPUD1 is activated.",
+      "cellular_process": "Upon endoplasmic reticulum (ER) stress, the ATF6 protein is trafficked to the Golgi apparatus where it is proteolytically cleaved, releasing its N-terminal cytoplasmic domain (ATF6(N)). This active fragment translocates to the nucleus and functions as a basic leucine-zipper (bZIP) transcription factor.",
+      "effect_description": "The activated ATF6(N) binds to ER Stress Response Elements (ERSEs) within the promoter region of the HERPUD1 gene, inducing its transcription. The resulting HERPUD1 protein is a key component of the ER-associated degradation (ERAD) pathway, where it helps stabilize the ERAD multi-protein complex, facilitating the retrotranslocation of misfolded proteins from the ER to the cytosol for their subsequent degradation by the proteasome.",
       "biological_consequence": [
-        "ER stress → ATF6 cleavage & activation → Nuclear translocation of nATF6 → nATF6 binds to ERSE sites in HERPUD1 promoter → HERPUD1 gene transcription",
-        "Increased HERPUD1 expression → Enhanced ER-associated degradation (ERAD) capacity → Clearance of misfolded proteins → Resolution of ER stress"
+        "ER Stress → ATF6 cleavage in Golgi → Nuclear translocation of ATF6(N) → Binding of ATF6(N) to ERSE in HERPUD1 promoter → Increased HERPUD1 mRNA and protein expression → Enhanced ERAD complex stability and activity → Clearance of misfolded ER proteins → Restoration of ER homeostasis"
       ],
       "specific_effects": [
-        "Increases the expression of the ERAD component HERPUD1.",
-        "Directly binds to the ERSE-I and ERSE-II elements in the HERPUD1 promoter."
+        "Directly induces transcription of the HERPUD1 gene.",
+        "Contributes to the unfolded protein response (UPR) by upregulating a critical component of the ERAD machinery."
       ],
       "evidence": [
         {
-          "paper_title": "ATF6 is a transcription factor specializing in the regulation of quality control proteins in the endoplasmic reticulum",
-          "doi": "10.1247/csf.07044",
-          "authors": "Y Adachi, T Yamamoto, T Okada, H Yoshida, A Harada, K Mori",
-          "journal": "Cell Structure and Function",
-          "year": 2008,
-          "assay": "Microarray Analysis",
-          "species": "mouse",
-          "relevant_quote": "We identified Herpud1... as [a] specific target of ATF6alpha... Herpud1 is a component of ER-associated degradation (ERAD).",
-          "pmid": "18360008"
+          "paper_title": "The unfolded protein response regulator ATF6 promotes mesodermal differentiation",
+          "journal": "Science Signaling",
+          "year": 2018,
+          "relevant_quote": "We confirmed by quantitative reverse transcription polymerase chain reaction (qRT-PCR) that mRNA levels of several ATF6 targets genes (HERPUD1, EDEM1, GRP78/BiP, and SEL1L) were increased in both AA147-treated stem cells, to similar degrees as seen in our RNA-seq data set...",
+          "pmid": "29440509"
         },
         {
-          "paper_title": "Stress-Independent Activation of XBP1s and/or ATF6 Reveals Three Functionally Diverse ER Proteostasis Environments",
-          "doi": "10.1016/j.celrep.2013.03.012",
-          "authors": "Christopher M Papa, Han Chen, Luke M Wiseman",
-          "journal": "Cell Reports",
-          "year": 2013,
-          "assay": "qRT-PCR",
-          "species": "human",
-          "relevant_quote": "TMP induces expression of the ATF6 target genes HerpUD and Hyou1 in cells expressing DHFR.ATF6 to levels consistent with those observed following global UPR-dependent activation induced by Tm.",
-          "pmid": "23583182"
+          "paper_title": "Herp is dually regulated by both the endoplasmic reticulum stress-specific branch of the unfolded protein response and a branch that is shared with other cellular stress pathways",
+          "journal": "The Journal of Biological Chemistry",
+          "year": 2004,
+          "relevant_quote": "The mammalian unfolded protein response (UPR) includes two major branches: one(s) specific to ER stress (Ire1/XBP-1 and ATF6-dependent), and one(s) shared by other cellular stresses (PERK/eIF-2alpha phosphorylation-dependent). Here, we demonstrate that the ER-localized protein Herp represents a second target, in addition to CHOP, that is dually regulated by both the shared and the ER stress-specific branches during UPR activation.",
+          "pmid": "14742429"
         },
         {
           "paper_title": "Induction of Herpud1 expression by ER stress is regulated by Nrf1",
-          "doi": "10.1038/s12276-017-0004-7",
-          "authors": "Chang-Soo Lee, Ju-Hee Lee, Hyunjoo Lee, Eun-Hee Lee, Sung-Hoon Kim, Myung-Shik Lee, Hyung-Ryong Kim",
-          "journal": "Experimental & Molecular Medicine",
-          "year": 2017,
-          "assay": "Review",
-          "species": "mouse",
-          "relevant_quote": "Transcription factors found to transactivate Herpud1 at ERSE-I or ERSE-II include XBP-1, ATF6, and Luman.",
+          "journal": "Biochemical and Biophysical Research Communications",
+          "year": 2007,
+          "relevant_quote": "Transcription of Herpud1 has been shown to be regulated by ER stress-responsive cis-acting elements (ERSE-I, ERSE-II and C/EBP-ATF composite site) located at the proximal region of the Herpud1 promoter. Transcription factors found to transactivate Herpud1 at ERSE-I or ERSE-II include XBP-1, ATF6, and Luman.",
           "pmid": "25637874"
         }
       ],
-      "interaction_effect": "activates",
-      "direction": "main_to_primary",
-      "interaction_direction": "main_to_primary",
       "pmids": [
-        "18360008",
-        "23583182",
+        "29440509",
+        "14742429",
         "25637874"
-      ]
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATF6",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
     }
   ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
   "arrows": {
     "main_to_primary": [
       "activates"
     ]
   },
-  "arrow": "activates",
-  "direction": "main_to_primary",
   "_chain_inferred": true,
-  "intent": "regulation",
-  "mechanism": "Upon ER stress, the cleaved, active nuclear form of ATF6 (nATF6) translocates to the nucleus and binds to ERSE sites within the HERPUD1 promoter, activating its transcription. This is a key part of the UPR's effort to clear misfolded proteins.",
-  "effect": "The transcription of the ER-associated degradation (ERAD) component HERPUD1 is activated.",
-  "summary": "ATF6 activates HERPUD1 to modulate herpud1 gene transcription, ultimately affecting herpud1 gene transcription.",
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Upon endoplasmic reticulum (ER) stress, the ATF6 protein is trafficked to the Golgi apparatus where it is proteolytically cleaved, releasing its N-terminal cytoplasmic domain (ATF6(N)). This active fragment translocates to the nucleus and functions as a basic leucine-zipper (bZIP) transcription factor.",
+  "effect": "The activated ATF6(N) binds to ER Stress Response Elements (ERSEs) within the promoter region of the HERPUD1 gene, inducing its transcription. The resulting HERPUD1 protein is a key component of the ER-associated degradation (ERAD) pathway, where it helps stabilize the ERAD multi-protein complex, facilitating the retrotranslocation of misfolded proteins from the ER to the cytosol for their subsequent degradation by the proteasome.",
+  "summary": "ATF6 activates HERPUD1 to modulate erad component transcription, ultimately affecting restoration of er homeostasis.",
   "evidence": [
     {
-      "paper_title": "ATF6 is a transcription factor specializing in the regulation of quality control proteins in the endoplasmic reticulum",
-      "doi": "10.1247/csf.07044",
-      "authors": "Y Adachi, T Yamamoto, T Okada, H Yoshida, A Harada, K Mori",
-      "journal": "Cell Structure and Function",
-      "year": 2008,
-      "assay": "Microarray Analysis",
-      "species": "mouse",
-      "relevant_quote": "We identified Herpud1... as [a] specific target of ATF6alpha... Herpud1 is a component of ER-associated degradation (ERAD)."
+      "paper_title": "The unfolded protein response regulator ATF6 promotes mesodermal differentiation",
+      "journal": "Science Signaling",
+      "year": 2018,
+      "relevant_quote": "We confirmed by quantitative reverse transcription polymerase chain reaction (qRT-PCR) that mRNA levels of several ATF6 targets genes (HERPUD1, EDEM1, GRP78/BiP, and SEL1L) were increased in both AA147-treated stem cells, to similar degrees as seen in our RNA-seq data set..."
     },
     {
-      "paper_title": "Stress-Independent Activation of XBP1s and/or ATF6 Reveals Three Functionally Diverse ER Proteostasis Environments",
-      "doi": "10.1016/j.celrep.2013.03.012",
-      "authors": "Christopher M Papa, Han Chen, Luke M Wiseman",
-      "journal": "Cell Reports",
-      "year": 2013,
-      "assay": "qRT-PCR",
-      "species": "human",
-      "relevant_quote": "TMP induces expression of the ATF6 target genes HerpUD and Hyou1 in cells expressing DHFR.ATF6 to levels consistent with those observed following global UPR-dependent activation induced by Tm."
+      "paper_title": "Herp is dually regulated by both the endoplasmic reticulum stress-specific branch of the unfolded protein response and a branch that is shared with other cellular stress pathways",
+      "journal": "The Journal of Biological Chemistry",
+      "year": 2004,
+      "relevant_quote": "The mammalian unfolded protein response (UPR) includes two major branches: one(s) specific to ER stress (Ire1/XBP-1 and ATF6-dependent), and one(s) shared by other cellular stresses (PERK/eIF-2alpha phosphorylation-dependent). Here, we demonstrate that the ER-localized protein Herp represents a second target, in addition to CHOP, that is dually regulated by both the shared and the ER stress-specific branches during UPR activation."
     },
     {
       "paper_title": "Induction of Herpud1 expression by ER stress is regulated by Nrf1",
-      "doi": "10.1038/s12276-017-0004-7",
-      "authors": "Chang-Soo Lee, Ju-Hee Lee, Hyunjoo Lee, Eun-Hee Lee, Sung-Hoon Kim, Myung-Shik Lee, Hyung-Ryong Kim",
-      "journal": "Experimental & Molecular Medicine",
-      "year": 2017,
-      "assay": "Review",
-      "species": "mouse",
-      "relevant_quote": "Transcription factors found to transactivate Herpud1 at ERSE-I or ERSE-II include XBP-1, ATF6, and Luman."
+      "journal": "Biochemical and Biophysical Research Communications",
+      "year": 2007,
+      "relevant_quote": "Transcription of Herpud1 has been shown to be regulated by ER stress-responsive cis-acting elements (ERSE-I, ERSE-II and C/EBP-ATF composite site) located at the proximal region of the Herpud1 promoter. Transcription factors found to transactivate Herpud1 at ERSE-I or ERSE-II include XBP-1, ATF6, and Luman."
     }
   ],
+  "pathways": [
+    {
+      "name": "UPR Target Gene Transcription",
+      "canonical_name": "Unfolded Protein Response",
+      "ontology_id": "GO:0030968",
+      "ontology_source": "GO",
+      "confidence": 0.95
+    },
+    {
+      "name": "ER-Associated Degradation (ERAD) and ATF6 Stability",
+      "canonical_name": "ER-Associated Degradation",
+      "ontology_id": "GO:0036503",
+      "ontology_source": "GO",
+      "confidence": 0.85
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
   "arrow_notation": "ATF6 --activates--> HERPUD1:",
   "protein_a": "ATF6",
   "protein_b": "HERPUD1",
   "discovered_in_query": "ATF6",
-  "first_discovered": "2025-11-18T21:01:00.287585Z",
-  "last_updated": "2025-11-18T21:01:00.287585Z"
+  "first_discovered": "2025-11-29T12:52:16.042566Z",
+  "last_updated": "2025-11-29T12:52:16.042566Z"
 }

@@ -1,0 +1,145 @@
+{
+  "primary": "ATF6",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 2,
+  "support_summary": "ATF6 transcriptionally upregulates genes involved in ER-associated degradation (ERAD), including EDEM1, to help clear misfolded proteins from the ER.",
+  "functions": [
+    {
+      "function": "ERAD Component Transcription",
+      "arrow": "activates",
+      "cellular_process": "During endoplasmic reticulum (ER) stress, the transmembrane sensor ATF6 translocates to the Golgi apparatus where it is cleaved by S1P and S2P proteases. This releases its cytosolic N-terminal fragment (ATF6f), a potent transcription factor. ATF6f then enters the nucleus and binds to ER stress response elements (ERSE) in the promoters of target genes, including EDEM1, to activate their transcription.",
+      "effect_description": "The transcriptional upregulation of EDEM1, a key component of ER-associated degradation (ERAD), enhances the cell's capacity to identify, target, and eliminate terminally misfolded glycoproteins from the ER. This process helps to clear the protein load and restore ER proteostasis.",
+      "biological_consequence": [
+        "ER Stress → ATF6 translocation to Golgi → Proteolytic cleavage of ATF6 by S1P/S2P → Nuclear entry of ATF6f → ATF6f binds to EDEM1 promoter → Increased EDEM1 transcription → Enhanced ERAD of misfolded proteins → Alleviation of ER stress"
+      ],
+      "specific_effects": [
+        "Activated ATF6 directly induces the expression of ER quality control proteins, including the ERAD component EDEM1."
+      ],
+      "evidence": [
+        {
+          "paper_title": "ATF6 is a transcription factor specializing in the regulation of quality control proteins in the endoplasmic reticulum",
+          "journal": "Cell Structure and Function",
+          "year": 2008,
+          "relevant_quote": "ATF6 is an ER-membrane-bound transcription factor activated by ER stress-induced proteolysis... we performed a genome-wide search for ATF6alpha-target genes in mice. Only 30 of the 14,729 analyzable genes were identified as specific targets, of which 40% were ER quality control proteins...",
+          "pmid": "18360008"
+        }
+      ],
+      "pmids": [
+        "18360008"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATF6",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    },
+    {
+      "function": "ATF6 Stability",
+      "arrow": "inhibits",
+      "cellular_process": "Full-length ATF6 is an intrinsically unstable protein that is constitutively targeted for degradation through the ERAD pathway, a process in which EDEM1 participates. By facilitating the degradation of ATF6, EDEM1 controls the total cellular pool of the ATF6 sensor available for activation.",
+      "effect_description": "Silencing of EDEM1 leads to the stabilization of the full-length, 90 kDa ATF6 protein. This increases the amount of ATF6 available for cleavage upon ER stress, thereby enhancing the pro-survival signaling output of the ATF6 pathway.",
+      "biological_consequence": [
+        "EDEM1 recognizes full-length ATF6 → ATF6 is targeted for ER-associated degradation → Basal ATF6 protein levels are kept low → Silencing EDEM1 → ATF6 protein is stabilized → Increased availability of ATF6 for activation during ER stress → Enhanced pro-survival UPR signaling"
+      ],
+      "specific_effects": [
+        "Silencing of ER-degradation-enhancing alpha-mannosidase-like protein-1 (EDEM1) increases the bioavailability of ER stress-induced ATF6 by stabilizing the natively unstable full-length ATF6 protein."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Alterations of EDEM1 functions enhance ATF6 pro-survival signaling",
+          "journal": "The FEBS Journal",
+          "year": 2018,
+          "relevant_quote": "This revealed that silencing of ER-degradation-enhancing alpha-mannosidase-like protein-1 (EDEM1) increased the bioavailability of ER stress-induced ATF6 export to the Golgi complex through the stabilization of the natively unstable ATF6 protein.",
+          "pmid": "30281916"
+        }
+      ],
+      "pmids": [
+        "30281916"
+      ],
+      "interaction_effect": "inhibits",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "inhibition",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "inhibits",
+        "net_from": "ATF6",
+        "net_arrow": "inhibits",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "inhibits",
+      "direct_arrow": "inhibits",
+      "net_effect": "inhibition",
+      "direct_effect": "inhibition"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "bidirectional",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "_chain_inferred": true,
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "During endoplasmic reticulum (ER) stress, the transmembrane sensor ATF6 translocates to the Golgi ap; Full-length ATF6 is an intrinsically unstable protein that is constitutively targeted for degradatio",
+  "effect": "The transcriptional upregulation of EDEM1, a key component of ER-associated degradation (ERAD), enhances the cell's capacity to identify, target, and eliminate terminally misfolded glycoproteins from the ER. This process helps to clear the protein load and restore ER proteostasis.; Silencing of EDEM1 leads to the stabilization of the full-length, 90 kDa ATF6 protein. This increases the amount of ATF6 available for cleavage upon ER stress, thereby enhancing the pro-survival signaling output of the ATF6 pathway.",
+  "summary": "ATF6 regulates EDEM1 to regulate erad component transcription and regulation of atf6 stability, ultimately affecting alleviation of er stress.",
+  "evidence": [
+    {
+      "paper_title": "ATF6 is a transcription factor specializing in the regulation of quality control proteins in the endoplasmic reticulum",
+      "journal": "Cell Structure and Function",
+      "year": 2008,
+      "relevant_quote": "ATF6 is an ER-membrane-bound transcription factor activated by ER stress-induced proteolysis... we performed a genome-wide search for ATF6alpha-target genes in mice. Only 30 of the 14,729 analyzable genes were identified as specific targets, of which 40% were ER quality control proteins..."
+    },
+    {
+      "paper_title": "Alterations of EDEM1 functions enhance ATF6 pro-survival signaling",
+      "journal": "The FEBS Journal",
+      "year": 2018,
+      "relevant_quote": "This revealed that silencing of ER-degradation-enhancing alpha-mannosidase-like protein-1 (EDEM1) increased the bioavailability of ER stress-induced ATF6 export to the Golgi complex through the stabilization of the natively unstable ATF6 protein."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "UPR Target Gene Transcription",
+      "canonical_name": "Unfolded Protein Response",
+      "ontology_id": "GO:0030968",
+      "ontology_source": "GO",
+      "confidence": 0.95
+    },
+    {
+      "name": "ER-Associated Degradation (ERAD) and ATF6 Stability",
+      "canonical_name": "ER-Associated Degradation",
+      "ontology_id": "GO:0036503",
+      "ontology_source": "GO",
+      "confidence": 0.85
+    }
+  ],
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 4
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATF6 <--regulates--> EDEM1:",
+  "protein_a": "EDEM1",
+  "protein_b": "ATF6",
+  "discovered_in_query": "ATF6",
+  "first_discovered": "2025-11-29T12:52:16.111260Z",
+  "last_updated": "2025-11-29T12:52:16.111260Z"
+}

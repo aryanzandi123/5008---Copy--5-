@@ -4,51 +4,42 @@
   "upstream_interactor": null,
   "mediator_chain": [],
   "depth": 1,
-  "support_summary": "ATF6 and XBP1 represent two major branches of the Unfolded Protein Response (UPR). ATF6 directly activates the transcription of the XBP1 gene. The resulting XBP1 protein, after being spliced by IRE1, works synergistically with ATF6 to upregulate a subset of UPR target genes, ensuring a robust and coordinated response to ER stress.",
+  "support_summary": "ATF6 interacts with the spliced form of XBP1 (XBP1s); this interaction is dependent on ER stress. Activated ATF6 also transcriptionally induces XBP-1.",
   "functions": [
     {
-      "function": "XBP1 Gene Transcription",
+      "function": "XBP1 Transcription",
       "arrow": "activates",
-      "cellular_process": "The active, nuclear form of ATF6 (ATF6f) directly binds to ER stress response elements (ERSE) in the promoter of the XBP1 gene, inducing its transcription.",
-      "effect_description": "This action increases the cellular pool of unspliced XBP1 (XBP1u) mRNA, which is the substrate for the IRE1 branch of the UPR, thus linking and amplifying the overall ER stress response.",
+      "cellular_process": "Upon ER stress, ATF6 is cleaved in the Golgi, releasing its N-terminal cytosolic fragment (ATF6f or ATF6(N)). ATF6f translocates to the nucleus and binds to ER Stress Response Elements (ERSE) within the promoter of the XBP1 gene, thereby activating its transcription.",
+      "effect_description": "This action by ATF6f increases the cellular pool of unspliced XBP1 (XBP1u) mRNA. This XBP1u mRNA is the substrate for the IRE1 branch of the UPR, which splices it to produce the active XBP1s transcription factor. This represents a critical crosstalk mechanism where the ATF6 branch amplifies the IRE1-XBP1 branch.",
       "biological_consequence": [
-        "ER stress-induced proteolytic cleavage of ATF6 → Translocation of active ATF6f fragment to the nucleus → ATF6f binds to ERSE elements in the XBP1 gene promoter → Increased transcription of unspliced XBP1 (XBP1u) mRNA → Enhanced substrate availability for IRE1-mediated splicing"
+        "ER Stress → ATF6 cleavage in Golgi → Nuclear translocation of ATF6f → ATF6f binds to XBP1 promoter → Increased transcription of XBP1u mRNA → Amplified substrate pool for IRE1-mediated splicing → Enhanced UPR signaling potential"
       ],
       "specific_effects": [
         "ATF6 is a direct transcriptional activator of the XBP1 gene.",
-        "ATF6 activation increases the total amount of XBP1 mRNA available for splicing by IRE1."
+        "This mechanism increases the total amount of both unspliced (XBP1u) and, subsequently, spliced (XBP1s) mRNA."
       ],
       "evidence": [
         {
-          "paper_title": "XBP1 mRNA is induced by ATF6 and spliced by IRE1 in response to ER stress to produce a highly active transcription factor.",
-          "doi": "10.1016/s0092-8674(01)00611-0",
-          "authors": "Yoshida H, Matsui T, Yamamoto A, Okada T, Mori K",
+          "paper_title": "XBP1 mRNA is induced by ATF6 and spliced by IRE1 in response to ER stress to produce a highly active transcription factor",
           "journal": "Cell",
           "year": 2001,
-          "assay": "Northern blot, Luciferase assay",
-          "species": "human, mouse",
-          "relevant_quote": "we identified the transcription factor XBP1, a target of ATF6, as a mammalian substrate of such an unconventional mRNA splicing system and showed that only the spliced form of XBP1 can activate the UPR efficiently.",
+          "relevant_quote": "Here, we identified the transcription factor XBP1, a target of ATF6, as a mammalian substrate of such an unconventional mRNA splicing system and showed that only the spliced form of XBP1 can activate the UPR efficiently.",
           "pmid": "11779464"
         },
         {
-          "paper_title": "ATF6 upregulates XBP1S and inhibits ER stress-mediated apoptosis in osteoarthritis cartilage",
-          "doi": "10.1016/j.cellsig.2013.11.018",
-          "authors": "Zheng W, Wang D, He H, Wang Z, Chen S, Liu K, Chen Y, Xu H, Wang Y, Weng Z, Qiu G, Wu Z",
-          "journal": "Cellular Signalling",
-          "year": 2014,
-          "assay": "Chromatin Immunoprecipitation (ChIP), Western Blot",
-          "species": "human",
-          "relevant_quote": "Transcription factor ATF6 can specifically bind to the promoter of XBP1 gene and enhance the expression of XBP1S spliced by IRE1α in osteoarthritis cartilage.",
-          "pmid": "24269637"
+          "paper_title": "ATF6 activated by proteolysis binds in the presence of NF-Y (CBF) directly to the cis-acting element responsible for the mammalian unfolded protein response",
+          "journal": "Molecular and Cellular Biology",
+          "year": 2000,
+          "relevant_quote": "We report here that overexpression of soluble ATF6 activates transcription of the CHOP and XBP-1 genes as well as of ER chaperone genes constitutively... Based on these and other findings, we concluded that specific and direct interactions between ATF6 and ERSE are critical for transcriptional induction not only of ER chaperones but also of CHOP and XBP-1.",
+          "pmid": "10958673"
         }
       ],
-      "interaction_effect": "activates",
-      "direction": "main_to_primary",
-      "interaction_direction": "main_to_primary",
       "pmids": [
         "11779464",
-        "24269637"
+        "10958673"
       ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
       "function_effect": "activation",
       "arrow_context": {
         "direct_from": null,
@@ -64,61 +55,32 @@
       "direct_effect": "activation"
     },
     {
-      "function": "Synergistic UPR Target Gene Expression",
+      "function": "UPR Target Gene Transcription",
       "arrow": "activates",
-      "cellular_process": "Activated ATF6 (ATF6f) and spliced XBP1 (XBP1s) co-occupy the promoters of a subset of UPR target genes, particularly those involved in ER-associated degradation (ERAD) and protein folding, to synergistically enhance their expression.",
-      "effect_description": "This functional interdependence ensures a robust and coordinated transcriptional response to ER stress, where both pathways are required for maximal induction of certain protective genes.",
+      "cellular_process": "The activated nuclear form of ATF6 (ATF6f) and the spliced, active form of XBP1 (XBP1s) are both bZIP transcription factors that can bind to similar DNA elements, such as ERSE (ER Stress Response Element) and ERSE-II, in the promoters of UPR target genes.",
+      "effect_description": "ATF6f and XBP1s can act cooperatively or synergistically to enhance the transcription of a shared subset of UPR target genes, including those involved in protein folding (e.g., chaperones) and ER-associated degradation (ERAD). This cooperation leads to a more robust and amplified transcriptional response to restore ER homeostasis.",
       "biological_consequence": [
-        "Concurrent activation of ATF6 and IRE1 pathways → Nuclear accumulation of ATF6f and spliced XBP1s → Heterodimerization of ATF6f and XBP1s on target gene promoters → Synergistic upregulation of ERAD and chaperone genes → Enhanced ER proteostasis and cellular adaptation to stress"
+        "Simultaneous activation of ATF6 and IRE1/XBP1 pathways → Cooperative binding of ATF6f and XBP1s to promoters of UPR genes → Synergistic transcriptional activation → Enhanced expression of ER chaperones and ERAD components → Restoration of ER proteostasis"
       ],
       "specific_effects": [
-        "ATF6α heterodimerizes with XBP1 for the induction of ER-associated degradation components.",
-        "In pancreatic islet cells, knockdown of ATF6α reduced the induction of XBP1 target genes, even though XBP1 splicing was unaffected.",
-        "ATF6 and XBP1s share control over a subpopulation of target genes involved in ER quality control."
+        "ATF6 is required for the full activation of certain XBP1 target genes.",
+        "Co-expression of ATF6f and XBP1s results in a distinct remodeling of the ER proteostasis network compared to the effects of either transcription factor alone.",
+        "Enforced dimerization of ATF6f and XBP1s via a fusion protein leads to superior neuroprotective effects compared to expressing either factor individually."
       ],
       "evidence": [
         {
-          "paper_title": "Transcriptional induction of mammalian ER quality control proteins is mediated by single or combined action of ATF6alpha and XBP1",
-          "doi": "10.1016/j.devcel.2007.07.018",
-          "authors": "Yamamoto K, Sato T, Matsui T, Sato M, Okada T, Yoshida H, Harada A, Mori K",
-          "journal": "Developmental Cell",
-          "year": 2007,
-          "assay": "Microarray analysis, Northern blot",
-          "species": "mouse",
-          "relevant_quote": "ATF6alpha is solely responsible for transcriptional induction of ER chaperones and that ATF6alpha heterodimerizes with XBP1 for the induction of ER-associated degradation components.",
-          "pmid": "17765680"
-        },
-        {
           "paper_title": "Intersection of the ATF6 and XBP1 ER stress pathways in mouse islet cells",
-          "doi": "10.1210/endocr/bqaa184",
-          "authors": "Engin F, Nguyen T, Yermalovich A, Hotamisligil GS",
-          "journal": "Endocrinology",
+          "journal": "The Journal of Biological Chemistry",
           "year": 2020,
-          "assay": "RNA-seq, qPCR",
-          "species": "mouse",
-          "relevant_quote": "acute ATF6α knockdown markedly reduced ATF6-pathway target gene expression...it did reduce induction of XBP1 targets.",
+          "relevant_quote": "Intriguingly, although ATF6α knockdown did not alter Xbp1 splicing dynamics or intensity, it did reduce induction of XBP1 targets. Inhibition of Xbp1 splicing did not decrease induction of ATF6α targets. Taken together, these data suggest that the XBP1 and ATF6 pathways are simultaneously activated in islet cells in response to acute stress and that ATF6α is required for full activation of XBP1 targets, but XBP1 is not required for activation of ATF6α targets.",
           "pmid": "32788214"
-        },
-        {
-          "paper_title": "Enforced dimerization between XBP1s and ATF6f enhances the protective effects of the UPR in models of neurodegeneration",
-          "doi": "10.1016/j.ymthe.2021.01.033",
-          "authors": "Valdés P, Mercado G, Vidal RL, Parsons G, Court FA, Martinez A, Hetz C",
-          "journal": "Molecular Therapy",
-          "year": 2021,
-          "assay": "Cell-based assays, AAV vectors",
-          "species": "human, mouse",
-          "relevant_quote": "correlative evidence suggests that ATF6f and XBP1s may physically interact to regulate a subset of UPR target genes.",
-          "pmid": "33545358"
         }
       ],
-      "interaction_effect": "activates",
-      "direction": "main_to_primary",
-      "interaction_direction": "main_to_primary",
       "pmids": [
-        "17765680",
-        "32788214",
-        "33545358"
+        "32788214"
       ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
       "function_effect": "activation",
       "arrow_context": {
         "direct_from": null,
@@ -134,80 +96,65 @@
       "direct_effect": "activation"
     }
   ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
   "arrows": {
     "main_to_primary": [
       "activates"
     ]
   },
-  "arrow": "activates",
-  "direction": "primary_to_main",
-  "intent": "regulation",
-  "mechanism": "The active, nuclear form of ATF6 (ATF6f) directly binds to ER stress response elements (ERSE) in the promoter of the XBP1 gene, inducing its transcription. Activated ATF6 (ATF6f) and spliced XBP1 (XBP1s) co-occupy the promoters of a subset of UPR target genes, particularly those involved in ER-associated degradation (ERAD) and protein folding, to synergistically enhance their expression.",
-  "effect": "This action increases the cellular pool of unspliced XBP1 (XBP1u) mRNA, which is the substrate for the IRE1 branch of the UPR, thus linking and amplifying the overall ER stress response.; This functional interdependence ensures a robust and coordinated transcriptional response to ER stress, where both pathways are required for maximal induction of certain protective genes.",
-  "summary": "ATF6 activates XBP1 to regulate xbp1 gene transcription and synergistic upr target gene expression, ultimately affecting enhanced substrate availability for ire1-mediated splicing.",
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Upon ER stress, ATF6 is cleaved in the Golgi, releasing its N-terminal cytosolic fragment (ATF6f or ; The activated nuclear form of ATF6 (ATF6f) and the spliced, active form of XBP1 (XBP1s) are both bZI",
+  "effect": "This action by ATF6f increases the cellular pool of unspliced XBP1 (XBP1u) mRNA. This XBP1u mRNA is the substrate for the IRE1 branch of the UPR, which splices it to produce the active XBP1s transcription factor. This represents a critical crosstalk mechanism where the ATF6 branch amplifies the IRE1-XBP1 branch.; ATF6f and XBP1s can act cooperatively or synergistically to enhance the transcription of a shared subset of UPR target genes, including those involved in protein folding (e.g., chaperones) and ER-associated degradation (ERAD). This cooperation leads to a more robust and amplified transcriptional response to restore ER homeostasis.",
+  "summary": "ATF6 activates XBP1 to regulate xbp1 transcription and upr target gene transcription, ultimately affecting enhanced upr signaling potential.",
   "evidence": [
     {
-      "paper_title": "XBP1 mRNA is induced by ATF6 and spliced by IRE1 in response to ER stress to produce a highly active transcription factor.",
-      "doi": "10.1016/s0092-8674(01)00611-0",
-      "authors": "Yoshida H, Matsui T, Yamamoto A, Okada T, Mori K",
+      "paper_title": "XBP1 mRNA is induced by ATF6 and spliced by IRE1 in response to ER stress to produce a highly active transcription factor",
       "journal": "Cell",
       "year": 2001,
-      "assay": "Northern blot, Luciferase assay",
-      "species": "human, mouse",
-      "relevant_quote": "we identified the transcription factor XBP1, a target of ATF6, as a mammalian substrate of such an unconventional mRNA splicing system and showed that only the spliced form of XBP1 can activate the UPR efficiently."
+      "relevant_quote": "Here, we identified the transcription factor XBP1, a target of ATF6, as a mammalian substrate of such an unconventional mRNA splicing system and showed that only the spliced form of XBP1 can activate the UPR efficiently."
     },
     {
-      "paper_title": "ATF6 upregulates XBP1S and inhibits ER stress-mediated apoptosis in osteoarthritis cartilage",
-      "doi": "10.1016/j.cellsig.2013.11.018",
-      "authors": "Zheng W, Wang D, He H, Wang Z, Chen S, Liu K, Chen Y, Xu H, Wang Y, Weng Z, Qiu G, Wu Z",
-      "journal": "Cellular Signalling",
-      "year": 2014,
-      "assay": "Chromatin Immunoprecipitation (ChIP), Western Blot",
-      "species": "human",
-      "relevant_quote": "Transcription factor ATF6 can specifically bind to the promoter of XBP1 gene and enhance the expression of XBP1S spliced by IRE1α in osteoarthritis cartilage."
-    },
-    {
-      "paper_title": "Transcriptional induction of mammalian ER quality control proteins is mediated by single or combined action of ATF6alpha and XBP1",
-      "doi": "10.1016/j.devcel.2007.07.018",
-      "authors": "Yamamoto K, Sato T, Matsui T, Sato M, Okada T, Yoshida H, Harada A, Mori K",
-      "journal": "Developmental Cell",
-      "year": 2007,
-      "assay": "Microarray analysis, Northern blot",
-      "species": "mouse",
-      "relevant_quote": "ATF6alpha is solely responsible for transcriptional induction of ER chaperones and that ATF6alpha heterodimerizes with XBP1 for the induction of ER-associated degradation components."
+      "paper_title": "ATF6 activated by proteolysis binds in the presence of NF-Y (CBF) directly to the cis-acting element responsible for the mammalian unfolded protein response",
+      "journal": "Molecular and Cellular Biology",
+      "year": 2000,
+      "relevant_quote": "We report here that overexpression of soluble ATF6 activates transcription of the CHOP and XBP-1 genes as well as of ER chaperone genes constitutively... Based on these and other findings, we concluded that specific and direct interactions between ATF6 and ERSE are critical for transcriptional induction not only of ER chaperones but also of CHOP and XBP-1."
     },
     {
       "paper_title": "Intersection of the ATF6 and XBP1 ER stress pathways in mouse islet cells",
-      "doi": "10.1210/endocr/bqaa184",
-      "authors": "Engin F, Nguyen T, Yermalovich A, Hotamisligil GS",
-      "journal": "Endocrinology",
+      "journal": "The Journal of Biological Chemistry",
       "year": 2020,
-      "assay": "RNA-seq, qPCR",
-      "species": "mouse",
-      "relevant_quote": "acute ATF6α knockdown markedly reduced ATF6-pathway target gene expression...it did reduce induction of XBP1 targets."
+      "relevant_quote": "Intriguingly, although ATF6α knockdown did not alter Xbp1 splicing dynamics or intensity, it did reduce induction of XBP1 targets. Inhibition of Xbp1 splicing did not decrease induction of ATF6α targets. Taken together, these data suggest that the XBP1 and ATF6 pathways are simultaneously activated in islet cells in response to acute stress and that ATF6α is required for full activation of XBP1 targets, but XBP1 is not required for activation of ATF6α targets."
     },
     {
-      "paper_title": "Enforced dimerization between XBP1s and ATF6f enhances the protective effects of the UPR in models of neurodegeneration",
-      "doi": "10.1016/j.ymthe.2021.01.033",
-      "authors": "Valdés P, Mercado G, Vidal RL, Parsons G, Court FA, Martinez A, Hetz C",
+      "paper_title": "Enforced dimerization between XBP1s and ATF6f enhances the protective effects of the unfolded protein response (UPR) in models of neurodegeneration",
       "journal": "Molecular Therapy",
       "year": 2021,
-      "assay": "Cell-based assays, AAV vectors",
-      "species": "human, mouse",
-      "relevant_quote": "correlative evidence suggests that ATF6f and XBP1s may physically interact to regulate a subset of UPR target genes."
+      "relevant_quote": "Although UPR signaling is generally studied as unique linear signaling branches, correlative evidence suggests that ATF6f and XBP1s may physically interact to regulate a subset of UPR target genes. In this study, we designed an ATF6f/XBP1s fusion protein termed UPRplus that behaves as a heterodimer in terms of its selective transcriptional activity."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "UPR Target Gene Transcription",
+      "canonical_name": "Unfolded Protein Response",
+      "ontology_id": "GO:0030968",
+      "ontology_source": "GO",
+      "confidence": 0.95
     }
   ],
   "interaction_effect": "activation",
   "_validation_metadata": {
     "validated": true,
     "validator": "arrow_effect_validator",
-    "corrections_applied": 1
+    "corrections_applied": 3
   },
   "_arrow_validated": true,
   "arrow_notation": "ATF6 --activates--> XBP1:",
   "protein_a": "XBP1",
   "protein_b": "ATF6",
   "discovered_in_query": "ATF6",
-  "first_discovered": "2025-11-18T21:01:00.240838Z",
-  "last_updated": "2025-11-18T21:01:00.240838Z"
+  "first_discovered": "2025-11-29T12:52:16.026334Z",
+  "last_updated": "2025-11-29T12:52:16.026334Z"
 }

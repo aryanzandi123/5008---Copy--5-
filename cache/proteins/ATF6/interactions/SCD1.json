@@ -1,0 +1,98 @@
+{
+  "primary": "SCD1",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 2,
+  "support_summary": "The UPR, through sensors like ATF6, is involved in the regulation of lipid metabolism by altering the expression of key lipid-modifying enzymes such as Stearoyl-CoA desaturase-1 (SCD1).",
+  "functions": [
+    {
+      "function": "Lipid Metabolism",
+      "arrow": "regulates",
+      "cellular_process": "During ER stress, the sensor IRE1 becomes activated, and its endoribonuclease activity splices XBP1 mRNA. The resulting XBP1s protein translocates to the nucleus, where it promotes the expression and processing of SREBP1. Activated SREBP1 then binds to the Sterol Regulatory Element (SRE) in the promoter of lipogenic genes, including SCD1, to drive their transcription.",
+      "effect_description": "The upregulation of SCD1, the rate-limiting enzyme in the synthesis of monounsaturated fatty acids (MUFAs) from saturated fatty acids (SFAs), alters the lipid composition of the ER membrane. This increase in MUFAs helps to alleviate lipotoxicity caused by SFAs and maintain membrane fluidity, thereby contributing to the adaptive response to ER stress.",
+      "biological_consequence": [
+        "ER Stress → IRE1 activation and dimerization → XBP1 mRNA splicing → XBP1s protein translation → XBP1s activates SREBP1 transcription/processing → Cleaved SREBP1 enters nucleus → SREBP1 binds SCD1 promoter → Increased SCD1 expression → Increased MUFA synthesis → Altered membrane composition"
+      ],
+      "specific_effects": [
+        "The IRE1-SREBP1-SCD1 axis is essential for maintaining ER homeostasis and promoting cytoprotection in glioblastoma stem cells.",
+        "Inhibition of SCD1 exacerbates ER stress, indicating that its function is part of a negative feedback loop to resolve the stress.",
+        "SCD1 converts saturated fatty acids like palmitate and stearate into monounsaturated fatty acids oleate and palmitoleate, respectively."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Stearoyl CoA Desaturase Is Essential for Regulation of Endoplasmic Reticulum Homeostasis and Tumor Growth in Glioblastoma Cancer Stem Cells",
+          "journal": "Cell Stem Cell",
+          "year": 2019,
+          "relevant_quote": "Mechanistically, divergent cell fates under varying levels of ER stress are primarily controlled by the ER sensor IRE1, which either promotes SCD1 transcriptional activation or converts to apoptotic signaling when SCD1 activity is impaired... ER stress promotes lipogenesis through the activation of IRE1-SREBP1-SCD1 axis.",
+          "pmid": "30930246"
+        }
+      ],
+      "pmids": [
+        "30930246"
+      ],
+      "interaction_effect": "regulates",
+      "interaction_direction": "main_to_primary",
+      "consequences": [
+        "The provided consequence chain is incorrect as it describes the IRE1-XBP1 branch of the Unfolded Protein Response (UPR), not the ATF6 branch. [3, 5] The IRE1 pathway activates SCD1 expression via SREBP1. [3, 5, 9] In contrast, the ATF6 branch has been shown to inhibit lipogenesis under certain conditions. A corrected, evidence-based consequence chain for ATF6's role is: ER Stress → ATF6 cleavage in Golgi → Activated ATF6(N) translocates to nucleus → ATF6(N) binds to SREBP2 on lipogenic gene promoters → ATF6(N) recruits HDAC1 to the complex → Inhibition of SREBP2-mediated transcription → Decreased expression of lipogenic genes. [12, 13, 14]"
+      ],
+      "function_effect": "regulation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "regulates",
+        "net_from": "ATF6",
+        "net_arrow": "regulates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "regulates",
+      "direct_arrow": "regulates",
+      "net_effect": "regulation",
+      "direct_effect": "regulation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "_chain_inferred": true,
+  "is_valid": true,
+  "mechanism_correction": "Contextual Error: The input claim that ATF6 directly activates SCD1 expression is not well-supported. The transcriptional regulation of SCD1 (Stearoyl-CoA desaturase-1) during ER stress is primarily mediated by the IRE1 branch of the UPR. Activated IRE1 splices XBP1 mRNA to produce the potent transcription factor XBP1s. XBP1s, in turn, can activate the expression of SREBP1 (Sterol Regulatory Element-Binding Protein 1), which is the master transcriptional regulator of lipogenic genes, including SCD1. ATF6's role in lipid metabolism is complex and appears more focused on fatty acid oxidation in the liver, rather than direct activation of SCD1.",
+  "mechanism": "During ER stress, the sensor IRE1 becomes activated, and its endoribonuclease activity splices XBP1 mRNA. The resulting XBP1s protein translocates to the nucleus, where it promotes the expression and processing of SREBP1. Activated SREBP1 then binds to the Sterol Regulatory Element (SRE) in the promoter of lipogenic genes, including SCD1, to drive their transcription.",
+  "effect": "The upregulation of SCD1, the rate-limiting enzyme in the synthesis of monounsaturated fatty acids (MUFAs) from saturated fatty acids (SFAs), alters the lipid composition of the ER membrane. This increase in MUFAs helps to alleviate lipotoxicity caused by SFAs and maintain membrane fluidity, thereby contributing to the adaptive response to ER stress.",
+  "summary": "ATF6 activates SCD1 to modulate lipid metabolism, ultimately affecting altered membrane composition.",
+  "evidence": [
+    {
+      "paper_title": "Stearoyl CoA Desaturase Is Essential for Regulation of Endoplasmic Reticulum Homeostasis and Tumor Growth in Glioblastoma Cancer Stem Cells",
+      "journal": "Cell Stem Cell",
+      "year": 2019,
+      "relevant_quote": "Mechanistically, divergent cell fates under varying levels of ER stress are primarily controlled by the ER sensor IRE1, which either promotes SCD1 transcriptional activation or converts to apoptotic signaling when SCD1 activity is impaired... ER stress promotes lipogenesis through the activation of IRE1-SREBP1-SCD1 axis."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "Lipid Metabolism and SREBP Signaling",
+      "canonical_name": "Lipid Metabolism And Srebp Signaling",
+      "ontology_id": null,
+      "ontology_source": null,
+      "confidence": 0.8
+    }
+  ],
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATF6 --regulates--> SCD1:",
+  "protein_a": "ATF6",
+  "protein_b": "SCD1",
+  "discovered_in_query": "ATF6",
+  "first_discovered": "2025-11-29T12:52:16.120937Z",
+  "last_updated": "2025-11-29T12:52:16.120937Z"
+}

@@ -4,64 +4,36 @@
   "upstream_interactor": null,
   "mediator_chain": [],
   "depth": 2,
-  "support_summary": "PERK (EIF2AK3) and ATF6 are two of the three main sensors of the Unfolded Protein Response (UPR). They function in parallel pathways that are co-activated during ER stress upon dissociation from BiP/GRP78. While there is no direct physical interaction, the PERK pathway is required to facilitate the full activation of ATF6, indicating a functional link and crosstalk between the two branches.",
+  "support_summary": "PERK is the third sensor of the UPR. The ATF6 and PERK pathways are activated by ER stress and have distinct but sometimes overlapping downstream targets.",
   "functions": [
     {
-      "function": "Facilitation of ATF6",
+      "function": "ATF6",
       "arrow": "activates",
-      "cellular_process": "During ER stress, both PERK and ATF6 are released from BiP/GRP78. The PERK-eIF2α-ATF4 signaling axis is required for the induced synthesis and trafficking of ATF6 from the ER to the Golgi, where it is cleaved and activated. The absence of PERK signaling inhibits the full activation of ATF6α.",
-      "effect_description": "PERK signaling facilitates the activation of the ATF6 branch of the UPR, ensuring a coordinated cellular response to ER stress.",
+      "cellular_process": "The PERK branch of the UPR facilitates the activation of ATF6. The PERK/eIF2α~P/ATF4 pathway is required for both the synthesis of ATF6 mRNA and the efficient trafficking of the ATF6 protein from the ER to the Golgi for its proteolytic activation.",
+      "effect_description": "This indicates that the UPR branches are highly integrated, with the PERK pathway being a prerequisite for the full and efficient activation of the ATF6 pathway.",
       "biological_consequence": [
-        "ER Stress → BiP/GRP78 Dissociation from PERK and ATF6 → PERK-eIF2α-ATF4 Signaling Axis Activation → Increased ATF6 Synthesis and Trafficking to Golgi → ATF6 Cleavage and Activation → Coordinated Unfolded Protein Response (UPR)"
+        "PERK activation → eIF2α phosphorylation → Facilitated ATF6 synthesis and ER-to-Golgi transport → Full ATF6 activation"
       ],
       "specific_effects": [
-        "PERK and ATF6 are both sequestered by BiP in non-stressed cells.",
-        "The PERK/eIF2α∼P/ATF4 pathway is required to facilitate the activation of ATF6.",
-        "Loss of PERK leads to reduced ATF6 activation and disrupts the coordinated UPR.",
-        "The pathways function in parallel to mitigate ER stress, with PERK primarily attenuating translation and ATF6 upregulating chaperones."
+        "Depletion of PERK significantly reduces the activation of ATF6 and its target genes."
       ],
       "evidence": [
         {
           "paper_title": "The eIF2 kinase PERK and the integrated stress response facilitate activation of ATF6 during endoplasmic reticulum stress",
-          "doi": "10.1091/mbc.E11-04-0358",
-          "authors": "Teske BF, Wek SA, Bunpo P, Cundiff JK, Wek RC, Anthony TG",
-          "journal": "Molecular Biology of the Cell",
           "year": 2011,
-          "assay": "Western Blot, Northern Blot",
-          "species": "mouse",
-          "relevant_quote": "Our studies show that the PERK/eIF2α∼P/ATF4 pathway is required to facilitate activation of ATF6 in response to ER stress both in vivo and in cultured cells.",
           "pmid": "21917591"
-        },
-        {
-          "paper_title": "ATF6 is a transcription factor specializing in the regulation of quality control proteins in the endoplasmic reticulum",
-          "doi": "10.1247/csf.07044",
-          "authors": "Adachi Y, Yamamoto K, Okada T, Yoshida H, Harada A, Mori K",
-          "journal": "Cell Structure and Function",
-          "year": 2008,
-          "assay": "Northern Blot, Microarray",
-          "species": "mouse",
-          "relevant_quote": "The negative effects of the absence of PERK on transcriptional induction of ER quality control proteins could be explained by its inhibitory effect on ATF6α activation.",
-          "pmid": "18360008"
-        },
-        {
-          "paper_title": "Selective Activation of ATF6 and PERK Endoplasmic Reticulum Stress Signaling Pathways Prevent Mutant Rhodopsin Accumulation",
-          "doi": "10.1167/iovs.12-10222",
-          "authors": "Chiang WC, Hiramatsu N, Messah C, Kroeger H, Lin JH",
-          "journal": "Investigative Ophthalmology & Visual Science",
-          "year": 2012,
-          "assay": "Western Blot, Cell Culture",
-          "species": "human",
-          "relevant_quote": "This study indicates that selectively activating ATF6 or PERK prevents mutant rhodopsin from accumulating in cells.",
-          "pmid": "22956602"
         }
       ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
       "interaction_effect": "activates",
       "direction": "main_to_primary",
       "interaction_direction": "primary_to_main",
       "pmids": [
-        "21917591",
-        "18360008",
-        "22956602"
+        "21917591"
       ],
       "function_effect": "activation",
       "arrow_context": {
@@ -78,48 +50,31 @@
       "direct_effect": "activation"
     }
   ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
   "arrows": {
     "main_to_primary": [
       "activates"
     ]
   },
-  "arrow": "activates",
-  "direction": "main_to_primary",
   "_chain_inferred": true,
-  "intent": "regulation",
-  "mechanism": "During ER stress, both PERK and ATF6 are released from BiP/GRP78. The PERK-eIF2α-ATF4 signaling axis is required for the induced synthesis and trafficking of ATF6 from the ER to the Golgi, where it is cleaved and activated. The absence of PERK signaling inhibits the full activation of ATF6α.",
-  "effect": "PERK signaling facilitates the activation of the ATF6 branch of the UPR, ensuring a coordinated cellular response to ER stress.",
-  "summary": "ATF6 activates PERK to modulate facilitation of atf6 activation, ultimately affecting coordinated unfolded protein response (upr).",
+  "mechanism": "The PERK branch of the UPR facilitates the activation of ATF6. The PERK/eIF2α~P/ATF4 pathway is required for both the synthesis of ATF6 mRNA and the efficient trafficking of the ATF6 protein from the ER to the Golgi for its proteolytic activation.",
+  "effect": "This indicates that the UPR branches are highly integrated, with the PERK pathway being a prerequisite for the full and efficient activation of the ATF6 pathway.",
+  "summary": "ATF6 activates PERK to modulate atf6 activation, ultimately affecting full atf6 activation.",
   "evidence": [
     {
       "paper_title": "The eIF2 kinase PERK and the integrated stress response facilitate activation of ATF6 during endoplasmic reticulum stress",
-      "doi": "10.1091/mbc.E11-04-0358",
-      "authors": "Teske BF, Wek SA, Bunpo P, Cundiff JK, Wek RC, Anthony TG",
-      "journal": "Molecular Biology of the Cell",
-      "year": 2011,
-      "assay": "Western Blot, Northern Blot",
-      "species": "mouse",
-      "relevant_quote": "Our studies show that the PERK/eIF2α∼P/ATF4 pathway is required to facilitate activation of ATF6 in response to ER stress both in vivo and in cultured cells."
-    },
+      "year": 2011
+    }
+  ],
+  "pathways": [
     {
-      "paper_title": "ATF6 is a transcription factor specializing in the regulation of quality control proteins in the endoplasmic reticulum",
-      "doi": "10.1247/csf.07044",
-      "authors": "Adachi Y, Yamamoto K, Okada T, Yoshida H, Harada A, Mori K",
-      "journal": "Cell Structure and Function",
-      "year": 2008,
-      "assay": "Northern Blot, Microarray",
-      "species": "mouse",
-      "relevant_quote": "The negative effects of the absence of PERK on transcriptional induction of ER quality control proteins could be explained by its inhibitory effect on ATF6α activation."
-    },
-    {
-      "paper_title": "Selective Activation of ATF6 and PERK Endoplasmic Reticulum Stress Signaling Pathways Prevent Mutant Rhodopsin Accumulation",
-      "doi": "10.1167/iovs.12-10222",
-      "authors": "Chiang WC, Hiramatsu N, Messah C, Kroeger H, Lin JH",
-      "journal": "Investigative Ophthalmology & Visual Science",
-      "year": 2012,
-      "assay": "Western Blot, Cell Culture",
-      "species": "human",
-      "relevant_quote": "This study indicates that selectively activating ATF6 or PERK prevents mutant rhodopsin from accumulating in cells."
+      "name": "Unfolded Protein Response (UPR) Activation",
+      "canonical_name": "Unfolded Protein Response",
+      "ontology_id": "GO:0030968",
+      "ontology_source": "GO",
+      "confidence": 0.95
     }
   ],
   "interaction_effect": "activation",
@@ -133,6 +88,6 @@
   "protein_a": "PERK",
   "protein_b": "ATF6",
   "discovered_in_query": "ATF6",
-  "first_discovered": "2025-11-18T21:01:00.248532Z",
-  "last_updated": "2025-11-18T21:01:00.248532Z"
+  "first_discovered": "2025-11-29T12:52:16.035198Z",
+  "last_updated": "2025-11-29T12:52:16.035198Z"
 }

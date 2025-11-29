@@ -1,115 +1,111 @@
 {
   "primary": "S2P",
-  "direction": "primary_to_main",
-  "arrow": "activates",
-  "intent": "proteolytic cleavage",
-  "support_summary": "Following the initial cleavage by S1P, Site-2 Protease (S2P/MBTPS2) performs a second proteolytic cut to release the active ATF6 transcription factor domain.",
+  "interaction_type": "indirect",
+  "upstream_interactor": "S1P",
+  "mediator_chain": [
+    "S1P"
+  ],
+  "depth": 1,
+  "support_summary": "Following cleavage by S1P in the Golgi, Site-2 Protease (S2P) performs the second cleavage of ATF6, which is necessary for its activation.",
   "functions": [
     {
-      "function": "ATF6 Proteolytic Cleavage (Site-2)",
+      "function": "Final Proteolytic Cleavage and Activation of ATF6",
       "arrow": "activates",
-      "cellular_process": "Following the initial cleavage by S1P in the Golgi, Site-2 Protease (S2P/MBTPS2) performs a second cleavage within the transmembrane domain of the ATF6 intermediate.",
-      "effect_description": "S2P performs the final intramembrane cleavage of the ATF6 intermediate, releasing the active N-terminal transcription factor domain into the cytoplasm.",
+      "cellular_process": "Following the initial cleavage of ATF6 by S1P in the Golgi, the now-accessible transmembrane domain of ATF6 is cleaved by Site-2 Protease (S2P), also known as MBTPS2.",
+      "effect_description": "This second cleavage occurs within the transmembrane segment of ATF6, which liberates the N-terminal cytosolic domain (ATF6f). This fragment is the active transcription factor.",
       "biological_consequence": [
-        "S1P-cleaved ATF6 intermediate is recognized by S2P in the Golgi → S2P performs intramembrane proteolysis of the ATF6 transmembrane domain → The cytosolic ATF6-N fragment is released from the membrane → ATF6-N translocates to the nucleus to act as a transcription factor.",
-        "Nuclear ATF6-N binds to ER Stress Response Elements (ERSEs) in gene promoters → Expression of UPR target genes (e.g., BiP, GRP94, XBP1) is upregulated → ER protein folding and degradation capacity is increased → ER homeostasis is restored."
+        "S1P cleaves ATF6 luminal domain → S2P accesses and cleaves the ATF6 transmembrane domain → The N-terminal cytosolic fragment (ATF6f) is released from the Golgi membrane → ATF6f translocates to the nucleus → ATF6f activates transcription of UPR target genes."
       ],
       "specific_effects": [
-        "Performs regulated intramembrane proteolysis on the S1P-processed ATF6 fragment.",
-        "The release of the ATF6-N fragment is completely dependent on prior S1P cleavage.",
-        "Cleavage is blocked in cells lacking S2P."
+        "Catalyzes the final intramembrane proteolytic event required for ATF6 activation.",
+        "Directly releases the soluble, active N-terminal transcription factor domain of ATF6 into the cytosol."
       ],
       "evidence": [
         {
           "paper_title": "ER stress induces cleavage of membrane-bound ATF6 by the same proteases that process SREBPs",
-          "doi": "10.1016/s1097-2765(00)00133-7",
-          "authors": "J Ye, R B Rawson, R Komuro, X Chen, U P Davé, R Prywes, M S Brown, J L Goldstein",
           "journal": "Molecular Cell",
           "year": 2000,
-          "assay": "Cell Culture, Western Blot",
-          "species": "hamster, human",
-          "relevant_quote": "ATF6 processing was blocked completely in cells lacking S2P and partially in cells lacking S1P.",
+          "relevant_quote": "When unfolded proteins accumulate in the ER, ATF6 is cleaved to release its cytoplasmic domain, which enters the nucleus. Here, we show that ATF6 is processed by Site-1 protease (S1P) and Site-2 protease (S2P)...",
           "pmid": "11163209"
         },
         {
           "paper_title": "Dependence of site-2 protease cleavage of ATF6 on prior site-1 protease digestion is determined by the size of the luminal domain of ATF6",
-          "doi": "10.1074/jbc.M408466200",
-          "authors": "Jingshi Shen, Ron Prywes",
           "journal": "The Journal of Biological Chemistry",
           "year": 2004,
-          "assay": "Cell Culture, Western Blot",
-          "species": "human",
           "relevant_quote": "The release of the cytosolic transcription factor domain of ATF6 requires the sequential processing by the Golgi site-1 and site-2 proteases (S1P and S2P).",
           "pmid": "15299016"
-        },
-        {
-          "paper_title": "Understanding the Unfolded Protein Response (UPR) Pathway: Insights into Neuropsychiatric Disorders and Therapeutic Potentials",
-          "doi": "10.4062/biomolther.2023.181",
-          "authors": "Pitna Kim",
-          "journal": "Biomolecules & Therapeutics",
-          "year": 2024,
-          "assay": "Review",
-          "species": "general",
-          "relevant_quote": "ATF6 translocates to the Golgi apparatus upon ER stress, where it is cleaved by site-1 protease (S1P) and site-2 protease (S2P), releasing a cytosolic fragment that functions as a transcription factor.",
-          "pmid": "38410073"
         }
       ],
       "pmids": [
         "11163209",
-        "15299016",
-        "38410073"
+        "15299016"
       ],
+      "direct_arrow": "activates",
       "interaction_effect": "activates",
       "interaction_direction": "primary_to_main",
-      "function_effect": "activation"
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "S1P",
+        "direct_arrow": "activates",
+        "net_from": "ATF6",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "S1P"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
     }
   ],
-  "mechanism": "Following the initial cleavage by S1P in the Golgi, Site-2 Protease (S2P/MBTPS2) performs a second cleavage within the transmembrane domain of the ATF6 intermediate.",
-  "effect": "S2P performs the final intramembrane cleavage of the ATF6 intermediate, releasing the active N-terminal transcription factor domain into the cytoplasm.",
-  "summary": "ATF6 activates S2P to modulate atf6 proteolytic cleavage (site-2), ultimately affecting atf6-n translocates to the nucleus to act as a transcription factor.",
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Following the initial cleavage of ATF6 by S1P in the Golgi, the now-accessible transmembrane domain of ATF6 is cleaved by Site-2 Protease (S2P), also known as MBTPS2.",
+  "effect": "This second cleavage occurs within the transmembrane segment of ATF6, which liberates the N-terminal cytosolic domain (ATF6f). This fragment is the active transcription factor.",
+  "summary": "ATF6 activates S2P to modulate final proteolytic cleavage and activation of atf6, ultimately affecting atf6f activates transcription of upr target genes.",
   "evidence": [
     {
       "paper_title": "ER stress induces cleavage of membrane-bound ATF6 by the same proteases that process SREBPs",
-      "doi": "10.1016/s1097-2765(00)00133-7",
-      "authors": "J Ye, R B Rawson, R Komuro, X Chen, U P Davé, R Prywes, M S Brown, J L Goldstein",
       "journal": "Molecular Cell",
       "year": 2000,
-      "assay": "Cell Culture, Western Blot",
-      "species": "hamster, human",
-      "relevant_quote": "ATF6 processing was blocked completely in cells lacking S2P and partially in cells lacking S1P."
+      "relevant_quote": "When unfolded proteins accumulate in the ER, ATF6 is cleaved to release its cytoplasmic domain, which enters the nucleus. Here, we show that ATF6 is processed by Site-1 protease (S1P) and Site-2 protease (S2P)..."
     },
     {
       "paper_title": "Dependence of site-2 protease cleavage of ATF6 on prior site-1 protease digestion is determined by the size of the luminal domain of ATF6",
-      "doi": "10.1074/jbc.M408466200",
-      "authors": "Jingshi Shen, Ron Prywes",
       "journal": "The Journal of Biological Chemistry",
       "year": 2004,
-      "assay": "Cell Culture, Western Blot",
-      "species": "human",
       "relevant_quote": "The release of the cytosolic transcription factor domain of ATF6 requires the sequential processing by the Golgi site-1 and site-2 proteases (S1P and S2P)."
-    },
+    }
+  ],
+  "pathways": [
     {
-      "paper_title": "Understanding the Unfolded Protein Response (UPR) Pathway: Insights into Neuropsychiatric Disorders and Therapeutic Potentials",
-      "doi": "10.4062/biomolther.2023.181",
-      "authors": "Pitna Kim",
-      "journal": "Biomolecules & Therapeutics",
-      "year": 2024,
-      "assay": "Review",
-      "species": "general",
-      "relevant_quote": "ATF6 translocates to the Golgi apparatus upon ER stress, where it is cleaved by site-1 protease (S1P) and site-2 protease (S2P), releasing a cytosolic fragment that functions as a transcription factor."
+      "name": "Unfolded Protein Response (UPR) Activation",
+      "canonical_name": "Unfolded Protein Response",
+      "ontology_id": "GO:0030968",
+      "ontology_source": "GO",
+      "confidence": 0.95
     }
   ],
   "interaction_effect": "activation",
   "_validation_metadata": {
     "validated": true,
     "validator": "arrow_effect_validator",
-    "corrections_applied": 1
+    "corrections_applied": 2
   },
   "_arrow_validated": true,
-  "arrow_notation": "ATF6 <--activates-- S2P:",
+  "arrow_notation": "S1P <--activates-- S2P:",
   "protein_a": "ATF6",
   "protein_b": "S2P",
   "discovered_in_query": "ATF6",
-  "first_discovered": "2025-11-18T21:01:00.230093Z",
-  "last_updated": "2025-11-18T21:01:00.230093Z"
+  "first_discovered": "2025-11-29T12:52:16.024742Z",
+  "last_updated": "2025-11-29T12:52:16.024742Z"
 }

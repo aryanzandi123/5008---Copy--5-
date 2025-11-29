@@ -1,0 +1,111 @@
+{
+  "primary": "p38 MAPK",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "The p38 mitogen-activated protein kinase (MAPK) signaling pathway can phosphorylate ATF6, suggesting a role in modulating its activity under stress conditions.",
+  "functions": [
+    {
+      "function": "Phosphorylation by p38 MAPK",
+      "arrow": "activates",
+      "cellular_process": "In response to upstream signals like cellular stress or differentiation cues, the p38 mitogen-activated protein kinase (MAPK) becomes activated. p38 MAPK then directly phosphorylates the N-terminal domain of the full-length ATF6α protein resident in the ER membrane.",
+      "effect_description": "This phosphorylation event is a critical step for the subsequent activation of ATF6α. It facilitates the trafficking of ATF6α from the ER to the Golgi apparatus, where it can be cleaved by proteases to release its active N-terminal fragment. This fragment then translocates to the nucleus to function as a transcription factor, thereby enhancing its ability to induce target gene expression and mediate cellular responses like myogenesis or senescence.",
+      "biological_consequence": [
+        "Cellular stress or differentiation cue → p38 MAPK activation → Direct phosphorylation of ATF6α (e.g., at Threonine 166) → Facilitated ER-to-Golgi trafficking of ATF6α → Proteolytic cleavage of ATF6α → Nuclear import of active ATF6(N) fragment → Enhanced transcriptional activity → Regulation of cell fate (myogenesis, senescence)"
+      ],
+      "specific_effects": [
+        "Directly phosphorylates the N-terminal activation domain of ATF6α.",
+        "Phosphorylation of ATF6α at Threonine 166 by p38 MAPK is required for myogenesis in C2C12 cells.",
+        "Enhances the transcriptional activity of ATF6α, promoting cellular senescence or differentiation."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Myogenesis in C2C12 Cells Requires Phosphorylation of ATF6α by p38 MAPK",
+          "journal": "Biomedicines",
+          "year": 2023,
+          "relevant_quote": "ATF6α stimulation is p38 MAPK-dependent, as revealed by the use of the inhibitor SB203580, which halts myotube formation and, at the same time, impairs trafficking of ATF6α, which accumulates at the cis-Golgi without being processed in the p50 transcriptional active form... the expression of an ATF6α mutant in the p38 MAPK phosphorylation site (T166) was not able to regain myogenesis.",
+          "pmid": "37239128"
+        },
+        {
+          "paper_title": "The p38-activated ER stress-ATF6α axis mediates cellular senescence",
+          "journal": "The FASEB Journal",
+          "year": 2018,
+          "relevant_quote": "NBR1 bound to p38 MAPK, preferentially to an active form, and upon NBR1 abrogation, the activity of p38 increased. NADPH oxidase was activated in turn by p38, and the resulting oxidative stress triggered ER stress. It was found that ER stress mediated cellular senescence through the UPR sensor ATF6α.",
+          "pmid": "30260700"
+        },
+        {
+          "paper_title": "p38 Mitogen-activated protein kinase mediates the transcriptional induction of the atrial natriuretic factor gene through a serum response element. A potential role for the transcription factor ATF6",
+          "journal": "The Journal of Biological Chemistry",
+          "year": 1998,
+          "relevant_quote": "Although p38 did not phosphorylate SRF in vitro, it efficiently phosphorylated ATF6, a newly discovered SRF-binding protein that is believed to serve as a co-activator of SRF-inducible transcription at SREs.",
+          "pmid": "9685422"
+        }
+      ],
+      "pmids": [
+        "37239128",
+        "30260700",
+        "9685422"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "_chain_inferred": true,
+  "is_valid": true,
+  "mechanism_correction": "Contextual Error: The input data incorrectly implies that ATF6 acts on p38 MAPK. The primary literature confirms the opposite is true: p38 MAPK is an upstream kinase that phosphorylates and activates ATF6. The interaction direction is p38 MAPK → ATF6.",
+  "mechanism": "In response to upstream signals like cellular stress or differentiation cues, the p38 mitogen-activated protein kinase (MAPK) becomes activated. p38 MAPK then directly phosphorylates the N-terminal domain of the full-length ATF6α protein resident in the ER membrane.",
+  "effect": "This phosphorylation event is a critical step for the subsequent activation of ATF6α. It facilitates the trafficking of ATF6α from the ER to the Golgi apparatus, where it can be cleaved by proteases to release its active N-terminal fragment. This fragment then translocates to the nucleus to function as a transcription factor, thereby enhancing its ability to induce target gene expression and mediate cellular responses like myogenesis or senescence.",
+  "summary": "ATF6 activates p38 MAPK to modulate phosphorylation by p38 mapk, ultimately affecting regulation of cell fate (myogenesis, senescence).",
+  "evidence": [
+    {
+      "paper_title": "Myogenesis in C2C12 Cells Requires Phosphorylation of ATF6α by p38 MAPK",
+      "journal": "Biomedicines",
+      "year": 2023,
+      "relevant_quote": "ATF6α stimulation is p38 MAPK-dependent, as revealed by the use of the inhibitor SB203580, which halts myotube formation and, at the same time, impairs trafficking of ATF6α, which accumulates at the cis-Golgi without being processed in the p50 transcriptional active form... the expression of an ATF6α mutant in the p38 MAPK phosphorylation site (T166) was not able to regain myogenesis."
+    },
+    {
+      "paper_title": "The p38-activated ER stress-ATF6α axis mediates cellular senescence",
+      "journal": "The FASEB Journal",
+      "year": 2018,
+      "relevant_quote": "NBR1 bound to p38 MAPK, preferentially to an active form, and upon NBR1 abrogation, the activity of p38 increased. NADPH oxidase was activated in turn by p38, and the resulting oxidative stress triggered ER stress. It was found that ER stress mediated cellular senescence through the UPR sensor ATF6α."
+    },
+    {
+      "paper_title": "p38 Mitogen-activated protein kinase mediates the transcriptional induction of the atrial natriuretic factor gene through a serum response element. A potential role for the transcription factor ATF6",
+      "journal": "The Journal of Biological Chemistry",
+      "year": 1998,
+      "relevant_quote": "Although p38 did not phosphorylate SRF in vitro, it efficiently phosphorylated ATF6, a newly discovered SRF-binding protein that is believed to serve as a co-activator of SRF-inducible transcription at SREs."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "MAPK Signaling Cross-talk",
+      "canonical_name": "MAPK Signaling",
+      "ontology_id": "hsa04010",
+      "ontology_source": "KEGG",
+      "confidence": 0.75
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATF6 <--activates-- p38 MAPK:",
+  "protein_a": "ATF6",
+  "protein_b": "p38 MAPK",
+  "discovered_in_query": "ATF6",
+  "first_discovered": "2025-11-29T12:52:16.046096Z",
+  "last_updated": "2025-11-29T12:52:16.046096Z"
+}

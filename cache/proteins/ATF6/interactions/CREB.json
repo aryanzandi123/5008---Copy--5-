@@ -1,0 +1,109 @@
+{
+  "primary": "CREB",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 2,
+  "support_summary": "ATF6 activation inhibits the DNA-binding and transactivation activity of CREB (cAMP response element-binding protein), thereby suppressing hepatic gluconeogenesis.",
+  "functions": [
+    {
+      "function": "CREB-mediated Transcription",
+      "arrow": "inhibits",
+      "cellular_process": "Upon endoplasmic reticulum (ER) stress, the active form of ATF6 (ATF6N) translocates to the nucleus. There, it inhibits the transcriptional activity of cAMP response element-binding protein (CREB). One proposed mechanism is that ATF6N binds to the CREB coactivator CRTC2, preventing its association with CREB and thereby blocking CREB's ability to bind to the promoters of its target genes.",
+      "effect_description": "This inhibition of CREB transactivation and DNA-binding activity leads to the transcriptional suppression of key hepatic gluconeogenic enzymes, such as phosphoenolpyruvate carboxykinase (PEPCK) and glucose-6-phosphatase (G6Pase).",
+      "biological_consequence": [
+        "ER Stress → ATF6 activation and nuclear translocation → ATF6 binds to CRTC2, disrupting the CREB:CRTC2 complex → Inhibition of CREB DNA-binding to PEPCK and G6Pase promoters → Decreased transcription of gluconeogenic enzymes → Suppression of hepatic gluconeogenesis"
+      ],
+      "specific_effects": [
+        "Overexpression of active ATF6 inhibits forskolin-stimulated CREB DNA-binding activity.",
+        "Adenovirus-mediated overexpression of ATF6 in mice leads to decreased fasting-induced expression of PEPCK and G6Pase mRNA and lowers blood glucose levels.",
+        "Active ATF6α reduces hepatic glucose output by disrupting the CREB:CRTC2 interaction and inhibiting CRTC2 occupancy on gluconeogenic gene promoters."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Endoplasmic reticulum stress-induced activation of activating transcription factor 6 decreases cAMP-stimulated hepatic gluconeogenesis via inhibition of CREB",
+          "journal": "Endocrinology",
+          "year": 2010,
+          "relevant_quote": "Transient transfection of ATF6 inhibited transactivation by CREB on the PEPCK and G6Pase promoters, and a gel shift assay showed that Ad-ATF6 inhibits forskolin-stimulated CREB DNA-binding activity. Finally, we found that expression of ATF6 decreased fasting-induced PEPCK, G6Pase mRNA expression, and blood glucose levels in mice.",
+          "pmid": "20022930"
+        },
+        {
+          "paper_title": "The CREB coactivator CRTC2 links hepatic ER stress and fasting gluconeogenesis",
+          "journal": "Nature",
+          "year": 2009,
+          "relevant_quote": "In addition to mediating CRTC2 recruitment to ER stress inducible promoters, ATF6α also reduced hepatic glucose output by disrupting the CREB-CRTC2 interaction and thereby inhibiting CRTC2 occupancy over gluconeogenic genes.",
+          "pmid": "19543265"
+        }
+      ],
+      "pmids": [
+        "20022930",
+        "19543265"
+      ],
+      "interaction_effect": "inhibits",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "inhibition",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "inhibits",
+        "net_from": "ATF6",
+        "net_arrow": "inhibits",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "inhibits",
+      "direct_arrow": "inhibits",
+      "net_effect": "inhibition",
+      "direct_effect": "inhibition"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "_chain_inferred": true,
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Upon endoplasmic reticulum (ER) stress, the active form of ATF6 (ATF6N) translocates to the nucleus. There, it inhibits the transcriptional activity of cAMP response element-binding protein (CREB). One proposed mechanism is that ATF6N binds to the CREB coactivator CRTC2, preventing its association with CREB and thereby blocking CREB's ability to bind to the promoters of its target genes.",
+  "effect": "This inhibition of CREB transactivation and DNA-binding activity leads to the transcriptional suppression of key hepatic gluconeogenic enzymes, such as phosphoenolpyruvate carboxykinase (PEPCK) and glucose-6-phosphatase (G6Pase).",
+  "summary": "ATF6 inhibits CREB to modulate creb-mediated transcription, ultimately affecting suppression of hepatic gluconeogenesis.",
+  "evidence": [
+    {
+      "paper_title": "Endoplasmic reticulum stress-induced activation of activating transcription factor 6 decreases cAMP-stimulated hepatic gluconeogenesis via inhibition of CREB",
+      "journal": "Endocrinology",
+      "year": 2010,
+      "relevant_quote": "Transient transfection of ATF6 inhibited transactivation by CREB on the PEPCK and G6Pase promoters, and a gel shift assay showed that Ad-ATF6 inhibits forskolin-stimulated CREB DNA-binding activity. Finally, we found that expression of ATF6 decreased fasting-induced PEPCK, G6Pase mRNA expression, and blood glucose levels in mice."
+    },
+    {
+      "paper_title": "The CREB coactivator CRTC2 links hepatic ER stress and fasting gluconeogenesis",
+      "journal": "Nature",
+      "year": 2009,
+      "relevant_quote": "In addition to mediating CRTC2 recruitment to ER stress inducible promoters, ATF6α also reduced hepatic glucose output by disrupting the CREB-CRTC2 interaction and thereby inhibiting CRTC2 occupancy over gluconeogenic genes."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "Transcriptional Co-regulation and Cross-talk",
+      "canonical_name": "Transcription",
+      "ontology_id": "GO:0006351",
+      "ontology_source": "GO",
+      "confidence": 0.7
+    }
+  ],
+  "interaction_effect": "inhibition",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATF6 --inhibits--> CREB:",
+  "protein_a": "ATF6",
+  "protein_b": "CREB",
+  "discovered_in_query": "ATF6",
+  "first_discovered": "2025-11-29T12:52:16.055015Z",
+  "last_updated": "2025-11-29T12:52:16.055015Z"
+}

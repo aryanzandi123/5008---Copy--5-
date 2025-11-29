@@ -1,0 +1,96 @@
+{
+  "primary": "ATF6",
+  "interaction_type": "indirect",
+  "upstream_interactor": "WBP1",
+  "mediator_chain": [
+    "WBP1"
+  ],
+  "depth": 3,
+  "support_summary": "The anti-apoptotic protein Mcl-1 (myeloid cell leukemia sequence 1) is downregulated upon activation of the ATF6-WBP1 pathway, linking the UPR to apoptosis regulation.",
+  "functions": [
+    {
+      "function": "Downregulation of Protein Levels",
+      "arrow": "activates",
+      "cellular_process": "The activation of ATF6 leads to the transcriptional upregulation of WBP1. Subsequently, WBP1 causes a specific reduction in the protein levels of the anti-apoptotic Bcl-2 family member, Mcl-1.",
+      "effect_description": "By decreasing the abundance of the anti-apoptotic protein Mcl-1, the ATF6-WBP1 axis shifts the cellular balance towards apoptosis. This serves as a mechanism to eliminate cells experiencing prolonged or irremediable ER stress.",
+      "biological_consequence": [
+        "ATF6 activation → WBP1 transcriptional upregulation → WBP1 protein expression → Mcl-1 protein levels are reduced → Inhibition of Mcl-1's anti-apoptotic function → Apoptosis is promoted"
+      ],
+      "specific_effects": [
+        "Overexpression of either active ATF6 or WBP1 leads to a specific reduction in Mcl-1 protein, while the levels of other anti-apoptotic proteins like Bcl-2 and Bcl-xL are not affected."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Activating transcription factor-6 (ATF6) mediates apoptosis with reduction of myeloid cell leukemia sequence 1 (Mcl-1) protein via induction of WW domain binding protein 1",
+          "journal": "The Journal of Biological Chemistry",
+          "year": 2011,
+          "relevant_quote": "Overexpression of active ATF6 or WBP1 caused a specific reduction in an anti-apoptotic protein, Mcl-1 (myeloid cell leukemia sequence 1). This suggested a molecular link between the UPR and an apoptosis regulator. ... These results suggested that Mcl-1 is a determinant of cell fate, and ATF6 mediates apoptosis via specific suppression of Mcl-1 through up-regulation of WBP1.",
+          "pmid": "21841196"
+        }
+      ],
+      "pmids": [
+        "21841196"
+      ],
+      "direct_arrow": "activates",
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "WBP1",
+        "direct_arrow": "activates",
+        "net_from": "ATF6",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "WBP1"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The input correctly identifies the inhibitory effect. The mechanism is a post-transcriptional reduction in Mcl-1 protein levels, mediated by the upstream effector WBP1, which is transcriptionally induced by ATF6.",
+  "mechanism": "The activation of ATF6 leads to the transcriptional upregulation of WBP1. Subsequently, WBP1 causes a specific reduction in the protein levels of the anti-apoptotic Bcl-2 family member, Mcl-1.",
+  "effect": "By decreasing the abundance of the anti-apoptotic protein Mcl-1, the ATF6-WBP1 axis shifts the cellular balance towards apoptosis. This serves as a mechanism to eliminate cells experiencing prolonged or irremediable ER stress.",
+  "summary": "ATF6 inhibits Mcl-1 to modulate downregulation of protein levels, ultimately affecting apoptosis is promoted.",
+  "evidence": [
+    {
+      "paper_title": "Activating transcription factor-6 (ATF6) mediates apoptosis with reduction of myeloid cell leukemia sequence 1 (Mcl-1) protein via induction of WW domain binding protein 1",
+      "journal": "The Journal of Biological Chemistry",
+      "year": 2011,
+      "relevant_quote": "Overexpression of active ATF6 or WBP1 caused a specific reduction in an anti-apoptotic protein, Mcl-1 (myeloid cell leukemia sequence 1). This suggested a molecular link between the UPR and an apoptosis regulator. ... These results suggested that Mcl-1 is a determinant of cell fate, and ATF6 mediates apoptosis via specific suppression of Mcl-1 through up-regulation of WBP1."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "ER Stress-Induced Apoptosis",
+      "canonical_name": "Apoptosis",
+      "ontology_id": "GO:0006915",
+      "ontology_source": "GO",
+      "confidence": 0.9
+    }
+  ],
+  "interaction_effect": "inhibition",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "WBP1 --inhibits--> Mcl-1:",
+  "protein_a": "Mcl-1",
+  "protein_b": "ATF6",
+  "discovered_in_query": "ATF6",
+  "first_discovered": "2025-11-29T12:52:16.052874Z",
+  "last_updated": "2025-11-29T12:52:16.052874Z"
+}

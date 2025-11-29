@@ -1,0 +1,77 @@
+{
+  "primary": "FOXA2",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATF6 is known to interact with other liver-enriched transcription factors, and functional interactions between factors like HNF-6 and FoxA2 have been demonstrated, suggesting a network of transcription factor cooperation.",
+  "functions": [
+    {
+      "function": "Hepatic Gene Transcription",
+      "arrow": "activates",
+      "cellular_process": "In liver cells, ATF6 is known to functionally interact with a network of liver-enriched transcription factors, including Forkhead box protein A2 (FOXA2).",
+      "effect_description": "This cooperation suggests a role for ATF6 in modulating the expression of genes involved in hepatic metabolism and development, integrating the ER stress response with liver-specific transcriptional programs.",
+      "biological_consequence": [
+        "ATF6/FOXA2 interaction → Cooperative binding to target promoters → Regulation of hepatic gene expression"
+      ],
+      "specific_effects": [],
+      "evidence": [],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": []
+      },
+      "interaction_effect": "regulates",
+      "direction": "main_to_primary",
+      "interaction_direction": "bidirectional",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATF6",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "bidirectional",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "_validation_status": "rejected",
+  "mechanism": "In liver cells, ATF6 is known to functionally interact with a network of liver-enriched transcription factors, including Forkhead box protein A2 (FOXA2).",
+  "effect": "This cooperation suggests a role for ATF6 in modulating the expression of genes involved in hepatic metabolism and development, integrating the ER stress response with liver-specific transcriptional programs.",
+  "summary": "ATF6 activates FOXA2 to modulate hepatic gene transcription, ultimately affecting regulation of hepatic gene expression.",
+  "evidence": [],
+  "pathways": [
+    {
+      "name": "Transcriptional Co-regulation and Cross-talk",
+      "canonical_name": "Transcription",
+      "ontology_id": "GO:0006351",
+      "ontology_source": "GO",
+      "confidence": 0.7
+    }
+  ],
+  "interaction_effect": "regulates",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 5
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATF6 <--regulates--> FOXA2:",
+  "protein_a": "ATF6",
+  "protein_b": "FOXA2",
+  "discovered_in_query": "ATF6",
+  "first_discovered": "2025-11-29T12:52:16.106118Z",
+  "last_updated": "2025-11-29T12:52:16.106118Z"
+}

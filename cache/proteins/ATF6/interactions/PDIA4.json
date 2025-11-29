@@ -1,0 +1,110 @@
+{
+  "primary": "PDIA4",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 2,
+  "support_summary": "Protein Disulfide Isomerase Family A Member 4 (PDIA4) is an ER proteostasis factor whose expression is upregulated by ATF6 to aid in protein folding.",
+  "functions": [
+    {
+      "function": "PDI Gene Transcription and",
+      "arrow": "activates",
+      "cellular_process": "ATF6 activation is part of a feedback loop with Protein Disulfide Isomerases (PDIs). Pharmacological compounds that activate ATF6 do so by forming reactive electrophiles that covalently modify ER-resident proteins, including PDIA4. This modification of PDIs, which regulate the disulfide bonds in ATF6's luminal domain, facilitates ATF6 activation. Activated ATF6, in turn, can contribute to the upregulation of PDI gene expression, including PDIA4, to enhance the protein folding and quality control machinery of the ER. However, PDIA4 is also a known transcriptional target of the XBP1 branch of the UPR.",
+      "effect_description": "This regulatory loop results in increased expression and activity of PDIA4. This enhances the ER's capacity for correct disulfide bond formation in newly synthesized proteins, thereby helping to resolve ER stress. The upregulation of PDIA4 is a component of the broader adaptive UPR aimed at restoring proteostasis.",
+      "biological_consequence": [
+        "Pharmacological agent/ER Stress → Covalent modification of PDIA4 → Altered redox regulation of ATF6 → ATF6 activation and nuclear translocation → Upregulation of UPR target genes, including PDIs → Increased PDIA4 expression → Enhanced disulfide bond formation capacity"
+      ],
+      "specific_effects": [
+        "Pharmacological activators of ATF6 covalently modify PDIA4.",
+        "Genetic depletion of PDIA4 perturbs the induction of ATF6 target genes by these pharmacological activators.",
+        "PDIA4 expression is positively correlated with ATF6 expression in glioblastoma.",
+        "PDIA4 is transcriptionally upregulated by the UPR factor XBP1."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Pharmacologic ATF6 activating compounds are metabolically activated to selectively modify endoplasmic reticulum proteins",
+          "journal": "eLife",
+          "year": 2018,
+          "relevant_quote": "Here we show that 147-dependent ATF6 activation requires metabolic oxidation to form an electrophile that preferentially reacts with ER proteins. Proteins covalently modified by 147 include protein disulfide isomerases (PDIs), known to regulate ATF6 activation. Genetic depletion of PDIs perturbs 147-dependent induction of the ATF6-target gene, BiP, implicating covalent modifications of PDIs in the preferential activation of ATF6 afforded by treatment with 147.",
+          "pmid": "30084354"
+        },
+        {
+          "paper_title": "Protein disulfide-isomerase A4 confers glioblastoma angiogenesis promotion capacity and resistance to anti-angiogenic therapy",
+          "journal": "Journal of Experimental & Clinical Cancer Research",
+          "year": 2023,
+          "relevant_quote": "Functionally, PDIA4 exhibits pro-angiogenesis activity both in vitro and in vivo, and can be upregulated by ERS through transcriptional regulation of X-box binding protein 1 (XBP1). The XBP1/PDIA4/VEGFA axis partially supports the mechanism underlying GBM cell survival under ER stress.",
+          "pmid": "36997943"
+        }
+      ],
+      "pmids": [
+        "30084354",
+        "36997943"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATF6",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "bidirectional",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "_chain_inferred": true,
+  "is_valid": true,
+  "mechanism_correction": "The provided input suggests a direct transcriptional activation of PDIA4 by ATF6. While ATF6 activation does lead to increased PDIA4 levels, the mechanism is more complex. The literature shows that pharmacological activators of ATF6 covalently modify PDIs, including PDIA4, which in turn regulates ATF6 activity. While PDIA4 is considered an ATF6 target, other UPR transcription factors like XBP1 are also shown to directly regulate its transcription. The interaction is valid, but the directness of transcriptional activation by ATF6 alone is less established than for canonical targets like GRP94.",
+  "mechanism": "ATF6 activation is part of a feedback loop with Protein Disulfide Isomerases (PDIs). Pharmacological compounds that activate ATF6 do so by forming reactive electrophiles that covalently modify ER-resident proteins, including PDIA4. This modification of PDIs, which regulate the disulfide bonds in ATF6's luminal domain, facilitates ATF6 activation. Activated ATF6, in turn, can contribute to the upregulation of PDI gene expression, including PDIA4, to enhance the protein folding and quality control machinery of the ER. However, PDIA4 is also a known transcriptional target of the XBP1 branch of the UPR.",
+  "effect": "This regulatory loop results in increased expression and activity of PDIA4. This enhances the ER's capacity for correct disulfide bond formation in newly synthesized proteins, thereby helping to resolve ER stress. The upregulation of PDIA4 is a component of the broader adaptive UPR aimed at restoring proteostasis.",
+  "summary": "ATF6 activates PDIA4 to modulate pdi gene transcription and regulation, ultimately affecting enhanced disulfide bond formation capacity.",
+  "evidence": [
+    {
+      "paper_title": "Pharmacologic ATF6 activating compounds are metabolically activated to selectively modify endoplasmic reticulum proteins",
+      "journal": "eLife",
+      "year": 2018,
+      "relevant_quote": "Here we show that 147-dependent ATF6 activation requires metabolic oxidation to form an electrophile that preferentially reacts with ER proteins. Proteins covalently modified by 147 include protein disulfide isomerases (PDIs), known to regulate ATF6 activation. Genetic depletion of PDIs perturbs 147-dependent induction of the ATF6-target gene, BiP, implicating covalent modifications of PDIs in the preferential activation of ATF6 afforded by treatment with 147."
+    },
+    {
+      "paper_title": "Protein disulfide-isomerase A4 confers glioblastoma angiogenesis promotion capacity and resistance to anti-angiogenic therapy",
+      "journal": "Journal of Experimental & Clinical Cancer Research",
+      "year": 2023,
+      "relevant_quote": "Functionally, PDIA4 exhibits pro-angiogenesis activity both in vitro and in vivo, and can be upregulated by ERS through transcriptional regulation of X-box binding protein 1 (XBP1). The XBP1/PDIA4/VEGFA axis partially supports the mechanism underlying GBM cell survival under ER stress."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "UPR Target Gene Transcription",
+      "canonical_name": "Unfolded Protein Response",
+      "ontology_id": "GO:0030968",
+      "ontology_source": "GO",
+      "confidence": 0.95
+    }
+  ],
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATF6 <--regulates--> PDIA4:",
+  "protein_a": "ATF6",
+  "protein_b": "PDIA4",
+  "discovered_in_query": "ATF6",
+  "first_discovered": "2025-11-29T12:52:16.040500Z",
+  "last_updated": "2025-11-29T12:52:16.040500Z"
+}

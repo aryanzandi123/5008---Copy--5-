@@ -1,0 +1,89 @@
+{
+  "primary": "CEBPB",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATF6 associates with CCAAT/enhancer-binding protein beta (CEBPB) in the nucleus to cooperatively induce the expression of Dapk1 in response to IFNG.",
+  "functions": [
+    {
+      "function": "DAPK1 Transcription",
+      "arrow": "activates",
+      "cellular_process": "In response to interferon-gamma (IFN-γ), ATF6 is proteolytically processed to its active nuclear form. Concurrently, CCAAT/enhancer-binding protein beta (CEBPB) is phosphorylated by ERK1/2. The active forms of ATF6 and CEBPB then physically associate in the nucleus.",
+      "effect_description": "The formation of the ATF6-CEBPB complex is required for their cooperative binding to the promoter of the Death Associated Protein Kinase 1 (DAPK1) gene, leading to the transcriptional induction of DAPK1, a key regulator of autophagy and apoptosis.",
+      "biological_consequence": [
+        "IFN-γ stimulation → Proteolytic processing of ATF6 & ERK1/2-mediated phosphorylation of CEBPB → Nuclear ATF6 and phosphorylated CEBPB form a complex → Complex binds to the DAPK1 promoter → Transcriptional activation of DAPK1 gene → Induction of autophagy"
+      ],
+      "specific_effects": [
+        "The interaction between ATF6 and CEBPB is dependent on IFN-γ stimulation.",
+        "Depletion of either ATF6 or CEBPB prevents the IFN-γ-induced expression of DAPK1 and subsequent autophagy.",
+        "The recruitment of both ATF6 and CEBPB to the Dapk1 promoter is mutually dependent."
+      ],
+      "evidence": [
+        {
+          "paper_title": "An IFN-γ–stimulated ATF6–C/EBP-β–signaling pathway critical for the expression of Death Associated Protein Kinase 1 and induction of autophagy",
+          "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+          "year": 2012,
+          "relevant_quote": "Here, we show that ATF6, an ER stress-induced transcription factor, interacts with C/EBP-β in an IFN-stimulated manner and is obligatory for Dapk1 expression. IFN-stimulated proteolytic processing of ATF6 and ERK1/2-mediated phosphorylation of C/EBP-β are necessary for these interactions.",
+          "pmid": "22699507"
+        }
+      ],
+      "pmids": [
+        "22699507"
+      ],
+      "interaction_effect": "activation",
+      "interaction_direction": "bidirectional",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "complex",
+  "direction": "bidirectional",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "In response to interferon-gamma (IFN-γ), ATF6 is proteolytically processed to its active nuclear form. Concurrently, CCAAT/enhancer-binding protein beta (CEBPB) is phosphorylated by ERK1/2. The active forms of ATF6 and CEBPB then physically associate in the nucleus.",
+  "effect": "The formation of the ATF6-CEBPB complex is required for their cooperative binding to the promoter of the Death Associated Protein Kinase 1 (DAPK1) gene, leading to the transcriptional induction of DAPK1, a key regulator of autophagy and apoptosis.",
+  "summary": "ATF6 activates CEBPB to modulate dapk1 transcription, ultimately affecting induction of autophagy.",
+  "evidence": [
+    {
+      "paper_title": "An IFN-γ–stimulated ATF6–C/EBP-β–signaling pathway critical for the expression of Death Associated Protein Kinase 1 and induction of autophagy",
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+      "year": 2012,
+      "relevant_quote": "Here, we show that ATF6, an ER stress-induced transcription factor, interacts with C/EBP-β in an IFN-stimulated manner and is obligatory for Dapk1 expression. IFN-stimulated proteolytic processing of ATF6 and ERK1/2-mediated phosphorylation of C/EBP-β are necessary for these interactions."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "ER Stress-Induced Apoptosis",
+      "canonical_name": "Apoptosis",
+      "ontology_id": "GO:0006915",
+      "ontology_source": "GO",
+      "confidence": 0.9
+    },
+    {
+      "name": "NF-κB and Inflammatory Signaling",
+      "canonical_name": "Nf-Κb And Inflammatory Signaling",
+      "ontology_id": null,
+      "ontology_source": null,
+      "confidence": 0.8
+    }
+  ],
+  "interaction_effect": "complex formation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATF6 <--complex--> CEBPB:",
+  "protein_a": "ATF6",
+  "protein_b": "CEBPB",
+  "discovered_in_query": "ATF6",
+  "first_discovered": "2025-11-29T12:52:16.057283Z",
+  "last_updated": "2025-11-29T12:52:16.057283Z"
+}

@@ -1,0 +1,82 @@
+{
+  "primary": "ATF6",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "RNF186 is an E3 ubiquitin ligase that forms a complex with and ubiquitinates ATF6 in the ER, promoting the unfolded protein response.",
+  "functions": [
+    {
+      "function": "ATF6 Ubiquitination",
+      "arrow": "activates",
+      "cellular_process": "The ER-localized E3 ubiquitin ligase RNF186 directly binds to and ubiquitinates the ER stress sensor ATF6.",
+      "effect_description": "This non-degradative ubiquitination of ATF6 is a key step in promoting the activation of the Unfolded Protein Response (UPR), particularly in response to stimulation of pattern recognition receptors (PRRs) like NOD2. This enhances UPR signaling and subsequent antimicrobial pathways.",
+      "biological_consequence": [
+        "PRR stimulation (e.g., by NOD2) → RNF186 forms a complex with ATF6 in the ER → RNF186 ubiquitinates ATF6 at lysine 152 (K152) → Enhanced UPR signaling → Induction of antimicrobial pathways and cytokine secretion"
+      ],
+      "specific_effects": [
+        "RNF186-mediated ubiquitination of K152 on ATF6 is required for PRR-induced, UPR-associated outcomes.",
+        "The E3 ligase activity of RNF186 is essential for the NOD2-induced UPR.",
+        "An inflammatory bowel disease (IBD)-associated risk variant of RNF186 (A64T) exhibits a reduced capacity to ubiquitinate ATF6, leading to impaired UPR activation."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ubiquitination of ATF6 by disease-associated RNF186 promotes the innate receptor-induced unfolded protein response",
+          "journal": "The Journal of Clinical Investigation",
+          "year": 2021,
+          "relevant_quote": "We found that upon stimulation of the PRR nucleotide-binding oligomerization domain containing 2 (NOD2) in human macrophages, RNF186 localized to the ER, formed a complex with ER stress sensors, ubiquitinated the ER stress sensor activating transcription factor 6 (ATF6), and promoted the unfolded protein response (UPR).",
+          "pmid": "34623328"
+        }
+      ],
+      "pmids": [
+        "34623328"
+      ],
+      "interaction_effect": "activation",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "The ER-localized E3 ubiquitin ligase RNF186 directly binds to and ubiquitinates the ER stress sensor ATF6.",
+  "effect": "This non-degradative ubiquitination of ATF6 is a key step in promoting the activation of the Unfolded Protein Response (UPR), particularly in response to stimulation of pattern recognition receptors (PRRs) like NOD2. This enhances UPR signaling and subsequent antimicrobial pathways.",
+  "summary": "ATF6 activates RNF186 to modulate atf6 ubiquitination, ultimately affecting induction of antimicrobial pathways and cytokine secretion.",
+  "evidence": [
+    {
+      "paper_title": "Ubiquitination of ATF6 by disease-associated RNF186 promotes the innate receptor-induced unfolded protein response",
+      "journal": "The Journal of Clinical Investigation",
+      "year": 2021,
+      "relevant_quote": "We found that upon stimulation of the PRR nucleotide-binding oligomerization domain containing 2 (NOD2) in human macrophages, RNF186 localized to the ER, formed a complex with ER stress sensors, ubiquitinated the ER stress sensor activating transcription factor 6 (ATF6), and promoted the unfolded protein response (UPR)."
+    }
+  ],
+  "pathways": [
+    {
+      "name": "ER-Associated Degradation (ERAD) and ATF6 Stability",
+      "canonical_name": "ER-Associated Degradation",
+      "ontology_id": "GO:0036503",
+      "ontology_source": "GO",
+      "confidence": 0.85
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATF6 <--binds-- RNF186:",
+  "protein_a": "RNF186",
+  "protein_b": "ATF6",
+  "discovered_in_query": "ATF6",
+  "first_discovered": "2025-11-29T12:52:16.048393Z",
+  "last_updated": "2025-11-29T12:52:16.048393Z"
+}

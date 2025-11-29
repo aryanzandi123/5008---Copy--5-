@@ -1,0 +1,100 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": "KEAP1",
+  "mediator_chain": [
+    "KEAP1"
+  ],
+  "depth": 2,
+  "support_summary": "ATXN3 stabilizes KEAP1, the primary negative regulator of NRF2, thereby indirectly suppressing the NRF2-mediated antioxidant response.",
+  "functions": [
+    {
+      "function": "Antioxidant Gene Transcription",
+      "arrow": "inhibits",
+      "cellular_process": "ATXN3 knockdown reduces the half-life of KEAP1, which is the substrate adaptor for the CUL3 E3 ubiquitin ligase complex that targets the transcription factor NRF2 for degradation.",
+      "effect_description": "By stabilizing KEAP1, ATXN3 indirectly suppresses the NRF2-mediated antioxidant response. Under normal conditions, KEAP1 binds to NRF2 in the cytoplasm, leading to its continuous ubiquitination and proteasomal degradation, thus keeping the antioxidant response off.",
+      "biological_consequence": [
+        "ATXN3 stabilizes KEAP1 → KEAP1 binds to NRF2 → NRF2 is ubiquitinated by the KEAP1-CUL3 E3 ligase complex → Proteasomal degradation of NRF2 → Repression of NRF2 target genes (antioxidant enzymes)"
+      ],
+      "specific_effects": [
+        "The KEAP1-NRF2 pathway is a central regulator of the cellular response to oxidative stress.",
+        "Under basal conditions, KEAP1 targets NRF2 for proteasomal degradation.",
+        "Activation of the NRF2 pathway involves the dissociation of the NRF2-KEAP1 complex, allowing NRF2 to translocate to the nucleus and activate antioxidant response element (ARE)-containing genes."
+      ],
+      "evidence": [
+        {
+          "paper_title": "The Keap1–Nrf2 pathway: promising therapeutic target to counteract ROS-mediated damage in cancers and neurodegenerative diseases",
+          "year": 2016,
+          "pmid": "28510041"
+        },
+        {
+          "paper_title": "Targeting the Nrf2–Keap1 antioxidant defence pathway for neurovascular protection in stroke",
+          "year": 2011,
+          "pmid": "21646410"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "inhibits",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "28510041",
+        "21646410"
+      ],
+      "direct_arrow": "inhibits",
+      "function_effect": "inhibition",
+      "arrow_context": {
+        "direct_from": "KEAP1",
+        "direct_arrow": "inhibits",
+        "net_from": "ATXN3",
+        "net_arrow": "inhibits",
+        "mediator_chain": [
+          "KEAP1"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "inhibits",
+      "net_effect": "inhibition",
+      "direct_effect": "inhibition"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "_validation_status": "rejected",
+  "mechanism": "ATXN3 knockdown reduces the half-life of KEAP1, which is the substrate adaptor for the CUL3 E3 ubiquitin ligase complex that targets the transcription factor NRF2 for degradation.",
+  "effect": "By stabilizing KEAP1, ATXN3 indirectly suppresses the NRF2-mediated antioxidant response. Under normal conditions, KEAP1 binds to NRF2 in the cytoplasm, leading to its continuous ubiquitination and proteasomal degradation, thus keeping the antioxidant response off.",
+  "summary": "ATXN3 inhibits NRF2 to modulate antioxidant gene transcription, ultimately affecting repression of nrf2 target genes (antioxidant enzymes).",
+  "evidence": [
+    {
+      "paper_title": "The Keap1–Nrf2 pathway: promising therapeutic target to counteract ROS-mediated damage in cancers and neurodegenerative diseases",
+      "year": 2016
+    },
+    {
+      "paper_title": "Targeting the Nrf2–Keap1 antioxidant defence pathway for neurovascular protection in stroke",
+      "year": 2011
+    }
+  ],
+  "interaction_effect": "inhibition",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "KEAP1 --inhibits--> NRF2:",
+  "protein_a": "NRF2",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.833679Z",
+  "last_updated": "2025-11-24T12:52:47.833679Z"
+}

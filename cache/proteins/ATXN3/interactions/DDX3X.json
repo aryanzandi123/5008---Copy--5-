@@ -1,0 +1,72 @@
+{
+  "primary": "DDX3X",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 interacts with the RNA helicase DDX3X, particularly within stress granules, as confirmed by co-immunoprecipitation.",
+  "functions": [
+    {
+      "function": "Co-localization in Stress Granules and Sequestration",
+      "arrow": "activates",
+      "cellular_process": "The DEAD-box RNA helicase DDX3X is an essential component for the assembly of stress granules (SGs), which are cytoplasmic foci formed in response to cellular stress. ATXN3 interacts with and co-localizes with DDX3X within these granules. This interaction is enhanced by the pathogenic polyglutamine expansion in ATXN3.",
+      "effect_description": "The co-localization of ATXN3 and DDX3X within SGs leads to the sequestration of DDX3X. Because DDX3X is also required for other cellular processes, such as activating the NLRP3 inflammasome, its sequestration into SGs inhibits these competing pathways. This positions DDX3X as a critical checkpoint, where its availability dictates the balance between a pro-survival stress granule response and a pro-inflammatory pyroptotic response.",
+      "biological_consequence": [
+        "Cellular stress → DDX3X promotes Stress Granule (SG) assembly → ATXN3 is recruited to SGs and interacts with DDX3X → DDX3X is sequestered within SGs → Reduced availability of DDX3X for other pathways → Inhibition of DDX3X-dependent NLRP3 inflammasome activation."
+      ],
+      "specific_effects": [
+        "DDX3X is a core component required for the assembly of stress granules.",
+        "The interaction between ATXN3 and DDX3X occurs within stress granules.",
+        "Assembly of stress granules and the subsequent sequestration of DDX3X inhibits NLRP3 inflammasome activation, demonstrating a competitive relationship for the DDX3X protein pool."
+      ],
+      "evidence": [
+        {
+          "paper_title": "DDX3X acts as a live-or-die checkpoint in stressed cells by regulating NLRP3 inflammasome",
+          "journal": "Nature",
+          "year": 2019,
+          "relevant_quote": "Here we show that the induction of stress granules specifically inhibits NLRP3 inflammasome activation, ASC speck formation and pyroptosis. The stress granule protein DDX3X interacts with NLRP3 to drive inflammasome activation. Assembly of stress granules leads to the sequestration of DDX3X, and thereby the inhibition of NLRP3 inflammasome activation.",
+          "pmid": "31511697"
+        }
+      ],
+      "pmids": [
+        "31511697"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "CONTEXTUAL ERROR. The input claim that ATXN3 'activates' Stress Granule (SG) assembly is misleading. DDX3X is a core component required for SG assembly. Under stress, ATXN3 co-localizes with DDX3X in SGs. However, the literature suggests that this interaction leads to the sequestration of DDX3X by ATXN3, which can *inhibit* or impair the function of other essential cellular pathways that also require DDX3X, such as the NLRP3 inflammasome. Therefore, rather than activating SG assembly, the interaction represents a co-localization that sequesters a key factor, potentially impairing other stress responses.",
+  "mechanism": "The DEAD-box RNA helicase DDX3X is an essential component for the assembly of stress granules (SGs), which are cytoplasmic foci formed in response to cellular stress. ATXN3 interacts with and co-localizes with DDX3X within these granules. This interaction is enhanced by the pathogenic polyglutamine expansion in ATXN3.",
+  "effect": "The co-localization of ATXN3 and DDX3X within SGs leads to the sequestration of DDX3X. Because DDX3X is also required for other cellular processes, such as activating the NLRP3 inflammasome, its sequestration into SGs inhibits these competing pathways. This positions DDX3X as a critical checkpoint, where its availability dictates the balance between a pro-survival stress granule response and a pro-inflammatory pyroptotic response.",
+  "summary": "ATXN3 interacts with DDX3X to modulate co-localization in stress granules and sequestration, ultimately affecting inhibition of ddx3x-dependent nlrp3 inflammasome activation.",
+  "evidence": [
+    {
+      "paper_title": "DDX3X acts as a live-or-die checkpoint in stressed cells by regulating NLRP3 inflammasome",
+      "journal": "Nature",
+      "year": 2019,
+      "relevant_quote": "Here we show that the induction of stress granules specifically inhibits NLRP3 inflammasome activation, ASC speck formation and pyroptosis. The stress granule protein DDX3X interacts with NLRP3 to drive inflammasome activation. Assembly of stress granules leads to the sequestration of DDX3X, and thereby the inhibition of NLRP3 inflammasome activation."
+    },
+    {
+      "paper_title": "The DEAD-box RNA helicase DDX3 interacts with ataxin-3 and may be involved in the pathogenesis of spinocerebellar ataxia type 3",
+      "journal": "Neurobiology of Aging",
+      "year": 2014,
+      "relevant_quote": "We identified the DEAD-box RNA helicase DDX3 as a novel interactor of ataxin-3... Under conditions of stress, ataxin-3 and DDX3 colocalized in stress granules (SGs). The interaction with DDX3 was enhanced by polyQ expansion in ataxin-3..."
+    }
+  ],
+  "arrow_notation": "ATXN3 --binds--> DDX3X:",
+  "protein_a": "ATXN3",
+  "protein_b": "DDX3X",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.696461Z",
+  "last_updated": "2025-11-29T11:33:49.696461Z"
+}

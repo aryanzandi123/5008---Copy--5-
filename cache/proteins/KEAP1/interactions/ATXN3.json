@@ -1,0 +1,76 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "Proteomics and knockdown studies show that ATXN3 regulates the levels of KEAP1, a key regulator of the NRF2 antioxidant pathway.",
+  "functions": [
+    {
+      "function": "Antioxidant Response",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 sustains the protein levels of KEAP1, a key component of a CUL3-based E3 ubiquitin ligase complex that targets the transcription factor NRF2 for proteasomal degradation. By maintaining KEAP1 levels, ATXN3 indirectly facilitates the ubiquitination and subsequent degradation of NRF2, thereby suppressing the transcription of NRF2-dependent antioxidant genes.",
+      "effect_description": "This interaction negatively regulates the cell's antioxidant response. In retinal cells, this function of ATXN3 is part of a complex regulatory network controlling cellular homeostasis. Loss of ATXN3 disrupts this balance by reducing KEAP1 levels, which would paradoxically lead to NRF2 stabilization.",
+      "biological_consequence": [
+        "ATXN3 sustains KEAP1 protein levels → KEAP1 targets NRF2 for ubiquitination → NRF2 is degraded by the proteasome → Transcription of antioxidant response element (ARE) genes is suppressed → Basal antioxidant response is maintained at a controlled level."
+      ],
+      "specific_effects": [
+        "Loss of ATXN3 (abrogation of expression) leads to decreased protein levels of KEAP1 in the retina."
+      ],
+      "evidence": [
+        {
+          "paper_title": "The Deubiquitinating Enzyme Ataxin-3 Regulates Ciliogenesis and Phagocytosis in the Retina",
+          "journal": "Cell Reports",
+          "year": 2020,
+          "relevant_quote": "Abrogation of Atxn3 expression causes decreased levels of the regulatory protein KEAP1 in the retina and delayed phagosome maturation in the retinal pigment epithelium.",
+          "pmid": "33176149"
+        }
+      ],
+      "pmids": [
+        "33176149"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATXN3",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "A 'Mechanistic Opposite' error was detected and corrected. The input claimed ATXN3 reduces KEAP1 levels to activate the NRF2 pathway. Primary literature demonstrates the opposite: ATXN3 is required to maintain normal KEAP1 levels. Loss of ATXN3 leads to a *decrease* in KEAP1. Therefore, under normal physiological conditions, ATXN3 sustains the level of KEAP1, which is the primary negative regulator of NRF2. This results in an indirect *inhibition* or suppression of the NRF2 antioxidant pathway, not its activation.",
+  "mechanism": "ATXN3 sustains the protein levels of KEAP1, a key component of a CUL3-based E3 ubiquitin ligase complex that targets the transcription factor NRF2 for proteasomal degradation. By maintaining KEAP1 levels, ATXN3 indirectly facilitates the ubiquitination and subsequent degradation of NRF2, thereby suppressing the transcription of NRF2-dependent antioxidant genes.",
+  "effect": "This interaction negatively regulates the cell's antioxidant response. In retinal cells, this function of ATXN3 is part of a complex regulatory network controlling cellular homeostasis. Loss of ATXN3 disrupts this balance by reducing KEAP1 levels, which would paradoxically lead to NRF2 stabilization.",
+  "summary": "ATXN3 inhibits KEAP1 to modulate antioxidant response regulation, ultimately affecting basal antioxidant response is maintained at a controlled level.",
+  "evidence": [
+    {
+      "paper_title": "The Deubiquitinating Enzyme Ataxin-3 Regulates Ciliogenesis and Phagocytosis in the Retina",
+      "journal": "Cell Reports",
+      "year": 2020,
+      "relevant_quote": "Abrogation of Atxn3 expression causes decreased levels of the regulatory protein KEAP1 in the retina and delayed phagosome maturation in the retinal pigment epithelium."
+    }
+  ],
+  "arrow_notation": "ATXN3 --inhibits--> KEAP1:",
+  "protein_a": "KEAP1",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.707833Z",
+  "last_updated": "2025-11-29T11:33:49.707833Z"
+}

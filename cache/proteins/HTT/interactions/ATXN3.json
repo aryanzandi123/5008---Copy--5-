@@ -1,0 +1,73 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 can directly interact with and deubiquitinate the Huntingtin (HTT) protein, particularly the mutant form, which is central to the pathogenesis of Huntington's disease.",
+  "functions": [
+    {
+      "function": "Transcription-Coupled DNA Repair",
+      "arrow": "activates",
+      "cellular_process": "Wild-type Huntingtin (HTT) is a core component of a multi-protein Transcription-Coupled DNA Repair (TCR) complex. This complex includes ATXN3, RNA polymerase II subunit A (POLR2A), and the DNA repair enzyme polynucleotide-kinase-3'-phosphatase (PNKP). The primary role of this complex is to detect and facilitate the repair of DNA single-strand breaks that occur during active gene transcription.",
+      "effect_description": "Within the TCR complex, ATXN3's deubiquitinase activity is crucial for maintaining the stability of other complex members, such as the transcriptional co-activator CREB-binding protein (CBP). However, the presence of mutant HTT (mHTT) with an expanded polyglutamine tract impairs the enzymatic activities of both ATXN3 and PNKP. This functional impairment disrupts the coordination of transcription and DNA repair, leading to the accumulation of DNA damage.",
+      "biological_consequence": [
+        "Wild-type HTT assembles a TCR complex with ATXN3, POLR2A, and PNKP → The complex surveys DNA for lesions during transcriptional elongation → ATXN3 activity within the complex protects components like CBP from degradation → Coordinated DNA repair maintains genomic integrity.",
+        "Mutant HTT impairs ATXN3 and PNKP activity within the complex → Decreased ATXN3 activity leads to increased ubiquitination and subsequent proteasomal degradation of CBP → Disrupted transcription and DNA repair → Accumulation of DNA strand breaks and activation of pro-apoptotic DNA damage response pathways."
+      ],
+      "specific_effects": [
+        "Mutant HTT directly abrogates the enzymatic activities of both ATXN3 and PNKP within the TCR complex.",
+        "The mHTT-mediated decrease in ATXN3 activity facilitates the ubiquitination and degradation of CBP, which adversely impacts transcription."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Mutant huntingtin impairs PNKP and ATXN3, disrupting DNA repair and transcription",
+          "journal": "eLife",
+          "year": 2019,
+          "relevant_quote": "We report that HTT forms a transcription-coupled DNA repair (TCR) complex with RNA polymerase II subunit A (POLR2A), ataxin-3, the DNA repair enzyme polynucleotide-kinase-3'-phosphatase (PNKP), and cyclic AMP-response element-binding (CREB) protein (CBP). This complex senses and facilitates DNA damage repair during transcriptional elongation, but its functional integrity is impaired by mutant HTT... A concomitant decrease in Ataxin-3 activity facilitates CBP ubiquitination and degradation, adversely impacting transcription and DNA repair.",
+          "pmid": "30994454"
+        }
+      ],
+      "pmids": [
+        "30994454"
+      ],
+      "interaction_effect": "activation",
+      "interaction_direction": "bidirectional",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "bidirectional",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Wild-type Huntingtin (HTT) is a core component of a multi-protein Transcription-Coupled DNA Repair (TCR) complex. This complex includes ATXN3, RNA polymerase II subunit A (POLR2A), and the DNA repair enzyme polynucleotide-kinase-3'-phosphatase (PNKP). The primary role of this complex is to detect and facilitate the repair of DNA single-strand breaks that occur during active gene transcription.",
+  "effect": "Within the TCR complex, ATXN3's deubiquitinase activity is crucial for maintaining the stability of other complex members, such as the transcriptional co-activator CREB-binding protein (CBP). However, the presence of mutant HTT (mHTT) with an expanded polyglutamine tract impairs the enzymatic activities of both ATXN3 and PNKP. This functional impairment disrupts the coordination of transcription and DNA repair, leading to the accumulation of DNA damage.",
+  "summary": "ATXN3 interacts with HTT to modulate transcription-coupled dna repair, ultimately affecting coordinated dna repair maintains genomic integrity.",
+  "evidence": [
+    {
+      "paper_title": "Mutant huntingtin impairs PNKP and ATXN3, disrupting DNA repair and transcription",
+      "journal": "eLife",
+      "year": 2019,
+      "relevant_quote": "We report that HTT forms a transcription-coupled DNA repair (TCR) complex with RNA polymerase II subunit A (POLR2A), ataxin-3, the DNA repair enzyme polynucleotide-kinase-3'-phosphatase (PNKP), and cyclic AMP-response element-binding (CREB) protein (CBP). This complex senses and facilitates DNA damage repair during transcriptional elongation, but its functional integrity is impaired by mutant HTT... A concomitant decrease in Ataxin-3 activity facilitates CBP ubiquitination and degradation, adversely impacting transcription and DNA repair."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 <--binds--> HTT:",
+  "protein_a": "HTT",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.821607Z",
+  "last_updated": "2025-11-24T12:52:47.821607Z"
+}

@@ -1,0 +1,100 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": "Chk1",
+  "mediator_chain": [
+    "Chk1"
+  ],
+  "depth": 2,
+  "support_summary": "ATXN3 regulates Chk1, a kinase which, when activated, phosphorylates Cdc25A phosphatase, inducing its degradation.",
+  "functions": [
+    {
+      "function": "Cell Cycle Progression",
+      "arrow": "inhibits",
+      "cellular_process": "ATXN3 deubiquitinates and stabilizes the checkpoint kinase Chk1. Activated Chk1 phosphorylates the phosphatase Cdc25A, marking it for degradation. The degradation of Cdc25A prevents the activation of cyclin-dependent kinases, leading to a delay in cell cycle progression to allow for DNA repair.",
+      "effect_description": "By stabilizing Chk1, ATXN3 indirectly promotes the degradation of Cdc25A, thereby inhibiting cell cycle progression, particularly in response to DNA damage or replication stress.",
+      "biological_consequence": [
+        "Chk1 Stabilization → Cdc25A Phosphorylation & Degradation → Cell Cycle Arrest → DNA Repair"
+      ],
+      "specific_effects": [
+        "ATXN3 deubiquitinates and stabilizes Chk1",
+        "Chk1 phosphorylates Cdc25A, leading to its degradation"
+      ],
+      "evidence": [
+        {
+          "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+          "year": 2024,
+          "pmid": "39320846"
+        },
+        {
+          "paper_title": "Ataxin-3 promotes genome integrity by stabilizing Chk1",
+          "year": 2017,
+          "pmid": "28180282"
+        }
+      ],
+      "_context": {
+        "type": "indirect",
+        "query_protein": "Cdc25A",
+        "chain": [
+          "Chk1"
+        ]
+      },
+      "interaction_effect": "inhibits",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "39320846",
+        "28180282"
+      ],
+      "direct_arrow": "inhibits",
+      "function_effect": "inhibition",
+      "arrow_context": {
+        "direct_from": "Chk1",
+        "direct_arrow": "inhibits",
+        "net_from": "ATXN3",
+        "net_arrow": "inhibits",
+        "mediator_chain": [
+          "Chk1"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "inhibits",
+      "net_effect": "inhibition",
+      "direct_effect": "inhibition"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "mechanism": "ATXN3 deubiquitinates and stabilizes the checkpoint kinase Chk1. Activated Chk1 phosphorylates the phosphatase Cdc25A, marking it for degradation. The degradation of Cdc25A prevents the activation of cyclin-dependent kinases, leading to a delay in cell cycle progression to allow for DNA repair.",
+  "effect": "By stabilizing Chk1, ATXN3 indirectly promotes the degradation of Cdc25A, thereby inhibiting cell cycle progression, particularly in response to DNA damage or replication stress.",
+  "summary": "ATXN3 inhibits Cdc25A to modulate cell cycle progression, ultimately affecting dna repair.",
+  "evidence": [
+    {
+      "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+      "year": 2024
+    },
+    {
+      "paper_title": "Ataxin-3 promotes genome integrity by stabilizing Chk1",
+      "year": 2017
+    }
+  ],
+  "interaction_effect": "inhibition",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "Chk1 --inhibits--> Cdc25A:",
+  "protein_a": "Cdc25A",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T02:27:04.753909Z",
+  "last_updated": "2025-11-24T02:27:04.753909Z"
+}

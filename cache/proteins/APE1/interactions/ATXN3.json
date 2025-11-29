@@ -1,0 +1,94 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 directly interacts with and modulates the activity of APE1 (APEX1), a key enzyme in the base excision repair (BER) pathway of DNA.",
+  "functions": [
+    {
+      "function": "Base Excision Repair (BER)",
+      "arrow": "regulates",
+      "cellular_process": "ATXN3 interacts with Apurinic/apyrimidinic endonuclease 1 (APE1), a critical enzyme that processes abasic sites in the DNA base excision repair (BER) pathway.",
+      "effect_description": "This interaction likely facilitates the DNA repair process, potentially by modulating APE1's endonuclease activity or its recruitment to sites of DNA damage, thereby contributing to the maintenance of genomic integrity.",
+      "biological_consequence": [
+        "ATXN3 interaction with APE1 → Modulation of AP site processing → Efficient repair of single-base DNA damage → Prevention of mutation accumulation"
+      ],
+      "specific_effects": [
+        "APE1 is the major AP endonuclease in mammalian cells, responsible for cleaving the DNA backbone at abasic sites.",
+        "Both ATXN3 and APE1 are involved in the cellular response to oxidative DNA damage."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Oxidative DNA damage is concurrently repaired by base excision repair (BER) and apyrimidinic endonuclease 1 (APE1)-initiated nonhomologous end joining (NHEJ) in cortical neurons",
+          "year": 2020,
+          "pmid": "31628877"
+        },
+        {
+          "paper_title": "The DNA base excision repair protein Ape1/Ref-1 as a therapeutic and chemopreventive target",
+          "year": 2007,
+          "pmid": "17560642"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "regulates",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "31628877",
+        "17560642"
+      ],
+      "function_effect": "regulation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "regulates",
+        "net_from": "ATXN3",
+        "net_arrow": "regulates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "regulates",
+      "direct_arrow": "regulates",
+      "net_effect": "regulation",
+      "direct_effect": "regulation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "ATXN3 interacts with Apurinic/apyrimidinic endonuclease 1 (APE1), a critical enzyme that processes abasic sites in the DNA base excision repair (BER) pathway.",
+  "effect": "This interaction likely facilitates the DNA repair process, potentially by modulating APE1's endonuclease activity or its recruitment to sites of DNA damage, thereby contributing to the maintenance of genomic integrity.",
+  "summary": "ATXN3 activates APE1 to modulate base excision repair (ber), ultimately affecting prevention of mutation accumulation.",
+  "evidence": [
+    {
+      "paper_title": "Oxidative DNA damage is concurrently repaired by base excision repair (BER) and apyrimidinic endonuclease 1 (APE1)-initiated nonhomologous end joining (NHEJ) in cortical neurons",
+      "year": 2020
+    },
+    {
+      "paper_title": "The DNA base excision repair protein Ape1/Ref-1 as a therapeutic and chemopreventive target",
+      "year": 2007
+    }
+  ],
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --regulates--> APE1:",
+  "protein_a": "APE1",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.832013Z",
+  "last_updated": "2025-11-24T12:52:47.832013Z"
+}

@@ -1,0 +1,78 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 2,
+  "support_summary": "A protein-protein interaction network analysis from a transcriptomics study of a SCA3 family identified AKT1 as a central regulatory hub in the disease pathway.",
+  "functions": [
+    {
+      "function": "PI3K/AKT Signaling",
+      "arrow": "inhibits",
+      "cellular_process": "In the context of SCA3, the expression of polyQ-expanded ATXN3 leads to the impairment of the pro-survival PI3K/AKT signaling pathway. This occurs through a reduction in the phosphorylation of AKT1 at the key activating site, Serine 473 (S473).",
+      "effect_description": "The decreased phosphorylation at S473 signifies a reduction in AKT1 kinase activity. This loss of activity hampers downstream signaling cascades that are critical for promoting cell survival and growth, thereby increasing the vulnerability of neurons to degeneration in SCA3.",
+      "biological_consequence": [
+        "Expression of polyQ-expanded ATXN3 → Perturbation of upstream signaling pathways → Reduced activity of kinases responsible for AKT phosphorylation (e.g., mTORC2) → Decreased phosphorylation of AKT1 at Serine 473 → Attenuation of downstream pro-survival signals (e.g., to GSK3, FOXO, mTOR) → Increased neuronal susceptibility to apoptosis and cell death."
+      ],
+      "specific_effects": [
+        "Levels of Serine 473-phosphorylated AKT (p-AKT S473), the active form of the kinase, are consistently decreased across multiple in vitro and in vivo SCA3 models.",
+        "The reduction in p-AKT S473 indicates a significant drop in pro-survival signaling within the cell."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Neurodegenerative phosphoprotein signaling landscape in models of SCA3",
+          "journal": "Cellular and Molecular Life Sciences",
+          "year": 2021,
+          "relevant_quote": "Polyglutamine expanded ataxin-3 decreases pro-survival signaling via the AKT pathway. The serine/threonine-protein kinase AKT is a key protein kinase involved in survival and growth with physiological links to neurological disorders. The levels of Serine 473-phosphorylated AKT (p-AKT S473), representing an active form of this protein, were decreased in all three models indicating a drop in pro-survival signaling due to the 148Q expansion.",
+          "pmid": "33741019"
+        }
+      ],
+      "pmids": [
+        "33741019"
+      ],
+      "interaction_effect": "inhibits",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "inhibition",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "inhibits",
+        "net_from": "ATXN3",
+        "net_arrow": "inhibits",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "inhibits",
+      "direct_arrow": "inhibits",
+      "net_effect": "inhibition",
+      "direct_effect": "inhibition"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "_chain_inferred": true,
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "In the context of SCA3, the expression of polyQ-expanded ATXN3 leads to the impairment of the pro-survival PI3K/AKT signaling pathway. This occurs through a reduction in the phosphorylation of AKT1 at the key activating site, Serine 473 (S473).",
+  "effect": "The decreased phosphorylation at S473 signifies a reduction in AKT1 kinase activity. This loss of activity hampers downstream signaling cascades that are critical for promoting cell survival and growth, thereby increasing the vulnerability of neurons to degeneration in SCA3.",
+  "summary": "ATXN3 inhibits AKT1 to modulate pi3k/akt signaling, ultimately affecting increased neuronal susceptibility to apoptosis and cell death.",
+  "evidence": [
+    {
+      "paper_title": "Neurodegenerative phosphoprotein signaling landscape in models of SCA3",
+      "journal": "Cellular and Molecular Life Sciences",
+      "year": 2021,
+      "relevant_quote": "Polyglutamine expanded ataxin-3 decreases pro-survival signaling via the AKT pathway. The serine/threonine-protein kinase AKT is a key protein kinase involved in survival and growth with physiological links to neurological disorders. The levels of Serine 473-phosphorylated AKT (p-AKT S473), representing an active form of this protein, were decreased in all three models indicating a drop in pro-survival signaling due to the 148Q expansion."
+    }
+  ],
+  "arrow_notation": "ATXN3 --inhibits--> AKT1:",
+  "protein_a": "AKT1",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.679276Z",
+  "last_updated": "2025-11-29T11:33:49.679276Z"
+}

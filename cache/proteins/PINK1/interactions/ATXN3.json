@@ -1,0 +1,104 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": "Parkin",
+  "mediator_chain": [
+    "Parkin"
+  ],
+  "depth": 2,
+  "support_summary": "ATXN3's regulation of Parkin is a key step in the mitophagy pathway that is initiated by PINK1, establishing a functional, indirect relationship between ATXN3 and PINK1.",
+  "functions": [
+    {
+      "function": "Mitophagy",
+      "arrow": "inhibits",
+      "cellular_process": "The PINK1/Parkin pathway is a primary mechanism for mitochondrial quality control. Upon mitochondrial damage (e.g., depolarization), the kinase PINK1 accumulates on the outer mitochondrial membrane. This accumulation serves as a signal to recruit the cytosolic E3 ubiquitin ligase Parkin, which then ubiquitinates mitochondrial outer membrane proteins to tag the damaged organelle for autophagic clearance (mitophagy).",
+      "effect_description": "ATXN3 directly interacts with and deubiquitinates Parkin. While wild-type ATXN3 modulates Parkin's activity, the polyQ-expanded mutant form of ATXN3 enhances the deubiquitination of Parkin, which paradoxically leads to its destabilization and promotes its clearance via the autophagy pathway. By reducing Parkin levels, mutant ATXN3 impairs the cell's ability to execute PINK1-dependent mitophagy, potentially contributing to neurodegeneration.",
+      "biological_consequence": [
+        "Mitochondrial damage → PINK1 accumulation on the outer mitochondrial membrane → PINK1 phosphorylates ubiquitin and recruits Parkin → Parkin ubiquitinates mitochondrial substrates to initiate mitophagy.",
+        "ATXN3 binds to and deubiquitinates Parkin → Mutant ATXN3 enhances Parkin deubiquitination → Promotes autophagic degradation of Parkin → Reduced cellular levels of Parkin → Impaired PINK1/Parkin-mediated mitophagy → Accumulation of damaged mitochondria."
+      ],
+      "specific_effects": [
+        "ATXN3 directly binds to Parkin, an interaction enhanced by Parkin's self-ubiquitination.",
+        "Both wild-type and mutant ATXN3 deubiquitinate Parkin directly.",
+        "Mutant (polyQ-expanded) ATXN3, but not wild-type, promotes the autophagic degradation of Parkin, leading to reduced steady-state levels of the protein."
+      ],
+      "evidence": [
+        {
+          "paper_title": "The Machado-Joseph disease-associated mutant form of ataxin-3 regulates parkin ubiquitination and stability",
+          "journal": "Human Molecular Genetics",
+          "year": 2011,
+          "relevant_quote": "In this study, we identify parkin, an E3 ubiquitin-ligase responsible for a common familial form of Parkinson's disease, as a novel ataxin-3 binding partner. The interaction between ataxin-3 and parkin is direct... Moreover, ataxin-3 deubiquitinates parkin directly in vitro and in cells... Remarkably, mutant but not wild-type ataxin-3 promotes the clearance of parkin via the autophagy pathway.",
+          "pmid": "20940148"
+        },
+        {
+          "paper_title": "PINK1- and Parkin-mediated mitophagy at a glance",
+          "journal": "Journal of Cell Science",
+          "year": 2011,
+          "relevant_quote": "...the recruitment of Parkin to impaired mitochondria requires PINK1 expression and its kinase activity.",
+          "pmid": "22448035"
+        }
+      ],
+      "pmids": [
+        "20940148",
+        "22448035"
+      ],
+      "direct_arrow": "activates",
+      "interaction_effect": "inhibits",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "inhibition",
+      "arrow_context": {
+        "direct_from": "Parkin",
+        "direct_arrow": "activates",
+        "net_from": "ATXN3",
+        "net_arrow": "inhibits",
+        "mediator_chain": [
+          "Parkin"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "inhibits",
+      "net_effect": "inhibition",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "binds"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The interaction is indirect and mediated by the E3 ubiquitin ligase Parkin. ATXN3's primary role is to modulate the stability and ubiquitination status of Parkin, which is a critical downstream effector in the PINK1-initiated mitophagy pathway. The effect of ATXN3 on this pathway is inhibitory, particularly the mutant form, as it promotes Parkin's degradation.",
+  "mechanism": "The PINK1/Parkin pathway is a primary mechanism for mitochondrial quality control. Upon mitochondrial damage (e.g., depolarization), the kinase PINK1 accumulates on the outer mitochondrial membrane. This accumulation serves as a signal to recruit the cytosolic E3 ubiquitin ligase Parkin, which then ubiquitinates mitochondrial outer membrane proteins to tag the damaged organelle for autophagic clearance (mitophagy).",
+  "effect": "ATXN3 directly interacts with and deubiquitinates Parkin. While wild-type ATXN3 modulates Parkin's activity, the polyQ-expanded mutant form of ATXN3 enhances the deubiquitination of Parkin, which paradoxically leads to its destabilization and promotes its clearance via the autophagy pathway. By reducing Parkin levels, mutant ATXN3 impairs the cell's ability to execute PINK1-dependent mitophagy, potentially contributing to neurodegeneration.",
+  "summary": "ATXN3 inhibits PINK1 to modulate mitophagy, ultimately affecting parkin ubiquitinates mitochondrial substrates to initiate mitophagy.",
+  "evidence": [
+    {
+      "paper_title": "The Machado-Joseph disease-associated mutant form of ataxin-3 regulates parkin ubiquitination and stability",
+      "journal": "Human Molecular Genetics",
+      "year": 2011,
+      "relevant_quote": "In this study, we identify parkin, an E3 ubiquitin-ligase responsible for a common familial form of Parkinson's disease, as a novel ataxin-3 binding partner. The interaction between ataxin-3 and parkin is direct... Moreover, ataxin-3 deubiquitinates parkin directly in vitro and in cells... Remarkably, mutant but not wild-type ataxin-3 promotes the clearance of parkin via the autophagy pathway."
+    },
+    {
+      "paper_title": "PINK1- and Parkin-mediated mitophagy at a glance",
+      "journal": "Journal of Cell Science",
+      "year": 2011,
+      "relevant_quote": "...the recruitment of Parkin to impaired mitochondria requires PINK1 expression and its kinase activity."
+    }
+  ],
+  "interaction_effect": "inhibition",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "Parkin --inhibits--> PINK1:",
+  "protein_a": "PINK1",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.824858Z",
+  "last_updated": "2025-11-24T12:52:47.824858Z"
+}

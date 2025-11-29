@@ -1,0 +1,88 @@
+{
+  "primary": "APP",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 2,
+  "support_summary": "Protein-protein interaction network analysis highlighted APP as a key hub functionally related to ATXN3 in the context of SCA3.",
+  "functions": [
+    {
+      "function": "APP Degradation",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 is a key component of the cellular protein quality control machinery, including the ubiquitin-proteasome system and autophagy. These pathways are responsible for the degradation of amyloid precursor protein (APP) and its cleavage products.",
+      "effect_description": "By promoting efficient protein clearance, ATXN3 indirectly facilitates the degradation of APP. Impaired ATXN3 function in SCA3 could lead to general deficits in protein clearance, potentially affecting the turnover of amyloidogenic proteins implicated in other neurodegenerative diseases.",
+      "biological_consequence": [
+        "ATXN3 promotes proteasome/autophagy function → Efficient clearance of cellular proteins → Degradation of APP → Prevention of amyloidogenic protein accumulation"
+      ],
+      "specific_effects": [
+        "Impaired protein degradation is a common feature of many neurodegenerative disorders, including SCA3 and Alzheimer's disease."
+      ],
+      "evidence": [
+        {
+          "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+          "year": 2023,
+          "pmid": "39320846"
+        },
+        {
+          "paper_title": "Preventing Ataxin-3 protein cleavage mitigates degeneration in a Drosophila model of SCA3",
+          "year": 2008,
+          "pmid": "19783548"
+        }
+      ],
+      "_context": {
+        "type": "indirect",
+        "query_protein": "ATXN3",
+        "chain": "ATXN3 → APP"
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "39320846",
+        "19783548"
+      ],
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATXN3",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "_chain_inferred": true,
+  "_validation_status": "rejected",
+  "mechanism": "ATXN3 is a key component of the cellular protein quality control machinery, including the ubiquitin-proteasome system and autophagy. These pathways are responsible for the degradation of amyloid precursor protein (APP) and its cleavage products.",
+  "effect": "By promoting efficient protein clearance, ATXN3 indirectly facilitates the degradation of APP. Impaired ATXN3 function in SCA3 could lead to general deficits in protein clearance, potentially affecting the turnover of amyloidogenic proteins implicated in other neurodegenerative diseases.",
+  "summary": "ATXN3 activates APP to modulate app degradation, ultimately affecting prevention of amyloidogenic protein accumulation.",
+  "evidence": [
+    {
+      "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+      "year": 2023
+    },
+    {
+      "paper_title": "Preventing Ataxin-3 protein cleavage mitigates degeneration in a Drosophila model of SCA3",
+      "year": 2008
+    }
+  ],
+  "arrow_notation": "ATXN3 --activates--> APP:",
+  "protein_a": "ATXN3",
+  "protein_b": "APP",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.684497Z",
+  "last_updated": "2025-11-29T11:33:49.684497Z"
+}

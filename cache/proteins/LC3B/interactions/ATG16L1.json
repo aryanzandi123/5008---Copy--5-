@@ -1,0 +1,113 @@
+{
+  "primary": "ATG16L1",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATG16L1 is part of an E3-like ligase complex (ATG12-ATG5-ATG16L1) that facilitates the final step of LC3B lipidation. It directly interacts with LC3B and is essential for its localization to the phagophore.",
+  "functions": [
+    {
+      "function": "LC3B Lipidation",
+      "arrow": "activates",
+      "cellular_process": "ATG16L1 is the scaffolding component of the ATG12-ATG5-ATG16L1 E3-like ligase complex, which is essential for conjugating LC3B to phosphatidylethanolamine (PE) on the phagophore membrane. ATG16L1 forms a complex with the ATG12-ATG5 conjugate and localizes this enzymatic machinery to the site of autophagosome formation, in part through direct membrane binding.",
+      "effect_description": "The ATG12-ATG5-ATG16L1 complex functions as an E3-like ligase that specifies the site of LC3 lipidation. It facilitates the transfer of LC3B from the E2-like enzyme, ATG3, to the lipid PE. This covalent modification, forming LC3B-II, is the key step for stably anchoring LC3B to the autophagosomal membrane, which is required for membrane elongation and closure.",
+      "biological_consequence": [
+        "ATG12 is conjugated to ATG5 → The ATG12-ATG5 conjugate binds to the coiled-coil domain of ATG16L1, forming the E3-like ligase complex → The ATG16L1 complex is recruited to the phagophore membrane → The complex facilitates the transfer of LC3B from the E2 enzyme ATG3 to PE → LC3B-II is stably integrated into the membrane, driving autophagosome elongation."
+      ],
+      "specific_effects": [
+        "Functions as an E3-like ligase to catalyze the final step of LC3B conjugation to PE.",
+        "Determines the specific membrane site for LC3B lipidation.",
+        "Essential for the elongation and expansion of the phagophore into a mature autophagosome."
+      ],
+      "evidence": [
+        {
+          "paper_title": "The Atg16L Complex Specifies the Site of LC3 Lipidation for Membrane Biogenesis in Autophagy",
+          "journal": "Molecular Biology of the Cell",
+          "year": 2008,
+          "relevant_quote": "We propose that the Atg16L complex is a new type of E3-like enzyme that functions as a scaffold for LC3 lipidation by dynamically localizing to the putative source membranes for autophagosome formation.",
+          "pmid": "18321988"
+        },
+        {
+          "paper_title": "Gigaxonin E3 ligase governs ATG16L1 turnover to control autophagosome production",
+          "journal": "The EMBO Journal",
+          "year": 2019,
+          "relevant_quote": "Orchestrating this cascade at the site of the nascent phagophore, ATG16L1 is a key determinant of autophagy elongation. Indeed, ATG16L1 interacts with the conjugate ATG12-ATG5 to form a multimeric structure and triggers the binding of the complex to the membrane. Through the subsequent interaction of ATG12 with LC3-conjugated-ATG3, ATG16L1 specifies the site of LC3 lipidation onto nascent membranes.",
+          "pmid": "30770803"
+        },
+        {
+          "paper_title": "Distinct functions of ATG16L1 isoforms in membrane binding and LC3B lipidation in autophagy-related processes",
+          "journal": "The Journal of Cell Biology",
+          "year": 2019,
+          "relevant_quote": "The final transfer to PE requires the E3-like ATG12-5–16L1 complex. It is proposed that ATG12-5–16L1 targets ATG3 to the site of lipidation through an interaction between ATG3 and ATG12 and membrane targeting by ATG16L1, but the exact function of the ATG12-5–16L1 complex is poorly described.",
+          "pmid": "30778222"
+        }
+      ],
+      "pmids": [
+        "18321988",
+        "30770803",
+        "30778222"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "LC3B",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The input correctly identifies the function but the direction of activation is reversed. The ATG16L1 complex acts upon LC3B to activate it via lipidation; LC3B does not activate the ATG16L1 complex. The interaction is one of enzymatic action rather than signal activation.",
+  "mechanism": "ATG16L1 is the scaffolding component of the ATG12-ATG5-ATG16L1 E3-like ligase complex, which is essential for conjugating LC3B to phosphatidylethanolamine (PE) on the phagophore membrane. ATG16L1 forms a complex with the ATG12-ATG5 conjugate and localizes this enzymatic machinery to the site of autophagosome formation, in part through direct membrane binding.",
+  "effect": "The ATG12-ATG5-ATG16L1 complex functions as an E3-like ligase that specifies the site of LC3 lipidation. It facilitates the transfer of LC3B from the E2-like enzyme, ATG3, to the lipid PE. This covalent modification, forming LC3B-II, is the key step for stably anchoring LC3B to the autophagosomal membrane, which is required for membrane elongation and closure.",
+  "summary": "LC3B activates ATG16L1 to modulate lc3b lipidation, ultimately affecting lc3b-ii is stably integrated into the membrane, driving autophagosome elongation.",
+  "evidence": [
+    {
+      "paper_title": "The Atg16L Complex Specifies the Site of LC3 Lipidation for Membrane Biogenesis in Autophagy",
+      "journal": "Molecular Biology of the Cell",
+      "year": 2008,
+      "relevant_quote": "We propose that the Atg16L complex is a new type of E3-like enzyme that functions as a scaffold for LC3 lipidation by dynamically localizing to the putative source membranes for autophagosome formation."
+    },
+    {
+      "paper_title": "Gigaxonin E3 ligase governs ATG16L1 turnover to control autophagosome production",
+      "journal": "The EMBO Journal",
+      "year": 2019,
+      "relevant_quote": "Orchestrating this cascade at the site of the nascent phagophore, ATG16L1 is a key determinant of autophagy elongation. Indeed, ATG16L1 interacts with the conjugate ATG12-ATG5 to form a multimeric structure and triggers the binding of the complex to the membrane. Through the subsequent interaction of ATG12 with LC3-conjugated-ATG3, ATG16L1 specifies the site of LC3 lipidation onto nascent membranes."
+    },
+    {
+      "paper_title": "Distinct functions of ATG16L1 isoforms in membrane binding and LC3B lipidation in autophagy-related processes",
+      "journal": "The Journal of Cell Biology",
+      "year": 2019,
+      "relevant_quote": "The final transfer to PE requires the E3-like ATG12-5–16L1 complex. It is proposed that ATG12-5–16L1 targets ATG3 to the site of lipidation through an interaction between ATG3 and ATG12 and membrane targeting by ATG16L1, but the exact function of the ATG12-5–16L1 complex is poorly described."
+    }
+  ],
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 4
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--regulates-- ATG16L1:",
+  "protein_a": "LC3B",
+  "protein_b": "ATG16L1",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.003918Z",
+  "last_updated": "2025-11-24T10:45:54.003918Z"
+}

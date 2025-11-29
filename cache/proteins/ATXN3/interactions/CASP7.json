@@ -1,0 +1,87 @@
+{
+  "primary": "CASP7",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "Caspase-7 was identified as a novel interactor of ATXN3 in a SILAC-based quantitative interaction proteomics screen, suggesting a direct interaction. [1]",
+  "functions": [
+    {
+      "function": "Apoptosis",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 is involved in the cellular apoptotic response, primarily in the context of polyglutamine expansion diseases like Spinocerebellar Ataxia Type 3 (SCA3). Rather than regulating caspases, ATXN3 is a substrate for them. During apoptosis, caspases cleave ATXN3, which can generate toxic fragments, particularly from the polyQ-expanded mutant protein.",
+      "effect_description": "The cleavage of polyQ-expanded ATXN3 by executioner caspases (like Caspase-3, with Caspase-7 being another executioner caspase) can lead to the formation of truncated, aggregation-prone fragments that translocate to the nucleus and enhance cellular toxicity. Furthermore, mutant ATXN3 can indirectly promote apoptosis by impairing DNA damage repair pathways, leading to the chronic activation of pro-apoptotic signaling cascades involving ATM and p53, which ultimately activate caspases.",
+      "biological_consequence": [
+        "Apoptotic stimulus or cellular stress (e.g., DNA damage) → Activation of executioner caspases (e.g., Caspase-3/7) → Caspases cleave ATXN3 → Cleavage of polyQ-expanded ATXN3 generates toxic fragments → Fragments aggregate and contribute to neurodegeneration and cell death."
+      ],
+      "specific_effects": [
+        "ATXN3 is a substrate for caspase-mediated cleavage during apoptosis.",
+        "Cleavage of polyQ-expanded ATXN3 enhances its cellular toxicity.",
+        "Mutant ATXN3 can promote apoptosis by causing persistent DNA damage, leading to p53 activation and subsequent caspase activation."
+      ],
+      "evidence": [
+        {
+          "paper_title": "CDK5 protects from caspase-induced Ataxin-3 cleavage and neurodegeneration",
+          "journal": "Journal of Neurochemistry",
+          "year": 2014,
+          "relevant_quote": "We propose that increased caspase-dependent cleavage of mutated Ataxin-3, because of missing CDK5 shielding, leads to aggregation and cell death.",
+          "pmid": "24548080"
+        },
+        {
+          "paper_title": "Inactivation of PNKP by Mutant ATXN3 Triggers Apoptosis by Activating the DNA Damage-Response Pathway in SCA3",
+          "journal": "PLoS Genetics",
+          "year": 2015,
+          "relevant_quote": "We report that persistent accumulation of DNA damage/strand breaks and chronic activation of the serine/threonine kinase ATM and the downstream p53 and protein kinase C-δ pro-apoptotic pathways trigger neuronal dysfunction and eventually neuronal death in SCA3.",
+          "pmid": "25590633"
+        }
+      ],
+      "pmids": [
+        "24548080",
+        "25590633"
+      ],
+      "interaction_effect": "activation",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "binds"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The input claim of a direct interaction identified via SILAC proteomics lacks verifiable evidence in the primary literature. The functional relationship is corrected to reflect that ATXN3 is a substrate of caspases, and its cleavage is a component of apoptotic signaling, rather than ATXN3 directly regulating Caspase-7.",
+  "mechanism": "ATXN3 is involved in the cellular apoptotic response, primarily in the context of polyglutamine expansion diseases like Spinocerebellar Ataxia Type 3 (SCA3). Rather than regulating caspases, ATXN3 is a substrate for them. During apoptosis, caspases cleave ATXN3, which can generate toxic fragments, particularly from the polyQ-expanded mutant protein.",
+  "effect": "The cleavage of polyQ-expanded ATXN3 by executioner caspases (like Caspase-3, with Caspase-7 being another executioner caspase) can lead to the formation of truncated, aggregation-prone fragments that translocate to the nucleus and enhance cellular toxicity. Furthermore, mutant ATXN3 can indirectly promote apoptosis by impairing DNA damage repair pathways, leading to the chronic activation of pro-apoptotic signaling cascades involving ATM and p53, which ultimately activate caspases.",
+  "summary": "ATXN3 interacts with CASP7 to modulate apoptosis, ultimately affecting fragments aggregate and contribute to neurodegeneration and cell death.",
+  "evidence": [
+    {
+      "paper_title": "CDK5 protects from caspase-induced Ataxin-3 cleavage and neurodegeneration",
+      "journal": "Journal of Neurochemistry",
+      "year": 2014,
+      "relevant_quote": "We propose that increased caspase-dependent cleavage of mutated Ataxin-3, because of missing CDK5 shielding, leads to aggregation and cell death."
+    },
+    {
+      "paper_title": "Inactivation of PNKP by Mutant ATXN3 Triggers Apoptosis by Activating the DNA Damage-Response Pathway in SCA3",
+      "journal": "PLoS Genetics",
+      "year": 2015,
+      "relevant_quote": "We report that persistent accumulation of DNA damage/strand breaks and chronic activation of the serine/threonine kinase ATM and the downstream p53 and protein kinase C-δ pro-apoptotic pathways trigger neuronal dysfunction and eventually neuronal death in SCA3."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 <--binds-- CASP7:",
+  "protein_a": "ATXN3",
+  "protein_b": "CASP7",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T04:11:50.094161Z",
+  "last_updated": "2025-11-24T04:11:50.094161Z"
+}

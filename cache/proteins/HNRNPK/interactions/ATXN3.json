@@ -1,0 +1,71 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "Heterogeneous nuclear ribonucleoprotein K (hnRNP K) was found to be highly enriched in protein complexes associated with mutant ataxin-3 in the brains of a SCA3 mouse model.",
+  "functions": [
+    {
+      "function": "Sequestration by Mutant ATXN3",
+      "arrow": "activates",
+      "cellular_process": "In the context of Spinocerebellar Ataxia Type 3 (SCA3), the mutant, polyglutamine-expanded form of ATXN3 forms protein complexes or aggregates that sequester Heterogeneous nuclear ribonucleoprotein K (HNRNPK), a key protein in RNA processing and translation.",
+      "effect_description": "The sequestration of HNRNPK into complexes with mutant ATXN3 is believed to impair its normal function. By trapping HNRNPK, mutant ATXN3 can disrupt critical downstream cellular processes such as mRNA splicing, transport, and protein translation, contributing to the neurotoxic pathology of SCA3.",
+      "biological_consequence": [
+        "Mutant ATXN3 with expanded polyglutamine tract forms aggregates/complexes in the nucleus -> HNRNPK is recruited and sequestered into these complexes -> Normal HNRNPK function in mRNA processing and translation is disrupted -> Dysregulation of protein synthesis contributes to neuronal dysfunction."
+      ],
+      "specific_effects": [
+        "HNRNPK was identified as being highly enriched in protein complex fractions containing mutant ataxin-3 isolated from the brains of a SCA3 knock-in mouse model (Ki150)."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Impaired interactions of ataxin-3 with protein complexes reveals their specific structure and functions in SCA3 Ki150 model",
+          "journal": "Frontiers in Molecular Neuroscience",
+          "year": 2023,
+          "relevant_quote": "The proteins highly enriched in 115–89 kDa Ki150 brain fractions were Hnrnpk and Eif4a2 involved in the translation initiation process.",
+          "pmid": "37033372"
+        }
+      ],
+      "pmids": [
+        "37033372"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "In the context of Spinocerebellar Ataxia Type 3 (SCA3), the mutant, polyglutamine-expanded form of ATXN3 forms protein complexes or aggregates that sequester Heterogeneous nuclear ribonucleoprotein K (HNRNPK), a key protein in RNA processing and translation.",
+  "effect": "The sequestration of HNRNPK into complexes with mutant ATXN3 is believed to impair its normal function. By trapping HNRNPK, mutant ATXN3 can disrupt critical downstream cellular processes such as mRNA splicing, transport, and protein translation, contributing to the neurotoxic pathology of SCA3.",
+  "summary": "ATXN3 interacts with HNRNPK to modulate sequestration by mutant atxn3.",
+  "evidence": [
+    {
+      "paper_title": "Impaired interactions of ataxin-3 with protein complexes reveals their specific structure and functions in SCA3 Ki150 model",
+      "journal": "Frontiers in Molecular Neuroscience",
+      "year": 2023,
+      "relevant_quote": "The proteins highly enriched in 115–89 kDa Ki150 brain fractions were Hnrnpk and Eif4a2 involved in the translation initiation process."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --binds--> HNRNPK:",
+  "protein_a": "HNRNPK",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T07:01:28.110512Z",
+  "last_updated": "2025-11-24T07:01:28.110512Z"
+}

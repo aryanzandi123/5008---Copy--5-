@@ -1,0 +1,117 @@
+{
+  "primary": "LC3B",
+  "interaction_type": "indirect",
+  "upstream_interactor": "STX17",
+  "mediator_chain": [
+    "STX17"
+  ],
+  "depth": 2,
+  "support_summary": "VAMP8 is a lysosomal R-SNARE that partners with the autophagosomal Q-SNAREs STX17 and SNAP29 to drive membrane fusion. Its functional connection to LC3B is mediated through the STX17 complex.",
+  "functions": [
+    {
+      "function": "Autophagosome-Lysosome Fusion",
+      "arrow": "activates",
+      "cellular_process": "VAMP8 is a vesicle-associated membrane protein (VAMP) that functions as the R-SNARE on late endosomes and lysosomes, providing the final component for the core machinery that drives the fusion of autophagosomes with lysosomes.",
+      "effect_description": "VAMP8, anchored in the lysosomal membrane, completes the trans-SNARE complex by interacting with the STX17-SNAP29 t-SNARE complex present on the LC3B-positive autophagosome. The binding of VAMP8's R-SNARE motif to the Qa, Qb, and Qc motifs of STX17 and SNAP29 initiates the 'zippering' of the four-helix bundle. This process releases a substantial amount of energy, which is used to merge the two lipid bilayers, leading to the formation of the autolysosome and the degradation of its contents.",
+      "biological_consequence": [
+        "STX17 and SNAP29 form a t-SNARE complex on the autophagosome → The t-SNARE complex binds to VAMP8 on the lysosome membrane → Formation of the STX17-SNAP29-VAMP8 trans-SNARE complex → SNARE complex zippering provides the energy for membrane merger → Fusion of autophagosome and lysosome delivers cargo for degradation."
+      ],
+      "specific_effects": [
+        "Functions as the essential R-SNARE partner for the autophagosomal STX17-SNAP29 complex.",
+        "Its activity is regulated by post-translational modifications; for example, deacetylation of STX17 promotes the formation of the STX17-SNAP29-VAMP8 complex.",
+        "Phosphorylation of VAMP8 can inhibit its fusogenic activity, thereby regulating the rate of autophagic flux."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Acetylation of STX17 (syntaxin 17) controls autophagosome maturation",
+          "journal": "Autophagy",
+          "year": 2021,
+          "relevant_quote": "In response to cell starvation and MTORC1 inhibition, the inactivation of CREBBP leads to the deacetylation of STX17 at its SNARE domain. This deacetylation promotes the interaction between STX17 and SNAP29 and the formation of the STX17-SNAP29-VAMP8 SNARE complex...",
+          "pmid": "32264736"
+        },
+        {
+          "paper_title": "Migfilin promotes autophagic flux through direct interaction with SNAP29 and Vamp8",
+          "journal": "The Journal of Cell Biology",
+          "year": 2024,
+          "relevant_quote": "In this study, we report that migfilin, a focal adhesion protein, plays a novel role in promoting autophagy by increasing autophagosome–lysosome fusion. We found that migfilin is associated with SNAP29 and Vamp8, thereby facilitating Stx17-SNAP29-Vamp8 SNARE complex assembly.",
+          "pmid": "39283311"
+        },
+        {
+          "paper_title": "Prefused lysosomes cluster on autophagosomes regulated by VAMP8",
+          "journal": "Communications Biology",
+          "year": 2021,
+          "relevant_quote": "The soluble N-ethylmaleimide-sensitive factor attachment protein receptor (SNARE) protein on lysosomes—vesicle-associated membrane protein 8 (VAMP8)—plays an important role in forming this prefusion state of lysosomal clusters.",
+          "pmid": "34645799"
+        }
+      ],
+      "pmids": [
+        "32264736",
+        "39283311",
+        "34645799"
+      ],
+      "direct_arrow": "activates",
+      "interaction_effect": "activation",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "STX17",
+        "direct_arrow": "activates",
+        "net_from": "LC3B",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "STX17"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "VAMP8 is a vesicle-associated membrane protein (VAMP) that functions as the R-SNARE on late endosomes and lysosomes, providing the final component for the core machinery that drives the fusion of autophagosomes with lysosomes.",
+  "effect": "VAMP8, anchored in the lysosomal membrane, completes the trans-SNARE complex by interacting with the STX17-SNAP29 t-SNARE complex present on the LC3B-positive autophagosome. The binding of VAMP8's R-SNARE motif to the Qa, Qb, and Qc motifs of STX17 and SNAP29 initiates the 'zippering' of the four-helix bundle. This process releases a substantial amount of energy, which is used to merge the two lipid bilayers, leading to the formation of the autolysosome and the degradation of its contents.",
+  "summary": "LC3B activates VAMP8 to modulate autophagosome-lysosome fusion, ultimately affecting fusion of autophagosome and lysosome delivers cargo for degradation.",
+  "evidence": [
+    {
+      "paper_title": "Acetylation of STX17 (syntaxin 17) controls autophagosome maturation",
+      "journal": "Autophagy",
+      "year": 2021,
+      "relevant_quote": "In response to cell starvation and MTORC1 inhibition, the inactivation of CREBBP leads to the deacetylation of STX17 at its SNARE domain. This deacetylation promotes the interaction between STX17 and SNAP29 and the formation of the STX17-SNAP29-VAMP8 SNARE complex..."
+    },
+    {
+      "paper_title": "Migfilin promotes autophagic flux through direct interaction with SNAP29 and Vamp8",
+      "journal": "The Journal of Cell Biology",
+      "year": 2024,
+      "relevant_quote": "In this study, we report that migfilin, a focal adhesion protein, plays a novel role in promoting autophagy by increasing autophagosome–lysosome fusion. We found that migfilin is associated with SNAP29 and Vamp8, thereby facilitating Stx17-SNAP29-Vamp8 SNARE complex assembly."
+    },
+    {
+      "paper_title": "Prefused lysosomes cluster on autophagosomes regulated by VAMP8",
+      "journal": "Communications Biology",
+      "year": 2021,
+      "relevant_quote": "The soluble N-ethylmaleimide-sensitive factor attachment protein receptor (SNARE) protein on lysosomes—vesicle-associated membrane protein 8 (VAMP8)—plays an important role in forming this prefusion state of lysosomal clusters."
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "STX17 --activates--> VAMP8:",
+  "protein_a": "VAMP8",
+  "protein_b": "LC3B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.056380Z",
+  "last_updated": "2025-11-24T10:45:54.056380Z"
+}

@@ -1,0 +1,98 @@
+{
+  "primary": "CLTC",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "functions": [
+    {
+      "function": "Autophagosome Biogenesis",
+      "arrow": "activates",
+      "cellular_process": "Clathrin Heavy Chain (CLTC) is essential for the biogenesis of autophagosomes through its role in vesicular trafficking. CLTC directly interacts with ATG16L1, a key component of the E3-like ligase complex required for the conjugation of phosphatidylethanolamine to LC3B.",
+      "effect_description": "CLTC facilitates the trafficking of ATG16L1, likely from the plasma membrane or trans-Golgi Network, to sites of autophagosome initiation. By ensuring the proper localization of the ATG12-ATG5-ATG16L1 complex, clathrin-mediated transport is a prerequisite for the lipidation of LC3B (conversion to LC3-II) and its incorporation into the nascent phagophore membrane, thereby activating autophagosome formation.",
+      "biological_consequence": [
+        "Autophagy induction → Clathrin Heavy Chain (CLTC) interacts with ATG16L1 → Clathrin-mediated trafficking delivers ATG16L1 to sites of phagophore formation → The ATG12-ATG5-ATG16L1 complex is assembled and acts as an E3-like ligase → LC3B is lipidated to form LC3-II → LC3-II is incorporated into the elongating phagophore membrane → Autophagosome biogenesis proceeds."
+      ],
+      "specific_effects": [
+        "Directly interacts with ATG16L1, a critical component of the LC3B lipidation machinery.",
+        "Inhibition or depletion of clathrin heavy chain impairs the formation of ATG16L1-positive puncta, which are precursors to autophagosomes.",
+        "Clathrin and its adaptor AP1 are involved in providing membrane from the trans-Golgi Network for autophagosome biogenesis."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Plasma membrane contributes to the formation of pre-autophagosomal structures",
+          "journal": "Nature Cell Biology",
+          "year": 2010,
+          "relevant_quote": "Here we show in mammalian cells that the heavy chain of clathrin interacts with Atg16L1 and is involved in the formation of Atg16L1-positive early autophagosome precursors. Atg16L1 associated with clathrin-coated structures, and inhibition of clathrin-mediated internalization decreased the formation of both Atg16L1-positive precursors and mature autophagosomes.",
+          "pmid": "20639872"
+        },
+        {
+          "paper_title": "AP1 Is Essential for Generation of Autophagosomes From the trans-Golgi Network",
+          "journal": "Journal of Cell Science",
+          "year": 2012,
+          "relevant_quote": "The clathrin adaptor protein AP1 and clathrin localized to starvation- and rapamycin-induced autophagosomes. Dysfunction of the AP1-dependent clathrin coating at the TGN but not at the plasma membrane prevented autophagosome formation. Our results thus suggest an essential role of the TGN in autophagosome biogenesis, providing membrane to autophagosomes through an AP1-dependent pathway.",
+          "pmid": "22328508"
+        }
+      ],
+      "pmids": [
+        "20639872",
+        "22328508"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "LC3B",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The mechanism is corrected. Clathrin Heavy Chain (CLTC) does not directly provide a scaffolding force for the phagophore in conjunction with LC3B. Instead, its primary role is upstream, mediating the trafficking of ATG16L1, a core component of the LC3B lipidation machinery. This clathrin-mediated trafficking is essential for the formation of autophagosome precursors.",
+  "mechanism": "Clathrin Heavy Chain (CLTC) is essential for the biogenesis of autophagosomes through its role in vesicular trafficking. CLTC directly interacts with ATG16L1, a key component of the E3-like ligase complex required for the conjugation of phosphatidylethanolamine to LC3B.",
+  "effect": "CLTC facilitates the trafficking of ATG16L1, likely from the plasma membrane or trans-Golgi Network, to sites of autophagosome initiation. By ensuring the proper localization of the ATG12-ATG5-ATG16L1 complex, clathrin-mediated transport is a prerequisite for the lipidation of LC3B (conversion to LC3-II) and its incorporation into the nascent phagophore membrane, thereby activating autophagosome formation.",
+  "summary": "LC3B activates CLTC to modulate autophagosome biogenesis, ultimately affecting autophagosome biogenesis proceeds.",
+  "evidence": [
+    {
+      "paper_title": "Plasma membrane contributes to the formation of pre-autophagosomal structures",
+      "journal": "Nature Cell Biology",
+      "year": 2010,
+      "relevant_quote": "Here we show in mammalian cells that the heavy chain of clathrin interacts with Atg16L1 and is involved in the formation of Atg16L1-positive early autophagosome precursors. Atg16L1 associated with clathrin-coated structures, and inhibition of clathrin-mediated internalization decreased the formation of both Atg16L1-positive precursors and mature autophagosomes."
+    },
+    {
+      "paper_title": "AP1 Is Essential for Generation of Autophagosomes From the trans-Golgi Network",
+      "journal": "Journal of Cell Science",
+      "year": 2012,
+      "relevant_quote": "The clathrin adaptor protein AP1 and clathrin localized to starvation- and rapamycin-induced autophagosomes. Dysfunction of the AP1-dependent clathrin coating at the TGN but not at the plasma membrane prevented autophagosome formation. Our results thus suggest an essential role of the TGN in autophagosome biogenesis, providing membrane to autophagosomes through an AP1-dependent pathway."
+    }
+  ],
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 4
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--regulates-- CLTC:",
+  "protein_a": "LC3B",
+  "protein_b": "CLTC",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.081399Z",
+  "last_updated": "2025-11-24T10:45:54.081399Z"
+}

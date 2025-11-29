@@ -1,0 +1,64 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "In a disease context, mutant ATXN3 deubiquitinates VDAC1, a mitochondrial outer membrane protein, which impairs mitophagy and can lead to apoptosis.",
+  "functions": [
+    {
+      "function": "Mitophagy",
+      "arrow": "inhibits",
+      "cellular_process": "Wild-type ATXN3 deubiquitinates the Voltage-Dependent Anion Channel 1 (VDAC1), a substrate of the E3 ligase Parkin on the outer mitochondrial membrane.",
+      "effect_description": "In the context of SCA3, mutant ATXN3 excessively deubiquitinates VDAC1. This prevents the proper ubiquitination of VDAC1 by Parkin, which is a critical signal for recruiting autophagic machinery to clear damaged mitochondria.",
+      "biological_consequence": [
+        "Deubiquitination of VDAC1 by mutant ATXN3 → Reduced polyubiquitination of VDAC1 → Impaired Parkin-mediated mitophagy → Accumulation of dysfunctional mitochondria → Apoptosis and neurodegeneration"
+      ],
+      "specific_effects": [
+        "VDAC1 is a novel substrate of ATXN3.",
+        "This dysregulation of VDAC1 links ATXN3 function directly to mitochondrial quality control and provides a pathogenic mechanism in SCA3."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Mitochondrial Dysfunction in Spinocerebellar Ataxia Type 3 Is Linked to VDAC1 Deubiquitination",
+          "year": 2020,
+          "pmid": "35682609"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "inhibits",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "35682609"
+      ]
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "mechanism": "Wild-type ATXN3 deubiquitinates the Voltage-Dependent Anion Channel 1 (VDAC1), a substrate of the E3 ligase Parkin on the outer mitochondrial membrane.",
+  "effect": "In the context of SCA3, mutant ATXN3 excessively deubiquitinates VDAC1. This prevents the proper ubiquitination of VDAC1 by Parkin, which is a critical signal for recruiting autophagic machinery to clear damaged mitochondria.",
+  "summary": "ATXN3 inhibits VDAC1 to modulate mitophagy, ultimately affecting apoptosis and neurodegeneration.",
+  "evidence": [
+    {
+      "paper_title": "Mitochondrial Dysfunction in Spinocerebellar Ataxia Type 3 Is Linked to VDAC1 Deubiquitination",
+      "year": 2020
+    }
+  ],
+  "arrow_notation": "ATXN3 --inhibits--> VDAC1:",
+  "protein_a": "VDAC1",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.791229Z",
+  "last_updated": "2025-11-24T12:52:47.791229Z"
+}

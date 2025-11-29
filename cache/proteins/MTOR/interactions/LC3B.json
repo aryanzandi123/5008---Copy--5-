@@ -1,0 +1,103 @@
+{
+  "primary": "LC3B",
+  "interaction_type": "indirect",
+  "upstream_interactor": "ULK1",
+  "mediator_chain": [
+    "ULK1"
+  ],
+  "depth": 2,
+  "support_summary": "mTOR is a major negative regulator of autophagy. It phosphorylates and inhibits the ULK1 complex, which is upstream of LC3B activation. Therefore, mTOR indirectly regulates LC3B function via ULK1.",
+  "functions": [
+    {
+      "function": "Autophagy Initiation",
+      "arrow": "inhibits",
+      "cellular_process": "mTOR, the catalytic subunit of the mTORC1 complex, is a master negative regulator of autophagy. It acts upstream of LC3B by controlling the activity of the autophagy-initiating ULK1 complex (composed of ULK1, ATG13, FIP200, and ATG101).",
+      "effect_description": "Under nutrient-replete conditions, active mTORC1 directly phosphorylates ULK1 and ATG13. The phosphorylation of ULK1 at Serine 757 by mTORC1 prevents the activation of ULK1 by AMPK, a key energy sensor that promotes autophagy. This inhibitory phosphorylation suppresses ULK1's kinase activity, thereby blocking the downstream signaling cascade required for the initiation of autophagosome formation, including the lipidation of LC3B.",
+      "biological_consequence": [
+        "High nutrient levels → PI3K/AKT pathway activation → mTORC1 activation → mTORC1 binds the ULK1 complex → mTORC1 phosphorylates ULK1 (at Ser757) and ATG13 → ULK1 kinase activity is suppressed → Downstream phosphorylation of autophagy components is blocked → Autophagy initiation is inhibited."
+      ],
+      "specific_effects": [
+        "mTORC1 directly phosphorylates ULK1 at Ser757, which disrupts the interaction between ULK1 and AMPK, preventing ULK1 activation.",
+        "Inactivation of mTORC1 (e.g., by nutrient starvation or rapamycin) leads to the dephosphorylation and activation of the ULK1 complex, which is a prerequisite for autophagy induction.",
+        "Active mTORC1 phosphorylates multiple components of the autophagy initiation machinery, including ULK1 and ATG13, to suppress their function."
+      ],
+      "evidence": [
+        {
+          "paper_title": "AMPK and mTOR regulate autophagy through direct phosphorylation of Ulk1",
+          "journal": "Nature Cell Biology",
+          "year": 2011,
+          "relevant_quote": "Under nutrient sufficiency, high mTOR activity prevents Ulk1 activation by phosphorylating Ulk1 Ser 757 and disrupting the interaction between Ulk1 and AMPK. This coordinated phosphorylation is important for Ulk1 in autophagy induction.",
+          "pmid": "21258367"
+        },
+        {
+          "paper_title": "Nutrient-dependent mTORC1 Association with the ULK1–Atg13–FIP200 Complex Required for Autophagy",
+          "journal": "Molecular Biology of the Cell",
+          "year": 2009,
+          "relevant_quote": "Importantly, mTORC1 is incorporated into the ULK1–Atg13–FIP200 complex through ULK1 in a nutrient-dependent manner and mTOR phosphorylates ULK1 and Atg13. ULK1 is dephosphorylated by rapamycin treatment or starvation. These data suggest that mTORC1 suppresses autophagy through direct regulation of the ∼3-MDa ULK1–Atg13–FIP200 complex.",
+          "pmid": "19211835"
+        }
+      ],
+      "pmids": [
+        "21258367",
+        "19211835"
+      ],
+      "direct_arrow": "activates",
+      "interaction_effect": "inhibits",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "inhibition",
+      "arrow_context": {
+        "direct_from": "ULK1",
+        "direct_arrow": "activates",
+        "net_from": "LC3B",
+        "net_arrow": "inhibits",
+        "mediator_chain": [
+          "ULK1"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "inhibits",
+      "net_effect": "inhibition",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "mTOR, the catalytic subunit of the mTORC1 complex, is a master negative regulator of autophagy. It acts upstream of LC3B by controlling the activity of the autophagy-initiating ULK1 complex (composed of ULK1, ATG13, FIP200, and ATG101).",
+  "effect": "Under nutrient-replete conditions, active mTORC1 directly phosphorylates ULK1 and ATG13. The phosphorylation of ULK1 at Serine 757 by mTORC1 prevents the activation of ULK1 by AMPK, a key energy sensor that promotes autophagy. This inhibitory phosphorylation suppresses ULK1's kinase activity, thereby blocking the downstream signaling cascade required for the initiation of autophagosome formation, including the lipidation of LC3B.",
+  "summary": "LC3B inhibits mTOR to modulate autophagy initiation, ultimately affecting autophagy initiation is inhibited.",
+  "evidence": [
+    {
+      "paper_title": "AMPK and mTOR regulate autophagy through direct phosphorylation of Ulk1",
+      "journal": "Nature Cell Biology",
+      "year": 2011,
+      "relevant_quote": "Under nutrient sufficiency, high mTOR activity prevents Ulk1 activation by phosphorylating Ulk1 Ser 757 and disrupting the interaction between Ulk1 and AMPK. This coordinated phosphorylation is important for Ulk1 in autophagy induction."
+    },
+    {
+      "paper_title": "Nutrient-dependent mTORC1 Association with the ULK1–Atg13–FIP200 Complex Required for Autophagy",
+      "journal": "Molecular Biology of the Cell",
+      "year": 2009,
+      "relevant_quote": "Importantly, mTORC1 is incorporated into the ULK1–Atg13–FIP200 complex through ULK1 in a nutrient-dependent manner and mTOR phosphorylates ULK1 and Atg13. ULK1 is dephosphorylated by rapamycin treatment or starvation. These data suggest that mTORC1 suppresses autophagy through direct regulation of the ∼3-MDa ULK1–Atg13–FIP200 complex."
+    }
+  ],
+  "interaction_effect": "inhibition",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ULK1 <--inhibits-- mTOR:",
+  "protein_a": "mTOR",
+  "protein_b": "LC3B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.027907Z",
+  "last_updated": "2025-11-24T10:45:54.027907Z"
+}

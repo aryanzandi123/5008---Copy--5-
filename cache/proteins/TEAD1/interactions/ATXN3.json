@@ -1,0 +1,111 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": "YAP1",
+  "mediator_chain": [
+    "YAP1"
+  ],
+  "depth": 2,
+  "support_summary": "ATXN3 stabilizes YAP1, which then translocates to the nucleus and forms a complex with TEAD family transcription factors (including TEAD1) to drive oncogenic gene expression.",
+  "functions": [
+    {
+      "function": "Indirect Activation of YAP1-TEAD1 Transcriptional Activity",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 functions as a deubiquitinase for the transcriptional co-activator YAP1. By removing K48-linked ubiquitin chains, ATXN3 prevents the proteasomal degradation of YAP1, leading to its stabilization and accumulation. Stabilized YAP1 translocates to the nucleus, where it binds to TEAD family transcription factors, including TEAD1. The YAP1-TEAD1 complex then binds to distal enhancers of target genes to drive their transcription.",
+      "effect_description": "By stabilizing YAP1, ATXN3 indirectly enhances the formation and transcriptional activity of the oncogenic YAP1-TEAD1 complex. This leads to increased expression of genes involved in cell proliferation, migration, and tumor progression, such as CTGF and CYR61. The transcriptional activity of YAP1 is predominantly mediated through its interaction with TEAD transcription factors at these enhancer regions.",
+      "biological_consequence": [
+        "ATXN3 binds to the WW domain of YAP1 via its Josephin domain → ATXN3 removes K48-linked ubiquitin chains from YAP1 → YAP1 protein is stabilized and accumulates → YAP1 translocates to the nucleus and forms a complex with TEAD1 → The YAP1-TEAD1 complex binds to distal enhancers of target genes → Increased transcription of oncogenes (e.g., CTGF, CYR61) → Promotion of tumor growth and cell migration"
+      ],
+      "specific_effects": [
+        "ATXN3's deubiquitination of YAP1 prevents its proteasome-mediated degradation.",
+        "The interaction is mediated by the Josephin domain of ATXN3 and the WW domain of YAP1.",
+        "TEAD transcription factors are the primary mediators of YAP1's chromatin-binding and transcriptional co-activator function.",
+        "The YAP1-TEAD1 complex primarily regulates gene expression by binding to distal enhancers, which are often marked by H3K27 acetylation."
+      ],
+      "evidence": [
+        {
+          "paper_title": "ATXN3 deubiquitinates YAP1 to promote tumor growth",
+          "journal": "Am J Cancer Res",
+          "year": 2023,
+          "relevant_quote": "At the molecular level, ATNX3 interacts with the WW domains of YAP1 to protect YAP1 from ubiquitination-mediated degradation. Immunohistology analysis revealed a strong positive correlation between ATXN3 and YAP1 protein expression in human breast and pancreatic cancers. Collectively, our study defines ATXN3 as a previously unknown YAP1 deubiquitinase in tumorigenesis and provides a rationale for ATXN3 targeting in antitumor chemotherapy.",
+          "pmid": "37818078"
+        },
+        {
+          "paper_title": "ATXN3 promotes prostate cancer progression by stabilizing YAP",
+          "journal": "Journal of Experimental & Clinical Cancer Research",
+          "year": 2023,
+          "relevant_quote": "Further mechanistic study revealed that the Josephin domain of ATXN3 interacted with the WW domain of YAP. ATXN3 stabilized YAP protein via inhibiting K48-specific poly-ubiquitination process on YAP protein.",
+          "pmid": "37349820"
+        },
+        {
+          "paper_title": "YAP1 Exerts Its Transcriptional Control via TEAD-Mediated Activation of Enhancers",
+          "journal": "PLoS Genetics",
+          "year": 2015,
+          "relevant_quote": "We demonstrate that TEAD transcription factors mediate YAP1 chromatin-binding genome-wide, further explaining their dominant role as primary mediators of YAP1-transcriptional activity. Moreover, we show that YAP1 largely exerts its transcriptional control via distal enhancers that are marked by H3K27 acetylation and that YAP1 is necessary for this chromatin mark at bound enhancers and the activity of the associated genes.",
+          "pmid": "26295846"
+        }
+      ],
+      "pmids": [
+        "37818078",
+        "37349820",
+        "26295846"
+      ],
+      "direct_arrow": "activates",
+      "interaction_effect": "activation",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "YAP1",
+        "direct_arrow": "activates",
+        "net_from": "ATXN3",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "YAP1"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The interaction between ATXN3 and TEAD1 is indirect and is mediated by YAP1. ATXN3 does not directly interact with TEAD1 but rather stabilizes the transcriptional co-activator YAP1, which then partners with TEAD family members, including TEAD1, to regulate gene expression.",
+  "mechanism": "ATXN3 functions as a deubiquitinase for the transcriptional co-activator YAP1. By removing K48-linked ubiquitin chains, ATXN3 prevents the proteasomal degradation of YAP1, leading to its stabilization and accumulation. Stabilized YAP1 translocates to the nucleus, where it binds to TEAD family transcription factors, including TEAD1. The YAP1-TEAD1 complex then binds to distal enhancers of target genes to drive their transcription.",
+  "effect": "By stabilizing YAP1, ATXN3 indirectly enhances the formation and transcriptional activity of the oncogenic YAP1-TEAD1 complex. This leads to increased expression of genes involved in cell proliferation, migration, and tumor progression, such as CTGF and CYR61. The transcriptional activity of YAP1 is predominantly mediated through its interaction with TEAD transcription factors at these enhancer regions.",
+  "summary": "ATXN3 activates TEAD1 to modulate indirect activation of yap1-tead1 transcriptional activity, ultimately affecting promotion of tumor growth and cell migration.",
+  "evidence": [
+    {
+      "paper_title": "ATXN3 deubiquitinates YAP1 to promote tumor growth",
+      "journal": "Am J Cancer Res",
+      "year": 2023,
+      "relevant_quote": "At the molecular level, ATNX3 interacts with the WW domains of YAP1 to protect YAP1 from ubiquitination-mediated degradation. Immunohistology analysis revealed a strong positive correlation between ATXN3 and YAP1 protein expression in human breast and pancreatic cancers. Collectively, our study defines ATXN3 as a previously unknown YAP1 deubiquitinase in tumorigenesis and provides a rationale for ATXN3 targeting in antitumor chemotherapy."
+    },
+    {
+      "paper_title": "ATXN3 promotes prostate cancer progression by stabilizing YAP",
+      "journal": "Journal of Experimental & Clinical Cancer Research",
+      "year": 2023,
+      "relevant_quote": "Further mechanistic study revealed that the Josephin domain of ATXN3 interacted with the WW domain of YAP. ATXN3 stabilized YAP protein via inhibiting K48-specific poly-ubiquitination process on YAP protein."
+    },
+    {
+      "paper_title": "YAP1 Exerts Its Transcriptional Control via TEAD-Mediated Activation of Enhancers",
+      "journal": "PLoS Genetics",
+      "year": 2015,
+      "relevant_quote": "We demonstrate that TEAD transcription factors mediate YAP1 chromatin-binding genome-wide, further explaining their dominant role as primary mediators of YAP1-transcriptional activity. Moreover, we show that YAP1 largely exerts its transcriptional control via distal enhancers that are marked by H3K27 acetylation and that YAP1 is necessary for this chromatin mark at bound enhancers and the activity of the associated genes."
+    }
+  ],
+  "arrow_notation": "YAP1 --activates--> TEAD1:",
+  "protein_a": "TEAD1",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.728611Z",
+  "last_updated": "2025-11-29T11:33:49.728611Z"
+}

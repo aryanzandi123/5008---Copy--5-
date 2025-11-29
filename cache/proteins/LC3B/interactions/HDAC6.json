@@ -1,0 +1,89 @@
+{
+  "primary": "HDAC6",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "Histone deacetylase 6 (HDAC6) is involved in aggrephagy and has been shown to directly interact with LC3B, facilitating the clearance of protein aggregates.",
+  "functions": [
+    {
+      "function": "Aggrephagy and Autophagosome Maturation",
+      "arrow": "activates",
+      "cellular_process": "Histone deacetylase 6 (HDAC6) is a cytoplasmic deacetylase that plays multiple roles in activating aggrephagy. It acts as a cargo receptor for ubiquitinated protein aggregates and facilitates their transport to the microtubule-organizing center (MTOC). Furthermore, it promotes the maturation and fusion of autophagosomes with lysosomes through enzymatic and scaffolding functions.",
+      "effect_description": "HDAC6 utilizes its zinc finger ubiquitin-binding domain (ZnF-BUZ) to recognize and bind polyubiquitinated misfolded proteins. It then links this cargo to the dynein motor protein complex, facilitating retrograde transport along microtubules to form an aggresome. Additionally, HDAC6 deacetylates LC3-II, which promotes autophagic flux, and it deacetylates cortactin to assemble an F-actin network required for autophagosome-lysosome fusion during the clearance of protein aggregates.",
+      "biological_consequence": [
+        "HDAC6 binds polyubiquitinated cargo via its ZnF-BUZ domain → HDAC6 links cargo to the dynein motor protein → Retrograde transport of cargo along microtubules to the MTOC → Aggresome formation → HDAC6-mediated deacetylation of cortactin promotes F-actin assembly → Autophagosome-lysosome fusion is facilitated → Cargo degradation",
+        "HDAC6 deacetylates acetylated LC3B-II on the autophagosome → Autophagic flux and degradation is promoted"
+      ],
+      "specific_effects": [
+        "Acts as an adaptor protein linking ubiquitinated cargo to the dynein motor for transport.",
+        "Enzymatically deacetylates lipidated LC3B (LC3-II), which is associated with enhanced autophagic degradation.",
+        "Controls autophagosome-lysosome fusion by deacetylating cortactin, which is required for F-actin remodeling at the fusion site.",
+        "Transports LC3 to the MTOC to promote autophagosome formation around the aggresome."
+      ],
+      "evidence": [
+        {
+          "paper_title": "HDAC6 controls autophagosome maturation essential for ubiquitin-selective quality-control autophagy",
+          "journal": "The EMBO Journal",
+          "year": 2010,
+          "relevant_quote": "Here, we identify the ubiquitin-binding deacetylase, histone deacetylase-6 (HDAC6), as a central component of basal autophagy that targets protein aggregates and damaged mitochondria. Surprisingly, HDAC6 is not required for autophagy activation; rather, it controls the fusion of autophagosomes to lysosomes. HDAC6 promotes autophagy by recruiting a cortactin-dependent, actin-remodelling machinery, which in turn assembles an F-actin network that stimulates autophagosome–lysosome fusion and substrate degradation.",
+          "pmid": "20075865"
+        },
+        {
+          "paper_title": "LC3B-II Deacetylation by Histone Deacetylase 6 Is Involved in Serum-Starvation-Induced Autophagic Degradation",
+          "journal": "PLoS ONE",
+          "year": 2013,
+          "relevant_quote": "In this study, we found that the acetylation levels of phosphotidylethanolamine (PE)-conjugated LC3B (LC3B-II), which is a critical component of double-membrane autophagosome, were profoundly decreased in HeLa cells upon autophagy induction by serum starvation... we observed increased levels of acetylated LC3B-II in cells treated with tubacin, a specific inhibitor of histone deacetylase 6 (HDAC6)... HDAC6 knockdown did not influence autophagosome formation but resulted in impaired degradation of p62/SQSTM1 during serum starvation. Collectively, our data indicated that LC3B-II deacetylation, which was partly mediated by HDAC6, is involved in autophagic degradation during serum starvation.",
+          "pmid": "24220335"
+        }
+      ],
+      "pmids": [
+        "20075865",
+        "24220335"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Histone deacetylase 6 (HDAC6) is a cytoplasmic deacetylase that plays multiple roles in activating aggrephagy. It acts as a cargo receptor for ubiquitinated protein aggregates and facilitates their transport to the microtubule-organizing center (MTOC). Furthermore, it promotes the maturation and fusion of autophagosomes with lysosomes through enzymatic and scaffolding functions.",
+  "effect": "HDAC6 utilizes its zinc finger ubiquitin-binding domain (ZnF-BUZ) to recognize and bind polyubiquitinated misfolded proteins. It then links this cargo to the dynein motor protein complex, facilitating retrograde transport along microtubules to form an aggresome. Additionally, HDAC6 deacetylates LC3-II, which promotes autophagic flux, and it deacetylates cortactin to assemble an F-actin network required for autophagosome-lysosome fusion during the clearance of protein aggregates.",
+  "summary": "LC3B activates HDAC6 to modulate aggrephagy and autophagosome maturation, ultimately affecting cargo degradation.",
+  "evidence": [
+    {
+      "paper_title": "HDAC6 controls autophagosome maturation essential for ubiquitin-selective quality-control autophagy",
+      "journal": "The EMBO Journal",
+      "year": 2010,
+      "relevant_quote": "Here, we identify the ubiquitin-binding deacetylase, histone deacetylase-6 (HDAC6), as a central component of basal autophagy that targets protein aggregates and damaged mitochondria. Surprisingly, HDAC6 is not required for autophagy activation; rather, it controls the fusion of autophagosomes to lysosomes. HDAC6 promotes autophagy by recruiting a cortactin-dependent, actin-remodelling machinery, which in turn assembles an F-actin network that stimulates autophagosome–lysosome fusion and substrate degradation."
+    },
+    {
+      "paper_title": "LC3B-II Deacetylation by Histone Deacetylase 6 Is Involved in Serum-Starvation-Induced Autophagic Degradation",
+      "journal": "PLoS ONE",
+      "year": 2013,
+      "relevant_quote": "In this study, we found that the acetylation levels of phosphotidylethanolamine (PE)-conjugated LC3B (LC3B-II), which is a critical component of double-membrane autophagosome, were profoundly decreased in HeLa cells upon autophagy induction by serum starvation... we observed increased levels of acetylated LC3B-II in cells treated with tubacin, a specific inhibitor of histone deacetylase 6 (HDAC6)... HDAC6 knockdown did not influence autophagosome formation but resulted in impaired degradation of p62/SQSTM1 during serum starvation. Collectively, our data indicated that LC3B-II deacetylation, which was partly mediated by HDAC6, is involved in autophagic degradation during serum starvation."
+    }
+  ],
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--regulates-- HDAC6:",
+  "protein_a": "LC3B",
+  "protein_b": "HDAC6",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.035575Z",
+  "last_updated": "2025-11-24T10:45:54.035575Z"
+}

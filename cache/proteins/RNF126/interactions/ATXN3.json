@@ -1,0 +1,30 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 2,
+  "support_summary": "No direct interaction is reported. RNF126 is an E3 ligase that ubiquitinates frataxin. While ATXN3 is a deubiquitinase, there is no evidence of it acting on frataxin or interacting with RNF126. The connection is functional through their roles in the ubiquitin-proteasome system. [34, 36]",
+  "_chain_inferred": true,
+  "_validation_status": "rejected",
+  "mechanism": "Molecular mechanism not fully characterized",
+  "arrow": "binds",
+  "intent": "binding",
+  "effect": "Functional effects not fully characterized",
+  "summary": "ATXN3 and RNF126 interact, though the functional significance remains to be fully elucidated.",
+  "evidence": [],
+  "interaction_effect": "binding",
+  "functions": [],
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 0
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --binds--> RNF126:",
+  "protein_a": "RNF126",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T04:11:50.120269Z",
+  "last_updated": "2025-11-24T04:11:50.120269Z"
+}

@@ -1,0 +1,165 @@
+{
+  "primary": "TFEB",
+  "interaction_type": "indirect",
+  "upstream_interactor": "LMX1B",
+  "mediator_chain": [
+    "LMX1B"
+  ],
+  "depth": 2,
+  "functions": [
+    {
+      "function": "Transcriptional Upregulation by the LMX1B-LC3B Complex",
+      "arrow": "activates",
+      "cellular_process": "The LIM homeodomain transcription factor LMX1B directly regulates the expression of key autophagy genes, including TFEB. In the nucleus, LC3B can act non-canonically as a transcriptional co-factor. Nuclear LC3B binds directly to a LIR-like motif on LMX1B, enhancing its transcriptional activity.",
+      "effect_description": "This interaction forms a positive feedback loop. By acting as a co-factor for LMX1B, nuclear LC3B promotes the transcription of TFEB. As TFEB is a master regulator of lysosomal biogenesis and autophagy, this leads to an amplified, robust autophagic response by increasing the cellular machinery required for the process.",
+      "biological_consequence": [
+        "LMX1B binds to FLAT elements in the promoter region of the TFEB gene → Nuclear LC3B is recruited to LMX1B via a LIR-like motif interaction → The LMX1B-LC3B complex enhances transcriptional initiation/elongation → Increased mRNA and protein expression of TFEB → TFEB translocates to the nucleus (upon permissive signals like mTORC1 inhibition) → Upregulation of the CLEAR gene network, including more autophagy and lysosomal components."
+      ],
+      "specific_effects": [
+        "LC3B acts as a transcriptional co-factor for LMX1B.",
+        "LMX1B directly binds the TFEB gene promoter.",
+        "The interaction potentiates the expression of TFEB, creating a feed-forward loop for autophagy regulation."
+      ],
+      "evidence": [
+        {
+          "paper_title": "ATG8-dependent LMX1B-autophagy crosstalk shapes human midbrain dopaminergic neuronal resilience",
+          "journal": "Journal of Cell Biology",
+          "year": 2023,
+          "relevant_quote": "Crucially, ATG8 binding stimulates LMX1B-mediated transcription for efficient autophagy and cell stress protection, thereby establishing a novel LMX1B-autophagy regulatory axis that contributes to mDAN maintenance and survival in the adult brain.",
+          "pmid": "37014324"
+        },
+        {
+          "paper_title": "LC3B is a cofactor for LMX1B-mediated transcription of autophagy genes in dopaminergic neurons",
+          "journal": "Journal of Cell Biology",
+          "year": 2023,
+          "relevant_quote": "Very interestingly, the authors found that LMX1B interacts directly with human Atg8 proteins and that LC3B acts as a nuclear cofactor to stimulate transcription of autophagy genes (Fig. 1). ... As shown in a rat model, mDANs can be rescued from α-synuclein toxicity by increasing autophagy through overexpressing transcription factor TFEB, a master regulator of the autophagy–lysosome pathway (ALP).",
+          "pmid": "37036692"
+        }
+      ],
+      "pmids": [
+        "37014324",
+        "37036692"
+      ],
+      "direct_arrow": "activates",
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "LMX1B",
+        "direct_arrow": "activates",
+        "net_from": "LC3B",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "LMX1B"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    },
+    {
+      "function": "Nuclear Translocation by mTORC1",
+      "arrow": "activates",
+      "cellular_process": "Under nutrient-rich conditions, the mTORC1 kinase complex is active on the lysosomal surface. TFEB is recruited to the lysosome where mTORC1 directly phosphorylates it at multiple serine residues (e.g., S211).",
+      "effect_description": "Phosphorylated TFEB is recognized by and binds to YWHA (14-3-3) proteins in the cytoplasm. This interaction masks the nuclear localization signal of TFEB, leading to its sequestration in the cytoplasm and preventing it from activating gene expression. Upon mTORC1 inactivation (e.g., during starvation), TFEB is dephosphorylated, dissociates from YWHA, and translocates to the nucleus.",
+      "biological_consequence": [
+        "Nutrient abundance → mTORC1 activation on lysosome surface → TFEB phosphorylation at Ser211 → YWHA (14-3-3) protein binding to phosphorylated TFEB → Cytoplasmic retention of TFEB → Inhibition of CLEAR gene network transcription."
+      ],
+      "specific_effects": [
+        "mTORC1-dependent phosphorylation of TFEB at Ser211 is a key step for cytoplasmic retention.",
+        "Binding of phosphorylated TFEB to YWHA/14-3-3 proteins physically blocks its nuclear import.",
+        "Inhibition of mTORC1 is a prerequisite for TFEB dephosphorylation and nuclear entry."
+      ],
+      "evidence": [
+        {
+          "paper_title": "mTORC1 functions as a transcriptional regulator of autophagy by preventing nuclear transport of TFEB",
+          "journal": "Nature Cell Biology",
+          "year": 2012,
+          "relevant_quote": "Under normal nutrient conditions, TFEB is phosphorylated in Ser211 in an MTORC1-dependent manner. This phosphorylation promotes association of TFEB with members of the YWHA (14-3-3) family of proteins and retention of the transcription factor in the cytosol.",
+          "pmid": "22576015"
+        },
+        {
+          "paper_title": "TFEB links autophagy to lysosomal biogenesis",
+          "journal": "The EMBO Journal",
+          "year": 2011,
+          "relevant_quote": "The transcription factor EB (TFEB), a master gene for lysosomal biogenesis, coordinated this program by driving expression of autophagy and lysosomal genes. Nuclear localization and activity of TFEB were regulated by serine phosphorylation mediated by the extracellular signal-regulated kinase 2, whose activity was tuned by the levels of extracellular nutrients.",
+          "pmid": "21617040"
+        }
+      ],
+      "pmids": [
+        "22576015",
+        "21617040"
+      ],
+      "direct_arrow": "unknown",
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "LMX1B",
+        "direct_arrow": "unknown",
+        "net_from": "LC3B",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "LMX1B"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "unknown"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The input claim that LMX1B 'activates' TFEB as a simple upstream mediator is a contextual error. The primary literature reveals a more complex transcriptional relationship. LMX1B is a transcription factor that directly binds to the promoter of the TFEB gene to drive its expression. LC3B, in its nuclear form, physically interacts with LMX1B and acts as a transcriptional co-factor, enhancing LMX1B's ability to transcribe TFEB and other autophagy-related genes. Therefore, the interaction is not a simple protein activation cascade but a transcriptional regulation mechanism where LC3B potentiates LMX1B-mediated TFEB gene expression.",
+  "mechanism": "The LIM homeodomain transcription factor LMX1B directly regulates the expression of key autophagy ge; Under nutrient-rich conditions, the mTORC1 kinase complex is active on the lysosomal surface",
+  "effect": "This interaction forms a positive feedback loop. By acting as a co-factor for LMX1B, nuclear LC3B promotes the transcription of TFEB. As TFEB is a master regulator of lysosomal biogenesis and autophagy, this leads to an amplified, robust autophagic response by increasing the cellular machinery required for the process.; Phosphorylated TFEB is recognized by and binds to YWHA (14-3-3) proteins in the cytoplasm. This interaction masks the nuclear localization signal of TFEB, leading to its sequestration in the cytoplasm and preventing it from activating gene expression. Upon mTORC1 inactivation (e.g., during starvation), TFEB is dephosphorylated, dissociates from YWHA, and translocates to the nucleus.",
+  "summary": "LC3B regulates TFEB to regulate transcriptional upregulation by the lmx1b-lc3b complex and regulation of nuclear translocation by mtorc1, ultimately affecting upregulation of the clear gene network, including more autophagy and lysosomal components.",
+  "evidence": [
+    {
+      "paper_title": "ATG8-dependent LMX1B-autophagy crosstalk shapes human midbrain dopaminergic neuronal resilience",
+      "journal": "Journal of Cell Biology",
+      "year": 2023,
+      "relevant_quote": "Crucially, ATG8 binding stimulates LMX1B-mediated transcription for efficient autophagy and cell stress protection, thereby establishing a novel LMX1B-autophagy regulatory axis that contributes to mDAN maintenance and survival in the adult brain."
+    },
+    {
+      "paper_title": "LC3B is a cofactor for LMX1B-mediated transcription of autophagy genes in dopaminergic neurons",
+      "journal": "Journal of Cell Biology",
+      "year": 2023,
+      "relevant_quote": "Very interestingly, the authors found that LMX1B interacts directly with human Atg8 proteins and that LC3B acts as a nuclear cofactor to stimulate transcription of autophagy genes (Fig. 1). ... As shown in a rat model, mDANs can be rescued from α-synuclein toxicity by increasing autophagy through overexpressing transcription factor TFEB, a master regulator of the autophagy–lysosome pathway (ALP)."
+    },
+    {
+      "paper_title": "mTORC1 functions as a transcriptional regulator of autophagy by preventing nuclear transport of TFEB",
+      "journal": "Nature Cell Biology",
+      "year": 2012,
+      "relevant_quote": "Under normal nutrient conditions, TFEB is phosphorylated in Ser211 in an MTORC1-dependent manner. This phosphorylation promotes association of TFEB with members of the YWHA (14-3-3) family of proteins and retention of the transcription factor in the cytosol."
+    },
+    {
+      "paper_title": "TFEB links autophagy to lysosomal biogenesis",
+      "journal": "The EMBO Journal",
+      "year": 2011,
+      "relevant_quote": "The transcription factor EB (TFEB), a master gene for lysosomal biogenesis, coordinated this program by driving expression of autophagy and lysosomal genes. Nuclear localization and activity of TFEB were regulated by serine phosphorylation mediated by the extracellular signal-regulated kinase 2, whose activity was tuned by the levels of extracellular nutrients."
+    }
+  ],
+  "interaction_effect": "activates",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 4
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LMX1B --activates--> TFEB:",
+  "protein_a": "LC3B",
+  "protein_b": "TFEB",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.088810Z",
+  "last_updated": "2025-11-24T10:45:54.088810Z"
+}

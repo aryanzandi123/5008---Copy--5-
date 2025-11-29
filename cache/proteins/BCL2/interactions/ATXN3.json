@@ -1,0 +1,119 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": "PRKN",
+  "mediator_chain": [
+    "PRKN"
+  ],
+  "depth": 2,
+  "support_summary": "ATXN3 regulates the activity of the E3 ligase Parkin, which is important for the ubiquitination of the autophagy inhibitor Bcl-2, making Bcl-2 an indirect target.",
+  "functions": [
+    {
+      "function": "Autophagy Regulation via Parkin-Bcl-2 Axis",
+      "arrow": "activates",
+      "cellular_process": "ATXN3, a deubiquitinase, directly interacts with the E3 ubiquitin ligase Parkin (PRKN) and inhibits its catalytic activity by hampering Parkin's essential auto-ubiquitination. Parkin normally mono-ubiquitinates the anti-apoptotic protein BCL2, a modification that increases BCL2's stability and enhances its ability to inhibit autophagy by sequestering Beclin-1.",
+      "effect_description": "By inhibiting Parkin's E3 ligase function, ATXN3 reduces the stabilizing mono-ubiquitination of BCL2. This leads to lower steady-state levels of the BCL2 protein. The resulting decrease in BCL2 relieves the sequestration of Beclin-1, allowing the autophagy machinery to proceed and thereby promoting cellular autophagic flux.",
+      "biological_consequence": [
+        "ATXN3 binds to Parkin and inhibits its E3 ligase activity by preventing auto-ubiquitination → Parkin-mediated mono-ubiquitination of BCL2 is decreased → BCL2 protein is destabilized and its levels are reduced → Sequestration of Beclin-1 by BCL2 is relieved → Autophagy is activated."
+      ],
+      "specific_effects": [
+        "ATXN3 counteracts Parkin E3 ligase activity.",
+        "Inhibition of Parkin reduces the mono-ubiquitination of BCL2.",
+        "Reduced mono-ubiquitination decreases the stability and steady-state levels of BCL2 protein.",
+        "Lower levels of the autophagy inhibitor BCL2 lead to the promotion of autophagic flux."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Parkin Mono-Ubiquitinates Bcl-2 and Regulates Autophagy",
+          "journal": "Journal of Biological Chemistry",
+          "year": 2010,
+          "relevant_quote": "Parkin directly binds to Bcl-2 via its C terminus and mediates the mono-ubiquitination of Bcl-2, which increases the steady-state levels of Bcl-2. Overexpression of parkin, but not its ligase-deficient forms, decreases autophagy marker LC3 conversion, whereas knockdown of parkin increases LC3 II levels.",
+          "pmid": "20889974"
+        },
+        {
+          "paper_title": "Ataxin-3 deubiquitination is coupled to Parkin ubiquitination via E2 ubiquitin-conjugating enzyme",
+          "journal": "Journal of Biological Chemistry",
+          "year": 2012,
+          "relevant_quote": "We report here that ataxin-3 interferes with the attachment of ubiquitin (Ub) onto parkin in real-time during conjugation but is unable to hydrolyze previously assembled parkin-Ub conjugates. The mechanism involves an ataxin-3-dependent stabilization of the complex between parkin and the E2 Ub-conjugating enzyme, which impedes the efficient charging of the E2 with Ub.",
+          "pmid": "22081612"
+        },
+        {
+          "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+          "journal": "Expert Reviews in Molecular Medicine",
+          "year": 2024,
+          "relevant_quote": "Additionally, in vitro assays have shown that ATXN3 can interact with the E3 ligase Parkin through ATXN3 UIM domains, which hampers the auto-ubiquitination of Parkin, known to be essential for its E3 activity. Parkin has two important functions in the autophagy system. On the one hand, Parkin monoubiquitinates the autophagy inhibitor Bcl-2, resulting in increased levels of Bcl-2.",
+          "pmid": "39320846"
+        }
+      ],
+      "pmids": [
+        "20889974",
+        "22081612",
+        "39320846"
+      ],
+      "direct_arrow": "inhibits",
+      "consequences": [
+        "ATXN3 inhibits the E3 ligase activity of Parkin. → Parkin-mediated mono-ubiquitination of BCL2, which stabilizes the BCL2 protein, is decreased. → BCL2 protein levels are consequently reduced. → The sequestration of Beclin-1 by BCL2 is relieved. → Autophagy is activated."
+      ],
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "PRKN",
+        "direct_arrow": "inhibits",
+        "net_from": "ATXN3",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "PRKN"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "inhibition"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The input contains a contextual error. It correctly identifies that ATXN3 inhibits Parkin, which in turn affects BCL2 and autophagy. However, it incorrectly describes the effect of Parkin on BCL2. Primary literature shows that Parkin-mediated mono-ubiquitination STABILIZES BCL2 protein, thereby INHIBITING autophagy. Therefore, when ATXN3 inhibits Parkin's E3 ligase activity, it leads to DECREASED mono-ubiquitination and subsequent DESTABILIZATION of BCL2, which relieves the inhibition on Beclin-1 and PROMOTES autophagy. The final outcome in the input is correct, but the mechanistic explanation of the intermediate step is reversed.",
+  "mechanism": "ATXN3, a deubiquitinase, directly interacts with the E3 ubiquitin ligase Parkin (PRKN) and inhibits its catalytic activity by hampering Parkin's essential auto-ubiquitination. Parkin normally mono-ubiquitinates the anti-apoptotic protein BCL2, a modification that increases BCL2's stability and enhances its ability to inhibit autophagy by sequestering Beclin-1.",
+  "effect": "By inhibiting Parkin's E3 ligase function, ATXN3 reduces the stabilizing mono-ubiquitination of BCL2. This leads to lower steady-state levels of the BCL2 protein. The resulting decrease in BCL2 relieves the sequestration of Beclin-1, allowing the autophagy machinery to proceed and thereby promoting cellular autophagic flux.",
+  "summary": "ATXN3 activates BCL2 to modulate autophagy regulation via parkin-bcl-2 axis, ultimately affecting autophagy is activated.",
+  "evidence": [
+    {
+      "paper_title": "Parkin Mono-Ubiquitinates Bcl-2 and Regulates Autophagy",
+      "journal": "Journal of Biological Chemistry",
+      "year": 2010,
+      "relevant_quote": "Parkin directly binds to Bcl-2 via its C terminus and mediates the mono-ubiquitination of Bcl-2, which increases the steady-state levels of Bcl-2. Overexpression of parkin, but not its ligase-deficient forms, decreases autophagy marker LC3 conversion, whereas knockdown of parkin increases LC3 II levels."
+    },
+    {
+      "paper_title": "Ataxin-3 deubiquitination is coupled to Parkin ubiquitination via E2 ubiquitin-conjugating enzyme",
+      "journal": "Journal of Biological Chemistry",
+      "year": 2012,
+      "relevant_quote": "We report here that ataxin-3 interferes with the attachment of ubiquitin (Ub) onto parkin in real-time during conjugation but is unable to hydrolyze previously assembled parkin-Ub conjugates. The mechanism involves an ataxin-3-dependent stabilization of the complex between parkin and the E2 Ub-conjugating enzyme, which impedes the efficient charging of the E2 with Ub."
+    },
+    {
+      "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+      "journal": "Expert Reviews in Molecular Medicine",
+      "year": 2024,
+      "relevant_quote": "Additionally, in vitro assays have shown that ATXN3 can interact with the E3 ligase Parkin through ATXN3 UIM domains, which hampers the auto-ubiquitination of Parkin, known to be essential for its E3 activity. Parkin has two important functions in the autophagy system. On the one hand, Parkin monoubiquitinates the autophagy inhibitor Bcl-2, resulting in increased levels of Bcl-2."
+    }
+  ],
+  "interaction_effect": "inhibition",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "PRKN --inhibits--> BCL2:",
+  "protein_a": "BCL2",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T04:11:50.028593Z",
+  "last_updated": "2025-11-24T04:11:50.028593Z"
+}

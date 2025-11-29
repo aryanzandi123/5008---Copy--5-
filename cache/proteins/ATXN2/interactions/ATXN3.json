@@ -1,0 +1,163 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "Protein-protein interaction databases like STRING show a direct interaction between ATXN3 and ATXN2.",
+  "functions": [
+    {
+      "function": "ATXN3 Protein Translation",
+      "arrow": "inhibits",
+      "cellular_process": "ATXN2, in a complex with the poly(A)-binding protein (PABP-1), negatively regulates the translation of ATXN3 mRNA. This interaction destabilizes the translation initiation complex, leading to reduced synthesis of the ataxin-3 protein.",
+      "effect_description": "ATXN2 acts as a modulator of ATXN3 protein levels, and its expression can mitigate the toxic effects of mutant ataxin-3 by reducing its overall abundance.",
+      "biological_consequence": [
+        "Reduced Mutant ATXN3 Synthesis → Decreased Protein Aggregation → Mitigation of SCA3 Disease Symptoms"
+      ],
+      "specific_effects": [
+        "ATXN2 expression downregulates mutant ataxin-3 in mouse models",
+        "Intermediate ATXN2 CAG repeats can modify the age of onset and clinical phenotype of SCA3"
+      ],
+      "evidence": [
+        {
+          "paper_title": "The polyglutamine protein ATXN2: from its molecular functions to its involvement in disease",
+          "year": 2024,
+          "pmid": "38877004"
+        },
+        {
+          "paper_title": "Influence of ATXN2 intermediate CAG repeats, 9bp duplication and alternative splicing on SCA3 pathogenesis",
+          "year": 2025,
+          "pmid": "40684213"
+        },
+        {
+          "paper_title": "Co-occurrence of ATXN3 and ATXN2 repeat expansions in Chinese ataxia patients with slow saccades",
+          "year": 2019,
+          "pmid": "30920184"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": "ATXN2",
+        "chain": null
+      },
+      "interaction_effect": "inhibits",
+      "direction": "main_to_primary",
+      "interaction_direction": "primary_to_main",
+      "pmids": [
+        "38877004",
+        "40684213",
+        "30920184"
+      ],
+      "function_effect": "inhibition",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "inhibits",
+        "net_from": "ATXN3",
+        "net_arrow": "inhibits",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "inhibits",
+      "direct_arrow": "inhibits",
+      "net_effect": "inhibition",
+      "direct_effect": "inhibition"
+    },
+    {
+      "function": "Stress Granule Assembly",
+      "arrow": "activates",
+      "cellular_process": "ATXN2 is a core component of stress granules (SGs), which are cytoplasmic foci that form under cellular stress to sequester mRNAs and halt translation. The interaction between ATXN3 and ATXN2 links the protein quality control machinery with the RNA stress response.",
+      "effect_description": "The interaction between ATXN3 and ATXN2 is likely important for coordinating the cellular response to stress, integrating protein degradation pathways with the regulation of mRNA translation and storage within stress granules.",
+      "biological_consequence": [
+        "Coordination of Proteostasis and RNA Metabolism → Enhanced Cellular Stress Response → Cell Survival"
+      ],
+      "specific_effects": [
+        "ATXN2 is a key player in RNA metabolism and stress granule dynamics",
+        "ATXN2 recruits other RNA-binding proteins like TDP-43 into stress granules"
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ataxin-2: a powerful RNA-binding protein",
+          "year": 2024,
+          "pmid": "39039334"
+        },
+        {
+          "paper_title": "The RNA-binding protein and stress granule component ATAXIN-2 is expressed in mouse and human tissues associated with glaucoma pathogenesis",
+          "year": 2022,
+          "pmid": "34350994"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": "ATXN2",
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "primary_to_main",
+      "pmids": [
+        "39039334",
+        "34350994"
+      ],
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATXN3",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates",
+      "inhibits"
+    ]
+  },
+  "mechanism": "ATXN2, in a complex with the poly(A)-binding protein (PABP-1), negatively regulates the translation of ATXN3 mRNA. This interaction destabilizes the translation initiation complex, leading to reduced synthesis of the ataxin-3 protein. ATXN2 is a core component of stress granules (SGs), which are cytoplasmic foci that form under cellular stress to sequester mRNAs and halt translation. The interaction between ATXN3 and ATXN2 links the protein quality control machinery with the RNA stress response.",
+  "effect": "ATXN2 acts as a modulator of ATXN3 protein levels, and its expression can mitigate the toxic effects of mutant ataxin-3 by reducing its overall abundance.; The interaction between ATXN3 and ATXN2 is likely important for coordinating the cellular response to stress, integrating protein degradation pathways with the regulation of mRNA translation and storage within stress granules.",
+  "summary": "ATXN3 regulates ATXN2 to regulate atxn3 protein translation and stress granule assembly, ultimately affecting mitigation of sca3 disease symptoms.",
+  "evidence": [
+    {
+      "paper_title": "The polyglutamine protein ATXN2: from its molecular functions to its involvement in disease",
+      "year": 2024
+    },
+    {
+      "paper_title": "Influence of ATXN2 intermediate CAG repeats, 9bp duplication and alternative splicing on SCA3 pathogenesis",
+      "year": 2025
+    },
+    {
+      "paper_title": "Co-occurrence of ATXN3 and ATXN2 repeat expansions in Chinese ataxia patients with slow saccades",
+      "year": 2019
+    },
+    {
+      "paper_title": "Ataxin-2: a powerful RNA-binding protein",
+      "year": 2024
+    },
+    {
+      "paper_title": "The RNA-binding protein and stress granule component ATAXIN-2 is expressed in mouse and human tissues associated with glaucoma pathogenesis",
+      "year": 2022
+    }
+  ],
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 4
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 <--regulates-- ATXN2:",
+  "protein_a": "ATXN2",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T02:27:04.760617Z",
+  "last_updated": "2025-11-24T02:27:04.760617Z"
+}

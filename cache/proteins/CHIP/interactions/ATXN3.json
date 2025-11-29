@@ -1,0 +1,82 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3's deubiquitinating function targets CHIP, and it trims polyubiquitin chains on CHIP to modulate its activity.",
+  "functions": [
+    {
+      "function": "Substrate Ubiquitination & Protein Degradation",
+      "arrow": "regulates",
+      "cellular_process": "The E3 ligase CHIP (STUB1) ubiquitinates misfolded proteins, targeting them for degradation. ATXN3 forms a complex with CHIP and acts as a ubiquitin chain editor. It trims the polyubiquitin chains attached to CHIP's substrates, thereby modulating the degradation signal and influencing the substrate's fate.",
+      "effect_description": "ATXN3 fine-tunes the ubiquitination of CHIP substrates, acting as a key regulator in protein quality control by balancing protein degradation and potential refolding.",
+      "biological_consequence": [
+        "Modulation of Substrate Stability → Regulation of Protein Homeostasis"
+      ],
+      "specific_effects": [
+        "ATXN3 limits the length of ubiquitin chains attached to CHIP substrates",
+        "ATXN3 deubiquitinates CHIP itself to terminate the reaction cycle"
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ube2w and ataxin-3 coordinately regulate the ubiquitin ligase CHIP",
+          "year": 2011,
+          "pmid": "21855799"
+        },
+        {
+          "paper_title": "The E3 Ligase CHIP: Insights into Its Structure and Regulation",
+          "year": 2014,
+          "pmid": "24868554"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "regulates",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "21855799",
+        "24868554"
+      ],
+      "function_effect": "regulation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "mechanism": "The E3 ligase CHIP (STUB1) ubiquitinates misfolded proteins, targeting them for degradation. ATXN3 forms a complex with CHIP and acts as a ubiquitin chain editor. It trims the polyubiquitin chains attached to CHIP's substrates, thereby modulating the degradation signal and influencing the substrate's fate.",
+  "effect": "ATXN3 fine-tunes the ubiquitination of CHIP substrates, acting as a key regulator in protein quality control by balancing protein degradation and potential refolding.",
+  "summary": "ATXN3 inhibits CHIP to modulate substrate ubiquitination & protein degradation, ultimately affecting regulation of protein homeostasis.",
+  "evidence": [
+    {
+      "paper_title": "Ube2w and ataxin-3 coordinately regulate the ubiquitin ligase CHIP",
+      "year": 2011
+    },
+    {
+      "paper_title": "The E3 Ligase CHIP: Insights into Its Structure and Regulation",
+      "year": 2014
+    }
+  ],
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --regulates--> CHIP:",
+  "protein_a": "CHIP",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T02:27:04.728372Z",
+  "last_updated": "2025-11-24T02:27:04.728372Z"
+}

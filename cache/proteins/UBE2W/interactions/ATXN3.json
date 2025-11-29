@@ -1,0 +1,86 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "The initiator E2 enzyme, Ube2w, monoubiquitinates the E3 ligase CHIP, which stabilizes CHIP's interaction with ATXN3. Ube2w also directly ubiquitinates ATXN3, which may stimulate its deubiquitinase activity, indicating a direct interaction within this regulatory complex. [8]",
+  "functions": [
+    {
+      "function": "STUB1 (CHIP) E3 Ligase Activity",
+      "arrow": "regulates",
+      "cellular_process": "ATXN3 and the E2 ubiquitin-conjugating enzyme UBE2W coordinately regulate the activity of the E3 ubiquitin ligase CHIP (STUB1). This interaction forms a multi-step regulatory cycle for protein quality control, where UBE2W initiates the process and ATXN3 modulates and terminates it.",
+      "effect_description": "UBE2W-mediated monoubiquitination of CHIP serves as a recruitment signal that stabilizes the interaction between CHIP and ATXN3. Once recruited, ATXN3 uses its deubiquitinase (DUB) activity to edit and limit the length of ubiquitin chains on CHIP substrates. After substrate ubiquitination is complete, ATXN3 deubiquitinates CHIP itself, terminating the reaction and releasing CHIP for subsequent rounds of ubiquitination.",
+      "biological_consequence": [
+        "UBE2W monoubiquitinates the E3 ligase CHIP → Monoubiquitinated CHIP recruits and stabilizes its interaction with ATXN3 → ATXN3 trims and edits ubiquitin chains on CHIP substrates, limiting their length → Upon substrate processing completion, ATXN3 deubiquitinates CHIP → The CHIP ubiquitination cycle is terminated and reset."
+      ],
+      "specific_effects": [
+        "Monoubiquitination of CHIP by UBE2W enhances and stabilizes the CHIP-ATXN3 interaction.",
+        "ATXN3 limits the length of ubiquitin chains attached to CHIP substrates.",
+        "ATXN3 deubiquitinates CHIP to terminate the ubiquitination reaction.",
+        "Ubiquitination of ATXN3 itself (at Lysine 117) has been shown to enhance its DUB activity, suggesting a potential feedback loop."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ube2w and ataxin-3 coordinately regulate the ubiquitin ligase CHIP",
+          "journal": "Molecular Cell",
+          "year": 2011,
+          "relevant_quote": "Through their opposing activities, the initiator E2, Ube2w, and the specialized deubiquitinating enzyme (DUB), ataxin-3, participate in initiating, regulating, and terminating the CHIP ubiquitination cycle. Monoubiquitination of CHIP by Ube2w stabilizes the interaction between CHIP and ataxin-3, which through its DUB activity limits the length of chains attached to CHIP substrates. Upon completion of substrate ubiquitination, ataxin-3 deubiquitinates CHIP, effectively terminating the reaction.",
+          "pmid": "21855799"
+        }
+      ],
+      "pmids": [
+        "21855799"
+      ],
+      "interaction_effect": "regulates",
+      "interaction_direction": "bidirectional",
+      "function_effect": "regulation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "regulates",
+        "net_from": "ATXN3",
+        "net_arrow": "regulates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "regulates",
+      "direct_arrow": "regulates",
+      "net_effect": "regulation",
+      "direct_effect": "regulation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "bidirectional",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "ATXN3 and the E2 ubiquitin-conjugating enzyme UBE2W coordinately regulate the activity of the E3 ubiquitin ligase CHIP (STUB1). This interaction forms a multi-step regulatory cycle for protein quality control, where UBE2W initiates the process and ATXN3 modulates and terminates it.",
+  "effect": "UBE2W-mediated monoubiquitination of CHIP serves as a recruitment signal that stabilizes the interaction between CHIP and ATXN3. Once recruited, ATXN3 uses its deubiquitinase (DUB) activity to edit and limit the length of ubiquitin chains on CHIP substrates. After substrate ubiquitination is complete, ATXN3 deubiquitinates CHIP itself, terminating the reaction and releasing CHIP for subsequent rounds of ubiquitination.",
+  "summary": "ATXN3 interacts with UBE2W to modulate regulation of stub1 (chip) e3 ligase activity, ultimately affecting the chip ubiquitination cycle is terminated and reset.",
+  "evidence": [
+    {
+      "paper_title": "Ube2w and ataxin-3 coordinately regulate the ubiquitin ligase CHIP",
+      "journal": "Molecular Cell",
+      "year": 2011,
+      "relevant_quote": "Through their opposing activities, the initiator E2, Ube2w, and the specialized deubiquitinating enzyme (DUB), ataxin-3, participate in initiating, regulating, and terminating the CHIP ubiquitination cycle. Monoubiquitination of CHIP by Ube2w stabilizes the interaction between CHIP and ataxin-3, which through its DUB activity limits the length of chains attached to CHIP substrates. Upon completion of substrate ubiquitination, ataxin-3 deubiquitinates CHIP, effectively terminating the reaction."
+    }
+  ],
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 4
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 <--regulates--> UBE2W:",
+  "protein_a": "UBE2W",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T04:11:50.099306Z",
+  "last_updated": "2025-11-24T04:11:50.099306Z"
+}

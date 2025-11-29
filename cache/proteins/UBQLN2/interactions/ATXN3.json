@@ -1,0 +1,73 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "Proteomic studies have identified Ubiquilin-2 (UBQLN2), a protein involved in protein degradation, as a direct interactor of ATXN3.",
+  "functions": [
+    {
+      "function": "Protein Homeostasis",
+      "arrow": "binds",
+      "cellular_process": "Co-immunoprecipitation studies in cultured cells failed to show an interaction between UBQLN2 and either normal or expanded ATXN3.",
+      "effect_description": "While UBQLN2 is recruited to the protein aggregates in Huntington's disease (mutant HTT), it is not recruited to the aggregates in Spinocerebellar ataxia type 3 (mutant ATXN3). This suggests that ATXN3 is likely not a substrate for UBQLN2-mediated clearance.",
+      "biological_consequence": [
+        "Lack of interaction → Differential composition of protein aggregates in polyQ diseases → Distinct cellular responses to protein aggregation"
+      ],
+      "specific_effects": [
+        "The absence of interaction distinguishes the pathology of SCA3 from that of Huntington's disease, where UBQLN2 is a key component of inclusions."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Differential recruitment of UBQLN2 to nuclear inclusions in the polyglutamine diseases HD and SCA3",
+          "year": 2015,
+          "pmid": "26141599"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "binds",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "26141599"
+      ],
+      "function_effect": "binding"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "binds"
+    ]
+  },
+  "_validation_status": "rejected",
+  "mechanism": "Co-immunoprecipitation studies in cultured cells failed to show an interaction between UBQLN2 and either normal or expanded ATXN3.",
+  "effect": "While UBQLN2 is recruited to the protein aggregates in Huntington's disease (mutant HTT), it is not recruited to the aggregates in Spinocerebellar ataxia type 3 (mutant ATXN3). This suggests that ATXN3 is likely not a substrate for UBQLN2-mediated clearance.",
+  "summary": "ATXN3 interacts with UBQLN2 to modulate protein homeostasis, ultimately affecting distinct cellular responses to protein aggregation.",
+  "evidence": [
+    {
+      "paper_title": "Differential recruitment of UBQLN2 to nuclear inclusions in the polyglutamine diseases HD and SCA3",
+      "year": 2015
+    }
+  ],
+  "status": "INVALID",
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --binds--> UBQLN2:",
+  "protein_a": "UBQLN2",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.823306Z",
+  "last_updated": "2025-11-24T12:52:47.823306Z"
+}

@@ -1,0 +1,73 @@
+{
+  "primary": "ATP7B",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATP7B, a copper-transporting ATPase, contains a LIR motif and has been shown to directly interact with LC3B in vitro, suggesting a role for autophagy in copper clearance.",
+  "functions": [
+    {
+      "function": "Selective Autophagy of Copper (Cuprophagy)",
+      "arrow": "activates",
+      "cellular_process": "ATP7B, a copper-transporting ATPase, is a key protein for maintaining copper homeostasis. Under conditions of elevated intracellular copper, ATP7B is targeted for selective autophagy to facilitate copper clearance.",
+      "effect_description": "ATP7B contains a conserved LIR (LC3-Interacting Region) motif at its C-terminus that directly binds to LC3B. This interaction tethers ATP7B to the autophagosomal membrane, ensuring its sequestration and subsequent lysosomal degradation. Critically, ATP7B is also required for efficient autophagosome-lysosome fusion during this process.",
+      "biological_consequence": [
+        "Elevated intracellular copper → ATP7B binds to LC3B via its C-terminal LIR motif (W1452/L1455) → ATP7B is recruited to the autophagosome membrane → ATP7B facilitates autophagosome-lysosome fusion → Lysosomal degradation of ATP7B and clearance of excess copper"
+      ],
+      "specific_effects": [
+        "Directly binds LC3B through a conserved C-terminal LIR motif (residues W1452 and L1455 are critical).",
+        "Acts as a cargo receptor for selective autophagy-mediated copper clearance.",
+        "ATP7B is required for efficient autophagosome-lysosome fusion under high copper conditions; its absence impairs the process."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Direct Interaction of ATP7B and LC3B Proteins Suggests a Cooperative Role of Copper Transportation and Autophagy",
+          "journal": "Cells",
+          "year": 2021,
+          "relevant_quote": "The conserved LIR3, located at the C-terminal end of ATP7B, was found to directly interact with LC3B in vitro. Replacing the two conserved hydrophobic residues W1452 and L1455 of LIR3 significantly reduced interaction... By contrast, HepG2 cells deficient of ATP7B (HepG2 ATP7B−/−) showed autophagy deficiency at elevated copper condition... Altogether, these results suggest that correct autophagy-mediated copper clearance depends on the LIR-motif mediated translocation of ATP7B to the autophagosome membrane.",
+          "pmid": "34831341"
+        }
+      ],
+      "pmids": [
+        "34831341"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "bidirectional",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "bidirectional",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "ATP7B, a copper-transporting ATPase, is a key protein for maintaining copper homeostasis. Under conditions of elevated intracellular copper, ATP7B is targeted for selective autophagy to facilitate copper clearance.",
+  "effect": "ATP7B contains a conserved LIR (LC3-Interacting Region) motif at its C-terminus that directly binds to LC3B. This interaction tethers ATP7B to the autophagosomal membrane, ensuring its sequestration and subsequent lysosomal degradation. Critically, ATP7B is also required for efficient autophagosome-lysosome fusion during this process.",
+  "summary": "LC3B activates ATP7B to modulate selective autophagy of copper (cuprophagy), ultimately affecting lysosomal degradation of atp7b and clearance of excess copper.",
+  "evidence": [
+    {
+      "paper_title": "Direct Interaction of ATP7B and LC3B Proteins Suggests a Cooperative Role of Copper Transportation and Autophagy",
+      "journal": "Cells",
+      "year": 2021,
+      "relevant_quote": "The conserved LIR3, located at the C-terminal end of ATP7B, was found to directly interact with LC3B in vitro. Replacing the two conserved hydrophobic residues W1452 and L1455 of LIR3 significantly reduced interaction... By contrast, HepG2 cells deficient of ATP7B (HepG2 ATP7B−/−) showed autophagy deficiency at elevated copper condition... Altogether, these results suggest that correct autophagy-mediated copper clearance depends on the LIR-motif mediated translocation of ATP7B to the autophagosome membrane."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--binds--> ATP7B:",
+  "protein_a": "LC3B",
+  "protein_b": "ATP7B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.016689Z",
+  "last_updated": "2025-11-24T10:45:54.016689Z"
+}

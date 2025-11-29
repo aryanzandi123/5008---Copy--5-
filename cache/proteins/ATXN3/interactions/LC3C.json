@@ -1,0 +1,82 @@
+{
+  "primary": "LC3C",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 interacts with the autophagy key protein LC3C in the early stages of autophagy.",
+  "functions": [
+    {
+      "function": "Autophagosome Formation",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 contains two conserved LIR (LC3-interacting region) domains within its catalytic Josephin domain that directly interact with ATG8 family proteins, including LC3C. This interaction occurs during the early stages of autophagy, suggesting a role in regulating the formation and maturation of autophagosomes.",
+      "effect_description": "The direct interaction with LC3C localizes ATXN3 to early autophagosomes, where it likely modulates the ubiquitination status of local proteins to promote efficient autophagic flux.",
+      "biological_consequence": [
+        "Recruitment to Autophagosome → Modulation of Local Ubiquitination → Efficient Autophagic Flux → Cellular Homeostasis"
+      ],
+      "specific_effects": [
+        "Directly binds to LC3C via LIR motifs",
+        "Localizes to early autophagosomes but is not degraded by autophagy"
+      ],
+      "evidence": [
+        {
+          "paper_title": "The Machado–Joseph disease deubiquitylase ataxin‐3 interacts with LC3C/GABARAP and promotes autophagy",
+          "year": 2019,
+          "pmid": "31625269"
+        },
+        {
+          "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+          "year": 2024,
+          "pmid": "39320846"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "31625269",
+        "39320846"
+      ],
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "ATXN3 contains two conserved LIR (LC3-interacting region) domains within its catalytic Josephin domain that directly interact with ATG8 family proteins, including LC3C. This interaction occurs during the early stages of autophagy, suggesting a role in regulating the formation and maturation of autophagosomes.",
+  "effect": "The direct interaction with LC3C localizes ATXN3 to early autophagosomes, where it likely modulates the ubiquitination status of local proteins to promote efficient autophagic flux.",
+  "summary": "ATXN3 activates LC3C to modulate autophagosome formation, ultimately affecting cellular homeostasis.",
+  "evidence": [
+    {
+      "paper_title": "The Machado–Joseph disease deubiquitylase ataxin‐3 interacts with LC3C/GABARAP and promotes autophagy",
+      "year": 2019
+    },
+    {
+      "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+      "year": 2024
+    }
+  ],
+  "interaction_effect": "binds",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --binds--> LC3C:",
+  "protein_a": "ATXN3",
+  "protein_b": "LC3C",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T02:27:04.737712Z",
+  "last_updated": "2025-11-24T02:27:04.737712Z"
+}

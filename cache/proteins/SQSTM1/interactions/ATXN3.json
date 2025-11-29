@@ -1,0 +1,74 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 directly interacts with p62 (SQSTM1), an autophagic receptor protein involved in the formation of aggresomes.",
+  "functions": [
+    {
+      "function": "Aggresome Formation of Mutant ATXN3",
+      "arrow": "activates",
+      "cellular_process": "The autophagy receptor protein p62/SQSTM1 directly interacts with the pathogenic, polyglutamine (polyQ) expanded form of ATXN3. This interaction is a key step in recognizing and sequestering misfolded, aggregation-prone ATXN3.",
+      "effect_description": "By binding to polyQ-expanded ATXN3, SQSTM1 facilitates the transport of these protein aggregates along microtubules to the microtubule-organizing center (MTOC), promoting the formation of a large inclusion body known as an aggresome. This process sequesters the toxic protein species, which is a protective cellular response.",
+      "biological_consequence": [
+        "Pathogenic polyQ-expanded ATXN3 accumulates in the cell -> SQSTM1 directly binds to polyQ-expanded ATXN3 -> The ATXN3-SQSTM1 complex is transported towards the MTOC -> Aggregates coalesce into a single large aggresome -> Cellular toxicity from soluble misfolded ATXN3 is reduced."
+      ],
+      "specific_effects": [
+        "SQSTM1 promotes the aggresome formation of pathogenic ataxin-3.",
+        "The interaction is specific to the polyQ-expanded form of ataxin-3.",
+        "Overexpression of SQSTM1 enhances aggresome formation, while its knockdown inhibits it.",
+        "This SQSTM1-mediated process protects cells against pathogenic ataxin-3-induced cell death."
+      ],
+      "evidence": [
+        {
+          "paper_title": "p62/Sequestosome 1 Regulates Aggresome Formation of Pathogenic Ataxin-3 with Expanded Polyglutamine",
+          "journal": "International Journal of Molecular Sciences",
+          "year": 2014,
+          "relevant_quote": "In this study we demonstrate that p62 directly interacts with pathogenic Machado Joseph Disease (MJD)-associated protein ataxin-3 with polyglutamine (polyQ) expansion. Moreover, p62 could regulate the aggresome formation of pathogenic ataxin-3 and protect cells against pathogenic ataxin-3-induced cell death.",
+          "pmid": "25158237"
+        }
+      ],
+      "pmids": [
+        "25158237"
+      ],
+      "interaction_effect": "activation",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "The autophagy receptor protein p62/SQSTM1 directly interacts with the pathogenic, polyglutamine (polyQ) expanded form of ATXN3. This interaction is a key step in recognizing and sequestering misfolded, aggregation-prone ATXN3.",
+  "effect": "By binding to polyQ-expanded ATXN3, SQSTM1 facilitates the transport of these protein aggregates along microtubules to the microtubule-organizing center (MTOC), promoting the formation of a large inclusion body known as an aggresome. This process sequesters the toxic protein species, which is a protective cellular response.",
+  "summary": "ATXN3 activates SQSTM1 to modulate aggresome formation of mutant atxn3.",
+  "evidence": [
+    {
+      "paper_title": "p62/Sequestosome 1 Regulates Aggresome Formation of Pathogenic Ataxin-3 with Expanded Polyglutamine",
+      "journal": "International Journal of Molecular Sciences",
+      "year": 2014,
+      "relevant_quote": "In this study we demonstrate that p62 directly interacts with pathogenic Machado Joseph Disease (MJD)-associated protein ataxin-3 with polyglutamine (polyQ) expansion. Moreover, p62 could regulate the aggresome formation of pathogenic ataxin-3 and protect cells against pathogenic ataxin-3-induced cell death."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 <--binds-- SQSTM1:",
+  "protein_a": "SQSTM1",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T07:01:28.075517Z",
+  "last_updated": "2025-11-24T07:01:28.075517Z"
+}

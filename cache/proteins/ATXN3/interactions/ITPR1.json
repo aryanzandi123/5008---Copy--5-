@@ -1,0 +1,93 @@
+{
+  "primary": "ITPR1",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "STRING interaction network data suggests a direct interaction between ATXN3 and ITPR1 (Inositol 1,4,5-trisphosphate receptor type 1).",
+  "functions": [
+    {
+      "function": "Calcium Release from Endoplasmic Reticulum",
+      "arrow": "activates",
+      "cellular_process": "Mutant, polyQ-expanded ATXN3 directly binds to the Inositol 1,4,5-trisphosphate receptor type 1 (ITPR1), a ligand-gated calcium channel on the endoplasmic reticulum. This interaction sensitizes the channel to its ligand, IP3, leading to enhanced release of calcium into the cytoplasm.",
+      "effect_description": "The aberrant interaction of mutant ATXN3 with ITPR1 disrupts intracellular calcium homeostasis, leading to excessive calcium signaling, which is a key contributor to neuronal dysfunction and death in SCA3.",
+      "biological_consequence": [
+        "Enhanced ITPR1 Sensitivity → Increased Cytosolic Calcium → Excitotoxicity & Apoptosis → Purkinje Cell Degeneration"
+      ],
+      "specific_effects": [
+        "Mutant ATXN3 binds to and activates ITPR1",
+        "Interaction increases ITPR1 sensitivity to IP3",
+        "Does not occur with wild-type ATXN3"
+      ],
+      "evidence": [
+        {
+          "paper_title": "Role of Inositol 1,4,5-Trishosphate Receptors in Pathogenesis of Huntington's Disease and Spinocerebellar Ataxias",
+          "year": 2012,
+          "pmid": "21210219"
+        },
+        {
+          "paper_title": "Inositol 1,4,5-Trisphosphate Receptors in Human Disease: A Comprehensive Update",
+          "year": 2021,
+          "pmid": "32290556"
+        },
+        {
+          "paper_title": "Genetic Ablation of Inositol 1,4,5-Trisphosphate Receptor Type 2 (IP3R2) Fails to Modify Disease Progression in a Mouse Model of Spinocerebellar Ataxia Type 3",
+          "year": 2021,
+          "pmid": "37445783"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": "ITPR1",
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "21210219",
+        "32290556",
+        "37445783"
+      ],
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "Mutant, polyQ-expanded ATXN3 directly binds to the Inositol 1,4,5-trisphosphate receptor type 1 (ITPR1), a ligand-gated calcium channel on the endoplasmic reticulum. This interaction sensitizes the channel to its ligand, IP3, leading to enhanced release of calcium into the cytoplasm.",
+  "effect": "The aberrant interaction of mutant ATXN3 with ITPR1 disrupts intracellular calcium homeostasis, leading to excessive calcium signaling, which is a key contributor to neuronal dysfunction and death in SCA3.",
+  "summary": "ATXN3 activates ITPR1 to modulate calcium release from endoplasmic reticulum, ultimately affecting purkinje cell degeneration.",
+  "evidence": [
+    {
+      "paper_title": "Role of Inositol 1,4,5-Trishosphate Receptors in Pathogenesis of Huntington's Disease and Spinocerebellar Ataxias",
+      "year": 2012
+    },
+    {
+      "paper_title": "Inositol 1,4,5-Trisphosphate Receptors in Human Disease: A Comprehensive Update",
+      "year": 2021
+    },
+    {
+      "paper_title": "Genetic Ablation of Inositol 1,4,5-Trisphosphate Receptor Type 2 (IP3R2) Fails to Modify Disease Progression in a Mouse Model of Spinocerebellar Ataxia Type 3",
+      "year": 2021
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 0
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --activates--> ITPR1:",
+  "protein_a": "ATXN3",
+  "protein_b": "ITPR1",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T02:27:04.763250Z",
+  "last_updated": "2025-11-24T02:27:04.763250Z"
+}

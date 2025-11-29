@@ -1,0 +1,116 @@
+{
+  "primary": "Beclin-1",
+  "interaction_type": "indirect",
+  "upstream_interactor": "ULK1",
+  "mediator_chain": [
+    "ULK1"
+  ],
+  "depth": 2,
+  "support_summary": "Beclin-1 is a core component of the Class III PI3K complex, which acts upstream of LC3B lipidation by generating PI(3)P on the phagophore. The ULK1 complex, which can directly bind LC3B, activates the Beclin-1 complex.",
+  "functions": [
+    {
+      "function": "Phagophore Nucleation",
+      "arrow": "inhibits",
+      "cellular_process": "Beclin-1 is a core subunit of the Class III PI3K (PI3KC3-C1 or VPS34) complex, which is essential for the initiation of autophagy. The activation of this complex by the upstream kinase ULK1 is a critical step in forming the autophagosome.",
+      "effect_description": "Upon nutrient starvation or mTOR inhibition, the activated ULK1 kinase directly phosphorylates Beclin-1. This phosphorylation event enhances the lipid kinase activity of the associated VPS34, leading to the production of phosphatidylinositol 3-phosphate (PI(3)P) on the phagophore membrane. PI(3)P serves as a docking site to recruit downstream autophagy effectors, such as WIPI proteins, which are necessary for LC3B lipidation and autophagosome elongation.",
+      "biological_consequence": [
+        "Nutrient starvation/mTORC1 inhibition → ULK1 complex activation → ULK1 phosphorylates Beclin-1 on Ser14/Ser15 and Ser30 → Enhanced VPS34 lipid kinase activity within the Beclin-1/ATG14L complex → Local production of PI(3)P at the phagophore → Recruitment of PI(3)P effectors (e.g., WIPI2) → LC3B lipidation and autophagosome formation."
+      ],
+      "specific_effects": [
+        "ULK1 phosphorylation of Beclin-1 at Ser14 (mouse)/Ser15 (human) enhances the activity of the ATG14L-containing VPS34 complex.",
+        "ULK1 can also phosphorylate Beclin-1 at Ser30, which is required for the activation of the ATG14-containing PI3KC3/VPS34 kinase.",
+        "The phosphorylation of Beclin-1 by ULK1 is a key step that links the nutrient-sensing ULK1 complex to the activation of the core autophagy machinery responsible for phagophore nucleation.",
+        "ATG14L acts as an adaptor, promoting the association between ULK1 and Beclin-1 to facilitate this phosphorylation."
+      ],
+      "evidence": [
+        {
+          "paper_title": "ULK1 induces autophagy by phosphorylating Beclin-1 and activating VPS34 lipid kinase",
+          "journal": "Nature Cell Biology",
+          "year": 2013,
+          "relevant_quote": "Following amino-acid starvation or mTOR inhibition, the activated ULK1 phosphorylates Beclin-1 on Ser 14, thereby enhancing the activity of the ATG14L-containing VPS34 complexes. The Beclin-1 Ser 14 phosphorylation by ULK is required for full autophagic induction in mammals... Our study reveals a molecular link from ULK1 to activation of the autophagy-specific VPS34 complex and autophagy induction.",
+          "pmid": "23685627"
+        },
+        {
+          "paper_title": "ULK1 phosphorylates Ser30 of BECN1 in association with ATG14 to stimulate autophagy induction",
+          "journal": "Autophagy",
+          "year": 2018,
+          "relevant_quote": "In this study, we determined that ULK1 phosphorylates Ser30 of BECN1 (Beclin 1) in association with ATG14 (autophagy-related 14)... Blocking the BECN1 phosphorylation by replacing Ser30 with alanine suppressed the amino acid starvation-induced activation of the ATG14-containing PIK3C3/VPS34 (phosphatidylinositol 3-kinase catalytic subunit type 3) kinase, and reduced autophagy flux and the formation of phagophores and autophagosomes.",
+          "pmid": "29313410"
+        },
+        {
+          "paper_title": "Autophagosome formation: The role of ULK1 and Beclin1-PI3KC3 complexes in setting the stage",
+          "journal": "Seminars in Cancer Biology",
+          "year": 2014,
+          "relevant_quote": "The ULK and Beclin1-PI3KC3 complexes are key signaling complexes required for autophagosome formation. The nutrient and energy sensors mTORC1 and AMPK signal directly to the ULK complex and affect its activity. Formation and activation of distinct Beclin1-PI3KC3 complexes produces PI3P, a signaling lipid required for the recruitment of autophagy effectors.",
+          "pmid": "23727157"
+        }
+      ],
+      "pmids": [
+        "23685627",
+        "29313410",
+        "23727157"
+      ],
+      "direct_arrow": "activates",
+      "function_effect": "inhibition",
+      "arrow_context": {
+        "direct_from": "ULK1",
+        "direct_arrow": "activates",
+        "net_from": "LC3B",
+        "net_arrow": "inhibits",
+        "mediator_chain": [
+          "ULK1"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "inhibits",
+      "net_effect": "inhibition",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Beclin-1 is a core subunit of the Class III PI3K (PI3KC3-C1 or VPS34) complex, which is essential for the initiation of autophagy. The activation of this complex by the upstream kinase ULK1 is a critical step in forming the autophagosome.",
+  "effect": "Upon nutrient starvation or mTOR inhibition, the activated ULK1 kinase directly phosphorylates Beclin-1. This phosphorylation event enhances the lipid kinase activity of the associated VPS34, leading to the production of phosphatidylinositol 3-phosphate (PI(3)P) on the phagophore membrane. PI(3)P serves as a docking site to recruit downstream autophagy effectors, such as WIPI proteins, which are necessary for LC3B lipidation and autophagosome elongation.",
+  "summary": "LC3B activates Beclin-1 to modulate phagophore nucleation, ultimately affecting lc3b lipidation and autophagosome formation.",
+  "evidence": [
+    {
+      "paper_title": "ULK1 induces autophagy by phosphorylating Beclin-1 and activating VPS34 lipid kinase",
+      "journal": "Nature Cell Biology",
+      "year": 2013,
+      "relevant_quote": "Following amino-acid starvation or mTOR inhibition, the activated ULK1 phosphorylates Beclin-1 on Ser 14, thereby enhancing the activity of the ATG14L-containing VPS34 complexes. The Beclin-1 Ser 14 phosphorylation by ULK is required for full autophagic induction in mammals... Our study reveals a molecular link from ULK1 to activation of the autophagy-specific VPS34 complex and autophagy induction."
+    },
+    {
+      "paper_title": "ULK1 phosphorylates Ser30 of BECN1 in association with ATG14 to stimulate autophagy induction",
+      "journal": "Autophagy",
+      "year": 2018,
+      "relevant_quote": "In this study, we determined that ULK1 phosphorylates Ser30 of BECN1 (Beclin 1) in association with ATG14 (autophagy-related 14)... Blocking the BECN1 phosphorylation by replacing Ser30 with alanine suppressed the amino acid starvation-induced activation of the ATG14-containing PIK3C3/VPS34 (phosphatidylinositol 3-kinase catalytic subunit type 3) kinase, and reduced autophagy flux and the formation of phagophores and autophagosomes."
+    },
+    {
+      "paper_title": "Autophagosome formation: The role of ULK1 and Beclin1-PI3KC3 complexes in setting the stage",
+      "journal": "Seminars in Cancer Biology",
+      "year": 2014,
+      "relevant_quote": "The ULK and Beclin1-PI3KC3 complexes are key signaling complexes required for autophagosome formation. The nutrient and energy sensors mTORC1 and AMPK signal directly to the ULK complex and affect its activity. Formation and activation of distinct Beclin1-PI3KC3 complexes produces PI3P, a signaling lipid required for the recruitment of autophagy effectors."
+    }
+  ],
+  "interaction_effect": "inhibition",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ULK1 --inhibits--> Beclin-1:",
+  "protein_a": "LC3B",
+  "protein_b": "Beclin-1",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.029683Z",
+  "last_updated": "2025-11-24T10:45:54.029683Z"
+}

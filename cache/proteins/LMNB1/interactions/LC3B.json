@@ -1,0 +1,73 @@
+{
+  "primary": "LC3B",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "functions": [
+    {
+      "function": "Nucleophagy (Lamina Degradation)",
+      "arrow": "activates",
+      "cellular_process": "Nucleophagy is a selective autophagy pathway that targets nuclear components for degradation. During cellular stress, such as oncogene-induced senescence (OIS), components of the nuclear lamina, specifically Lamin B1 (LMNB1), are selectively degraded via a mechanism involving a direct interaction with nuclear LC3B.",
+      "effect_description": "A pool of LC3B resides in the nucleus and directly interacts with Lamin B1 at the nuclear periphery. This interaction does not trigger Lamin B1 degradation under basal or starvation conditions. However, upon oncogenic stress (e.g., activated RAS), this interaction facilitates the transport of Lamin B1 from the nucleus to the cytoplasm, where it is captured by autophagosomes and delivered to lysosomes for degradation. This process is critical for establishing the senescent phenotype.",
+      "biological_consequence": [
+        "Oncogenic stress (e.g., HRasV12 expression) induces cellular senescence → Nuclear LC3B directly binds to Lamin B1 at the nuclear lamina → The LC3B-Lamin B1 complex is transported from the nucleus to the cytoplasm → Cytoplasmic Lamin B1 is recognized and sequestered by the autophagic machinery into autophagosomes → Autophagosomes fuse with lysosomes, leading to the degradation of Lamin B1 and contributing to the senescent phenotype."
+      ],
+      "specific_effects": [
+        "Nuclear LC3B directly interacts with Lamin B1, but not significantly with Lamins A/C or B2.",
+        "This interaction specifically mediates Lamin B1 degradation during oncogene-induced senescence, not during starvation-induced autophagy.",
+        "The degradation process requires the transport of Lamin B1 from the nucleus to the cytoplasm for lysosomal delivery.",
+        "Inhibiting the LC3B-Lamin B1 interaction prevents the loss of Lamin B1 and attenuates the establishment of cellular senescence, acting as a potential tumor-suppressive mechanism."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Autophagy mediates degradation of nuclear lamina",
+          "journal": "Nature",
+          "year": 2015,
+          "relevant_quote": "Here we report that the autophagy machinery mediates degradation of nuclear lamina components in mammals. The autophagy protein LC3/Atg8, which is involved in autophagy membrane trafficking and substrate delivery, is present in the nucleus and directly interacts with the nuclear lamina protein lamin B1... This LC3-lamin B1 interaction does not downregulate lamin B1 during starvation, but mediates its degradation upon oncogenic insults, such as by activated RAS.",
+          "pmid": "26524528"
+        }
+      ],
+      "pmids": [
+        "26524528"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Nucleophagy is a selective autophagy pathway that targets nuclear components for degradation. During cellular stress, such as oncogene-induced senescence (OIS), components of the nuclear lamina, specifically Lamin B1 (LMNB1), are selectively degraded via a mechanism involving a direct interaction with nuclear LC3B.",
+  "effect": "A pool of LC3B resides in the nucleus and directly interacts with Lamin B1 at the nuclear periphery. This interaction does not trigger Lamin B1 degradation under basal or starvation conditions. However, upon oncogenic stress (e.g., activated RAS), this interaction facilitates the transport of Lamin B1 from the nucleus to the cytoplasm, where it is captured by autophagosomes and delivered to lysosomes for degradation. This process is critical for establishing the senescent phenotype.",
+  "summary": "LC3B activates LMNB1 to modulate nucleophagy (lamina degradation), ultimately affecting autophagosomes fuse with lysosomes, leading to the degradation of lamin b1 and contributing to the senescent phenotype.",
+  "evidence": [
+    {
+      "paper_title": "Autophagy mediates degradation of nuclear lamina",
+      "journal": "Nature",
+      "year": 2015,
+      "relevant_quote": "Here we report that the autophagy machinery mediates degradation of nuclear lamina components in mammals. The autophagy protein LC3/Atg8, which is involved in autophagy membrane trafficking and substrate delivery, is present in the nucleus and directly interacts with the nuclear lamina protein lamin B1... This LC3-lamin B1 interaction does not downregulate lamin B1 during starvation, but mediates its degradation upon oncogenic insults, such as by activated RAS."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B --binds--> LMNB1:",
+  "protein_a": "LMNB1",
+  "protein_b": "LC3B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.069236Z",
+  "last_updated": "2025-11-24T10:45:54.069236Z"
+}

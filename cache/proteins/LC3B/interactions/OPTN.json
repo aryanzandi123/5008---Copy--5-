@@ -1,0 +1,88 @@
+{
+  "primary": "OPTN",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "Optineurin (OPTN) is a selective autophagy receptor that binds LC3B via a LIR motif. This interaction is enhanced by phosphorylation and is crucial for xenophagy and mitophagy.",
+  "functions": [
+    {
+      "function": "Selective Autophagy (Xenophagy and Mitophagy)",
+      "arrow": "activates",
+      "cellular_process": "Optineurin (OPTN) is a selective autophagy receptor that directly binds to LC3B via a LIR (LC3-Interacting Region) motif. This interaction is crucial for tethering ubiquitinated cargo, such as invasive bacteria or damaged mitochondria, to the nascent autophagosome (phagophore), thereby facilitating their sequestration and subsequent degradation.",
+      "effect_description": "The binding of OPTN to LC3B is a critical step in selective autophagy. The affinity of this interaction is significantly increased by the phosphorylation of OPTN at Serine 177, a residue adjacent to the LIR motif. This phosphorylation is catalyzed by the kinase TBK1, which is recruited to the ubiquitinated cargo. This mechanism acts as a molecular switch to enhance the efficiency of autophagic clearance.",
+      "biological_consequence": [
+        "Ubiquitinated cargo (e.g., Salmonella, damaged mitochondria) → OPTN recruitment via its UBAN domain → TBK1 recruitment and activation → TBK1 phosphorylates OPTN at Ser177 → Enhanced binding affinity of OPTN-LIR for LC3B on the phagophore → Cargo engulfment by the autophagosome → Autophagosome-lysosome fusion and cargo degradation."
+      ],
+      "specific_effects": [
+        "Phosphorylation of OPTN at Ser177 by TBK1 increases its binding affinity for LC3B by approximately 5- to 13-fold.",
+        "Acts as a key receptor for the xenophagic clearance of cytosolic Salmonella enterica.",
+        "Participates in PINK1/Parkin-mediated mitophagy by linking ubiquitinated mitochondria to the autophagosome.",
+        "Can recruit the ULK1 complex to cargo, thereby promoting the initiation of autophagosome formation at the site of the cargo."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Phosphorylation of the Autophagy Receptor Optineurin Restricts Salmonella Growth",
+          "journal": "Science",
+          "year": 2012,
+          "relevant_quote": "In this work, we found that phosphorylation of an autophagy receptor, optineurin, promoted selective autophagy of ubiquitin-coated cytosolic Salmonella enterica. The protein kinase TANK binding kinase 1 (TBK1) phosphorylated optineurin on serine-177, enhancing LC3 binding affinity and autophagic clearance of cytosolic Salmonella.",
+          "pmid": "21617041"
+        },
+        {
+          "paper_title": "Phosphorylation of OPTN by TBK1 enhances its binding to Ub chains and promotes selective autophagy of damaged mitochondria",
+          "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+          "year": 2016,
+          "relevant_quote": "TBK1 in turn phosphorylates OPTN's UBAN domain at S473, thereby expanding the binding capacity of OPTN to diverse Ub chains. In combination with phosphorylation of S177 and S513, this posttranslational modification promotes recruitment and retention of OPTN/TBK1 on ubiquitinated, damaged mitochondria.",
+          "pmid": "27035970"
+        }
+      ],
+      "pmids": [
+        "21617041",
+        "27035970"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "bidirectional",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "bidirectional",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Optineurin (OPTN) is a selective autophagy receptor that directly binds to LC3B via a LIR (LC3-Interacting Region) motif. This interaction is crucial for tethering ubiquitinated cargo, such as invasive bacteria or damaged mitochondria, to the nascent autophagosome (phagophore), thereby facilitating their sequestration and subsequent degradation.",
+  "effect": "The binding of OPTN to LC3B is a critical step in selective autophagy. The affinity of this interaction is significantly increased by the phosphorylation of OPTN at Serine 177, a residue adjacent to the LIR motif. This phosphorylation is catalyzed by the kinase TBK1, which is recruited to the ubiquitinated cargo. This mechanism acts as a molecular switch to enhance the efficiency of autophagic clearance.",
+  "summary": "LC3B activates OPTN to modulate selective autophagy (xenophagy and mitophagy), ultimately affecting autophagosome-lysosome fusion and cargo degradation.",
+  "evidence": [
+    {
+      "paper_title": "Phosphorylation of the Autophagy Receptor Optineurin Restricts Salmonella Growth",
+      "journal": "Science",
+      "year": 2012,
+      "relevant_quote": "In this work, we found that phosphorylation of an autophagy receptor, optineurin, promoted selective autophagy of ubiquitin-coated cytosolic Salmonella enterica. The protein kinase TANK binding kinase 1 (TBK1) phosphorylated optineurin on serine-177, enhancing LC3 binding affinity and autophagic clearance of cytosolic Salmonella."
+    },
+    {
+      "paper_title": "Phosphorylation of OPTN by TBK1 enhances its binding to Ub chains and promotes selective autophagy of damaged mitochondria",
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+      "year": 2016,
+      "relevant_quote": "TBK1 in turn phosphorylates OPTN's UBAN domain at S473, thereby expanding the binding capacity of OPTN to diverse Ub chains. In combination with phosphorylation of S177 and S513, this posttranslational modification promotes recruitment and retention of OPTN/TBK1 on ubiquitinated, damaged mitochondria."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--binds--> OPTN:",
+  "protein_a": "LC3B",
+  "protein_b": "OPTN",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.024078Z",
+  "last_updated": "2025-11-24T10:45:54.024078Z"
+}

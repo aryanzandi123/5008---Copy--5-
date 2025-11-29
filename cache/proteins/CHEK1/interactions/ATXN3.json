@@ -1,0 +1,88 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 interacts with and stabilizes Checkpoint Kinase 1 (CHEK1) by antagonizing its polyubiquitination, thus facilitating DNA damage checkpoints.",
+  "functions": [
+    {
+      "function": "CHEK1 Protein Stability",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 functions as a deubiquitinase (DUB) for the checkpoint kinase CHEK1 (Chk1). Under normal conditions and during the initial DNA damage response, ATXN3 directly binds to CHEK1 and removes polyubiquitin chains that are added by E3 ligase complexes, specifically DDB1/CUL4A and FBXO6/CUL1. This action protects CHEK1 from being targeted for degradation by the proteasome.",
+      "effect_description": "By counteracting CHEK1 polyubiquitination, ATXN3 is essential for maintaining the steady-state levels of CHEK1 protein. This stabilization significantly prolongs the half-life of CHEK1, ensuring that a sufficient pool of the kinase is available to activate and sustain DNA damage checkpoint signaling, thereby promoting genome integrity.",
+      "biological_consequence": [
+        "ATXN3 binds to CHEK1 → ATXN3 removes polyubiquitin chains from CHEK1, antagonizing E3 ligases DDB1/CUL4A and FBXO6/CUL1 → Proteasomal degradation of CHEK1 is prevented → CHEK1 protein half-life is prolonged and steady-state levels are maintained → Robust G2/M DNA damage checkpoint signaling is enabled → Cell survival is increased upon genotoxic stress."
+      ],
+      "specific_effects": [
+        "Directly deubiquitinates polyubiquitinated CHEK1 both in vitro and in vivo.",
+        "Protects CHEK1 from degradation mediated by the DDB1/CUL4A and FBXO6/CUL1 E3 ligase complexes.",
+        "Significantly prolongs the half-life of CHEK1 protein.",
+        "ATXN3 deficiency leads to a marked reduction in CHEK1 protein abundance and a compromised DNA damage response."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ataxin-3 promotes genome integrity by stabilizing Chk1",
+          "journal": "Nucleic Acids Research",
+          "year": 2017,
+          "relevant_quote": "Under unperturbed conditions and upon DNA damage, ataxin-3 (ATX3) interacts with Chk1 and protects it from DDB1/CUL4A- and FBXO6/CUL1-mediated polyubiquitination and subsequent degradation, thereby promoting DNA repair and checkpoint signaling.",
+          "pmid": "28180282"
+        },
+        {
+          "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+          "journal": "Expert Reviews in Molecular Medicine",
+          "year": 2024,
+          "relevant_quote": "ATXN3 is one of the described ubiquitin hydrolases for Chk1, thereby essential for the maintenance of steady-state levels of Chk1, prolonging its half-life and checkpoint signalling.",
+          "pmid": "39320846"
+        }
+      ],
+      "pmids": [
+        "28180282",
+        "39320846"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "ATXN3 functions as a deubiquitinase (DUB) for the checkpoint kinase CHEK1 (Chk1). Under normal conditions and during the initial DNA damage response, ATXN3 directly binds to CHEK1 and removes polyubiquitin chains that are added by E3 ligase complexes, specifically DDB1/CUL4A and FBXO6/CUL1. This action protects CHEK1 from being targeted for degradation by the proteasome.",
+  "effect": "By counteracting CHEK1 polyubiquitination, ATXN3 is essential for maintaining the steady-state levels of CHEK1 protein. This stabilization significantly prolongs the half-life of CHEK1, ensuring that a sufficient pool of the kinase is available to activate and sustain DNA damage checkpoint signaling, thereby promoting genome integrity.",
+  "summary": "ATXN3 activates CHEK1 to modulate chek1 protein stability, ultimately affecting cell survival is increased upon genotoxic stress.",
+  "evidence": [
+    {
+      "paper_title": "Ataxin-3 promotes genome integrity by stabilizing Chk1",
+      "journal": "Nucleic Acids Research",
+      "year": 2017,
+      "relevant_quote": "Under unperturbed conditions and upon DNA damage, ataxin-3 (ATX3) interacts with Chk1 and protects it from DDB1/CUL4A- and FBXO6/CUL1-mediated polyubiquitination and subsequent degradation, thereby promoting DNA repair and checkpoint signaling."
+    },
+    {
+      "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+      "journal": "Expert Reviews in Molecular Medicine",
+      "year": 2024,
+      "relevant_quote": "ATXN3 is one of the described ubiquitin hydrolases for Chk1, thereby essential for the maintenance of steady-state levels of Chk1, prolonging its half-life and checkpoint signalling."
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --activates--> CHEK1:",
+  "protein_a": "CHEK1",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T07:01:28.047398Z",
+  "last_updated": "2025-11-24T07:01:28.047398Z"
+}

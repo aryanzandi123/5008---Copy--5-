@@ -1,0 +1,73 @@
+{
+  "primary": "LC3B",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "functions": [
+    {
+      "function": "Ribophagy",
+      "arrow": "activates",
+      "cellular_process": "Ribophagy is the selective autophagic degradation of ribosomes, a critical process for recycling nutrients and maintaining cellular homeostasis during periods of starvation. This process is mediated by a specific autophagy receptor.",
+      "effect_description": "Upon nutrient starvation and subsequent mTORC1 inhibition, NUFIP1 (Nuclear FMR1 interacting protein 1) translocates from the nucleus to the cytoplasm. In the cytoplasm, NUFIP1 functions as a ribophagy receptor by binding to ribosomes and concurrently interacting directly with LC3B on the phagophore. This linkage delivers the ribosomal cargo to the autophagosome for lysosomal degradation.",
+      "biological_consequence": [
+        "Nutrient starvation → Inhibition of mTORC1 signaling → NUFIP1 translocates from the nucleus to the cytoplasm → NUFIP1 binds to cytoplasmic ribosomes → NUFIP1 directly binds to LC3B on the phagophore membrane → Ribosomes are sequestered into autophagosomes → Autophagosome-lysosome fusion leads to ribosome degradation and nutrient recycling"
+      ],
+      "specific_effects": [
+        "Acts as a selective autophagy receptor for ribosomes upon nutrient starvation.",
+        "Directly binds to LC3B to mediate the delivery of ribosomes to autophagosomes.",
+        "The NUFIP1-LC3B interaction is essential for starvation-induced degradation of ribosomes.",
+        "NUFIP1-mediated ribophagy promotes cell survival during nutrient deprivation."
+      ],
+      "evidence": [
+        {
+          "paper_title": "NUFIP1 is a ribosome receptor for starvation-induced ribophagy",
+          "journal": "Science",
+          "year": 2018,
+          "relevant_quote": "Upon mTORC1 inhibition, NUFIP1 (nuclear fragile X mental retardation–interacting protein 1) redistributes from the nucleus to autophagosomes and lysosomes. Upon these conditions, NUFIP1 interacts with ribosomes and delivers them to autophagosomes by directly binding to microtubule-associated proteins 1A/1B light chain 3B (LC3B). The starvation-induced degradation of ribosomes via autophagy (ribophagy) depends on the capacity of NUFIP1 to bind LC3B and promotes cell survival.",
+          "pmid": "29700228"
+        }
+      ],
+      "pmids": [
+        "29700228"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Ribophagy is the selective autophagic degradation of ribosomes, a critical process for recycling nutrients and maintaining cellular homeostasis during periods of starvation. This process is mediated by a specific autophagy receptor.",
+  "effect": "Upon nutrient starvation and subsequent mTORC1 inhibition, NUFIP1 (Nuclear FMR1 interacting protein 1) translocates from the nucleus to the cytoplasm. In the cytoplasm, NUFIP1 functions as a ribophagy receptor by binding to ribosomes and concurrently interacting directly with LC3B on the phagophore. This linkage delivers the ribosomal cargo to the autophagosome for lysosomal degradation.",
+  "summary": "LC3B activates NUFIP1 to modulate ribophagy, ultimately affecting autophagosome-lysosome fusion leads to ribosome degradation and nutrient recycling.",
+  "evidence": [
+    {
+      "paper_title": "NUFIP1 is a ribosome receptor for starvation-induced ribophagy",
+      "journal": "Science",
+      "year": 2018,
+      "relevant_quote": "Upon mTORC1 inhibition, NUFIP1 (nuclear fragile X mental retardation–interacting protein 1) redistributes from the nucleus to autophagosomes and lysosomes. Upon these conditions, NUFIP1 interacts with ribosomes and delivers them to autophagosomes by directly binding to microtubule-associated proteins 1A/1B light chain 3B (LC3B). The starvation-induced degradation of ribosomes via autophagy (ribophagy) depends on the capacity of NUFIP1 to bind LC3B and promotes cell survival."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--binds-- NUFIP1:",
+  "protein_a": "NUFIP1",
+  "protein_b": "LC3B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.075294Z",
+  "last_updated": "2025-11-24T10:45:54.075294Z"
+}

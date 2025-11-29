@@ -1,0 +1,73 @@
+{
+  "primary": "RHEB",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 directly deubiquitinates RHEB, which leads to the inactivation of mTORC1 signaling in response to amino acid deprivation.",
+  "functions": [
+    {
+      "function": "mTORC1 Signaling",
+      "arrow": "inhibits",
+      "cellular_process": "Under conditions of amino acid starvation, inactive Rag GTPases recruit the deubiquitinase ATXN3 to the lysosomal surface. At the lysosome, ATXN3 removes ubiquitin chains from the small GTPase RHEB.",
+      "effect_description": "By maintaining RHEB in a hypo-ubiquitinated state, ATXN3 prevents RHEB from binding to and activating the mTORC1 complex. This suppresses mTORC1 signaling, a key cellular growth pathway, in response to nutrient scarcity. Conversely, upon amino acid stimulation, active Rag GTPases mediate the release of ATXN3 from the lysosome, allowing RHEB to become polyubiquitinated, which promotes its interaction with and activation of mTORC1.",
+      "biological_consequence": [
+        "Amino acid starvation → Inactive Rag GTPases recruit ATXN3 to the lysosome → ATXN3 deubiquitinates lysosomal RHEB → Hypo-ubiquitinated RHEB is unable to bind and activate mTORC1 → mTORC1 signaling is inhibited."
+      ],
+      "specific_effects": [
+        "Maintains RHEB in a hypo-ubiquitinated state under amino acid-starved conditions.",
+        "Acts as a negative regulator of the mTORC1 pathway by preventing the polyubiquitination of RHEB required for mTORC1 binding.",
+        "Amino acid stimulation leads to the dissociation of ATXN3 from the lysosome, allowing for RHEB polyubiquitination and subsequent mTORC1 activation."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Amino Acids Enhance Polyubiquitination of Rheb and Its Binding to mTORC1 by Blocking Lysosomal ATXN3 Deubiquitinase Activity",
+          "journal": "Molecular Cell",
+          "year": 2020,
+          "relevant_quote": "We identified that ATXN3 acts as a deubiquitinase for Rheb. Mechanistically, the inactive Rags recruit ATXN3 to the lysosome to maintain lysosomal Rheb in a hypo-ubiquitinated state under amino acid-starved conditions, whereas active Rags release ATXN3 from the lysosome in response to amino acids. Thus, poly-ubiquitination of Rheb acts as a positive signal that facilitates Rheb interaction with mTORC1 on the lysosome and contributes to amino acid-induced mTORC1 activation.",
+          "pmid": "33157014"
+        }
+      ],
+      "pmids": [
+        "33157014"
+      ],
+      "interaction_effect": "inhibits",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "inhibition"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Under conditions of amino acid starvation, inactive Rag GTPases recruit the deubiquitinase ATXN3 to the lysosomal surface. At the lysosome, ATXN3 removes ubiquitin chains from the small GTPase RHEB.",
+  "effect": "By maintaining RHEB in a hypo-ubiquitinated state, ATXN3 prevents RHEB from binding to and activating the mTORC1 complex. This suppresses mTORC1 signaling, a key cellular growth pathway, in response to nutrient scarcity. Conversely, upon amino acid stimulation, active Rag GTPases mediate the release of ATXN3 from the lysosome, allowing RHEB to become polyubiquitinated, which promotes its interaction with and activation of mTORC1.",
+  "summary": "ATXN3 inhibits RHEB to modulate mtorc1 signaling, ultimately affecting mtorc1 signaling is inhibited.",
+  "evidence": [
+    {
+      "paper_title": "Amino Acids Enhance Polyubiquitination of Rheb and Its Binding to mTORC1 by Blocking Lysosomal ATXN3 Deubiquitinase Activity",
+      "journal": "Molecular Cell",
+      "year": 2020,
+      "relevant_quote": "We identified that ATXN3 acts as a deubiquitinase for Rheb. Mechanistically, the inactive Rags recruit ATXN3 to the lysosome to maintain lysosomal Rheb in a hypo-ubiquitinated state under amino acid-starved conditions, whereas active Rags release ATXN3 from the lysosome in response to amino acids. Thus, poly-ubiquitination of Rheb acts as a positive signal that facilitates Rheb interaction with mTORC1 on the lysosome and contributes to amino acid-induced mTORC1 activation."
+    }
+  ],
+  "interaction_effect": "inhibition",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --inhibits--> RHEB:",
+  "protein_a": "ATXN3",
+  "protein_b": "RHEB",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T07:01:28.052942Z",
+  "last_updated": "2025-11-24T07:01:28.052942Z"
+}

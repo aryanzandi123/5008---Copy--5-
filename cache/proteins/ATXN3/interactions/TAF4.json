@@ -1,0 +1,86 @@
+{
+  "primary": "TAF4",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 has been shown to interact with several transcriptional components, including the TATA-box-binding protein associated factor 4 (TAF4, also known as TAFII130). [2, 3, 12]",
+  "functions": [
+    {
+      "function": "Transcriptional",
+      "arrow": "regulates",
+      "cellular_process": "ATXN3, a deubiquitinating enzyme, physically associates with TAF4 (TATA-box-binding protein associated factor 4), a core component of the general transcription factor TFIID. This interaction brings ATXN3 into the pre-initiation complex at gene promoters.",
+      "effect_description": "The interaction with TAF4 suggests a role for ATXN3 in modulating basal and activated transcription. By localizing to the core transcriptional machinery, ATXN3 can influence gene expression, potentially by altering the ubiquitination status of transcription factors or histone proteins in the vicinity, thereby affecting chromatin structure and promoter accessibility. However, the specific downstream effect (activation vs. repression) is likely gene and context-dependent and is not definitively established as universally activating.",
+      "biological_consequence": [
+        "ATXN3 directly binds to the TAF4 subunit of the TFIID complex → ATXN3 is recruited to gene promoters as part of the pre-initiation complex → ATXN3 potentially modulates the ubiquitination state of local histones or transcription factors → Basal transcription of target genes is regulated."
+      ],
+      "specific_effects": [
+        "Direct physical interaction with TAF4, a subunit of the TFIID general transcription factor.",
+        "Co-localization with other transcriptional regulators like CBP, P300, and HDACs, suggesting a role in modulating chromatin and transcription."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ataxin-3 Protein and RNA Toxicity in Spinocerebellar Ataxia Type 3: Current Insights and Emerging Therapeutic Strategies",
+          "journal": "International Journal of Molecular Sciences",
+          "year": 2020,
+          "relevant_quote": "Transcriptional regulation by ataxin-3 might arise through different mechanisms, since ataxin-3 is known to interact with numerous transcriptional regulators such as TATA box-binding protein (TBP)-associated factor 4 (TAF4)...",
+          "pmid": "24293103"
+        },
+        {
+          "paper_title": "Loss of the Spinocerebellar Ataxia type 3 disease protein ATXN3 alters transcription of multiple signal transduction pathways",
+          "journal": "PLOS ONE",
+          "year": 2018,
+          "relevant_quote": "An additional role for ATXN3 in transcriptional regulation is suggested by the ability of ATXN3 to bind DNA and cooperate with transcriptional regulators including CBP, P300, PCAF, TBP, HDAC3, HDAC6 and NCoR.",
+          "pmid": "30231063"
+        }
+      ],
+      "pmids": [
+        "24293103",
+        "30231063"
+      ],
+      "interaction_effect": "regulates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "regulation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "ATXN3, a deubiquitinating enzyme, physically associates with TAF4 (TATA-box-binding protein associated factor 4), a core component of the general transcription factor TFIID. This interaction brings ATXN3 into the pre-initiation complex at gene promoters.",
+  "effect": "The interaction with TAF4 suggests a role for ATXN3 in modulating basal and activated transcription. By localizing to the core transcriptional machinery, ATXN3 can influence gene expression, potentially by altering the ubiquitination status of transcription factors or histone proteins in the vicinity, thereby affecting chromatin structure and promoter accessibility. However, the specific downstream effect (activation vs. repression) is likely gene and context-dependent and is not definitively established as universally activating.",
+  "summary": "ATXN3 interacts with TAF4 to modulate transcriptional regulation, ultimately affecting basal transcription of target genes is regulated.",
+  "evidence": [
+    {
+      "paper_title": "Ataxin-3 Protein and RNA Toxicity in Spinocerebellar Ataxia Type 3: Current Insights and Emerging Therapeutic Strategies",
+      "journal": "International Journal of Molecular Sciences",
+      "year": 2020,
+      "relevant_quote": "Transcriptional regulation by ataxin-3 might arise through different mechanisms, since ataxin-3 is known to interact with numerous transcriptional regulators such as TATA box-binding protein (TBP)-associated factor 4 (TAF4)..."
+    },
+    {
+      "paper_title": "Loss of the Spinocerebellar Ataxia type 3 disease protein ATXN3 alters transcription of multiple signal transduction pathways",
+      "journal": "PLOS ONE",
+      "year": 2018,
+      "relevant_quote": "An additional role for ATXN3 in transcriptional regulation is suggested by the ability of ATXN3 to bind DNA and cooperate with transcriptional regulators including CBP, P300, PCAF, TBP, HDAC3, HDAC6 and NCoR."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --binds--> TAF4:",
+  "protein_a": "ATXN3",
+  "protein_b": "TAF4",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T04:11:50.041884Z",
+  "last_updated": "2025-11-24T04:11:50.041884Z"
+}

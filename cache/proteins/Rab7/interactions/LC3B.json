@@ -1,0 +1,116 @@
+{
+  "primary": "LC3B",
+  "interaction_type": "indirect",
+  "upstream_interactor": "FYCO1",
+  "mediator_chain": [
+    "FYCO1"
+  ],
+  "depth": 2,
+  "support_summary": "Rab7 is a small GTPase involved in autophagosome maturation and fusion with lysosomes. It interacts with FYCO1, which in turn binds directly to LC3B on the autophagosome, linking the vesicle to the trafficking machinery.",
+  "functions": [
+    {
+      "function": "Autophagosome Trafficking and Fusion",
+      "arrow": "activates",
+      "cellular_process": "Rab7 is a small GTPase that acts as a master regulator of the late stages of autophagy, specifically autophagosome maturation and fusion with lysosomes. It functions as a molecular switch, recruiting various effector proteins when in its active, GTP-bound state.",
+      "effect_description": "LC3B on the autophagosome surface recruits the adaptor protein FYCO1. FYCO1 simultaneously binds to active, GTP-bound Rab7, physically linking the autophagosome to the trafficking machinery. This ternary complex (LC3B-FYCO1-Rab7) facilitates the microtubule-dependent transport of autophagosomes. Rab7 further orchestrates the final fusion event by recruiting tethering complexes like HOPS, which bring the autophagosome and lysosome membranes into close proximity for SNARE-mediated fusion.",
+      "biological_consequence": [
+        "LC3B on autophagosome recruits FYCO1 → FYCO1 binds active GTP-Rab7 → Complex links autophagosome to kinesin motor proteins → Microtubule plus-end-directed transport → Rab7 recruits tethering factors (e.g., HOPS complex) → SNARE-mediated fusion of autophagosome with lysosome → Autolysosome formation and degradation of contents."
+      ],
+      "specific_effects": [
+        "Acts as a Rab7 effector, directly linking LC3B-positive autophagosomes to the motor protein kinesin for plus-end-directed transport.",
+        "FYCO1 is a multi-domain adaptor that interacts with LC3 via a LIR motif, Rab7, and PI3P on the autophagosomal membrane.",
+        "Rab7, when active, is essential for the final maturation of autophagic vacuoles and their fusion with lysosomes.",
+        "Depletion of FYCO1 leads to the perinuclear clustering of autophagosomes, indicating a failure in their transport to the cell periphery for fusion."
+      ],
+      "evidence": [
+        {
+          "paper_title": "FYCO1 is a Rab7 effector that binds to LC3 and PI3P to mediate microtubule plus end–directed vesicle transport",
+          "journal": "The Journal of Cell Biology",
+          "year": 2010,
+          "relevant_quote": "In this study, we have identified an adaptor protein complex, formed by the two autophagic membrane-associated proteins LC3 and Rab7 and the novel FYVE and coiled-coil (CC) domain–containing protein FYCO1, that promotes microtubule (MT) plus end–directed transport of autophagic vesicles.",
+          "pmid": "20100911"
+        },
+        {
+          "paper_title": "Revisiting Rab7 Functions in Mammalian Autophagy: Rab7 Knockout Studies",
+          "journal": "Cells",
+          "year": 2018,
+          "relevant_quote": "Rab7 links autophagosomes to kinesin through FYCO1 and facilitates microtubule-dependent plus-end-directed transport towards the cell periphery. Rab7 also mediates microtubule-dependent minus-end-directed transport towards the perinuclear region through interaction with its effectors, ORP1L and RILP, which binds to the dynein-dynactin complex.",
+          "pmid": "30463228"
+        },
+        {
+          "paper_title": "Role for Rab7 in maturation of late autophagic vacuoles",
+          "journal": "Journal of Cell Science",
+          "year": 2004,
+          "relevant_quote": "We show here that Rab7 was needed for the formation of preferably perinuclear, large aggregates, where the autophagosome marker LC3 colocalised with Rab7 and late endosomal and lysosomal markers... our results showed a role for Rab7 in the final maturation of late autophagic vacuoles.",
+          "pmid": "15340014"
+        }
+      ],
+      "pmids": [
+        "20100911",
+        "30463228",
+        "15340014"
+      ],
+      "direct_arrow": "activates",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "FYCO1",
+        "direct_arrow": "activates",
+        "net_from": "LC3B",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "FYCO1"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Rab7 is a small GTPase that acts as a master regulator of the late stages of autophagy, specifically autophagosome maturation and fusion with lysosomes. It functions as a molecular switch, recruiting various effector proteins when in its active, GTP-bound state.",
+  "effect": "LC3B on the autophagosome surface recruits the adaptor protein FYCO1. FYCO1 simultaneously binds to active, GTP-bound Rab7, physically linking the autophagosome to the trafficking machinery. This ternary complex (LC3B-FYCO1-Rab7) facilitates the microtubule-dependent transport of autophagosomes. Rab7 further orchestrates the final fusion event by recruiting tethering complexes like HOPS, which bring the autophagosome and lysosome membranes into close proximity for SNARE-mediated fusion.",
+  "summary": "LC3B activates Rab7 to modulate autophagosome trafficking and fusion, ultimately affecting autolysosome formation and degradation of contents.",
+  "evidence": [
+    {
+      "paper_title": "FYCO1 is a Rab7 effector that binds to LC3 and PI3P to mediate microtubule plus end–directed vesicle transport",
+      "journal": "The Journal of Cell Biology",
+      "year": 2010,
+      "relevant_quote": "In this study, we have identified an adaptor protein complex, formed by the two autophagic membrane-associated proteins LC3 and Rab7 and the novel FYVE and coiled-coil (CC) domain–containing protein FYCO1, that promotes microtubule (MT) plus end–directed transport of autophagic vesicles."
+    },
+    {
+      "paper_title": "Revisiting Rab7 Functions in Mammalian Autophagy: Rab7 Knockout Studies",
+      "journal": "Cells",
+      "year": 2018,
+      "relevant_quote": "Rab7 links autophagosomes to kinesin through FYCO1 and facilitates microtubule-dependent plus-end-directed transport towards the cell periphery. Rab7 also mediates microtubule-dependent minus-end-directed transport towards the perinuclear region through interaction with its effectors, ORP1L and RILP, which binds to the dynein-dynactin complex."
+    },
+    {
+      "paper_title": "Role for Rab7 in maturation of late autophagic vacuoles",
+      "journal": "Journal of Cell Science",
+      "year": 2004,
+      "relevant_quote": "We show here that Rab7 was needed for the formation of preferably perinuclear, large aggregates, where the autophagosome marker LC3 colocalised with Rab7 and late endosomal and lysosomal markers... our results showed a role for Rab7 in the final maturation of late autophagic vacuoles."
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "FYCO1 --activates--> Rab7:",
+  "protein_a": "Rab7",
+  "protein_b": "LC3B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.031921Z",
+  "last_updated": "2025-11-24T10:45:54.031921Z"
+}

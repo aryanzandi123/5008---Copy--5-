@@ -1,0 +1,83 @@
+{
+  "primary": "Tubulin",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 directly binds to tubulin, which is involved in the transport of protein aggregates to the aggresome.",
+  "functions": [
+    {
+      "function": "Aggresome Formation",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 directly interacts with α- and β-tubulin, the building blocks of microtubules. This interaction is crucial for the microtubule-dependent transport of misfolded protein aggregates.",
+      "effect_description": "By binding to tubulin, ATXN3 facilitates the movement of ubiquitinated protein aggregates along the microtubule network to the microtubule-organizing center (MTOC), where they coalesce to form an aggresome for eventual clearance.",
+      "biological_consequence": [
+        "ATXN3 binding to microtubules → Facilitated transport of protein aggregates → Centralization of aggregates at the MTOC → Aggresome formation"
+      ],
+      "specific_effects": [
+        "ATXN3 colocalizes with microtubules.",
+        "The interaction is supported by a strong dissociation constant (50-70nM) between ATXN3 and the tubulin dimer.",
+        "This function connects ATXN3 to the dynein motor complex and HDAC6 in the aggresome pathway."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Proteomic and biochemical analyses unveil tight interaction of ataxin-3 with tubulin",
+          "year": 2009,
+          "pmid": "19666135"
+        },
+        {
+          "paper_title": "The polyglutamine neurodegenerative protein Ataxin 3 regulates aggresome formation",
+          "year": 2005,
+          "pmid": "15767577"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "19666135",
+        "15767577"
+      ],
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "ATXN3 directly interacts with α- and β-tubulin, the building blocks of microtubules. This interaction is crucial for the microtubule-dependent transport of misfolded protein aggregates.",
+  "effect": "By binding to tubulin, ATXN3 facilitates the movement of ubiquitinated protein aggregates along the microtubule network to the microtubule-organizing center (MTOC), where they coalesce to form an aggresome for eventual clearance.",
+  "summary": "ATXN3 activates Tubulin to modulate aggresome formation, ultimately affecting aggresome formation.",
+  "evidence": [
+    {
+      "paper_title": "Proteomic and biochemical analyses unveil tight interaction of ataxin-3 with tubulin",
+      "year": 2009
+    },
+    {
+      "paper_title": "The polyglutamine neurodegenerative protein Ataxin 3 regulates aggresome formation",
+      "year": 2005
+    }
+  ],
+  "interaction_effect": "binds",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --binds--> Tubulin:",
+  "protein_a": "ATXN3",
+  "protein_b": "Tubulin",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.775214Z",
+  "last_updated": "2025-11-24T12:52:47.775214Z"
+}

@@ -1,0 +1,178 @@
+{
+  "primary": "EGFR",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "Epidermal Growth Factor Receptor (EGFR) has been identified as an LC3B-associating protein in co-immunoprecipitation and proximity labeling studies, suggesting a role in regulating autophagy.",
+  "functions": [
+    {
+      "function": "Autophagy Inhibition via mTOR Pathway",
+      "arrow": "activates",
+      "cellular_process": "Upon ligand binding, activated Epidermal Growth Factor Receptor (EGFR) triggers the PI3K-AKT signaling cascade. Activated AKT phosphorylates and activates the mTORC1 complex, a master negative regulator of autophagy.",
+      "effect_description": "Active mTORC1 phosphorylates the autophagy-initiating kinase ULK1 (and its binding partner ATG13), which prevents the formation and activation of the ULK1 complex. This suppression of the initial step of the autophagy cascade effectively blocks autophagosome formation.",
+      "biological_consequence": [
+        "EGF binding → EGFR activation → PI3K activation → AKT activation → mTORC1 activation → ULK1 complex phosphorylation and inactivation → Autophagy initiation is blocked"
+      ],
+      "specific_effects": [
+        "Stimulates the PI3K/AKT/mTORC1 signaling axis.",
+        "Prevents the activation of the ULK1 kinase complex required for phagophore nucleation."
+      ],
+      "evidence": [
+        {
+          "paper_title": "EGFR Family Members' Regulation of Autophagy Is at a Crossroads of Cell Survival and Death in Cancer",
+          "journal": "Cancers (Basel)",
+          "year": 2017,
+          "relevant_quote": "EGFR also activates the AKT signaling pathway, causing phosphorylates TSC1 and thus leading to mTOR activation. This inhibits autophagy through inhibition of the ULK1 complex.",
+          "pmid": "28338617"
+        }
+      ],
+      "pmids": [
+        "28338617"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "LC3B",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    },
+    {
+      "function": "Autophagy Inhibition via Beclin-1 Sequestration",
+      "arrow": "activates",
+      "cellular_process": "Activated EGFR directly binds to the core autophagy protein Beclin-1. This interaction is dependent on the kinase activity of EGFR and leads to the multi-site tyrosine phosphorylation of Beclin-1.",
+      "effect_description": "Tyrosine-phosphorylated Beclin-1 exhibits reduced binding to the lipid kinase VPS34 and increased binding to its inhibitors, such as Rubicon and BCL2. This shift in the Beclin-1 interactome leads to decreased VPS34 kinase activity, which is essential for the nucleation of the autophagosome, thereby suppressing autophagy.",
+      "biological_consequence": [
+        "EGFR activation → EGFR binds to Beclin-1 → EGFR tyrosine phosphorylates Beclin-1 → Beclin-1 dissociates from VPS34 and binds inhibitors (Rubicon/BCL2) → VPS34 kinase activity is reduced → Autophagosome nucleation is blocked"
+      ],
+      "specific_effects": [
+        "Directly binds to and phosphorylates Beclin-1 on tyrosine residues.",
+        "Reduces Beclin-1-associated VPS34 kinase activity.",
+        "Promotes the association of Beclin-1 with its negative regulators."
+      ],
+      "evidence": [
+        {
+          "paper_title": "EGFR-Mediated Phosphorylation of Beclin 1 in Autophagy Suppression, Tumor Progression, and Tumor Chemoresistance",
+          "journal": "Cell",
+          "year": 2013,
+          "relevant_quote": "We show that active EGFR binds to Beclin 1, leading to its tyrosine phosphorylation, alteration of its interactome, and inhibition of its autophagy function... This EGFR-regulated alteration in the Beclin 1 interactome was associated with decreased Beclin 1-associated VPS34 kinase activity.",
+          "pmid": "24034250"
+        }
+      ],
+      "pmids": [
+        "24034250"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "LC3B",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    },
+    {
+      "function": "Autophagic Degradation of EGFR",
+      "arrow": "activates",
+      "cellular_process": "In certain contexts, such as treatment with specific drugs (e.g., celastrol) or metabolic stress, EGFR itself can be targeted for degradation via the autophagy pathway. In this role, EGFR acts as a selective autophagy cargo.",
+      "effect_description": "This process serves as a negative feedback loop to downregulate EGFR signaling. The autophagic degradation of the receptor reduces its abundance, thereby attenuating its downstream pro-survival and proliferative signals.",
+      "biological_consequence": [
+        "Cellular Stress (e.g., drug treatment) → Autophagy Induction → Recognition and sequestration of EGFR into autophagosomes → Autophagosome-lysosome fusion → Lysosomal degradation of EGFR → Downregulation of EGFR signaling"
+      ],
+      "specific_effects": [
+        "EGFR is targeted for lysosomal degradation via autophagy.",
+        "This process can be induced by certain anti-cancer agents to overcome drug resistance.",
+        "Represents a distinct cellular process where EGFR is a substrate of autophagy, not an inhibitor."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Autophagic degradation of epidermal growth factor receptor in gefitinib-resistant lung cancer by celastrol",
+          "journal": "Cancer Letters",
+          "year": 2017,
+          "relevant_quote": "In addition, celastrol also facilitated the autophagic degradation of Hsp90 client protein including EGFR and Akt on both EGFR wild-type and mutant NSCLCs via calcium-mediated autophagy. Blockage of celastrol-induced autophagic degradation of EGFR by autophagic inhibitor or calcium chelator decreased celastrol-mediated cell death in gefitinib-resistant NSCLCs.",
+          "pmid": "27498688"
+        }
+      ],
+      "pmids": [
+        "27498688"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "LC3B",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "bidirectional",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The input correctly identifies that activated EGFR inhibits autophagy. However, this is not mediated by a direct interaction with LC3B. Instead, EGFR acts upstream by either (1) activating the mTORC1 pathway, a master negative regulator of autophagy, or (2) by directly binding to and inhibiting the core autophagy protein Beclin-1. A separate process involves the degradation of EGFR itself by autophagy, where it acts as a cargo.",
+  "mechanism": "Upon ligand binding, activated Epidermal Growth Factor Receptor (EGFR) triggers the PI3K-AKT signali; Activated EGFR directly binds to the core autophagy protein Beclin-1; In certain contexts, such as treatment with specific drugs (e",
+  "effect": "Active mTORC1 phosphorylates the autophagy-initiating kinase ULK1 (and its binding partner ATG13), which prevents the formation and activation of the ULK1 complex. This suppression of the initial step of the autophagy cascade effectively blocks autophagosome formation.; Tyrosine-phosphorylated Beclin-1 exhibits reduced binding to the lipid kinase VPS34 and increased binding to its inhibitors, such as Rubicon and BCL2. This shift in the Beclin-1 interactome leads to decreased VPS34 kinase activity, which is essential for the nucleation of the autophagosome, thereby suppressing autophagy.; ...",
+  "summary": "LC3B inhibits EGFR to control multiple cellular processes including autophagy inhibition via mtor pathway, autophagy inhibition via beclin-1 sequestration, and autophagic degradation of egfr, ultimately affecting autophagy initiation is blocked.",
+  "evidence": [
+    {
+      "paper_title": "EGFR Family Members' Regulation of Autophagy Is at a Crossroads of Cell Survival and Death in Cancer",
+      "journal": "Cancers (Basel)",
+      "year": 2017,
+      "relevant_quote": "EGFR also activates the AKT signaling pathway, causing phosphorylates TSC1 and thus leading to mTOR activation. This inhibits autophagy through inhibition of the ULK1 complex."
+    },
+    {
+      "paper_title": "EGFR-Mediated Phosphorylation of Beclin 1 in Autophagy Suppression, Tumor Progression, and Tumor Chemoresistance",
+      "journal": "Cell",
+      "year": 2013,
+      "relevant_quote": "We show that active EGFR binds to Beclin 1, leading to its tyrosine phosphorylation, alteration of its interactome, and inhibition of its autophagy function... This EGFR-regulated alteration in the Beclin 1 interactome was associated with decreased Beclin 1-associated VPS34 kinase activity."
+    },
+    {
+      "paper_title": "Autophagic degradation of epidermal growth factor receptor in gefitinib-resistant lung cancer by celastrol",
+      "journal": "Cancer Letters",
+      "year": 2017,
+      "relevant_quote": "In addition, celastrol also facilitated the autophagic degradation of Hsp90 client protein including EGFR and Akt on both EGFR wild-type and mutant NSCLCs via calcium-mediated autophagy. Blockage of celastrol-induced autophagic degradation of EGFR by autophagic inhibitor or calcium chelator decreased celastrol-mediated cell death in gefitinib-resistant NSCLCs."
+    }
+  ],
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 6
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--regulates--> EGFR:",
+  "protein_a": "LC3B",
+  "protein_b": "EGFR",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.014423Z",
+  "last_updated": "2025-11-24T10:45:54.014423Z"
+}

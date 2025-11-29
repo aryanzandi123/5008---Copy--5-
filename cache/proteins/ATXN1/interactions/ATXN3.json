@@ -1,0 +1,84 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 is listed as an interactor of ATXN1 in protein-protein interaction databases.",
+  "functions": [
+    {
+      "function": "Transcriptional",
+      "arrow": "inhibits",
+      "cellular_process": "ATXN1 and ATXN3 are both polyglutamine disease proteins that function in transcriptional regulation. Their direct interaction suggests they are part of shared transcriptional complexes that bind to DNA and recruit other factors, such as histone-modifying enzymes, to regulate gene expression.",
+      "effect_description": "The interaction between ATXN1 and ATXN3 likely serves to co-regulate a specific subset of neuronal genes. In polyglutamine diseases, the aggregation and sequestration of these proteins can lead to widespread transcriptional dysregulation.",
+      "biological_consequence": [
+        "Formation of Transcriptional Complexes → Regulation of Neuronal Gene Expression → Maintenance of Neuronal Function"
+      ],
+      "specific_effects": [
+        "Both ATXN1 and ATXN3 are involved in transcriptional control",
+        "PolyQ expansion in either protein can disrupt transcriptional machinery"
+      ],
+      "evidence": [
+        {
+          "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+          "year": 2024,
+          "pmid": "39320846"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": "ATXN1",
+        "chain": null
+      },
+      "interaction_effect": "inhibits",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "39320846"
+      ],
+      "function_effect": "inhibition",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "inhibits",
+        "net_from": "ATXN3",
+        "net_arrow": "inhibits",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "inhibits",
+      "direct_arrow": "inhibits",
+      "net_effect": "inhibition",
+      "direct_effect": "inhibition"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "ATXN1 and ATXN3 are both polyglutamine disease proteins that function in transcriptional regulation. Their direct interaction suggests they are part of shared transcriptional complexes that bind to DNA and recruit other factors, such as histone-modifying enzymes, to regulate gene expression.",
+  "effect": "The interaction between ATXN1 and ATXN3 likely serves to co-regulate a specific subset of neuronal genes. In polyglutamine diseases, the aggregation and sequestration of these proteins can lead to widespread transcriptional dysregulation.",
+  "summary": "ATXN3 activates ATXN1 to modulate transcriptional regulation, ultimately affecting maintenance of neuronal function.",
+  "evidence": [
+    {
+      "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+      "year": 2024
+    }
+  ],
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --regulates--> ATXN1:",
+  "protein_a": "ATXN1",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T02:27:04.765383Z",
+  "last_updated": "2025-11-24T02:27:04.765383Z"
+}

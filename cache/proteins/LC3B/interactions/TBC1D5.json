@@ -1,0 +1,108 @@
+{
+  "primary": "TBC1D5",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "TBC1D5 is a Rab GTPase-activating protein that has been shown to associate with LC3B through co-immunoprecipitation experiments.",
+  "functions": [
+    {
+      "function": "ATG9 Trafficking and Autophagy Initiation",
+      "arrow": "activates",
+      "cellular_process": "TBC1D5 is a RabGAP that functions as a molecular switch linking endosomal trafficking to autophagy. Under basal conditions, it associates with the retromer complex. Upon autophagy induction (e.g., by mTOR inhibition), TBC1D5 binds to LC3B on the forming autophagosome via its LIR motifs. This interaction is crucial for recruiting ATG9-containing vesicles, which are essential for supplying membranes for phagophore elongation.",
+      "effect_description": "By binding LC3B and interacting with the AP2 clathrin adaptor complex, TBC1D5 directs the trafficking of ATG9 vesicles to the site of autophagosome formation, thereby promoting the initiation and expansion of the phagophore.",
+      "biological_consequence": [
+        "Autophagy Induction → TBC1D5 dissociates from Retromer complex → TBC1D5 binds LC3B on phagophore via LIR motif → TBC1D5 and AP2 complex recruit ATG9-containing vesicles → Membrane supply for phagophore elongation → Autophagosome formation"
+      ],
+      "specific_effects": [
+        "Directly binds LC3-family proteins via LIR motifs.",
+        "Acts as a scaffold to connect ATG9 vesicles to the nascent autophagosome.",
+        "Depletion of TBC1D5 results in the missorting of ATG9 to late endosomes and inhibits autophagosome formation."
+      ],
+      "evidence": [
+        {
+          "paper_title": "TBC1D5 and the AP2 complex regulate ATG9 trafficking and initiation of autophagy",
+          "journal": "EMBO reports",
+          "year": 2014,
+          "relevant_quote": "The RabGAP protein TBC1D5 controls cellular endomembrane trafficking processes and binds the retromer subunit VPS29 and the ubiquitin-like protein ATG8 (LC3). Here, we describe that TBC1D5 also associates with ATG9 and the active ULK1 complex during autophagy. Moreover, ATG9 and TBC1D5 interact with clathrin and the AP2 complex. Depletion of TBC1D5 leads to missorting of ATG9 to late endosomes upon activation of autophagy... Taken together, our data show that TBC1D5 and the AP2 complex are important novel regulators of the rerouting of ATG9-containing vesicular carriers toward sites of autophagosome formation.",
+          "pmid": "24603492"
+        }
+      ],
+      "pmids": [
+        "24603492"
+      ],
+      "interaction_effect": "activation",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    },
+    {
+      "function": "Receptor Recycling via Autophagic Degradation of the Retromer Complex",
+      "arrow": "inhibits",
+      "cellular_process": "Under conditions of nutrient withdrawal or mTOR inhibition, autophagy can capture the entire TBC1D5-retromer complex for degradation. TBC1D5 targets retromer-positive endosomes to the phagophore for bulk destruction.",
+      "effect_description": "This process serves to downregulate receptor recycling. By targeting the retromer machinery for autophagic degradation, the cell reduces the retrieval of transmembrane receptors from endosomes, leading to their subsequent turnover in the lysosome. This represents a distinct context from its role in ATG9 trafficking.",
+      "biological_consequence": [
+        "Nutrient Withdrawal / mTOR inhibition → Autophagy Activation → TBC1D5 targets the TBC1D5-Retromer complex to the phagophore → Autophagic degradation of the TBC1D5-Retromer complex → Receptor recycling is inhibited → Enhanced lysosomal turnover of receptors"
+      ],
+      "specific_effects": [
+        "Mediates the capture of retromer-positive endosomes by autophagosomes.",
+        "This process inhibits the recycling of retromer cargo receptors to the plasma membrane and trans-Golgi network.",
+        "This mechanism connects nutrient availability directly to the regulation of receptor homeostasis."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Autophagy captures the retromer-TBC1D5 complex to inhibit receptor recycling",
+          "journal": "Autophagy",
+          "year": 2024,
+          "relevant_quote": "Autophagy activation by chemical inhibition of MTOR or nutrient withdrawal does not affect retromer assembly or its interaction with the RAB7 GAP protein TBC1D5, but rather targets these endosomes for bulk destruction following their capture by phagophores... Consequently, endosomal recycling of its cargoes to the plasma membrane and trans-Golgi network is impaired, leading to their lysosomal turnover.",
+          "pmid": "37938196"
+        }
+      ],
+      "pmids": [
+        "37938196"
+      ],
+      "interaction_effect": "inhibition",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "inhibition"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "TBC1D5 is a RabGAP that functions as a molecular switch linking endosomal trafficking to autophagy; Under conditions of nutrient withdrawal or mTOR inhibition, autophagy can capture the entire TBC1D5-",
+  "effect": "By binding LC3B and interacting with the AP2 clathrin adaptor complex, TBC1D5 directs the trafficking of ATG9 vesicles to the site of autophagosome formation, thereby promoting the initiation and expansion of the phagophore.; This process serves to downregulate receptor recycling. By targeting the retromer machinery for autophagic degradation, the cell reduces the retrieval of transmembrane receptors from endosomes, leading to their subsequent turnover in the lysosome. This represents a distinct context from its role in ATG9 trafficking.",
+  "summary": "LC3B regulates TBC1D5 to regulate regulation of atg9 trafficking and autophagy initiation and regulation of receptor recycling via autophagic degradation of the retromer complex, ultimately affecting autophagosome formation.",
+  "evidence": [
+    {
+      "paper_title": "TBC1D5 and the AP2 complex regulate ATG9 trafficking and initiation of autophagy",
+      "journal": "EMBO reports",
+      "year": 2014,
+      "relevant_quote": "The RabGAP protein TBC1D5 controls cellular endomembrane trafficking processes and binds the retromer subunit VPS29 and the ubiquitin-like protein ATG8 (LC3). Here, we describe that TBC1D5 also associates with ATG9 and the active ULK1 complex during autophagy. Moreover, ATG9 and TBC1D5 interact with clathrin and the AP2 complex. Depletion of TBC1D5 leads to missorting of ATG9 to late endosomes upon activation of autophagy... Taken together, our data show that TBC1D5 and the AP2 complex are important novel regulators of the rerouting of ATG9-containing vesicular carriers toward sites of autophagosome formation."
+    },
+    {
+      "paper_title": "Autophagy captures the retromer-TBC1D5 complex to inhibit receptor recycling",
+      "journal": "Autophagy",
+      "year": 2024,
+      "relevant_quote": "Autophagy activation by chemical inhibition of MTOR or nutrient withdrawal does not affect retromer assembly or its interaction with the RAB7 GAP protein TBC1D5, but rather targets these endosomes for bulk destruction following their capture by phagophores... Consequently, endosomal recycling of its cargoes to the plasma membrane and trans-Golgi network is impaired, leading to their lysosomal turnover."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 4
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--binds-- TBC1D5:",
+  "protein_a": "LC3B",
+  "protein_b": "TBC1D5",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.012122Z",
+  "last_updated": "2025-11-24T10:45:54.012122Z"
+}

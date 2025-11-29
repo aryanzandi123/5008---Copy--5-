@@ -1,0 +1,94 @@
+{
+  "primary": "LC3B",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "Syntaxin 17 (STX17) is an autophagosomal SNARE protein that directly interacts with LC3B and is essential for the fusion of autophagosomes with lysosomes.",
+  "functions": [
+    {
+      "function": "Autophagosome-Lysosome Fusion",
+      "arrow": "activates",
+      "cellular_process": "Syntaxin 17 (STX17) is the key autophagosomal Q-SNARE protein that mediates the final step of autophagy. After an autophagosome closes, STX17 is recruited to its outer membrane. This recruitment is facilitated by a direct interaction with lipidated LC3B (and other Atg8 family proteins) via two LC3-Interacting Regions (LIRs) located within the SNARE domain of STX17.",
+      "effect_description": "The binding to LC3B anchors STX17 to the autophagosome, positioning it to mediate membrane fusion. Once anchored, STX17 assembles into a stable trans-SNARE complex with SNAP29 (a Qbc-SNARE also on the autophagosome) and VAMP8 (an R-SNARE on the lysosome). The formation of this four-helix bundle provides the energy to overcome the repulsive forces between the two membranes, driving their fusion and the formation of an autolysosome for cargo degradation.",
+      "biological_consequence": [
+        "Autophagosome closure → Cytosolic STX17 forms a complex with IRGM and LC3B → Recruitment of the STX17-LC3B-IRGM complex to the autophagosome outer membrane → STX17 is anchored via LIR motif binding to lipidated LC3B → STX17 forms a trans-SNARE complex with SNAP29 and lysosomal VAMP8 → Fusion of autophagosome and lysosome membranes → Formation of autolysosome and degradation of inner contents."
+      ],
+      "specific_effects": [
+        "Directly binds to LC3B and GABARAP via two LIR motifs (LIR1: 172-175, LIR2: 189-192).",
+        "Acts as the specific Qa-SNARE protein on the autophagosome required for fusion with lysosomes.",
+        "Its localization is restricted to mature, closed autophagosomes, preventing premature fusion events.",
+        "Forms a ternary SNARE complex with SNAP29 and VAMP8 to catalyze membrane fusion."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Mechanism of Stx17 recruitment to autophagosomes via IRGM and mammalian Atg8 proteins",
+          "journal": "The Journal of Cell Biology",
+          "year": 2018,
+          "relevant_quote": "Using GST pulldown experiments, we determined that Stx17 directly binds LC3B and GABARAP... We next examined the Stx17 sequence for the presence of potential LIR motifs and found two distinct candidates (LIR1(172–175) and LIR2(189–192)) within the SNARE region of Stx17...",
+          "pmid": "29420192"
+        },
+        {
+          "paper_title": "New insights regarding SNARE proteins in autophagosome-lysosome fusion",
+          "journal": "Autophagy",
+          "year": 2021,
+          "relevant_quote": "In the case of autophagosome-lysosome fusion, the Q-SNAREs, STX17 and SNAP29, preform the Qabc bundle on the autophagosome followed by its forming a complex with a lysosome-localized R-SNARE, such as VAMP8.",
+          "pmid": "32924745"
+        }
+      ],
+      "pmids": [
+        "29420192",
+        "32924745"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Syntaxin 17 (STX17) is the key autophagosomal Q-SNARE protein that mediates the final step of autophagy. After an autophagosome closes, STX17 is recruited to its outer membrane. This recruitment is facilitated by a direct interaction with lipidated LC3B (and other Atg8 family proteins) via two LC3-Interacting Regions (LIRs) located within the SNARE domain of STX17.",
+  "effect": "The binding to LC3B anchors STX17 to the autophagosome, positioning it to mediate membrane fusion. Once anchored, STX17 assembles into a stable trans-SNARE complex with SNAP29 (a Qbc-SNARE also on the autophagosome) and VAMP8 (an R-SNARE on the lysosome). The formation of this four-helix bundle provides the energy to overcome the repulsive forces between the two membranes, driving their fusion and the formation of an autolysosome for cargo degradation.",
+  "summary": "LC3B activates STX17 to modulate autophagosome-lysosome fusion, ultimately affecting formation of autolysosome and degradation of inner contents.",
+  "evidence": [
+    {
+      "paper_title": "Mechanism of Stx17 recruitment to autophagosomes via IRGM and mammalian Atg8 proteins",
+      "journal": "The Journal of Cell Biology",
+      "year": 2018,
+      "relevant_quote": "Using GST pulldown experiments, we determined that Stx17 directly binds LC3B and GABARAP... We next examined the Stx17 sequence for the presence of potential LIR motifs and found two distinct candidates (LIR1(172–175) and LIR2(189–192)) within the SNARE region of Stx17..."
+    },
+    {
+      "paper_title": "The autophagosomal SNARE syntaxin 17 binds to ATG8/LC3 proteins and promotes autophagosome-lysosome fusion",
+      "journal": "The EMBO Journal",
+      "year": 2015,
+      "relevant_quote": "STX17 is recruited to the outer membrane of completed autophagosomes and forms a SNARE complex with SNAP29 and the lysosomal SNARE VAMP8, to mediate autophagosome-lysosome fusion. Here, we show that STX17 directly interacts with ATG8 family proteins via a C-terminal LIR."
+    },
+    {
+      "paper_title": "New insights regarding SNARE proteins in autophagosome-lysosome fusion",
+      "journal": "Autophagy",
+      "year": 2021,
+      "relevant_quote": "In the case of autophagosome-lysosome fusion, the Q-SNAREs, STX17 and SNAP29, preform the Qabc bundle on the autophagosome followed by its forming a complex with a lysosome-localized R-SNARE, such as VAMP8."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B --binds--> STX17:",
+  "protein_a": "STX17",
+  "protein_b": "LC3B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.041437Z",
+  "last_updated": "2025-11-24T10:45:54.041437Z"
+}

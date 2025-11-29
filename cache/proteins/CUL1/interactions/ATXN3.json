@@ -1,0 +1,91 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "Validated as a potential nuclear interactor of ATXN3 using the proximity ligation assay (PLA).",
+  "functions": [
+    {
+      "function": "Protein Ubiquitination",
+      "arrow": "inhibits",
+      "cellular_process": "ATXN3 interacts with CUL1, a scaffold protein for the SCF E3 ubiquitin ligase complexes. ATXN3 functions as a deubiquitinase for substrates targeted by CUL1-containing ligases, such as the checkpoint kinase Chk1. By removing ubiquitin chains from Chk1, ATXN3 protects it from proteasomal degradation.",
+      "effect_description": "ATXN3 antagonizes the activity of the SCF (SKP1-CUL1-FBXO6) E3 ligase complex by deubiquitinating and stabilizing their common substrate, Chk1. This regulatory balance is crucial for maintaining genomic stability and managing the DNA damage response.",
+      "biological_consequence": [
+        "SCF(FBXO6) complex polyubiquitinates Chk1 → ATXN3 binds and deubiquitinates Chk1 → Chk1 is stabilized and protected from proteasomal degradation → Checkpoint signaling and DNA repair are promoted."
+      ],
+      "specific_effects": [
+        "The nuclear interaction between ATXN3 and CUL1 was validated by proximity ligation assay (PLA).",
+        "ATXN3 removes polyubiquitin chains from Chk1 that are added by both CUL1- and CUL4A-based E3 ligases.",
+        "ATXN3-mediated deubiquitination of Chk1 significantly prolongs its protein half-life."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ataxin-3 promotes genome integrity by stabilizing Chk1",
+          "journal": "Nucleic Acids Research",
+          "year": 2017,
+          "relevant_quote": "Here, we identified ATX3 as a novel deubiquitinase of Chk1. We have found that ATX3 exhibits dynamic interactions with Chk1 before/after prolonged replication stress, and that both the E3 ligase complexes SCF- and CDT-mediated polyubiquitin chains can be efficiently removed by ATX3 in vitro and in vivo. Consequently, ATX3 is essential for the maintenance of steady-state levels of Chk1, and ATX3-mediated deubiquitination of Chk1 significantly prolongs the half-life of Chk1, thus promoting checkpoint signaling and DNA repair upon genotoxic stress exposure.",
+          "pmid": "28180282"
+        }
+      ],
+      "pmids": [
+        "28180282"
+      ],
+      "interaction_effect": "inhibits",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "inhibition",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "inhibits",
+        "net_from": "ATXN3",
+        "net_arrow": "inhibits",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "inhibits",
+      "direct_arrow": "inhibits",
+      "net_effect": "inhibition",
+      "direct_effect": "inhibition"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The input claim that ATXN3 'inhibits' CUL1 is an oversimplification. ATXN3 does not inhibit the CUL1 protein itself, but rather counteracts the function of the SCF (SKP1-CUL1-F-box) E3 ubiquitin ligase complex by deubiquitinating a shared substrate, Chk1. This action reverses the effect of the SCF complex on the substrate, leading to its stabilization.",
+  "mechanism": "ATXN3 interacts with CUL1, a scaffold protein for the SCF E3 ubiquitin ligase complexes. ATXN3 functions as a deubiquitinase for substrates targeted by CUL1-containing ligases, such as the checkpoint kinase Chk1. By removing ubiquitin chains from Chk1, ATXN3 protects it from proteasomal degradation.",
+  "effect": "ATXN3 antagonizes the activity of the SCF (SKP1-CUL1-FBXO6) E3 ligase complex by deubiquitinating and stabilizing their common substrate, Chk1. This regulatory balance is crucial for maintaining genomic stability and managing the DNA damage response.",
+  "summary": "ATXN3 interacts with CUL1 to modulate protein ubiquitination, ultimately affecting checkpoint signaling and dna repair are promoted.",
+  "evidence": [
+    {
+      "paper_title": "Nuclear ATXN3 DUB physiological substrates: towards understanding their role in the context of Machado-Joseph Disease",
+      "journal": "FENS Forum 2022",
+      "year": 2022,
+      "relevant_quote": "Using the proximity ligation (PLA) assay, we have validated potential nuclear interactors of ATXN3, such as SRSF7, GR, CUL1 and FUS."
+    },
+    {
+      "paper_title": "Ataxin-3 promotes genome integrity by stabilizing Chk1",
+      "journal": "Nucleic Acids Research",
+      "year": 2017,
+      "relevant_quote": "Here, we identified ATX3 as a novel deubiquitinase of Chk1. We have found that ATX3 exhibits dynamic interactions with Chk1 before/after prolonged replication stress, and that both the E3 ligase complexes SCF- and CDT-mediated polyubiquitin chains can be efficiently removed by ATX3 in vitro and in vivo. Consequently, ATX3 is essential for the maintenance of steady-state levels of Chk1, and ATX3-mediated deubiquitination of Chk1 significantly prolongs the half-life of Chk1, thus promoting checkpoint signaling and DNA repair upon genotoxic stress exposure."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --binds--> CUL1:",
+  "protein_a": "CUL1",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.772038Z",
+  "last_updated": "2025-11-24T12:52:47.772038Z"
+}

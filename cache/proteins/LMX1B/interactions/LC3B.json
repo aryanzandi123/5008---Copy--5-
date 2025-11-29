@@ -1,0 +1,86 @@
+{
+  "primary": "LC3B",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "functions": [
+    {
+      "function": "Autophagy Gene Transcription",
+      "arrow": "activates",
+      "cellular_process": "LMX1B is a LIM homeodomain transcription factor that directly binds to the promoter regions of a network of core autophagy genes. In the nucleus, LMX1B physically interacts with deacetylated LC3B, which functions as a transcriptional cofactor.",
+      "effect_description": "The binding of nuclear LC3B to LMX1B potentiates LMX1B's transcriptional activity, leading to increased expression of key autophagy genes such as ULK1, ATG7, and OPTN. This interaction establishes a regulatory axis that enhances the cell's capacity for both basal and stress-induced autophagy, which is critical for cellular resilience, particularly in midbrain dopaminergic neurons.",
+      "biological_consequence": [
+        "Cellular stress or basal conditions → Nuclear LC3B is deacetylated (at Lys49, Lys51) by SIRT1 → Deacetylated LC3B binds to a LIR-like motif on the transcription factor LMX1B → LC3B acts as a transcriptional co-activator for LMX1B → LMX1B-LC3B complex binds to promoter elements of autophagy genes → Enhanced transcription of the autophagy gene network (e.g., ULK1, ATG7) → Increased autophagic flux and cellular stress protection."
+      ],
+      "specific_effects": [
+        "Nuclear LC3B acts as a direct cofactor for LMX1B-mediated transcription.",
+        "The interaction is dependent on deacetylated LC3B binding to a LIR-like motif in LMX1B.",
+        "Depletion of LMX1B reduces the expression of multiple autophagy-related genes and dampens autophagic flux."
+      ],
+      "evidence": [
+        {
+          "paper_title": "ATG8-dependent LMX1B-autophagy crosstalk shapes human midbrain dopaminergic neuronal resilience",
+          "journal": "Journal of Cell Biology",
+          "year": 2023,
+          "relevant_quote": "Significantly, we show that LMX1A and LMX1B stability is in part regulated by autophagy, and that these transcription factors bind to multiple ATG8 proteins. Binding is dependent on subcellular localization and nutrient status, with LMX1B interacting with LC3B in the nucleus under basal conditions... Crucially, ATG8 binding stimulates LMX1B-mediated transcription for efficient autophagy and cell stress protection...",
+          "pmid": "37014324"
+        },
+        {
+          "paper_title": "LC3B is a cofactor for LMX1B-mediated transcription of autophagy genes in dopaminergic neurons",
+          "journal": "Journal of Cell Biology",
+          "year": 2023,
+          "relevant_quote": "In this issue, Jiménez-Moreno et al. (2023. J. Cell Biol. https://doi.org/10.1083/jcb.201910133) report that nuclear LC3B binds to the LIM homeodomain transcription factor LMX1B and acts as a cofactor for LMX1B-mediated transcription of autophagy genes, providing stress protection and ensuring survival of midbrain dopaminergic neurons.",
+          "pmid": "37036692"
+        }
+      ],
+      "pmids": [
+        "37014324",
+        "37036692"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "LMX1B is a LIM homeodomain transcription factor that directly binds to the promoter regions of a network of core autophagy genes. In the nucleus, LMX1B physically interacts with deacetylated LC3B, which functions as a transcriptional cofactor.",
+  "effect": "The binding of nuclear LC3B to LMX1B potentiates LMX1B's transcriptional activity, leading to increased expression of key autophagy genes such as ULK1, ATG7, and OPTN. This interaction establishes a regulatory axis that enhances the cell's capacity for both basal and stress-induced autophagy, which is critical for cellular resilience, particularly in midbrain dopaminergic neurons.",
+  "summary": "LC3B activates LMX1B to modulate autophagy gene transcription, ultimately affecting increased autophagic flux and cellular stress protection.",
+  "evidence": [
+    {
+      "paper_title": "ATG8-dependent LMX1B-autophagy crosstalk shapes human midbrain dopaminergic neuronal resilience",
+      "journal": "Journal of Cell Biology",
+      "year": 2023,
+      "relevant_quote": "Significantly, we show that LMX1A and LMX1B stability is in part regulated by autophagy, and that these transcription factors bind to multiple ATG8 proteins. Binding is dependent on subcellular localization and nutrient status, with LMX1B interacting with LC3B in the nucleus under basal conditions... Crucially, ATG8 binding stimulates LMX1B-mediated transcription for efficient autophagy and cell stress protection..."
+    },
+    {
+      "paper_title": "LC3B is a cofactor for LMX1B-mediated transcription of autophagy genes in dopaminergic neurons",
+      "journal": "Journal of Cell Biology",
+      "year": 2023,
+      "relevant_quote": "In this issue, Jiménez-Moreno et al. (2023. J. Cell Biol. https://doi.org/10.1083/jcb.201910133) report that nuclear LC3B binds to the LIM homeodomain transcription factor LMX1B and acts as a cofactor for LMX1B-mediated transcription of autophagy genes, providing stress protection and ensuring survival of midbrain dopaminergic neurons."
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B --activates--> LMX1B:",
+  "protein_a": "LMX1B",
+  "protein_b": "LC3B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.079342Z",
+  "last_updated": "2025-11-24T10:45:54.079342Z"
+}

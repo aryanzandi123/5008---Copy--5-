@@ -1,0 +1,83 @@
+{
+  "primary": "TAX1BP1",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "TAX1BP1 is an autophagy receptor that directly binds to LC3B, confirmed by co-immunoprecipitation, and is involved in selective autophagy pathways.",
+  "functions": [
+    {
+      "function": "Selective Autophagy Cargo Recognition",
+      "arrow": "activates",
+      "cellular_process": "TAX1BP1 is a selective autophagy receptor that links ubiquitinated cargo to the autophagosome. It contains ubiquitin-binding domains and at least two LC3-interacting regions (LIRs) to bind LC3B and GABARAP family proteins.",
+      "effect_description": "By bridging cargo and the phagophore, TAX1BP1 facilitates the clearance of specific substrates, playing a key role in host defense against pathogens (xenophagy) and the removal of protein aggregates (aggrephagy).",
+      "biological_consequence": [
+        "Recognition of ubiquitinated bacteria/aggregates → Recruitment of phagophore via LC3B binding → Sequestration and lysosomal degradation of cargo"
+      ],
+      "specific_effects": [
+        "Mediates xenophagic clearance of bacteria like Salmonella and Mycobacterium tuberculosis.",
+        "Functions as an aggrephagy receptor, clearing cytotoxic protein aggregates.",
+        "Regulates innate immune signaling by targeting signaling components for autophagic degradation."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Multifaceted roles of TAX1BP1 in autophagy",
+          "year": 2019,
+          "pmid": "35470757"
+        },
+        {
+          "paper_title": "Recruitment of autophagy initiator TAX1BP1 advances aggrephagy from cargo collection to sequestration",
+          "year": 2024,
+          "pmid": "39448883"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "bidirectional",
+      "pmids": [
+        "35470757",
+        "39448883"
+      ],
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "bidirectional",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "TAX1BP1 is a selective autophagy receptor that links ubiquitinated cargo to the autophagosome. It contains ubiquitin-binding domains and at least two LC3-interacting regions (LIRs) to bind LC3B and GABARAP family proteins.",
+  "effect": "By bridging cargo and the phagophore, TAX1BP1 facilitates the clearance of specific substrates, playing a key role in host defense against pathogens (xenophagy) and the removal of protein aggregates (aggrephagy).",
+  "summary": "LC3B activates TAX1BP1 to modulate selective autophagy cargo recognition, ultimately affecting sequestration and lysosomal degradation of cargo.",
+  "evidence": [
+    {
+      "paper_title": "Multifaceted roles of TAX1BP1 in autophagy",
+      "year": 2019
+    },
+    {
+      "paper_title": "Recruitment of autophagy initiator TAX1BP1 advances aggrephagy from cargo collection to sequestration",
+      "year": 2024
+    }
+  ],
+  "interaction_effect": "binds",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 4
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--binds--> TAX1BP1:",
+  "protein_a": "LC3B",
+  "protein_b": "TAX1BP1",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.007915Z",
+  "last_updated": "2025-11-24T10:45:54.007915Z"
+}

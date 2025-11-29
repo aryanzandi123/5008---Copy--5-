@@ -1,0 +1,88 @@
+{
+  "primary": "PLEKHM1",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "PLEKHM1 (Pleckstrin homology and RUN domain containing M1) is an autophagy receptor that binds to LC3B via a LIR motif and facilitates autophagosome-lysosome fusion by interacting with the HOPS complex and Rab7.",
+  "functions": [
+    {
+      "function": "Autophagosome-Lysosome Fusion",
+      "arrow": "activates",
+      "cellular_process": "PLEKHM1 (Pleckstrin homology and RUN domain containing M1) is a multivalent adaptor protein that orchestrates the final step of autophagy: the fusion of autophagosomes with lysosomes. It functions as a molecular tether, physically bridging the two organelles to facilitate membrane fusion.",
+      "effect_description": "PLEKHM1 simultaneously binds to key components on both the autophagosome and the lysosome. It uses a conserved LC3-interacting region (LIR) motif to directly bind ATG8 family proteins (LC3s/GABARAPs) on the outer autophagosomal membrane. At the same time, it binds to the active, GTP-bound form of the small GTPase Rab7 on the lysosomal surface. This bridging action recruits the hexameric HOPS (Homotypic Fusion and Protein Sorting) tethering complex, which in turn promotes the assembly of the SNARE complex required for the fusion of the two membranes.",
+      "biological_consequence": [
+        "PLEKHM1 binds to LC3/GABARAP proteins on the autophagosome surface via its LIR motif → PLEKHM1 simultaneously binds to active Rab7-GTP on the lysosome surface → The PLEKHM1-Rab7 complex recruits the HOPS tethering complex to the contact site → The HOPS complex facilitates membrane tethering and promotes trans-SNARE complex assembly (e.g., STX17-SNAP29-VAMP8) → The autophagosome and lysosome membranes fuse, forming an autolysosome → Autophagic cargo is degraded by lysosomal hydrolases"
+      ],
+      "specific_effects": [
+        "Acts as a direct bridge linking LC3/GABARAP-positive autophagosomes to Rab7-positive lysosomes.",
+        "Recruits the HOPS tethering complex to the membrane contact site.",
+        "Essential for the completion of autophagic flux; its depletion leads to the accumulation of unfused autophagosomes.",
+        "Facilitates the clearance of protein aggregates in a manner dependent on its LIR motif."
+      ],
+      "evidence": [
+        {
+          "paper_title": "PLEKHM1 regulates autophagosome-lysosome fusion through HOPS complex and LC3/GABARAP proteins",
+          "journal": "Molecular Cell",
+          "year": 2015,
+          "relevant_quote": "Herein, we show that Pleckstrin homology domain containing protein family member 1 (PLEKHM1) directly interacts with HOPS complex and contains a LC3-interacting region (LIR) that mediates its binding to autophagosomal membranes... Moreover, genetic loss of PLEKHM1 impedes autophagy flux upon mTOR inhibition and PLEKHM1 regulates clearance of protein aggregates in an autophagy- and LIR-dependent manner. PLEKHM1 is thus a multivalent endocytic adaptor involved in the lysosome fusion events controlling selective and nonselective autophagy pathways.",
+          "pmid": "25498145"
+        },
+        {
+          "paper_title": "The Rab7 effector PLEKHM1 binds Arl8b to promote cargo traffic to lysosomes",
+          "journal": "Journal of Cell Biology",
+          "year": 2017,
+          "relevant_quote": "RILP and PLEKHM1 interact with and recruit the multisubunit tethering factor HOPS complex to Rab7-positive LE/autophagosome–lysosome contact sites... HOPS complex facilitates tethering of LEs/autophagosomes to lysosomes and binds with SNARE proteins to mediate membrane fusion.",
+          "pmid": "28325809"
+        }
+      ],
+      "pmids": [
+        "25498145",
+        "28325809"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "PLEKHM1 (Pleckstrin homology and RUN domain containing M1) is a multivalent adaptor protein that orchestrates the final step of autophagy: the fusion of autophagosomes with lysosomes. It functions as a molecular tether, physically bridging the two organelles to facilitate membrane fusion.",
+  "effect": "PLEKHM1 simultaneously binds to key components on both the autophagosome and the lysosome. It uses a conserved LC3-interacting region (LIR) motif to directly bind ATG8 family proteins (LC3s/GABARAPs) on the outer autophagosomal membrane. At the same time, it binds to the active, GTP-bound form of the small GTPase Rab7 on the lysosomal surface. This bridging action recruits the hexameric HOPS (Homotypic Fusion and Protein Sorting) tethering complex, which in turn promotes the assembly of the SNARE complex required for the fusion of the two membranes.",
+  "summary": "LC3B activates PLEKHM1 to modulate autophagosome-lysosome fusion, ultimately affecting autophagic cargo is degraded by lysosomal hydrolases.",
+  "evidence": [
+    {
+      "paper_title": "PLEKHM1 regulates autophagosome-lysosome fusion through HOPS complex and LC3/GABARAP proteins",
+      "journal": "Molecular Cell",
+      "year": 2015,
+      "relevant_quote": "Herein, we show that Pleckstrin homology domain containing protein family member 1 (PLEKHM1) directly interacts with HOPS complex and contains a LC3-interacting region (LIR) that mediates its binding to autophagosomal membranes... Moreover, genetic loss of PLEKHM1 impedes autophagy flux upon mTOR inhibition and PLEKHM1 regulates clearance of protein aggregates in an autophagy- and LIR-dependent manner. PLEKHM1 is thus a multivalent endocytic adaptor involved in the lysosome fusion events controlling selective and nonselective autophagy pathways."
+    },
+    {
+      "paper_title": "The Rab7 effector PLEKHM1 binds Arl8b to promote cargo traffic to lysosomes",
+      "journal": "Journal of Cell Biology",
+      "year": 2017,
+      "relevant_quote": "RILP and PLEKHM1 interact with and recruit the multisubunit tethering factor HOPS complex to Rab7-positive LE/autophagosome–lysosome contact sites... HOPS complex facilitates tethering of LEs/autophagosomes to lysosomes and binds with SNARE proteins to mediate membrane fusion."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--binds-- PLEKHM1:",
+  "protein_a": "LC3B",
+  "protein_b": "PLEKHM1",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.039166Z",
+  "last_updated": "2025-11-24T10:45:54.039166Z"
+}

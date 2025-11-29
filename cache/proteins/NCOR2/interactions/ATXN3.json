@@ -1,0 +1,111 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": "NCOR1",
+  "mediator_chain": [
+    "NCOR1"
+  ],
+  "depth": 2,
+  "support_summary": "ATXN3 indirectly influences NCOR2 (SMRT) by recruiting the NCOR1/HDAC3 transcriptional repressor complex, of which NCOR2 is a core homologous component.",
+  "functions": [
+    {
+      "function": "Transcriptional Repression",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 recruits a corepressor complex containing NCOR1, its homolog NCOR2 (SMRT), and HDAC3 to target gene promoters. NCOR1 and NCOR2 act as essential scaffolding proteins for the assembly and enzymatic activity of the HDAC3-containing repressor complex.",
+      "effect_description": "By recruiting the NCOR1/NCOR2/HDAC3 complex, ATXN3 facilitates histone deacetylation at specific gene loci, leading to chromatin condensation and the repression of gene transcription.",
+      "biological_consequence": [
+        "ATXN3 binds near target gene -> NCOR1/NCOR2/HDAC3 complex is recruited -> Histones are deacetylated -> Transcriptional repression"
+      ],
+      "specific_effects": [
+        "ATXN3's role in transcriptional repression involves recruiting the corepressor complex containing both NCOR1 and its homolog NCOR2/SMRT.",
+        "NCOR1 and NCOR2 are coregulators that bridge chromatin-modifying enzymes like HDAC3 to DNA-bound transcription factors.",
+        "The histone deacetylase activity of HDAC3 is dependent on its interaction with the deacetylase activation domain of either NCOR1 or NCOR2."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ataxin-3 represses transcription via chromatin binding, interaction with histone deacetylase 3, and histone deacetylation",
+          "year": 2006,
+          "pmid": "17079677"
+        },
+        {
+          "paper_title": "Emerging roles of the corepressors NCoR1 and SMRT in homeostasis",
+          "year": 2014,
+          "pmid": "23630073"
+        },
+        {
+          "paper_title": "Insights into the function of HDAC3 and NCoR1/NCoR2 co-repressor complex in metabolic diseases",
+          "year": 2023,
+          "pmid": "37674539"
+        }
+      ],
+      "_context": {
+        "type": "indirect",
+        "query_protein": "NCOR1",
+        "chain": [
+          "NCOR1"
+        ]
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "17079677",
+        "23630073",
+        "37674539"
+      ],
+      "direct_arrow": "activates",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "NCOR1",
+        "direct_arrow": "activates",
+        "net_from": "ATXN3",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "NCOR1"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "ATXN3 recruits a corepressor complex containing NCOR1, its homolog NCOR2 (SMRT), and HDAC3 to target gene promoters. NCOR1 and NCOR2 act as essential scaffolding proteins for the assembly and enzymatic activity of the HDAC3-containing repressor complex.",
+  "effect": "By recruiting the NCOR1/NCOR2/HDAC3 complex, ATXN3 facilitates histone deacetylation at specific gene loci, leading to chromatin condensation and the repression of gene transcription.",
+  "summary": "ATXN3 activates NCOR2 to modulate transcriptional repression.",
+  "evidence": [
+    {
+      "paper_title": "Ataxin-3 represses transcription via chromatin binding, interaction with histone deacetylase 3, and histone deacetylation",
+      "year": 2006
+    },
+    {
+      "paper_title": "Emerging roles of the corepressors NCoR1 and SMRT in homeostasis",
+      "year": 2014
+    },
+    {
+      "paper_title": "Insights into the function of HDAC3 and NCoR1/NCoR2 co-repressor complex in metabolic diseases",
+      "year": 2023
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "NCOR1 --activates--> NCOR2:",
+  "protein_a": "NCOR2",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T07:01:28.115354Z",
+  "last_updated": "2025-11-24T07:01:28.115354Z"
+}

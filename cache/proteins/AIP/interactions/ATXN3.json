@@ -1,0 +1,81 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": "STUB1",
+  "mediator_chain": [
+    "STUB1"
+  ],
+  "depth": 2,
+  "support_summary": "ATXN3 interacts with the E3 ligase CHIP (STUB1), which in turn mediates the ubiquitination of the co-chaperone AIP (AHR interacting protein), establishing an indirect functional link.",
+  "functions": [
+    {
+      "function": "Protein Ubiquitination via STUB1/CHIP",
+      "arrow": "inhibits",
+      "cellular_process": "ATXN3 forms a functional complex with the E3 ubiquitin ligase STUB1 (CHIP). Within this complex, ATXN3 acts as a deubiquitinase that can remove ubiquitin chains from STUB1 itself or trim ubiquitin chains from proteins targeted by STUB1. This activity modulates the ubiquitination cycle, influencing the fate of STUB1 substrates.",
+      "effect_description": "ATXN3's interaction with STUB1 controls the E3 ligase's activity. By deubiquitinating STUB1 or its substrates, ATXN3 can either prevent degradation or edit ubiquitin chain linkage, thereby regulating the protein quality control machinery. As AIP is a known co-chaperone and a potential substrate for the chaperone-associated E3 ligase STUB1, ATXN3 indirectly influences its stability and function, although direct regulation of AIP by this complex is inferred rather than explicitly demonstrated.",
+      "biological_consequence": [
+        "ATXN3 binds to the E3 ligase STUB1 (CHIP) → ATXN3 deubiquitinates STUB1 or trims ubiquitin chains on STUB1 substrates → The rate and extent of substrate ubiquitination by STUB1 are modulated → This influences the proteasomal degradation of STUB1 client proteins, which may include AIP."
+      ],
+      "specific_effects": [
+        "ATXN3's deubiquitinase activity limits the length of ubiquitin chains attached to CHIP substrates.",
+        "ATXN3 deubiquitinates CHIP itself, effectively terminating the ubiquitination reaction."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ube2w and ataxin-3 coordinately regulate the ubiquitin ligase CHIP",
+          "journal": "Molecular Cell",
+          "year": 2011,
+          "relevant_quote": "Through their opposing activities, the initiator E2, Ube2w, and the specialized deubiquitinating enzyme (DUB), ataxin-3, participate in initiating, regulating, and terminating the CHIP ubiquitination cycle. Monoubiquitination of CHIP by Ube2w stabilizes the interaction between CHIP and ataxin-3, which through its DUB activity limits the length of chains attached to CHIP substrates. Upon completion of substrate ubiquitination, ataxin-3 deubiquitinates CHIP, effectively terminating the reaction.",
+          "pmid": "21855799"
+        }
+      ],
+      "pmids": [
+        "21855799"
+      ],
+      "direct_arrow": "activates",
+      "interaction_effect": "inhibition",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "inhibition",
+      "arrow_context": {
+        "direct_from": "STUB1",
+        "direct_arrow": "activates",
+        "net_from": "ATXN3",
+        "net_arrow": "inhibits",
+        "mediator_chain": [
+          "STUB1"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "inhibits",
+      "net_effect": "inhibition",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The provided input correctly identifies an indirect link between ATXN3 and AIP mediated by the E3 ligase STUB1 (CHIP). However, the relationship is more nuanced than simple activation. ATXN3 and STUB1 form a regulatory pair where ATXN3 modulates STUB1's ubiquitination activity. ATXN3 deubiquitinates STUB1 itself and also trims ubiquitin chains on STUB1's substrates, thereby controlling the ubiquitination process. While STUB1 is known to ubiquitinate a wide range of chaperone client proteins, direct evidence specifically detailing the regulation of AIP ubiquitination by the ATXN3-STUB1 complex is not explicitly detailed in the primary literature found. The link remains plausible based on the established roles of each protein but is an extrapolation of their general functions.",
+  "mechanism": "ATXN3 forms a functional complex with the E3 ubiquitin ligase STUB1 (CHIP). Within this complex, ATXN3 acts as a deubiquitinase that can remove ubiquitin chains from STUB1 itself or trim ubiquitin chains from proteins targeted by STUB1. This activity modulates the ubiquitination cycle, influencing the fate of STUB1 substrates.",
+  "effect": "ATXN3's interaction with STUB1 controls the E3 ligase's activity. By deubiquitinating STUB1 or its substrates, ATXN3 can either prevent degradation or edit ubiquitin chain linkage, thereby regulating the protein quality control machinery. As AIP is a known co-chaperone and a potential substrate for the chaperone-associated E3 ligase STUB1, ATXN3 indirectly influences its stability and function, although direct regulation of AIP by this complex is inferred rather than explicitly demonstrated.",
+  "summary": "ATXN3 interacts with AIP to modulate regulation of protein ubiquitination via stub1/chip, ultimately affecting this influences the proteasomal degradation of stub1 client proteins, which may include aip.",
+  "evidence": [
+    {
+      "paper_title": "Ube2w and ataxin-3 coordinately regulate the ubiquitin ligase CHIP",
+      "journal": "Molecular Cell",
+      "year": 2011,
+      "relevant_quote": "Through their opposing activities, the initiator E2, Ube2w, and the specialized deubiquitinating enzyme (DUB), ataxin-3, participate in initiating, regulating, and terminating the CHIP ubiquitination cycle. Monoubiquitination of CHIP by Ube2w stabilizes the interaction between CHIP and ataxin-3, which through its DUB activity limits the length of chains attached to CHIP substrates. Upon completion of substrate ubiquitination, ataxin-3 deubiquitinates CHIP, effectively terminating the reaction."
+    }
+  ],
+  "arrow_notation": "STUB1 --binds--> AIP:",
+  "protein_a": "AIP",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.715910Z",
+  "last_updated": "2025-11-29T11:33:49.715910Z"
+}

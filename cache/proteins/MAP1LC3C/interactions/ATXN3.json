@@ -1,0 +1,66 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 interacts directly with LC3C, a member of the LC3/GABARAP family, during the early stages of autophagy, promoting the process.",
+  "functions": [
+    {
+      "function": "Autophagy",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 directly interacts with MAP1LC3C (LC3C), a key protein in autophagy, at the site of early autophagosomes. This interaction is mediated by two conserved LC3-interacting region (LIR) motifs located within the catalytic Josephin domain of ATXN3.",
+      "effect_description": "ATXN3 plays a regulatory role in the early stages of autophagy. Its interaction with LC3C promotes efficient autophagic flux, ensuring the effective degradation of cellular components. ATXN3 itself is not degraded during this process.",
+      "biological_consequence": [
+        "Autophagy induction (e.g., starvation) → ATXN3 localizes to early autophagosomes → ATXN3's LIR motifs bind directly to LC3C → Initiation of autophagosomes is regulated to prevent superfluous formation → Autophagic flux is promoted and made more efficient → Enhanced degradation of autophagosomal cargo"
+      ],
+      "specific_effects": [
+        "ATXN3 directly interacts with LC3C and GABARAP via two LIR domains in its Josephin domain.",
+        "Depletion of ATXN3 in human cells results in a reduction of autophagosomal protein degradation.",
+        "ATXN3 localizes to early autophagosomes but is not degraded by lysosomes, indicating a transient, regulatory role in the pathway."
+      ],
+      "evidence": [
+        {
+          "paper_title": "The Machado-Joseph disease deubiquitylase ataxin-3 interacts with LC3C/GABARAP and promotes autophagy",
+          "journal": "Aging Cell",
+          "year": 2019,
+          "relevant_quote": "We identified two conserved LIR domains in the catalytic Josephin domain of ATXN3 that directly interacted with the autophagy adaptors LC3C and GABARAP in vitro. While ATXN3 localized to early autophagosomes, it was not subject to lysosomal degradation, suggesting a transient regulatory interaction early in the autophagic pathway.",
+          "pmid": "31625269"
+        }
+      ],
+      "pmids": [
+        "31625269"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "ATXN3 directly interacts with MAP1LC3C (LC3C), a key protein in autophagy, at the site of early autophagosomes. This interaction is mediated by two conserved LC3-interacting region (LIR) motifs located within the catalytic Josephin domain of ATXN3.",
+  "effect": "ATXN3 plays a regulatory role in the early stages of autophagy. Its interaction with LC3C promotes efficient autophagic flux, ensuring the effective degradation of cellular components. ATXN3 itself is not degraded during this process.",
+  "summary": "ATXN3 activates MAP1LC3C to modulate autophagy promotion, ultimately affecting enhanced degradation of autophagosomal cargo.",
+  "evidence": [
+    {
+      "paper_title": "The Machado-Joseph disease deubiquitylase ataxin-3 interacts with LC3C/GABARAP and promotes autophagy",
+      "journal": "Aging Cell",
+      "year": 2019,
+      "relevant_quote": "We identified two conserved LIR domains in the catalytic Josephin domain of ATXN3 that directly interacted with the autophagy adaptors LC3C and GABARAP in vitro. While ATXN3 localized to early autophagosomes, it was not subject to lysosomal degradation, suggesting a transient regulatory interaction early in the autophagic pathway."
+    }
+  ],
+  "arrow_notation": "ATXN3 --activates--> MAP1LC3C:",
+  "protein_a": "MAP1LC3C",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.669615Z",
+  "last_updated": "2025-11-29T11:33:49.669615Z"
+}

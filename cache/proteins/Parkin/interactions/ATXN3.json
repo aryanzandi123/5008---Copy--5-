@@ -1,0 +1,86 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 directly interacts with and regulates the activity of the E3 ligase Parkin, which is involved in autophagy.",
+  "functions": [
+    {
+      "function": "Parkin Stability",
+      "arrow": "inhibits",
+      "cellular_process": "ATXN3 directly binds to the E3 ubiquitin ligase Parkin and acts as a deubiquitinase, counteracting Parkin's self-ubiquitination.",
+      "effect_description": "By removing ubiquitin chains from Parkin, ATXN3 regulates its stability and turnover. Pathogenic, polyQ-expanded ATXN3 is more active and promotes the clearance of Parkin through the autophagy pathway.",
+      "biological_consequence": [
+        "Deubiquitination of Parkin → Altered Parkin stability → Modulation of mitophagy and substrate ubiquitination",
+        "Enhanced deubiquitination by mutant ATXN3 → Increased Parkin degradation via autophagy → Potential contribution to Parkinsonism-like features in SCA3"
+      ],
+      "specific_effects": [
+        "ATXN3 deubiquitinates Parkin both in vitro and in cells.",
+        "The interaction is enhanced by Parkin self-ubiquitination.",
+        "Mutant ATXN3 is more efficient at cleaving K27- and K29-linked ubiquitin chains on Parkin."
+      ],
+      "evidence": [
+        {
+          "paper_title": "The Machado-Joseph disease-associated mutant form of ataxin-3 regulates parkin ubiquitination and stability",
+          "year": 2011,
+          "pmid": "20940148"
+        },
+        {
+          "paper_title": "Ataxin-3 deubiquitination is coupled to Parkin ubiquitination via E2 ubiquitin-conjugating enzyme",
+          "year": 2012,
+          "pmid": "22081612"
+        },
+        {
+          "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+          "year": 2024,
+          "pmid": "39320846"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "inhibits",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "20940148",
+        "22081612",
+        "39320846"
+      ]
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "mechanism": "ATXN3 directly binds to the E3 ubiquitin ligase Parkin and acts as a deubiquitinase, counteracting Parkin's self-ubiquitination.",
+  "effect": "By removing ubiquitin chains from Parkin, ATXN3 regulates its stability and turnover. Pathogenic, polyQ-expanded ATXN3 is more active and promotes the clearance of Parkin through the autophagy pathway.",
+  "summary": "ATXN3 inhibits Parkin to modulate parkin stability, ultimately affecting modulation of mitophagy and substrate ubiquitination.",
+  "evidence": [
+    {
+      "paper_title": "The Machado-Joseph disease-associated mutant form of ataxin-3 regulates parkin ubiquitination and stability",
+      "year": 2011
+    },
+    {
+      "paper_title": "Ataxin-3 deubiquitination is coupled to Parkin ubiquitination via E2 ubiquitin-conjugating enzyme",
+      "year": 2012
+    },
+    {
+      "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+      "year": 2024
+    }
+  ],
+  "arrow_notation": "ATXN3 --inhibits--> Parkin:",
+  "protein_a": "Parkin",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.762328Z",
+  "last_updated": "2025-11-24T12:52:47.762328Z"
+}

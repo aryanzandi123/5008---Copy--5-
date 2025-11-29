@@ -1,0 +1,100 @@
+{
+  "primary": "LC3B",
+  "interaction_type": "indirect",
+  "upstream_interactor": "ATG16L1",
+  "mediator_chain": [
+    "ATG16L1"
+  ],
+  "depth": 2,
+  "support_summary": "WIPI2 is a PI(3)P-binding protein that is essential for recruiting the ATG12-ATG5-ATG16L1 E3-like ligase complex to the phagophore, which in turn facilitates LC3B lipidation. Its interaction is mediated by the ATG16L1 complex.",
+  "functions": [
+    {
+      "function": "ATG16L1 Complex Recruitment",
+      "arrow": "activates",
+      "cellular_process": "WIPI2 is a key downstream effector of VPS34 activity. As a member of the PROPPIN family of β-propeller proteins, it contains a conserved motif that specifically binds to phosphatidylinositol 3-phosphate (PI(3)P). Following PI(3)P synthesis by the Beclin-1/VPS34 complex on the nascent phagophore, WIPI2 is recruited from the cytosol to the membrane, acting as a PI(3)P sensor.",
+      "effect_description": "Once localized to the phagophore membrane, WIPI2 serves as an essential scaffolding protein. It directly interacts with the ATG16L1 protein, a core component of the ATG12-ATG5-ATG16L1 E3-like ligase complex. This specific WIPI2-ATG16L1 interaction is the critical event that recruits the entire E3-like ligase machinery to the site of autophagosome formation, positioning it to catalyze the conjugation of LC3B to phosphatidylethanolamine (PE) on the membrane.",
+      "biological_consequence": [
+        "VPS34-mediated PI(3)P synthesis on phagophore → WIPI2 recruitment to the membrane via PI(3)P binding → Direct physical interaction between membrane-bound WIPI2 and ATG16L1 → Recruitment of the ATG12-ATG5-ATG16L1 E3-like ligase complex → Catalysis of LC3B lipidation (LC3B-I to LC3B-II conversion)."
+      ],
+      "specific_effects": [
+        "Acts as a PI(3)P-to-protein scaffold, translating the lipid signal into the recruitment of the core LC3B conjugation machinery.",
+        "The direct binding occurs between an alpha-helical region of ATG16L1 (the WIPI2 interacting region, W2IR) and a hydrophobic groove on the WIPI2 β-propeller structure."
+      ],
+      "evidence": [
+        {
+          "paper_title": "WIPI2 Links LC3 Conjugation with PI3P, Autophagosome Formation, and Pathogen Clearance by Recruiting Atg12–5-16L1",
+          "journal": "Molecular Cell",
+          "year": 2014,
+          "relevant_quote": "By identifying interacting partners of WIPIs, WD-repeat PtdIns(3)P effector proteins, we found that Atg16L1 directly binds WIPI2b. Mutation experiments and ectopic localization of WIPI2b to plasma membrane show that WIPI2b is a PtdIns(3)P effector upstream of Atg16L1 and is required for LC3 conjugation and starvation-induced autophagy through recruitment of the Atg12–5-16L1 complex.",
+          "pmid": "24954904"
+        },
+        {
+          "paper_title": "Structural basis for membrane recruitment of ATG16L1 by WIPI2 in autophagy",
+          "journal": "eLife",
+          "year": 2021,
+          "relevant_quote": "The two critical steps in autophagy initiation, PI 3-phosphorylation and LC3 lipidation, are connected to one another via a direct interaction between a subset of the PI(3)P-binding WIPI proteins and ATG16L1... The structure shows that the ATG16L1 W2IR adopts an alpha helical conformation and binds in an electropositive and hydrophobic groove between WIPI2 ß-propeller blades 2 and 3.",
+          "pmid": "34505572"
+        }
+      ],
+      "pmids": [
+        "24954904",
+        "34505572"
+      ],
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "ATG16L1",
+        "direct_arrow": "activates",
+        "net_from": "LC3B",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "ATG16L1"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "WIPI2 is a key downstream effector of VPS34 activity. As a member of the PROPPIN family of β-propeller proteins, it contains a conserved motif that specifically binds to phosphatidylinositol 3-phosphate (PI(3)P). Following PI(3)P synthesis by the Beclin-1/VPS34 complex on the nascent phagophore, WIPI2 is recruited from the cytosol to the membrane, acting as a PI(3)P sensor.",
+  "effect": "Once localized to the phagophore membrane, WIPI2 serves as an essential scaffolding protein. It directly interacts with the ATG16L1 protein, a core component of the ATG12-ATG5-ATG16L1 E3-like ligase complex. This specific WIPI2-ATG16L1 interaction is the critical event that recruits the entire E3-like ligase machinery to the site of autophagosome formation, positioning it to catalyze the conjugation of LC3B to phosphatidylethanolamine (PE) on the membrane.",
+  "summary": "LC3B activates WIPI2 to modulate atg16l1 complex recruitment, ultimately affecting catalysis of lc3b lipidation (lc3b-i to lc3b-ii conversion).",
+  "evidence": [
+    {
+      "paper_title": "WIPI2 Links LC3 Conjugation with PI3P, Autophagosome Formation, and Pathogen Clearance by Recruiting Atg12–5-16L1",
+      "journal": "Molecular Cell",
+      "year": 2014,
+      "relevant_quote": "By identifying interacting partners of WIPIs, WD-repeat PtdIns(3)P effector proteins, we found that Atg16L1 directly binds WIPI2b. Mutation experiments and ectopic localization of WIPI2b to plasma membrane show that WIPI2b is a PtdIns(3)P effector upstream of Atg16L1 and is required for LC3 conjugation and starvation-induced autophagy through recruitment of the Atg12–5-16L1 complex."
+    },
+    {
+      "paper_title": "Structural basis for membrane recruitment of ATG16L1 by WIPI2 in autophagy",
+      "journal": "eLife",
+      "year": 2021,
+      "relevant_quote": "The two critical steps in autophagy initiation, PI 3-phosphorylation and LC3 lipidation, are connected to one another via a direct interaction between a subset of the PI(3)P-binding WIPI proteins and ATG16L1... The structure shows that the ATG16L1 W2IR adopts an alpha helical conformation and binds in an electropositive and hydrophobic groove between WIPI2 ß-propeller blades 2 and 3."
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATG16L1 <--activates-- WIPI2:",
+  "protein_a": "WIPI2",
+  "protein_b": "LC3B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.052036Z",
+  "last_updated": "2025-11-24T10:45:54.052036Z"
+}

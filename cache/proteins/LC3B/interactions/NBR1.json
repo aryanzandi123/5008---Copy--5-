@@ -1,0 +1,88 @@
+{
+  "primary": "NBR1",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "Neighbor of BRCA1 gene 1 (NBR1) is an autophagy receptor that functions similarly to p62, using a LIR motif to bind LC3B and target ubiquitinated substrates for degradation.",
+  "functions": [
+    {
+      "function": "Selective Autophagy Cargo Recognition",
+      "arrow": "activates",
+      "cellular_process": "NBR1 (Neighbor of BRCA1 gene 1) is a key selective autophagy receptor that functions as a bridge between ubiquitinated cargo and the autophagic machinery. It utilizes a C-terminal ubiquitin-associated (UBA) domain to bind polyubiquitin chains on substrates like protein aggregates, and a LIR motif to directly engage with LC3B on the phagophore.",
+      "effect_description": "NBR1 facilitates the clearance of ubiquitinated substrates (aggrephagy) by tethering them to the forming autophagosome. Recent evidence reveals its LIR region is a multifunctional hub that not only binds ATG8-family proteins (like LC3B) but also directly recruits the upstream autophagy initiation factor FIP200 and the fellow receptor TAX1BP1. This establishes a cooperative mechanism where multiple receptors work together to ensure efficient cargo recognition and autophagosome formation.",
+      "biological_consequence": [
+        "Ubiquitinated protein aggregates form → NBR1 binds polyubiquitin chains via its UBA domain → The LIR motif of NBR1 binds to LC3B on the phagophore → The same LIR region recruits FIP200 and TAX1BP1 → This complex enhances local autophagosome initiation and cargo engulfment → Autophagosome maturation and fusion with the lysosome leads to degradation of the aggregates."
+      ],
+      "specific_effects": [
+        "Functions as a selective autophagy receptor for ubiquitinated cargo, including protein aggregates (aggrephagy) and peroxisomes (pexophagy).",
+        "Binds polyubiquitin chains via its C-terminal UBA domain.",
+        "Directly binds LC3B and other ATG8 family proteins through its LIR motif.",
+        "The LIR-containing region of NBR1 acts as a protein interaction hub that also binds the autophagy initiation protein FIP200 and the receptor TAX1BP1, promoting optimal autophagy flux."
+      ],
+      "evidence": [
+        {
+          "paper_title": "The LC3-interacting region of NBR1 is a protein interaction hub enabling optimal flux",
+          "journal": "Journal of Cell Biology",
+          "year": 2025,
+          "relevant_quote": "Here, we find that three critical NBR1 partners—ATG8-family proteins, FIP200, and TAX1BP1—each bind to distinct, overlapping determinants within a short linear interaction motif (SLiM). ... In vivo, LIR-mediated interactions with TAX1BP1 promote optimal NBR1 flux by leveraging additional functionalities from TAX1BP1. These findings reveal a one-to-many binding modality in the LIR motif of NBR1, illustrating the cooperative mechanisms of autophagy receptors and the regulatory potential of multifunctional SLiMs.",
+          "pmid": "38766171"
+        },
+        {
+          "paper_title": "NBR1: The archetypal selective autophagy receptor",
+          "journal": "Journal of Cell Biology",
+          "year": 2022,
+          "relevant_quote": "NBR1 (neighbor of BRCA1 gene 1) was discovered as a selective autophagy receptor due to its interaction with and similarity in domain organization to p62 and direct binding to ATG8 proteins and ubiquitin... The UBA domain binds to ubiquitin and ubiquitinated cargo, while the LIR binds to ATG8 family proteins.",
+          "pmid": "36255390"
+        }
+      ],
+      "pmids": [
+        "38766171",
+        "36255390"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "bidirectional",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "bidirectional",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "NBR1 (Neighbor of BRCA1 gene 1) is a key selective autophagy receptor that functions as a bridge between ubiquitinated cargo and the autophagic machinery. It utilizes a C-terminal ubiquitin-associated (UBA) domain to bind polyubiquitin chains on substrates like protein aggregates, and a LIR motif to directly engage with LC3B on the phagophore.",
+  "effect": "NBR1 facilitates the clearance of ubiquitinated substrates (aggrephagy) by tethering them to the forming autophagosome. Recent evidence reveals its LIR region is a multifunctional hub that not only binds ATG8-family proteins (like LC3B) but also directly recruits the upstream autophagy initiation factor FIP200 and the fellow receptor TAX1BP1. This establishes a cooperative mechanism where multiple receptors work together to ensure efficient cargo recognition and autophagosome formation.",
+  "summary": "LC3B activates NBR1 to modulate selective autophagy cargo recognition, ultimately affecting autophagosome maturation and fusion with the lysosome leads to degradation of the aggregates.",
+  "evidence": [
+    {
+      "paper_title": "The LC3-interacting region of NBR1 is a protein interaction hub enabling optimal flux",
+      "journal": "Journal of Cell Biology",
+      "year": 2025,
+      "relevant_quote": "Here, we find that three critical NBR1 partners—ATG8-family proteins, FIP200, and TAX1BP1—each bind to distinct, overlapping determinants within a short linear interaction motif (SLiM). ... In vivo, LIR-mediated interactions with TAX1BP1 promote optimal NBR1 flux by leveraging additional functionalities from TAX1BP1. These findings reveal a one-to-many binding modality in the LIR motif of NBR1, illustrating the cooperative mechanisms of autophagy receptors and the regulatory potential of multifunctional SLiMs."
+    },
+    {
+      "paper_title": "NBR1: The archetypal selective autophagy receptor",
+      "journal": "Journal of Cell Biology",
+      "year": 2022,
+      "relevant_quote": "NBR1 (neighbor of BRCA1 gene 1) was discovered as a selective autophagy receptor due to its interaction with and similarity in domain organization to p62 and direct binding to ATG8 proteins and ubiquitin... The UBA domain binds to ubiquitin and ubiquitinated cargo, while the LIR binds to ATG8 family proteins."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--binds--> NBR1:",
+  "protein_a": "LC3B",
+  "protein_b": "NBR1",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.022244Z",
+  "last_updated": "2025-11-24T10:45:54.022244Z"
+}

@@ -1,0 +1,73 @@
+{
+  "primary": "EPAS1",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 directly interacts with, deubiquitinates, and stabilizes HIF-2α (EPAS1), but not HIF-1α, to promote tumoral PD-L1 transcription under hypoxic conditions. The interaction was confirmed by co-immunoprecipitation in HEK293T and A549 cells.",
+  "functions": [
+    {
+      "function": "EPAS1 (HIF-2α) Protein Stability",
+      "arrow": "activates",
+      "cellular_process": "Under hypoxic conditions, the deubiquitinase ATXN3 directly interacts with the transcription factor EPAS1 (HIF-2α), but not the related HIF-1α. This interaction leads to the removal of ubiquitin chains from HIF-2α, protecting it from proteasomal degradation.",
+      "effect_description": "By preventing its ubiquitination-induced degradation, ATXN3 stabilizes the HIF-2α protein. This increases the intracellular levels of HIF-2α, enhancing its transcriptional activity and promoting the expression of hypoxia-response genes, such as the immune checkpoint protein PD-L1.",
+      "biological_consequence": [
+        "Hypoxia induces ATXN3 expression -> ATXN3 directly binds to EPAS1 (HIF-2α) -> ATXN3 deubiquitinates EPAS1 -> EPAS1 is shielded from proteasomal degradation -> Stabilized EPAS1 accumulates -> EPAS1 transcribes target genes -> PD-L1 (CD274) transcription is increased -> Tumor immune evasion is promoted"
+      ],
+      "specific_effects": [
+        "Selectively interacts with and deubiquitinates HIF-2α, but not HIF-1α.",
+        "Increases the protein half-life and stability of HIF-2α.",
+        "Promotes the transcription of the immune checkpoint protein PD-L1 in tumor cells under hypoxic conditions."
+      ],
+      "evidence": [
+        {
+          "paper_title": "CRISPR screening identifies the deubiquitylase ATXN3 as a PD-L1–positive regulator for tumor immune evasion",
+          "journal": "Journal of Clinical Investigation",
+          "year": 2023,
+          "relevant_quote": "Collectively, our results indicate that ATXN3 enhances hypoxia-induced PD-L1 expression through protecting HIF-2α from ubiquitination-induced protein degradation.",
+          "pmid": "38038129"
+        }
+      ],
+      "pmids": [
+        "38038129"
+      ],
+      "interaction_effect": "activation",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Under hypoxic conditions, the deubiquitinase ATXN3 directly interacts with the transcription factor EPAS1 (HIF-2α), but not the related HIF-1α. This interaction leads to the removal of ubiquitin chains from HIF-2α, protecting it from proteasomal degradation.",
+  "effect": "By preventing its ubiquitination-induced degradation, ATXN3 stabilizes the HIF-2α protein. This increases the intracellular levels of HIF-2α, enhancing its transcriptional activity and promoting the expression of hypoxia-response genes, such as the immune checkpoint protein PD-L1.",
+  "summary": "ATXN3 activates EPAS1 to modulate epas1 (hif-2α) protein stability.",
+  "evidence": [
+    {
+      "paper_title": "CRISPR screening identifies the deubiquitylase ATXN3 as a PD-L1–positive regulator for tumor immune evasion",
+      "journal": "Journal of Clinical Investigation",
+      "year": 2023,
+      "relevant_quote": "Collectively, our results indicate that ATXN3 enhances hypoxia-induced PD-L1 expression through protecting HIF-2α from ubiquitination-induced protein degradation."
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --activates--> EPAS1:",
+  "protein_a": "ATXN3",
+  "protein_b": "EPAS1",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T07:01:28.119329Z",
+  "last_updated": "2025-11-24T07:01:28.119329Z"
+}

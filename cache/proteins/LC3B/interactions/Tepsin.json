@@ -1,0 +1,74 @@
+{
+  "primary": "Tepsin",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "functions": [
+    {
+      "function": "ATG9A Trafficking",
+      "arrow": "activates",
+      "cellular_process": "Tepsin is an accessory protein of the Adaptor Protein 4 (AP-4) complex, which mediates vesicle formation at the trans-Golgi network (TGN). These vesicles transport critical cargo, including the transmembrane protein ATG9A, an essential lipid scramblase required for autophagosome biogenesis.",
+      "effect_description": "Tepsin directly binds to LC3B via a canonical LC3-Interacting Region (LIR) motif with the sequence WDEL. This interaction is crucial for the proper export and delivery of ATG9A-containing vesicles from the TGN to peripheral sites where autophagosomes are formed. Loss of the Tepsin-LC3B interaction leads to the mislocalization of ATG9A and altered autophagosome morphology.",
+      "biological_consequence": [
+        "Tepsin associates with AP-4 vesicles at the TGN → Tepsin binds directly to LC3B via its WDEL LIR motif → This interaction facilitates the export of ATG9A-positive vesicles from the TGN → ATG9A is delivered to peripheral sites → Proper autophagosome biogenesis is supported"
+      ],
+      "specific_effects": [
+        "Directly and selectively binds LC3B via a canonical LIR motif (WDEL).",
+        "Depletion of Tepsin dysregulates the export of ATG9A from the TGN and its subsequent distribution at the cell periphery.",
+        "Loss of the Tepsin-LC3B interaction, by mutating the LIR motif, prevents the rescue of ATG9A trafficking defects.",
+        "Loss of Tepsin results in an increase in autophagosome volume and number, though overall autophagic flux appears unaffected."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Tepsin binds LC3B to promote ATG9A trafficking and delivery",
+          "journal": "Molecular Biology of the Cell",
+          "year": 2024,
+          "relevant_quote": "Biochemical experiments using purified recombinant proteins indicate tepsin directly binds LC3B preferentially over other members of the mammalian ATG8 family... Loss of tepsin in cultured cells dysregulates ATG9A export from the TGN as well as ATG9A distribution at the cell periphery... Reintroducing tepsin with a mutated LIR motif or missing N-terminus drives diffuse ATG9A subcellular distribution.",
+          "pmid": "38381558"
+        }
+      ],
+      "pmids": [
+        "38381558"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    }
+  ],
+  "support_summary": "Tepsin is an accessory protein for AP-4 coated vesicles that directly binds to LC3B via a LIR motif. This interaction is crucial for regulating the trafficking of ATG9A, a key component for autophagosome biogenesis, from the trans-Golgi network (TGN).",
+  "arrow": "binds",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Tepsin is an accessory protein of the Adaptor Protein 4 (AP-4) complex, which mediates vesicle formation at the trans-Golgi network (TGN). These vesicles transport critical cargo, including the transmembrane protein ATG9A, an essential lipid scramblase required for autophagosome biogenesis.",
+  "effect": "Tepsin directly binds to LC3B via a canonical LC3-Interacting Region (LIR) motif with the sequence WDEL. This interaction is crucial for the proper export and delivery of ATG9A-containing vesicles from the TGN to peripheral sites where autophagosomes are formed. Loss of the Tepsin-LC3B interaction leads to the mislocalization of ATG9A and altered autophagosome morphology.",
+  "summary": "LC3B activates Tepsin to modulate atg9a trafficking, ultimately affecting proper autophagosome biogenesis is supported.",
+  "evidence": [
+    {
+      "paper_title": "Tepsin binds LC3B to promote ATG9A trafficking and delivery",
+      "journal": "Molecular Biology of the Cell",
+      "year": 2024,
+      "relevant_quote": "Biochemical experiments using purified recombinant proteins indicate tepsin directly binds LC3B preferentially over other members of the mammalian ATG8 family... Loss of tepsin in cultured cells dysregulates ATG9A export from the TGN as well as ATG9A distribution at the cell periphery... Reintroducing tepsin with a mutated LIR motif or missing N-terminus drives diffuse ATG9A subcellular distribution."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--binds-- Tepsin:",
+  "protein_a": "LC3B",
+  "protein_b": "Tepsin",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.073434Z",
+  "last_updated": "2025-11-24T10:45:54.073434Z"
+}

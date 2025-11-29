@@ -1,0 +1,103 @@
+{
+  "primary": "RUBCN",
+  "interaction_type": "indirect",
+  "upstream_interactor": "Beclin-1",
+  "mediator_chain": [
+    "Beclin-1"
+  ],
+  "depth": 2,
+  "functions": [
+    {
+      "function": "Inhibition of Autophagosome-Lysosome Fusion",
+      "arrow": "inhibits",
+      "cellular_process": "RUBCN (Rubicon) is a key negative regulator of the final stage of autophagy. It is a component of a specific Class III PI3K complex that includes Beclin-1 and UVRAG.",
+      "effect_description": "RUBCN inhibits autophagic flux by preventing the fusion of autophagosomes with lysosomes. It achieves this by being recruited to late endosomes/lysosomes through the GTPase Rab7 and subsequently inhibiting the function of the HOPS tethering complex. This prevents the assembly of the SNARE proteins (e.g., STX17 on the autophagosome and VAMP8 on the lysosome) required for membrane fusion, leading to an accumulation of sealed autophagosomes.",
+      "biological_consequence": [
+        "RUBCN is recruited to Rab7-positive late endosomes/lysosomes → RUBCN associates with the Beclin-1-UVRAG-PI3KC3 complex → The RUBCN-containing complex inhibits the tethering activity of the HOPS complex → HOPS fails to mediate the assembly of the trans-SNARE complex between the autophagosome and lysosome → Membrane fusion is blocked → Autophagic flux is suppressed."
+      ],
+      "specific_effects": [
+        "Acts as an endogenous inhibitor of the terminal step of autophagy.",
+        "Reduces the lipid kinase activity of the Vps34 complex.",
+        "Directly interacts with Rab7 to localize to late endosomes/lysosomes.",
+        "Inhibits the function of the HOPS tethering complex, preventing SNARE-mediated fusion."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Distinct regulation of autophagic activity by Atg14L and Rubicon associated with Beclin 1-phosphatidylinositol-3-kinase complex",
+          "journal": "Nature Cell Biology",
+          "year": 2009,
+          "relevant_quote": "Characterization of the new proteins revealed that Atg14L enhances Vps34 lipid kinase activity and upregulates autophagy, whereas Rubicon reduces Vps34 activity and downregulates autophagy... forced expression of Rubicon results in aberrant late endosomal/lysosomal structures and impaired autophagosome maturation.",
+          "pmid": "19270693"
+        },
+        {
+          "paper_title": "Two Beclin 1-binding proteins, Atg14L and Rubicon, reciprocally regulate autophagy at different stages",
+          "journal": "Nature Cell Biology",
+          "year": 2009,
+          "relevant_quote": "GFP-Rubicon was localized at the endosome/lysosome. Knockdown of Rubicon caused enhancement of autophagy, especially at the maturation step, as well as enhancement of endocytic trafficking.",
+          "pmid": "19270696"
+        }
+      ],
+      "pmids": [
+        "19270693",
+        "19270696"
+      ],
+      "direct_arrow": "activates",
+      "interaction_effect": "inhibits",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "inhibition",
+      "arrow_context": {
+        "direct_from": "Beclin-1",
+        "direct_arrow": "activates",
+        "net_from": "LC3B",
+        "net_arrow": "inhibits",
+        "mediator_chain": [
+          "Beclin-1"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "inhibits",
+      "net_effect": "inhibition",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "RUBCN (Rubicon) is a key negative regulator of the final stage of autophagy. It is a component of a specific Class III PI3K complex that includes Beclin-1 and UVRAG.",
+  "effect": "RUBCN inhibits autophagic flux by preventing the fusion of autophagosomes with lysosomes. It achieves this by being recruited to late endosomes/lysosomes through the GTPase Rab7 and subsequently inhibiting the function of the HOPS tethering complex. This prevents the assembly of the SNARE proteins (e.g., STX17 on the autophagosome and VAMP8 on the lysosome) required for membrane fusion, leading to an accumulation of sealed autophagosomes.",
+  "summary": "LC3B inhibits RUBCN to modulate inhibition of autophagosome-lysosome fusion, ultimately affecting autophagic flux is suppressed.",
+  "evidence": [
+    {
+      "paper_title": "Distinct regulation of autophagic activity by Atg14L and Rubicon associated with Beclin 1-phosphatidylinositol-3-kinase complex",
+      "journal": "Nature Cell Biology",
+      "year": 2009,
+      "relevant_quote": "Characterization of the new proteins revealed that Atg14L enhances Vps34 lipid kinase activity and upregulates autophagy, whereas Rubicon reduces Vps34 activity and downregulates autophagy... forced expression of Rubicon results in aberrant late endosomal/lysosomal structures and impaired autophagosome maturation."
+    },
+    {
+      "paper_title": "Two Beclin 1-binding proteins, Atg14L and Rubicon, reciprocally regulate autophagy at different stages",
+      "journal": "Nature Cell Biology",
+      "year": 2009,
+      "relevant_quote": "GFP-Rubicon was localized at the endosome/lysosome. Knockdown of Rubicon caused enhancement of autophagy, especially at the maturation step, as well as enhancement of endocytic trafficking."
+    }
+  ],
+  "interaction_effect": "inhibition",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "Beclin-1 --inhibits--> RUBCN:",
+  "protein_a": "LC3B",
+  "protein_b": "RUBCN",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.085236Z",
+  "last_updated": "2025-11-24T10:45:54.085236Z"
+}

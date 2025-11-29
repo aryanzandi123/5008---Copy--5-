@@ -1,0 +1,99 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 interacts with dynein, a motor protein essential for retrograde axonal transport and the movement of protein aggregates to the aggresome.",
+  "functions": [
+    {
+      "function": "Aggresome Formation",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 functions as a molecular adaptor that links polyubiquitinated misfolded proteins to the dynein motor protein complex. This interaction is crucial for the transport of protein aggregates along microtubules towards the microtubule-organizing center (MTOC).",
+      "effect_description": "By bridging polyubiquitinated cargo and the dynein motor, ATXN3 facilitates the retrograde transport of these substrates. This process concentrates the misfolded proteins into a single perinuclear inclusion body known as an aggresome, which is a key step in cellular protein quality control for subsequent clearance by autophagy.",
+      "biological_consequence": [
+        "ATXN3 binds polyubiquitinated protein aggregates via its Ubiquitin Interacting Motifs (UIMs) → ATXN3 associates with the Dynein motor complex → The entire complex undergoes retrograde transport along microtubules → Aggregates are centralized at the MTOC → Formation of a mature aggresome is promoted."
+      ],
+      "specific_effects": [
+        "Endogenous ATXN3 co-localizes with aggresomes and associates with dynein.",
+        "RNAi-mediated knockdown of ATXN3 significantly reduces the formation of aggresomes.",
+        "Both the deubiquitinating activity and the ubiquitin-interacting motifs (UIMs) of ATXN3 are required for its association with dynein and for aggresome formation."
+      ],
+      "evidence": [
+        {
+          "paper_title": "The polyglutamine neurodegenerative protein ataxin 3 regulates aggresome formation",
+          "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+          "year": 2005,
+          "relevant_quote": "Cellular studies show that endogenous AT3 colocalizes with aggresomes and preaggresome particles... and associates with histone deacetylase 6 and dynein, proteins required for aggresome formation and transport of misfolded protein. Small interfering RNA knockdown of AT3 greatly reduces aggresomes... These same mutations decrease the association of AT3 and dynein.",
+          "pmid": "15767577"
+        },
+        {
+          "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+          "journal": "Expert Reviews in Molecular Medicine",
+          "year": 2024,
+          "relevant_quote": "ATXN3 was furthermore proposed to act as an adaptor to link polyubiquitinated substrates to the dynein motor protein, thus facilitating the retrograde transportation of the substrates to the aggresomes... Supporting this hypothesis, depletion of ATXN3 leads to decreased aggresome formation.",
+          "pmid": "39320846"
+        }
+      ],
+      "pmids": [
+        "15767577",
+        "39320846"
+      ],
+      "interaction_effect": "activation",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATXN3",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "complex",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "ATXN3 functions as a molecular adaptor that links polyubiquitinated misfolded proteins to the dynein motor protein complex. This interaction is crucial for the transport of protein aggregates along microtubules towards the microtubule-organizing center (MTOC).",
+  "effect": "By bridging polyubiquitinated cargo and the dynein motor, ATXN3 facilitates the retrograde transport of these substrates. This process concentrates the misfolded proteins into a single perinuclear inclusion body known as an aggresome, which is a key step in cellular protein quality control for subsequent clearance by autophagy.",
+  "summary": "ATXN3 activates Dynein to modulate aggresome formation, ultimately affecting formation of a mature aggresome is promoted.",
+  "evidence": [
+    {
+      "paper_title": "The polyglutamine neurodegenerative protein ataxin 3 regulates aggresome formation",
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+      "year": 2005,
+      "relevant_quote": "Cellular studies show that endogenous AT3 colocalizes with aggresomes and preaggresome particles... and associates with histone deacetylase 6 and dynein, proteins required for aggresome formation and transport of misfolded protein. Small interfering RNA knockdown of AT3 greatly reduces aggresomes... These same mutations decrease the association of AT3 and dynein."
+    },
+    {
+      "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+      "journal": "Expert Reviews in Molecular Medicine",
+      "year": 2024,
+      "relevant_quote": "ATXN3 was furthermore proposed to act as an adaptor to link polyubiquitinated substrates to the dynein motor protein, thus facilitating the retrograde transportation of the substrates to the aggresomes... Supporting this hypothesis, depletion of ATXN3 leads to decreased aggresome formation."
+    }
+  ],
+  "interaction_effect": "complex formation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --complex--> Dynein:",
+  "protein_a": "Dynein",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.800839Z",
+  "last_updated": "2025-11-24T12:52:47.800839Z"
+}

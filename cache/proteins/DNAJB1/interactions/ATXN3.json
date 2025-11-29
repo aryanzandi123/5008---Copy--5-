@@ -1,0 +1,72 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "The co-chaperone DNAJB1 (also known as HSP40) is recruited to protein aggregates formed by mutant ATXN3, indicating a direct interaction.",
+  "functions": [
+    {
+      "function": "Misfolded Protein Recognition & Clearance",
+      "arrow": "activates",
+      "cellular_process": "As a J-domain containing co-chaperone (HSP40), DNAJB1 recognizes and binds to misfolded proteins, including polyQ-expanded ATXN3 aggregates. It then recruits Hsp70-family chaperones (like HSPA8) to facilitate either protein refolding or degradation.",
+      "effect_description": "The recruitment of DNAJB1 to mutant ATXN3 aggregates is a critical step in the cellular stress response, attempting to clear toxic protein species and mitigate proteotoxicity.",
+      "biological_consequence": [
+        "Recognition of Misfolded ATXN3 → Recruitment of Hsp70 → Protein Refolding or Degradation → Reduction of Proteotoxic Stress"
+      ],
+      "specific_effects": [
+        "DNAJB1 is recruited to mutant ATXN3 aggregates",
+        "Other J-domain proteins (e.g., DNAJC8) can suppress polyQ aggregation"
+      ],
+      "evidence": [
+        {
+          "paper_title": "A novel nuclear DnaJ protein, DNAJC8, can suppress the formation of spinocerebellar ataxia 3 polyglutamine aggregation in a J-domain independent manner",
+          "year": 2013,
+          "pmid": "27133716"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": "DNAJB1",
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "primary_to_main",
+      "pmids": [
+        "27133716"
+      ],
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "As a J-domain containing co-chaperone (HSP40), DNAJB1 recognizes and binds to misfolded proteins, including polyQ-expanded ATXN3 aggregates. It then recruits Hsp70-family chaperones (like HSPA8) to facilitate either protein refolding or degradation.",
+  "effect": "The recruitment of DNAJB1 to mutant ATXN3 aggregates is a critical step in the cellular stress response, attempting to clear toxic protein species and mitigate proteotoxicity.",
+  "summary": "ATXN3 activates DNAJB1 to modulate misfolded protein recognition & clearance, ultimately affecting reduction of proteotoxic stress.",
+  "evidence": [
+    {
+      "paper_title": "A novel nuclear DnaJ protein, DNAJC8, can suppress the formation of spinocerebellar ataxia 3 polyglutamine aggregation in a J-domain independent manner",
+      "year": 2013
+    }
+  ],
+  "interaction_effect": "binds",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 4
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 <--binds-- DNAJB1:",
+  "protein_a": "DNAJB1",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T02:27:04.770754Z",
+  "last_updated": "2025-11-24T02:27:04.770754Z"
+}

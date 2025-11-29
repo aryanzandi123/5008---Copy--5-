@@ -1,0 +1,94 @@
+{
+  "primary": "LC3B",
+  "interaction_type": "indirect",
+  "upstream_interactor": "Beclin-1",
+  "mediator_chain": [
+    "Beclin-1"
+  ],
+  "depth": 2,
+  "support_summary": "VPS34 (also known as PIK3C3) is the catalytic subunit of the Class III PI3K complex that generates PI(3)P, a critical step for the recruitment of the autophagy machinery that leads to LC3B lipidation. It is part of the Beclin-1 complex, acting upstream of LC3B.",
+  "functions": [
+    {
+      "function": "Phagophore Nucleation via PI(3)P Synthesis",
+      "arrow": "activates",
+      "cellular_process": "VPS34, also known as PIK3C3, is the catalytic subunit of the Class III phosphatidylinositol 3-kinase (PI3KC3) complex essential for autophagy. In the context of autophagy initiation, VPS34 forms 'Complex I' along with its regulatory partners Beclin-1, VPS15, and the autophagy-specific subunit ATG14L. This complex is activated at the phagophore nucleation site (e.g., the ER) following upstream signaling events like the release of the complex mediated by AMBRA1.",
+      "effect_description": "The primary function of the activated VPS34 is to phosphorylate phosphatidylinositol (PtdIns) to generate phosphatidylinositol 3-phosphate (PI(3)P) on the phagophore membrane. This localized enrichment of PI(3)P acts as a crucial docking site for proteins containing PI(3)P-binding domains (like FYVE or PX domains), most notably the WIPI family of proteins (e.g., WIPI2). The recruitment of these effectors is the foundational step that links upstream signaling to the assembly of the LC3B conjugation machinery.",
+      "biological_consequence": [
+        "Activation of Beclin-1/VPS34 complex at the ER → VPS34-catalyzed phosphorylation of PtdIns to PI(3)P → PI(3)P accumulation on the phagophore membrane → Recruitment of PI(3)P-binding proteins (e.g., WIPI2) → Recruitment of the ATG12-ATG5-ATG16L1 E3-like ligase complex → LC3B lipidation."
+      ],
+      "specific_effects": [
+        "Functions as the sole catalytic enzyme responsible for producing the PI(3)P required for canonical autophagy initiation.",
+        "Its activity is spatially and temporally regulated by its incorporation into distinct protein complexes; Complex I (with ATG14L) is specific for autophagy, while Complex II (with UVRAG) is involved in endocytic trafficking."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Activation Mechanisms of the VPS34 Complexes",
+          "journal": "International Journal of Molecular Sciences",
+          "year": 2021,
+          "relevant_quote": "PtdIns(3)P is synthesized from phosphatidylinositol (PtdIns) by PIK3C3C/VPS34 in mammals or Vps34 in yeast. Pathway-specific VPS34/Vps34 activity is the consequence of the enzyme being incorporated into two mutually exclusive complexes: complex I for autophagy, composed of VPS34/Vps34–Vps15/Vps15-Beclin 1/Vps30-ATG14L/Atg14 (mammals/yeast), and complex II for endocytic pathways...",
+          "pmid": "34831348"
+        }
+      ],
+      "pmids": [
+        "34831348"
+      ],
+      "direct_arrow": "activates",
+      "interaction_effect": "activation",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "Beclin-1",
+        "direct_arrow": "activates",
+        "net_from": "LC3B",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "Beclin-1"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "VPS34, also known as PIK3C3, is the catalytic subunit of the Class III phosphatidylinositol 3-kinase (PI3KC3) complex essential for autophagy. In the context of autophagy initiation, VPS34 forms 'Complex I' along with its regulatory partners Beclin-1, VPS15, and the autophagy-specific subunit ATG14L. This complex is activated at the phagophore nucleation site (e.g., the ER) following upstream signaling events like the release of the complex mediated by AMBRA1.",
+  "effect": "The primary function of the activated VPS34 is to phosphorylate phosphatidylinositol (PtdIns) to generate phosphatidylinositol 3-phosphate (PI(3)P) on the phagophore membrane. This localized enrichment of PI(3)P acts as a crucial docking site for proteins containing PI(3)P-binding domains (like FYVE or PX domains), most notably the WIPI family of proteins (e.g., WIPI2). The recruitment of these effectors is the foundational step that links upstream signaling to the assembly of the LC3B conjugation machinery.",
+  "summary": "LC3B activates VPS34 to modulate phagophore nucleation via pi(3)p synthesis, ultimately affecting lc3b lipidation.",
+  "evidence": [
+    {
+      "paper_title": "Activation Mechanisms of the VPS34 Complexes",
+      "journal": "International Journal of Molecular Sciences",
+      "year": 2021,
+      "relevant_quote": "PtdIns(3)P is synthesized from phosphatidylinositol (PtdIns) by PIK3C3C/VPS34 in mammals or Vps34 in yeast. Pathway-specific VPS34/Vps34 activity is the consequence of the enzyme being incorporated into two mutually exclusive complexes: complex I for autophagy, composed of VPS34/Vps34–Vps15/Vps15-Beclin 1/Vps30-ATG14L/Atg14 (mammals/yeast), and complex II for endocytic pathways..."
+    },
+    {
+      "paper_title": "The type III phosphatidylinositol-3 kinase Vps34 is required for targeting of the Atg1/ULK1 complex to the preautophagosomal structure",
+      "journal": "The Journal of Cell Biology",
+      "year": 2008,
+      "relevant_quote": "Complexes containing Vps34 have important functions in endocytosis and endosome processing, and in the initiation and lysosomal fusion steps in the autophagy pathway."
+    }
+  ],
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "Beclin-1 <--regulates-- VPS34:",
+  "protein_a": "VPS34",
+  "protein_b": "LC3B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.050205Z",
+  "last_updated": "2025-11-24T10:45:54.050205Z"
+}

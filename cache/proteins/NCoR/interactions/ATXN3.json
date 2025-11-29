@@ -1,0 +1,72 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 directly interacts with the nuclear co-repressor NCoR to regulate transcription.",
+  "functions": [
+    {
+      "function": "Transcriptional Repression",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 directly interacts with the Nuclear Receptor Corepressor (NCoR) and Histone Deacetylase 3 (HDAC3), acting as a scaffold to assemble a functional transcriptional repressor complex. ATXN3 is crucial for recruiting this entire complex to target gene promoters.",
+      "effect_description": "By bringing the NCoR/HDAC3 complex to specific DNA regions, ATXN3 facilitates the deacetylation of histones by HDAC3, which leads to chromatin compaction and the silencing of gene expression. This role is a core component of ATXN3's function in transcriptional regulation.",
+      "biological_consequence": [
+        "ATXN3 forms a complex with NCoR and HDAC3 → ATXN3 directs the complex to specific gene promoters → HDAC3-mediated histone deacetylation is initiated → Chromatin condenses, preventing transcription factor binding → Target gene transcription is repressed."
+      ],
+      "specific_effects": [
+        "The interaction between ATXN3, NCoR, and HDAC3 is physiological and occurs in human brain tissue.",
+        "PolyQ-expanded ATXN3 loses the ability to form functional deacetylating repressor complexes with NCoR and HDAC3 on target chromatin, leading to a loss of transcriptional repression."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ataxin-3 represses transcription via chromatin binding, interaction with histone deacetylase 3, and histone deacetylation",
+          "journal": "The Journal of Neuroscience",
+          "year": 2006,
+          "relevant_quote": "Both normal and expanded AT3 physiologically interacted with HDAC3 and NCoR in a SCA3 cell model and human pons tissue; however, normal AT3-containing protein complexes showed increased histone deacetylase activity, whereas expanded AT3-containing complexes had reduced deacetylase activity.",
+          "pmid": "17079677"
+        }
+      ],
+      "pmids": [
+        "17079677"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "complex",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "ATXN3 directly interacts with the Nuclear Receptor Corepressor (NCoR) and Histone Deacetylase 3 (HDAC3), acting as a scaffold to assemble a functional transcriptional repressor complex. ATXN3 is crucial for recruiting this entire complex to target gene promoters.",
+  "effect": "By bringing the NCoR/HDAC3 complex to specific DNA regions, ATXN3 facilitates the deacetylation of histones by HDAC3, which leads to chromatin compaction and the silencing of gene expression. This role is a core component of ATXN3's function in transcriptional regulation.",
+  "summary": "ATXN3 activates NCoR to modulate transcriptional repression, ultimately affecting target gene transcription is repressed.",
+  "evidence": [
+    {
+      "paper_title": "Ataxin-3 represses transcription via chromatin binding, interaction with histone deacetylase 3, and histone deacetylation",
+      "journal": "The Journal of Neuroscience",
+      "year": 2006,
+      "relevant_quote": "Both normal and expanded AT3 physiologically interacted with HDAC3 and NCoR in a SCA3 cell model and human pons tissue; however, normal AT3-containing protein complexes showed increased histone deacetylase activity, whereas expanded AT3-containing complexes had reduced deacetylase activity."
+    }
+  ],
+  "interaction_effect": "complex",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --complex--> NCoR:",
+  "protein_a": "NCoR",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.768838Z",
+  "last_updated": "2025-11-24T12:52:47.768838Z"
+}

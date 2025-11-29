@@ -1,0 +1,87 @@
+{
+  "primary": "LC3B",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "FYCO1 is an autophagosome trafficking protein that directly binds to LC3B through a LIR motif, facilitating the movement of autophagosomes along microtubules. This interaction is supported by structural and binding studies.",
+  "functions": [
+    {
+      "function": "Autophagosome Trafficking",
+      "arrow": "activates",
+      "cellular_process": "FYCO1 is a motor adaptor protein that links mature autophagosomes to the microtubule network for transport. It achieves this by simultaneously binding to three components: LC3B on the autophagosome outer membrane via its LIR motif, the small GTPase Rab7, and phosphatidylinositol 3-phosphate (PI3P) via its FYVE domain.",
+      "effect_description": "This multi-component binding ensures FYCO1 is specifically recruited to autophagosomes. FYCO1 then connects the autophagosome to kinesin motor proteins, facilitating its movement along microtubules towards the plus-end. This transport is critical for moving autophagosomes from the cell periphery to the perinuclear region, where lysosomes are concentrated, thereby promoting efficient autophagosome-lysosome fusion.",
+      "biological_consequence": [
+        "FYCO1 is recruited to the autophagosome membrane via interactions with LC3B, Rab7, and PI3P → FYCO1 links the autophagosome to a kinesin motor protein → The complex moves along microtubules towards the cell center (plus-end directed transport) → Perinuclear accumulation of autophagosomes → Increased probability of fusion with lysosomes."
+      ],
+      "specific_effects": [
+        "Mediates plus-end-directed transport of autophagosomes along microtubules.",
+        "Promotes the spatial positioning of autophagosomes for efficient fusion with lysosomes.",
+        "The interaction can be regulated by phosphorylation of LC3B at Threonine 50 (T50), which decreases binding to FYCO1 and modulates the directional transport."
+      ],
+      "evidence": [
+        {
+          "paper_title": "FYCO1 is a Rab7 effector that binds to LC3 and PI3P to mediate microtubule plus end–directed vesicle transport",
+          "journal": "The Journal of Cell Biology",
+          "year": 2010,
+          "relevant_quote": "In this study, we have identified an adaptor protein complex, formed by the two autophagic membrane-associated proteins LC3 and Rab7 and the novel FYVE and coiled-coil (CC) domain–containing protein FYCO1, that promotes microtubule (MT) plus end–directed transport of autophagic vesicles.",
+          "pmid": "20100911"
+        },
+        {
+          "paper_title": "FYCO1 Contains a C-terminally Extended, LC3A/B-preferring LC3-interacting Region (LIR) Motif Required for Efficient Maturation of Autophagosomes during Basal Autophagy",
+          "journal": "The Journal of Biological Chemistry",
+          "year": 2015,
+          "relevant_quote": "FYCO1 (FYVE and coiled-coil protein 1) is a transport adaptor that binds to phosphatidylinositol 3-phosphate, to Rab7, and to LC3 (microtubule-associated protein 1 light chain 3) to mediate transport of late endosomes and autophagosomes along microtubules in the plus end direction.",
+          "pmid": "26468287"
+        }
+      ],
+      "pmids": [
+        "20100911",
+        "26468287"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "FYCO1 is a motor adaptor protein that links mature autophagosomes to the microtubule network for transport. It achieves this by simultaneously binding to three components: LC3B on the autophagosome outer membrane via its LIR motif, the small GTPase Rab7, and phosphatidylinositol 3-phosphate (PI3P) via its FYVE domain.",
+  "effect": "This multi-component binding ensures FYCO1 is specifically recruited to autophagosomes. FYCO1 then connects the autophagosome to kinesin motor proteins, facilitating its movement along microtubules towards the plus-end. This transport is critical for moving autophagosomes from the cell periphery to the perinuclear region, where lysosomes are concentrated, thereby promoting efficient autophagosome-lysosome fusion.",
+  "summary": "LC3B activates FYCO1 to modulate autophagosome trafficking, ultimately affecting increased probability of fusion with lysosomes.",
+  "evidence": [
+    {
+      "paper_title": "FYCO1 is a Rab7 effector that binds to LC3 and PI3P to mediate microtubule plus end–directed vesicle transport",
+      "journal": "The Journal of Cell Biology",
+      "year": 2010,
+      "relevant_quote": "In this study, we have identified an adaptor protein complex, formed by the two autophagic membrane-associated proteins LC3 and Rab7 and the novel FYVE and coiled-coil (CC) domain–containing protein FYCO1, that promotes microtubule (MT) plus end–directed transport of autophagic vesicles."
+    },
+    {
+      "paper_title": "FYCO1 Contains a C-terminally Extended, LC3A/B-preferring LC3-interacting Region (LIR) Motif Required for Efficient Maturation of Autophagosomes during Basal Autophagy",
+      "journal": "The Journal of Biological Chemistry",
+      "year": 2015,
+      "relevant_quote": "FYCO1 (FYVE and coiled-coil protein 1) is a transport adaptor that binds to phosphatidylinositol 3-phosphate, to Rab7, and to LC3 (microtubule-associated protein 1 light chain 3) to mediate transport of late endosomes and autophagosomes along microtubules in the plus end direction."
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B --activates--> FYCO1:",
+  "protein_a": "FYCO1",
+  "protein_b": "LC3B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.001668Z",
+  "last_updated": "2025-11-24T10:45:54.001668Z"
+}

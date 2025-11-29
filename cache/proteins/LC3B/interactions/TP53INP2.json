@@ -1,0 +1,102 @@
+{
+  "primary": "TP53INP2",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "TP53INP2 (Tumor protein p53 inducible nuclear protein 2), also known as DOR, is an autophagy receptor that directly binds to LC3B via a LIR motif to mediate selective autophagy.",
+  "functions": [
+    {
+      "function": "Autophagosome Biogenesis",
+      "arrow": "activates",
+      "cellular_process": "TP53INP2 (Tumor protein p53 inducible nuclear protein 2), also known as DOR, plays a dual role in initiating autophagy. It first acts as a chaperone to transport deacetylated nuclear LC3B to the cytoplasm. In the cytoplasm, it then functions as a crucial scaffold to facilitate LC3B lipidation.",
+      "effect_description": "Upon autophagy induction, TP53INP2 binds to deacetylated LC3B in the nucleus and mediates its export to the cytoplasm. Once in the cytoplasm, TP53INP2, while still bound to LC3B via its LIR motif, directly interacts with the E1-like enzyme ATG7. This creates a ternary complex that acts as a scaffold, bringing LC3B into close proximity with ATG7, thereby enhancing the efficiency of the first step of LC3B conjugation, which is essential for its subsequent lipidation and incorporation into the growing autophagosome membrane.",
+      "biological_consequence": [
+        "Autophagy signal → SIRT1 deacetylates nuclear LC3B → TP53INP2 binds deacetylated LC3B → Nuclear export of the LC3B-TP53INP2 complex → Cytoplasmic complex localizes to early autophagic membranes → TP53INP2 directly binds ATG7 → Formation of a ternary LC3B-TP53INP2-ATG7 complex → Enhanced LC3B-ATG7 interaction → Efficient LC3B activation and subsequent lipidation (conjugation to PE)."
+      ],
+      "specific_effects": [
+        "Functions as a chaperone for the nuclear-to-cytoplasmic transport of deacetylated LC3B.",
+        "Acts as a scaffold by directly interacting with both LC3B (via a LIR motif) and ATG7.",
+        "The scaffolding function significantly promotes the interaction between LC3B and ATG7, enhancing the efficiency of LC3B lipidation.",
+        "Loss of the TP53INP2-LC3 or TP53INP2-ATG7 interaction significantly impairs LC3B-ATG7 binding and autophagosome formation."
+      ],
+      "evidence": [
+        {
+          "paper_title": "TP53INP2 contributes to autophagosome formation by promoting LC3-ATG7 interaction",
+          "journal": "Autophagy",
+          "year": 2019,
+          "relevant_quote": "TP53INP2 interacted directly with ATG7 to form a LC3B-TP53INP2-ATG7 complex in the cytoplasm. Loss of TP53INP2-LC3 or TP53INP2-ATG7 interaction significantly reduced LC3B-ATG7 binding. Together, these results suggest that after shifting from the nucleus, cytoplasmic TP53INP2 is targeted to early autophagic membranes accompanied by LC3, where it contributes to autophagosome biogenesis by mediating LC3-ATG7 interaction.",
+          "pmid": "30767704"
+        },
+        {
+          "paper_title": "TP53INP2/DOR protein chaperones deacetylated nuclear LC3 to the cytoplasm to promote macroautophagy",
+          "journal": "Autophagy",
+          "year": 2015,
+          "relevant_quote": "Upon nutrient deprivation, deacetylation of nuclear LC3 by the deacetylase SIRT1 promotes its association with the nuclear factor TP53INP2/DOR, resulting in the redistribution of nuclear LC3 to the cytoplasm. LC3 is then able to interact with ATG7, a step required for LC3 lipidation and subsequent autophagosome biogenesis.",
+          "pmid": "26213321"
+        },
+        {
+          "paper_title": "Structural and functional characterization of the role of acetylation on the interactions of the human Atg8-family proteins with the autophagy receptor TP53INP2/DOR",
+          "journal": "The Journal of Biological Chemistry",
+          "year": 2020,
+          "relevant_quote": "To exit the nucleus, deacetylated LC3B must bind TP53INP2/DOR (tumor protein p53 inducible nuclear protein 2) through interaction with the LC3-interacting region (LIR) of TP53INP2 (TP53INP2LIR).",
+          "pmid": "38726830"
+        }
+      ],
+      "pmids": [
+        "30767704",
+        "26213321",
+        "38726830"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "complex",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "TP53INP2 (Tumor protein p53 inducible nuclear protein 2), also known as DOR, plays a dual role in initiating autophagy. It first acts as a chaperone to transport deacetylated nuclear LC3B to the cytoplasm. In the cytoplasm, it then functions as a crucial scaffold to facilitate LC3B lipidation.",
+  "effect": "Upon autophagy induction, TP53INP2 binds to deacetylated LC3B in the nucleus and mediates its export to the cytoplasm. Once in the cytoplasm, TP53INP2, while still bound to LC3B via its LIR motif, directly interacts with the E1-like enzyme ATG7. This creates a ternary complex that acts as a scaffold, bringing LC3B into close proximity with ATG7, thereby enhancing the efficiency of the first step of LC3B conjugation, which is essential for its subsequent lipidation and incorporation into the growing autophagosome membrane.",
+  "summary": "LC3B activates TP53INP2 to modulate autophagosome biogenesis, ultimately affecting efficient lc3b activation and subsequent lipidation (conjugation to pe).",
+  "evidence": [
+    {
+      "paper_title": "TP53INP2 contributes to autophagosome formation by promoting LC3-ATG7 interaction",
+      "journal": "Autophagy",
+      "year": 2019,
+      "relevant_quote": "TP53INP2 interacted directly with ATG7 to form a LC3B-TP53INP2-ATG7 complex in the cytoplasm. Loss of TP53INP2-LC3 or TP53INP2-ATG7 interaction significantly reduced LC3B-ATG7 binding. Together, these results suggest that after shifting from the nucleus, cytoplasmic TP53INP2 is targeted to early autophagic membranes accompanied by LC3, where it contributes to autophagosome biogenesis by mediating LC3-ATG7 interaction."
+    },
+    {
+      "paper_title": "TP53INP2/DOR protein chaperones deacetylated nuclear LC3 to the cytoplasm to promote macroautophagy",
+      "journal": "Autophagy",
+      "year": 2015,
+      "relevant_quote": "Upon nutrient deprivation, deacetylation of nuclear LC3 by the deacetylase SIRT1 promotes its association with the nuclear factor TP53INP2/DOR, resulting in the redistribution of nuclear LC3 to the cytoplasm. LC3 is then able to interact with ATG7, a step required for LC3 lipidation and subsequent autophagosome biogenesis."
+    },
+    {
+      "paper_title": "Structural and functional characterization of the role of acetylation on the interactions of the human Atg8-family proteins with the autophagy receptor TP53INP2/DOR",
+      "journal": "The Journal of Biological Chemistry",
+      "year": 2020,
+      "relevant_quote": "To exit the nucleus, deacetylated LC3B must bind TP53INP2/DOR (tumor protein p53 inducible nuclear protein 2) through interaction with the LC3-interacting region (LIR) of TP53INP2 (TP53INP2LIR)."
+    }
+  ],
+  "interaction_effect": "complex formation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--complex-- TP53INP2:",
+  "protein_a": "LC3B",
+  "protein_b": "TP53INP2",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.033975Z",
+  "last_updated": "2025-11-24T10:45:54.033975Z"
+}

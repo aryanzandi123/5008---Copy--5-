@@ -1,0 +1,87 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 interacts with the transcriptional co-activator p300 to regulate gene expression.",
+  "functions": [
+    {
+      "function": "Histone Acetyltransferase (HAT) Activity",
+      "arrow": "inhibits",
+      "cellular_process": "ATXN3, a protein implicated in transcriptional regulation, directly interacts with the transcriptional co-activator p300, which possesses intrinsic histone acetyltransferase (HAT) activity.",
+      "effect_description": "ATXN3 functions as a transcriptional co-repressor by inhibiting the HAT activity of p300. The N-terminal Josephin domain of ATXN3 is responsible for inhibiting histone acetylation, while the C-terminal region is required for binding to p300. This inhibition prevents the acetylation of histones at target gene promoters, leading to a more condensed chromatin state and transcriptional repression.",
+      "biological_consequence": [
+        "ATXN3 binds to p300 via its C-terminal domain → The N-terminal Josephin domain of ATXN3 inhibits the histone acetyltransferase (HAT) activity of p300 → Decreased acetylation of histones at specific gene promoters → Chromatin condensation → Transcriptional repression of target genes."
+      ],
+      "specific_effects": [
+        "The C-terminal polyglutamine-containing domain of ATXN3 is required for binding to p300.",
+        "The N-terminal domain of ATXN3 inhibits histone acetylation by p300 in vitro.",
+        "ATXN3's interaction with p300 is one of several mechanisms by which it acts as a transcriptional co-repressor."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ataxin-3 is a histone-binding protein with two independent transcriptional corepressor activities",
+          "journal": "The Journal of Biological Chemistry",
+          "year": 2002,
+          "relevant_quote": "In the present study we use cell transfections, in vitro binding, co-immunoprecipitations, and reporter assays to show that the polyglutamine disease protein, ataxin-3, interacts with the major histone acetyltransferases cAMP-response-element binding protein (CREB)-binding protein, p300, and p300/CREB-binding protein-associated factor and inhibits transcription by these coactivators... The N-terminal domain of ataxin-3 inhibits histone acetylation by p300 in vitro and inhibits transcription in vivo.",
+          "pmid": "12297501"
+        },
+        {
+          "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+          "journal": "Expert Reviews in Molecular Medicine",
+          "year": 2024,
+          "relevant_quote": "The C-terminal domain of ATXN3 binds CBP, p300 and PCAF coactivators and represses their transcriptional activity.",
+          "pmid": "39320846"
+        }
+      ],
+      "pmids": [
+        "12297501",
+        "39320846"
+      ],
+      "interaction_effect": "inhibition",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "inhibition"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "ATXN3, a protein implicated in transcriptional regulation, directly interacts with the transcriptional co-activator p300, which possesses intrinsic histone acetyltransferase (HAT) activity.",
+  "effect": "ATXN3 functions as a transcriptional co-repressor by inhibiting the HAT activity of p300. The N-terminal Josephin domain of ATXN3 is responsible for inhibiting histone acetylation, while the C-terminal region is required for binding to p300. This inhibition prevents the acetylation of histones at target gene promoters, leading to a more condensed chromatin state and transcriptional repression.",
+  "summary": "ATXN3 inhibits p300 to modulate histone acetyltransferase (hat) activity, ultimately affecting transcriptional repression of target genes.",
+  "evidence": [
+    {
+      "paper_title": "Ataxin-3 is a histone-binding protein with two independent transcriptional corepressor activities",
+      "journal": "The Journal of Biological Chemistry",
+      "year": 2002,
+      "relevant_quote": "In the present study we use cell transfections, in vitro binding, co-immunoprecipitations, and reporter assays to show that the polyglutamine disease protein, ataxin-3, interacts with the major histone acetyltransferases cAMP-response-element binding protein (CREB)-binding protein, p300, and p300/CREB-binding protein-associated factor and inhibits transcription by these coactivators... The N-terminal domain of ataxin-3 inhibits histone acetylation by p300 in vitro and inhibits transcription in vivo."
+    },
+    {
+      "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+      "journal": "Expert Reviews in Molecular Medicine",
+      "year": 2024,
+      "relevant_quote": "The C-terminal domain of ATXN3 binds CBP, p300 and PCAF coactivators and represses their transcriptional activity."
+    }
+  ],
+  "interaction_effect": "inhibition",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --inhibits--> p300:",
+  "protein_a": "p300",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.785022Z",
+  "last_updated": "2025-11-24T12:52:47.785022Z"
+}

@@ -1,0 +1,103 @@
+{
+  "primary": "FUNDC1",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "FUNDC1 is a mitophagy receptor whose LIR motif-mediated interaction with LC3B is regulated by phosphorylation, allowing for the removal of damaged mitochondria under hypoxic conditions.",
+  "functions": [
+    {
+      "function": "Hypoxia-Induced Mitophagy",
+      "arrow": "activates",
+      "cellular_process": "FUNDC1 is an outer mitochondrial membrane receptor that mediates mitophagy in response to hypoxia. It contains a canonical LIR motif (Y18EVL21) that directly binds to LC3B, linking the mitochondrion to the autophagosome for degradation. The interaction is tightly regulated by a phosphorylation/dephosphorylation switch.",
+      "effect_description": "Under normoxic conditions, the FUNDC1-LC3B interaction is inhibited by phosphorylation at two key sites: Tyr18 (by SRC kinase) and Ser13 (by CK2). Phosphorylation at Tyr18 creates electrostatic repulsion with LC3B, while phosphorylation at Ser13 also obstructs binding. During hypoxia, these inhibitory phosphorylations are removed by phosphatases, such as PGAM5, which unmasks the LIR motif. Concurrently, ULK1 can phosphorylate Ser17, which enhances the binding affinity for LC3B, robustly activating mitophagy.",
+      "biological_consequence": [
+        "Normoxia → SRC kinase phosphorylates FUNDC1 at Tyr18 and CK2 phosphorylates Ser13 → FUNDC1-LC3B interaction is inhibited → Basal mitophagy is suppressed.",
+        "Hypoxia → SRC/CK2 activity decreases and PGAM5 phosphatase is activated → Dephosphorylation of FUNDC1 at pY18 and pS13 → ULK1 is activated and phosphorylates FUNDC1 at Ser17 → LIR motif is exposed and affinity for LC3B is increased → Mitochondria are targeted for autophagic degradation."
+      ],
+      "specific_effects": [
+        "Phosphorylation of Tyr18 within the LIR motif serves as a molecular switch to inhibit mitophagy by causing electrostatic repulsion with Asp19 of LC3.",
+        "Phosphorylation of Ser13 by CK2 under normoxia inhibits the FUNDC1-LC3B interaction.",
+        "Dephosphorylation of Ser13 by the phosphatase PGAM5 is a key step in activating mitophagy under hypoxia.",
+        "Phosphorylation of Ser17 by ULK1 enhances the binding affinity between FUNDC1 and LC3B, promoting mitophagy."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Structural basis for the phosphorylation of FUNDC1 LIR as a molecular switch of mitophagy",
+          "journal": "Autophagy",
+          "year": 2016,
+          "relevant_quote": "Under normal conditions, the LIR motif of FUNDC1 is phosphorylated at Ser13 by CSNK2/CK2 kinase and at Tyr18 by SRC kinase, which inhibits its interaction with LC3 and prevents mitophagy. In contrast, hypoxia induces dephosphorylation of FUNDC1, which can then bind to LC3 and induce mitophagy.",
+          "pmid": "27653272"
+        },
+        {
+          "paper_title": "Structural insights into the recognition of phosphorylated FUNDC1 by LC3B in mitophagy",
+          "journal": "Protein & Cell",
+          "year": 2016,
+          "relevant_quote": "Intriguingly, the side chain of LC3B Lys49 shifts remarkably and forms a hydrogen bond and electrostatic interaction with the phosphate group of FUNDC1 pS17. Alternatively, phosphorylated Tyr18 (pY18) and Ser13 (pS13) in FUNDC1 significantly obstruct their interaction with the hydrophobic pocket and Arg10 of LC3B, respectively.",
+          "pmid": "27757847"
+        },
+        {
+          "paper_title": "ULK1 translocates to mitochondria and phosphorylates FUNDC1 to regulate mitophagy",
+          "journal": "The EMBO Journal",
+          "year": 2014,
+          "relevant_quote": "At mitochondria, ULK1 interacts with FUNDC1, phosphorylating it at serine 17, which enhances FUNDC1 binding to LC3. A ULK1-binding-deficient mutant of FUNDC1 prevents ULK1 translocation to mitochondria and inhibits mitophagy.",
+          "pmid": "24671035"
+        }
+      ],
+      "pmids": [
+        "27653272",
+        "27757847",
+        "24671035"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "FUNDC1 is an outer mitochondrial membrane receptor that mediates mitophagy in response to hypoxia. It contains a canonical LIR motif (Y18EVL21) that directly binds to LC3B, linking the mitochondrion to the autophagosome for degradation. The interaction is tightly regulated by a phosphorylation/dephosphorylation switch.",
+  "effect": "Under normoxic conditions, the FUNDC1-LC3B interaction is inhibited by phosphorylation at two key sites: Tyr18 (by SRC kinase) and Ser13 (by CK2). Phosphorylation at Tyr18 creates electrostatic repulsion with LC3B, while phosphorylation at Ser13 also obstructs binding. During hypoxia, these inhibitory phosphorylations are removed by phosphatases, such as PGAM5, which unmasks the LIR motif. Concurrently, ULK1 can phosphorylate Ser17, which enhances the binding affinity for LC3B, robustly activating mitophagy.",
+  "summary": "LC3B activates FUNDC1 to modulate hypoxia-induced mitophagy, ultimately affecting basal mitophagy is suppressed.",
+  "evidence": [
+    {
+      "paper_title": "Structural basis for the phosphorylation of FUNDC1 LIR as a molecular switch of mitophagy",
+      "journal": "Autophagy",
+      "year": 2016,
+      "relevant_quote": "Under normal conditions, the LIR motif of FUNDC1 is phosphorylated at Ser13 by CSNK2/CK2 kinase and at Tyr18 by SRC kinase, which inhibits its interaction with LC3 and prevents mitophagy. In contrast, hypoxia induces dephosphorylation of FUNDC1, which can then bind to LC3 and induce mitophagy."
+    },
+    {
+      "paper_title": "Structural insights into the recognition of phosphorylated FUNDC1 by LC3B in mitophagy",
+      "journal": "Protein & Cell",
+      "year": 2016,
+      "relevant_quote": "Intriguingly, the side chain of LC3B Lys49 shifts remarkably and forms a hydrogen bond and electrostatic interaction with the phosphate group of FUNDC1 pS17. Alternatively, phosphorylated Tyr18 (pY18) and Ser13 (pS13) in FUNDC1 significantly obstruct their interaction with the hydrophobic pocket and Arg10 of LC3B, respectively."
+    },
+    {
+      "paper_title": "ULK1 translocates to mitochondria and phosphorylates FUNDC1 to regulate mitophagy",
+      "journal": "The EMBO Journal",
+      "year": 2014,
+      "relevant_quote": "At mitochondria, ULK1 interacts with FUNDC1, phosphorylating it at serine 17, which enhances FUNDC1 binding to LC3. A ULK1-binding-deficient mutant of FUNDC1 prevents ULK1 translocation to mitochondria and inhibits mitophagy."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--binds-- FUNDC1:",
+  "protein_a": "LC3B",
+  "protein_b": "FUNDC1",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.020401Z",
+  "last_updated": "2025-11-24T10:45:54.020401Z"
+}

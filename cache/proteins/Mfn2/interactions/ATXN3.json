@@ -1,0 +1,110 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": "Parkin",
+  "mediator_chain": [
+    "Parkin"
+  ],
+  "depth": 2,
+  "support_summary": "ATXN3's regulation of Parkin affects mitochondrial dynamics, as Parkin can ubiquitinate Mitofusin-2 (MFN2), and loss of ATXN3 function can decrease MFN2 expression.",
+  "functions": [
+    {
+      "function": "Mitophagy",
+      "arrow": "inhibits",
+      "cellular_process": "ATXN3 modulates the activity of the E3 ligase Parkin. Following mitochondrial damage, the PINK1/Parkin pathway is activated, leading to Parkin-mediated ubiquitination of outer mitochondrial membrane proteins, including Mitofusin-2 (MFN2).",
+      "effect_description": "Through its regulation of Parkin, ATXN3 indirectly controls the ubiquitination and degradation of MFN2. The removal of MFN2 from damaged mitochondria prevents them from fusing back into the mitochondrial network, which facilitates their selective engulfment by autophagosomes.",
+      "biological_consequence": [
+        "ATXN3 regulates Parkin activity → Parkin ubiquitinates MFN2 on damaged mitochondria → Proteasomal degradation of MFN2 → Inhibition of mitochondrial fusion → Isolation and subsequent degradation of dysfunctional mitochondria"
+      ],
+      "specific_effects": [
+        "Parkin induces the ubiquitination of MFN2, leading to its degradation via the proteasome.",
+        "PINK1 can phosphorylate MFN2, turning it into a receptor for Parkin recruitment to damaged mitochondria.",
+        "Loss of Parkin activity leads to an accumulation of MFN2, which impairs mitophagy."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Proteasome and p97 mediate mitophagy and degradation of mitofusins induced by Parkin",
+          "year": 2010,
+          "pmid": "21173115"
+        },
+        {
+          "paper_title": "PINK1-parkin-dependent mitophagy involves ubiquitination of mitofusins 1 and 2: Implications for Parkinson disease pathogenesis",
+          "year": 2011,
+          "pmid": "21139416"
+        },
+        {
+          "paper_title": "Mfn2 ubiquitination by PINK1/parkin gates the p97-dependent release of ER from mitochondria to drive mitophagy",
+          "year": 2018,
+          "pmid": "29676259"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "inhibits",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "21173115",
+        "21139416",
+        "29676259"
+      ],
+      "direct_arrow": "activates",
+      "function_effect": "inhibition",
+      "arrow_context": {
+        "direct_from": "Parkin",
+        "direct_arrow": "activates",
+        "net_from": "ATXN3",
+        "net_arrow": "inhibits",
+        "mediator_chain": [
+          "Parkin"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "inhibits",
+      "net_effect": "inhibition",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "_validation_status": "rejected",
+  "mechanism": "ATXN3 modulates the activity of the E3 ligase Parkin. Following mitochondrial damage, the PINK1/Parkin pathway is activated, leading to Parkin-mediated ubiquitination of outer mitochondrial membrane proteins, including Mitofusin-2 (MFN2).",
+  "effect": "Through its regulation of Parkin, ATXN3 indirectly controls the ubiquitination and degradation of MFN2. The removal of MFN2 from damaged mitochondria prevents them from fusing back into the mitochondrial network, which facilitates their selective engulfment by autophagosomes.",
+  "summary": "ATXN3 activates MFN2 to modulate mitophagy, ultimately affecting isolation and subsequent degradation of dysfunctional mitochondria.",
+  "evidence": [
+    {
+      "paper_title": "Proteasome and p97 mediate mitophagy and degradation of mitofusins induced by Parkin",
+      "year": 2010
+    },
+    {
+      "paper_title": "PINK1-parkin-dependent mitophagy involves ubiquitination of mitofusins 1 and 2: Implications for Parkinson disease pathogenesis",
+      "year": 2011
+    },
+    {
+      "paper_title": "Mfn2 ubiquitination by PINK1/parkin gates the p97-dependent release of ER from mitochondria to drive mitophagy",
+      "year": 2018
+    }
+  ],
+  "interaction_effect": "regulates",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "Parkin --regulates--> MFN2:",
+  "protein_a": "MFN2",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.799266Z",
+  "last_updated": "2025-11-24T12:52:47.799266Z"
+}

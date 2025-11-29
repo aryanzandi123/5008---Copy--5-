@@ -1,0 +1,66 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 directly interacts with Heat Shock Factor 1 (HSF1), deubiquitinating it and thereby regulating the cellular heat shock response.",
+  "functions": [
+    {
+      "function": "Heat Shock Response",
+      "arrow": "activates",
+      "cellular_process": "Ataxin-3 (ATXN3) positively regulates the heat shock response by modulating the stability of Heat Shock Factor 1 (HSF1), the master transcriptional regulator of this pathway. Evidence suggests that ATXN3, a deubiquitinase, protects HSF1 from proteasomal degradation.",
+      "effect_description": "By increasing the stability and basal levels of HSF1 protein, ATXN3 enhances the cell's capacity to mount a robust transcriptional response to proteotoxic stress, leading to the increased expression of heat shock proteins (HSPs) like Hsp70.",
+      "biological_consequence": [
+        "Proteotoxic Stress → ATXN3 prevents ubiquitination-dependent turnover of HSF1 → HSF1 protein is stabilized → Higher cellular levels of HSF1 are available for stress-induced activation (trimerization and phosphorylation) → Activated HSF1 translocates to the nucleus → Increased transcription of HSP genes (e.g., Hsp70) → Enhanced protein folding and degradation capacity → Cellular protection"
+      ],
+      "specific_effects": [
+        "ATXN3 increases the protein half-life of HSF1.",
+        "The absence of ATXN3 results in decreased basal and stress-induced levels of HSF1 protein.",
+        "ATXN3 knockout cells show reduced induction of Hsp70 promoter activity following heat shock stress."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Basal and stress-induced Hsp70 are modulated by ataxin-3",
+          "journal": "Cell Stress and Chaperones",
+          "year": 2012,
+          "relevant_quote": "Heat shock factor-1 had decreased levels and increased turnover in ataxin-3 KO fibroblasts. Data in this study are consistent with ataxin-3 regulating basal level of hsp70 as well as modulating hsp70 in response to a subset of cellular stresses... Altered turnover and a more rapid accumulation of Hsf1 in KO cells treated with a proteasome inhibitor are consistent with Atxn3 regulating Hsf1 protein through the ubiquitin proteasome pathway.",
+          "pmid": "22777893"
+        }
+      ],
+      "pmids": [
+        "22777893"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Ataxin-3 (ATXN3) positively regulates the heat shock response by modulating the stability of Heat Shock Factor 1 (HSF1), the master transcriptional regulator of this pathway. Evidence suggests that ATXN3, a deubiquitinase, protects HSF1 from proteasomal degradation.",
+  "effect": "By increasing the stability and basal levels of HSF1 protein, ATXN3 enhances the cell's capacity to mount a robust transcriptional response to proteotoxic stress, leading to the increased expression of heat shock proteins (HSPs) like Hsp70.",
+  "summary": "ATXN3 activates HSF1 to modulate heat shock response, ultimately affecting cellular protection.",
+  "evidence": [
+    {
+      "paper_title": "Basal and stress-induced Hsp70 are modulated by ataxin-3",
+      "journal": "Cell Stress and Chaperones",
+      "year": 2012,
+      "relevant_quote": "Heat shock factor-1 had decreased levels and increased turnover in ataxin-3 KO fibroblasts. Data in this study are consistent with ataxin-3 regulating basal level of hsp70 as well as modulating hsp70 in response to a subset of cellular stresses... Altered turnover and a more rapid accumulation of Hsf1 in KO cells treated with a proteasome inhibitor are consistent with Atxn3 regulating Hsf1 protein through the ubiquitin proteasome pathway."
+    }
+  ],
+  "arrow_notation": "ATXN3 --activates--> HSF1:",
+  "protein_a": "HSF1",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.686411Z",
+  "last_updated": "2025-11-29T11:33:49.686411Z"
+}

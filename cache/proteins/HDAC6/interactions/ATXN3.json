@@ -1,0 +1,112 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 directly binds to HDAC6, a histone deacetylase involved in protein aggregate transport. Surface plasmon resonance (SPR) analysis confirmed this direct interaction.",
+  "functions": [
+    {
+      "function": "Protein Aggregate Clearance",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 and HDAC6 cooperate to clear misfolded protein aggregates. HDAC6 is a key component of the aggresome pathway, which recognizes polyubiquitinated misfolded proteins and transports them along microtubules to a perinuclear site called the aggresome for degradation. ATXN3's role is to edit ubiquitin chains on aggregated proteins, which generates unanchored ubiquitin C-termini. These exposed C-termini then serve as a specific binding signal for the zinc finger ubiquitin-binding domain of HDAC6, facilitating the recruitment of the aggregate cargo to the dynein motor complex for transport.",
+      "effect_description": "ATXN3 directly binds to HDAC6 and its deubiquitinating activity on protein aggregates is crucial for generating the specific signal that HDAC6 recognizes. This functional interaction activates the transport of misfolded proteins to the aggresome, thereby promoting their clearance.",
+      "biological_consequence": [
+        "Misfolded protein aggregates are polyubiquitinated → ATXN3 trims ubiquitin chains on aggregates → Unanchored ubiquitin C-termini are exposed → HDAC6 binds to the exposed ubiquitin C-termini via its zinc finger domain → HDAC6 links the aggregate to the dynein motor complex → Dynein transports the aggregate along microtubules to the aggresome → Aggresome contents are degraded via autophagy."
+      ],
+      "specific_effects": [
+        "ATXN3 directly binds to HDAC6 with an affinity in the range of 0.1-1μM as measured by Surface Plasmon Resonance (SPR).",
+        "ATXN3's deubiquitinase activity generates the binding motif for HDAC6 on protein aggregates."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Protein aggregates are recruited to the aggresome by histone deacetylase 6 via unanchored ubiquitin C termini",
+          "journal": "The Journal of Biological Chemistry",
+          "year": 2012,
+          "relevant_quote": "Here, we show that there are substantial amounts of unanchored ubiquitin in protein aggregates with solvent-accessible C termini. We demonstrate that the C-terminal LRGG motif of unanchored ubiquitin is a specific binding signal for the zinc finger ubiquitin-binding domain of HDAC6... Ataxin-3, a deubiquitinating enzyme that is associated with HDAC6, can generate such unanchored ubiquitin C termini by trimming polyubiquitin chains.",
+          "pmid": "22069321"
+        },
+        {
+          "paper_title": "Interactions of ataxin-3 with its molecular partners in the protein machinery that sorts protein aggregates to the aggresome",
+          "journal": "The International Journal of Biochemistry & Cell Biology",
+          "year": 2014,
+          "relevant_quote": "By SPR we have also provided the first evidence of direct binding of AT3 to HDAC6, with affinity in the range 0.1-1μM. These results shed light on the interactions among the components of the transport machinery that sorts aggregate protein to the aggresome, and pave the way to in vivo studies aimed at further clarifying their roles.",
+          "pmid": "24685680"
+        }
+      ],
+      "pmids": [
+        "22069321",
+        "24685680"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    },
+    {
+      "function": "Protein Stability (Context: Pancreatic Cancer)",
+      "arrow": "activates",
+      "cellular_process": "In the context of pancreatic cancer, ATXN3 acts as a deubiquitinase for HDAC6 itself. By removing ubiquitin chains from HDAC6, ATXN3 protects HDAC6 from proteasomal degradation, thereby increasing its protein stability and levels.",
+      "effect_description": "ATXN3 deubiquitinates and stabilizes HDAC6, leading to its accumulation. This enhanced level of HDAC6 promotes malignant phenotypes in pancreatic cancer, including cell proliferation, migration, and invasion.",
+      "biological_consequence": [
+        "HDAC6 is ubiquitinated for degradation → ATXN3 directly binds to ubiquitinated HDAC6 → ATXN3 removes ubiquitin chains from HDAC6 → HDAC6 is stabilized and its degradation is prevented → Increased HDAC6 protein levels promote cancer cell proliferation and invasion."
+      ],
+      "specific_effects": [
+        "ATXN3 reduces the ubiquitination of HDAC6, thereby regulating its degradation."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Involvement of Ataxin-3 (ATXN3) in the malignant progression of pancreatic cancer via deubiquitinating HDAC6",
+          "journal": "Pancreatology",
+          "year": 2023,
+          "relevant_quote": "ATXN3 was proved to interact with HDAC6 and regulate its degradation through deubiquitination... This study confirmed that ATXN3 facilitated malignant phenotypes of pancreatic cancer via reducing the ubiquitination of HDAC6.",
+          "pmid": "37460341"
+        }
+      ],
+      "pmids": [
+        "37460341"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "ATXN3 and HDAC6 cooperate to clear misfolded protein aggregates; In the context of pancreatic cancer, ATXN3 acts as a deubiquitinase for HDAC6 itself",
+  "effect": "ATXN3 directly binds to HDAC6 and its deubiquitinating activity on protein aggregates is crucial for generating the specific signal that HDAC6 recognizes. This functional interaction activates the transport of misfolded proteins to the aggresome, thereby promoting their clearance.; ATXN3 deubiquitinates and stabilizes HDAC6, leading to its accumulation. This enhanced level of HDAC6 promotes malignant phenotypes in pancreatic cancer, including cell proliferation, migration, and invasion.",
+  "summary": "ATXN3 activates HDAC6 to regulate protein aggregate clearance and protein stability (context: pancreatic cancer), ultimately affecting aggresome contents are degraded via autophagy.",
+  "evidence": [
+    {
+      "paper_title": "Protein aggregates are recruited to the aggresome by histone deacetylase 6 via unanchored ubiquitin C termini",
+      "journal": "The Journal of Biological Chemistry",
+      "year": 2012,
+      "relevant_quote": "Here, we show that there are substantial amounts of unanchored ubiquitin in protein aggregates with solvent-accessible C termini. We demonstrate that the C-terminal LRGG motif of unanchored ubiquitin is a specific binding signal for the zinc finger ubiquitin-binding domain of HDAC6... Ataxin-3, a deubiquitinating enzyme that is associated with HDAC6, can generate such unanchored ubiquitin C termini by trimming polyubiquitin chains."
+    },
+    {
+      "paper_title": "Interactions of ataxin-3 with its molecular partners in the protein machinery that sorts protein aggregates to the aggresome",
+      "journal": "The International Journal of Biochemistry & Cell Biology",
+      "year": 2014,
+      "relevant_quote": "By SPR we have also provided the first evidence of direct binding of AT3 to HDAC6, with affinity in the range 0.1-1μM. These results shed light on the interactions among the components of the transport machinery that sorts aggregate protein to the aggresome, and pave the way to in vivo studies aimed at further clarifying their roles."
+    },
+    {
+      "paper_title": "Involvement of Ataxin-3 (ATXN3) in the malignant progression of pancreatic cancer via deubiquitinating HDAC6",
+      "journal": "Pancreatology",
+      "year": 2023,
+      "relevant_quote": "ATXN3 was proved to interact with HDAC6 and regulate its degradation through deubiquitination... This study confirmed that ATXN3 facilitated malignant phenotypes of pancreatic cancer via reducing the ubiquitination of HDAC6."
+    }
+  ],
+  "arrow_notation": "ATXN3 --activates--> HDAC6:",
+  "protein_a": "HDAC6",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.651454Z",
+  "last_updated": "2025-11-29T11:33:49.651454Z"
+}

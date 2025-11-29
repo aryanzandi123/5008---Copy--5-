@@ -1,0 +1,79 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "Mutant ataxin-3 showed abnormal interaction with CCT5, another subunit of the CCT chaperonin complex, in a SCA3 mouse model.",
+  "functions": [
+    {
+      "function": "Protein Complex Integrity and Cellular Transport",
+      "arrow": "inhibits",
+      "cellular_process": "In Spinocerebellar Ataxia Type 3 (SCA3), the polyglutamine-expanded mutant ATXN3 abnormally interacts with CCT5, a subunit of the CCT/TRiC chaperonin complex. This interaction does not appear to be a stable, inhibitory binding but rather contributes to a weakening or loss of association between mutant ATXN3 and the CCT complex. This destabilization is associated with the misregulation of large protein complexes.",
+      "effect_description": "The altered interaction between mutant ATXN3 and the CCT complex, including CCT5, is linked to defects in the axonal transport of mitochondria, contributing to the neuronal toxicity observed in SCA3. While the CCT/TRiC complex is crucial for folding proteins and buffering polyQ toxicity, the specific consequence of the ATXN3-CCT5 interaction is more clearly documented as a disruption of larger cellular machinery rather than a direct inhibition of the chaperonin's folding activity.",
+      "biological_consequence": [
+        "Mutant ATXN3 expression → Abnormal association with CCT5 and other CCT/TRiC subunits → Weakened interaction or loss of mutant ATXN3 from essential protein complexes → Disruption of mitochondrial transport along axons → Enhanced neuronal vulnerability and proteotoxicity."
+      ],
+      "specific_effects": [
+        "Mutant ataxin-3 demonstrates weakened or lost interactions with CCT chaperone complexes in a SCA3 mouse model.",
+        "The abnormal interaction is associated with altered motility of mitochondria along SCA3 neurites."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Impaired interactions of ataxin-3 with protein complexes reveals their specific structure and functions in SCA3 Ki150 model",
+          "journal": "Frontiers in Molecular Neuroscience",
+          "year": 2023,
+          "relevant_quote": "We demonstrated that the presence of mutant ataxin-3 protein results in weakened or loss of interaction with CCT chaperone complexes responsible for transport along neurits... Among others, mutant ataxin-3 abnormally interacted with subunits of large complexes such as Cct5 and 6, Tcp1, and Camk2a and Camk2b... The protein complexes were involved in transport of mitochondria in axons which was confirmed by altered motility of mitochondria along SCA3 Ki150 neurites.",
+          "pmid": "37033372"
+        },
+        {
+          "paper_title": "The chaperonin TRiC controls polyglutamine aggregation and toxicity through subunit-specific interactions",
+          "journal": "Nature Cell Biology",
+          "year": 2006,
+          "relevant_quote": "Misfolding and aggregation of proteins containing expanded polyglutamine repeats underlie Huntington's disease and other neurodegenerative disorders. Here, we show that the hetero-oligomeric chaperonin TRiC (also known as CCT) physically interacts with polyglutamine-expanded variants of huntingtin (Htt) and effectively inhibits their aggregation.",
+          "pmid": "16980959"
+        }
+      ],
+      "pmids": [
+        "37033372",
+        "16980959"
+      ],
+      "interaction_effect": "inhibits",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "inhibition"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The input claim is generally valid but requires correction for precision. While mutant ATXN3 does abnormally interact with CCT5, primary literature emphasizes that this altered interaction leads to a loss or weakening of association within larger functional complexes, rather than a simple inhibitory binding event that blocks folding. This disruption is linked to downstream consequences like impaired mitochondrial transport, rather than a directly proven global inhibition of the CCT/TRiC's protein folding machinery. The interaction appears to be part of a broader disruption of protein complex integrity.",
+  "mechanism": "In Spinocerebellar Ataxia Type 3 (SCA3), the polyglutamine-expanded mutant ATXN3 abnormally interacts with CCT5, a subunit of the CCT/TRiC chaperonin complex. This interaction does not appear to be a stable, inhibitory binding but rather contributes to a weakening or loss of association between mutant ATXN3 and the CCT complex. This destabilization is associated with the misregulation of large protein complexes.",
+  "effect": "The altered interaction between mutant ATXN3 and the CCT complex, including CCT5, is linked to defects in the axonal transport of mitochondria, contributing to the neuronal toxicity observed in SCA3. While the CCT/TRiC complex is crucial for folding proteins and buffering polyQ toxicity, the specific consequence of the ATXN3-CCT5 interaction is more clearly documented as a disruption of larger cellular machinery rather than a direct inhibition of the chaperonin's folding activity.",
+  "summary": "ATXN3 inhibits CCT5 to modulate protein complex integrity and cellular transport, ultimately affecting enhanced neuronal vulnerability and proteotoxicity.",
+  "evidence": [
+    {
+      "paper_title": "Impaired interactions of ataxin-3 with protein complexes reveals their specific structure and functions in SCA3 Ki150 model",
+      "journal": "Frontiers in Molecular Neuroscience",
+      "year": 2023,
+      "relevant_quote": "We demonstrated that the presence of mutant ataxin-3 protein results in weakened or loss of interaction with CCT chaperone complexes responsible for transport along neurits... Among others, mutant ataxin-3 abnormally interacted with subunits of large complexes such as Cct5 and 6, Tcp1, and Camk2a and Camk2b... The protein complexes were involved in transport of mitochondria in axons which was confirmed by altered motility of mitochondria along SCA3 Ki150 neurites."
+    },
+    {
+      "paper_title": "The chaperonin TRiC controls polyglutamine aggregation and toxicity through subunit-specific interactions",
+      "journal": "Nature Cell Biology",
+      "year": 2006,
+      "relevant_quote": "Misfolding and aggregation of proteins containing expanded polyglutamine repeats underlie Huntington's disease and other neurodegenerative disorders. Here, we show that the hetero-oligomeric chaperonin TRiC (also known as CCT) physically interacts with polyglutamine-expanded variants of huntingtin (Htt) and effectively inhibits their aggregation."
+    }
+  ],
+  "arrow_notation": "ATXN3 --inhibits--> CCT5:",
+  "protein_a": "CCT5",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.677147Z",
+  "last_updated": "2025-11-29T11:33:49.677147Z"
+}

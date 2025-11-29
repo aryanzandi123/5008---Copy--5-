@@ -1,0 +1,150 @@
+{
+  "primary": "LC3B",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "TECPR1 is a lysosomal protein that directly binds LC3B via a LIR motif and also interacts with the ATG12-ATG5 conjugate, playing a key role in autophagosome maturation and acting as an alternative E3-like ligase complex in response to lysosomal damage.",
+  "functions": [
+    {
+      "function": "Autophagosome-Lysosome Fusion",
+      "arrow": "activates",
+      "cellular_process": "TECPR1 is a lysosome-localized protein that functions as a critical tethering factor to bridge autophagosomes and lysosomes. It contains domains that allow it to simultaneously bind phosphatidylinositol 3-phosphate (PI3P) and the ATG12-ATG5 conjugate on the autophagosome, as well as interact with the lysosomal membrane.",
+      "effect_description": "By physically linking the two organelles, TECPR1 facilitates their proximity and promotes the subsequent SNARE-mediated membrane fusion, which is the terminal step of autophagy. The depletion of TECPR1 results in the accumulation of unfused autophagosomes, blocking the degradation of autophagic cargo and inhibiting autophagic flux.",
+      "biological_consequence": [
+        "TECPR1 localizes to lysosomes → TECPR1 binds to the ATG12-ATG5 conjugate and PI3P on a mature autophagosome → Physical tethering of the autophagosome to the lysosome → Facilitation of SNARE complex assembly and membrane fusion → Formation of the autolysosome → Degradation of inner contents."
+      ],
+      "specific_effects": [
+        "Functions as a molecular tether between autophagosomes and lysosomes.",
+        "Binds the ATG12-ATG5 conjugate via an AIR domain, in a manner mutually exclusive to ATG16L1.",
+        "Contains a PH domain that binds to PI3P on the autophagosome membrane."
+      ],
+      "evidence": [
+        {
+          "paper_title": "A mammalian autophagosome maturation mechanism mediated by TECPR1 and the Atg12-Atg5 conjugate",
+          "journal": "Molecular Cell",
+          "year": 2012,
+          "relevant_quote": "TECPR1 localizes to lysosomes/autolysosomes and recruits the ATG12–ATG5 conjugate, which enables its binding to PI3P, thereby possibly facilitating autophagosome maturation and autophagosome–lysosome fusion.",
+          "pmid": "22342342"
+        },
+        {
+          "paper_title": "Molecular structures and function of the autophagosome-lysosome fusion machinery",
+          "journal": "Autophagy",
+          "year": 2024,
+          "relevant_quote": "Subsequent analysis revealed that TECPR1 interacts with the Atg12-Atg5 conjugate via the AIR (Atg12-Atg5-interacting region) domain located adjacent to a PH (pleckstrin homology) domain that mediates PI3P binding.",
+          "pmid": "38344192"
+        }
+      ],
+      "pmids": [
+        "22342342",
+        "38344192"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    },
+    {
+      "function": "LC3B Lipidation (Lysosomal Damage Response)",
+      "arrow": "activates",
+      "cellular_process": "In response to lysosomal membrane damage, sphingomyelin, a lipid normally restricted to the inner leaflet, becomes exposed on the cytosolic face of the lysosome. TECPR1 acts as a direct sensor for this exposed sphingomyelin via its N-terminal Dysferlin domain and is recruited to the site of damage.",
+      "effect_description": "At the damaged membrane, TECPR1 recruits the ATG5-ATG12 conjugate and functions as an alternative, ATG16L1-independent E3-like ligase. This TECPR1:ATG5-ATG12 complex directly conjugates LC3/ATG8 proteins to phosphatidylethanolamine on the lysosomal membrane itself. This 'lysophagy' process tags the damaged organelle for repair or clearance.",
+      "biological_consequence": [
+        "Lysosomal membrane damage → Sphingomyelin exposure on cytosolic leaflet → TECPR1's Dysferlin domain binds sphingomyelin, recruiting it to the damage site → TECPR1 recruits the ATG5-ATG12 conjugate → The TECPR1:ATG5-ATG12 complex provides E3-like ligase activity → LC3B is conjugated directly to the lysosomal membrane → Damaged lysosome is targeted for repair or degradation."
+      ],
+      "specific_effects": [
+        "Acts as a direct sensor for cytosolically exposed sphingomyelin on damaged endomembranes.",
+        "Forms an alternative E3-like ligase complex with ATG5-ATG12, functioning independently of ATG16L1.",
+        "Catalyzes the unconventional lipidation of LC3 directly onto single-membrane organelles (lysosomes) to promote their repair or clearance."
+      ],
+      "evidence": [
+        {
+          "paper_title": "TECPR1 conjugates LC3 to damaged endomembranes upon detection of sphingomyelin exposure",
+          "journal": "The EMBO Journal",
+          "year": 2023,
+          "relevant_quote": "The TECPR1-ATG5-ATG12 complex is a sphingomyelin-activated E3 ligase catalyzing the lipid conjugation of LC3.",
+          "pmid": "37409490"
+        },
+        {
+          "paper_title": "An ATG12-ATG5-TECPR1 E3-like complex regulates unconventional LC3 lipidation at damaged lysosomes",
+          "journal": "EMBO Reports",
+          "year": 2023,
+          "relevant_quote": "At the damaged membrane, TECPR1 forms an alternative E3-like conjugation complex with the ATG12-ATG5 conjugate to regulate ATG16L1-independent unconventional LC3 lipidation.",
+          "pmid": "37381828"
+        },
+        {
+          "paper_title": "The TECPR1:ATG5-ATG12 complex conjugates LC3/ATG8 to damaged lysosomes that expose luminal glycans in response to osmotic imbalance",
+          "journal": "Biochemical Journal",
+          "year": 2023,
+          "relevant_quote": "Sphingomyelin exposed on stressed lysosomes recruits the lysosome tethering protein TECPR1 (tectonin beta propeller repeat-containing protein) allowing an alternative TECRP1:ATG5-ATG12 complex to conjugate LC3 directly to lysosomes.",
+          "pmid": "40458442"
+        }
+      ],
+      "pmids": [
+        "37409490",
+        "37381828",
+        "40458442"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "TECPR1 is a lysosome-localized protein that functions as a critical tethering factor to bridge autop; In response to lysosomal membrane damage, sphingomyelin, a lipid normally restricted to the inner le",
+  "effect": "By physically linking the two organelles, TECPR1 facilitates their proximity and promotes the subsequent SNARE-mediated membrane fusion, which is the terminal step of autophagy. The depletion of TECPR1 results in the accumulation of unfused autophagosomes, blocking the degradation of autophagic cargo and inhibiting autophagic flux.; At the damaged membrane, TECPR1 recruits the ATG5-ATG12 conjugate and functions as an alternative, ATG16L1-independent E3-like ligase. This TECPR1:ATG5-ATG12 complex directly conjugates LC3/ATG8 proteins to phosphatidylethanolamine on the lysosomal membrane itself. This 'lysophagy' process tags the damaged organelle for repair or clearance.",
+  "summary": "LC3B activates TECPR1 to regulate autophagosome-lysosome fusion and lc3b lipidation (lysosomal damage response), ultimately affecting degradation of inner contents.",
+  "evidence": [
+    {
+      "paper_title": "A mammalian autophagosome maturation mechanism mediated by TECPR1 and the Atg12-Atg5 conjugate",
+      "journal": "Molecular Cell",
+      "year": 2012,
+      "relevant_quote": "TECPR1 localizes to lysosomes/autolysosomes and recruits the ATG12–ATG5 conjugate, which enables its binding to PI3P, thereby possibly facilitating autophagosome maturation and autophagosome–lysosome fusion."
+    },
+    {
+      "paper_title": "Molecular structures and function of the autophagosome-lysosome fusion machinery",
+      "journal": "Autophagy",
+      "year": 2024,
+      "relevant_quote": "Subsequent analysis revealed that TECPR1 interacts with the Atg12-Atg5 conjugate via the AIR (Atg12-Atg5-interacting region) domain located adjacent to a PH (pleckstrin homology) domain that mediates PI3P binding."
+    },
+    {
+      "paper_title": "TECPR1 conjugates LC3 to damaged endomembranes upon detection of sphingomyelin exposure",
+      "journal": "The EMBO Journal",
+      "year": 2023,
+      "relevant_quote": "The TECPR1-ATG5-ATG12 complex is a sphingomyelin-activated E3 ligase catalyzing the lipid conjugation of LC3."
+    },
+    {
+      "paper_title": "An ATG12-ATG5-TECPR1 E3-like complex regulates unconventional LC3 lipidation at damaged lysosomes",
+      "journal": "EMBO Reports",
+      "year": 2023,
+      "relevant_quote": "At the damaged membrane, TECPR1 forms an alternative E3-like conjugation complex with the ATG12-ATG5 conjugate to regulate ATG16L1-independent unconventional LC3 lipidation."
+    },
+    {
+      "paper_title": "The TECPR1:ATG5-ATG12 complex conjugates LC3/ATG8 to damaged lysosomes that expose luminal glycans in response to osmotic imbalance",
+      "journal": "Biochemical Journal",
+      "year": 2023,
+      "relevant_quote": "Sphingomyelin exposed on stressed lysosomes recruits the lysosome tethering protein TECPR1 (tectonin beta propeller repeat-containing protein) allowing an alternative TECRP1:ATG5-ATG12 complex to conjugate LC3 directly to lysosomes."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 4
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--binds-- TECPR1:",
+  "protein_a": "TECPR1",
+  "protein_b": "LC3B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.090770Z",
+  "last_updated": "2025-11-24T10:45:54.090770Z"
+}

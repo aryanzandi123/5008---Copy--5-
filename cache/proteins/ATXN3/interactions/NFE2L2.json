@@ -1,0 +1,78 @@
+{
+  "primary": "NFE2L2",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 interacts with, deubiquitinates, and stabilizes NRF2 (NFE2L2), a key transcription factor in the antioxidant response.",
+  "functions": [
+    {
+      "function": "Antioxidant Response",
+      "arrow": "inhibits",
+      "cellular_process": "ATXN3 negatively regulates the antioxidant response by stabilizing the KEAP1 protein. KEAP1 is the substrate adaptor for the CUL3-based E3 ubiquitin ligase complex that constantly targets the transcription factor NRF2 (encoded by NFE2L2) for proteasomal degradation. By deubiquitinating and stabilizing KEAP1, ATXN3 promotes the constitutive degradation of NRF2, thereby suppressing the expression of antioxidant genes.",
+      "effect_description": "ATXN3 acts as a negative regulator of the NRF2 pathway. The loss or depletion of ATXN3 leads to the destabilization and degradation of KEAP1. This reduction in the NRF2 repressor allows NRF2 to accumulate, translocate to the nucleus, and activate the transcription of its target genes.",
+      "biological_consequence": [
+        "ATXN3 deubiquitinates and stabilizes KEAP1 → Stabilized KEAP1 binds to NRF2 → KEAP1 facilitates NRF2 ubiquitination by the CUL3-RBX1 E3 ligase complex → NRF2 is targeted for proteasomal degradation → NRF2 nuclear accumulation is prevented → Transcription of Antioxidant Response Element (ARE)-driven genes is repressed → Basal suppression of the cellular antioxidant response"
+      ],
+      "specific_effects": [
+        "ATXN3 depletion leads to the destabilization and decreased protein half-life of KEAP1.",
+        "Knockdown of ATXN3 results in increased cellular levels of NRF2 protein.",
+        "ATXN3 functions as an upstream negative regulator of the KEAP1-NRF2 signaling pathway."
+      ],
+      "evidence": [
+        {
+          "paper_title": "The Deubiquitinating Enzyme Ataxin-3 Regulates Ciliogenesis and Phagocytosis in the Retina",
+          "journal": "iScience",
+          "year": 2020,
+          "relevant_quote": "Indeed, depletion of ATXN3 lead to destabilization of the KEAP1 protein (decreased half-life), further supporting ATXN3 as a regulator of KEAP1 turnover... Our results also confirm that the levels of NRF2 and p62 were increased in ATXN3-knockdown cells compared with those of controls.",
+          "pmid": "33176149"
+        }
+      ],
+      "pmids": [
+        "33176149"
+      ],
+      "interaction_effect": "inhibits",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "inhibition",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "inhibits",
+        "net_from": "ATXN3",
+        "net_arrow": "inhibits",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "inhibits",
+      "direct_arrow": "inhibits",
+      "net_effect": "inhibition",
+      "direct_effect": "inhibition"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The input claim is a mechanistic opposite. The literature indicates that ATXN3 does not stabilize NRF2 (NFE2L2). Instead, ATXN3 stabilizes KEAP1, the primary repressor of NRF2. Therefore, the net effect of ATXN3 is the inhibition, not activation, of the NRF2-mediated antioxidant response.",
+  "mechanism": "ATXN3 negatively regulates the antioxidant response by stabilizing the KEAP1 protein. KEAP1 is the substrate adaptor for the CUL3-based E3 ubiquitin ligase complex that constantly targets the transcription factor NRF2 (encoded by NFE2L2) for proteasomal degradation. By deubiquitinating and stabilizing KEAP1, ATXN3 promotes the constitutive degradation of NRF2, thereby suppressing the expression of antioxidant genes.",
+  "effect": "ATXN3 acts as a negative regulator of the NRF2 pathway. The loss or depletion of ATXN3 leads to the destabilization and degradation of KEAP1. This reduction in the NRF2 repressor allows NRF2 to accumulate, translocate to the nucleus, and activate the transcription of its target genes.",
+  "summary": "ATXN3 inhibits NFE2L2 to modulate antioxidant response, ultimately affecting basal suppression of the cellular antioxidant response.",
+  "evidence": [
+    {
+      "paper_title": "The Deubiquitinating Enzyme Ataxin-3 Regulates Ciliogenesis and Phagocytosis in the Retina",
+      "journal": "iScience",
+      "year": 2020,
+      "relevant_quote": "Indeed, depletion of ATXN3 lead to destabilization of the KEAP1 protein (decreased half-life), further supporting ATXN3 as a regulator of KEAP1 turnover... Our results also confirm that the levels of NRF2 and p62 were increased in ATXN3-knockdown cells compared with those of controls."
+    }
+  ],
+  "arrow_notation": "ATXN3 --inhibits--> NFE2L2:",
+  "protein_a": "ATXN3",
+  "protein_b": "NFE2L2",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.690693Z",
+  "last_updated": "2025-11-29T11:33:49.690693Z"
+}

@@ -1,0 +1,115 @@
+{
+  "primary": "SNAP29",
+  "interaction_type": "indirect",
+  "upstream_interactor": "STX17",
+  "mediator_chain": [
+    "STX17"
+  ],
+  "depth": 2,
+  "support_summary": "SNAP29 is a SNARE protein that forms a complex with STX17 and VAMP8 to mediate autophagosome-lysosome fusion. Its interaction with LC3B is indirect, as part of the STX17-containing SNARE complex.",
+  "functions": [
+    {
+      "function": "Autophagosome-Lysosome Fusion",
+      "arrow": "activates",
+      "cellular_process": "SNAP29 is a cytosolic Qbc-SNARE protein essential for the terminal step of autophagy. It lacks a transmembrane domain and is recruited to the autophagosome membrane to mediate fusion with lysosomes.",
+      "effect_description": "Upon autophagy induction, the Qa-SNARE STX17 is recruited to the outer membrane of the completed autophagosome, a process involving LC3B. STX17 then recruits SNAP29 from the cytosol. This binary t-SNARE complex (STX17-SNAP29) subsequently engages with the R-SNARE VAMP8, which is located on the lysosomal membrane. The assembly of this stable, parallel four-helix bundle, the STX17-SNAP29-VAMP8 trans-SNARE complex, bridges the two membranes, providing the mechanical force required to overcome repulsive forces and drive their fusion, resulting in the formation of an autolysosome for cargo degradation.",
+      "biological_consequence": [
+        "LC3B-dependent recruitment of STX17 to the outer autophagosomal membrane → STX17 recruits cytosolic SNAP29 to form a t-SNARE complex → The STX17-SNAP29 complex interacts with lysosomal R-SNARE VAMP8 → Assembly of the stable trans-SNARE complex → Zippering of the SNARE motifs forces the two membranes into proximity, leading to membrane fusion and autolysosome formation."
+      ],
+      "specific_effects": [
+        "Acts as the Qbc-SNARE, providing two of the four helices in the fusogenic SNARE complex.",
+        "Depletion of SNAP29 leads to an accumulation of sealed autophagosomes and a complete blockage of autophagic flux.",
+        "Its function is inhibited by O-GlcNAcylation, a post-translational modification that prevents its incorporation into the SNARE complex, thereby blocking autophagosome-lysosome fusion."
+      ],
+      "evidence": [
+        {
+          "paper_title": "STING guides the STX17-SNAP29-VAMP8 complex assembly to control autophagy",
+          "journal": "Cell Insight",
+          "year": 2024,
+          "relevant_quote": "STING engages in a physical interaction with STX17, and agonist-induced phosphorylation or degradation alleviates STING's inhibitory effects on the assembly of the STX17-SNAP29-VAMP8 complex. Consistent with these findings, degradation-deficient mutants hinder autophagy flux by impeding STX17-mediated autophagosome-lysosome fusion.",
+          "pmid": "38344386"
+        },
+        {
+          "paper_title": "New insights regarding SNARE proteins in autophagosome-lysosome fusion",
+          "journal": "Autophagy",
+          "year": 2017,
+          "relevant_quote": "Mechanistically, STX17 and the Qbc-SNARE SNAP29 interact on the autophagosomes and mediate autophagosome-lysosome fusion by further coupling with lysosome-localized VAMP8.",
+          "pmid": "32924745"
+        },
+        {
+          "paper_title": "Blockage of autophagosome-lysosome fusion through SNAP29 O-GlcNAcylation promotes apoptosis via ROS production",
+          "journal": "Autophagy",
+          "year": 2021,
+          "relevant_quote": "Accordingly, SM15 was found to enhance SNAP29 O-GlcNAcylation and, thereby, inhibit the formation of the SNARE fusion complex. In conclusion, these findings identify a new pathway in autophagy connecting O-GlcNAcylated SNAP29 to autophagic flux blockage and autophagosome accumulation...",
+          "pmid": "36704963"
+        }
+      ],
+      "pmids": [
+        "38344386",
+        "32924745",
+        "36704963"
+      ],
+      "direct_arrow": "activates",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "STX17",
+        "direct_arrow": "activates",
+        "net_from": "LC3B",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "STX17"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "SNAP29 is a cytosolic Qbc-SNARE protein essential for the terminal step of autophagy. It lacks a transmembrane domain and is recruited to the autophagosome membrane to mediate fusion with lysosomes.",
+  "effect": "Upon autophagy induction, the Qa-SNARE STX17 is recruited to the outer membrane of the completed autophagosome, a process involving LC3B. STX17 then recruits SNAP29 from the cytosol. This binary t-SNARE complex (STX17-SNAP29) subsequently engages with the R-SNARE VAMP8, which is located on the lysosomal membrane. The assembly of this stable, parallel four-helix bundle, the STX17-SNAP29-VAMP8 trans-SNARE complex, bridges the two membranes, providing the mechanical force required to overcome repulsive forces and drive their fusion, resulting in the formation of an autolysosome for cargo degradation.",
+  "summary": "LC3B activates SNAP29 to modulate autophagosome-lysosome fusion, ultimately affecting zippering of the snare motifs forces the two membranes into proximity, leading to membrane fusion and autolysosome formation.",
+  "evidence": [
+    {
+      "paper_title": "STING guides the STX17-SNAP29-VAMP8 complex assembly to control autophagy",
+      "journal": "Cell Insight",
+      "year": 2024,
+      "relevant_quote": "STING engages in a physical interaction with STX17, and agonist-induced phosphorylation or degradation alleviates STING's inhibitory effects on the assembly of the STX17-SNAP29-VAMP8 complex. Consistent with these findings, degradation-deficient mutants hinder autophagy flux by impeding STX17-mediated autophagosome-lysosome fusion."
+    },
+    {
+      "paper_title": "New insights regarding SNARE proteins in autophagosome-lysosome fusion",
+      "journal": "Autophagy",
+      "year": 2017,
+      "relevant_quote": "Mechanistically, STX17 and the Qbc-SNARE SNAP29 interact on the autophagosomes and mediate autophagosome-lysosome fusion by further coupling with lysosome-localized VAMP8."
+    },
+    {
+      "paper_title": "Blockage of autophagosome-lysosome fusion through SNAP29 O-GlcNAcylation promotes apoptosis via ROS production",
+      "journal": "Autophagy",
+      "year": 2021,
+      "relevant_quote": "Accordingly, SM15 was found to enhance SNAP29 O-GlcNAcylation and, thereby, inhibit the formation of the SNARE fusion complex. In conclusion, these findings identify a new pathway in autophagy connecting O-GlcNAcylated SNAP29 to autophagic flux blockage and autophagosome accumulation..."
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "STX17 --activates--> SNAP29:",
+  "protein_a": "LC3B",
+  "protein_b": "SNAP29",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.054131Z",
+  "last_updated": "2025-11-24T10:45:54.054131Z"
+}

@@ -1,0 +1,104 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": "HDAC3",
+  "mediator_chain": [
+    "HDAC3"
+  ],
+  "depth": 2,
+  "support_summary": "ATXN3 indirectly represses the transcription factor GATA-2 by recruiting HDAC3 to the promoter of GATA-2 target genes like MMP-2, leading to histone deacetylation and transcriptional repression. [9, 10]",
+  "functions": [
+    {
+      "function": "GATA2-Dependent Transcriptional Repression",
+      "arrow": "activates",
+      "cellular_process": "Wild-type ATXN3 functions as a transcriptional corepressor by forming a complex with Histone Deacetylase 3 (HDAC3) and the nuclear receptor corepressor (NCoR). ATXN3 facilitates the recruitment of this repressive complex to the promoter regions of GATA2-regulated genes, such as matrix metalloproteinase-2 (MMP-2).",
+      "effect_description": "By recruiting the HDAC3-containing repressor complex to chromatin, wild-type ATXN3 mediates the deacetylation of histones at specific gene promoters. This leads to a more condensed chromatin structure, which prevents the binding of transcriptional machinery and effectively silences the expression of GATA2-dependent genes. PolyQ-expanded ATXN3 loses this function, leading to aberrant gene expression.",
+      "biological_consequence": [
+        "Wild-type ATXN3 binds to promoter regions of GATA2 target genes → ATXN3 recruits an NCoR/HDAC3 complex → HDAC3 deacetylates local histone tails → Chromatin structure becomes compact → GATA2-mediated transcription is repressed."
+      ],
+      "specific_effects": [
+        "Normal ATXN3, HDAC3, and NCoR form a functional transcriptional repressor complex.",
+        "The ATXN3-HDAC3 interaction is required for the repression of GATA2 target genes like MMP-2.",
+        "PolyQ-expanded ATXN3 fails to efficiently recruit the HDAC3 complex to target promoters, losing its repressive function and leading to aberrant transcription.",
+        "The transcriptional repression by normal ATXN3 requires its intact ubiquitin-interacting motifs (UIMs)."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ataxin-3 represses transcription via chromatin binding, interaction with histone deacetylase 3, and histone deacetylation",
+          "journal": "The Journal of Neuroscience",
+          "year": 2006,
+          "relevant_quote": "Here we report that normal AT3 binds to target DNA sequences in specific chromatin regions of the matrix metalloproteinase-2 (MMP-2) gene promoter and represses transcription by recruitment of the histone deacetylase 3 (HDAC3), the nuclear receptor corepressor (NCoR), and deacetylation of histones bound to the promoter. [...] Expanded AT3 lost the repressor function and displayed altered DNA/chromatin binding that was not associated with recruitment of HDAC3, NCoR, and deacetylation of the promoter, allowing aberrant MMP-2 transcription via the transcription factor GATA-2.",
+          "pmid": "17079677"
+        },
+        {
+          "paper_title": "Histone deacetylase 3 associates with and represses the transcription factor GATA-2",
+          "journal": "The Journal of Biological Chemistry",
+          "year": 2001,
+          "relevant_quote": "This study examined the interaction of GATA-2 with histone deacetylases (HDACs) to define the involvement of HDACs in the regulation of GATA-2 function. GATA-2 directly associates with HDAC3 but not with HDAC1. Consistent with this, HDAC3 suppressed the transcriptional potential of GATA-2, whereas HDAC1 did not affect GATA-2-dependent transcription.",
+          "pmid": "11567998"
+        }
+      ],
+      "pmids": [
+        "17079677",
+        "11567998"
+      ],
+      "direct_arrow": "activates",
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "HDAC3",
+        "direct_arrow": "activates",
+        "net_from": "ATXN3",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "HDAC3"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The input claim correctly identifies the indirect mechanism but contains a 'Contextual Error' in the 'arrow' designation. ATXN3's action *inhibits* the transcriptional activity of GATA2. It does so by *activating* a repression complex. The corrected function clarifies this by stating the arrow as 'inhibits' with respect to GATA2's function.",
+  "mechanism": "Wild-type ATXN3 functions as a transcriptional corepressor by forming a complex with Histone Deacetylase 3 (HDAC3) and the nuclear receptor corepressor (NCoR). ATXN3 facilitates the recruitment of this repressive complex to the promoter regions of GATA2-regulated genes, such as matrix metalloproteinase-2 (MMP-2).",
+  "effect": "By recruiting the HDAC3-containing repressor complex to chromatin, wild-type ATXN3 mediates the deacetylation of histones at specific gene promoters. This leads to a more condensed chromatin structure, which prevents the binding of transcriptional machinery and effectively silences the expression of GATA2-dependent genes. PolyQ-expanded ATXN3 loses this function, leading to aberrant gene expression.",
+  "summary": "ATXN3 inhibits GATA2 to modulate gata2-dependent transcriptional repression, ultimately affecting gata2-mediated transcription is repressed.",
+  "evidence": [
+    {
+      "paper_title": "Ataxin-3 represses transcription via chromatin binding, interaction with histone deacetylase 3, and histone deacetylation",
+      "journal": "The Journal of Neuroscience",
+      "year": 2006,
+      "relevant_quote": "Here we report that normal AT3 binds to target DNA sequences in specific chromatin regions of the matrix metalloproteinase-2 (MMP-2) gene promoter and represses transcription by recruitment of the histone deacetylase 3 (HDAC3), the nuclear receptor corepressor (NCoR), and deacetylation of histones bound to the promoter. [...] Expanded AT3 lost the repressor function and displayed altered DNA/chromatin binding that was not associated with recruitment of HDAC3, NCoR, and deacetylation of the promoter, allowing aberrant MMP-2 transcription via the transcription factor GATA-2."
+    },
+    {
+      "paper_title": "Histone deacetylase 3 associates with and represses the transcription factor GATA-2",
+      "journal": "The Journal of Biological Chemistry",
+      "year": 2001,
+      "relevant_quote": "This study examined the interaction of GATA-2 with histone deacetylases (HDACs) to define the involvement of HDACs in the regulation of GATA-2 function. GATA-2 directly associates with HDAC3 but not with HDAC1. Consistent with this, HDAC3 suppressed the transcriptional potential of GATA-2, whereas HDAC1 did not affect GATA-2-dependent transcription."
+    }
+  ],
+  "interaction_effect": "inhibition",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "HDAC3 --inhibits--> GATA2:",
+  "protein_a": "GATA2",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T04:11:50.059310Z",
+  "last_updated": "2025-11-24T04:11:50.059310Z"
+}

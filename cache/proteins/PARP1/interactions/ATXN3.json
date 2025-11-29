@@ -1,0 +1,73 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 is recruited to sites of DNA damage in a PARP1-dependent manner, and evidence suggests a direct interaction between the two proteins in the DNA damage response pathway.",
+  "functions": [
+    {
+      "function": "DNA Damage Response Modulation",
+      "arrow": "regulates",
+      "cellular_process": "In response to genotoxic stress, PARP1 binds to DNA breaks and synthesizes poly(ADP-ribose) (PAR) chains. These PAR chains act as a scaffold to recruit DNA repair factors, including ATXN3. Once recruited, ATXN3 utilizes its deubiquitinase (DUB) activity to counteract the ubiquitination of PARP1, a signal that would otherwise lead to its removal from the damage site by the p97 segregase. By removing these ubiquitin chains, ATXN3 prolongs the residency of PARP1 on the chromatin, thereby sustaining the DNA damage signal and facilitating downstream repair pathways.",
+      "effect_description": "ATXN3 deubiquitinates and stabilizes PARP1 at sites of DNA damage, preventing its premature dissociation and thereby promoting a sustained DNA damage response and the maintenance of genomic stability.",
+      "biological_consequence": [
+        "DNA damage occurs → PARP1 binds to DNA break and is activated → PARP1 synthesizes poly(ADP-ribose) (PAR) chains → PAR chains recruit ATXN3 to the damage site → PARP1 is ubiquitinated for removal → ATXN3 deubiquitinates PARP1 → PARP1 retention at the DNA lesion is prolonged → DNA repair signaling is sustained → Genomic stability is maintained."
+      ],
+      "specific_effects": [
+        "ATXN3 recruitment to DNA lesions is dependent on PARP1 enzymatic activity (PARylation).",
+        "ATXN3 counteracts ubiquitination of PARP1, preventing its p97-mediated removal from chromatin.",
+        "Stabilizes the association of PARP1 with damaged DNA, thus extending its signaling function."
+      ],
+      "evidence": [
+        {
+          "paper_title": "ADP-ribose contributions to genome stability and PARP enzyme trapping on sites of DNA damage; paradigm shifts for a coming-of-age modification",
+          "journal": "Frontiers in Molecular Biosciences",
+          "year": 2023,
+          "relevant_quote": "It appears that the timely removal of PARP1 through ubiquitylation can be modulated by the recruitment of ATXN3, which is SUMOylation and PARylation dependent (135). As a deubiquitylating enzyme, ATXN3 effectively breaks down ubiquitylation under normal circumstances to prevent premature disassembly of PARP1 from the site of damage (135).",
+          "pmid": "37898399"
+        }
+      ],
+      "pmids": [
+        "37898399"
+      ],
+      "interaction_effect": "regulates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "regulation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The input correctly identifies that ATXN3 is recruited to DNA damage sites in a PARP1-dependent manner. However, the term 'activates' is a contextual error. ATXN3 does not activate PARP1's enzymatic activity. Instead, after being recruited by PARP1-generated poly(ADP-ribose) chains, ATXN3 acts to sustain the DNA damage response. It achieves this by deubiquitinating PARP1, which prevents its premature removal from the chromatin at the site of damage. This stabilizes PARP1's presence, allowing it to continue its signaling and repair functions.",
+  "mechanism": "In response to genotoxic stress, PARP1 binds to DNA breaks and synthesizes poly(ADP-ribose) (PAR) chains. These PAR chains act as a scaffold to recruit DNA repair factors, including ATXN3. Once recruited, ATXN3 utilizes its deubiquitinase (DUB) activity to counteract the ubiquitination of PARP1, a signal that would otherwise lead to its removal from the damage site by the p97 segregase. By removing these ubiquitin chains, ATXN3 prolongs the residency of PARP1 on the chromatin, thereby sustaining the DNA damage signal and facilitating downstream repair pathways.",
+  "effect": "ATXN3 deubiquitinates and stabilizes PARP1 at sites of DNA damage, preventing its premature dissociation and thereby promoting a sustained DNA damage response and the maintenance of genomic stability.",
+  "summary": "ATXN3 interacts with PARP1 to modulate dna damage response modulation, ultimately affecting genomic stability is maintained.",
+  "evidence": [
+    {
+      "paper_title": "ADP-ribose contributions to genome stability and PARP enzyme trapping on sites of DNA damage; paradigm shifts for a coming-of-age modification",
+      "journal": "Frontiers in Molecular Biosciences",
+      "year": 2023,
+      "relevant_quote": "It appears that the timely removal of PARP1 through ubiquitylation can be modulated by the recruitment of ATXN3, which is SUMOylation and PARylation dependent (135). As a deubiquitylating enzyme, ATXN3 effectively breaks down ubiquitylation under normal circumstances to prevent premature disassembly of PARP1 from the site of damage (135)."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --binds--> PARP1:",
+  "protein_a": "PARP1",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.802311Z",
+  "last_updated": "2025-11-24T12:52:47.802311Z"
+}

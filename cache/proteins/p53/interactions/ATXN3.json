@@ -1,0 +1,92 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 acts as a deubiquitinase to stabilize p53 by removing polyubiquitin chains, promoting cell survival in the DNA damage response.",
+  "functions": [
+    {
+      "function": "p53 Protein Stability",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 functions as a deubiquitinating enzyme (DUB) for the tumor suppressor p53. It directly binds to polyubiquitinated p53 and removes the ubiquitin chains.",
+      "effect_description": "By deubiquitinating p53, ATXN3 prevents its degradation by the proteasome, leading to increased p53 protein stability and accumulation.",
+      "biological_consequence": [
+        "Deubiquitination of p53 → Increased p53 levels → Enhanced p53-mediated transcriptional activation → Promotion of p53-dependent apoptosis and cell cycle arrest"
+      ],
+      "specific_effects": [
+        "Stabilization of p53 is crucial for its role in the DNA damage response.",
+        "PolyQ-expanded ATXN3 has an enhanced ability to stabilize p53, leading to excessive p53-dependent apoptosis."
+      ],
+      "evidence": [
+        {
+          "paper_title": "The Machado–Joseph Disease Deubiquitinase Ataxin-3 Regulates the Stability and Apoptotic Function of p53",
+          "year": 2016,
+          "pmid": "27851749"
+        },
+        {
+          "paper_title": "The deubiquitinase function of ataxin-3 and its role in the pathogenesis of Machado-Joseph disease and other diseases",
+          "year": 2022,
+          "pmid": "38497605"
+        },
+        {
+          "paper_title": "Inactivation of PNKP by Mutant ATXN3 Triggers Apoptosis by Activating the DNA Damage-Response Pathway in SCA3",
+          "year": 2015,
+          "pmid": "25590633"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "27851749",
+        "38497605",
+        "25590633"
+      ],
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "ATXN3 functions as a deubiquitinating enzyme (DUB) for the tumor suppressor p53. It directly binds to polyubiquitinated p53 and removes the ubiquitin chains.",
+  "effect": "By deubiquitinating p53, ATXN3 prevents its degradation by the proteasome, leading to increased p53 protein stability and accumulation.",
+  "summary": "ATXN3 activates p53 to modulate p53 protein stability, ultimately affecting promotion of p53-dependent apoptosis and cell cycle arrest.",
+  "evidence": [
+    {
+      "paper_title": "The Machado–Joseph Disease Deubiquitinase Ataxin-3 Regulates the Stability and Apoptotic Function of p53",
+      "year": 2016
+    },
+    {
+      "paper_title": "The deubiquitinase function of ataxin-3 and its role in the pathogenesis of Machado-Joseph disease and other diseases",
+      "year": 2022
+    },
+    {
+      "paper_title": "Inactivation of PNKP by Mutant ATXN3 Triggers Apoptosis by Activating the DNA Damage-Response Pathway in SCA3",
+      "year": 2015
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 0
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --activates--> p53:",
+  "protein_a": "p53",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.763760Z",
+  "last_updated": "2025-11-24T12:52:47.763760Z"
+}

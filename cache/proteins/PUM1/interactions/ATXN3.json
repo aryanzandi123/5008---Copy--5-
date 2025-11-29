@@ -1,0 +1,92 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 interacts with the RNA-binding protein Pumilio1 (PUM1), an interaction that is implicated in SCA3 pathology.",
+  "functions": [
+    {
+      "function": "Translational Repression of ATXN3",
+      "arrow": "activates",
+      "cellular_process": "The RNA-binding protein Pumilio1 (PUM1) directly binds to a conserved Pumilio Recognition Element (PRE) within the 3' UTR of the ATXN3 mRNA. This interaction leads to the repression of ATXN3 translation and/or promotes mRNA decay, thereby reducing the overall cellular levels of ATXN3 protein.",
+      "effect_description": "PUM1 functions as a post-transcriptional repressor of ATXN3. A reduction in PUM1 levels, as observed in SCA3 models, leads to the de-repression of ATXN3 mRNA translation. This results in an overproduction of the mutant ATXN3 protein, which enhances its aggregation and cytotoxicity, thus contributing to neurodegeneration.",
+      "biological_consequence": [
+        "PUM1 binds to the PRE in the 3' UTR of ATXN3 mRNA → Recruitment of deadenylase complexes (e.g., CCR4-NOT) → Inhibition of translation and/or degradation of ATXN3 mRNA → Decreased synthesis of ATXN3 protein → Reduced risk of mutant ATXN3 aggregation and toxicity."
+      ],
+      "specific_effects": [
+        "Reduced PUM1 levels (haploinsufficiency) cause a significant increase in both wild-type and mutant ATXN3 protein levels.",
+        "This mechanism is conserved and also applies to the regulation of Ataxin-1 (ATXN1), the protein involved in SCA1.",
+        "Restoring PUM1 levels has been shown to be a potential therapeutic strategy in mouse models of SCA3 by reducing the burden of mutant ATXN3."
+      ],
+      "evidence": [
+        {
+          "paper_title": "A Mild PUM1 Mutation Is Associated with Adult-Onset Ataxia, whereas Haploinsufficiency Causes Developmental Delay and Seizures",
+          "journal": "Cell",
+          "year": 2018,
+          "relevant_quote": "Studies in patient-derived cells revealed that the missense mutations reduced PUM1 protein levels by ~25% in the adult-onset cases, and by ~50% in the infantile-onset cases; levels of known PUM1 targets increased accordingly. Changes in protein levels thus track with phenotypic severity...",
+          "pmid": "29474920"
+        },
+        {
+          "paper_title": "Pumilio1 Haploinsufficiency Leads to SCA1-like Neurodegeneration by Increasing Wild-Type Ataxin1 Levels",
+          "journal": "Cell",
+          "year": 2015,
+          "relevant_quote": "We found that Pum1 physically interacts with the conserved binding site of the Atxn1-3′UTR in WT mice. Consistent with the finding that Pum1 negatively regulates Atxn1, Pum1 heterozygous (Pum1+/−) mice showed increased levels of both Atxn1 protein and mRNA...",
+          "pmid": "25768905"
+        }
+      ],
+      "pmids": [
+        "29474920",
+        "25768905"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATXN3",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "CRITICAL ERROR DETECTED. The input describes an RNA-protein interaction, not a direct protein-protein interaction, and the direction of regulation is reversed. PUM1 is an RNA-binding protein that binds to the 3' Untranslated Region (3' UTR) of ATXN3 mRNA, not to the ATXN3 protein. This binding represses the translation of ATXN3 mRNA. Therefore, PUM1 is an upstream negative regulator of ATXN3 protein expression. Reduced PUM1 activity leads to increased ATXN3 protein levels, which exacerbates pathology in Spinocerebellar Ataxia Type 3 (SCA3). The arrow should point from PUM1 to ATXN3 and be labeled 'inhibits'.",
+  "mechanism": "The RNA-binding protein Pumilio1 (PUM1) directly binds to a conserved Pumilio Recognition Element (PRE) within the 3' UTR of the ATXN3 mRNA. This interaction leads to the repression of ATXN3 translation and/or promotes mRNA decay, thereby reducing the overall cellular levels of ATXN3 protein.",
+  "effect": "PUM1 functions as a post-transcriptional repressor of ATXN3. A reduction in PUM1 levels, as observed in SCA3 models, leads to the de-repression of ATXN3 mRNA translation. This results in an overproduction of the mutant ATXN3 protein, which enhances its aggregation and cytotoxicity, thus contributing to neurodegeneration.",
+  "summary": "ATXN3 inhibits PUM1 to modulate translational repression of atxn3, ultimately affecting reduced risk of mutant atxn3 aggregation and toxicity.",
+  "evidence": [
+    {
+      "paper_title": "A Mild PUM1 Mutation Is Associated with Adult-Onset Ataxia, whereas Haploinsufficiency Causes Developmental Delay and Seizures",
+      "journal": "Cell",
+      "year": 2018,
+      "relevant_quote": "Studies in patient-derived cells revealed that the missense mutations reduced PUM1 protein levels by ~25% in the adult-onset cases, and by ~50% in the infantile-onset cases; levels of known PUM1 targets increased accordingly. Changes in protein levels thus track with phenotypic severity..."
+    },
+    {
+      "paper_title": "Pumilio1 Haploinsufficiency Leads to SCA1-like Neurodegeneration by Increasing Wild-Type Ataxin1 Levels",
+      "journal": "Cell",
+      "year": 2015,
+      "relevant_quote": "We found that Pum1 physically interacts with the conserved binding site of the Atxn1-3′UTR in WT mice. Consistent with the finding that Pum1 negatively regulates Atxn1, Pum1 heterozygous (Pum1+/−) mice showed increased levels of both Atxn1 protein and mRNA..."
+    }
+  ],
+  "arrow_notation": "ATXN3 --inhibits--> PUM1:",
+  "protein_a": "PUM1",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.694504Z",
+  "last_updated": "2025-11-29T11:33:49.694504Z"
+}

@@ -1,0 +1,66 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 interacts with and deubiquitinates the promyelocytic leukemia (PML) protein, regulating the formation of PML nuclear bodies.",
+  "functions": [
+    {
+      "function": "Inhibition of ATXN3 Deubiquitinase Activity",
+      "arrow": "activates",
+      "cellular_process": "The PML-II isoform, through its unique C-terminal region, specifically binds to the deubiquitinase ATXN3. This interaction recruits ATXN3 to PML Nuclear Bodies (NBs). Within the NBs, the binding to PML-II inhibits the ubiquitin hydrolase activity of ATXN3.",
+      "effect_description": "By sequestering ATXN3 in PML-NBs and inhibiting its enzymatic function, PML-II acts as a negative regulator of ATXN3. This alters the ubiquitination landscape of the cell by preventing ATXN3 from deubiquitinating its other substrates, which can impact protein degradation, DNA repair, and transcriptional regulation pathways.",
+      "biological_consequence": [
+        "PML-II isoform specifically binds ATXN3 → ATXN3 is recruited to and co-localizes with PML-II in PML Nuclear Bodies → The deubiquitinase activity of ATXN3 is inhibited → Ubiquitination levels of other ATXN3 substrates increase → Altered protein turnover and cellular signaling."
+      ],
+      "specific_effects": [
+        "The interaction is specific to the PML-II isoform and does not occur with other PML isoforms.",
+        "Both wild-type (13Q) and pathogenic polyQ-expanded (79Q) ATXN3 are recruited to PML-NBs by PML-II.",
+        "The inhibition of ATXN3's deubiquitinase activity by PML-II suggests a regulatory role for PML-NBs in controlling ubiquitin-dependent processes."
+      ],
+      "evidence": [
+        {
+          "paper_title": "PML-II recruits ataxin-3 to PML-NBs and inhibits its deubiquitinating activity",
+          "journal": "Biochemical and Biophysical Research Communications",
+          "year": 2021,
+          "relevant_quote": "Here, we report the characterization of the deubiquitinase ataxin-3 as a specific binding partner of PML isoform II (PML-II)... Ataxin-3 only binds to the C-terminal region of PML-II and not that of other PML isoforms. The interaction between ataxin-3 and PML-II was confirmed by co-immunoprecipition assays, and immunofluorescent microscopy revealed that PML-II and ataxin-3 were co-localized in PML-NBs... Importantly, the deubiquitinase activity of ataxin-3 was inhibited by PML-II. Our results suggest that PML-II may be a negative regulator of ataxin-3.",
+          "pmid": "33798946"
+        }
+      ],
+      "pmids": [
+        "33798946"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The provided information is partially correct but requires significant clarification. The interaction is isoform-specific, and its primary effect is the inhibition of ATXN3's enzymatic activity, not its deubiquitination of PML. ATXN3 is recruited to PML Nuclear Bodies (NBs) by the PML-II isoform. This interaction does not primarily regulate PML stability via deubiquitination but instead inhibits the deubiquitinase (DUB) activity of ATXN3 itself. This suggests PML-II acts as a negative regulator of ATXN3, which in turn would affect the ubiquitination status of other ATXN3 substrates.",
+  "mechanism": "The PML-II isoform, through its unique C-terminal region, specifically binds to the deubiquitinase ATXN3. This interaction recruits ATXN3 to PML Nuclear Bodies (NBs). Within the NBs, the binding to PML-II inhibits the ubiquitin hydrolase activity of ATXN3.",
+  "effect": "By sequestering ATXN3 in PML-NBs and inhibiting its enzymatic function, PML-II acts as a negative regulator of ATXN3. This alters the ubiquitination landscape of the cell by preventing ATXN3 from deubiquitinating its other substrates, which can impact protein degradation, DNA repair, and transcriptional regulation pathways.",
+  "summary": "ATXN3 inhibits PML to modulate inhibition of atxn3 deubiquitinase activity, ultimately affecting altered protein turnover and cellular signaling.",
+  "evidence": [
+    {
+      "paper_title": "PML-II recruits ataxin-3 to PML-NBs and inhibits its deubiquitinating activity",
+      "journal": "Biochemical and Biophysical Research Communications",
+      "year": 2021,
+      "relevant_quote": "Here, we report the characterization of the deubiquitinase ataxin-3 as a specific binding partner of PML isoform II (PML-II)... Ataxin-3 only binds to the C-terminal region of PML-II and not that of other PML isoforms. The interaction between ataxin-3 and PML-II was confirmed by co-immunoprecipition assays, and immunofluorescent microscopy revealed that PML-II and ataxin-3 were co-localized in PML-NBs... Importantly, the deubiquitinase activity of ataxin-3 was inhibited by PML-II. Our results suggest that PML-II may be a negative regulator of ataxin-3."
+    }
+  ],
+  "arrow_notation": "ATXN3 --inhibits--> PML:",
+  "protein_a": "PML",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.692882Z",
+  "last_updated": "2025-11-29T11:33:49.692882Z"
+}

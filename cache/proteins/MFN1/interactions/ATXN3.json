@@ -1,0 +1,110 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": "Parkin",
+  "mediator_chain": [
+    "Parkin"
+  ],
+  "depth": 2,
+  "support_summary": "ATXN3 regulates the E3 ligase Parkin, which ubiquitinates Mitofusin-1 (MFN1) on the mitochondrial outer membrane to trigger mitophagy.",
+  "functions": [
+    {
+      "function": "Mitophagy",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 regulates the stability and activity of the E3 ligase Parkin. Upon mitochondrial depolarization, Parkin is recruited to the outer mitochondrial membrane where it ubiquitinates substrates, including Mitofusin-1 (MFN1).",
+      "effect_description": "By modulating Parkin's function, ATXN3 indirectly influences the ubiquitination and subsequent proteasomal degradation of MFN1. The removal of MFN1 prevents the fusion of damaged mitochondria with the healthy mitochondrial network, thereby isolating them for clearance by mitophagy.",
+      "biological_consequence": [
+        "ATXN3 regulates Parkin stability → Parkin ubiquitinates MFN1 on damaged mitochondria → MFN1 degradation by the proteasome → Inhibition of mitochondrial fusion → Segregation and clearance of damaged mitochondria"
+      ],
+      "specific_effects": [
+        "Parkin-mediated ubiquitination of MFN1 leads to its degradation in a proteasome- and p97-dependent manner.",
+        "Ubiquitination of mitofusins is an early, PINK1- and Parkin-dependent event in mitophagy.",
+        "Blocking mitochondrial fusion by removing MFN1/2 is a key step in isolating damaged mitochondria for autophagic removal."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Proteasome and p97 mediate mitophagy and degradation of mitofusins induced by Parkin",
+          "year": 2010,
+          "pmid": "21173115"
+        },
+        {
+          "paper_title": "PINK1-parkin-dependent mitophagy involves ubiquitination of mitofusins 1 and 2: Implications for Parkinson disease pathogenesis",
+          "year": 2011,
+          "pmid": "21139416"
+        },
+        {
+          "paper_title": "The Machado-Joseph disease-associated mutant form of ataxin-3 regulates parkin ubiquitination and stability",
+          "year": 2011,
+          "pmid": "20940148"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "21173115",
+        "21139416",
+        "20940148"
+      ],
+      "direct_arrow": "activates",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "Parkin",
+        "direct_arrow": "activates",
+        "net_from": "ATXN3",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "Parkin"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "_validation_status": "rejected",
+  "mechanism": "ATXN3 regulates the stability and activity of the E3 ligase Parkin. Upon mitochondrial depolarization, Parkin is recruited to the outer mitochondrial membrane where it ubiquitinates substrates, including Mitofusin-1 (MFN1).",
+  "effect": "By modulating Parkin's function, ATXN3 indirectly influences the ubiquitination and subsequent proteasomal degradation of MFN1. The removal of MFN1 prevents the fusion of damaged mitochondria with the healthy mitochondrial network, thereby isolating them for clearance by mitophagy.",
+  "summary": "ATXN3 activates MFN1 to modulate mitophagy, ultimately affecting segregation and clearance of damaged mitochondria.",
+  "evidence": [
+    {
+      "paper_title": "Proteasome and p97 mediate mitophagy and degradation of mitofusins induced by Parkin",
+      "year": 2010
+    },
+    {
+      "paper_title": "PINK1-parkin-dependent mitophagy involves ubiquitination of mitofusins 1 and 2: Implications for Parkinson disease pathogenesis",
+      "year": 2011
+    },
+    {
+      "paper_title": "The Machado-Joseph disease-associated mutant form of ataxin-3 regulates parkin ubiquitination and stability",
+      "year": 2011
+    }
+  ],
+  "interaction_effect": "inhibits",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "Parkin --inhibits--> MFN1:",
+  "protein_a": "MFN1",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.797695Z",
+  "last_updated": "2025-11-24T12:52:47.797695Z"
+}

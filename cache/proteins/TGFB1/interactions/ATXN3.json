@@ -1,0 +1,78 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 2,
+  "support_summary": "Transcriptomic analysis identified TGFB1 as a key hub in the protein-protein interaction network associated with SCA3 disease progression.",
+  "functions": [
+    {
+      "function": "TGF-β Signaling",
+      "arrow": "inhibits",
+      "cellular_process": "Normal ATXN3 functions as a transcriptional co-repressor. It is involved in multiprotein complexes that regulate gene expression. Specifically, ATXN3 helps to suppress the transcription of genes within the Transforming Growth Factor-β (TGF-β) signaling pathway.",
+      "effect_description": "By repressing the expression of TGF-β pathway components, normal ATXN3 plays a role in controlling cellular processes like growth and differentiation. In SCA3, a loss-of-function component of the disease may lead to the inappropriate upregulation of this pathway, as evidenced by studies in ATXN3 knockout models, potentially contributing to pathological signaling.",
+      "biological_consequence": [
+        "Normal ATXN3 associates with transcriptional regulators (e.g., HDAC3/NCoR) at gene promoters → Repression of TGF-β pathway gene transcription → Basal regulation of cell signaling → Loss of functional ATXN3 → De-repression of TGF-β pathway gene promoters → Elevated expression of TGF-β pathway components → Aberrant cellular signaling."
+      ],
+      "specific_effects": [
+        "Transcriptional profiling of ATXN3 null mouse embryonic fibroblasts (MEFs) shows elevated expression of genes in the TGF-β pathway.",
+        "Loss of ATXN3 is associated with decreased levels of the co-repressors HDAC3 and NCoR, leading to hyperacetylation of histones at target gene promoters."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Loss of the Spinocerebellar Ataxia type 3 disease protein ATXN3 alters transcription of multiple signal transduction pathways",
+          "journal": "PLoS One",
+          "year": 2018,
+          "relevant_quote": "To assess the potential normal role of ATXN3 in regulating gene expression, we compared transcriptional profiles in WT versus Atxn3 null mouse embryonic fibroblasts. Differentially expressed genes in the absence of ATXN3 contribute to multiple signal transduction pathways, suggesting a status switch of signaling pathways including depressed Wnt and BMP4 pathways and elevated growth factor pathways such as Prolactin, TGF-β, and Ephrin pathways.",
+          "pmid": "30231063"
+        }
+      ],
+      "pmids": [
+        "30231063"
+      ],
+      "interaction_effect": "inhibits",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "inhibition",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "inhibits",
+        "net_from": "ATXN3",
+        "net_arrow": "inhibits",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "inhibits",
+      "direct_arrow": "inhibits",
+      "net_effect": "inhibition",
+      "direct_effect": "inhibition"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "_chain_inferred": true,
+  "is_valid": true,
+  "mechanism_correction": "The input claim is valid. The mechanism is transcriptional repression, where normal ATXN3 is part of a complex that suppresses the expression of TGF-β pathway genes. Loss of ATXN3 function leads to de-repression and subsequent upregulation of this pathway.",
+  "mechanism": "Normal ATXN3 functions as a transcriptional co-repressor. It is involved in multiprotein complexes that regulate gene expression. Specifically, ATXN3 helps to suppress the transcription of genes within the Transforming Growth Factor-β (TGF-β) signaling pathway.",
+  "effect": "By repressing the expression of TGF-β pathway components, normal ATXN3 plays a role in controlling cellular processes like growth and differentiation. In SCA3, a loss-of-function component of the disease may lead to the inappropriate upregulation of this pathway, as evidenced by studies in ATXN3 knockout models, potentially contributing to pathological signaling.",
+  "summary": "ATXN3 inhibits TGFB1 to modulate tgf-β signaling, ultimately affecting aberrant cellular signaling.",
+  "evidence": [
+    {
+      "paper_title": "Loss of the Spinocerebellar Ataxia type 3 disease protein ATXN3 alters transcription of multiple signal transduction pathways",
+      "journal": "PLoS One",
+      "year": 2018,
+      "relevant_quote": "To assess the potential normal role of ATXN3 in regulating gene expression, we compared transcriptional profiles in WT versus Atxn3 null mouse embryonic fibroblasts. Differentially expressed genes in the absence of ATXN3 contribute to multiple signal transduction pathways, suggesting a status switch of signaling pathways including depressed Wnt and BMP4 pathways and elevated growth factor pathways such as Prolactin, TGF-β, and Ephrin pathways."
+    }
+  ],
+  "arrow_notation": "ATXN3 --inhibits--> TGFB1:",
+  "protein_a": "TGFB1",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.681071Z",
+  "last_updated": "2025-11-29T11:33:49.681071Z"
+}

@@ -1,0 +1,82 @@
+{
+  "primary": "UBC",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 interacts with UBC (Ubiquitin C), as evidenced by affinity capture mass spectrometry and reconstituted complex assays.",
+  "functions": [
+    {
+      "function": "Protein Ubiquitination & Degradation",
+      "arrow": "inhibits",
+      "cellular_process": "Ubiquitin C (UBC) is a source of ubiquitin monomers that are attached to substrate proteins by E1, E2, and E3 enzymes. ATXN3, as a deubiquitinase, interacts with these ubiquitin chains on substrates. It can trim or remove the chains, thereby regulating the signal for proteasomal degradation.",
+      "effect_description": "The interaction with ubiquitin chains, derived from UBC, is fundamental to ATXN3's role as a deubiquitinase, allowing it to edit ubiquitin signals and control protein turnover.",
+      "biological_consequence": [
+        "Ubiquitin Chain Editing → Regulation of Proteasomal Degradation → Protein Homeostasis"
+      ],
+      "specific_effects": [
+        "ATXN3 binds and cleaves polyubiquitin chains",
+        "ATXN3 activity modulates substrate stability"
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ubiquitination directly enhances activity of the deubiquitinating enzyme ataxin-3",
+          "year": 2009,
+          "pmid": "19153604"
+        },
+        {
+          "paper_title": "Regional and age-dependent changes in ubiquitination in cellular and mouse models of spinocerebellar ataxia type 3",
+          "year": 2023,
+          "pmid": "37122622"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": "UBC",
+        "chain": null
+      },
+      "interaction_effect": "inhibits",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "19153604",
+        "37122622"
+      ],
+      "function_effect": "inhibition"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "bidirectional",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "Ubiquitin C (UBC) is a source of ubiquitin monomers that are attached to substrate proteins by E1, E2, and E3 enzymes. ATXN3, as a deubiquitinase, interacts with these ubiquitin chains on substrates. It can trim or remove the chains, thereby regulating the signal for proteasomal degradation.",
+  "effect": "The interaction with ubiquitin chains, derived from UBC, is fundamental to ATXN3's role as a deubiquitinase, allowing it to edit ubiquitin signals and control protein turnover.",
+  "summary": "ATXN3 activates UBC to modulate protein ubiquitination & degradation, ultimately affecting protein homeostasis.",
+  "evidence": [
+    {
+      "paper_title": "Ubiquitination directly enhances activity of the deubiquitinating enzyme ataxin-3",
+      "year": 2009
+    },
+    {
+      "paper_title": "Regional and age-dependent changes in ubiquitination in cellular and mouse models of spinocerebellar ataxia type 3",
+      "year": 2023
+    }
+  ],
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 <--regulates--> UBC:",
+  "protein_a": "ATXN3",
+  "protein_b": "UBC",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T02:27:04.758477Z",
+  "last_updated": "2025-11-24T02:27:04.758477Z"
+}

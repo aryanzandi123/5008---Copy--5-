@@ -1,0 +1,65 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "Co-immunoprecipitation studies have shown that ATXN3 interacts with Histone Deacetylase 1 (HDAC1), forming repressor complexes involved in transcriptional regulation.",
+  "functions": [
+    {
+      "function": "Transcriptional Repression",
+      "arrow": "regulates",
+      "cellular_process": "ATXN3 interacts with Histone Deacetylase 1 (HDAC1), likely as part of a larger transcriptional repressor complex. This complex is recruited to specific gene promoters, where HDAC1 removes acetyl groups from histones, leading to chromatin condensation and gene silencing.",
+      "effect_description": "The interaction with HDAC1 allows ATXN3 to participate in the epigenetic regulation of gene expression, contributing to the repression of target genes.",
+      "biological_consequence": [
+        "ATXN3 forms complex with HDAC1 -> Recruitment to gene promoters -> Histone deacetylation -> Chromatin compaction -> Transcriptional repression"
+      ],
+      "specific_effects": [
+        "This function is similar to its well-documented interaction with HDAC3."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ataxin-3, the MJD1 gene product, interacts with the two human homologs of yeast DNA repair protein RAD23, HHR23A and HHR23B",
+          "year": 2000,
+          "pmid": "10915768"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "regulates",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "10915768"
+      ],
+      "function_effect": "regulation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "_validation_status": "rejected",
+  "mechanism": "ATXN3 interacts with Histone Deacetylase 1 (HDAC1), likely as part of a larger transcriptional repressor complex. This complex is recruited to specific gene promoters, where HDAC1 removes acetyl groups from histones, leading to chromatin condensation and gene silencing.",
+  "effect": "The interaction with HDAC1 allows ATXN3 to participate in the epigenetic regulation of gene expression, contributing to the repression of target genes.",
+  "summary": "ATXN3 activates HDAC1 to modulate transcriptional repression.",
+  "evidence": [
+    {
+      "paper_title": "Ataxin-3, the MJD1 gene product, interacts with the two human homologs of yeast DNA repair protein RAD23, HHR23A and HHR23B",
+      "year": 2000
+    }
+  ],
+  "arrow_notation": "ATXN3 --activates--> HDAC1:",
+  "protein_a": "HDAC1",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.721927Z",
+  "last_updated": "2025-11-29T11:33:49.721927Z"
+}

@@ -1,0 +1,150 @@
+{
+  "primary": "ATG4B",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATG4B is a cysteine protease that processes the pro-LC3B form to its active LC3B-I form by cleaving the C-terminus. It also de-lipidates LC3B-II from the autophagosome membrane. This is a direct enzyme-substrate interaction and ATG4B contains a LIR motif.",
+  "functions": [
+    {
+      "function": "pro-LC3B Proteolytic Cleavage",
+      "arrow": "activates",
+      "cellular_process": "ATG4B is a cysteine protease that performs the initial and essential maturation step of newly synthesized pro-LC3B. It cleaves off a short C-terminal peptide to expose a glycine residue (Gly120).",
+      "effect_description": "This cleavage converts the inactive pro-LC3B into the cytosolic, soluble form LC3B-I. Exposing the C-terminal glycine is an absolute requirement for LC3B-I to be recognized and activated by the E1-like enzyme ATG7, thereby priming it for its role in autophagy.",
+      "biological_consequence": [
+        "Binding of pro-LC3B to ATG4B active site → Proteolytic cleavage of C-terminal residues → Exposure of Glycine 120 → Generation of cytosolic LC3B-I → Availability for ATG7-mediated activation"
+      ],
+      "specific_effects": [
+        "Cleaves the C-terminal residues of pro-LC3B to expose a terminal glycine.",
+        "This priming step is essential for subsequent recognition by ATG7 and lipidation.",
+        "ATG4B possesses the highest catalytic efficiency for this cleavage among the four human ATG4 homologs."
+      ],
+      "evidence": [
+        {
+          "paper_title": "LC3B Binds to the Autophagy Protease ATG4b with High Affinity Using a Bipartite Interface",
+          "journal": "Biochemistry",
+          "year": 2022,
+          "relevant_quote": "The cysteine protease ATG4b acts at two stages in the life cycle of LC3B... Human pro-LC3B contains 125 residues comprised of a ubiquitin-like core and a C-terminal tail. ATG4b cleaves the last 5 residues of pro-LC3B to expose Gly120 for further lipidation.",
+          "pmid": "36264309"
+        },
+        {
+          "paper_title": "The structure of Atg4B–LC3 complex reveals the mechanism of LC3 processing and delipidation during autophagy",
+          "journal": "The EMBO Journal",
+          "year": 2009,
+          "relevant_quote": "Regulation of PE conjugation and deconjugation of Atg8 is crucial for these functions in which Atg4 has a critical function by both processing Atg8 precursors and deconjugating Atg8–PE.",
+          "pmid": "19322194"
+        }
+      ],
+      "pmids": [
+        "36264309",
+        "19322194"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    },
+    {
+      "function": "LC3B-II Delipidation and Recycling",
+      "arrow": "regulates",
+      "cellular_process": "ATG4B also acts as a deconjugating enzyme, reversing the lipidation process. It cleaves the amide bond between LC3B-II and phosphatidylethanolamine (PE) on autophagosomal membranes.",
+      "effect_description": "This delipidation activity releases LC3B from the membrane, recycling it back into the cytosolic pool of LC3B-I. This recycling is crucial for maintaining a supply of LC3B for sustained autophagic flux and is also involved in regulating the size and maturation of the autophagosome.",
+      "biological_consequence": [
+        "Recognition of membrane-bound LC3B-II by ATG4B → Cleavage of the LC3B-PE amide bond → Release of LC3B-I into the cytosol → Maintenance of the cytosolic LC3B-I pool for reuse → Regulation of autophagosome maturation"
+      ],
+      "specific_effects": [
+        "Catalyzes the deconjugation of LC3B-II from PE, reversing the lipidation step.",
+        "Recycles LC3B, making it available for subsequent rounds of autophagosome formation.",
+        "The delipidation activity of ATG4B can be regulated by post-translational modifications, such as phosphorylation, which increases its activity."
+      ],
+      "evidence": [
+        {
+          "paper_title": "An Atg4B Mutant Hampers the Lipidation of LC3 Paralogues and Causes Defects in Autophagosome Closure",
+          "journal": "Molecular Biology of the Cell",
+          "year": 2008,
+          "relevant_quote": "The LC3 lipidation process is reversible, because the Atg4 proteases can also catalyze the reverse modification reaction, termed delipidation, of LC3/Atg8.",
+          "pmid": "18768752"
+        },
+        {
+          "paper_title": "Suppression of ATG4B by copper inhibits autophagy and involves in Mallory body formation",
+          "journal": "Cell Communication and Signaling",
+          "year": 2022,
+          "relevant_quote": "ATG4B could execute two LC3 proteolytic processing events: priming of pro-LC3 to LC3-I and deconjugation of LC3-II to LC3-I.",
+          "pmid": "35349929"
+        },
+        {
+          "paper_title": "Delipidation of mammalian Atg8-family proteins by each of the four ATG4 proteases",
+          "journal": "Autophagy",
+          "year": 2017,
+          "relevant_quote": "The ATG4 family of proteases drives both cleavages, but how ATG4 proteins distinguish between soluble and lipid-anchored Atg8 proteins is not well understood.",
+          "pmid": "29458288"
+        }
+      ],
+      "pmids": [
+        "18768752",
+        "35349929",
+        "29458288"
+      ],
+      "interaction_effect": "regulates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "regulation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "ATG4B is a cysteine protease that performs the initial and essential maturation step of newly synthesized pro-LC3B. It cleaves off a short C-terminal peptide to expose a glycine residue (Gly120). ATG4B also acts as a deconjugating enzyme, reversing the lipidation process. It cleaves the amide bond between LC3B-II and phosphatidylethanolamine (PE) on autophagosomal membranes.",
+  "effect": "This cleavage converts the inactive pro-LC3B into the cytosolic, soluble form LC3B-I. Exposing the C-terminal glycine is an absolute requirement for LC3B-I to be recognized and activated by the E1-like enzyme ATG7, thereby priming it for its role in autophagy.; This delipidation activity releases LC3B from the membrane, recycling it back into the cytosolic pool of LC3B-I. This recycling is crucial for maintaining a supply of LC3B for sustained autophagic flux and is also involved in regulating the size and maturation of the autophagosome.",
+  "summary": "LC3B activates ATG4B to regulate pro-lc3b proteolytic cleavage and lc3b-ii delipidation and recycling, ultimately affecting availability for atg7-mediated activation.",
+  "evidence": [
+    {
+      "paper_title": "LC3B Binds to the Autophagy Protease ATG4b with High Affinity Using a Bipartite Interface",
+      "journal": "Biochemistry",
+      "year": 2022,
+      "relevant_quote": "The cysteine protease ATG4b acts at two stages in the life cycle of LC3B... Human pro-LC3B contains 125 residues comprised of a ubiquitin-like core and a C-terminal tail. ATG4b cleaves the last 5 residues of pro-LC3B to expose Gly120 for further lipidation."
+    },
+    {
+      "paper_title": "The structure of Atg4B–LC3 complex reveals the mechanism of LC3 processing and delipidation during autophagy",
+      "journal": "The EMBO Journal",
+      "year": 2009,
+      "relevant_quote": "Regulation of PE conjugation and deconjugation of Atg8 is crucial for these functions in which Atg4 has a critical function by both processing Atg8 precursors and deconjugating Atg8–PE."
+    },
+    {
+      "paper_title": "An Atg4B Mutant Hampers the Lipidation of LC3 Paralogues and Causes Defects in Autophagosome Closure",
+      "journal": "Molecular Biology of the Cell",
+      "year": 2008,
+      "relevant_quote": "The LC3 lipidation process is reversible, because the Atg4 proteases can also catalyze the reverse modification reaction, termed delipidation, of LC3/Atg8."
+    },
+    {
+      "paper_title": "Suppression of ATG4B by copper inhibits autophagy and involves in Mallory body formation",
+      "journal": "Cell Communication and Signaling",
+      "year": 2022,
+      "relevant_quote": "ATG4B could execute two LC3 proteolytic processing events: priming of pro-LC3 to LC3-I and deconjugation of LC3-II to LC3-I."
+    },
+    {
+      "paper_title": "Delipidation of mammalian Atg8-family proteins by each of the four ATG4 proteases",
+      "journal": "Autophagy",
+      "year": 2017,
+      "relevant_quote": "The ATG4 family of proteases drives both cleavages, but how ATG4 proteins distinguish between soluble and lipid-anchored Atg8 proteins is not well understood."
+    }
+  ],
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 4
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--regulates-- ATG4B:",
+  "protein_a": "LC3B",
+  "protein_b": "ATG4B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:53.997039Z",
+  "last_updated": "2025-11-24T10:45:53.997039Z"
+}

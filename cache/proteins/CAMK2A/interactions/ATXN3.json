@@ -1,0 +1,66 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "Proteomics analysis of brain lysates from a SCA3 mouse model showed that mutant ataxin-3 abnormally interacts with Camk2a.",
+  "functions": [
+    {
+      "function": "Synaptic Plasticity",
+      "arrow": "inhibits",
+      "cellular_process": "In the pathology of Spinocerebellar Ataxia Type 3 (SCA3), mutant ataxin-3 with an expanded polyglutamine tract abnormally interacts with CAMK2A, a critical alpha subunit of the Calcium/Calmodulin-Dependent Protein Kinase II (CaMKII). This pathological association is thought to sequester or disrupt the normal function of the CaMKII complex, a key regulator of synaptic plasticity, learning, and memory.",
+      "effect_description": "The aberrant interaction between mutant ATXN3 and CAMK2A impairs the kinase activity of the CaMKII complex. This disruption leads to altered phosphorylation of synaptic target proteins, contributing to the synaptic dysfunction, impaired axonal transport of mitochondria, and neuronal pathology characteristic of SCA3.",
+      "biological_consequence": [
+        "Mutant ATXN3 (polyQ-expanded) pathologically binds CAMK2A → Functional impairment or sequestration of the CaMKII holoenzyme → Decreased phosphorylation of downstream synaptic targets (e.g., AMPA receptors) → Impaired synaptic plasticity (e.g., Long-Term Potentiation) and defective axonal transport → Neuronal dysfunction and neurodegeneration in SCA3"
+      ],
+      "specific_effects": [
+        "Identified as an abnormal interactor with mutant ataxin-3 in proteomics analysis of SCA3 mouse model brain lysates.",
+        "The interaction is associated with decreased phosphorylation of CaMKII protein targets in SCA3 mouse brains.",
+        "Contributes to impaired axonal transport of mitochondria, a downstream consequence of CaMKII dysregulation."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Impaired interactions of ataxin-3 with protein complexes reveals their specific structure and functions in SCA3 Ki150 model",
+          "journal": "Frontiers in Molecular Neuroscience",
+          "year": 2023,
+          "relevant_quote": "Among others, mutant ataxin-3 abnormally interacted with subunits of large complexes such as Cct5 and 6, Tcp1, and Camk2a and Camk2b.",
+          "pmid": "37033372"
+        }
+      ],
+      "pmids": [
+        "37033372"
+      ],
+      "interaction_effect": "inhibition",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "inhibition"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The interaction is a pathological event specific to mutant, polyQ-expanded ATXN3 (in the context of Spinocerebellar Ataxia Type 3). Rather than a standard enzymatic regulation, mutant ATXN3 abnormally associates with CAMK2A, a subunit of the CaMKII complex. This leads to a functional deficit of CaMKII, likely through sequestration or disruption of the complex, which impairs its downstream signaling. The input's claim of 'inhibition' is contextually correct as a loss-of-function but the mechanism is pathological association, not direct enzymatic inhibition.",
+  "mechanism": "In the pathology of Spinocerebellar Ataxia Type 3 (SCA3), mutant ataxin-3 with an expanded polyglutamine tract abnormally interacts with CAMK2A, a critical alpha subunit of the Calcium/Calmodulin-Dependent Protein Kinase II (CaMKII). This pathological association is thought to sequester or disrupt the normal function of the CaMKII complex, a key regulator of synaptic plasticity, learning, and memory.",
+  "effect": "The aberrant interaction between mutant ATXN3 and CAMK2A impairs the kinase activity of the CaMKII complex. This disruption leads to altered phosphorylation of synaptic target proteins, contributing to the synaptic dysfunction, impaired axonal transport of mitochondria, and neuronal pathology characteristic of SCA3.",
+  "summary": "ATXN3 inhibits CAMK2A to modulate synaptic plasticity, ultimately affecting neuronal dysfunction and neurodegeneration in sca3.",
+  "evidence": [
+    {
+      "paper_title": "Impaired interactions of ataxin-3 with protein complexes reveals their specific structure and functions in SCA3 Ki150 model",
+      "journal": "Frontiers in Molecular Neuroscience",
+      "year": 2023,
+      "relevant_quote": "Among others, mutant ataxin-3 abnormally interacted with subunits of large complexes such as Cct5 and 6, Tcp1, and Camk2a and Camk2b."
+    }
+  ],
+  "arrow_notation": "ATXN3 --inhibits--> CAMK2A:",
+  "protein_a": "CAMK2A",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.671805Z",
+  "last_updated": "2025-11-29T11:33:49.671805Z"
+}

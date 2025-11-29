@@ -1,0 +1,98 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 interacts with the TATA-box binding protein (TBP), another polyglutamine-containing protein, to regulate transcription.",
+  "functions": [
+    {
+      "function": "Transcriptional",
+      "arrow": "regulates",
+      "cellular_process": "ATXN3 is known to interact with various components of the transcriptional machinery in the nucleus. It has been shown to cooperate with several transcriptional regulators, including the TATA-box binding protein (TBP).",
+      "effect_description": "ATXN3's interaction with TBP is part of its broader role in modulating gene expression. Rather than a direct activation, ATXN3 likely acts as a regulatory component within larger protein complexes at gene promoters. The specific outcome (activation or repression) is likely context-dependent and influenced by other co-factors.",
+      "biological_consequence": [
+        "ATXN3 translocates to the nucleus → Interacts with a complex of transcriptional regulators, including TBP → Modulates the assembly or activity of the pre-initiation complex at target gene promoters → Context-dependent regulation of gene expression."
+      ],
+      "specific_effects": [
+        "ATXN3's role in transcriptional regulation is complex, involving interactions with histone acetyltransferases (HATs) and histone deacetylases (HDACs), in addition to basal transcription factors like TBP.",
+        "Both ATXN3 and TBP are polyglutamine-containing proteins, suggesting their interaction could be altered in the context of polyglutamine expansion diseases."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Loss of the Spinocerebellar Ataxia type 3 disease protein ATXN3 alters transcription of multiple signal transduction pathways",
+          "journal": "PLoS Genetics",
+          "year": 2018,
+          "relevant_quote": "An additional role for ATXN3 in transcriptional regulation is suggested by the ability of ATXN3 to bind DNA and cooperate with transcriptional regulators including CBP, P300, PCAF, TBP, HDAC3, HDAC6 and NCoR.",
+          "pmid": "30231063"
+        },
+        {
+          "paper_title": "Ataxin-3 Protein and RNA Toxicity in Spinocerebellar Ataxia Type 3: Current Insights and Emerging Therapeutic Strategies",
+          "journal": "Cells",
+          "year": 2020,
+          "relevant_quote": "Transcriptional regulation by ataxin-3 might arise through different mechanisms, since ataxin-3 is known to interact with numerous transcriptional regulators such as TATA box-binding protein (TBP)-associated factor 4 (TAF4)...",
+          "pmid": "24293103"
+        }
+      ],
+      "pmids": [
+        "30231063",
+        "24293103"
+      ],
+      "interaction_effect": "regulates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "regulation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "regulates",
+        "net_from": "ATXN3",
+        "net_arrow": "regulates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "regulates",
+      "direct_arrow": "regulates",
+      "net_effect": "regulation",
+      "direct_effect": "regulation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The input claim that ATXN3 'activates' TBP-mediated transcription is a contextual error. Primary literature confirms an interaction but does not specify activation. The interaction is described as ATXN3 'cooperating' with multiple transcriptional regulators, including TBP, to control gene expression. The precise molecular consequence of the ATXN3-TBP interaction and its effect on the pre-initiation complex assembly is not clearly defined as simple activation.",
+  "mechanism": "ATXN3 is known to interact with various components of the transcriptional machinery in the nucleus. It has been shown to cooperate with several transcriptional regulators, including the TATA-box binding protein (TBP).",
+  "effect": "ATXN3's interaction with TBP is part of its broader role in modulating gene expression. Rather than a direct activation, ATXN3 likely acts as a regulatory component within larger protein complexes at gene promoters. The specific outcome (activation or repression) is likely context-dependent and influenced by other co-factors.",
+  "summary": "ATXN3 interacts with TBP to modulate transcriptional regulation, ultimately affecting context-dependent regulation of gene expression.",
+  "evidence": [
+    {
+      "paper_title": "Loss of the Spinocerebellar Ataxia type 3 disease protein ATXN3 alters transcription of multiple signal transduction pathways",
+      "journal": "PLoS Genetics",
+      "year": 2018,
+      "relevant_quote": "An additional role for ATXN3 in transcriptional regulation is suggested by the ability of ATXN3 to bind DNA and cooperate with transcriptional regulators including CBP, P300, PCAF, TBP, HDAC3, HDAC6 and NCoR."
+    },
+    {
+      "paper_title": "Ataxin-3 Protein and RNA Toxicity in Spinocerebellar Ataxia Type 3: Current Insights and Emerging Therapeutic Strategies",
+      "journal": "Cells",
+      "year": 2020,
+      "relevant_quote": "Transcriptional regulation by ataxin-3 might arise through different mechanisms, since ataxin-3 is known to interact with numerous transcriptional regulators such as TATA box-binding protein (TBP)-associated factor 4 (TAF4)..."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --binds--> TBP:",
+  "protein_a": "TBP",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.786546Z",
+  "last_updated": "2025-11-24T12:52:47.786546Z"
+}

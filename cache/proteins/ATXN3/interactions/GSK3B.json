@@ -1,0 +1,100 @@
+{
+  "primary": "GSK3B",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 interacts with and is phosphorylated by GSK3B. This interaction regulates ATXN3 aggregation.",
+  "functions": [
+    {
+      "function": "ATXN3 Aggregation",
+      "arrow": "activates",
+      "cellular_process": "Glycogen synthase kinase 3 beta (GSK3B) directly phosphorylates ATXN3 at serine 256 (S256). This post-translational modification decreases the propensity of polyglutamine-expanded ATXN3 to form high molecular weight aggregates, thus maintaining the protein in a more soluble, monomeric state.",
+      "effect_description": "The phosphorylation of ATXN3 by GSK3B at S256 serves a protective role by inhibiting the formation of toxic protein aggregates, which are a key feature in the pathogenesis of Spinocerebellar Ataxia Type 3 (SCA3).",
+      "biological_consequence": [
+        "GSK3B binds to ATXN3 → GSK3B phosphorylates ATXN3 at S256 → Propensity for polyQ-expanded ATXN3 to aggregate is reduced → Cytotoxicity associated with ATXN3 aggregates is decreased."
+      ],
+      "specific_effects": [
+        "A non-phosphorylatable S256A mutant of expanded ATXN3 demonstrates a significant increase in the formation of high molecular weight protein aggregates.",
+        "A phosphomimetic S256D mutant of expanded ATXN3 remains in a monomeric state, similar to the wild-type protein."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Phosphorylation of ataxin-3 by glycogen synthase kinase 3beta at serine 256 regulates the aggregation of ataxin-3",
+          "journal": "Biochemical and Biophysical Research Communications",
+          "year": 2007,
+          "relevant_quote": "Here we show that S256 site in ataxin-3 is phosphorylated by GSK 3beta. Moreover, S256A mutant of expanded ataxin-3 forms high molecular weight protein aggregation, whereas S256D mutant and expanded ataxin-3 without mutation on this site are monomeric... Our results imply that phosphorylation of serine 256 in ataxin-3 by GSK 3beta regulates ataxin-3 aggregation.",
+          "pmid": "17434145"
+        }
+      ],
+      "pmids": [
+        "17434145"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    },
+    {
+      "function": "ATXN3 Nuclear Import",
+      "arrow": "activates",
+      "cellular_process": "In conjunction with Casein Kinase 2 (CK2), GSK3B phosphorylates ATXN3 at serine 29 (S29), a highly conserved residue located within the N-terminal Josephin domain. This phosphorylation event acts as a signal to promote the translocation of ATXN3 from the cytoplasm into the nucleus.",
+      "effect_description": "The phosphorylation at S29 enhances the nuclear accumulation of ATXN3. While nuclear localization is part of its normal function, it is also a critical aspect of SCA3 pathology, as the accumulation of mutant ATXN3 in the nucleus is a hallmark of the disease.",
+      "biological_consequence": [
+        "GSK3B and CK2 co-phosphorylate ATXN3 at S29 in the Josephin domain → Nuclear import of ATXN3 is enhanced → Concentration of ATXN3 within the nucleus increases → Potential for nuclear aggregation and toxicity of mutant ATXN3 is heightened."
+      ],
+      "specific_effects": [
+        "Site-directed mutagenesis of S29 to a non-phosphorylatable alanine (S29A) strongly reduces the efficiency of ATXN3 nuclear uptake.",
+        "Treatment of cells with GSK3 and CK2 inhibitors prevents S29 phosphorylation and significantly inhibits the nuclear import of ATXN3."
+      ],
+      "evidence": [
+        {
+          "paper_title": "CK2 and GSK3 phosphorylation on S29 controls wild-type ATXN3 nuclear uptake",
+          "journal": "Biochimica et Biophysica Acta (BBA) - Molecular Basis of Disease",
+          "year": 2010,
+          "relevant_quote": "In the present work we show that murine ATXN3 (ATXN3Q6) nuclear uptake is promoted by phosphorylation on serine 29, a highly conserved residue inside the Josephin domain. Both casein kinase 2 (CK2) and glycogen synthase kinase 3 (GSK3) are able to carry out phosphorylation on this residue. Site-directed mutagenesis of S29 to an alanine was shown to strongly reduce nuclear uptake... Finally, treatment with CK2 and GSK3 inhibitors prevented S29 phosphorylation and strongly inhibited nuclear uptake, showing that both kinases are involved in ATXN3Q6 subcellular sorting.",
+          "pmid": "20347968"
+        }
+      ],
+      "pmids": [
+        "20347968"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates",
+      "inhibits"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Glycogen synthase kinase 3 beta (GSK3B) directly phosphorylates ATXN3 at serine 256 (S256); In conjunction with Casein Kinase 2 (CK2), GSK3B phosphorylates ATXN3 at serine 29 (S29), a highly c",
+  "effect": "The phosphorylation of ATXN3 by GSK3B at S256 serves a protective role by inhibiting the formation of toxic protein aggregates, which are a key feature in the pathogenesis of Spinocerebellar Ataxia Type 3 (SCA3).; The phosphorylation at S29 enhances the nuclear accumulation of ATXN3. While nuclear localization is part of its normal function, it is also a critical aspect of SCA3 pathology, as the accumulation of mutant ATXN3 in the nucleus is a hallmark of the disease.",
+  "summary": "ATXN3 regulates GSK3B to regulate atxn3 aggregation inhibition and atxn3 nuclear import activation, ultimately affecting cytotoxicity associated with atxn3 aggregates is decreased.",
+  "evidence": [
+    {
+      "paper_title": "Phosphorylation of ataxin-3 by glycogen synthase kinase 3beta at serine 256 regulates the aggregation of ataxin-3",
+      "journal": "Biochemical and Biophysical Research Communications",
+      "year": 2007,
+      "relevant_quote": "Here we show that S256 site in ataxin-3 is phosphorylated by GSK 3beta. Moreover, S256A mutant of expanded ataxin-3 forms high molecular weight protein aggregation, whereas S256D mutant and expanded ataxin-3 without mutation on this site are monomeric... Our results imply that phosphorylation of serine 256 in ataxin-3 by GSK 3beta regulates ataxin-3 aggregation."
+    },
+    {
+      "paper_title": "CK2 and GSK3 phosphorylation on S29 controls wild-type ATXN3 nuclear uptake",
+      "journal": "Biochimica et Biophysica Acta (BBA) - Molecular Basis of Disease",
+      "year": 2010,
+      "relevant_quote": "In the present work we show that murine ATXN3 (ATXN3Q6) nuclear uptake is promoted by phosphorylation on serine 29, a highly conserved residue inside the Josephin domain. Both casein kinase 2 (CK2) and glycogen synthase kinase 3 (GSK3) are able to carry out phosphorylation on this residue. Site-directed mutagenesis of S29 to an alanine was shown to strongly reduce nuclear uptake... Finally, treatment with CK2 and GSK3 inhibitors prevented S29 phosphorylation and strongly inhibited nuclear uptake, showing that both kinases are involved in ATXN3Q6 subcellular sorting."
+    }
+  ],
+  "arrow_notation": "ATXN3 --regulates--> GSK3B:",
+  "protein_a": "ATXN3",
+  "protein_b": "GSK3B",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.698370Z",
+  "last_updated": "2025-11-29T11:33:49.698370Z"
+}

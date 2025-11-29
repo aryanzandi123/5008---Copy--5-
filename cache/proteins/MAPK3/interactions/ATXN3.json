@@ -1,0 +1,80 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 2,
+  "support_summary": "MAPK3 was identified as a key hub in a protein-protein interaction network derived from transcriptomic data in a SCA3 pedigree, suggesting a functional link.",
+  "functions": [
+    {
+      "function": "ERK/MAPK Signaling",
+      "arrow": "regulates",
+      "cellular_process": "Wild-type ATXN3 has a stimulatory role in maintaining the levels of phosphorylated, active ERK1/2 (MAPK3/MAPK1). This is likely an indirect effect stemming from ATXN3's broader functions in cellular homeostasis. In Spinocerebellar Ataxia Type 3 (SCA3), the polyglutamine-expanded ATXN3 loses this function, leading to reduced ERK1/2 phosphorylation.",
+      "effect_description": "The loss of wild-type ATXN3 function, or its replacement by the mutant form, results in the downregulation of the pro-survival ERK signaling pathway, which is a contributing factor to neurodegeneration in SCA3.",
+      "biological_consequence": [
+        "Wild-type ATXN3 expression → Maintenance of normal cellular signaling environment → Sustained phosphorylation of ERK1/2 (MAPK3/MAPK1) at T202/Y204 → Activation of pro-survival pathways",
+        "PolyQ-expanded ATXN3 expression OR loss of ATXN3 → Disruption of cellular signaling → Reduced phosphorylation of ERK1/2 (MAPK3/MAPK1) at T202/Y204 → Impaired pro-survival signaling → Contribution to neurodegeneration"
+      ],
+      "specific_effects": [
+        "Wild-type ataxin-3 has a stimulating effect on regulating phosphorylated ERK1/2 levels.",
+        "The polyglutamine expansion in ataxin-3 abrogates this stimulating effect, leading to reduced levels of phosphorylated ERK1/2 (p-ERK1/2T202/Y204)."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Neurodegenerative phosphoprotein signaling landscape in models of SCA3",
+          "journal": "Cellular and Molecular Life Sciences",
+          "year": 2021,
+          "relevant_quote": "The phosphorylated ERK (p-ERK1/2T202/Y204) was reduced in all models tested including the knockout MEFKO cells. The latter suggested that the stimulating effect of wild-type ataxin-3 in regulating p-ERK1/2T202/Y204 levels was abrogated by the polyglutamine expansion.",
+          "pmid": "33741019"
+        }
+      ],
+      "pmids": [
+        "33741019"
+      ],
+      "interaction_effect": "regulation",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "regulation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "regulates",
+        "net_from": "ATXN3",
+        "net_arrow": "regulates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "regulates",
+      "direct_arrow": "regulates",
+      "net_effect": "regulation",
+      "direct_effect": "regulation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates",
+      "inhibits"
+    ]
+  },
+  "_chain_inferred": true,
+  "is_valid": true,
+  "mechanism_correction": "The provided information correctly identifies that wild-type ATXN3 promotes ERK1/2 (MAPK3/MAPK1) phosphorylation, while mutant ATXN3 impairs this process. However, the interaction is indirect. ATXN3's primary role is in protein quality control and transcriptional regulation, which in turn influences signaling pathways. The literature does not suggest a direct enzymatic action of ATXN3 on MAPK3 but rather a loss of a stimulatory function of wild-type ATXN3 when it is mutated.",
+  "mechanism": "Wild-type ATXN3 has a stimulatory role in maintaining the levels of phosphorylated, active ERK1/2 (MAPK3/MAPK1). This is likely an indirect effect stemming from ATXN3's broader functions in cellular homeostasis. In Spinocerebellar Ataxia Type 3 (SCA3), the polyglutamine-expanded ATXN3 loses this function, leading to reduced ERK1/2 phosphorylation.",
+  "effect": "The loss of wild-type ATXN3 function, or its replacement by the mutant form, results in the downregulation of the pro-survival ERK signaling pathway, which is a contributing factor to neurodegeneration in SCA3.",
+  "summary": "ATXN3 interacts with MAPK3 to modulate erk/mapk signaling regulation, ultimately affecting activation of pro-survival pathways.",
+  "evidence": [
+    {
+      "paper_title": "Neurodegenerative phosphoprotein signaling landscape in models of SCA3",
+      "journal": "Cellular and Molecular Life Sciences",
+      "year": 2021,
+      "relevant_quote": "The phosphorylated ERK (p-ERK1/2T202/Y204) was reduced in all models tested including the knockout MEFKO cells. The latter suggested that the stimulating effect of wild-type ataxin-3 in regulating p-ERK1/2T202/Y204 levels was abrogated by the polyglutamine expansion."
+    }
+  ],
+  "arrow_notation": "ATXN3 --binds--> MAPK3:",
+  "protein_a": "MAPK3",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.682671Z",
+  "last_updated": "2025-11-29T11:33:49.682671Z"
+}

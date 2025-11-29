@@ -1,0 +1,131 @@
+{
+  "primary": "SNCA",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "functions": [
+    {
+      "function": "Aggrephagy (α-Synuclein Clearance)",
+      "arrow": "activates",
+      "cellular_process": "Misfolded and aggregated forms of α-synuclein (SNCA), hallmarks of Parkinson's disease, are targeted for clearance by selective autophagy. This process, often termed aggrephagy, relies on the recognition of ubiquitinated SNCA aggregates by autophagy receptor proteins.",
+      "effect_description": "The primary autophagy receptor p62/SQSTM1 recognizes and binds to ubiquitinated SNCA inclusions. p62 simultaneously interacts with LC3B on the growing phagophore membrane via its LIR motif, thereby tethering the toxic protein aggregates to the nascent autophagosome for subsequent degradation upon fusion with the lysosome.",
+      "biological_consequence": [
+        "SNCA misfolding and aggregation → Ubiquitination of SNCA aggregates → Recognition and binding by p62/SQSTM1 → p62 LIR motif interacts with LC3B on the phagophore → Sequestration of the p62-SNCA complex into the autophagosome → Autophagosome-lysosome fusion and degradation of SNCA"
+      ],
+      "specific_effects": [
+        "Macroautophagy is a principal pathway for the degradation of aggregated and oligomeric α-synuclein.",
+        "p62/SQSTM1 is required for the autophagic clearance of α-synuclein inclusions.",
+        "Inhibition of autophagy results in the accumulation of toxic, ubiquitinated α-synuclein species."
+      ],
+      "evidence": [
+        {
+          "paper_title": "p62/SQSTM1-Dependent Autophagy of Lewy Body-Like α-Synuclein Inclusions",
+          "journal": "PLoS One",
+          "year": 2012,
+          "relevant_quote": "The intracellular α-synuclein inclusions immediately underwent phosphorylation and ubiquitination. Simultaneously they were encircled by an adaptor protein p62/SQSTM1 and directed to the autophagy-lysosome pathway in HEK293 cell line... Knockdown experiments demonstrated the requirement of p62 for α-synuclein autophagy. These results demonstrate that α-synuclein inclusions are preferred targets for p62-dependent autophagy.",
+          "pmid": "23300799"
+        }
+      ],
+      "pmids": [
+        "23300799"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "LC3B",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    },
+    {
+      "function": "Unconventional Secretion",
+      "arrow": "activates",
+      "cellular_process": "Pathological, misfolded α-synuclein (SNCA) fibrils, upon internalization, can cause endo-lysosomal membrane damage. This damage is sensed by the cytosolic lectin galectin-3 (LGALS3), which recognizes exposed luminal glycans and initiates a specific autophagy-dependent response.",
+      "effect_description": "Instead of leading to canonical degradation, the recruitment of the autophagy machinery to sites of lysosomal damage can facilitate the unconventional secretion of SNCA. LGALS3 recruits autophagy proteins, including ATG16L1, to the damaged vesicle, which ultimately leads to the packaging and release of SNCA from the cell. This secretory autophagy mechanism is implicated in the cell-to-cell propagation of SNCA pathology.",
+      "biological_consequence": [
+        "Internalized SNCA fibrils → Lysosomal membrane damage and rupture → Exposure of luminal glycans → LGALS3 recruitment to the damaged lysosome → Recruitment of ATG16L1 and autophagy machinery → Formation of a secretory autophagosome-like vesicle containing SNCA → Unconventional secretion of SNCA → Cell-to-cell propagation of pathology"
+      ],
+      "specific_effects": [
+        "Autophagy-dependent unconventional secretion is a pathway for the release of SNCA.",
+        "Release of SNCA following lysosomal damage is mediated by LGALS3 and requires the core autophagy protein ATG16L1.",
+        "This process is implicated in the prion-like spread of SNCA pathology in Parkinson's disease."
+      ],
+      "evidence": [
+        {
+          "paper_title": "LGALS3 (galectin 3) mediates an unconventional secretion of SNCA/α-synuclein in response to lysosomal membrane damage by the autophagic-lysosomal pathway in human midbrain dopamine neurons",
+          "journal": "Autophagy",
+          "year": 2022,
+          "relevant_quote": "We demonstrate that LGALS3 (galectin 3) mediates the release of SNCA following vesicular damage. SNCA release is also dependent on TRIM16 (tripartite motif containing 16) and ATG16L1 (autophagy related 16 like 1), providing evidence that secretion of SNCA is mediated by an autophagic secretory pathway.",
+          "pmid": "34612142"
+        }
+      ],
+      "pmids": [
+        "34612142"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "LC3B",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Misfolded and aggregated forms of α-synuclein (SNCA), hallmarks of Parkinson's disease, are targeted; Pathological, misfolded α-synuclein (SNCA) fibrils, upon internalization, can cause endo-lysosomal m",
+  "effect": "The primary autophagy receptor p62/SQSTM1 recognizes and binds to ubiquitinated SNCA inclusions. p62 simultaneously interacts with LC3B on the growing phagophore membrane via its LIR motif, thereby tethering the toxic protein aggregates to the nascent autophagosome for subsequent degradation upon fusion with the lysosome.; Instead of leading to canonical degradation, the recruitment of the autophagy machinery to sites of lysosomal damage can facilitate the unconventional secretion of SNCA. LGALS3 recruits autophagy proteins, including ATG16L1, to the damaged vesicle, which ultimately leads to the packaging and release of SNCA from the cell. This secretory autophagy mechanism is implicated in the cell-to-cell propagation of SNCA pathology.",
+  "summary": "LC3B activates SNCA to regulate aggrephagy (α-synuclein clearance) and unconventional secretion, ultimately affecting autophagosome-lysosome fusion and degradation of snca.",
+  "evidence": [
+    {
+      "paper_title": "p62/SQSTM1-Dependent Autophagy of Lewy Body-Like α-Synuclein Inclusions",
+      "journal": "PLoS One",
+      "year": 2012,
+      "relevant_quote": "The intracellular α-synuclein inclusions immediately underwent phosphorylation and ubiquitination. Simultaneously they were encircled by an adaptor protein p62/SQSTM1 and directed to the autophagy-lysosome pathway in HEK293 cell line... Knockdown experiments demonstrated the requirement of p62 for α-synuclein autophagy. These results demonstrate that α-synuclein inclusions are preferred targets for p62-dependent autophagy."
+    },
+    {
+      "paper_title": "LGALS3 (galectin 3) mediates an unconventional secretion of SNCA/α-synuclein in response to lysosomal membrane damage by the autophagic-lysosomal pathway in human midbrain dopamine neurons",
+      "journal": "Autophagy",
+      "year": 2022,
+      "relevant_quote": "We demonstrate that LGALS3 (galectin 3) mediates the release of SNCA following vesicular damage. SNCA release is also dependent on TRIM16 (tripartite motif containing 16) and ATG16L1 (autophagy related 16 like 1), providing evidence that secretion of SNCA is mediated by an autophagic secretory pathway."
+    }
+  ],
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 4
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B --regulates--> SNCA:",
+  "protein_a": "LC3B",
+  "protein_b": "SNCA",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.071388Z",
+  "last_updated": "2025-11-24T10:45:54.071388Z"
+}

@@ -1,0 +1,98 @@
+{
+  "primary": "Ku70",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 directly interacts with the Ku70/Ku80 complex, specifically with the Ku70 (XRCC6) subunit, which is essential for the non-homologous end joining (NHEJ) pathway of DNA repair.",
+  "functions": [
+    {
+      "function": "DNA Double-Strand Break Repair (NHEJ)",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 is a component of the classical non-homologous end joining (C-NHEJ) protein complex and associates with key repair factors including Ku70, Ku80, DNA-PKcs, and PNKP. In concert with the VCP/p97 ATPase, ATXN3 regulates the protein dynamics at DNA double-strand breaks (DSBs).",
+      "effect_description": "The ATXN3/VCP complex facilitates the extraction of the E3 ubiquitin ligase RNF8 from chromatin at DSB sites. This prevents the overaccumulation of RNF8, which could otherwise lead to the premature removal of repair factors and inhibit the NHEJ pathway. By controlling RNF8 levels, ATXN3 indirectly promotes the stability and proper function of the Ku70/80 heterodimer at the DNA break.",
+      "biological_consequence": [
+        "ATXN3 and VCP/p97 form a complex that regulates RNF8 homeostasis → The complex extracts RNF8 from chromatin at DNA damage sites → Prevents RNF8 overaccumulation and subsequent inhibition of NHEJ → Promotes timely repair and maintains genomic integrity."
+      ],
+      "specific_effects": [
+        "ATXN3's involvement in C-NHEJ is crucial for the repair of DNA double-strand breaks in transcribed genes.",
+        "ATXN3 associates with RNA polymerase II and other C-NHEJ proteins, suggesting a role in transcription-coupled DNA repair."
+      ],
+      "evidence": [
+        {
+          "paper_title": "The p97–Ataxin 3 complex regulates homeostasis of the DNA damage response E3 ubiquitin ligase RNF8",
+          "journal": "The EMBO Journal",
+          "year": 2019,
+          "relevant_quote": "Under genotoxic stress, when RNF8 is rapidly recruited to sites of DNA lesions, the p97–ATXN3 machinery stimulates the extraction of RNF8 from chromatin to balance DNA repair pathway choice and promote cell survival after ionising radiation (IR). Inactivation of the p97–ATXN3 complex affects the non‐homologous end joining DNA repair pathway...",
+          "pmid": "31613024"
+        },
+        {
+          "paper_title": "Deficiency in classical nonhomologous end-joining–mediated repair of transcribed genes is linked to SCA3 pathogenesis",
+          "journal": "PNAS",
+          "year": 2020,
+          "relevant_quote": "Here, we report that ATXN3 associates with RNA polymerase II (RNAP II) and the classical nonhomologous end-joining (C-NHEJ) proteins, including PNKP, along with nascent RNAs under physiological conditions.",
+          "pmid": "32205441"
+        }
+      ],
+      "pmids": [
+        "31613024",
+        "32205441"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATXN3",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The provided input suggests a direct stabilization of Ku70/80 by preventing its ubiquitination. The literature indicates a more indirect mechanism where ATXN3 regulates the homeostasis of the E3 ubiquitin ligase RNF8, which in turn affects the stability of factors at DNA double-strand breaks. ATXN3 is also part of a larger complex with other C-NHEJ proteins.",
+  "mechanism": "ATXN3 is a component of the classical non-homologous end joining (C-NHEJ) protein complex and associates with key repair factors including Ku70, Ku80, DNA-PKcs, and PNKP. In concert with the VCP/p97 ATPase, ATXN3 regulates the protein dynamics at DNA double-strand breaks (DSBs).",
+  "effect": "The ATXN3/VCP complex facilitates the extraction of the E3 ubiquitin ligase RNF8 from chromatin at DSB sites. This prevents the overaccumulation of RNF8, which could otherwise lead to the premature removal of repair factors and inhibit the NHEJ pathway. By controlling RNF8 levels, ATXN3 indirectly promotes the stability and proper function of the Ku70/80 heterodimer at the DNA break.",
+  "summary": "ATXN3 activates Ku70 to modulate dna double-strand break repair (nhej), ultimately affecting promotes timely repair and maintains genomic integrity.",
+  "evidence": [
+    {
+      "paper_title": "The p97–Ataxin 3 complex regulates homeostasis of the DNA damage response E3 ubiquitin ligase RNF8",
+      "journal": "The EMBO Journal",
+      "year": 2019,
+      "relevant_quote": "Under genotoxic stress, when RNF8 is rapidly recruited to sites of DNA lesions, the p97–ATXN3 machinery stimulates the extraction of RNF8 from chromatin to balance DNA repair pathway choice and promote cell survival after ionising radiation (IR). Inactivation of the p97–ATXN3 complex affects the non‐homologous end joining DNA repair pathway..."
+    },
+    {
+      "paper_title": "Deficiency in classical nonhomologous end-joining–mediated repair of transcribed genes is linked to SCA3 pathogenesis",
+      "journal": "PNAS",
+      "year": 2020,
+      "relevant_quote": "Here, we report that ATXN3 associates with RNA polymerase II (RNAP II) and the classical nonhomologous end-joining (C-NHEJ) proteins, including PNKP, along with nascent RNAs under physiological conditions."
+    }
+  ],
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --regulates--> Ku70:",
+  "protein_a": "ATXN3",
+  "protein_b": "Ku70",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.828558Z",
+  "last_updated": "2025-11-24T12:52:47.828558Z"
+}

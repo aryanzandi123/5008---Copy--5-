@@ -1,0 +1,101 @@
+{
+  "primary": "LC3B",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATG3 is an E2-like enzyme that receives activated LC3B from ATG7 and catalyzes its covalent attachment to PE on the autophagosome membrane. This is a direct enzymatic interaction.",
+  "functions": [
+    {
+      "function": "LC3B-PE Conjugation (Lipidation)",
+      "arrow": "activates",
+      "cellular_process": "ATG3 is an E2-like conjugating enzyme that receives activated LC3B from ATG7 through a transthiolation reaction. It then catalyzes the formation of a stable amide bond between the C-terminal glycine of LC3B and the primary amine of the lipid phosphatidylethanolamine (PE).",
+      "effect_description": "This covalent modification, known as lipidation, converts the soluble, cytosolic form of LC3B (LC3B-I) into its membrane-bound form (LC3B-II). LC3B-II is inserted into the growing autophagosomal membrane (phagophore) and is crucial for its elongation and the recruitment of cargo.",
+      "biological_consequence": [
+        "Reception of activated LC3B from ATG7 → Catalysis of amide bond formation between LC3B and PE → Conversion of LC3B-I to LC3B-II → Insertion of LC3B-II into the phagophore membrane → Autophagosome elongation and closure"
+      ],
+      "specific_effects": [
+        "Directly catalyzes the covalent attachment of LC3B to phosphatidylethanolamine (PE).",
+        "Acts as an E2-like enzyme, receiving activated LC3B from the E1-like enzyme ATG7.",
+        "The ATG12-ATG5-ATG16L1 complex acts as an E3-like ligase to enhance the efficiency of ATG3-mediated LC3B lipidation."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Binding Features and Functions of ATG3",
+          "journal": "Frontiers in Cell and Developmental Biology",
+          "year": 2021,
+          "relevant_quote": "During autophagosome elongation, the LC3 precursor is cleaved by ATG4B following exposure of Gly120 to form LC3-I, which is activated by the E1-like activating enzyme, ATG7. LC3-I is subsequently transferred to the E2-like conjugated enzyme, ATG3, and finally links to PE with the help of the E3-like ligase ATG12–ATG5 conjugate.",
+          "pmid": "34235149"
+        },
+        {
+          "paper_title": "Multifaceted membrane interactions of human Atg3 promote LC3-phosphatidylethanolamine conjugation during autophagy",
+          "journal": "Nature Communications",
+          "year": 2023,
+          "relevant_quote": "Autophagosome formation, a crucial step in macroautophagy (autophagy), requires the covalent conjugation of LC3 proteins to the amino headgroup of phosphatidylethanolamine (PE) lipids. Atg3, an E2-like enzyme, catalyzes the transfer of LC3 from LC3-Atg3 to PEs in targeted membranes.",
+          "pmid": "37679347"
+        },
+        {
+          "paper_title": "LC3B is Lipidated to Large Lipid Droplets During Prolonged Starvation for Noncanonical Autophagy",
+          "journal": "bioRxiv",
+          "year": 2023,
+          "relevant_quote": "Finally, ATG7, an E1 protein, activates and delivers ATG8 to ATG3, which lipidates it to PE onto the phagophore.",
+          "pmid": "37315562"
+        }
+      ],
+      "pmids": [
+        "34235149",
+        "37679347",
+        "37315562"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "ATG3 is an E2-like conjugating enzyme that receives activated LC3B from ATG7 through a transthiolation reaction. It then catalyzes the formation of a stable amide bond between the C-terminal glycine of LC3B and the primary amine of the lipid phosphatidylethanolamine (PE).",
+  "effect": "This covalent modification, known as lipidation, converts the soluble, cytosolic form of LC3B (LC3B-I) into its membrane-bound form (LC3B-II). LC3B-II is inserted into the growing autophagosomal membrane (phagophore) and is crucial for its elongation and the recruitment of cargo.",
+  "summary": "LC3B activates ATG3 to modulate lc3b-pe conjugation (lipidation), ultimately affecting autophagosome elongation and closure.",
+  "evidence": [
+    {
+      "paper_title": "Binding Features and Functions of ATG3",
+      "journal": "Frontiers in Cell and Developmental Biology",
+      "year": 2021,
+      "relevant_quote": "During autophagosome elongation, the LC3 precursor is cleaved by ATG4B following exposure of Gly120 to form LC3-I, which is activated by the E1-like activating enzyme, ATG7. LC3-I is subsequently transferred to the E2-like conjugated enzyme, ATG3, and finally links to PE with the help of the E3-like ligase ATG12–ATG5 conjugate."
+    },
+    {
+      "paper_title": "Multifaceted membrane interactions of human Atg3 promote LC3-phosphatidylethanolamine conjugation during autophagy",
+      "journal": "Nature Communications",
+      "year": 2023,
+      "relevant_quote": "Autophagosome formation, a crucial step in macroautophagy (autophagy), requires the covalent conjugation of LC3 proteins to the amino headgroup of phosphatidylethanolamine (PE) lipids. Atg3, an E2-like enzyme, catalyzes the transfer of LC3 from LC3-Atg3 to PEs in targeted membranes."
+    },
+    {
+      "paper_title": "LC3B is Lipidated to Large Lipid Droplets During Prolonged Starvation for Noncanonical Autophagy",
+      "journal": "bioRxiv",
+      "year": 2023,
+      "relevant_quote": "Finally, ATG7, an E1 protein, activates and delivers ATG8 to ATG3, which lipidates it to PE onto the phagophore."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--binds-- ATG3:",
+  "protein_a": "ATG3",
+  "protein_b": "LC3B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:53.994772Z",
+  "last_updated": "2025-11-24T10:45:53.994772Z"
+}

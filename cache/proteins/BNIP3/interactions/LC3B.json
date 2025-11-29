@@ -1,0 +1,88 @@
+{
+  "primary": "LC3B",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "BNIP3 is a mitophagy receptor that directly binds to LC3B via a LIR motif to facilitate the autophagic removal of mitochondria. The interaction can be regulated by phosphorylation.",
+  "functions": [
+    {
+      "function": "Mitophagy and ERphagy Receptor",
+      "arrow": "activates",
+      "cellular_process": "BNIP3 is an outer mitochondrial membrane protein that functions as a selective autophagy receptor for both mitochondria (mitophagy) and the endoplasmic reticulum (ERphagy). It contains a canonical LC3-interacting region (LIR) motif, WVEL, which directly binds to LC3B on the phagophore membrane, thereby tethering these organelles to the nascent autophagosome for degradation.",
+      "effect_description": "The binding affinity of the BNIP3 LIR for LC3B is significantly enhanced by the phosphorylation of two serine residues, S17 and S24, which flank the core LIR motif. This phosphorylation acts as a molecular switch, promoting pro-survival mitophagy in response to cellular stress, such as hypoxia, and preventing apoptosis.",
+      "biological_consequence": [
+        "Mitochondrial or ER stress (e.g., hypoxia) → Upregulation and insertion of BNIP3 into the organelle membrane → Phosphorylation of BNIP3 at Ser17 and Ser24 → Enhanced binding of the BNIP3 LIR motif to lipidated LC3B on the phagophore → Sequestration of the targeted organelle into a double-membraned autophagosome → Fusion with lysosome and degradation of cargo."
+      ],
+      "specific_effects": [
+        "Functions as a direct receptor for the selective autophagic removal of mitochondria and the endoplasmic reticulum.",
+        "Directly binds LC3B via its WVEL LIR motif (residues 18-21).",
+        "Phosphorylation at S17 and S24, which flank the LIR, increases binding affinity for LC3B and GATE-16, promoting efficient mitophagy.",
+        "Mutation of the LIR motif (e.g., W18A/L21A) ablates the interaction with LC3B and significantly reduces mitophagy and ERphagy."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Modulation of Serines 17 and 24 in the LC3-interacting Region of Bnip3 Determines Pro-survival Mitophagy versus Apoptosis",
+          "journal": "Journal of Biological Chemistry",
+          "year": 2013,
+          "relevant_quote": "Here we report that phosphorylation of serine residues 17 and 24 flanking the Bnip3 LIR promotes binding to specific Atg8 members LC3B and GATE-16. Using quantitative multispectral image-based flow cytometry, we demonstrate that enhancing Bnip3-Atg8 interactions via phosphorylation-mimicked LIR mutations increased mitochondrial sequestration, lysosomal delivery, and degradation.",
+          "pmid": "23209295"
+        },
+        {
+          "paper_title": "Microtubule-associated Protein 1 Light Chain 3 (LC3) Interacts with Bnip3 Protein to Selectively Remove Endoplasmic Reticulum and Mitochondria via Autophagy",
+          "journal": "Journal of Biological Chemistry",
+          "year": 2012,
+          "relevant_quote": "We also discovered that Bnip3 induced removal of both ER (ERphagy) and mitochondria (mitophagy) via autophagy. The clearance of these organelles was mediated in part via binding of Bnip3 to LC3 on the autophagosome. Although ablation of the Bnip3-LC3 interaction by mutating the LC3 binding site did not impair the prodeath activity of Bnip3, it significantly reduced both mitophagy and ERphagy.",
+          "pmid": "22505714"
+        }
+      ],
+      "pmids": [
+        "23209295",
+        "22505714"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "BNIP3 is an outer mitochondrial membrane protein that functions as a selective autophagy receptor for both mitochondria (mitophagy) and the endoplasmic reticulum (ERphagy). It contains a canonical LC3-interacting region (LIR) motif, WVEL, which directly binds to LC3B on the phagophore membrane, thereby tethering these organelles to the nascent autophagosome for degradation.",
+  "effect": "The binding affinity of the BNIP3 LIR for LC3B is significantly enhanced by the phosphorylation of two serine residues, S17 and S24, which flank the core LIR motif. This phosphorylation acts as a molecular switch, promoting pro-survival mitophagy in response to cellular stress, such as hypoxia, and preventing apoptosis.",
+  "summary": "LC3B activates BNIP3 to modulate mitophagy and erphagy receptor, ultimately affecting fusion with lysosome and degradation of cargo.",
+  "evidence": [
+    {
+      "paper_title": "Modulation of Serines 17 and 24 in the LC3-interacting Region of Bnip3 Determines Pro-survival Mitophagy versus Apoptosis",
+      "journal": "Journal of Biological Chemistry",
+      "year": 2013,
+      "relevant_quote": "Here we report that phosphorylation of serine residues 17 and 24 flanking the Bnip3 LIR promotes binding to specific Atg8 members LC3B and GATE-16. Using quantitative multispectral image-based flow cytometry, we demonstrate that enhancing Bnip3-Atg8 interactions via phosphorylation-mimicked LIR mutations increased mitochondrial sequestration, lysosomal delivery, and degradation."
+    },
+    {
+      "paper_title": "Microtubule-associated Protein 1 Light Chain 3 (LC3) Interacts with Bnip3 Protein to Selectively Remove Endoplasmic Reticulum and Mitochondria via Autophagy",
+      "journal": "Journal of Biological Chemistry",
+      "year": 2012,
+      "relevant_quote": "We also discovered that Bnip3 induced removal of both ER (ERphagy) and mitochondria (mitophagy) via autophagy. The clearance of these organelles was mediated in part via binding of Bnip3 to LC3 on the autophagosome. Although ablation of the Bnip3-LC3 interaction by mutating the LC3 binding site did not impair the prodeath activity of Bnip3, it significantly reduced both mitophagy and ERphagy."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--binds-- BNIP3:",
+  "protein_a": "BNIP3",
+  "protein_b": "LC3B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.018611Z",
+  "last_updated": "2025-11-24T10:45:54.018611Z"
+}

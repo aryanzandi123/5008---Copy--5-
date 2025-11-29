@@ -1,0 +1,87 @@
+{
+  "primary": "SQSTM1",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "SQSTM1 (p62) is a selective autophagy receptor that directly binds to LC3B via its LIR motif to tether ubiquitinated cargo to the autophagosome for degradation. This interaction is confirmed by co-immunoprecipitation and pull-down assays.",
+  "functions": [
+    {
+      "function": "Selective Autophagy Cargo Recognition",
+      "arrow": "activates",
+      "cellular_process": "SQSTM1 (also known as p62) functions as a selective autophagy receptor. It links ubiquitinated cargo to the nascent autophagosome (phagophore) by simultaneously binding to polyubiquitin chains on the cargo via its C-terminal Ubiquitin-Associated (UBA) domain and to lipidated LC3B (LC3B-II) on the phagophore membrane via its LC3-Interacting Region (LIR).",
+      "effect_description": "This dual-recognition tethers the cargo to the autophagosome, ensuring its selective engulfment. SQSTM1's ability to self-oligomerize via its N-terminal PB1 domain is crucial for forming larger aggregates and efficiently sequestering cargo. Following engulfment, the entire complex, including the cargo and SQSTM1 itself, is degraded upon fusion of the autophagosome with the lysosome. Therefore, SQSTM1 levels are inversely correlated with autophagic flux.",
+      "biological_consequence": [
+        "SQSTM1 binds polyubiquitinated cargo via UBA domain → SQSTM1 oligomerizes via PB1 domain, concentrating cargo → SQSTM1 LIR motif binds to LC3B-II on the phagophore membrane → Cargo is tethered to and engulfed by the growing autophagosome → Autophagosome fuses with lysosome, leading to degradation of both cargo and SQSTM1."
+      ],
+      "specific_effects": [
+        "Mediates the clearance of ubiquitinated protein aggregates (aggrephagy).",
+        "Acts as a scaffold protein linking cargo to the core autophagy machinery.",
+        "The degradation of SQSTM1 itself serves as a widely used marker for monitoring autophagic flux."
+      ],
+      "evidence": [
+        {
+          "paper_title": "p62/SQSTM1 Binds Directly to Atg8/LC3 to Facilitate Degradation of Ubiquitinated Protein Aggregates by Autophagy",
+          "journal": "The Journal of Biological Chemistry",
+          "year": 2007,
+          "relevant_quote": "Here we show for the first time a direct interaction between p62 and the autophagic effector proteins LC3A and -B... The binding is mediated by a 22-residue sequence of p62 containing an evolutionarily conserved motif... The specific interaction between p62 and LC3, requiring the motif we have mapped, is instrumental in mediating autophagic degradation of the p62-positive bodies.",
+          "pmid": "17580304"
+        },
+        {
+          "paper_title": "Defective recognition of LC3B by mutant SQSTM1/p62 implicates impairment of autophagy as a pathogenic mechanism in ALS-FTLD",
+          "journal": "Autophagy",
+          "year": 2016,
+          "relevant_quote": "A key protein-protein interaction in autophagy is the recognition of a lipid-anchored form of LC3 (LC3-II) within the phagophore membrane by SQSTM1, mediated through its LC3-interacting region (LIR), and notably some ALS-FTLD mutations map to this region.",
+          "pmid": "27158844"
+        }
+      ],
+      "pmids": [
+        "17580304",
+        "27158844"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "SQSTM1 (also known as p62) functions as a selective autophagy receptor. It links ubiquitinated cargo to the nascent autophagosome (phagophore) by simultaneously binding to polyubiquitin chains on the cargo via its C-terminal Ubiquitin-Associated (UBA) domain and to lipidated LC3B (LC3B-II) on the phagophore membrane via its LC3-Interacting Region (LIR).",
+  "effect": "This dual-recognition tethers the cargo to the autophagosome, ensuring its selective engulfment. SQSTM1's ability to self-oligomerize via its N-terminal PB1 domain is crucial for forming larger aggregates and efficiently sequestering cargo. Following engulfment, the entire complex, including the cargo and SQSTM1 itself, is degraded upon fusion of the autophagosome with the lysosome. Therefore, SQSTM1 levels are inversely correlated with autophagic flux.",
+  "summary": "LC3B activates SQSTM1 to modulate selective autophagy cargo recognition, ultimately affecting autophagosome fuses with lysosome, leading to degradation of both cargo and sqstm1.",
+  "evidence": [
+    {
+      "paper_title": "p62/SQSTM1 Binds Directly to Atg8/LC3 to Facilitate Degradation of Ubiquitinated Protein Aggregates by Autophagy",
+      "journal": "The Journal of Biological Chemistry",
+      "year": 2007,
+      "relevant_quote": "Here we show for the first time a direct interaction between p62 and the autophagic effector proteins LC3A and -B... The binding is mediated by a 22-residue sequence of p62 containing an evolutionarily conserved motif... The specific interaction between p62 and LC3, requiring the motif we have mapped, is instrumental in mediating autophagic degradation of the p62-positive bodies."
+    },
+    {
+      "paper_title": "Defective recognition of LC3B by mutant SQSTM1/p62 implicates impairment of autophagy as a pathogenic mechanism in ALS-FTLD",
+      "journal": "Autophagy",
+      "year": 2016,
+      "relevant_quote": "A key protein-protein interaction in autophagy is the recognition of a lipid-anchored form of LC3 (LC3-II) within the phagophore membrane by SQSTM1, mediated through its LC3-interacting region (LIR), and notably some ALS-FTLD mutations map to this region."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--binds-- SQSTM1:",
+  "protein_a": "LC3B",
+  "protein_b": "SQSTM1",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:53.999161Z",
+  "last_updated": "2025-11-24T10:45:53.999161Z"
+}

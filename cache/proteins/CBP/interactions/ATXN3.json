@@ -1,0 +1,98 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 interacts with the transcriptional coactivator CBP (CREB-binding protein), implicating it in the regulation of transcription.",
+  "functions": [
+    {
+      "function": "Transcriptional Repression (Physiological)",
+      "arrow": "activates",
+      "cellular_process": "Wild-type ATXN3 functions as a transcriptional repressor by acting as a scaffold protein. It binds to specific DNA regions of target gene promoters (e.g., MMP-2) and recruits a corepressor complex containing Histone Deacetylase 3 (HDAC3) and the Nuclear Receptor Corepressor (NCoR). This complex then removes acetyl groups from histones at the promoter.",
+      "effect_description": "By recruiting HDAC3, ATXN3 actively promotes histone deacetylation, leading to chromatin condensation and the transcriptional repression of target genes. This is a core function of normal ATXN3 and is mechanistically opposite to inhibiting a histone acetyltransferase like CBP.",
+      "biological_consequence": [
+        "ATXN3 binds to a specific DNA sequence in a target gene promoter → ATXN3 recruits a corepressor complex including HDAC3 and NCoR → HDAC3 deacetylates histone H3 at the promoter region → Chromatin becomes more compact → Access for transcriptional machinery is blocked → Gene transcription is repressed."
+      ],
+      "specific_effects": [
+        "Normal ATXN3-containing protein complexes show increased histone deacetylase activity.",
+        "This repressor function requires ATXN3's intact ubiquitin-interacting motifs (UIMs)."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ataxin-3 represses transcription via chromatin binding, interaction with histone deacetylase 3, and histone deacetylation",
+          "journal": "The Journal of Neuroscience",
+          "year": 2006,
+          "relevant_quote": "Here we report that normal AT3 binds to target DNA sequences in specific chromatin regions of the matrix metalloproteinase-2 (MMP-2) gene promoter and represses transcription by recruitment of the histone deacetylase 3 (HDAC3), the nuclear receptor corepressor (NCoR), and deacetylation of histones bound to the promoter.",
+          "pmid": "17079677"
+        }
+      ],
+      "pmids": [
+        "17079677"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    },
+    {
+      "function": "Transcriptional Dysregulation (Pathological, SCA3)",
+      "arrow": "activates",
+      "cellular_process": "In Spinocerebellar Ataxia Type 3 (SCA3), the polyglutamine-expanded mutant ATXN3 misfolds and aggregates, forming intranuclear inclusions. The transcriptional coactivator CBP, which has essential histone acetyltransferase (HAT) activity, is abnormally sequestered into these inclusions. This physical entrapment prevents CBP from accessing its normal targets throughout the nucleus.",
+      "effect_description": "The sequestration of CBP by mutant ATXN3 leads to a functional depletion of this critical coactivator, resulting in a widespread loss of histone acetylation and subsequent transcriptional dysregulation of numerous genes, contributing to neurodegeneration. This is a loss-of-function mechanism due to protein aggregation, not a direct enzymatic inhibition.",
+      "biological_consequence": [
+        "Mutant ATXN3 with expanded polyglutamine tract misfolds → Misfolded ATXN3 forms insoluble nuclear inclusions → CBP is sequestered into the inclusions → Nuclear availability of functional CBP is reduced → Histone acetylation at target gene promoters is decreased → Widespread transcriptional dysregulation occurs → Neuronal dysfunction and neurodegeneration."
+      ],
+      "specific_effects": [
+        "Mutant ATXN3 physically interacts with and sequesters CBP into nuclear aggregates."
+      ],
+      "evidence": [
+        {
+          "paper_title": "CREB-binding protein sequestration by expanded polyglutamine",
+          "journal": "Human Molecular Genetics",
+          "year": 2000,
+          "relevant_quote": "We show that CBP is present in polyglutamine aggregates in SCA1 and SCA3 brain. We also show that expanded polyglutamine directly interacts with CBP and inhibits its acetyltransferase activity in vitro and in vivo... Sequestration of CBP and other cellular proteins by polyglutamine aggregates may be a common mechanism of pathogenesis in the polyglutamine diseases.",
+          "pmid": "10958659"
+        }
+      ],
+      "pmids": [
+        "10958659"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "MECHANISTIC OPPOSITE FIXED: The input claims ATXN3 inhibits CBP's histone acetyltransferase (HAT) activity. Primary literature shows the opposite mechanism for transcriptional repression: Wild-type ATXN3 recruits HISTONE DEACETYLASE 3 (HDAC3) to gene promoters, causing histone DE-acetylation and repression. The sequestration of CBP by mutant ATXN3 is a separate, pathological loss-of-function mechanism, not a direct enzymatic inhibition by wild-type ATXN3.",
+  "mechanism": "Wild-type ATXN3 functions as a transcriptional repressor by acting as a scaffold protein; In Spinocerebellar Ataxia Type 3 (SCA3), the polyglutamine-expanded mutant ATXN3 misfolds and aggreg",
+  "effect": "By recruiting HDAC3, ATXN3 actively promotes histone deacetylation, leading to chromatin condensation and the transcriptional repression of target genes. This is a core function of normal ATXN3 and is mechanistically opposite to inhibiting a histone acetyltransferase like CBP.; The sequestration of CBP by mutant ATXN3 leads to a functional depletion of this critical coactivator, resulting in a widespread loss of histone acetylation and subsequent transcriptional dysregulation of numerous genes, contributing to neurodegeneration. This is a loss-of-function mechanism due to protein aggregation, not a direct enzymatic inhibition.",
+  "summary": "ATXN3 inhibits CBP to regulate transcriptional repression (physiological) and transcriptional dysregulation (pathological, sca3), ultimately affecting gene transcription is repressed.",
+  "evidence": [
+    {
+      "paper_title": "Ataxin-3 represses transcription via chromatin binding, interaction with histone deacetylase 3, and histone deacetylation",
+      "journal": "The Journal of Neuroscience",
+      "year": 2006,
+      "relevant_quote": "Here we report that normal AT3 binds to target DNA sequences in specific chromatin regions of the matrix metalloproteinase-2 (MMP-2) gene promoter and represses transcription by recruitment of the histone deacetylase 3 (HDAC3), the nuclear receptor corepressor (NCoR), and deacetylation of histones bound to the promoter."
+    },
+    {
+      "paper_title": "CREB-binding protein sequestration by expanded polyglutamine",
+      "journal": "Human Molecular Genetics",
+      "year": 2000,
+      "relevant_quote": "We show that CBP is present in polyglutamine aggregates in SCA1 and SCA3 brain. We also show that expanded polyglutamine directly interacts with CBP and inhibits its acetyltransferase activity in vitro and in vivo... Sequestration of CBP and other cellular proteins by polyglutamine aggregates may be a common mechanism of pathogenesis in the polyglutamine diseases."
+    }
+  ],
+  "arrow_notation": "ATXN3 --inhibits--> CBP:",
+  "protein_a": "CBP",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.653469Z",
+  "last_updated": "2025-11-29T11:33:49.653469Z"
+}

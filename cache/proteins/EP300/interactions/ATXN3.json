@@ -1,0 +1,135 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 interacts with p300 (EP300), a histone acetyltransferase and transcriptional coactivator, further supporting its role in transcriptional regulation.",
+  "functions": [
+    {
+      "function": "Transcriptional Repression (Physiological)",
+      "arrow": "activates",
+      "cellular_process": "Wild-type ATXN3 acts as a transcriptional corepressor. It achieves this not by directly inhibiting p300, but by binding to gene promoters and recruiting a repressive complex that includes Histone Deacetylase 3 (HDAC3). The recruitment of HDAC3 leads to the removal of histone acetylation marks, which counteracts the activity of acetyltransferases like p300 and CBP.",
+      "effect_description": "ATXN3 mediates transcriptional repression by promoting a state of histone deacetylation at target promoters via recruitment of an HDAC. This mechanism is functionally antagonistic to the activity of p300.",
+      "biological_consequence": [
+        "ATXN3 binds target gene promoter → ATXN3 recruits HDAC3/NCoR corepressor complex → HDAC3 deacetylates histones → Local chromatin structure becomes repressive → Transcription is inhibited."
+      ],
+      "specific_effects": [
+        "ATXN3-containing protein complexes exhibit histone deacetylase activity, which is reduced in complexes containing polyQ-expanded ATXN3."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ataxin-3 represses transcription via chromatin binding, interaction with histone deacetylase 3, and histone deacetylation",
+          "journal": "The Journal of Neuroscience",
+          "year": 2006,
+          "relevant_quote": "These findings demonstrate that normal AT3 binds target promoter regions and represses transcription of a GATA-2-dependent target gene via formation of histone-deacetylating repressor complexes requiring its UIM-associated function. Expanded AT3 aberrantly activates transcription via its catalytic site and loses the ability to form deacetylating repressor complexes on target chromatin regions.",
+          "pmid": "17079677"
+        }
+      ],
+      "pmids": [
+        "17079677"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATXN3",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    },
+    {
+      "function": "Transcriptional Dysregulation (Pathological, SCA3)",
+      "arrow": "activates",
+      "cellular_process": "Similar to CBP, the transcriptional coactivator p300 (EP300) is sequestered into the nuclear inclusions formed by polyglutamine-expanded ATXN3 in SCA3. This physical entrapment functionally depletes the available pool of p300, preventing it from participating in the activation of its target genes.",
+      "effect_description": "The loss of available p300 due to sequestration by mutant ATXN3 aggregates contributes to global transcriptional dysregulation, which is a key element of SCA3 pathology.",
+      "biological_consequence": [
+        "Mutant ATXN3 forms nuclear inclusions → p300 is trapped within these inclusions → Reduced availability of soluble, functional p300 → Impaired histone acetylation and transcriptional activation → Contribution to neurodegenerative phenotype."
+      ],
+      "specific_effects": [
+        "ATXN3 has been shown to interact with p300, and in the context of polyglutamine disease, this interaction leads to sequestration."
+      ],
+      "evidence": [
+        {
+          "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+          "journal": "Expert Reviews in Molecular Medicine",
+          "year": 2023,
+          "relevant_quote": "Indeed, ATXN3 additionally has been shown to interact with several transcriptional components, such as the TATA-binding protein-associated factor TAFII130, the cAMP response element (CRE) binding protein (CREB)-binding protein (CBP), p300 and p300/CBP-associated factor (PCAF), the nuclear corepressor receptor NCoR and HDAC6.",
+          "pmid": "39320846"
+        },
+        {
+          "paper_title": "CREB-binding protein sequestration by expanded polyglutamine",
+          "journal": "Human Molecular Genetics",
+          "year": 2000,
+          "relevant_quote": "The related co-activator p300 is also sequestered by expanded polyglutamine. These results suggest that transcriptional abnormalities in the polyglutamine diseases may result from sequestration of CBP and p300.",
+          "pmid": "10958659"
+        }
+      ],
+      "pmids": [
+        "39320846",
+        "10958659"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATXN3",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "MECHANISTIC OPPOSITE FIXED: The input claims ATXN3 inhibits p300's histone acetyltransferase (HAT) activity. Primary literature indicates the main repressive function of wild-type ATXN3 is mediated by recruiting HISTONE DEACETYLASE 3 (HDAC3), not by inhibiting HATs. The sequestration of p300 into aggregates by mutant ATXN3 is a distinct pathological mechanism.",
+  "mechanism": "Wild-type ATXN3 acts as a transcriptional corepressor; Similar to CBP, the transcriptional coactivator p300 (EP300) is sequestered into the nuclear inclusi",
+  "effect": "ATXN3 mediates transcriptional repression by promoting a state of histone deacetylation at target promoters via recruitment of an HDAC. This mechanism is functionally antagonistic to the activity of p300.; The loss of available p300 due to sequestration by mutant ATXN3 aggregates contributes to global transcriptional dysregulation, which is a key element of SCA3 pathology.",
+  "summary": "ATXN3 inhibits EP300 to regulate transcriptional repression (physiological) and transcriptional dysregulation (pathological, sca3), ultimately affecting transcription is inhibited.",
+  "evidence": [
+    {
+      "paper_title": "Ataxin-3 represses transcription via chromatin binding, interaction with histone deacetylase 3, and histone deacetylation",
+      "journal": "The Journal of Neuroscience",
+      "year": 2006,
+      "relevant_quote": "These findings demonstrate that normal AT3 binds target promoter regions and represses transcription of a GATA-2-dependent target gene via formation of histone-deacetylating repressor complexes requiring its UIM-associated function. Expanded AT3 aberrantly activates transcription via its catalytic site and loses the ability to form deacetylating repressor complexes on target chromatin regions."
+    },
+    {
+      "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+      "journal": "Expert Reviews in Molecular Medicine",
+      "year": 2023,
+      "relevant_quote": "Indeed, ATXN3 additionally has been shown to interact with several transcriptional components, such as the TATA-binding protein-associated factor TAFII130, the cAMP response element (CRE) binding protein (CREB)-binding protein (CBP), p300 and p300/CBP-associated factor (PCAF), the nuclear corepressor receptor NCoR and HDAC6."
+    },
+    {
+      "paper_title": "CREB-binding protein sequestration by expanded polyglutamine",
+      "journal": "Human Molecular Genetics",
+      "year": 2000,
+      "relevant_quote": "The related co-activator p300 is also sequestered by expanded polyglutamine. These results suggest that transcriptional abnormalities in the polyglutamine diseases may result from sequestration of CBP and p300."
+    }
+  ],
+  "arrow_notation": "ATXN3 --inhibits--> EP300:",
+  "protein_a": "EP300",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.655110Z",
+  "last_updated": "2025-11-29T11:33:49.655110Z"
+}

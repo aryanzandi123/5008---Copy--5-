@@ -1,0 +1,66 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "Mutant ataxin-3 abnormally interacts with TCP1, a subunit of the CCT chaperonin complex, in the brains of a SCA3 mouse model.",
+  "functions": [
+    {
+      "function": "Protein Folding",
+      "arrow": "inhibits",
+      "cellular_process": "In SCA3, mutant ataxin-3 pathologically interacts with TCP1, a core component of the CCT/TRiC chaperonin complex. This complex is vital for the proper folding of a significant fraction of cytosolic proteins, including cytoskeletal components like actin and tubulin. The abnormal interaction is believed to impair the chaperonin's function.",
+      "effect_description": "By interfering with the CCT/TRiC complex via its interaction with TCP1, mutant ATXN3 disrupts cellular proteostasis. This leads to an accumulation of misfolded client proteins, which can increase the burden on protein quality control systems, promote the formation of toxic protein aggregates, and contribute to cytotoxicity in SCA3.",
+      "biological_consequence": [
+        "Mutant ATXN3 (polyQ-expanded) binds to TCP1 → Sequestration or functional impairment of the CCT/TRiC chaperonin complex → Reduced efficiency of chaperonin-mediated protein folding → Accumulation of unfolded or misfolded client proteins (e.g., actin, tubulin) → Increased protein aggregation and cellular toxicity → Neurodegeneration"
+      ],
+      "specific_effects": [
+        "Mutant ataxin-3 was found to abnormally interact with TCP1 in proteomics studies of a SCA3 mouse model.",
+        "The interaction is described as a 'weakened or loss of interaction' in soluble fractions, consistent with sequestration into insoluble aggregates.",
+        "Impairment of the CCT complex is a known mechanism for increasing the aggregation propensity of polyQ-expanded proteins."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Impaired interactions of ataxin-3 with protein complexes reveals their specific structure and functions in SCA3 Ki150 model",
+          "journal": "Frontiers in Molecular Neuroscience",
+          "year": 2023,
+          "relevant_quote": "We fractionated ataxin-3-positive large complexes and independently we pulled-down ataxin-3 from brain lysates, and both were followed by proteomics. Among others, mutant ataxin-3 abnormally interacted with subunits of large complexes such as Cct5 and 6, Tcp1, and Camk2a and Camk2b.",
+          "pmid": "37033372"
+        }
+      ],
+      "pmids": [
+        "37033372"
+      ],
+      "interaction_effect": "inhibits",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "inhibition"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The interaction is a pathological event specific to mutant ATXN3. Mutant ATXN3 abnormally associates with TCP1, a key subunit of the essential CCT (Chaperonin Containing TCP-1) or TRiC chaperonin complex. This interaction leads to a loss of CCT complex function, not by direct enzymatic inhibition, but likely through sequestration or interference with its protein folding cycle. This impairs cellular proteostasis.",
+  "mechanism": "In SCA3, mutant ataxin-3 pathologically interacts with TCP1, a core component of the CCT/TRiC chaperonin complex. This complex is vital for the proper folding of a significant fraction of cytosolic proteins, including cytoskeletal components like actin and tubulin. The abnormal interaction is believed to impair the chaperonin's function.",
+  "effect": "By interfering with the CCT/TRiC complex via its interaction with TCP1, mutant ATXN3 disrupts cellular proteostasis. This leads to an accumulation of misfolded client proteins, which can increase the burden on protein quality control systems, promote the formation of toxic protein aggregates, and contribute to cytotoxicity in SCA3.",
+  "summary": "ATXN3 inhibits TCP1 to modulate protein folding, ultimately affecting neurodegeneration.",
+  "evidence": [
+    {
+      "paper_title": "Impaired interactions of ataxin-3 with protein complexes reveals their specific structure and functions in SCA3 Ki150 model",
+      "journal": "Frontiers in Molecular Neuroscience",
+      "year": 2023,
+      "relevant_quote": "We fractionated ataxin-3-positive large complexes and independently we pulled-down ataxin-3 from brain lysates, and both were followed by proteomics. Among others, mutant ataxin-3 abnormally interacted with subunits of large complexes such as Cct5 and 6, Tcp1, and Camk2a and Camk2b."
+    }
+  ],
+  "arrow_notation": "ATXN3 --inhibits--> TCP1:",
+  "protein_a": "TCP1",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.675602Z",
+  "last_updated": "2025-11-29T11:33:49.675602Z"
+}

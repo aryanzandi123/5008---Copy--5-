@@ -1,0 +1,73 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 is covalently modified by SUMO-1 in vitro and in vivo. SUMO-1 was identified as a novel ATXN3-interacting protein by yeast two-hybrid, and co-immunoprecipitation confirmed the interaction. SUMOylation occurs at lysine 166 and increases the stability and cytotoxicity of mutant ATXN3.",
+  "functions": [
+    {
+      "function": "ATXN3 Protein Stability",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 is post-translationally modified by the covalent attachment of a Small Ubiquitin-like Modifier 1 (SUMO-1) protein, a process known as SUMOylation. A major site for this modification has been identified as lysine 166 (K166) on ATXN3.",
+      "effect_description": "The conjugation of SUMO-1 to polyglutamine-expanded ATXN3 enhances the stability of the ATXN3 protein. This increased stability, however, leads to an increase in the cytotoxicity of mutant ATXN3, ultimately promoting apoptosis.",
+      "biological_consequence": [
+        "SUMO-1 is covalently attached to ATXN3 at lysine 166 -> The stability of polyQ-expanded ATXN3 is increased -> The cytotoxicity of mutant ATXN3 is enhanced -> The rate of apoptosis is increased."
+      ],
+      "specific_effects": [
+        "SUMOylation at K166 partially increases the stability of mutant-type ataxin-3.",
+        "SUMO-1 modification of mutant-type ataxin-3 increases the early apoptosis rate of neurons.",
+        "SUMOylation does not significantly influence the subcellular localization or the formation of aggregates of mutant-type ataxin-3."
+      ],
+      "evidence": [
+        {
+          "paper_title": "SUMO-1 modification on K166 of polyQ-expanded ataxin-3 strengthens its stability and increases its cytotoxicity",
+          "journal": "PLoS One",
+          "year": 2013,
+          "relevant_quote": "SUMOylation did not influence the subcellular localization, ubiquitination or aggregates formation of mutant-type ataxin-3, but partially increased its stability and the cell apoptosis.",
+          "pmid": "23382880"
+        }
+      ],
+      "pmids": [
+        "23382880"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "ATXN3 is post-translationally modified by the covalent attachment of a Small Ubiquitin-like Modifier 1 (SUMO-1) protein, a process known as SUMOylation. A major site for this modification has been identified as lysine 166 (K166) on ATXN3.",
+  "effect": "The conjugation of SUMO-1 to polyglutamine-expanded ATXN3 enhances the stability of the ATXN3 protein. This increased stability, however, leads to an increase in the cytotoxicity of mutant ATXN3, ultimately promoting apoptosis.",
+  "summary": "ATXN3 activates SUMO1 to modulate atxn3 protein stability.",
+  "evidence": [
+    {
+      "paper_title": "SUMO-1 modification on K166 of polyQ-expanded ataxin-3 strengthens its stability and increases its cytotoxicity",
+      "journal": "PLoS One",
+      "year": 2013,
+      "relevant_quote": "SUMOylation did not influence the subcellular localization, ubiquitination or aggregates formation of mutant-type ataxin-3, but partially increased its stability and the cell apoptosis."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 <--binds-- SUMO1:",
+  "protein_a": "SUMO1",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T07:01:28.108750Z",
+  "last_updated": "2025-11-24T07:01:28.108750Z"
+}

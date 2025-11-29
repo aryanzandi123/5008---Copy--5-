@@ -1,0 +1,102 @@
+{
+  "primary": "ATG5",
+  "interaction_type": "indirect",
+  "upstream_interactor": "ATG16L1",
+  "mediator_chain": [
+    "ATG16L1"
+  ],
+  "depth": 2,
+  "support_summary": "ATG5 forms a complex with ATG12 and ATG16L1. While the ATG16L1 component of this complex directly interacts with LC3B to facilitate its lipidation, ATG5's interaction is mediated through this complex.",
+  "functions": [
+    {
+      "function": "LC3B Lipidation",
+      "arrow": "activates",
+      "cellular_process": "ATG5 is an essential component of the autophagy machinery that functions as part of an E3-like ligase complex. ATG5 is covalently conjugated to ATG12. This ATG12-ATG5 conjugate then non-covalently associates with ATG16L1 to form the ATG12-ATG5-ATG16L1 complex. This complex is indispensable for the conjugation of LC3B to phosphatidylethanolamine (PE) on the phagophore membrane.",
+      "effect_description": "The ATG12-ATG5-ATG16L1 complex acts as an E3-like enzyme that facilitates the transfer of LC3B from the E2-like enzyme ATG3 to the lipid PE. The ATG16L1 subunit targets the complex to the phagophore, while the ATG12-ATG5 conjugate provides the catalytic activity, creating a composite surface that orients ATG3-LC3B for efficient lipidation. This process is a hallmark of autophagosome formation and is required for membrane elongation.",
+      "biological_consequence": [
+        "ATG7 (E1-like) activates ATG12 → ATG10 (E2-like) transfers ATG12 to ATG5 → Formation of covalent ATG12-ATG5 conjugate → Non-covalent binding of ATG16L1 to form the ATG12-ATG5-ATG16L1 complex → Complex localizes to the phagophore membrane → Complex recruits ATG3-LC3B intermediate → Facilitates transfer of LC3B to PE → LC3B-II formation and autophagosome elongation."
+      ],
+      "specific_effects": [
+        "The ATG12-ATG5 conjugate is essential for the E3-like ligase activity that promotes LC3B lipidation.",
+        "The ATG16L1 component of the complex determines the specific membrane site of LC3B lipidation.",
+        "The covalent conjugation of ATG12 to ATG5 creates an integrated architecture that forms a continuous patch required for E3 activity."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Structure of the human ATG12~ATG5 conjugate required for LC3 lipidation in autophagy",
+          "journal": "Nature Structural & Molecular Biology",
+          "year": 2013,
+          "relevant_quote": "The autophagy factor ATG12~ATG5 conjugate exhibits E3 ligase-like activity by which the lipidation of members of the LC3 family is facilitated. The crystal structure of the human ATG12~ATG5 conjugate bound to the amino-terminal region of ATG16L1...reveals an integrated architecture in which ATG12 docks onto ATG5 through conserved residues.",
+          "pmid": "23202584"
+        },
+        {
+          "paper_title": "The Atg16L Complex Specifies the Site of LC3 Lipidation for Membrane Biogenesis in Autophagy",
+          "journal": "Molecular and Cellular Biology",
+          "year": 2007,
+          "relevant_quote": "We propose that the Atg16L complex is a new type of E3-like enzyme that functions as a scaffold for LC3 lipidation by dynamically localizing to the putative source membranes for autophagosome formation.",
+          "pmid": "18321988"
+        }
+      ],
+      "pmids": [
+        "23202584",
+        "18321988"
+      ],
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "ATG16L1",
+        "direct_arrow": "activates",
+        "net_from": "LC3B",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "ATG16L1"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "ATG5 is an essential component of the autophagy machinery that functions as part of an E3-like ligase complex. ATG5 is covalently conjugated to ATG12. This ATG12-ATG5 conjugate then non-covalently associates with ATG16L1 to form the ATG12-ATG5-ATG16L1 complex. This complex is indispensable for the conjugation of LC3B to phosphatidylethanolamine (PE) on the phagophore membrane.",
+  "effect": "The ATG12-ATG5-ATG16L1 complex acts as an E3-like enzyme that facilitates the transfer of LC3B from the E2-like enzyme ATG3 to the lipid PE. The ATG16L1 subunit targets the complex to the phagophore, while the ATG12-ATG5 conjugate provides the catalytic activity, creating a composite surface that orients ATG3-LC3B for efficient lipidation. This process is a hallmark of autophagosome formation and is required for membrane elongation.",
+  "summary": "LC3B activates ATG5 to modulate lc3b lipidation, ultimately affecting lc3b-ii formation and autophagosome elongation.",
+  "evidence": [
+    {
+      "paper_title": "Structure of the human ATG12~ATG5 conjugate required for LC3 lipidation in autophagy",
+      "journal": "Nature Structural & Molecular Biology",
+      "year": 2013,
+      "relevant_quote": "The autophagy factor ATG12~ATG5 conjugate exhibits E3 ligase-like activity by which the lipidation of members of the LC3 family is facilitated. The crystal structure of the human ATG12~ATG5 conjugate bound to the amino-terminal region of ATG16L1...reveals an integrated architecture in which ATG12 docks onto ATG5 through conserved residues."
+    },
+    {
+      "paper_title": "The Atg16L Complex Specifies the Site of LC3 Lipidation for Membrane Biogenesis in Autophagy",
+      "journal": "Molecular and Cellular Biology",
+      "year": 2007,
+      "relevant_quote": "We propose that the Atg16L complex is a new type of E3-like enzyme that functions as a scaffold for LC3 lipidation by dynamically localizing to the putative source membranes for autophagosome formation."
+    }
+  ],
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATG16L1 <--regulates-- ATG5:",
+  "protein_a": "LC3B",
+  "protein_b": "ATG5",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.026082Z",
+  "last_updated": "2025-11-24T10:45:54.026082Z"
+}

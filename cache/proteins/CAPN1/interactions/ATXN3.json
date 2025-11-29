@@ -1,0 +1,71 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 is a substrate for the protease Calpain-1 (CAPN1), which cleaves it, representing a direct enzymatic interaction.",
+  "functions": [
+    {
+      "function": "ATXN3 Proteolytic Cleavage",
+      "arrow": "activates",
+      "cellular_process": "Calpain-1 (CAPN1) is a calcium-dependent protease that can cleave ATXN3. This cleavage can generate truncated fragments of ATXN3, particularly of the mutant protein, which are often more prone to aggregation and are considered more toxic.",
+      "effect_description": "CAPN1-mediated cleavage of ATXN3 contributes to the generation of toxic, aggregation-prone fragments, which is a key event in the pathogenesis of SCA3.",
+      "biological_consequence": [
+        "ATXN3 Cleavage → Generation of Toxic Fragments → Increased Aggregation → Neurotoxicity"
+      ],
+      "specific_effects": [
+        "ATXN3 is a substrate for CAPN1"
+      ],
+      "evidence": [
+        {
+          "paper_title": "The Truncated C-terminal Fragment of Mutant ATXN3 Disrupts Mitochondria Dynamics in Spinocerebellar Ataxia Type 3 Models",
+          "year": 2017,
+          "pmid": "28676741"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": "CAPN1",
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "primary_to_main",
+      "pmids": [
+        "28676741"
+      ],
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "Calpain-1 (CAPN1) is a calcium-dependent protease that can cleave ATXN3. This cleavage can generate truncated fragments of ATXN3, particularly of the mutant protein, which are often more prone to aggregation and are considered more toxic.",
+  "effect": "CAPN1-mediated cleavage of ATXN3 contributes to the generation of toxic, aggregation-prone fragments, which is a key event in the pathogenesis of SCA3.",
+  "summary": "ATXN3 activates CAPN1 to modulate atxn3 proteolytic cleavage, ultimately affecting neurotoxicity.",
+  "evidence": [
+    {
+      "paper_title": "The Truncated C-terminal Fragment of Mutant ATXN3 Disrupts Mitochondria Dynamics in Spinocerebellar Ataxia Type 3 Models",
+      "year": 2017
+    }
+  ],
+  "interaction_effect": "binds",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 4
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 <--binds-- CAPN1:",
+  "protein_a": "CAPN1",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T02:27:04.772902Z",
+  "last_updated": "2025-11-24T02:27:04.772902Z"
+}

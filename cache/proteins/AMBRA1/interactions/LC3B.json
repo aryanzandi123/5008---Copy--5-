@@ -1,0 +1,100 @@
+{
+  "primary": "LC3B",
+  "interaction_type": "indirect",
+  "upstream_interactor": "Beclin-1",
+  "mediator_chain": [
+    "Beclin-1"
+  ],
+  "depth": 2,
+  "support_summary": "AMBRA1 (Autophagy and Beclin 1 regulator 1) is a key regulator of the Beclin-1/PIK3C3 complex, which acts upstream of LC3B lipidation. Its influence on LC3B is therefore indirect.",
+  "functions": [
+    {
+      "function": "Autophagosome Nucleation",
+      "arrow": "activates",
+      "cellular_process": "AMBRA1 (Autophagy and Beclin 1 regulator 1) is a core component of the Beclin-1/VPS34 Class III PI3K complex. Under basal, nutrient-rich conditions, AMBRA1 tethers the entire complex to the cytoskeleton by directly binding to dynein light chains 1/2 (DLC1/2), sequestering it away from the site of autophagosome formation. Upon autophagy induction (e.g., by nutrient starvation), the kinase ULK1 is activated and directly phosphorylates AMBRA1. This phosphorylation event causes the dissociation of the AMBRA1-Beclin-1-VPS34 complex from the dynein motor complex, allowing it to translocate to the endoplasmic reticulum (ER), the primary site of phagophore nucleation.",
+      "effect_description": "By facilitating the release and re-localization of the Beclin-1/VPS34 complex to the ER, AMBRA1 positively regulates the kinase activity of VPS34. This leads to the localized synthesis of phosphatidylinositol 3-phosphate (PI(3)P), a critical lipid messenger that recruits downstream autophagy effectors (like WIPI proteins) to the nascent phagophore membrane, thereby initiating autophagosome formation.",
+      "biological_consequence": [
+        "Autophagy induction (e.g., starvation) → ULK1 activation → ULK1-mediated phosphorylation of AMBRA1 → Dissociation of the AMBRA1-Beclin-1-VPS34 complex from the dynein motor complex → Translocation of the complex to the Endoplasmic Reticulum → Localized VPS34 kinase activation → PI(3)P production → Recruitment of PI(3)P effectors → Phagophore nucleation and LC3B lipidation."
+      ],
+      "specific_effects": [
+        "Acts as a positive regulator of the Beclin-1/VPS34 complex by controlling its subcellular localization.",
+        "Its ULK1-dependent phosphorylation is the specific molecular switch that releases the Beclin-1 complex from dynein-mediated sequestration."
+      ],
+      "evidence": [
+        {
+          "paper_title": "The dynamic interaction of AMBRA1 with the dynein motor complex regulates mammalian autophagy",
+          "journal": "The Journal of Cell Biology",
+          "year": 2010,
+          "relevant_quote": "In this study, we show that the BECLIN 1–VPS34 complex is tethered to the cytoskeleton through an interaction between the BECLIN 1–interacting protein AMBRA1 and dynein light chains 1/2. When autophagy is induced, ULK1 phosphorylates AMBRA1, releasing the autophagy core complex from dynein. Its subsequent relocalization to the endoplasmic reticulum enables autophagosome nucleation.",
+          "pmid": "20921139"
+        },
+        {
+          "paper_title": "Unleashing the Ambra1-Beclin 1 complex from dynein chains: Ulk1 sets Ambra1 free to induce autophagy",
+          "journal": "Autophagy",
+          "year": 2011,
+          "relevant_quote": "When autophagy is induced, Ambra1-DLC1 are released from the dynein complex in an ULK1-dependent manner, and relocalize to the endoplasmic reticulum, thus enabling autophagosome nucleation. ... Ambra1 is therefore not only a cofactor of Beclin 1 in favoring its kinase-associated activity, but also a crucial upstream regulator of autophagy initiation.",
+          "pmid": "21079415"
+        }
+      ],
+      "pmids": [
+        "20921139",
+        "21079415"
+      ],
+      "direct_arrow": "activates",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "Beclin-1",
+        "direct_arrow": "activates",
+        "net_from": "LC3B",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "Beclin-1"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "AMBRA1 (Autophagy and Beclin 1 regulator 1) is a core component of the Beclin-1/VPS34 Class III PI3K complex. Under basal, nutrient-rich conditions, AMBRA1 tethers the entire complex to the cytoskeleton by directly binding to dynein light chains 1/2 (DLC1/2), sequestering it away from the site of autophagosome formation. Upon autophagy induction (e.g., by nutrient starvation), the kinase ULK1 is activated and directly phosphorylates AMBRA1. This phosphorylation event causes the dissociation of the AMBRA1-Beclin-1-VPS34 complex from the dynein motor complex, allowing it to translocate to the endoplasmic reticulum (ER), the primary site of phagophore nucleation.",
+  "effect": "By facilitating the release and re-localization of the Beclin-1/VPS34 complex to the ER, AMBRA1 positively regulates the kinase activity of VPS34. This leads to the localized synthesis of phosphatidylinositol 3-phosphate (PI(3)P), a critical lipid messenger that recruits downstream autophagy effectors (like WIPI proteins) to the nascent phagophore membrane, thereby initiating autophagosome formation.",
+  "summary": "LC3B activates AMBRA1 to modulate autophagosome nucleation, ultimately affecting phagophore nucleation and lc3b lipidation.",
+  "evidence": [
+    {
+      "paper_title": "The dynamic interaction of AMBRA1 with the dynein motor complex regulates mammalian autophagy",
+      "journal": "The Journal of Cell Biology",
+      "year": 2010,
+      "relevant_quote": "In this study, we show that the BECLIN 1–VPS34 complex is tethered to the cytoskeleton through an interaction between the BECLIN 1–interacting protein AMBRA1 and dynein light chains 1/2. When autophagy is induced, ULK1 phosphorylates AMBRA1, releasing the autophagy core complex from dynein. Its subsequent relocalization to the endoplasmic reticulum enables autophagosome nucleation."
+    },
+    {
+      "paper_title": "Unleashing the Ambra1-Beclin 1 complex from dynein chains: Ulk1 sets Ambra1 free to induce autophagy",
+      "journal": "Autophagy",
+      "year": 2011,
+      "relevant_quote": "When autophagy is induced, Ambra1-DLC1 are released from the dynein complex in an ULK1-dependent manner, and relocalize to the endoplasmic reticulum, thus enabling autophagosome nucleation. ... Ambra1 is therefore not only a cofactor of Beclin 1 in favoring its kinase-associated activity, but also a crucial upstream regulator of autophagy initiation."
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "Beclin-1 <--activates-- AMBRA1:",
+  "protein_a": "AMBRA1",
+  "protein_b": "LC3B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.047878Z",
+  "last_updated": "2025-11-24T10:45:54.047878Z"
+}

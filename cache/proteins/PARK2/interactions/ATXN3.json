@@ -1,0 +1,80 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 interacts directly with Parkin (PARK2), an E3 ubiquitin ligase crucial for mitophagy. This interaction is enhanced by Parkin's self-ubiquitination and is implicated in both SCA3 and Parkinson's disease pathologies.",
+  "functions": [
+    {
+      "function": "Mitophagy",
+      "arrow": "inhibits",
+      "cellular_process": "ATXN3 interacts with the E3 ubiquitin ligase Parkin (PARK2) and counteracts its activity. Parkin's E3 ligase function, which is critical for tagging damaged mitochondria for mitophagy, is dependent on its own auto-ubiquitination. ATXN3, through its deubiquitinase activity, hampers this essential auto-ubiquitination process. This interference does not involve hydrolyzing pre-formed ubiquitin chains on Parkin, but rather impeding the attachment of ubiquitin in real-time by stabilizing the Parkin-E2 enzyme complex and diverting ubiquitin transfer away from Parkin.",
+      "effect_description": "ATXN3 negatively regulates Parkin-mediated mitophagy by preventing the auto-ubiquitination required for Parkin's full activation. This can impair the clearance of damaged mitochondria. Furthermore, polyQ-expanded ATXN3 has been shown to increase the turnover and promote the autophagic degradation of Parkin, potentially exacerbating the loss of Parkin function.",
+      "biological_consequence": [
+        "Mitochondrial damage → Parkin recruitment to mitochondria → Parkin interacts with an E2 ubiquitin-conjugating enzyme → ATXN3 binds Parkin and stabilizes the Parkin-E2 complex → ATXN3 impedes Parkin auto-ubiquitination → Parkin fails to become fully active → Reduced ubiquitination of mitochondrial outer membrane proteins → Impaired recruitment of autophagic machinery and clearance of damaged mitochondria."
+      ],
+      "specific_effects": [
+        "ATXN3 interacts with Parkin's N-terminal Ubiquitin-like (Ubl) domain via its C-terminal Ubiquitin-Interacting Motifs (UIMs).",
+        "ATXN3 interferes with the attachment of ubiquitin onto Parkin during the conjugation process but cannot hydrolyze previously assembled Parkin-ubiquitin conjugates.",
+        "The polyQ-expanded, mutant form of ATXN3 promotes the degradation of Parkin via the autophagy pathway."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ataxin-3 deubiquitination is coupled to Parkin ubiquitination via E2 ubiquitin-conjugating enzyme",
+          "journal": "The Journal of Biological Chemistry",
+          "year": 2012,
+          "relevant_quote": "We report here that ataxin-3 interferes with the attachment of ubiquitin (Ub) onto parkin in real-time during conjugation but is unable to hydrolyze previously assembled parkin-Ub conjugates. The mechanism involves an ataxin-3-dependent stabilization of the complex between parkin and the E2 Ub-conjugating enzyme, which impedes the efficient charging of the E2 with Ub.",
+          "pmid": "22081612"
+        },
+        {
+          "paper_title": "Mutant ataxin-3 promotes the autophagic degradation of parkin",
+          "journal": "Autophagy",
+          "year": 2011,
+          "relevant_quote": "We reported that the mutant form of ataxin-3, the protein responsible for MJD, promotes the autophagic degradation of parkin. Given that the loss of parkin function leads to PD, we propose that the increased turnover of parkin triggered by mutant ataxin-3 may explain some of the parkinsonian features observed in MJD.",
+          "pmid": "21116127"
+        }
+      ],
+      "pmids": [
+        "22081612",
+        "21116127"
+      ],
+      "interaction_effect": "inhibition",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "inhibition"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "ATXN3 interacts with the E3 ubiquitin ligase Parkin (PARK2) and counteracts its activity. Parkin's E3 ligase function, which is critical for tagging damaged mitochondria for mitophagy, is dependent on its own auto-ubiquitination. ATXN3, through its deubiquitinase activity, hampers this essential auto-ubiquitination process. This interference does not involve hydrolyzing pre-formed ubiquitin chains on Parkin, but rather impeding the attachment of ubiquitin in real-time by stabilizing the Parkin-E2 enzyme complex and diverting ubiquitin transfer away from Parkin.",
+  "effect": "ATXN3 negatively regulates Parkin-mediated mitophagy by preventing the auto-ubiquitination required for Parkin's full activation. This can impair the clearance of damaged mitochondria. Furthermore, polyQ-expanded ATXN3 has been shown to increase the turnover and promote the autophagic degradation of Parkin, potentially exacerbating the loss of Parkin function.",
+  "summary": "ATXN3 inhibits PARK2 to modulate mitophagy regulation, ultimately affecting impaired recruitment of autophagic machinery and clearance of damaged mitochondria.",
+  "evidence": [
+    {
+      "paper_title": "Ataxin-3 deubiquitination is coupled to Parkin ubiquitination via E2 ubiquitin-conjugating enzyme",
+      "journal": "The Journal of Biological Chemistry",
+      "year": 2012,
+      "relevant_quote": "We report here that ataxin-3 interferes with the attachment of ubiquitin (Ub) onto parkin in real-time during conjugation but is unable to hydrolyze previously assembled parkin-Ub conjugates. The mechanism involves an ataxin-3-dependent stabilization of the complex between parkin and the E2 Ub-conjugating enzyme, which impedes the efficient charging of the E2 with Ub."
+    },
+    {
+      "paper_title": "Mutant ataxin-3 promotes the autophagic degradation of parkin",
+      "journal": "Autophagy",
+      "year": 2011,
+      "relevant_quote": "We reported that the mutant form of ataxin-3, the protein responsible for MJD, promotes the autophagic degradation of parkin. Given that the loss of parkin function leads to PD, we propose that the increased turnover of parkin triggered by mutant ataxin-3 may explain some of the parkinsonian features observed in MJD."
+    }
+  ],
+  "arrow_notation": "ATXN3 --inhibits--> PARK2:",
+  "protein_a": "PARK2",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.658933Z",
+  "last_updated": "2025-11-29T11:33:49.658933Z"
+}

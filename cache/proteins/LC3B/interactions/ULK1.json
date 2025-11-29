@@ -1,0 +1,102 @@
+{
+  "primary": "ULK1",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ULK1, a serine/threonine kinase that initiates autophagy, directly interacts with LC3B through a LIR-containing region, playing a role in the early stages of autophagosome formation.",
+  "functions": [
+    {
+      "function": "Autophagy Initiation",
+      "arrow": "inhibits",
+      "cellular_process": "ULK1 is a serine/threonine kinase that acts as a central initiator of autophagy. As part of a complex with FIP200, ATG13, and ATG101, ULK1 is activated upon nutrient deprivation (e.g., via mTORC1 inhibition). The ULK1 complex then phosphorylates downstream autophagy components, triggering the recruitment of the machinery required for phagophore formation.",
+      "effect_description": "ULK1's kinase activity is a critical upstream event that starts the cascade of autophagosome biogenesis, including the activation of the Beclin-1/VPS34 complex and the subsequent LC3B lipidation system. ULK1 can also directly interact with LC3B via a LIR motif.",
+      "biological_consequence": [
+        "mTORC1 inhibition → ULK1 complex activation → Phosphorylation of downstream ATG proteins → Recruitment of PI3K complex → Phagophore nucleation and LC3B lipidation"
+      ],
+      "specific_effects": [
+        "Acts as a key signaling node integrating nutrient status with the autophagy machinery.",
+        "The direct interaction with LC3B may play a role in recruiting the ULK1 complex during certain forms of selective autophagy."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Structure and Function of the ULK1 Complex in Autophagy",
+          "year": 2016,
+          "pmid": "26921696"
+        },
+        {
+          "paper_title": "The mammalian ULK1 complex and autophagy initiation",
+          "year": 2017,
+          "pmid": "29233870"
+        },
+        {
+          "paper_title": "Recruitment and Activation of the ULK1/Atg1 Kinase Complex in Selective Autophagy",
+          "year": 2016,
+          "pmid": "31351898"
+        },
+        {
+          "paper_title": "GABARAPs and LC3s have opposite roles in regulating ULK1 for autophagy induction",
+          "year": 2020,
+          "pmid": "31208283"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "inhibits",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "26921696",
+        "29233870",
+        "31351898",
+        "31208283"
+      ],
+      "function_effect": "inhibition"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "ULK1 is a serine/threonine kinase that acts as a central initiator of autophagy. As part of a complex with FIP200, ATG13, and ATG101, ULK1 is activated upon nutrient deprivation (e.g., via mTORC1 inhibition). The ULK1 complex then phosphorylates downstream autophagy components, triggering the recruitment of the machinery required for phagophore formation.",
+  "effect": "ULK1's kinase activity is a critical upstream event that starts the cascade of autophagosome biogenesis, including the activation of the Beclin-1/VPS34 complex and the subsequent LC3B lipidation system. ULK1 can also directly interact with LC3B via a LIR motif.",
+  "summary": "LC3B activates ULK1 to modulate autophagy initiation, ultimately affecting phagophore nucleation and lc3b lipidation.",
+  "evidence": [
+    {
+      "paper_title": "Structure and Function of the ULK1 Complex in Autophagy",
+      "year": 2016
+    },
+    {
+      "paper_title": "The mammalian ULK1 complex and autophagy initiation",
+      "year": 2017
+    },
+    {
+      "paper_title": "Recruitment and Activation of the ULK1/Atg1 Kinase Complex in Selective Autophagy",
+      "year": 2016
+    },
+    {
+      "paper_title": "GABARAPs and LC3s have opposite roles in regulating ULK1 for autophagy induction",
+      "year": 2020
+    }
+  ],
+  "interaction_effect": "inhibition",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B --inhibits--> ULK1:",
+  "protein_a": "LC3B",
+  "protein_b": "ULK1",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.005864Z",
+  "last_updated": "2025-11-24T10:45:54.005864Z"
+}

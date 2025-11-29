@@ -1,0 +1,101 @@
+{
+  "primary": "LC3B",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATG7 is an E1-like enzyme that directly binds to and activates LC3B, facilitating its conjugation to phosphatidylethanolamine (PE). This interaction is a core part of the autophagy machinery.",
+  "functions": [
+    {
+      "function": "LC3B Activation via Thioester Bond Formation",
+      "arrow": "activates",
+      "cellular_process": "ATG7 is an E1-like activating enzyme that catalyzes the first step in the LC3 conjugation cascade. It uses ATP to adenylate the C-terminal glycine of processed LC3B (LC3B-I) and then forms a high-energy thioester bond between its own catalytic cysteine residue and LC3B-I.",
+      "effect_description": "This activation is essential for preparing LC3B for the subsequent transfer to the E2-like enzyme, ATG3. The formation of the ATG7-LC3B thioester intermediate is a prerequisite for LC3B lipidation.",
+      "biological_consequence": [
+        "ATP-dependent adenylation of LC3B-I → Formation of ATG7~LC3B thioester intermediate → Transfer of activated LC3B to ATG3 → Subsequent conjugation to phosphatidylethanolamine (PE) → Autophagosome membrane elongation"
+      ],
+      "specific_effects": [
+        "Forms a thioester bond between a catalytic cysteine residue of ATG7 and the C-terminal glycine of LC3B-I.",
+        "Interaction with ATG3 is required for the transfer of LC3B from ATG7 to ATG3.",
+        "A FAP motif in the N-terminus of ATG7 is essential for its interaction with ATG3 and the subsequent formation of the ATG3-LC3 intermediate."
+      ],
+      "evidence": [
+        {
+          "paper_title": "E1-Like Activating Enzyme Atg7 Is Preferentially Sequestered into p62 Aggregates via Its Interaction with LC3-I",
+          "journal": "PLoS One",
+          "year": 2013,
+          "relevant_quote": "LC3-I is activated by Atg7 as a thioester bond is formed between a catalytic cysteine residue of Atg7 and the C-terminal glycine of LC3-I. The LC3-Atg7 intermediate exchanges with Atg3, an E2-like enzyme, in forming a second thioester intermediate LC3-Atg3.",
+          "pmid": "24023838"
+        },
+        {
+          "paper_title": "A cancer associated somatic mutation in LC3B attenuates its binding to E1-like ATG7 protein and subsequent lipidation",
+          "journal": "Autophagy",
+          "year": 2019,
+          "relevant_quote": "Most importantly, the mutation significantly reduced the interaction with the E1-like enzyme ATG7, but not the direct interaction with the E2-like enzyme ATG3, suggesting a selective perturbation in the binding of LC3B to some of its partner proteins.",
+          "pmid": "30238850"
+        },
+        {
+          "paper_title": "Deacetylation of ATG7 drives the induction of macroautophagy and LC3-associated microautophagy",
+          "journal": "Autophagy",
+          "year": 2024,
+          "relevant_quote": "Mechanistically, acetylation of ATG7 disrupts its interaction with the E2-like enzyme ATG3, leading to an inhibition of LC3 lipidation in vitro and in vivo.",
+          "pmid": "37999993"
+        }
+      ],
+      "pmids": [
+        "24023838",
+        "30238850",
+        "37999993"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "ATG7 is an E1-like activating enzyme that catalyzes the first step in the LC3 conjugation cascade. It uses ATP to adenylate the C-terminal glycine of processed LC3B (LC3B-I) and then forms a high-energy thioester bond between its own catalytic cysteine residue and LC3B-I.",
+  "effect": "This activation is essential for preparing LC3B for the subsequent transfer to the E2-like enzyme, ATG3. The formation of the ATG7-LC3B thioester intermediate is a prerequisite for LC3B lipidation.",
+  "summary": "LC3B activates ATG7 to modulate lc3b activation via thioester bond formation, ultimately affecting autophagosome membrane elongation.",
+  "evidence": [
+    {
+      "paper_title": "E1-Like Activating Enzyme Atg7 Is Preferentially Sequestered into p62 Aggregates via Its Interaction with LC3-I",
+      "journal": "PLoS One",
+      "year": 2013,
+      "relevant_quote": "LC3-I is activated by Atg7 as a thioester bond is formed between a catalytic cysteine residue of Atg7 and the C-terminal glycine of LC3-I. The LC3-Atg7 intermediate exchanges with Atg3, an E2-like enzyme, in forming a second thioester intermediate LC3-Atg3."
+    },
+    {
+      "paper_title": "A cancer associated somatic mutation in LC3B attenuates its binding to E1-like ATG7 protein and subsequent lipidation",
+      "journal": "Autophagy",
+      "year": 2019,
+      "relevant_quote": "Most importantly, the mutation significantly reduced the interaction with the E1-like enzyme ATG7, but not the direct interaction with the E2-like enzyme ATG3, suggesting a selective perturbation in the binding of LC3B to some of its partner proteins."
+    },
+    {
+      "paper_title": "Deacetylation of ATG7 drives the induction of macroautophagy and LC3-associated microautophagy",
+      "journal": "Autophagy",
+      "year": 2024,
+      "relevant_quote": "Mechanistically, acetylation of ATG7 disrupts its interaction with the E2-like enzyme ATG3, leading to an inhibition of LC3 lipidation in vitro and in vivo."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--binds-- ATG7:",
+  "protein_a": "ATG7",
+  "protein_b": "LC3B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:53.992464Z",
+  "last_updated": "2025-11-24T10:45:53.992464Z"
+}

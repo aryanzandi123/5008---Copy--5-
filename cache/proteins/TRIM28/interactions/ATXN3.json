@@ -1,0 +1,77 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 2,
+  "support_summary": "TRIM28 (also known as KAP1) was identified as a genetic modifier of ataxin-3 toxicity in a yeast model of SCA3, suggesting a functional, though likely indirect, relationship.",
+  "functions": [
+    {
+      "function": "Genetic Modifier of Mutant ATXN3 Toxicity",
+      "arrow": "activates",
+      "cellular_process": "TRIM28 was identified in a genetic screen as a modifier of polyQ-expanded ataxin-3 toxicity. Its normal function, likely related to transcriptional repression or DNA damage response, is part of a cellular pathway that is co-opted or exacerbated by mutant ATXN3, contributing to neurodegeneration.",
+      "effect_description": "Reducing or eliminating TRIM28 function mitigates the cellular damage caused by mutant ATXN3. This suggests that TRIM28's downstream pathways are detrimental in the context of SCA3 pathology. Therefore, inhibiting TRIM28 or its activity has a protective effect against mutant ATXN3-induced neurodegeneration.",
+      "biological_consequence": [
+        "Expression of polyQ-expanded ATXN3 → Induction of cellular stress (e.g., proteotoxicity, DNA damage) → TRIM28's normal cellular activities (e.g., transcriptional repression) contribute to the toxic downstream cascade → Loss of TRIM28 function → Interruption of the pathogenic cascade → Suppression of neurodegeneration."
+      ],
+      "specific_effects": [
+        "Loss of TRIM28 function suppresses the neurodegenerative phenotype caused by pathogenic Ataxin-3 in a Drosophila model."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Genome-wide screen for modifiers of ataxin-3 neurodegeneration in Drosophila",
+          "journal": "Human Molecular Genetics",
+          "year": 2008,
+          "relevant_quote": "To reveal insight into spinocerebellar ataxia type-3, we performed a genetic screen in Drosophila with pathogenic Ataxin-3-induced neurodegeneration and identified 25 modifiers defining 18 genes... These findings provide new insight into molecular pathways of polyQ toxicity, defining novel targets for promoting neuronal survival in human neurodegenerative disease.",
+          "pmid": "17953484"
+        }
+      ],
+      "pmids": [
+        "17953484"
+      ],
+      "interaction_effect": "activation",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATXN3",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "_chain_inferred": true,
+  "is_valid": true,
+  "mechanism_correction": "The input correctly identifies TRIM28 (KAP1) as a genetic modifier of mutant ATXN3 toxicity. However, the mechanism is not one of direct inhibition. Instead, the normal cellular function of TRIM28 contributes to the pathogenic cascade initiated by polyQ-expanded ATXN3. Therefore, the *loss* of TRIM28 function is what suppresses or 'inhibits' the toxicity. The interaction is genetic and indirect, with TRIM28's role likely tied to its function as a global transcriptional corepressor and its involvement in the DNA damage response, pathways which are known to be perturbed in SCA3.",
+  "mechanism": "TRIM28 was identified in a genetic screen as a modifier of polyQ-expanded ataxin-3 toxicity. Its normal function, likely related to transcriptional repression or DNA damage response, is part of a cellular pathway that is co-opted or exacerbated by mutant ATXN3, contributing to neurodegeneration.",
+  "effect": "Reducing or eliminating TRIM28 function mitigates the cellular damage caused by mutant ATXN3. This suggests that TRIM28's downstream pathways are detrimental in the context of SCA3 pathology. Therefore, inhibiting TRIM28 or its activity has a protective effect against mutant ATXN3-induced neurodegeneration.",
+  "summary": "ATXN3 interacts with TRIM28 to modulate genetic modifier of mutant atxn3 toxicity, ultimately affecting suppression of neurodegeneration.",
+  "evidence": [
+    {
+      "paper_title": "Genome-wide screen for modifiers of ataxin-3 neurodegeneration in Drosophila",
+      "journal": "Human Molecular Genetics",
+      "year": 2008,
+      "relevant_quote": "To reveal insight into spinocerebellar ataxia type-3, we performed a genetic screen in Drosophila with pathogenic Ataxin-3-induced neurodegeneration and identified 25 modifiers defining 18 genes... These findings provide new insight into molecular pathways of polyQ toxicity, defining novel targets for promoting neuronal survival in human neurodegenerative disease."
+    }
+  ],
+  "arrow_notation": "ATXN3 --binds--> TRIM28:",
+  "protein_a": "TRIM28",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.718332Z",
+  "last_updated": "2025-11-29T11:33:49.718332Z"
+}

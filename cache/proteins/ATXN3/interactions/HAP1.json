@@ -1,0 +1,66 @@
+{
+  "primary": "HAP1",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "Huntingtin-associated protein 1 (HAP1) interacts with both normal and polyQ-expanded ataxin-3 through the Josephin domain, as shown by immunoprecipitation.",
+  "functions": [
+    {
+      "function": "Binding and Potential Modulation of Cellular Trafficking",
+      "arrow": "regulates",
+      "cellular_process": "Huntingtin-associated protein 1 (HAP1) physically interacts with ATXN3. This interaction is mediated by the Josephin domain of ATXN3. HAP1 is known to be involved in intracellular trafficking, including the transport of vesicles and organelles along microtubules, by interacting with components of the dynactin complex like p150Glued.",
+      "effect_description": "The direct binding of ATXN3 to HAP1 suggests a potential role for ATXN3 in modulating microtubule-based cellular transport. While the precise functional consequence of this interaction on trafficking is not fully elucidated, it is hypothesized that HAP1 could modify the physiological function of normal ATXN3. In the context of Spinocerebellar Ataxia Type 3 (SCA3), the disease-causing polyglutamine-expanded ATXN3 also binds HAP1, which could lead to sequestration of HAP1 into aggregates or disruption of normal transport processes, contributing to neuronal dysfunction.",
+      "biological_consequence": [
+        "ATXN3 binds to HAP1 via its Josephin domain → Potential modulation of HAP1's function in microtubule-based transport → Regulation of vesicle and organelle trafficking"
+      ],
+      "specific_effects": [
+        "The interaction occurs between the Josephin domain of ATXN3 and HAP1.",
+        "Both normal and polyglutamine-expanded mutant ATXN3 interact with HAP1.",
+        "This interaction provides a molecular link between the pathologies of Spinocerebellar Ataxia Type 3 and Huntington's disease, where HAP1 is a key interactor of the huntingtin protein."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Interaction of ataxin-3 with huntingtin-associated protein 1 through Josephin domain",
+          "journal": "Neuroreport",
+          "year": 2011,
+          "relevant_quote": "The results clearly showed that HAP1/STB interacts with the normal ataxin-3 through Josephin domain and polyglutamine-expanded mutants derived from SCA3 as well. The findings suggest that HAP1/STB could modify the physiological function of normal ataxin-3 and pathogenesis of SCA3 attributable to the mutant ataxin-3.",
+          "pmid": "21386698"
+        }
+      ],
+      "pmids": [
+        "21386698"
+      ],
+      "interaction_effect": "regulates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "regulation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Huntingtin-associated protein 1 (HAP1) physically interacts with ATXN3. This interaction is mediated by the Josephin domain of ATXN3. HAP1 is known to be involved in intracellular trafficking, including the transport of vesicles and organelles along microtubules, by interacting with components of the dynactin complex like p150Glued.",
+  "effect": "The direct binding of ATXN3 to HAP1 suggests a potential role for ATXN3 in modulating microtubule-based cellular transport. While the precise functional consequence of this interaction on trafficking is not fully elucidated, it is hypothesized that HAP1 could modify the physiological function of normal ATXN3. In the context of Spinocerebellar Ataxia Type 3 (SCA3), the disease-causing polyglutamine-expanded ATXN3 also binds HAP1, which could lead to sequestration of HAP1 into aggregates or disruption of normal transport processes, contributing to neuronal dysfunction.",
+  "summary": "ATXN3 interacts with HAP1 to modulate binding and potential modulation of cellular trafficking, ultimately affecting regulation of vesicle and organelle trafficking.",
+  "evidence": [
+    {
+      "paper_title": "Interaction of ataxin-3 with huntingtin-associated protein 1 through Josephin domain",
+      "journal": "Neuroreport",
+      "year": 2011,
+      "relevant_quote": "The results clearly showed that HAP1/STB interacts with the normal ataxin-3 through Josephin domain and polyglutamine-expanded mutants derived from SCA3 as well. The findings suggest that HAP1/STB could modify the physiological function of normal ataxin-3 and pathogenesis of SCA3 attributable to the mutant ataxin-3."
+    }
+  ],
+  "arrow_notation": "ATXN3 --binds--> HAP1:",
+  "protein_a": "ATXN3",
+  "protein_b": "HAP1",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.726246Z",
+  "last_updated": "2025-11-29T11:33:49.726246Z"
+}

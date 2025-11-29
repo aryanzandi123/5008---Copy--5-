@@ -1,0 +1,101 @@
+{
+  "primary": "PINK1",
+  "interaction_type": "indirect",
+  "upstream_interactor": "LMX1B",
+  "mediator_chain": [
+    "LMX1B"
+  ],
+  "depth": 2,
+  "functions": [
+    {
+      "function": "Transcriptional Upregulation and Initiation of Mitophagy",
+      "arrow": "activates",
+      "cellular_process": "The interaction is indirect and multi-level. Upstream, the transcription factor LMX1B regulates the basal expression of the PINK1 gene. Downstream, upon mitochondrial damage (e.g., depolarization of the inner membrane), the PINK1 protein kinase accumulates on the outer mitochondrial membrane (OMM) and initiates a signaling cascade for selective autophagy of mitochondria (mitophagy).",
+      "effect_description": "LMX1B-mediated transcription ensures the cell has a supply of PINK1 protein. When a mitochondrion is damaged, PINK1 import is halted, leading to its accumulation on the OMM. Accumulated PINK1 autophosphorylates and then phosphorylates ubiquitin (at Ser65) on OMM proteins and the E3 ligase Parkin. Activated Parkin further ubiquitinates OMM proteins, creating a 'signal' that is recognized by autophagy receptors like OPTN and NDP52. These receptors then bind to LC3B on the phagophore, targeting the damaged mitochondrion for engulfment.",
+      "biological_consequence": [
+        "LMX1B binds to promoter of PINK1 gene → PINK1 mRNA and protein are expressed → Mitochondrial damage blocks PINK1 import/degradation → PINK1 accumulates on the outer mitochondrial membrane → PINK1 phosphorylates Parkin and ubiquitin (p-Ser65-Ub) → Activated Parkin ubiquitinates OMM proteins → Autophagy receptors (OPTN/NDP52) bind p-Ser65-Ub chains → Receptors recruit LC3B-positive phagophore → Selective engulfment and degradation of the damaged mitochondrion."
+      ],
+      "specific_effects": [
+        "LMX1B transcriptionally upregulates PINK1 expression.",
+        "PINK1 acts as a sensor for mitochondrial damage.",
+        "PINK1 activates Parkin E3 ligase activity via phosphorylation.",
+        "The resulting ubiquitin chains on mitochondria serve as a recruitment platform for LC3B via autophagy receptors."
+      ],
+      "evidence": [
+        {
+          "paper_title": "ATG8-dependent LMX1B-autophagy crosstalk shapes human midbrain dopaminergic neuronal resilience",
+          "journal": "Journal of Cell Biology",
+          "year": 2023,
+          "relevant_quote": "Subsequently, they verified promoter occupancy by LMX1B and positive regulation of mRNA levels of genes encoding proteins involved in initiation (ULK1) and expansion (ATG7, ATG3, ATG16L1) of the forming autophagosome, autophagy receptors (OPTN and NDP52, not p62/SQSTM1), PINK1 (which is involved in mitophagy), and TFEB (important for ALP).",
+          "pmid": "37014324"
+        },
+        {
+          "paper_title": "PINK1- and Parkin-mediated mitophagy at a glance",
+          "journal": "Journal of Cell Science",
+          "year": 2011,
+          "relevant_quote": "On the basis of these reports, and the finding that Parkin translocates to depolarized mitochondria and induces mitophagy, in 2010 several groups reported that the recruitment of Parkin to impaired mitochondria requires PINK1 expression and its kinase activity.",
+          "pmid": "22448035"
+        }
+      ],
+      "pmids": [
+        "37014324",
+        "22448035"
+      ],
+      "direct_arrow": "activates",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "LMX1B",
+        "direct_arrow": "activates",
+        "net_from": "LC3B",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "LMX1B"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The input claim contains a critical 'Contextual Error'. LMX1B is not a direct upstream protein interactor that mediates the PINK1 pathway. Instead, LMX1B is a nuclear transcription factor that binds to the promoter of the PINK1 gene (and other autophagy genes) to increase its mRNA expression. The activation of the PINK1 protein itself is a post-translational event triggered by mitochondrial damage. The corrected mechanism separates the transcriptional regulation by LMX1B from the protein-level mitophagy cascade initiated by PINK1.",
+  "mechanism": "The interaction is indirect and multi-level. Upstream, the transcription factor LMX1B regulates the basal expression of the PINK1 gene. Downstream, upon mitochondrial damage (e.g., depolarization of the inner membrane), the PINK1 protein kinase accumulates on the outer mitochondrial membrane (OMM) and initiates a signaling cascade for selective autophagy of mitochondria (mitophagy).",
+  "effect": "LMX1B-mediated transcription ensures the cell has a supply of PINK1 protein. When a mitochondrion is damaged, PINK1 import is halted, leading to its accumulation on the OMM. Accumulated PINK1 autophosphorylates and then phosphorylates ubiquitin (at Ser65) on OMM proteins and the E3 ligase Parkin. Activated Parkin further ubiquitinates OMM proteins, creating a 'signal' that is recognized by autophagy receptors like OPTN and NDP52. These receptors then bind to LC3B on the phagophore, targeting the damaged mitochondrion for engulfment.",
+  "summary": "LC3B activates PINK1 to modulate transcriptional upregulation and initiation of mitophagy, ultimately affecting selective engulfment and degradation of the damaged mitochondrion.",
+  "evidence": [
+    {
+      "paper_title": "ATG8-dependent LMX1B-autophagy crosstalk shapes human midbrain dopaminergic neuronal resilience",
+      "journal": "Journal of Cell Biology",
+      "year": 2023,
+      "relevant_quote": "Subsequently, they verified promoter occupancy by LMX1B and positive regulation of mRNA levels of genes encoding proteins involved in initiation (ULK1) and expansion (ATG7, ATG3, ATG16L1) of the forming autophagosome, autophagy receptors (OPTN and NDP52, not p62/SQSTM1), PINK1 (which is involved in mitophagy), and TFEB (important for ALP)."
+    },
+    {
+      "paper_title": "PINK1- and Parkin-mediated mitophagy at a glance",
+      "journal": "Journal of Cell Science",
+      "year": 2011,
+      "relevant_quote": "On the basis of these reports, and the finding that Parkin translocates to depolarized mitochondria and induces mitophagy, in 2010 several groups reported that the recruitment of Parkin to impaired mitochondria requires PINK1 expression and its kinase activity."
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LMX1B --activates--> PINK1:",
+  "protein_a": "LC3B",
+  "protein_b": "PINK1",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.087195Z",
+  "last_updated": "2025-11-24T10:45:54.087195Z"
+}

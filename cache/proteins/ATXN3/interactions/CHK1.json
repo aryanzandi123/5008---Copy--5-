@@ -1,0 +1,84 @@
+{
+  "primary": "Chk1",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 interacts with and stabilizes Chk1 by antagonizing its polyubiquitination, which is crucial for DNA damage checkpoints.",
+  "functions": [
+    {
+      "function": "Chk1 Protein Stability",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 functions as a deubiquitinase for the checkpoint kinase Chk1. It directly interacts with Chk1 and removes polyubiquitin chains that are added by E3 ligase complexes like DDB1/CUL4A and FBXO6/CUL1.",
+      "effect_description": "By deubiquitinating Chk1, ATXN3 protects it from proteasomal degradation, thereby maintaining a steady-state level of Chk1 protein. This stabilization is crucial for proper activation of DNA damage checkpoints and subsequent DNA repair.",
+      "biological_consequence": [
+        "Deubiquitination of Chk1 → Increased Chk1 half-life and stability → Proper G2/M checkpoint signaling upon DNA damage → Maintenance of genome integrity"
+      ],
+      "specific_effects": [
+        "ATXN3 deficiency leads to a pronounced reduction in Chk1 levels and compromised DNA damage response.",
+        "Under prolonged replicative stress, Chk1 is phosphorylated, causing it to dissociate from ATXN3, which allows for its degradation and checkpoint termination."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ataxin-3 promotes genome integrity by stabilizing Chk1",
+          "year": 2017,
+          "pmid": "28180282"
+        },
+        {
+          "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+          "year": 2024,
+          "pmid": "39320846"
+        },
+        {
+          "paper_title": "The deubiquitinase function of ataxin-3 and its role in the pathogenesis of Machado-Joseph disease and other diseases",
+          "year": 2022,
+          "pmid": "38497605"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "28180282",
+        "39320846",
+        "38497605"
+      ]
+    }
+  ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "ATXN3 functions as a deubiquitinase for the checkpoint kinase Chk1. It directly interacts with Chk1 and removes polyubiquitin chains that are added by E3 ligase complexes like DDB1/CUL4A and FBXO6/CUL1.",
+  "effect": "By deubiquitinating Chk1, ATXN3 protects it from proteasomal degradation, thereby maintaining a steady-state level of Chk1 protein. This stabilization is crucial for proper activation of DNA damage checkpoints and subsequent DNA repair.",
+  "summary": "ATXN3 activates Chk1 to modulate chk1 protein stability, ultimately affecting maintenance of genome integrity.",
+  "evidence": [
+    {
+      "paper_title": "Ataxin-3 promotes genome integrity by stabilizing Chk1",
+      "year": 2017
+    },
+    {
+      "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+      "year": 2024
+    },
+    {
+      "paper_title": "The deubiquitinase function of ataxin-3 and its role in the pathogenesis of Machado-Joseph disease and other diseases",
+      "year": 2022
+    }
+  ],
+  "arrow_notation": "ATXN3 --activates--> Chk1:",
+  "protein_a": "ATXN3",
+  "protein_b": "Chk1",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.778195Z",
+  "last_updated": "2025-11-24T12:52:47.778195Z"
+}

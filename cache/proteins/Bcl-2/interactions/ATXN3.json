@@ -1,0 +1,116 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": "Parkin",
+  "mediator_chain": [
+    "Parkin"
+  ],
+  "depth": 2,
+  "support_summary": "ATXN3 regulates the E3 ligase Parkin, which in turn ubiquitinates the autophagy inhibitor Bcl-2.",
+  "functions": [
+    {
+      "function": "Inhibition of Mitophagy",
+      "arrow": "activates",
+      "cellular_process": "Wild-type ATXN3 functions as a deubiquitinating enzyme for the E3 ligase Parkin, counteracting its self-ubiquitination and thereby stabilizing it. Active Parkin can then directly bind to and mono-ubiquitinate the anti-apoptotic protein Bcl-2.",
+      "effect_description": "The mono-ubiquitination of Bcl-2 by Parkin is a non-degradative modification that enhances Bcl-2's stability and increases its protein levels. As Bcl-2 is a potent inhibitor of mitophagy that functions by preventing Parkin's translocation to damaged mitochondria, this stabilization by the ATXN3-Parkin axis ultimately suppresses the clearance of damaged mitochondria.",
+      "biological_consequence": [
+        "ATXN3 deubiquitinates and stabilizes Parkin → Active Parkin mono-ubiquitinates Bcl-2 → Increased stability and cellular levels of Bcl-2 protein → Enhanced inhibition of Parkin translocation to depolarized mitochondria → Impaired mitophagy"
+      ],
+      "specific_effects": [
+        "ATXN3 counteracts Parkin's self-ubiquitination, which is expected to increase Parkin's stability and activity.",
+        "Parkin-mediated mono-ubiquitination of Bcl-2 increases its steady-state levels.",
+        "Pro-survival Bcl-2 family proteins, including Bcl-2 and Bcl-xL, suppress mitophagy by inhibiting the recruitment of Parkin to damaged mitochondria."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Parkin Mono-Ubiquitinates Bcl-2 and Regulates Autophagy",
+          "journal": "The Journal of Biological Chemistry",
+          "year": 2010,
+          "relevant_quote": "Parkin directly binds to Bcl-2 via its C terminus and mediates the mono-ubiquitination of Bcl-2, which increases the steady-state levels of Bcl-2.",
+          "pmid": "20889974"
+        },
+        {
+          "paper_title": "Bcl-2 family proteins participate in mitochondrial quality control by regulating Parkin/PINK1-dependent mitophagy",
+          "journal": "Molecular Cell",
+          "year": 2014,
+          "relevant_quote": "Here, we show that Parkin-dependent mitophagy is antagonized by prosurvival members of the Bcl-2 family (e.g., Bcl-xL and Mcl-1) in a Beclin-1-independent manner. Bcl-2 proteins suppressed mitophagy through inhibition of Parkin translocation to depolarized mitochondria.",
+          "pmid": "24999239"
+        },
+        {
+          "paper_title": "Ataxin-3 deubiquitination is coupled to Parkin ubiquitination via E2 ubiquitin-conjugating enzyme",
+          "journal": "Proceedings of the National Academy of Sciences",
+          "year": 2012,
+          "relevant_quote": "Ataxin-3 was found to counteract parkin self-ubiquitination both in vitro and in cells.",
+          "pmid": "22081612"
+        }
+      ],
+      "pmids": [
+        "20889974",
+        "24999239",
+        "22081612"
+      ],
+      "direct_arrow": "activates",
+      "interaction_effect": "activates",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "Parkin",
+        "direct_arrow": "activates",
+        "net_from": "ATXN3",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "Parkin"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The input contains a critical 'Mechanistic Opposite' error. ATXN3 stabilizes Parkin, which in turn mono-ubiquitinates Bcl-2. Crucially, this mono-ubiquitination does not lead to degradation but instead STABILIZES Bcl-2 protein and increases its steady-state levels. The ultimate outcome of impaired mitophagy is correct, but it occurs because the levels of the mitophagy inhibitor (Bcl-2) are increased, not because Bcl-2 is destabilized.",
+  "mechanism": "Wild-type ATXN3 functions as a deubiquitinating enzyme for the E3 ligase Parkin, counteracting its self-ubiquitination and thereby stabilizing it. Active Parkin can then directly bind to and mono-ubiquitinate the anti-apoptotic protein Bcl-2.",
+  "effect": "The mono-ubiquitination of Bcl-2 by Parkin is a non-degradative modification that enhances Bcl-2's stability and increases its protein levels. As Bcl-2 is a potent inhibitor of mitophagy that functions by preventing Parkin's translocation to damaged mitochondria, this stabilization by the ATXN3-Parkin axis ultimately suppresses the clearance of damaged mitochondria.",
+  "summary": "ATXN3 inhibits Bcl-2 to modulate inhibition of mitophagy, ultimately affecting impaired mitophagy.",
+  "evidence": [
+    {
+      "paper_title": "Parkin Mono-Ubiquitinates Bcl-2 and Regulates Autophagy",
+      "journal": "The Journal of Biological Chemistry",
+      "year": 2010,
+      "relevant_quote": "Parkin directly binds to Bcl-2 via its C terminus and mediates the mono-ubiquitination of Bcl-2, which increases the steady-state levels of Bcl-2."
+    },
+    {
+      "paper_title": "Bcl-2 family proteins participate in mitochondrial quality control by regulating Parkin/PINK1-dependent mitophagy",
+      "journal": "Molecular Cell",
+      "year": 2014,
+      "relevant_quote": "Here, we show that Parkin-dependent mitophagy is antagonized by prosurvival members of the Bcl-2 family (e.g., Bcl-xL and Mcl-1) in a Beclin-1-independent manner. Bcl-2 proteins suppressed mitophagy through inhibition of Parkin translocation to depolarized mitochondria."
+    },
+    {
+      "paper_title": "Ataxin-3 deubiquitination is coupled to Parkin ubiquitination via E2 ubiquitin-conjugating enzyme",
+      "journal": "Proceedings of the National Academy of Sciences",
+      "year": 2012,
+      "relevant_quote": "Ataxin-3 was found to counteract parkin self-ubiquitination both in vitro and in cells."
+    }
+  ],
+  "interaction_effect": "regulates",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "Parkin --regulates--> Bcl-2:",
+  "protein_a": "Bcl-2",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.781600Z",
+  "last_updated": "2025-11-24T12:52:47.781600Z"
+}

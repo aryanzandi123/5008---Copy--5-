@@ -1,0 +1,79 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "Validated as a potential nuclear interactor of ATXN3 using the proximity ligation assay (PLA).",
+  "functions": [
+    {
+      "function": "Stress Granule Dynamics",
+      "arrow": "regulates",
+      "cellular_process": "ATXN3 and FUS are RNA-binding proteins implicated in neurodegenerative diseases that physically interact within the nucleus. While a direct functional consequence of this interaction on RNA metabolism is not yet fully detailed, it places ATXN3 in a position to influence FUS-mediated cellular processes, such as the assembly and disassembly of stress granules, which are crucial components of the cellular stress response.",
+      "effect_description": "The nuclear interaction between ATXN3 and FUS suggests a potential role for ATXN3 in modulating the cellular stress response. Pathological mutations in FUS are known to cause its mislocalization to cytoplasmic stress granules and alter their dynamics, a hallmark of amyotrophic lateral sclerosis (ALS).",
+      "biological_consequence": [
+        "ATXN3 binds to FUS in the nucleus → Potential for co-regulation of RNA processing or metabolism → Putative influence on the dynamics of stress granule formation and clearance under cellular stress conditions."
+      ],
+      "specific_effects": [
+        "The physical interaction between ATXN3 and FUS within the nucleus was confirmed using the proximity ligation assay (PLA).",
+        "Mutant FUS alters the dynamic properties of stress granules, affecting their assembly and disassembly rates.",
+        "ALS-associated mutations in FUS lead to its incorporation into stress granules, which modifies their RNA and protein composition."
+      ],
+      "evidence": [
+        {
+          "paper_title": "ALS-associated FUS mutation reshapes the RNA and protein composition of stress granules",
+          "journal": "Nucleic Acids Research",
+          "year": 2024,
+          "relevant_quote": "We demonstrate that SG dynamics and RNA content are strongly modified by the incorporation of mutant FUS, switching to a more unstructured, AU-rich SG transcriptome. Moreover, we show that mutant FUS, together with its protein interactors and their target RNAs, are responsible for the reshaping of the mutant SG transcriptome with alterations that can be linked to neurodegeneration.",
+          "pmid": "39494508"
+        }
+      ],
+      "pmids": [
+        "39494508"
+      ],
+      "interaction_effect": "regulates",
+      "interaction_direction": "bidirectional",
+      "function_effect": "regulation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "bidirectional",
+  "intent": "binding",
+  "arrows": {
+    "main_to_primary": [
+      "binds"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "ATXN3 and FUS are RNA-binding proteins implicated in neurodegenerative diseases that physically interact within the nucleus. While a direct functional consequence of this interaction on RNA metabolism is not yet fully detailed, it places ATXN3 in a position to influence FUS-mediated cellular processes, such as the assembly and disassembly of stress granules, which are crucial components of the cellular stress response.",
+  "effect": "The nuclear interaction between ATXN3 and FUS suggests a potential role for ATXN3 in modulating the cellular stress response. Pathological mutations in FUS are known to cause its mislocalization to cytoplasmic stress granules and alter their dynamics, a hallmark of amyotrophic lateral sclerosis (ALS).",
+  "summary": "ATXN3 interacts with FUS to modulate stress granule dynamics, ultimately affecting putative influence on the dynamics of stress granule formation and clearance under cellular stress conditions.",
+  "evidence": [
+    {
+      "paper_title": "Nuclear ATXN3 DUB physiological substrates: towards understanding their role in the context of Machado-Joseph Disease",
+      "journal": "FENS Forum 2022",
+      "year": 2022,
+      "relevant_quote": "Using the proximity ligation (PLA) assay, we have validated potential nuclear interactors of ATXN3, such as SRSF7, GR, CUL1 and FUS."
+    },
+    {
+      "paper_title": "ALS-associated FUS mutation reshapes the RNA and protein composition of stress granules",
+      "journal": "Nucleic Acids Research",
+      "year": 2024,
+      "relevant_quote": "We demonstrate that SG dynamics and RNA content are strongly modified by the incorporation of mutant FUS, switching to a more unstructured, AU-rich SG transcriptome. Moreover, we show that mutant FUS, together with its protein interactors and their target RNAs, are responsible for the reshaping of the mutant SG transcriptome with alterations that can be linked to neurodegeneration."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 <--binds--> FUS:",
+  "protein_a": "FUS",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.770481Z",
+  "last_updated": "2025-11-24T12:52:47.770481Z"
+}

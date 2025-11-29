@@ -1,0 +1,72 @@
+{
+  "primary": "TAZ",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "Similar to its paralog YAP1, the transcriptional coactivator TAZ (WWTR1) is a direct substrate of ATXN3, which deubiquitinates and stabilizes it.",
+  "functions": [
+    {
+      "function": "TAZ Protein Stability",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 functions as a deubiquitinase for TAZ (Transcriptional coactivator with PDZ-binding motif), a key transcriptional co-activator in the Hippo signaling pathway. The interaction is mediated by the Josephin domain of ATXN3 and the C-terminal domain of TAZ.",
+      "effect_description": "ATXN3 removes K48-linked polyubiquitin chains from TAZ, which prevents its subsequent proteasomal degradation. This leads to the stabilization and accumulation of TAZ protein.",
+      "biological_consequence": [
+        "ATXN3-mediated deubiquitination of TAZ → Increased TAZ protein stability and accumulation → Enhanced TAZ-mediated transcription of target genes (e.g., CTGF, CYR61) → Promotion of cell proliferation, migration, and invasion in hepatocellular carcinoma (HCC)."
+      ],
+      "specific_effects": [
+        "ATXN3 is overexpressed in hepatocellular carcinoma (HCC) and promotes tumorigenesis by stabilizing TAZ.",
+        "The interaction between ATXN3 and TAZ is direct and occurs in a deubiquitylase-dependent manner."
+      ],
+      "evidence": [
+        {
+          "paper_title": "The deubiquitinating enzyme ATXN3 promotes hepatocellular carcinoma progression by stabilizing TAZ",
+          "journal": "Cancer Gene Ther",
+          "year": 2025,
+          "relevant_quote": "ATXN3 could interact with, stabilize, and deubiquitylate TAZ in a deubiquitylase-dependent manner. Specifically, this interaction was primarily mediated by the C-terminal domain of TAZ and Josephin domain of ATXN3, thereby inhibiting the K48-linked ubiquitin chain on TAZ. Furthermore, we demonstrated that ATXN3 promoted the occurrence and development of HCC by regulating TAZ.",
+          "pmid": "39672915"
+        }
+      ],
+      "pmids": [
+        "39672915"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "ATXN3 functions as a deubiquitinase for TAZ (Transcriptional coactivator with PDZ-binding motif), a key transcriptional co-activator in the Hippo signaling pathway. The interaction is mediated by the Josephin domain of ATXN3 and the C-terminal domain of TAZ.",
+  "effect": "ATXN3 removes K48-linked polyubiquitin chains from TAZ, which prevents its subsequent proteasomal degradation. This leads to the stabilization and accumulation of TAZ protein.",
+  "summary": "ATXN3 activates TAZ to modulate taz protein stability, ultimately affecting promotion of cell proliferation, migration, and invasion in hepatocellular carcinoma (hcc).",
+  "evidence": [
+    {
+      "paper_title": "The deubiquitinating enzyme ATXN3 promotes hepatocellular carcinoma progression by stabilizing TAZ",
+      "journal": "Cancer Gene Ther",
+      "year": 2025,
+      "relevant_quote": "ATXN3 could interact with, stabilize, and deubiquitylate TAZ in a deubiquitylase-dependent manner. Specifically, this interaction was primarily mediated by the C-terminal domain of TAZ and Josephin domain of ATXN3, thereby inhibiting the K48-linked ubiquitin chain on TAZ. Furthermore, we demonstrated that ATXN3 promoted the occurrence and development of HCC by regulating TAZ."
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --activates--> TAZ:",
+  "protein_a": "ATXN3",
+  "protein_b": "TAZ",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.826755Z",
+  "last_updated": "2025-11-24T12:52:47.826755Z"
+}

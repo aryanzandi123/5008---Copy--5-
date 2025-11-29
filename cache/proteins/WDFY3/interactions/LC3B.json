@@ -1,0 +1,88 @@
+{
+  "primary": "LC3B",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "WDFY3 (WD repeat and FYVE domain containing 3), also known as ALFY, is a large scaffolding protein that binds directly to LC3B and p62, playing a role in the clearance of ubiquitinated protein aggregates.",
+  "functions": [
+    {
+      "function": "Aggrephagy Scaffolding",
+      "arrow": "activates",
+      "cellular_process": "WDFY3 (WD repeat and FYVE domain containing 3), also known as ALFY (Autophagy-Linked FYVE protein), is a large scaffolding protein essential for the selective autophagy of ubiquitinated protein aggregates (aggrephagy). It acts as a molecular bridge, connecting the nascent autophagosome membrane to the protein aggregate cargo.",
+      "effect_description": "WDFY3 utilizes multiple domains to orchestrate the engulfment of large protein aggregates. Its FYVE domain binds to phosphatidylinositol 3-phosphate (PI3P) on the phagophore membrane, anchoring it to the site of autophagosome formation. Concurrently, it interacts with ubiquitinated cargo, an interaction often mediated by the cargo receptor p62/SQSTM1. It also directly binds to ATG8 family proteins (like LC3B and GABARAPs) via a LIR motif, tethering the cargo to the elongating autophagosomal membrane and promoting its sequestration.",
+      "biological_consequence": [
+        "WDFY3 is recruited to the phagophore via binding of its FYVE domain to PI3P → WDFY3 interacts with p62-ubiquitin cargo complexes → WDFY3 binds directly to ATG8 family proteins (e.g., GABARAPs/LC3) on the phagophore via its LIR motif → The scaffold bridges the cargo and the membrane → Engulfment of large protein aggregates into the autophagosome is facilitated → Autophagosome fuses with the lysosome for degradation"
+      ],
+      "specific_effects": [
+        "Acts as a scaffold to physically link PI3P-positive membranes with ubiquitinated protein aggregates.",
+        "Directly binds ATG5 and ATG8 family proteins (GABARAPs and LC3s) to recruit the core autophagy machinery.",
+        "Essential for the clearance of large, aggregation-prone proteins, such as mutant Huntingtin.",
+        "Cooperates with p62/SQSTM1 to organize misfolded proteins into bodies for degradation."
+      ],
+      "evidence": [
+        {
+          "paper_title": "The selective macroautophagic degradation of aggregated proteins requires the PI3P-binding protein Alfy",
+          "journal": "Molecular Cell",
+          "year": 2010,
+          "relevant_quote": "Here we show that the selective macroautophagic degradation of aggregated proteins requires the PI3P-binding protein Alfy (autophagy-linked FYVE protein). Alfy interacts with Atg5, p62, and the Atg8 homolog GABARAP and localizes to protein aggregates together with these proteins. Depletion of Alfy impairs the delivery of aggregated proteins to autophagosomes, whereas overexpression of Alfy is sufficient to target cytosolic proteins for autophagic degradation. Our results suggest that Alfy acts as a scaffold protein that directs aggregated proteins to the autophagic machinery.",
+          "pmid": "20417604"
+        },
+        {
+          "paper_title": "p62/SQSTM1 and ALFY interact to facilitate the formation of p62 bodies/ALIS and their degradation by autophagy",
+          "journal": "Autophagy",
+          "year": 2010,
+          "relevant_quote": "We show here that p62 is required to recruit the large phosphoinositide-binding protein ALFY to cytoplasmic p62 bodies generated upon amino acid starvation or puromycin-treatment. ALFY, as well as p62, is required for formation and autophagic degradation of cytoplasmic ubiquitin-positive inclusions... We conclude that p62 and ALFY interact to organize misfolded, ubiquitinated proteins into protein bodies that become degraded by autophagy.",
+          "pmid": "20168092"
+        }
+      ],
+      "pmids": [
+        "20417604",
+        "20168092"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "bidirectional",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "bidirectional",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "WDFY3 (WD repeat and FYVE domain containing 3), also known as ALFY (Autophagy-Linked FYVE protein), is a large scaffolding protein essential for the selective autophagy of ubiquitinated protein aggregates (aggrephagy). It acts as a molecular bridge, connecting the nascent autophagosome membrane to the protein aggregate cargo.",
+  "effect": "WDFY3 utilizes multiple domains to orchestrate the engulfment of large protein aggregates. Its FYVE domain binds to phosphatidylinositol 3-phosphate (PI3P) on the phagophore membrane, anchoring it to the site of autophagosome formation. Concurrently, it interacts with ubiquitinated cargo, an interaction often mediated by the cargo receptor p62/SQSTM1. It also directly binds to ATG8 family proteins (like LC3B and GABARAPs) via a LIR motif, tethering the cargo to the elongating autophagosomal membrane and promoting its sequestration.",
+  "summary": "LC3B activates WDFY3 to modulate aggrephagy scaffolding, ultimately affecting autophagosome fuses with the lysosome for degradation.",
+  "evidence": [
+    {
+      "paper_title": "The selective macroautophagic degradation of aggregated proteins requires the PI3P-binding protein Alfy",
+      "journal": "Molecular Cell",
+      "year": 2010,
+      "relevant_quote": "Here we show that the selective macroautophagic degradation of aggregated proteins requires the PI3P-binding protein Alfy (autophagy-linked FYVE protein). Alfy interacts with Atg5, p62, and the Atg8 homolog GABARAP and localizes to protein aggregates together with these proteins. Depletion of Alfy impairs the delivery of aggregated proteins to autophagosomes, whereas overexpression of Alfy is sufficient to target cytosolic proteins for autophagic degradation. Our results suggest that Alfy acts as a scaffold protein that directs aggregated proteins to the autophagic machinery."
+    },
+    {
+      "paper_title": "p62/SQSTM1 and ALFY interact to facilitate the formation of p62 bodies/ALIS and their degradation by autophagy",
+      "journal": "Autophagy",
+      "year": 2010,
+      "relevant_quote": "We show here that p62 is required to recruit the large phosphoinositide-binding protein ALFY to cytoplasmic p62 bodies generated upon amino acid starvation or puromycin-treatment. ALFY, as well as p62, is required for formation and autophagic degradation of cytoplasmic ubiquitin-positive inclusions... We conclude that p62 and ALFY interact to organize misfolded, ubiquitinated proteins into protein bodies that become degraded by autophagy."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--binds--> WDFY3:",
+  "protein_a": "WDFY3",
+  "protein_b": "LC3B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.037186Z",
+  "last_updated": "2025-11-24T10:45:54.037186Z"
+}

@@ -1,0 +1,91 @@
+{
+  "primary": "EPG5",
+  "interaction_type": "direct",
+  "upstream_interactor": "Rab7",
+  "mediator_chain": [
+    "Rab7"
+  ],
+  "depth": 2,
+  "support_summary": "EPG5 is a Rab7 effector that acts as a tethering factor, bridging autophagosomes and lysosomes by binding to LC3 on the autophagosome and VAMP7/8 on the lysosome, facilitating fusion.",
+  "functions": [
+    {
+      "function": "Autophagosome-Lysosome Tethering",
+      "arrow": "activates",
+      "cellular_process": "EPG5 is a metazoan-specific protein that functions as a critical tethering factor and Rab7 effector, ensuring the fidelity of autophagosome-lysosome fusion. Mutations in EPG5 are the cause of Vici syndrome, a severe multisystem disorder characterized by a blockage in autophagic flux.",
+      "effect_description": "EPG5 acts as a physical bridge between the autophagosome and the lysosome. It is recruited to late endosomes/lysosomes via a direct interaction with the active, GTP-bound form of Rab7 and the lysosomal R-SNARE VAMP7/8. Concurrently, EPG5 uses its LC3-interacting region (LIR) motifs to bind directly to LC3/GABARAP proteins on the surface of the completed autophagosome. This dual recognition tethers the two organelles, bringing them into close proximity to facilitate SNARE-mediated membrane fusion.",
+      "biological_consequence": [
+        "Rab7 is activated on the lysosomal membrane → EPG5 is recruited to the lysosome via interaction with Rab7-GTP and VAMP7/8 → EPG5 simultaneously binds to LC3B on the outer autophagosomal membrane → A stable bridge is formed, physically tethering the autophagosome to the lysosome → EPG5 stabilizes the STX17-SNAP29-VAMP8 trans-SNARE complex, promoting membrane fusion and autolysosome formation."
+      ],
+      "specific_effects": [
+        "Functions as a specific Rab7 effector, being recruited to late endosomes/lysosomes.",
+        "Acts as a molecular tether by binding LC3/GABARAP on the autophagosome and Rab7/VAMP8 on the lysosome.",
+        "Stabilizes the assembly of the correct trans-SNARE complex (STX17-SNAP29-VAMP7/8) to ensure fusion specificity.",
+        "Loss of EPG5 leads to promiscuous, non-productive fusion of autophagosomes with other endocytic vesicles and a block in autophagic degradation."
+      ],
+      "evidence": [
+        {
+          "paper_title": "The Vici Syndrome Protein EPG5 Is a Rab7 Effector that Determines the Fusion Specificity of Autophagosomes with Late Endosomes/Lysosomes",
+          "journal": "Molecular Cell",
+          "year": 2016,
+          "relevant_quote": "Here we demonstrated that EPG5 is a Rab7 effector that determines the fusion specificity of autophagosomes with late endosomes/lysosomes. EPG5 is recruited to late endosomes/lysosomes by direct interaction with Rab7 and the late endosomal/lysosomal R-SNARE VAMP7/8. EPG5 also binds to LC3/LGG-1 (mammalian and C. elegans Atg8 homolog, respectively) and to assembled STX17-SNAP29 Qabc SNARE complexes on autophagosomes.",
+          "pmid": "27588602"
+        },
+        {
+          "paper_title": "Insights on autophagosome-lysosome tethering from structural and biochemical characterization of human autophagy factor EPG5",
+          "journal": "Communications Biology",
+          "year": 2021,
+          "relevant_quote": "EPG5 is a large-sized metazoan protein proposed to serve as a tethering factor to enforce autophagosome-lysosome/late endosome fusion specificity... We find that hEPG5 binds preferentially to members of the GABARAP subfamily of human ATG8 proteins critical to autophagosome-lysosome fusion. The hEPG5-GABARAPs interaction, which is mediated by tandem LIR motifs that exhibit differential affinities, is required for hEPG5 recruitment...",
+          "pmid": "33674710"
+        }
+      ],
+      "pmids": [
+        "27588602",
+        "33674710"
+      ],
+      "direct_arrow": "activates",
+      "interaction_effect": "positive",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "complex",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "EPG5 is a metazoan-specific protein that functions as a critical tethering factor and Rab7 effector, ensuring the fidelity of autophagosome-lysosome fusion. Mutations in EPG5 are the cause of Vici syndrome, a severe multisystem disorder characterized by a blockage in autophagic flux.",
+  "effect": "EPG5 acts as a physical bridge between the autophagosome and the lysosome. It is recruited to late endosomes/lysosomes via a direct interaction with the active, GTP-bound form of Rab7 and the lysosomal R-SNARE VAMP7/8. Concurrently, EPG5 uses its LC3-interacting region (LIR) motifs to bind directly to LC3/GABARAP proteins on the surface of the completed autophagosome. This dual recognition tethers the two organelles, bringing them into close proximity to facilitate SNARE-mediated membrane fusion.",
+  "summary": "LC3B activates EPG5 to modulate autophagosome-lysosome tethering, ultimately affecting epg5 stabilizes the stx17-snap29-vamp8 trans-snare complex, promoting membrane fusion and autolysosome formation.",
+  "evidence": [
+    {
+      "paper_title": "The Vici Syndrome Protein EPG5 Is a Rab7 Effector that Determines the Fusion Specificity of Autophagosomes with Late Endosomes/Lysosomes",
+      "journal": "Molecular Cell",
+      "year": 2016,
+      "relevant_quote": "Here we demonstrated that EPG5 is a Rab7 effector that determines the fusion specificity of autophagosomes with late endosomes/lysosomes. EPG5 is recruited to late endosomes/lysosomes by direct interaction with Rab7 and the late endosomal/lysosomal R-SNARE VAMP7/8. EPG5 also binds to LC3/LGG-1 (mammalian and C. elegans Atg8 homolog, respectively) and to assembled STX17-SNAP29 Qabc SNARE complexes on autophagosomes."
+    },
+    {
+      "paper_title": "Insights on autophagosome-lysosome tethering from structural and biochemical characterization of human autophagy factor EPG5",
+      "journal": "Communications Biology",
+      "year": 2021,
+      "relevant_quote": "EPG5 is a large-sized metazoan protein proposed to serve as a tethering factor to enforce autophagosome-lysosome/late endosome fusion specificity... We find that hEPG5 binds preferentially to members of the GABARAP subfamily of human ATG8 proteins critical to autophagosome-lysosome fusion. The hEPG5-GABARAPs interaction, which is mediated by tandem LIR motifs that exhibit differential affinities, is required for hEPG5 recruitment..."
+    }
+  ],
+  "interaction_effect": "complex formation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B --complex--> EPG5:",
+  "protein_a": "LC3B",
+  "protein_b": "EPG5",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.067307Z",
+  "last_updated": "2025-11-24T10:45:54.067307Z"
+}

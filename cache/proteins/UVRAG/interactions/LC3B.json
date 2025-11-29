@@ -1,0 +1,104 @@
+{
+  "primary": "LC3B",
+  "interaction_type": "indirect",
+  "upstream_interactor": "Beclin-1",
+  "mediator_chain": [
+    "Beclin-1"
+  ],
+  "depth": 2,
+  "support_summary": "UVRAG is a component of the Beclin-1/VPS34 PI3K complex and is involved in both autophagosome formation and maturation. Its regulatory role is upstream of LC3B function.",
+  "functions": [
+    {
+      "function": "Autophagosome Maturation",
+      "arrow": "activates",
+      "cellular_process": "UVRAG is a key regulatory protein that functions at two separate stages of autophagy. Initially, as part of a Beclin-1/VPS34 complex, it aids in autophagosome formation. Subsequently, and through a genetically separable mechanism, it promotes autophagosome maturation.",
+      "effect_description": "In its maturation role, UVRAG interacts with the Class C Vps (HOPS) complex, a key tethering machinery for vesicle fusion. This interaction stimulates the GTPase activity of Rab7, a small GTPase localized to late endosomes and lysosomes. Activated Rab7 then orchestrates the tethering and fusion of LC3B-positive autophagosomes with lysosomes, leading to the degradation of the autophagosomal cargo.",
+      "biological_consequence": [
+        "UVRAG forms a complex with Beclin-1/VPS34 to promote PI3P production and autophagosome formation → UVRAG interacts with the Class C Vps/HOPS complex on late endosomes/lysosomes → The UVRAG-HOPS interaction stimulates the GDP-to-GTP exchange on Rab7, activating it → Active Rab7-GTP recruits effectors that tether the LC3B-positive autophagosome to the lysosome → Facilitates SNARE-mediated membrane fusion, forming an autolysosome for cargo degradation."
+      ],
+      "specific_effects": [
+        "Functions in two distinct, genetically separable steps: autophagosome formation (with Beclin-1) and maturation (with the HOPS complex).",
+        "Directly interacts with the HOPS complex to stimulate the guanine nucleotide exchange factor (GEF) activity towards Rab7.",
+        "Its role in promoting fusion with the lysosome may be indirect, as some evidence suggests it is not part of the terminal STX17-HOPS-SNARE complex.",
+        "The pro-maturation function of UVRAG is negatively regulated by mTORC1-mediated phosphorylation, which promotes UVRAG's association with the inhibitor RUBICON."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Beclin1-binding UVRAG targets the class C Vps complex to coordinate autophagosome maturation and endocytic trafficking",
+          "journal": "Nature Cell Biology",
+          "year": 2008,
+          "relevant_quote": "Here, we report that a Beclin1-binding autophagic tumour suppressor, UVRAG, interacts with the class C Vps complex, a key component of the endosomal fusion machinery. This interaction stimulates Rab7 GTPase activity and autophagosome fusion with late endosomes/lysosomes, thereby enhancing delivery and degradation of autophagic cargo.",
+          "pmid": "18552835"
+        },
+        {
+          "paper_title": "The HOPS complex mediates autophagosome-lysosome fusion through interaction with syntaxin 17",
+          "journal": "Molecular Biology of the Cell",
+          "year": 2014,
+          "relevant_quote": "By contrast, ultraviolet irradiation resistance-associated gene (UVRAG), a known HOPS-interacting protein, did not interact with the STX17-HOPS complex and may not be directly involved in autophagosome-lysosome fusion.",
+          "pmid": "24554770"
+        }
+      ],
+      "pmids": [
+        "18552835",
+        "24554770"
+      ],
+      "direct_arrow": "activates",
+      "interaction_effect": "activation",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "Beclin-1",
+        "direct_arrow": "activates",
+        "net_from": "LC3B",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "Beclin-1"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The input claim is largely correct. UVRAG functions in two distinct Beclin-1 complexes: one that promotes autophagosome formation and another, independent of Beclin-1 binding, that promotes maturation. However, there is a contextual nuance in the literature. While the model of UVRAG promoting autophagosome-lysosome fusion via the HOPS complex is well-supported, some studies suggest UVRAG does not interact with the final STX17-HOPS fusion complex, indicating its role in maturation may be indirect or related to its broader function in endosomal trafficking that facilitates, but does not execute, the final fusion step.",
+  "mechanism": "UVRAG is a key regulatory protein that functions at two separate stages of autophagy. Initially, as part of a Beclin-1/VPS34 complex, it aids in autophagosome formation. Subsequently, and through a genetically separable mechanism, it promotes autophagosome maturation.",
+  "effect": "In its maturation role, UVRAG interacts with the Class C Vps (HOPS) complex, a key tethering machinery for vesicle fusion. This interaction stimulates the GTPase activity of Rab7, a small GTPase localized to late endosomes and lysosomes. Activated Rab7 then orchestrates the tethering and fusion of LC3B-positive autophagosomes with lysosomes, leading to the degradation of the autophagosomal cargo.",
+  "summary": "LC3B activates UVRAG to modulate autophagosome maturation, ultimately affecting facilitates snare-mediated membrane fusion, forming an autolysosome for cargo degradation.",
+  "evidence": [
+    {
+      "paper_title": "Beclin1-binding UVRAG targets the class C Vps complex to coordinate autophagosome maturation and endocytic trafficking",
+      "journal": "Nature Cell Biology",
+      "year": 2008,
+      "relevant_quote": "Here, we report that a Beclin1-binding autophagic tumour suppressor, UVRAG, interacts with the class C Vps complex, a key component of the endosomal fusion machinery. This interaction stimulates Rab7 GTPase activity and autophagosome fusion with late endosomes/lysosomes, thereby enhancing delivery and degradation of autophagic cargo."
+    },
+    {
+      "paper_title": "The HOPS complex mediates autophagosome-lysosome fusion through interaction with syntaxin 17",
+      "journal": "Molecular Biology of the Cell",
+      "year": 2014,
+      "relevant_quote": "By contrast, ultraviolet irradiation resistance-associated gene (UVRAG), a known HOPS-interacting protein, did not interact with the STX17-HOPS complex and may not be directly involved in autophagosome-lysosome fusion."
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "Beclin-1 --activates--> UVRAG:",
+  "protein_a": "UVRAG",
+  "protein_b": "LC3B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.065304Z",
+  "last_updated": "2025-11-24T10:45:54.065304Z"
+}

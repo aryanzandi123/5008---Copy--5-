@@ -1,0 +1,85 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 is a component of a transcriptional repressor complex that includes Sin3A, indicating a direct interaction in the regulation of gene expression.",
+  "functions": [
+    {
+      "function": "Transcriptional Repression",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 is a component of a multi-subunit transcriptional repressor complex. It interacts with corepressors such as NCoR and the histone deacetylase HDAC3. This complex is recruited to specific gene promoters (e.g., the MMP-2 promoter). Once at the promoter, the HDAC3 component deacetylates histone tails (e.g., on Histone H3), leading to a more condensed chromatin structure that is inaccessible to transcription factors, thereby silencing gene expression. Sin3A is a known scaffold protein that bridges interactions between DNA-binding factors, NCoR, and HDACs.",
+      "effect_description": "ATXN3 participates in a corepressor complex with NCoR and HDAC3 to mediate gene silencing. By recruiting this complex to target promoters, ATXN3 facilitates local histone deacetylation, leading to chromatin compaction and the repression of gene transcription.",
+      "biological_consequence": [
+        "ATXN3 forms a complex with NCoR and HDAC3 (likely scaffolded by Sin3A) → The complex is recruited to target gene promoters → HDAC3 deacetylates histones at the promoter region → Chromatin structure becomes more compact → Access of RNA polymerase and transcription factors is blocked → Target gene transcription is repressed."
+      ],
+      "specific_effects": [
+        "ATXN3 directly interacts with HDAC3 and NCoR.",
+        "Recruitment of the ATXN3-containing complex to the MMP-2 promoter leads to histone deacetylation.",
+        "This function of ATXN3 requires its ubiquitin-interacting motifs (UIMs)."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ataxin-3 represses transcription via chromatin binding, interaction with histone deacetylase 3, and histone deacetylation",
+          "journal": "The Journal of Neuroscience",
+          "year": 2006,
+          "relevant_quote": "Here we report that normal AT3 binds to target DNA sequences in specific chromatin regions of the matrix metalloproteinase-2 (MMP-2) gene promoter and represses transcription by recruitment of the histone deacetylase 3 (HDAC3), the nuclear receptor corepressor (NCoR), and deacetylation of histones bound to the promoter.",
+          "pmid": "17079677"
+        }
+      ],
+      "pmids": [
+        "17079677"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "ATXN3",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "complex",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The input correctly identifies ATXN3 as a component of a transcriptional repressor complex. However, the arrow 'activates' is a significant 'Contextual Error'. ATXN3 does not activate Sin3A. Instead, ATXN3 functions as a component or scaffold within a larger corepressor complex that includes Sin3A, NCoR (Nuclear Receptor Corepressor), and HDAC3 (Histone Deacetylase 3). ATXN3's role is to facilitate the assembly or recruitment of this complex to specific gene promoters, leading to histone deacetylation and transcriptional repression. The overall function is inhibitory, not activating.",
+  "mechanism": "ATXN3 is a component of a multi-subunit transcriptional repressor complex. It interacts with corepressors such as NCoR and the histone deacetylase HDAC3. This complex is recruited to specific gene promoters (e.g., the MMP-2 promoter). Once at the promoter, the HDAC3 component deacetylates histone tails (e.g., on Histone H3), leading to a more condensed chromatin structure that is inaccessible to transcription factors, thereby silencing gene expression. Sin3A is a known scaffold protein that bridges interactions between DNA-binding factors, NCoR, and HDACs.",
+  "effect": "ATXN3 participates in a corepressor complex with NCoR and HDAC3 to mediate gene silencing. By recruiting this complex to target promoters, ATXN3 facilitates local histone deacetylation, leading to chromatin compaction and the repression of gene transcription.",
+  "summary": "ATXN3 inhibits Sin3A to modulate transcriptional repression, ultimately affecting target gene transcription is repressed.",
+  "evidence": [
+    {
+      "paper_title": "Ataxin-3 represses transcription via chromatin binding, interaction with histone deacetylase 3, and histone deacetylation",
+      "journal": "The Journal of Neuroscience",
+      "year": 2006,
+      "relevant_quote": "Here we report that normal AT3 binds to target DNA sequences in specific chromatin regions of the matrix metalloproteinase-2 (MMP-2) gene promoter and represses transcription by recruitment of the histone deacetylase 3 (HDAC3), the nuclear receptor corepressor (NCoR), and deacetylation of histones bound to the promoter."
+    }
+  ],
+  "interaction_effect": "complex formation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --complex--> Sin3A:",
+  "protein_a": "Sin3A",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.805431Z",
+  "last_updated": "2025-11-24T12:52:47.805431Z"
+}

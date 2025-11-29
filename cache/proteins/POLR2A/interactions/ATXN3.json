@@ -1,0 +1,72 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 is part of a transcription-coupled DNA repair (TCR) complex that includes RNA polymerase II subunit A (POLR2A), indicating a direct interaction within this complex to sense and facilitate DNA damage repair. [16]",
+  "functions": [
+    {
+      "function": "Genomic Stability and RNA Polymerase II",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 contributes to genome integrity by regulating DNA repair pathways. In this context, it prevents the degradation of RNA Polymerase II (POLR2A) in response to DNA damage.",
+      "effect_description": "During DNA damage, particularly when repair processes like those involving the enzyme PNKP are compromised, POLR2A can become poly-ubiquitinated and targeted for degradation. ATXN3, through its deubiquitinase activity, appears to counteract this process. In cells lacking ATXN3, POLR2A is destabilized and degraded following DNA damage, suggesting ATXN3's role is to deubiquitinate and thereby stabilize POLR2A to allow for DNA repair and subsequent transcriptional restart.",
+      "biological_consequence": [
+        "Genotoxic stress occurs → DNA repair pathways are activated (e.g., involving PNKP) → In the absence of ATXN3 function, RNA Polymerase II becomes poly-ubiquitinated → Poly-ubiquitinated POLR2A is targeted for proteasomal degradation → ATXN3 normally prevents this by deubiquitinating POLR2A, thus maintaining its stability."
+      ],
+      "specific_effects": [
+        "ATXN3 deubiquitinates RNA Polymerase II, protecting it from proteasomal degradation following DNA damage.",
+        "The absence of ATXN3 leads to increased poly-ubiquitination and degradation of POLR2A under conditions of genotoxic stress."
+      ],
+      "evidence": [
+        {
+          "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+          "journal": "Expert Reviews in Molecular Medicine",
+          "year": 2024,
+          "relevant_quote": "Moreover, as observed in both cellular models and Drosophila mutants, in the absence of ATXN3, PNKP inactivation results in the accumulation of persistent 3′-P termini, while RNA polymerase II, which is normally deubiquitinated by ATXN3, becomes poly-ubiquitinated and subsequently degraded.",
+          "pmid": "39320846"
+        }
+      ],
+      "pmids": [
+        "39320846"
+      ],
+      "interaction_effect": "activation",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The input claim that ATXN3 is a core component of a Transcription-Coupled DNA Repair (TCR) complex with POLR2A is not directly supported by primary literature. The actual mechanism is an indirect regulation where ATXN3 protects POLR2A from degradation during genotoxic stress. This is a contextual and mechanistic correction.",
+  "mechanism": "ATXN3 contributes to genome integrity by regulating DNA repair pathways. In this context, it prevents the degradation of RNA Polymerase II (POLR2A) in response to DNA damage.",
+  "effect": "During DNA damage, particularly when repair processes like those involving the enzyme PNKP are compromised, POLR2A can become poly-ubiquitinated and targeted for degradation. ATXN3, through its deubiquitinase activity, appears to counteract this process. In cells lacking ATXN3, POLR2A is destabilized and degraded following DNA damage, suggesting ATXN3's role is to deubiquitinate and thereby stabilize POLR2A to allow for DNA repair and subsequent transcriptional restart.",
+  "summary": "ATXN3 interacts with POLR2A to modulate genomic stability and regulation of rna polymerase ii, ultimately affecting atxn3 normally prevents this by deubiquitinating polr2a, thus maintaining its stability.",
+  "evidence": [
+    {
+      "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+      "journal": "Expert Reviews in Molecular Medicine",
+      "year": 2024,
+      "relevant_quote": "Moreover, as observed in both cellular models and Drosophila mutants, in the absence of ATXN3, PNKP inactivation results in the accumulation of persistent 3′-P termini, while RNA polymerase II, which is normally deubiquitinated by ATXN3, becomes poly-ubiquitinated and subsequently degraded."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --binds--> POLR2A:",
+  "protein_a": "POLR2A",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T04:11:50.102281Z",
+  "last_updated": "2025-11-24T04:11:50.102281Z"
+}

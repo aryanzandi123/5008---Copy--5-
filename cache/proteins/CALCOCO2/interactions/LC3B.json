@@ -1,0 +1,128 @@
+{
+  "primary": "LC3B",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "CALCOCO2 (NDP52) is a selective autophagy receptor that directly interacts with LC3B via a non-canonical LIR motif to mediate xenophagy (autophagy of pathogens).",
+  "functions": [
+    {
+      "function": "Xenophagy Cargo Recognition",
+      "arrow": "activates",
+      "cellular_process": "CALCOCO2 (NDP52) acts as a primary receptor in xenophagy, recognizing pathogens like Salmonella. It binds to ubiquitin coats on bacteria or to galectin-8 (LGALS8) on damaged pathogen-containing vacuoles and simultaneously interacts with LC3 family members on the phagophore.",
+      "effect_description": "This interaction tethers the pathogen or the damaged vacuole to the forming autophagosome, initiating its selective engulfment and degradation. CALCOCO2 preferentially binds LC3C for initial targeting but also binds LC3B.",
+      "biological_consequence": [
+        "Pathogen recognition → Recruitment of ULK1/TBK1 complexes → Phagophore formation at cargo site → Linkage to phagophore via LC3 → Sequestration and degradation of pathogen"
+      ],
+      "specific_effects": [
+        "Plays a non-redundant role in the early xenophagic response to Salmonella invasion.",
+        "Recruits the ULK1 and TBK1 kinase complexes to the cargo to initiate phagophore formation."
+      ],
+      "evidence": [
+        {
+          "paper_title": "CALCOCO2/NDP52 initiates selective autophagy through recruitment of ULK and TBK1 kinase complexes",
+          "year": 2019,
+          "pmid": "31258038"
+        },
+        {
+          "paper_title": "The Role of Autophagy and Autophagy Receptor NDP52 in Microbial Infections",
+          "year": 2020,
+          "pmid": "32187990"
+        },
+        {
+          "paper_title": "Crosstalk Between NDP52 and LUBAC in Innate Immune Responses, Cell Death, and Xenophagy",
+          "year": 2020,
+          "pmid": "33815386"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "primary_to_main",
+      "pmids": [
+        "31258038",
+        "32187990",
+        "33815386"
+      ],
+      "function_effect": "activation"
+    },
+    {
+      "function": "Autophagosome Maturation",
+      "arrow": "activates",
+      "cellular_process": "Independent of its initial cargo-targeting role, CALCOCO2 facilitates the maturation of xenophagosomes. This function involves its interaction with LC3A/B and the motor protein Myosin VI (MYO6).",
+      "effect_description": "This complex promotes the transport and fusion of the bacteria-containing autophagosome with lysosomes, which is essential for the final degradation of the pathogen.",
+      "biological_consequence": [
+        "Xenophagosome formation → CALCOCO2-LC3B-MYO6 complex assembly → Autophagosome transport/fusion → Lysosomal degradation of pathogen"
+      ],
+      "specific_effects": [
+        "Links autophagosomes to the actin-based motor protein MYO6.",
+        "This maturation function is distinct from its initial pathogen-targeting role and relies on binding to LC3A/B rather than LC3C."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Dual Function of CALCOCO2/NDP52 During Xenophagy",
+          "year": 2015,
+          "pmid": "25998689"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "primary_to_main",
+      "pmids": [
+        "25998689"
+      ],
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "complex",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "CALCOCO2 (NDP52) acts as a primary receptor in xenophagy, recognizing pathogens like Salmonella. It binds to ubiquitin coats on bacteria or to galectin-8 (LGALS8) on damaged pathogen-containing vacuoles and simultaneously interacts with LC3 family members on the phagophore. Independent of its initial cargo-targeting role, CALCOCO2 facilitates the maturation of xenophagosomes. This function involves its interaction with LC3A/B and the motor protein Myosin VI (MYO6).",
+  "effect": "This interaction tethers the pathogen or the damaged vacuole to the forming autophagosome, initiating its selective engulfment and degradation. CALCOCO2 preferentially binds LC3C for initial targeting but also binds LC3B.; This complex promotes the transport and fusion of the bacteria-containing autophagosome with lysosomes, which is essential for the final degradation of the pathogen.",
+  "summary": "LC3B activates CALCOCO2 to regulate xenophagy cargo recognition and autophagosome maturation, ultimately affecting sequestration and degradation of pathogen.",
+  "evidence": [
+    {
+      "paper_title": "CALCOCO2/NDP52 initiates selective autophagy through recruitment of ULK and TBK1 kinase complexes",
+      "year": 2019
+    },
+    {
+      "paper_title": "The Role of Autophagy and Autophagy Receptor NDP52 in Microbial Infections",
+      "year": 2020
+    },
+    {
+      "paper_title": "Crosstalk Between NDP52 and LUBAC in Innate Immune Responses, Cell Death, and Xenophagy",
+      "year": 2020
+    },
+    {
+      "paper_title": "Dual Function of CALCOCO2/NDP52 During Xenophagy",
+      "year": 2015
+    }
+  ],
+  "interaction_effect": "complex formation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 4
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--complex-- CALCOCO2:",
+  "protein_a": "CALCOCO2",
+  "protein_b": "LC3B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.009965Z",
+  "last_updated": "2025-11-24T10:45:54.009965Z"
+}

@@ -1,0 +1,87 @@
+{
+  "primary": "SEPT3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "Septin-3, a neuronal-specific GTPase, contains an Atg8 interactive motif (AIM) and has been shown to directly bind to LC3B and localize to autophagosomes upon autophagy induction.",
+  "functions": [
+    {
+      "function": "Neuronal Autophagy",
+      "arrow": "activates",
+      "cellular_process": "Septin-3 (SEPT3) is a GTP-binding cytoskeletal protein primarily expressed in neurons. It contains at least one functional Atg8 interacting motif (AIM/LIR) that facilitates a direct interaction with LC3B. This interaction is a key event in neuronal autophagy.",
+      "effect_description": "During autophagy induction in neurons, the interaction between SEPT3 and LC3B leads to the recruitment and accumulation of SEPT3 on LC3B-positive autophagosomes. While its precise function is still being elucidated, this localization suggests SEPT3 plays a role in organizing the autophagic machinery, potentially influencing autophagosome structure, transport, or cargo selection specifically at presynaptic terminals.",
+      "biological_consequence": [
+        "Autophagy induction in neurons → SEPT3 directly binds to LC3B via its LIR/AIM motif → SEPT3 is recruited to and accumulates on autophagosome membranes → SEPT3 potentially organizes cytoskeletal elements or autophagic components at the autophagosome → Regulation of autophagosome dynamics and function in neuronal compartments like synapses → Maintenance of neuronal homeostasis."
+      ],
+      "specific_effects": [
+        "Directly binds to LC3B via a predicted LIR/AIM motif.",
+        "Colocalization with LC3B-positive structures is significantly increased upon autophagy induction in primary neurons.",
+        "Localizes to autophagic membranes, as confirmed by electron microscopy.",
+        "Its accumulation during autophagy suggests a role in synaptic autophagy and neuronal homeostasis."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Neuronal-specific septin-3 binds Atg8/LC3B, accumulates and localizes to autophagosomes during induced autophagy",
+          "journal": "Cellular and Molecular Life Sciences",
+          "year": 2022,
+          "relevant_quote": "Here, we provide evidence that septin-3 is capable of binding the most-studied autophagy protein Atg8 homolog microtubule-associated protein 1 light chain 3B (LC3B)... Moreover, we demonstrate that colocalization of septin-3 and LC3B increases upon chemical autophagy induction in primary neuronal cells.",
+          "pmid": "35932293"
+        },
+        {
+          "paper_title": "Neuronal-specific septin-3 binds Atg8/LC3B, accumulates and localizes to autophagosomes during induced autophagy",
+          "journal": "Cellular and Molecular Life Sciences",
+          "year": 2022,
+          "relevant_quote": "Using electron microscopy, we also show that septin-3 localizes to LC3B positive membranes and can be found at mitochondria... We conclude that septin-3 correlates with synaptic/neuronal autophagy, binds Atg8 and localizes to autophagic membranes that can be enhanced with chemical autophagy induction.",
+          "pmid": "35932293"
+        }
+      ],
+      "pmids": [
+        "35932293"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "Septin-3 (SEPT3) is a GTP-binding cytoskeletal protein primarily expressed in neurons. It contains at least one functional Atg8 interacting motif (AIM/LIR) that facilitates a direct interaction with LC3B. This interaction is a key event in neuronal autophagy.",
+  "effect": "During autophagy induction in neurons, the interaction between SEPT3 and LC3B leads to the recruitment and accumulation of SEPT3 on LC3B-positive autophagosomes. While its precise function is still being elucidated, this localization suggests SEPT3 plays a role in organizing the autophagic machinery, potentially influencing autophagosome structure, transport, or cargo selection specifically at presynaptic terminals.",
+  "summary": "LC3B activates SEPT3 to modulate neuronal autophagy regulation, ultimately affecting maintenance of neuronal homeostasis.",
+  "evidence": [
+    {
+      "paper_title": "Neuronal-specific septin-3 binds Atg8/LC3B, accumulates and localizes to autophagosomes during induced autophagy",
+      "journal": "Cellular and Molecular Life Sciences",
+      "year": 2022,
+      "relevant_quote": "Here, we provide evidence that septin-3 is capable of binding the most-studied autophagy protein Atg8 homolog microtubule-associated protein 1 light chain 3B (LC3B)... Moreover, we demonstrate that colocalization of septin-3 and LC3B increases upon chemical autophagy induction in primary neuronal cells."
+    },
+    {
+      "paper_title": "Neuronal-specific septin-3 binds Atg8/LC3B, accumulates and localizes to autophagosomes during induced autophagy",
+      "journal": "Cellular and Molecular Life Sciences",
+      "year": 2022,
+      "relevant_quote": "Using electron microscopy, we also show that septin-3 localizes to LC3B positive membranes and can be found at mitochondria... We conclude that septin-3 correlates with synaptic/neuronal autophagy, binds Atg8 and localizes to autophagic membranes that can be enhanced with chemical autophagy induction."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B --binds--> SEPT3:",
+  "protein_a": "LC3B",
+  "protein_b": "SEPT3",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.045643Z",
+  "last_updated": "2025-11-24T10:45:54.045643Z"
+}

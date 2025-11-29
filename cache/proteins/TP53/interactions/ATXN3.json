@@ -1,0 +1,81 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 directly interacts with, deubiquitinates, and stabilizes the tumor suppressor protein p53. This interaction is confirmed by co-immunoprecipitation and is dysregulated by the polyQ expansion in SCA3.",
+  "functions": [
+    {
+      "function": "TP53 Stability and Apoptotic Function",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 directly interacts with the tumor suppressor p53 (TP53). Acting as a deubiquitinase (DUB), ATXN3 removes ubiquitin chains from p53, thereby protecting it from proteasomal degradation and increasing its stability.",
+      "effect_description": "By stabilizing p53, wild-type ATXN3 enhances p53's normal functions, including the transcriptional activation of genes involved in apoptosis. The polyQ-expanded form of ATXN3 found in SCA3 exhibits an enhanced binding and deubiquitinating activity towards p53. This leads to excessive p53 stabilization and accumulation, resulting in heightened p53-dependent apoptosis, which is a key contributor to neurodegeneration in SCA3.",
+      "biological_consequence": [
+        "ATXN3's Josephin domain binds to ubiquitinated TP53 → ATXN3 cleaves ubiquitin chains from TP53 → TP53 is stabilized and avoids proteasomal degradation → Increased nuclear TP53 levels lead to enhanced transcriptional activation of pro-apoptotic target genes (e.g., BAX) → Increased p53-dependent apoptosis."
+      ],
+      "specific_effects": [
+        "ATXN3 directly binds to, deubiquitinates, and stabilizes p53.",
+        "Deletion of ATXN3 leads to destabilization and reduced activity of p53.",
+        "PolyQ-expanded ATXN3 shows enhanced interaction with and DUB activity towards p53.",
+        "Enhanced stabilization of p53 by polyQ-expanded ATXN3 leads to more severe p53-dependent neurodegeneration in SCA3 models."
+      ],
+      "evidence": [
+        {
+          "paper_title": "The Machado-Joseph Disease Deubiquitinase Ataxin-3 Regulates the Stability and Apoptotic Function of p53",
+          "journal": "PLoS Biology",
+          "year": 2016,
+          "relevant_quote": "Here, we identify p53 to be a novel substrate of ATX-3. ATX-3 binds to native and polyubiquitinated p53 and deubiquitinates and stabilizes p53 by repressing its degradation through the ubiquitin (Ub)-proteasome pathway. [...] Furthermore, the polyglutamine (polyQ)-expanded ATX-3 retains enhanced interaction and deubiquitination catalytic activity to p53 and causes more severe p53-dependent neurodegeneration in zebrafish brains and in the substantia nigra pars compacta (SNpc) or striatum of a transgenic SCA3 mouse model.",
+          "pmid": "27851749"
+        },
+        {
+          "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+          "journal": "Expert Reviews in Molecular Medicine",
+          "year": 2024,
+          "relevant_quote": "p53 is mainly regulated at the protein level, and its stability is usually kept low due to ubiquitination by several E3 ubiquitin ligases that target p53 for proteasomal degradation, with MDM2 as the major E3 ubiquitin ligase involved. Among other DUBs, ATXN3 has been described to bind native and polyubiquitinated p53 to repress its UPS-dependent degradation. Thus, ATXN3 deletion destabilizes p53, resulting in lack of p53 activity and functions.",
+          "pmid": "39320846"
+        }
+      ],
+      "pmids": [
+        "27851749",
+        "39320846"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "ATXN3 directly interacts with the tumor suppressor p53 (TP53). Acting as a deubiquitinase (DUB), ATXN3 removes ubiquitin chains from p53, thereby protecting it from proteasomal degradation and increasing its stability.",
+  "effect": "By stabilizing p53, wild-type ATXN3 enhances p53's normal functions, including the transcriptional activation of genes involved in apoptosis. The polyQ-expanded form of ATXN3 found in SCA3 exhibits an enhanced binding and deubiquitinating activity towards p53. This leads to excessive p53 stabilization and accumulation, resulting in heightened p53-dependent apoptosis, which is a key contributor to neurodegeneration in SCA3.",
+  "summary": "ATXN3 activates TP53 to modulate tp53 stability and apoptotic function, ultimately affecting increased p53-dependent apoptosis.",
+  "evidence": [
+    {
+      "paper_title": "The Machado-Joseph Disease Deubiquitinase Ataxin-3 Regulates the Stability and Apoptotic Function of p53",
+      "journal": "PLoS Biology",
+      "year": 2016,
+      "relevant_quote": "Here, we identify p53 to be a novel substrate of ATX-3. ATX-3 binds to native and polyubiquitinated p53 and deubiquitinates and stabilizes p53 by repressing its degradation through the ubiquitin (Ub)-proteasome pathway. [...] Furthermore, the polyglutamine (polyQ)-expanded ATX-3 retains enhanced interaction and deubiquitination catalytic activity to p53 and causes more severe p53-dependent neurodegeneration in zebrafish brains and in the substantia nigra pars compacta (SNpc) or striatum of a transgenic SCA3 mouse model."
+    },
+    {
+      "paper_title": "ATXN3: a multifunctional protein involved in the polyglutamine disease spinocerebellar ataxia type 3",
+      "journal": "Expert Reviews in Molecular Medicine",
+      "year": 2024,
+      "relevant_quote": "p53 is mainly regulated at the protein level, and its stability is usually kept low due to ubiquitination by several E3 ubiquitin ligases that target p53 for proteasomal degradation, with MDM2 as the major E3 ubiquitin ligase involved. Among other DUBs, ATXN3 has been described to bind native and polyubiquitinated p53 to repress its UPS-dependent degradation. Thus, ATXN3 deletion destabilizes p53, resulting in lack of p53 activity and functions."
+    }
+  ],
+  "arrow_notation": "ATXN3 --activates--> TP53:",
+  "protein_a": "TP53",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.720199Z",
+  "last_updated": "2025-11-29T11:33:49.720199Z"
+}

@@ -1,0 +1,73 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "The ubiquitin-interacting motifs (UIMs) of ATXN3 directly interact with the heat shock cognate 71 kDa protein (HSC70, Hsc70-4 in Drosophila), an interaction that enhances ATXN3 aggregation and toxicity. [32]",
+  "functions": [
+    {
+      "function": "ATXN3 Aggregation and Toxicity",
+      "arrow": "activates",
+      "cellular_process": "The ubiquitin-interacting motifs (UIMs) of polyglutamine-expanded ATXN3 directly interact with the heat shock cognate 71 kDa protein (HSC70, specifically Hsc70-4 in Drosophila). This interaction paradoxically enhances the aggregation and pathogenic toxicity of mutant ATXN3.",
+      "effect_description": "Contrary to the canonical protective role of chaperones which typically suppress protein aggregation, HSC70 binding to mutant ATXN3 exacerbates its pathogenic properties. This suggests a non-canonical, pathological chaperone-substrate interaction where HSC70 facilitates the misfolding cascade or sequestration of polyQ-expanded ATXN3 into toxic aggregates.",
+      "biological_consequence": [
+        "HSC70 binds to the UIMs of polyQ-expanded ATXN3 → The propensity of ATXN3 to form SDS-resistant species and aggregates is increased → Enhanced ATXN3 aggregation leads to increased cellular toxicity and neurodegeneration."
+      ],
+      "specific_effects": [
+        "The interaction is dependent on the UIMs of ATXN3.",
+        "HSC70 (Hsc70-4) enhances the aggregation and toxicity of polyQ-expanded ATXN3.",
+        "Genetic reduction of Hsc70-4 levels diminishes ATXN3-mediated toxicity in a UIM-dependent manner."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ubiquitin-interacting motifs of ataxin-3 regulate its polyglutamine toxicity through Hsc70-4-dependent aggregation",
+          "journal": "eLife",
+          "year": 2020,
+          "relevant_quote": "We found that ataxin-3 pathogenicity is saliently controlled by polyglutamine-adjacent ubiquitin-interacting motifs (UIMs) that enhance aggregation and toxicity. UIMs function by interacting with the heat shock protein, Hsc70-4, whose reduction diminishes ataxin-3 toxicity in a UIM-dependent manner.",
+          "pmid": "32955441"
+        }
+      ],
+      "pmids": [
+        "32955441"
+      ],
+      "interaction_effect": "activation",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "The ubiquitin-interacting motifs (UIMs) of polyglutamine-expanded ATXN3 directly interact with the heat shock cognate 71 kDa protein (HSC70, specifically Hsc70-4 in Drosophila). This interaction paradoxically enhances the aggregation and pathogenic toxicity of mutant ATXN3.",
+  "effect": "Contrary to the canonical protective role of chaperones which typically suppress protein aggregation, HSC70 binding to mutant ATXN3 exacerbates its pathogenic properties. This suggests a non-canonical, pathological chaperone-substrate interaction where HSC70 facilitates the misfolding cascade or sequestration of polyQ-expanded ATXN3 into toxic aggregates.",
+  "summary": "ATXN3 activates HSC70 to modulate atxn3 aggregation and toxicity enhancement, ultimately affecting enhanced atxn3 aggregation leads to increased cellular toxicity and neurodegeneration.",
+  "evidence": [
+    {
+      "paper_title": "Ubiquitin-interacting motifs of ataxin-3 regulate its polyglutamine toxicity through Hsc70-4-dependent aggregation",
+      "journal": "eLife",
+      "year": 2020,
+      "relevant_quote": "We found that ataxin-3 pathogenicity is saliently controlled by polyglutamine-adjacent ubiquitin-interacting motifs (UIMs) that enhance aggregation and toxicity. UIMs function by interacting with the heat shock protein, Hsc70-4, whose reduction diminishes ataxin-3 toxicity in a UIM-dependent manner."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 <--binds-- HSC70:",
+  "protein_a": "HSC70",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T04:11:50.053640Z",
+  "last_updated": "2025-11-24T04:11:50.053640Z"
+}

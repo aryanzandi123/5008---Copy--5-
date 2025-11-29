@@ -1,0 +1,88 @@
+{
+  "primary": "ATXN3",
+  "interaction_type": "indirect",
+  "upstream_interactor": "VCP",
+  "mediator_chain": [
+    "VCP"
+  ],
+  "depth": 2,
+  "support_summary": "The ATXN3-VCP/p97 complex promotes the removal of the E3 ligase RNF8 from DNA damage sites to prevent premature turnover of DNA repair factors like Ku80.",
+  "functions": [
+    {
+      "function": "DNA Double-Strand Break Repair (NHEJ)",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 forms a complex with the AAA+ ATPase VCP/p97. This complex is recruited to sites of DNA double-strand breaks (DSBs) following genotoxic stress. The VCP/p97 component provides the energy to extract proteins from chromatin, while ATXN3 acts as a deubiquitinase.",
+      "effect_description": "The ATXN3-VCP/p97 complex regulates the homeostasis of the E3 ubiquitin ligase RNF8. Specifically, it stimulates the extraction of RNF8 from chromatin at DNA lesion sites. This action prevents the hyper-accumulation of RNF8, which would otherwise impair the Non-Homologous End Joining (NHEJ) repair pathway and promote cell death. The term 'inhibits' correctly describes the effect on RNF8's accumulation at the damage site.",
+      "biological_consequence": [
+        "DNA double-strand break occurs → ATXN3-VCP/p97 complex is recruited to chromatin → The complex facilitates the extraction of RNF8 from the DNA lesion site → Prevents hyper-accumulation and prolonged retention of RNF8 → Allows for timely recruitment of downstream repair factors (e.g., RNF168, 53BP1) → Promotes efficient Non-Homologous End Joining (NHEJ) → Maintenance of genomic stability and cell survival"
+      ],
+      "specific_effects": [
+        "Inactivation of the ATXN3-VCP/p97 complex leads to RNF8 hyper-accumulation at DNA damage sites.",
+        "Loss of ATXN3-VCP/p97 function impairs the NHEJ repair pathway and hypersensitizes cells to ionizing radiation.",
+        "The ATXN3-VCP/p97 complex regulates RNF8 homeostasis under both physiological and genotoxic conditions to balance DNA repair pathway choice."
+      ],
+      "evidence": [
+        {
+          "paper_title": "The p97–Ataxin 3 complex regulates homeostasis of the DNA damage response E3 ubiquitin ligase RNF8",
+          "journal": "The EMBO Journal",
+          "year": 2019,
+          "relevant_quote": "Under genotoxic stress, when RNF8 is rapidly recruited to sites of DNA lesions, the p97–ATX3 machinery stimulates the extraction of RNF8 from chromatin to balance DNA repair pathway choice and promote cell survival after ionising radiation (IR). Inactivation of the p97–ATX3 complex affects the non‐homologous end joining DNA repair pathway and hypersensitises human cancer cells to IR.",
+          "pmid": "31613024"
+        }
+      ],
+      "pmids": [
+        "31613024"
+      ],
+      "direct_arrow": "activates",
+      "interaction_effect": "positive",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": "VCP",
+        "direct_arrow": "activates",
+        "net_from": "ATXN3",
+        "net_arrow": "activates",
+        "mediator_chain": [
+          "VCP"
+        ],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "ATXN3 forms a complex with the AAA+ ATPase VCP/p97. This complex is recruited to sites of DNA double-strand breaks (DSBs) following genotoxic stress. The VCP/p97 component provides the energy to extract proteins from chromatin, while ATXN3 acts as a deubiquitinase.",
+  "effect": "The ATXN3-VCP/p97 complex regulates the homeostasis of the E3 ubiquitin ligase RNF8. Specifically, it stimulates the extraction of RNF8 from chromatin at DNA lesion sites. This action prevents the hyper-accumulation of RNF8, which would otherwise impair the Non-Homologous End Joining (NHEJ) repair pathway and promote cell death. The term 'inhibits' correctly describes the effect on RNF8's accumulation at the damage site.",
+  "summary": "ATXN3 inhibits RNF8 to modulate dna double-strand break repair (nhej), ultimately affecting maintenance of genomic stability and cell survival.",
+  "evidence": [
+    {
+      "paper_title": "The p97–Ataxin 3 complex regulates homeostasis of the DNA damage response E3 ubiquitin ligase RNF8",
+      "journal": "The EMBO Journal",
+      "year": 2019,
+      "relevant_quote": "Under genotoxic stress, when RNF8 is rapidly recruited to sites of DNA lesions, the p97–ATX3 machinery stimulates the extraction of RNF8 from chromatin to balance DNA repair pathway choice and promote cell survival after ionising radiation (IR). Inactivation of the p97–ATX3 complex affects the non‐homologous end joining DNA repair pathway and hypersensitises human cancer cells to IR."
+    }
+  ],
+  "interaction_effect": "regulates",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "VCP --regulates--> RNF8:",
+  "protein_a": "RNF8",
+  "protein_b": "ATXN3",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T12:52:47.835289Z",
+  "last_updated": "2025-11-24T12:52:47.835289Z"
+}

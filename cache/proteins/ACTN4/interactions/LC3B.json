@@ -1,0 +1,90 @@
+{
+  "primary": "LC3B",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "functions": [
+    {
+      "function": "Cytoskeletal Scaffolding for Autophagy",
+      "arrow": "activates",
+      "cellular_process": "Alpha-actinin-4 (ACTN4) is an actin-binding protein that crosslinks actin filaments into bundles. While it does not directly bind LC3B, it co-localizes with the autophagy receptor p62/SQSTM1 in protein aggregates. p62 directly binds to both ubiquitinated cargo and LC3B on the phagophore membrane.",
+      "effect_description": "By organizing the actin cytoskeleton, ACTN4 provides a structural framework that is thought to be necessary for the efficient formation and spatial regulation of autophagosomes. It acts as a physical linker between the cytoskeleton and p62 bodies, thereby helping to position the core autophagy machinery and anchor the forming phagophore for efficient cargo engulfment.",
+      "biological_consequence": [
+        "Cellular stress → ACTN4 bundles actin filaments → p62/SQSTM1 forms aggregates containing ubiquitinated cargo → ACTN4 associates with p62 aggregates, linking them to the actin cytoskeleton → p62 recruits LC3B-positive phagophores → Cytoskeletal linkage provides spatial organization for autophagosome formation → Efficient sequestration of cargo."
+      ],
+      "specific_effects": [
+        "Crosslinks F-actin to provide a structural scaffold.",
+        "Associates with p62/SQSTM1 protein aggregates.",
+        "Indirectly facilitates the spatial organization of autophagosome biogenesis."
+      ],
+      "evidence": [
+        {
+          "paper_title": "p62/SQSTM1 forms protein aggregates degraded by autophagy and has a protective effect on huntingtin-induced cell death",
+          "journal": "Journal of Cell Biology",
+          "year": 2005,
+          "relevant_quote": "The autophagic marker light chain 3 (LC3) colocalized with p62 bodies and coimmunoprecipitated with p62, suggesting that these two proteins participate in the same complexes... We suggest that p62 may, via LC3, be involved in linking polyubiquitinated protein aggregates to the autophagy machinery.",
+          "pmid": "16286508"
+        }
+      ],
+      "pmids": [
+        "16286508"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "bidirectional",
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "LC3B",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The input claim of a direct interaction between ACTN4 and LC3B is not supported by recent proteomic evidence and represents a 'Mechanistic Error'. The interaction is indirect. ACTN4, an actin-bundling protein, is proposed to structure the actin cytoskeleton, creating a scaffold that facilitates the spatial organization of autophagy. It is a component of p62/SQSTM1-containing aggregates, and p62 acts as the direct bridge to LC3B. The primary role of ACTN4 is not direct binding to LC3B but organizing the cytoskeletal environment where autophagosome formation occurs.",
+  "mechanism": "Alpha-actinin-4 (ACTN4) is an actin-binding protein that crosslinks actin filaments into bundles. While it does not directly bind LC3B, it co-localizes with the autophagy receptor p62/SQSTM1 in protein aggregates. p62 directly binds to both ubiquitinated cargo and LC3B on the phagophore membrane.",
+  "effect": "By organizing the actin cytoskeleton, ACTN4 provides a structural framework that is thought to be necessary for the efficient formation and spatial regulation of autophagosomes. It acts as a physical linker between the cytoskeleton and p62 bodies, thereby helping to position the core autophagy machinery and anchor the forming phagophore for efficient cargo engulfment.",
+  "summary": "LC3B interacts with ACTN4 to modulate cytoskeletal scaffolding for autophagy, ultimately affecting efficient sequestration of cargo.",
+  "evidence": [
+    {
+      "paper_title": "Proximity interactome of LC3B in normal growth conditions",
+      "journal": "bioRxiv",
+      "year": 2021,
+      "relevant_quote": "Among these, two proteins of the alpha-actinin family (ACTN1 and ACTN4) are cytoskeletal actin-binding proteins with an important role in the structure and regulation of cytoskeleton organization... ACTN4, but not ACTN1, has been described in autophagy although with no interaction with LC3B."
+    },
+    {
+      "paper_title": "p62/SQSTM1 forms protein aggregates degraded by autophagy and has a protective effect on huntingtin-induced cell death",
+      "journal": "Journal of Cell Biology",
+      "year": 2005,
+      "relevant_quote": "The autophagic marker light chain 3 (LC3) colocalized with p62 bodies and coimmunoprecipitated with p62, suggesting that these two proteins participate in the same complexes... We suggest that p62 may, via LC3, be involved in linking polyubiquitinated protein aggregates to the autophagy machinery."
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B --binds--> ACTN4:",
+  "protein_a": "ACTN4",
+  "protein_b": "LC3B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.083355Z",
+  "last_updated": "2025-11-24T10:45:54.083355Z"
+}

@@ -1,0 +1,72 @@
+{
+  "primary": "MAP1B",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "functions": [
+    {
+      "function": "Autophagosome Formation",
+      "arrow": "inhibits",
+      "cellular_process": "Microtubule-associated protein 1B (MAP1B) is proteolytically processed to produce MAP1B-light chain 1 (MAP1B-LC1). Under nutrient-rich conditions, MAP1B-LC1 is phosphorylated and acts as a tether, linking the autophagosomal SNARE protein Syntaxin 17 (Stx17) to microtubules. This sequestration prevents Stx17 from interacting with the autophagy initiation complex component Atg14L.",
+      "effect_description": "By sequestering Stx17 on microtubules, MAP1B-LC1 effectively inhibits the initiation of autophagosome formation under basal, nutrient-rich conditions. Upon starvation, MAP1B-LC1 is dephosphorylated at Threonine 217, causing it to release Stx17. The freed Stx17 can then bind to Atg14L, a subunit of the phosphatidylinositol 3-kinase complex, to promote the production of phosphatidylinositol 3-phosphate and drive autophagosome formation.",
+      "biological_consequence": [
+        "Nutrient-rich conditions → MAP1B-LC1 is phosphorylated at Thr217 → Phosphorylated MAP1B-LC1 binds Syntaxin 17 (Stx17) and tethers it to microtubules → Stx17 is sequestered and cannot interact with Atg14L → Autophagosome formation is inhibited."
+      ],
+      "specific_effects": [
+        "Depletion of MAP1B-LC1 results in the accumulation of autophagosomes even in nutrient-rich conditions.",
+        "Overexpression of MAP1B-LC1 prevents starvation-induced autophagosome formation.",
+        "Starvation-induced dephosphorylation of MAP1B-LC1 at Thr217 is the trigger that releases Stx17, allowing it to bind Atg14L."
+      ],
+      "evidence": [
+        {
+          "paper_title": "MAP1B-LC1 prevents autophagosome formation by linking syntaxin 17 to microtubules",
+          "journal": "EMBO reports",
+          "year": 2018,
+          "relevant_quote": "Here we identify MAP1B-LC1 (microtubule-associated protein 1B-light chain 1) as a critical regulator of Stx17 function. Depletion of MAP1B-LC1 causes Stx17-dependent autophagosome accumulation even under nutrient-rich conditions, whereas its overexpression blocks starvation-induced autophagosome formation. MAP1B-LC1 links microtubules and Stx17 in fed cells, and starvation causes the dephosphorylation of MAP1B-LC1 at Thr217, allowing Stx17 to dissociate from MAP1B-LC1 and bind to Atg14L.",
+          "pmid": "29925525"
+        }
+      ],
+      "pmids": [
+        "29925525"
+      ],
+      "interaction_effect": "inhibits",
+      "interaction_direction": "primary_to_main",
+      "function_effect": "inhibition"
+    }
+  ],
+  "arrow": "inhibits",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The input claim is valid but requires clarification. The described mechanism does not involve a direct interaction with the autophagosome-associated protein MAP1LC3B (LC3B). Instead, it involves MAP1B-LC1, a proteolytic product of the MAP1B protein, which acts as an upstream inhibitor of autophagy. This inhibition is achieved by sequestering the SNARE protein Syntaxin 17 (Stx17), preventing it from initiating autophagosome formation.",
+  "mechanism": "Microtubule-associated protein 1B (MAP1B) is proteolytically processed to produce MAP1B-light chain 1 (MAP1B-LC1). Under nutrient-rich conditions, MAP1B-LC1 is phosphorylated and acts as a tether, linking the autophagosomal SNARE protein Syntaxin 17 (Stx17) to microtubules. This sequestration prevents Stx17 from interacting with the autophagy initiation complex component Atg14L.",
+  "effect": "By sequestering Stx17 on microtubules, MAP1B-LC1 effectively inhibits the initiation of autophagosome formation under basal, nutrient-rich conditions. Upon starvation, MAP1B-LC1 is dephosphorylated at Threonine 217, causing it to release Stx17. The freed Stx17 can then bind to Atg14L, a subunit of the phosphatidylinositol 3-kinase complex, to promote the production of phosphatidylinositol 3-phosphate and drive autophagosome formation.",
+  "summary": "LC3B inhibits MAP1B to modulate autophagosome formation, ultimately affecting autophagosome formation is inhibited.",
+  "evidence": [
+    {
+      "paper_title": "MAP1B-LC1 prevents autophagosome formation by linking syntaxin 17 to microtubules",
+      "journal": "EMBO reports",
+      "year": 2018,
+      "relevant_quote": "Here we identify MAP1B-LC1 (microtubule-associated protein 1B-light chain 1) as a critical regulator of Stx17 function. Depletion of MAP1B-LC1 causes Stx17-dependent autophagosome accumulation even under nutrient-rich conditions, whereas its overexpression blocks starvation-induced autophagosome formation. MAP1B-LC1 links microtubules and Stx17 in fed cells, and starvation causes the dephosphorylation of MAP1B-LC1 at Thr217, allowing Stx17 to dissociate from MAP1B-LC1 and bind to Atg14L."
+    }
+  ],
+  "interaction_effect": "inhibition",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B <--inhibits-- MAP1B:",
+  "protein_a": "LC3B",
+  "protein_b": "MAP1B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.077126Z",
+  "last_updated": "2025-11-24T10:45:54.077126Z"
+}

@@ -1,0 +1,66 @@
+{
+  "primary": "LGALS9",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 functions as a deubiquitinase for Galectin-9 (LGALS9), protecting it from proteasomal degradation and potentiating its pro-apoptotic function in colon cancer cells.",
+  "functions": [
+    {
+      "function": "Apoptosis",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 acts as a direct deubiquitinase for Galectin-9 (LGALS9). By binding to LGALS9 and removing ubiquitin chains, ATXN3 prevents its proteasomal degradation, thereby increasing LGALS9 protein stability and levels.",
+      "effect_description": "In the context of colon adenocarcinoma, this stabilization of LGALS9 enhances its pro-apoptotic activity, positioning ATXN3 as a tumor suppressor. Increased levels of stable LGALS9 promote apoptosis in cancer cells, inhibiting tumor proliferation.",
+      "biological_consequence": [
+        "ATXN3 binds to and deubiquitinates LGALS9 → Ubiquitin-mediated proteasomal degradation of LGALS9 is inhibited → LGALS9 protein is stabilized and accumulates → Enhanced LGALS9-mediated apoptosis in colon cancer cells → Suppression of tumor growth."
+      ],
+      "specific_effects": [
+        "ATXN3 is the first identified Galectin-9-specific deubiquitinase.",
+        "In human colon cancer, a positive correlation exists between ATXN3 and LGALS9 protein expression, with both being reduced in tumor tissues.",
+        "CRISPR-mediated deletion of ATXN3 results in increased ubiquitination and subsequent degradation of LGALS9, leading to accelerated colon cancer growth."
+      ],
+      "evidence": [
+        {
+          "paper_title": "ATXN3 functions as a tumor suppressor through potentiating galectin-9-mediated apoptosis in human colon adenocarcinoma",
+          "journal": "Journal of Biological Chemistry",
+          "year": 2024,
+          "relevant_quote": "At the molecular level, we identified ATXN3 as a bona fide deubiquitinase specifically targeting Galectin-9, as ATXN3 interacted with and inhibited Galectin-9 ubiquitination. Consequently, targeted ATXN3 ablation resulted in reduced Galectin-9 protein expression, thereby diminishing Galectin-9-induced colon cancer apoptosis and cell growth arrest.",
+          "pmid": "38815863"
+        }
+      ],
+      "pmids": [
+        "38815863"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "ATXN3 acts as a direct deubiquitinase for Galectin-9 (LGALS9). By binding to LGALS9 and removing ubiquitin chains, ATXN3 prevents its proteasomal degradation, thereby increasing LGALS9 protein stability and levels.",
+  "effect": "In the context of colon adenocarcinoma, this stabilization of LGALS9 enhances its pro-apoptotic activity, positioning ATXN3 as a tumor suppressor. Increased levels of stable LGALS9 promote apoptosis in cancer cells, inhibiting tumor proliferation.",
+  "summary": "ATXN3 activates LGALS9 to modulate apoptosis, ultimately affecting suppression of tumor growth.",
+  "evidence": [
+    {
+      "paper_title": "ATXN3 functions as a tumor suppressor through potentiating galectin-9-mediated apoptosis in human colon adenocarcinoma",
+      "journal": "Journal of Biological Chemistry",
+      "year": 2024,
+      "relevant_quote": "At the molecular level, we identified ATXN3 as a bona fide deubiquitinase specifically targeting Galectin-9, as ATXN3 interacted with and inhibited Galectin-9 ubiquitination. Consequently, targeted ATXN3 ablation resulted in reduced Galectin-9 protein expression, thereby diminishing Galectin-9-induced colon cancer apoptosis and cell growth arrest."
+    }
+  ],
+  "arrow_notation": "ATXN3 --activates--> LGALS9:",
+  "protein_a": "ATXN3",
+  "protein_b": "LGALS9",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-29T11:33:49.714231Z",
+  "last_updated": "2025-11-29T11:33:49.714231Z"
+}

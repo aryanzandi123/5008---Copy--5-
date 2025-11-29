@@ -1,0 +1,154 @@
+{
+  "primary": "CREBBP",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "ATXN3 interacts with the transcriptional coactivator CREB-binding protein (CBP/CREBBP) to regulate transcription.",
+  "functions": [
+    {
+      "function": "Direct Inhibition of CREBBP Histone Acetyltransferase (HAT) Activity",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 can directly inhibit the histone acetyltransferase activity of CREBBP through a bimodal interaction. The N-terminal domain of ATXN3 binds to histones, while the C-terminal domain interacts directly with CREBBP.",
+      "effect_description": "This dual interaction sterically hinders the access of CREBBP's catalytic HAT domain to its histone substrates, thereby preventing histone acetylation and repressing transcription at target genes.",
+      "biological_consequence": [
+        "ATXN3 N-terminus binds histone tails → ATXN3 C-terminus binds CREBBP → CREBBP is sterically blocked from accessing histone acetylation sites → Histone acetylation is reduced → Transcription is repressed"
+      ],
+      "specific_effects": [
+        "The N-terminal domain of ATXN3 is responsible for histone binding and inhibition of acetylation.",
+        "The C-terminal domain of ATXN3 is required for binding to CREBBP."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ataxin-3 is a histone-binding protein with two independent transcriptional corepressor activities",
+          "journal": "Journal of Biological Chemistry",
+          "year": 2002,
+          "relevant_quote": "In the present study we use cell transfections, in vitro binding, co-immunoprecipitations, and reporter assays to show that the polyglutamine disease protein, ataxin-3, interacts with the major histone acetyltransferases cAMP-response-element binding protein (CREB)-binding protein, p300, and p300/CREB-binding protein-associated factor and inhibits transcription by these coactivators... The N-terminal domain of ataxin-3 inhibits histone acetylation by p300 in vitro and inhibits transcription in vivo. Histone binding and blocking access of coactivators to acetylation sites on histones appears to be the mechanism of inhibition.",
+          "pmid": "12297501"
+        }
+      ],
+      "pmids": [
+        "12297501"
+      ],
+      "interaction_effect": "inhibits",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    },
+    {
+      "function": "Transcriptional Repression via Recruitment of HDAC3",
+      "arrow": "activates",
+      "cellular_process": "ATXN3 acts as a scaffold protein to recruit a transcriptional repressor complex containing Histone Deacetylase 3 (HDAC3) and the Nuclear Receptor Corepressor (NCoR) to specific gene promoters.",
+      "effect_description": "By recruiting this complex, ATXN3 promotes the deacetylation of histones, which counteracts the acetyltransferase activity of CREBBP. This leads to a repressive chromatin state and downregulation of gene expression. ATXN3 is essential for the proper nuclear localization and chromatin recruitment of HDAC3.",
+      "biological_consequence": [
+        "ATXN3 binds to target gene promoters → ATXN3 recruits an HDAC3/NCoR corepressor complex → HDAC3 deacetylates histones at the promoter → Chromatin becomes condensed → Gene transcription is repressed"
+      ],
+      "specific_effects": [
+        "Normal ATXN3 is associated with increased histone deacetylase activity in protein complexes.",
+        "The absence of ATXN3 leads to decreased recruitment of HDAC3 to chromatin and a more open, transcriptionally active chromatin state."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ataxin-3 represses transcription via chromatin binding, interaction with histone deacetylase 3, and histone deacetylation",
+          "journal": "The Journal of Neuroscience",
+          "year": 2006,
+          "relevant_quote": "Here we report that normal AT3 binds to target DNA sequences in specific chromatin regions of the matrix metalloproteinase-2 (MMP-2) gene promoter and represses transcription by recruitment of the histone deacetylase 3 (HDAC3), the nuclear receptor corepressor (NCoR), and deacetylation of histones bound to the promoter.",
+          "pmid": "17079677"
+        },
+        {
+          "paper_title": "ATXN3 controls DNA replication and transcription by regulating chromatin structure",
+          "journal": "Nucleic Acids Research",
+          "year": 2023,
+          "relevant_quote": "The absence of ATXN3 decreases the recruitment of endogenous HDAC3 to the chromatin, as well as the HDAC3 nuclear/cytoplasm ratio after HDAC3 overexpression, suggesting that ATXN3 controls the subcellular localization of HDAC3.",
+          "pmid": "36971114"
+        }
+      ],
+      "pmids": [
+        "17079677",
+        "36971114"
+      ],
+      "interaction_effect": "inhibits",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    },
+    {
+      "function": "Stabilization of CREBBP Protein",
+      "arrow": "activates",
+      "cellular_process": "Within a transcription-coupled DNA repair (TCR) complex, ATXN3 appears to protect CREBBP from ubiquitination and subsequent proteasomal degradation.",
+      "effect_description": "A decrease in ATXN3 activity leads to increased ubiquitination and degradation of CREBBP. Therefore, by counteracting this process, normal ATXN3 activity stabilizes CREBBP protein levels, which is an activating function essential for transcription and DNA repair.",
+      "biological_consequence": [
+        "ATXN3 is part of a TCR complex with CREBBP → ATXN3 deubiquitinates or protects CREBBP from an E3 ligase → CREBBP ubiquitination is reduced → CREBBP is stabilized and avoids proteasomal degradation → CREBBP-dependent transcription is maintained"
+      ],
+      "specific_effects": [
+        "This function is mechanistically opposite to transcriptional repression, representing a contextual error in the input claim.",
+        "Low ATXN3 activity facilitates CREBBP ubiquitination and degradation."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Mutant huntingtin impairs PNKP and ATXN3, disrupting DNA repair and transcription",
+          "journal": "eLife",
+          "year": 2019,
+          "relevant_quote": "A concomitant decrease in Ataxin-3 activity facilitates CBP ubiquitination and degradation, adversely impacting transcription and DNA repair.",
+          "pmid": "30994454"
+        }
+      ],
+      "pmids": [
+        "30994454"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": "The provided information is incomplete and misses critical alternative mechanisms. ATXN3 regulates CREBBP (CBP) through at least three distinct mechanisms: 1) Direct inhibition of HAT activity by binding to histones and CBP, 2) Counteracting HAT activity by recruiting HDAC3-containing repressor complexes to chromatin, and 3) A potential stabilizing effect by preventing CBP's ubiquitination and degradation, which is mechanistically opposite to repression.",
+  "mechanism": "ATXN3 can directly inhibit the histone acetyltransferase activity of CREBBP through a bimodal intera; ATXN3 acts as a scaffold protein to recruit a transcriptional repressor complex containing Histone D; Within a transcription-coupled DNA repair (TCR) complex, ATXN3 appears to protect CREBBP from ubiqui",
+  "effect": "This dual interaction sterically hinders the access of CREBBP's catalytic HAT domain to its histone substrates, thereby preventing histone acetylation and repressing transcription at target genes.; By recruiting this complex, ATXN3 promotes the deacetylation of histones, which counteracts the acetyltransferase activity of CREBBP. This leads to a repressive chromatin state and downregulation of gene expression. ATXN3 is essential for the proper nuclear localization and chromatin recruitment of HDAC3.; ...",
+  "summary": "ATXN3 regulates CREBBP to control multiple cellular processes including direct inhibition of crebbp histone acetyltransferase (hat) activity, transcriptional repression via recruitment of hdac3, and stabilization of crebbp protein, ultimately affecting transcription is repressed.",
+  "evidence": [
+    {
+      "paper_title": "Ataxin-3 is a histone-binding protein with two independent transcriptional corepressor activities",
+      "journal": "Journal of Biological Chemistry",
+      "year": 2002,
+      "relevant_quote": "In the present study we use cell transfections, in vitro binding, co-immunoprecipitations, and reporter assays to show that the polyglutamine disease protein, ataxin-3, interacts with the major histone acetyltransferases cAMP-response-element binding protein (CREB)-binding protein, p300, and p300/CREB-binding protein-associated factor and inhibits transcription by these coactivators... The N-terminal domain of ataxin-3 inhibits histone acetylation by p300 in vitro and inhibits transcription in vivo. Histone binding and blocking access of coactivators to acetylation sites on histones appears to be the mechanism of inhibition."
+    },
+    {
+      "paper_title": "Ataxin-3 represses transcription via chromatin binding, interaction with histone deacetylase 3, and histone deacetylation",
+      "journal": "The Journal of Neuroscience",
+      "year": 2006,
+      "relevant_quote": "Here we report that normal AT3 binds to target DNA sequences in specific chromatin regions of the matrix metalloproteinase-2 (MMP-2) gene promoter and represses transcription by recruitment of the histone deacetylase 3 (HDAC3), the nuclear receptor corepressor (NCoR), and deacetylation of histones bound to the promoter."
+    },
+    {
+      "paper_title": "ATXN3 controls DNA replication and transcription by regulating chromatin structure",
+      "journal": "Nucleic Acids Research",
+      "year": 2023,
+      "relevant_quote": "The absence of ATXN3 decreases the recruitment of endogenous HDAC3 to the chromatin, as well as the HDAC3 nuclear/cytoplasm ratio after HDAC3 overexpression, suggesting that ATXN3 controls the subcellular localization of HDAC3."
+    },
+    {
+      "paper_title": "Mutant huntingtin impairs PNKP and ATXN3, disrupting DNA repair and transcription",
+      "journal": "eLife",
+      "year": 2019,
+      "relevant_quote": "A concomitant decrease in Ataxin-3 activity facilitates CBP ubiquitination and degradation, adversely impacting transcription and DNA repair."
+    }
+  ],
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "ATXN3 --regulates--> CREBBP:",
+  "protein_a": "ATXN3",
+  "protein_b": "CREBBP",
+  "discovered_in_query": "ATXN3",
+  "first_discovered": "2025-11-24T07:01:28.064375Z",
+  "last_updated": "2025-11-24T07:01:28.064375Z"
+}

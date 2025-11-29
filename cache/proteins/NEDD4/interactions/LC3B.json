@@ -1,0 +1,88 @@
+{
+  "primary": "LC3B",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "NEDD4 is an E3 ubiquitin ligase that contains a LIR motif and directly binds to LC3B, which can influence ubiquitination events at the autophagosome.",
+  "functions": [
+    {
+      "function": "Autophagy",
+      "arrow": "activates",
+      "cellular_process": "NEDD4 is a HECT-type E3 ubiquitin ligase that directly interacts with LC3B. This interaction is mediated by a conserved LC3-Interacting Region (LIR) within NEDD4, specifically a WXXL motif. The binding to lipidated LC3B on the autophagosome membrane serves a dual purpose: it recruits NEDD4 to the site of autophagic activity and allosterically activates its E3 ligase function.",
+      "effect_description": "Upon recruitment and activation by LC3B, NEDD4 ubiquitinates local substrates, including the autophagy receptor SQSTM1/p62. This ubiquitination of autophagy components is crucial for the efficient progression of autophagosome biogenesis and the proper processing of autophagic cargo, thereby promoting overall autophagic flux.",
+      "biological_consequence": [
+        "Autophagosome formation and LC3B lipidation → NEDD4 is recruited to the autophagosome membrane via direct binding to LC3B through its LIR motif → LC3B binding enhances the intrinsic E3 ubiquitin ligase activity of NEDD4 → Activated NEDD4 ubiquitinates autophagosome-associated substrates like SQSTM1/p62 → Ubiquitination of components promotes efficient autophagic flux."
+      ],
+      "specific_effects": [
+        "Directly binds LC3B through a conserved WXXL-type LIR motif.",
+        "The binding of LC3B functions as an allosteric activator of NEDD4's intrinsic E3 ligase activity.",
+        "Ubiquitinates the autophagy receptor SQSTM1/p62 upon recruitment to the autophagosome.",
+        "Knockdown of NEDD4 impairs starvation- and rapamycin-induced autophagy, indicating its positive regulatory role."
+      ],
+      "evidence": [
+        {
+          "paper_title": "The E3 ubiquitin ligase NEDD4 is an LC3-interactive protein and regulates autophagy",
+          "journal": "Autophagy",
+          "year": 2017,
+          "relevant_quote": "NEDD4 binds to LC3 through a conserved WXXL LC3-binding motif in a region between the C2 and the WW2 domains... Furthermore, SQSTM1 is ubiquitinated by NEDD4 while LC3 functions as an activator of NEDD4 ligase activity.",
+          "pmid": "28085563"
+        },
+        {
+          "paper_title": "Insights into links between autophagy and the ubiquitin system from the structure of LC3B bound to the LIR motif from the E3 ligase NEDD4",
+          "journal": "Protein Science",
+          "year": 2017,
+          "relevant_quote": "Here, we use purified recombinant proteins to define LC3B interactions with a specific LIR sequence from NEDD4, present a crystal structure showing atomic details of the interaction, and show that LC3B-binding can steer intrinsic NEDD4 E3 ligase activity.",
+          "pmid": "28470758"
+        }
+      ],
+      "pmids": [
+        "28085563",
+        "28470758"
+      ],
+      "interaction_effect": "activates",
+      "interaction_direction": "main_to_primary",
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "is_valid": true,
+  "mechanism_correction": null,
+  "mechanism": "NEDD4 is a HECT-type E3 ubiquitin ligase that directly interacts with LC3B. This interaction is mediated by a conserved LC3-Interacting Region (LIR) within NEDD4, specifically a WXXL motif. The binding to lipidated LC3B on the autophagosome membrane serves a dual purpose: it recruits NEDD4 to the site of autophagic activity and allosterically activates its E3 ligase function.",
+  "effect": "Upon recruitment and activation by LC3B, NEDD4 ubiquitinates local substrates, including the autophagy receptor SQSTM1/p62. This ubiquitination of autophagy components is crucial for the efficient progression of autophagosome biogenesis and the proper processing of autophagic cargo, thereby promoting overall autophagic flux.",
+  "summary": "LC3B activates NEDD4 to modulate regulation of autophagy, ultimately affecting ubiquitination of components promotes efficient autophagic flux.",
+  "evidence": [
+    {
+      "paper_title": "The E3 ubiquitin ligase NEDD4 is an LC3-interactive protein and regulates autophagy",
+      "journal": "Autophagy",
+      "year": 2017,
+      "relevant_quote": "NEDD4 binds to LC3 through a conserved WXXL LC3-binding motif in a region between the C2 and the WW2 domains... Furthermore, SQSTM1 is ubiquitinated by NEDD4 while LC3 functions as an activator of NEDD4 ligase activity."
+    },
+    {
+      "paper_title": "Insights into links between autophagy and the ubiquitin system from the structure of LC3B bound to the LIR motif from the E3 ligase NEDD4",
+      "journal": "Protein Science",
+      "year": 2017,
+      "relevant_quote": "Here, we use purified recombinant proteins to define LC3B interactions with a specific LIR sequence from NEDD4, present a crystal structure showing atomic details of the interaction, and show that LC3B-binding can steer intrinsic NEDD4 E3 ligase activity."
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "LC3B --activates--> NEDD4:",
+  "protein_a": "NEDD4",
+  "protein_b": "LC3B",
+  "discovered_in_query": "LC3B",
+  "first_discovered": "2025-11-24T10:45:54.043483Z",
+  "last_updated": "2025-11-24T10:45:54.043483Z"
+}

@@ -512,6 +512,12 @@ class DatabaseSyncLayer:
                 # Existing data is richer or equal, merge in new functions/evidence
                 interaction.data["functions"] = merged_functions
                 interaction.data["evidence"] = merged_evidence
+
+                # CRITICAL: Explicitly merge pathways field if present in new data
+                # This ensures existing records get updated with pathway assignments
+                if "pathways" in data_copy:
+                    interaction.data["pathways"] = data_copy["pathways"]
+
                 interaction.data["_last_seen_in"] = discovered_in
                 interaction.data["_last_updated"] = datetime.utcnow().isoformat()
                 # Update direction if new query provides better direction info

@@ -274,84 +274,11 @@ function calculateDepthsFromGraph(interactions, mainProtein) {
 
 /**
  * Filter interactions based on view mode to handle duplicates (NET vs DIRECT)
+ * DEPRECATED: Now always returns all interactions (effectively 'both' mode)
  */
 function filterInteractionsByViewMode(interactions) {
-  const mode = getCurrentViewMode ? getCurrentViewMode() : 'direct';
-
-  if (mode === 'both') {
-    return interactions;  // Show everything
-  }
-
-  // Group interactions by source-target pair (normalized alphabetically)
-  const pairMap = new Map();  // "PROTEIN1::PROTEIN2" -> [interactions]
-
-  interactions.forEach(int => {
-    const src = int.source;
-    const tgt = int.target;
-    if (!src || !tgt) return;
-
-    // Create normalized key (alphabetical order for consistency)
-    const pairKey = src < tgt ? `${src}::${tgt}` : `${tgt}::${src}`;
-
-    if (!pairMap.has(pairKey)) {
-      pairMap.set(pairKey, []);
-    }
-    pairMap.get(pairKey).push(int);
-  });
-
-  // Filter each group based on view mode
-  const filtered = [];
-  pairMap.forEach((group, pairKey) => {
-    if (group.length === 1) {
-      // Only one interaction for this pair - always include it
-      filtered.push(group[0]);
-      return;
-    }
-
-    // Multiple interactions for same pair - apply filtering
-    if (mode === 'direct') {
-      // Prefer DIRECT mediator links over NET effects
-      const directLink = group.find(int =>
-        int._direct_mediator_link ||
-        int.function_context === 'direct' ||
-        (int.data && int.data.function_context === 'direct')
-      );
-
-      if (directLink) {
-        filtered.push(directLink);  // Show DIRECT link only
-      } else {
-        // No direct link found - show first NET effect or regular interaction
-        const netEffect = group.find(int =>
-          int._net_effect ||
-          int.function_context === 'net' ||
-          (int.data && int.data.function_context === 'net')
-        );
-        filtered.push(netEffect || group[0]);
-      }
-    } else if (mode === 'net') {
-      // Prefer NET effects over DIRECT links
-      const netEffect = group.find(int =>
-        int._net_effect ||
-        int.function_context === 'net' ||
-        (int.data && int.data.function_context === 'net')
-      );
-
-      if (netEffect) {
-        filtered.push(netEffect);  // Show NET effect only
-      } else {
-        // No net effect found - show first DIRECT link or regular interaction
-        const directLink = group.find(int =>
-          int._direct_mediator_link ||
-          int.function_context === 'direct' ||
-          (int.data && int.data.function_context === 'direct')
-        );
-        filtered.push(directLink || group[0]);
-      }
-    }
-  });
-
-  console.log(`🔍 View mode: ${mode} - Filtered ${interactions.length} → ${filtered.length} interactions`);
-  return filtered;
+  // Always return all interactions (filter deprecated)
+  return interactions;
 }
 
 function buildInitialGraph(){
@@ -785,7 +712,31 @@ function renderGraph() {
     .data(links).enter().append('path')
     .attr('class', d => {
       if (d.type === 'pathway-link') return 'link pathway-link';
-      if (d.type === 'pathway-interactor-link') return 'link pathway-interactor-link';
+      if (d.type === 'pathway-interactor-link') {
+          // Look up biological interaction for coloring
+          const targetId = (d.target && d.target.originalId) ? d.target.originalId :
+                           (d.target && d.target.id) ? d.target.id : d.target;
+
+          let arrow = 'binds';
+          if (SNAP.interactions) {
+              const inter = SNAP.interactions.find(i =>
+                  (i.source === SNAP.main && i.target === targetId) ||
+                  (i.source === targetId && i.target === SNAP.main)
+              );
+              if (inter) {
+                  arrow = arrowKind(inter.arrow, inter.intent, inter.direction);
+              }
+          }
+
+          let classes = 'link pathway-interactor-link';
+          if (arrow==='binds') classes += ' link-binding';
+          else if (arrow==='activates') classes += ' link-activate';
+          else if (arrow==='inhibits') classes += ' link-inhibit';
+          else if (arrow==='regulates') classes += ' link-regulate';
+          else classes += ' link-binding';
+          return classes;
+      }
+
       const arrow = d.arrow || 'binds';
       let classes = 'link';
       if (arrow === 'binds') classes += ' link-binding';
@@ -796,7 +747,29 @@ function renderGraph() {
       return classes;
     })
     .attr('marker-end', d => {
-      if (d.type === 'pathway-link' || d.type === 'pathway-interactor-link') return null;
+      if (d.type === 'pathway-link') return null;
+      if (d.type === 'pathway-interactor-link') {
+          // Look up biological interaction for marker
+          const targetId = (d.target && d.target.originalId) ? d.target.originalId :
+                           (d.target && d.target.id) ? d.target.id : d.target;
+
+          let arrow = 'binds';
+          if (SNAP.interactions) {
+              const inter = SNAP.interactions.find(i =>
+                  (i.source === SNAP.main && i.target === targetId) ||
+                  (i.source === targetId && i.target === SNAP.main)
+              );
+              if (inter) {
+                  arrow = arrowKind(inter.arrow, inter.intent, inter.direction);
+              }
+          }
+
+          if (arrow==='activates') return 'url(#arrow-activate)';
+          if (arrow==='inhibits') return 'url(#arrow-inhibit)';
+          if (arrow==='regulates') return 'url(#arrow-regulate)';
+          return 'url(#arrow-binding)';
+      }
+
       const a = d.arrow || 'binds';
       if (a === 'activates') return 'url(#arrow-activate)';
       if (a === 'inhibits') return 'url(#arrow-inhibit)';
@@ -1569,20 +1542,70 @@ function showInteractionModal(link, clickedNode = null){
 
 /* Handle node click - show interaction modal with expand/collapse controls */
 function handleNodeClick(node){
-  // Find ALL links involving this node
-  const nodeLinks = links.filter(l => {
+  const biologicalId = node.originalId || node.id;
+
+  // 1. Try to find existing links in the graph (Standard Mode)
+  let nodeLinks = links.filter(l => {
+    // Exclude structural links for pathway visualization
+    if (l.type === 'pathway-link' || l.type === 'pathway-interactor-link') return false;
+
     const src = (l.source && l.source.id) ? l.source.id : l.source;
     const tgt = (l.target && l.target.id) ? l.target.id : l.target;
-    return src === node.id || tgt === node.id;
+    return src === biologicalId || tgt === biologicalId;
   });
+
+  // 2. If no links found (likely Pathway Mode), search raw SNAP data
+  if (nodeLinks.length === 0 && SNAP.interactions) {
+    const rawInteractions = SNAP.interactions.filter(i =>
+      i.source === biologicalId || i.target === biologicalId
+    );
+
+    // Convert to link objects expected by the modal
+    nodeLinks = rawInteractions.map(interaction => {
+       const arrow = arrowKind(interaction.arrow, interaction.intent, interaction.direction);
+       return {
+         id: `${interaction.source}-${interaction.target}-${arrow}`,
+         source: interaction.source,
+         target: interaction.target,
+         type: 'interaction',
+         interactionType: interaction.type || 'direct',
+         arrow: arrow,
+         direction: interaction.direction,
+         data: interaction, // Contains functions, pathways, etc.
+         _is_shared_link: interaction._is_shared_link
+       };
+    });
+  }
+
+  // 3. Filter by pathway context if applicable
+  if (node.pathwayId && nodeLinks.length > 0) {
+     const pathwayNode = nodes.find(n => n.id === node.pathwayId);
+     if (pathwayNode) {
+        const pathwayName = pathwayNode.label;
+
+        // Filter links that are assigned to this pathway
+        const contextLinks = nodeLinks.filter(l => {
+            const pathways = (l.data && l.data.pathways) || [];
+            return pathways.some(pw =>
+                (pw.name === pathwayName) ||
+                (pw.canonical_name === pathwayName)
+            );
+        });
+
+        // If we found specific links for this pathway, use them
+        // Otherwise, fall back to all links (better than showing nothing)
+        if (contextLinks.length > 0) {
+            nodeLinks = contextLinks;
+        }
+     }
+  }
 
   if (nodeLinks.length === 0) {
     // Fallback: show error message
-    openModal(`Protein: ${escapeHtml(node.label || node.id)}`,
-      '<div style="color:#6b7280; padding: 20px; text-align: center;">No interactions found for this protein.</div>');
+    openModal(`Protein: ${escapeHtml(node.label || biologicalId)}`,
+      '<div style="color:#6b7280; padding: 20px; text-align: center;">No biological interactions found for this protein.</div>');
   } else {
     // Use aggregated modal for consistent formatting (1+ interactions)
-    // This ensures all modals have color-coded section headers and bordered boxes
     showAggregatedInteractionsModal(nodeLinks, node);
   }
 }
@@ -3679,11 +3702,38 @@ function updateGraphWithTransitions(){
   // ENTER: Add new links
   const linkEnter = linkData.enter().append('path')
     .attr('class', d=>{
+      if (d.type === 'pathway-link') return 'link pathway-link';
+      if (d.type === 'pathway-interactor-link') {
+          // Look up biological interaction for coloring
+          const targetId = (d.target && d.target.originalId) ? d.target.originalId :
+                           (d.target && d.target.id) ? d.target.id : d.target;
+
+          let arrow = 'binds';
+          if (SNAP.interactions) {
+              const inter = SNAP.interactions.find(i =>
+                  (i.source === SNAP.main && i.target === targetId) ||
+                  (i.source === targetId && i.target === SNAP.main)
+              );
+              if (inter) {
+                  arrow = arrowKind(inter.arrow, inter.intent, inter.direction);
+              }
+          }
+
+          let classes = 'link pathway-interactor-link';
+          if (arrow==='binds') classes += ' link-binding';
+          else if (arrow==='activates') classes += ' link-activate';
+          else if (arrow==='inhibits') classes += ' link-inhibit';
+          else if (arrow==='regulates') classes += ' link-regulate';
+          else classes += ' link-binding';
+          return classes;
+      }
+
       const arrow = d.arrow||'binds';
       let classes = 'link';
       if (arrow==='binds') classes += ' link-binding';
       else if (arrow==='activates') classes += ' link-activate';
       else if (arrow==='inhibits') classes += ' link-inhibit';
+      else if (arrow==='regulates') classes += ' link-regulate';
       else classes += ' link-binding';
       if (d.interaction_type === 'indirect') {
         classes += ' link-indirect';
@@ -3709,6 +3759,29 @@ function updateGraphWithTransitions(){
       return null;
     })
     .attr('marker-end', d=>{
+      if (d.type === 'pathway-link') return null;
+      if (d.type === 'pathway-interactor-link') {
+          // Look up biological interaction for marker
+          const targetId = (d.target && d.target.originalId) ? d.target.originalId :
+                           (d.target && d.target.id) ? d.target.id : d.target;
+
+          let arrow = 'binds';
+          if (SNAP.interactions) {
+              const inter = SNAP.interactions.find(i =>
+                  (i.source === SNAP.main && i.target === targetId) ||
+                  (i.source === targetId && i.target === SNAP.main)
+              );
+              if (inter) {
+                  arrow = arrowKind(inter.arrow, inter.intent, inter.direction);
+              }
+          }
+
+          if (arrow==='activates') return 'url(#arrow-activate)';
+          if (arrow==='inhibits') return 'url(#arrow-inhibit)';
+          if (arrow==='regulates') return 'url(#arrow-regulate)';
+          return 'url(#arrow-binding)';
+      }
+
       const dir = (d.direction || '').toLowerCase();
       // marker-end shows arrow at target end (default for all directed arrows)
       // Support both query-relative (main_to_primary) AND absolute (a_to_b) directions
@@ -4890,17 +4963,46 @@ function buildTableView() {
 
 function collectFunctionEntries() {
   const entries = [];
-  // NEW: Read from live links array instead of static SNAP.interactions
-  // This ensures expanded subgraph data is included in the table view
-  const interactionLinks = links.filter(l => l.type === 'interaction');
+
+  // Use raw SNAP.interactions for stability, plus any expanded links from the graph
+  // This ensures Table View works in Pathway Mode (where D3 links are structural)
+  let interactionsToProcess = [];
+
+  // 1. Add base interactions from SNAP
+  if (SNAP.interactions) {
+    interactionsToProcess = [...SNAP.interactions];
+  }
+
+  // 2. Add expanded interactions from links array (if they exist and are 'interaction' type)
+  // Expanded interactions are pushed to 'links' by mergeSubgraph with type='interaction'
+  const expandedLinks = links.filter(l => l.type === 'interaction');
+
+  // Deduplicate: Don't add if already in SNAP (based on source-target keys)
+  const snapKeys = new Set(interactionsToProcess.map(i => {
+      const src = i.semanticSource || i.source;
+      const tgt = i.semanticTarget || i.target;
+      return `${src}-${tgt}`;
+  }));
+
+  expandedLinks.forEach(link => {
+      // D3 nodes might be objects or strings
+      const srcId = (link.source && link.source.id) ? link.source.id : link.source;
+      const tgtId = (link.target && link.target.id) ? link.target.id : link.target;
+      const key = `${srcId}-${tgtId}`;
+
+      // If not in SNAP, add it (expanded data)
+      if (!snapKeys.has(key)) {
+          interactionsToProcess.push(link);
+      }
+  });
 
   if (!SNAP.main) {
     console.warn('collectFunctionEntries: No main protein');
     return entries;
   }
 
-  // NEW: Loop through interaction links, then their functions
-  interactionLinks.forEach(link => {
+  // Loop through collected interactions
+  interactionsToProcess.forEach(link => {
     // Safe property accessor: expanded links store data in link.data, initial links store directly
     const L = link.data || link;
 

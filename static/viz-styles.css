@@ -1404,13 +1404,18 @@
     /* Pathway-Interactor Links (pathway → interactor when expanded) */
     .pathway-interactor-link {
       stroke: #a78bfa;
-      stroke-width: 1.5px;
-      opacity: 0.5;
+      stroke-width: 2px;
+      opacity: 0.6;
     }
     .pathway-interactor-link:hover {
-      stroke-width: 2.5px;
-      opacity: 0.7;
+      stroke-width: 3px;
+      opacity: 0.8;
     }
+
+    /* Color overrides for pathway links */
+    .pathway-interactor-link.link-activate { stroke: var(--color-activation); }
+    .pathway-interactor-link.link-inhibit { stroke: var(--color-inhibition); }
+    .pathway-interactor-link.link-regulates { stroke: #d97706; }
 
     /* Dark Mode - Pathway Links */
     body.dark-mode .pathway-link {
@@ -1419,6 +1424,11 @@
     body.dark-mode .pathway-interactor-link {
       stroke: #c4b5fd;
     }
+
+    /* Dark Mode Color Overrides */
+    body.dark-mode .pathway-interactor-link.link-activate { stroke: var(--color-activation); }
+    body.dark-mode .pathway-interactor-link.link-inhibit { stroke: var(--color-inhibition); }
+    body.dark-mode .pathway-interactor-link.link-regulates { stroke: #f59e0b; }
 
     /* Pathway Node Styles - Rich & Distinct */
     .pathway-node {

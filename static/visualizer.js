@@ -588,15 +588,15 @@ function expandPathway(pathwayNode) {
   pathwayNode.expanded = true;
 
   const interactorIds = pathwayToInteractors.get(pathwayNode.id) || new Set();
-  const angleStep = (2 * Math.PI) / Math.max(interactorIds.size, 1);
   const expandRadius = 120;
 
+  // 1. Map interactors to new unique node IDs
+  const nodesCreated = new Map(); // originalId -> nodeId
+  const angleStep = (2 * Math.PI) / Math.max(interactorIds.size, 1);
   let idx = 0;
-  interactorIds.forEach(interactorId => {
-    // Create UNIQUE node ID for this pathway instance (allows duplicates under different pathways)
-    const nodeId = `${interactorId}@${pathwayNode.id}`;
 
-    // Check if node already exists
+  interactorIds.forEach(interactorId => {
+    const nodeId = `${interactorId}@${pathwayNode.id}`;
     if (!nodeMap.has(nodeId)) {
       const angle = idx * angleStep - Math.PI / 2;
       const x = pathwayNode.x + expandRadius * Math.cos(angle);
@@ -604,28 +604,115 @@ function expandPathway(pathwayNode) {
 
       const newNode = {
         id: nodeId,
-        label: interactorId,  // Display original protein name
+        label: interactorId,
         type: 'interactor',
-        originalId: interactorId,  // For lookups
+        originalId: interactorId,
         pathwayId: pathwayNode.id,
         radius: interactorNodeRadius,
         x: x,
         y: y
       };
-
       nodes.push(newNode);
       nodeMap.set(nodeId, newNode);
+      nodesCreated.set(interactorId, nodeId);
+    }
+    idx++;
+  });
 
-      // Create link from pathway to interactor
+  // 2. Identify relevant interactions for this pathway
+  // We want to link:
+  // - PathwayNode -> Interactor (if Interactor interacts with Main)
+  // - Interactor A -> Interactor B (if both in pathway and interact)
+
+  const addedLinks = new Set();
+  const mainProtein = SNAP.main;
+
+  if (SNAP.interactions) {
+    SNAP.interactions.forEach(i => {
+      const s = i.source;
+      const t = i.target;
+
+      const sInPathway = interactorIds.has(s);
+      const tInPathway = interactorIds.has(t);
+      const sIsMain = s === mainProtein;
+      const tIsMain = t === mainProtein;
+
+      const arrow = arrowKind(i.arrow, i.intent, i.direction);
+
+      if (sIsMain && tInPathway && nodesCreated.has(t)) {
+        // Main -> Interactor: Link Pathway -> Interactor
+        const targetNodeId = nodesCreated.get(t);
+        const linkId = `${pathwayNode.id}-${targetNodeId}-${arrow}`;
+        if (!addedLinks.has(linkId)) {
+          links.push({
+            id: linkId,
+            source: pathwayNode.id,
+            target: targetNodeId,
+            type: 'pathway-interactor-link',
+            arrow: arrow,
+            data: i // Store full interaction data
+          });
+          addedLinks.add(linkId);
+        }
+      } else if (tIsMain && sInPathway && nodesCreated.has(s)) {
+        // Interactor -> Main: Link Pathway -> Interactor (Visual simplified as bidirectional or outgoing from pathway)
+        // We typically visualize the pathway node as the "anchor" (Main)
+        const targetNodeId = nodesCreated.get(s);
+        const linkId = `${pathwayNode.id}-${targetNodeId}-${arrow}`;
+        if (!addedLinks.has(linkId)) {
+          links.push({
+            id: linkId,
+            source: pathwayNode.id,
+            target: targetNodeId,
+            type: 'pathway-interactor-link',
+            arrow: arrow,
+            data: i
+          });
+          addedLinks.add(linkId);
+        }
+      } else if (sInPathway && tInPathway && nodesCreated.has(s) && nodesCreated.has(t)) {
+        // Interactor A -> Interactor B: Link A -> B
+        const sourceNodeId = nodesCreated.get(s);
+        const targetNodeId = nodesCreated.get(t);
+        const linkId = `${sourceNodeId}-${targetNodeId}-${arrow}`;
+        if (!addedLinks.has(linkId)) {
+          links.push({
+            id: linkId,
+            source: sourceNodeId,
+            target: targetNodeId,
+            type: 'pathway-interactor-link',
+            arrow: arrow,
+            data: i
+          });
+          addedLinks.add(linkId);
+        }
+      }
+    });
+  }
+
+  // 3. Handle orphans (interactors in pathway with no connections found in current set)
+  // Link them to pathway node as fallback
+  interactorIds.forEach(interactorId => {
+    const nodeId = nodesCreated.get(interactorId);
+    if (!nodeId) return; // Already existed? check nodeMap
+
+    // Check if this node is involved in any newly created link
+    const isConnected = links.some(l =>
+      l.source === nodeId || l.target === nodeId ||
+      (typeof l.source === 'object' && l.source.id === nodeId) ||
+      (typeof l.target === 'object' && l.target.id === nodeId)
+    );
+
+    if (!isConnected) {
       links.push({
-        id: `${pathwayNode.id}-${nodeId}`,
+        id: `${pathwayNode.id}-${nodeId}-fallback`,
         source: pathwayNode.id,
         target: nodeId,
         type: 'pathway-interactor-link',
-        arrow: 'binds'
+        arrow: 'binds',
+        data: { arrow: 'binds', intent: 'unknown' } // Dummy data
       });
     }
-    idx++;
   });
 
   console.log(`🛤️ Expanded pathway: ${pathwayNode.label} with ${interactorIds.size} interactors`);
@@ -712,68 +799,27 @@ function renderGraph() {
     .data(links).enter().append('path')
     .attr('class', d => {
       if (d.type === 'pathway-link') return 'link pathway-link';
-      if (d.type === 'pathway-interactor-link') {
-          // Look up biological interaction for coloring
-          const targetId = (d.target && d.target.originalId) ? d.target.originalId :
-                           (d.target && d.target.id) ? d.target.id : d.target;
 
-          let arrow = 'binds';
-          if (SNAP.interactions) {
-              const inter = SNAP.interactions.find(i =>
-                  (i.source === SNAP.main && i.target === targetId) ||
-                  (i.source === targetId && i.target === SNAP.main)
-              );
-              if (inter) {
-                  arrow = arrowKind(inter.arrow, inter.intent, inter.direction);
-              }
-          }
-
-          let classes = 'link pathway-interactor-link';
-          if (arrow==='binds') classes += ' link-binding';
-          else if (arrow==='activates') classes += ' link-activate';
-          else if (arrow==='inhibits') classes += ' link-inhibit';
-          else if (arrow==='regulates') classes += ' link-regulate';
-          else classes += ' link-binding';
-          return classes;
-      }
-
+      // Unified styling logic for all biological links
       const arrow = d.arrow || 'binds';
       let classes = 'link';
+      if (d.type === 'pathway-interactor-link') classes += ' pathway-interactor-link';
+
       if (arrow === 'binds') classes += ' link-binding';
       else if (arrow === 'activates') classes += ' link-activate';
       else if (arrow === 'inhibits') classes += ' link-inhibit';
       else if (arrow === 'regulates') classes += ' link-regulate';
       else classes += ' link-binding';
+
       return classes;
     })
     .attr('marker-end', d => {
       if (d.type === 'pathway-link') return null;
-      if (d.type === 'pathway-interactor-link') {
-          // Look up biological interaction for marker
-          const targetId = (d.target && d.target.originalId) ? d.target.originalId :
-                           (d.target && d.target.id) ? d.target.id : d.target;
 
-          let arrow = 'binds';
-          if (SNAP.interactions) {
-              const inter = SNAP.interactions.find(i =>
-                  (i.source === SNAP.main && i.target === targetId) ||
-                  (i.source === targetId && i.target === SNAP.main)
-              );
-              if (inter) {
-                  arrow = arrowKind(inter.arrow, inter.intent, inter.direction);
-              }
-          }
-
-          if (arrow==='activates') return 'url(#arrow-activate)';
-          if (arrow==='inhibits') return 'url(#arrow-inhibit)';
-          if (arrow==='regulates') return 'url(#arrow-regulate)';
-          return 'url(#arrow-binding)';
-      }
-
-      const a = d.arrow || 'binds';
-      if (a === 'activates') return 'url(#arrow-activate)';
-      if (a === 'inhibits') return 'url(#arrow-inhibit)';
-      if (a === 'regulates') return 'url(#arrow-regulate)';
+      const arrow = d.arrow || 'binds';
+      if (arrow === 'activates') return 'url(#arrow-activate)';
+      if (arrow === 'inhibits') return 'url(#arrow-inhibit)';
+      if (arrow === 'regulates') return 'url(#arrow-regulate)';
       return 'url(#arrow-binding)';
     })
     .attr('fill', 'none')
@@ -1578,22 +1624,45 @@ function handleNodeClick(node){
   }
 
   // 3. Filter by pathway context if applicable
-  if (node.pathwayId && nodeLinks.length > 0) {
+  if (node.pathwayId) {
      const pathwayNode = nodes.find(n => n.id === node.pathwayId);
      if (pathwayNode) {
         const pathwayName = pathwayNode.label;
 
-        // Filter links that are assigned to this pathway
+        // In Pathway Mode, we want to be strict.
+        // If we are looking at an interactor IN a pathway, we likely only want to see
+        // interactions that are part of that pathway.
+
+        // Filter links that are assigned to this pathway OR involve the pathway members
+        // The previous logic filtered by 'pathways' attribute on the interaction.
+        // However, we also need to respect the graph topology we just built.
+
         const contextLinks = nodeLinks.filter(l => {
-            const pathways = (l.data && l.data.pathways) || [];
-            return pathways.some(pw =>
-                (pw.name === pathwayName) ||
-                (pw.canonical_name === pathwayName)
+            const data = l.data;
+            if (!data) return false;
+
+            // Check if explicit pathway assignment exists
+            const pathways = data.pathways || [];
+            const explicitMatch = pathways.some(pw =>
+                (pw.name === pathwayName) || (pw.canonical_name === pathwayName)
             );
+            if (explicitMatch) return true;
+
+            // Heuristic: If we are in pathway mode, and this interaction connects two members of the pathway, include it.
+            // (or member and main)
+            const interactorIds = pathwayToInteractors.get(node.pathwayId);
+            if (interactorIds) {
+                const s = data.source;
+                const t = data.target;
+                const sIn = interactorIds.has(s) || s === SNAP.main;
+                const tIn = interactorIds.has(t) || t === SNAP.main;
+                if (sIn && tIn) return true;
+            }
+
+            return false;
         });
 
-        // If we found specific links for this pathway, use them
-        // Otherwise, fall back to all links (better than showing nothing)
+        // Use context links if found, but also pass the pathway context to the modal
         if (contextLinks.length > 0) {
             nodeLinks = contextLinks;
         }
@@ -1633,6 +1702,29 @@ function showAggregatedInteractionsModal(nodeLinks, clickedNode) {
 
   // Build sections HTML
   let sectionsHTML = '';
+
+  // NEW: Add Participating Pathways Section
+  const participatingPathways = new Set();
+  if (SNAP.pathways) {
+    SNAP.pathways.forEach(pw => {
+      if (pw.interactor_ids && (pw.interactor_ids.includes(nodeId) || pw.interactor_ids.includes(clickedNode.originalId))) {
+        participatingPathways.add(pw.name);
+      }
+    });
+  }
+
+  if (participatingPathways.size > 0) {
+    const pathwayList = Array.from(participatingPathways).map(name =>
+      `<span class="mechanism-badge" style="background: #8b5cf6; border-color: #7c3aed; color: white; margin-right: 4px; margin-bottom: 4px;">${escapeHtml(name)}</span>`
+    ).join('');
+
+    sectionsHTML += `<div class="modal-section-divider" style="margin: 0 0 16px 0; padding: 12px 16px; background: linear-gradient(135deg, #f3e8ff 0%, #ede9fe 100%); border-left: 6px solid #8b5cf6; border-radius: 8px;">
+      <h3 style="margin: 0 0 8px 0; font-size: 14px; font-weight: 700; color: #5b21b6; text-transform: uppercase; letter-spacing: 0.5px;">
+        Participating Pathways
+      </h3>
+      <div style="display: flex; flex-wrap: wrap;">${pathwayList}</div>
+    </div>`;
+  }
 
   // Helper to render a single interaction section
   function renderInteractionSection(link, sectionType) {
@@ -3704,21 +3796,7 @@ function updateGraphWithTransitions(){
     .attr('class', d=>{
       if (d.type === 'pathway-link') return 'link pathway-link';
       if (d.type === 'pathway-interactor-link') {
-          // Look up biological interaction for coloring
-          const targetId = (d.target && d.target.originalId) ? d.target.originalId :
-                           (d.target && d.target.id) ? d.target.id : d.target;
-
-          let arrow = 'binds';
-          if (SNAP.interactions) {
-              const inter = SNAP.interactions.find(i =>
-                  (i.source === SNAP.main && i.target === targetId) ||
-                  (i.source === targetId && i.target === SNAP.main)
-              );
-              if (inter) {
-                  arrow = arrowKind(inter.arrow, inter.intent, inter.direction);
-              }
-          }
-
+          const arrow = d.arrow || 'binds';
           let classes = 'link pathway-interactor-link';
           if (arrow==='binds') classes += ' link-binding';
           else if (arrow==='activates') classes += ' link-activate';
@@ -3761,21 +3839,7 @@ function updateGraphWithTransitions(){
     .attr('marker-end', d=>{
       if (d.type === 'pathway-link') return null;
       if (d.type === 'pathway-interactor-link') {
-          // Look up biological interaction for marker
-          const targetId = (d.target && d.target.originalId) ? d.target.originalId :
-                           (d.target && d.target.id) ? d.target.id : d.target;
-
-          let arrow = 'binds';
-          if (SNAP.interactions) {
-              const inter = SNAP.interactions.find(i =>
-                  (i.source === SNAP.main && i.target === targetId) ||
-                  (i.source === targetId && i.target === SNAP.main)
-              );
-              if (inter) {
-                  arrow = arrowKind(inter.arrow, inter.intent, inter.direction);
-              }
-          }
-
+          const arrow = d.arrow || 'binds';
           if (arrow==='activates') return 'url(#arrow-activate)';
           if (arrow==='inhibits') return 'url(#arrow-inhibit)';
           if (arrow==='regulates') return 'url(#arrow-regulate)';
@@ -4973,9 +5037,13 @@ function collectFunctionEntries() {
     interactionsToProcess = [...SNAP.interactions];
   }
 
-  // 2. Add expanded interactions from links array (if they exist and are 'interaction' type)
+  // 2. Add expanded interactions from links array (if they exist and are 'interaction' or 'pathway-interactor-link' type)
   // Expanded interactions are pushed to 'links' by mergeSubgraph with type='interaction'
-  const expandedLinks = links.filter(l => l.type === 'interaction');
+  // Pathway expansions use 'pathway-interactor-link'
+  const expandedLinks = links.filter(l =>
+      l.type === 'interaction' ||
+      (l.type === 'pathway-interactor-link' && l.data) // Only include if it has interaction data
+  );
 
   // Deduplicate: Don't add if already in SNAP (based on source-target keys)
   const snapKeys = new Set(interactionsToProcess.map(i => {

@@ -3796,21 +3796,7 @@ function updateGraphWithTransitions(){
     .attr('class', d=>{
       if (d.type === 'pathway-link') return 'link pathway-link';
       if (d.type === 'pathway-interactor-link') {
-          // Look up biological interaction for coloring
-          const targetId = (d.target && d.target.originalId) ? d.target.originalId :
-                           (d.target && d.target.id) ? d.target.id : d.target;
-
-          let arrow = 'binds';
-          if (SNAP.interactions) {
-              const inter = SNAP.interactions.find(i =>
-                  (i.source === SNAP.main && i.target === targetId) ||
-                  (i.source === targetId && i.target === SNAP.main)
-              );
-              if (inter) {
-                  arrow = arrowKind(inter.arrow, inter.intent, inter.direction);
-              }
-          }
-
+          const arrow = d.arrow || 'binds';
           let classes = 'link pathway-interactor-link';
           if (arrow==='binds') classes += ' link-binding';
           else if (arrow==='activates') classes += ' link-activate';
@@ -3853,21 +3839,7 @@ function updateGraphWithTransitions(){
     .attr('marker-end', d=>{
       if (d.type === 'pathway-link') return null;
       if (d.type === 'pathway-interactor-link') {
-          // Look up biological interaction for marker
-          const targetId = (d.target && d.target.originalId) ? d.target.originalId :
-                           (d.target && d.target.id) ? d.target.id : d.target;
-
-          let arrow = 'binds';
-          if (SNAP.interactions) {
-              const inter = SNAP.interactions.find(i =>
-                  (i.source === SNAP.main && i.target === targetId) ||
-                  (i.source === targetId && i.target === SNAP.main)
-              );
-              if (inter) {
-                  arrow = arrowKind(inter.arrow, inter.intent, inter.direction);
-              }
-          }
-
+          const arrow = d.arrow || 'binds';
           if (arrow==='activates') return 'url(#arrow-activate)';
           if (arrow==='inhibits') return 'url(#arrow-inhibit)';
           if (arrow==='regulates') return 'url(#arrow-regulate)';

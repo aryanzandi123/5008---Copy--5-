@@ -1569,20 +1569,70 @@ function showInteractionModal(link, clickedNode = null){
 
 /* Handle node click - show interaction modal with expand/collapse controls */
 function handleNodeClick(node){
-  // Find ALL links involving this node
-  const nodeLinks = links.filter(l => {
+  const biologicalId = node.originalId || node.id;
+
+  // 1. Try to find existing links in the graph (Standard Mode)
+  let nodeLinks = links.filter(l => {
+    // Exclude structural links for pathway visualization
+    if (l.type === 'pathway-link' || l.type === 'pathway-interactor-link') return false;
+
     const src = (l.source && l.source.id) ? l.source.id : l.source;
     const tgt = (l.target && l.target.id) ? l.target.id : l.target;
-    return src === node.id || tgt === node.id;
+    return src === biologicalId || tgt === biologicalId;
   });
+
+  // 2. If no links found (likely Pathway Mode), search raw SNAP data
+  if (nodeLinks.length === 0 && SNAP.interactions) {
+    const rawInteractions = SNAP.interactions.filter(i =>
+      i.source === biologicalId || i.target === biologicalId
+    );
+
+    // Convert to link objects expected by the modal
+    nodeLinks = rawInteractions.map(interaction => {
+       const arrow = arrowKind(interaction.arrow, interaction.intent, interaction.direction);
+       return {
+         id: `${interaction.source}-${interaction.target}-${arrow}`,
+         source: interaction.source,
+         target: interaction.target,
+         type: 'interaction',
+         interactionType: interaction.type || 'direct',
+         arrow: arrow,
+         direction: interaction.direction,
+         data: interaction, // Contains functions, pathways, etc.
+         _is_shared_link: interaction._is_shared_link
+       };
+    });
+  }
+
+  // 3. Filter by pathway context if applicable
+  if (node.pathwayId && nodeLinks.length > 0) {
+     const pathwayNode = nodes.find(n => n.id === node.pathwayId);
+     if (pathwayNode) {
+        const pathwayName = pathwayNode.label;
+
+        // Filter links that are assigned to this pathway
+        const contextLinks = nodeLinks.filter(l => {
+            const pathways = (l.data && l.data.pathways) || [];
+            return pathways.some(pw =>
+                (pw.name === pathwayName) ||
+                (pw.canonical_name === pathwayName)
+            );
+        });
+
+        // If we found specific links for this pathway, use them
+        // Otherwise, fall back to all links (better than showing nothing)
+        if (contextLinks.length > 0) {
+            nodeLinks = contextLinks;
+        }
+     }
+  }
 
   if (nodeLinks.length === 0) {
     // Fallback: show error message
-    openModal(`Protein: ${escapeHtml(node.label || node.id)}`,
-      '<div style="color:#6b7280; padding: 20px; text-align: center;">No interactions found for this protein.</div>');
+    openModal(`Protein: ${escapeHtml(node.label || biologicalId)}`,
+      '<div style="color:#6b7280; padding: 20px; text-align: center;">No biological interactions found for this protein.</div>');
   } else {
     // Use aggregated modal for consistent formatting (1+ interactions)
-    // This ensures all modals have color-coded section headers and bordered boxes
     showAggregatedInteractionsModal(nodeLinks, node);
   }
 }

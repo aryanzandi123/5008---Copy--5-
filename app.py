@@ -430,6 +430,30 @@ def build_full_json_from_db(protein_symbol: str) -> dict:
         # Extract FULL data from JSONB (preserves all fields: functions, evidence, PMIDs, etc.)
         interaction_data = interaction.data.copy()
 
+        # Fallback: If pathways missing in JSON, try to fetch from relation table
+        # This handles cases where JSON wasn't updated but DB relations were
+        if not interaction_data.get("pathways"):
+            try:
+                # Lazy load pathways (lazy='dynamic' returns Query)
+                linked_pathways = interaction.pathway_interactions.all()
+                if linked_pathways:
+                    restored_pathways = []
+                    for link in linked_pathways:
+                        pw = link.pathway
+                        if pw:
+                            restored_pathways.append({
+                                "name": pw.name,
+                                "canonical_name": pw.canonical_term or pw.name,
+                                "ontology_id": pw.ontology_id,
+                                "ontology_source": pw.ontology_source,
+                                "confidence": float(link.assignment_confidence or 0.8)
+                            })
+                    if restored_pathways:
+                        interaction_data["pathways"] = restored_pathways
+            except Exception as e:
+                # Log but don't crash
+                print(f"[WARN] Failed to load linked pathways for interaction {interaction.id}: {e}", file=sys.stderr)
+
         # Add explicit source/target/type fields for frontend clarity
         # CRITICAL: Set source/target based on DIRECTION (who affects whom), NOT canonical ordering
 
